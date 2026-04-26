@@ -1,15 +1,35 @@
 # lance
 
-To install dependencies:
+Early-stage TypeScript-to-SQF transpiler scaffold.
+
+## Current Status
+
+The repo now contains the first compiler structure:
+
+- `src/compiler/`
+  project loading, diagnostics, orchestration
+- `src/ir/`
+  initial IR node shapes
+- `src/lowering/`
+  TypeScript AST to IR lowering
+- `src/normalize/`
+  SQF semantics normalization boundary
+- `src/emit/`
+  SQF text emission
+- `tests/fixtures/`
+  first vertical-slice fixture layout
+
+This is not a full compiler yet. It is the scaffolding for the first end-to-end
+vertical slice.
+
+## Install
 
 ```bash
 bun install
 ```
 
-To run:
+## Validate
 
 ```bash
-bun run index.ts
+bunx tsc --noEmit
 ```
-
-This project was created using `bun init` in bun v1.3.11. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.

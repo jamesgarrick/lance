@@ -7,6 +7,9 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "ts-morph": "^28.0.0"
   }
 }
