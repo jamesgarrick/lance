@@ -333,7 +333,7 @@ function lowerExpression(
   );
   if (commandExpr) return commandExpr;
 
-  const cfgLiteral = tryLowerCfgLiteral(expression, bindings, semanticContext);
+  const cfgLiteral = tryLowerCfgLiteral(expression, bindings, semanticContext, diagnostics);
   if (cfgLiteral) return cfgLiteral;
 
   if (Node.isIdentifier(expression)) {
@@ -509,11 +509,32 @@ function tryLowerCfgLiteral(
   expression: Expression,
   bindings: SourceFileSemanticBindings,
   semanticContext: SemanticContext,
+  diagnostics: DiagnosticBag,
 ): SqfLiteral | undefined {
   const path = getPropertyAccessPath(expression);
   if (!path) return undefined;
+
+  // Only attempt resolution if the root segment is a known cfg import
+  const rootName = Object.entries(bindings.importedLocalNames).find(
+    ([exportedName, localName]) => localName === path[0] && isCfgRootName(exportedName),
+  )?.[0];
+  if (!rootName) return undefined;
+
   const resolved = resolveImportedCfgReference(path, bindings, semanticContext);
-  if (!resolved) return undefined;
+  if (!resolved) {
+    diagnostics.add({
+      code: "UNRESOLVED_CFG_REFERENCE",
+      severity: "error",
+      phase: "lowering",
+      message: `Could not resolve cfg reference: ${path.join(".")}`,
+      span: {
+        filePath: expression.getSourceFile().getFilePath(),
+        line: expression.getStartLineNumber(),
+      },
+    });
+    return { kind: "Literal", text: `"UNRESOLVED_CFG: ${path.join(".")}"` };
+  }
+
   return { kind: "Literal", text: JSON.stringify(resolved) };
 }
 
