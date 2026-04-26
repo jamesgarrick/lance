@@ -1,0 +1,1303 @@
+import { cfgNode } from "./cfg-runtime";
+
+export const cfgMagazines = {
+  "misc": {
+    "default": cfgNode("Default", {}),
+    "fakemagazine": cfgNode("FakeMagazine", {}),
+    "fakeweapon": cfgNode("FakeWeapon", {}),
+    "vehiclemagazine": cfgNode("VehicleMagazine", {}),
+    "rpg32": cfgNode("RPG32_F", {}),
+    "nlaw": cfgNode("NLAW_F", {}),
+    "handgrenade": cfgNode("HandGrenade", {}),
+    "minigrenade": cfgNode("MiniGrenade", {}),
+    "smokeshell": cfgNode("SmokeShell", {}),
+    "smokeshellred": cfgNode("SmokeShellRed", {}),
+    "smokeshellgreen": cfgNode("SmokeShellGreen", {}),
+    "smokeshellyellow": cfgNode("SmokeShellYellow", {}),
+    "smokeshellpurple": cfgNode("SmokeShellPurple", {}),
+    "smokeshellblue": cfgNode("SmokeShellBlue", {}),
+    "smokeshellorange": cfgNode("SmokeShellOrange", {}),
+    "smokelaunchermag": cfgNode("SmokeLauncherMag", {}),
+    "flarewhite": cfgNode("FlareWhite_F", {}),
+    "flaregreen": cfgNode("FlareGreen_F", {}),
+    "flarered": cfgNode("FlareRed_F", {}),
+    "flareyellow": cfgNode("FlareYellow_F", {}),
+    "laserbatteries": cfgNode("Laserbatteries", {}),
+    "rpg7": cfgNode("RPG7_F", {}),
+    "antibiotic": cfgNode("Antibiotic", {}),
+    "antimalaricum": cfgNode("Antimalaricum", {}),
+    "antimalaricumvaccine": cfgNode("AntimalaricumVaccine", {}),
+    "bandage": cfgNode("Bandage", {}),
+    "files": cfgNode("Files", {}),
+    "filetopsecret": cfgNode("FileTopSecret", {}),
+    "filenetworkstructure": cfgNode("FileNetworkStructure", {}),
+    "filessecret": cfgNode("FilesSecret", {}),
+    "documentssecret": cfgNode("DocumentsSecret", {}),
+    "keys": cfgNode("Keys", {}),
+    "satphone": cfgNode("SatPhone", {}),
+    "mobilephone": cfgNode("MobilePhone", {}),
+    "smartphone": cfgNode("SmartPhone", {}),
+    "flashdisk": cfgNode("FlashDisk", {}),
+    "butanecanister": cfgNode("ButaneCanister", {}),
+    "money": cfgNode("Money", {}),
+  },
+  "ca": {
+    "magazine": cfgNode("CA_Magazine", {}),
+    "launchermagazine": cfgNode("CA_LauncherMagazine", {}),
+  },
+  "_556x45": {
+    "_30rnd": {
+      "stanag": "30Rnd_556x45_Stanag",
+      "stanag_green": "30Rnd_556x45_Stanag_green",
+      "stanag_red": "30Rnd_556x45_Stanag_red",
+      "stanag_tracer_red": "30Rnd_556x45_Stanag_Tracer_Red",
+      "stanag_tracer_green": "30Rnd_556x45_Stanag_Tracer_Green",
+      "stanag_tracer_yellow": "30Rnd_556x45_Stanag_Tracer_Yellow",
+      "stanag_sand": "30Rnd_556x45_Stanag_Sand",
+      "stanag_sand_green": "30Rnd_556x45_Stanag_Sand_green",
+      "stanag_sand_red": "30Rnd_556x45_Stanag_Sand_red",
+      "stanag_sand_tracer_red": "30Rnd_556x45_Stanag_Sand_Tracer_Red",
+      "stanag_sand_tracer_green": "30Rnd_556x45_Stanag_Sand_Tracer_Green",
+      "stanag_sand_tracer_yellow": "30Rnd_556x45_Stanag_Sand_Tracer_Yellow",
+    },
+    "_20rnd": {
+      "uw_mag": "20Rnd_556x45_UW_mag",
+    },
+    "_150rnd": {
+      "drum_mag": "150Rnd_556x45_Drum_Mag_F",
+      "drum_sand_mag": "150Rnd_556x45_Drum_Sand_Mag_F",
+      "drum_sand_mag_tracer": "150Rnd_556x45_Drum_Sand_Mag_Tracer_F",
+      "drum_green_mag": "150Rnd_556x45_Drum_Green_Mag_F",
+      "drum_green_mag_tracer": "150Rnd_556x45_Drum_Green_Mag_Tracer_F",
+      "drum_mag_tracer": "150Rnd_556x45_Drum_Mag_Tracer_F",
+    },
+    "_200rnd": {
+      "box": "200Rnd_556x45_Box_F",
+      "box_red": "200Rnd_556x45_Box_Red_F",
+      "box_tracer": "200Rnd_556x45_Box_Tracer_F",
+      "box_tracer_red": "200Rnd_556x45_Box_Tracer_Red_F",
+    },
+  },
+  "_65x39": {
+    "_30rnd": {
+      "caseless_mag": "30Rnd_65x39_caseless_mag",
+      "caseless_khaki_mag": "30Rnd_65x39_caseless_khaki_mag",
+      "caseless_black_mag": "30Rnd_65x39_caseless_black_mag",
+      "caseless_green": "30Rnd_65x39_caseless_green",
+      "caseless_mag_tracer": "30Rnd_65x39_caseless_mag_Tracer",
+      "caseless_khaki_mag_tracer": "30Rnd_65x39_caseless_khaki_mag_Tracer",
+      "caseless_black_mag_tracer": "30Rnd_65x39_caseless_black_mag_Tracer",
+      "caseless_green_mag_tracer": "30Rnd_65x39_caseless_green_mag_Tracer",
+      "caseless_msbs_mag": "30Rnd_65x39_caseless_msbs_mag",
+      "caseless_msbs_mag_tracer": "30Rnd_65x39_caseless_msbs_mag_Tracer",
+    },
+    "_100rnd": {
+      "caseless_mag": "100Rnd_65x39_caseless_mag",
+      "caseless_khaki_mag": "100Rnd_65x39_caseless_khaki_mag",
+      "caseless_black_mag": "100Rnd_65x39_caseless_black_mag",
+      "caseless_mag_tracer": "100Rnd_65x39_caseless_mag_Tracer",
+      "caseless_khaki_mag_tracer": "100Rnd_65x39_caseless_khaki_mag_tracer",
+      "caseless_black_mag_tracer": "100Rnd_65x39_caseless_black_mag_tracer",
+    },
+    "_200rnd": {
+      "cased_box": "200Rnd_65x39_cased_Box",
+      "cased_box_tracer": "200Rnd_65x39_cased_Box_Tracer",
+      "cased_box_red": "200Rnd_65x39_cased_Box_Red",
+      "cased_box_tracer_red": "200Rnd_65x39_cased_Box_Tracer_Red",
+      "belt": "200Rnd_65x39_Belt",
+      "belt_tracer_red": "200Rnd_65x39_Belt_Tracer_Red",
+      "belt_tracer_green": "200Rnd_65x39_Belt_Tracer_Green",
+      "belt_tracer_yellow": "200Rnd_65x39_Belt_Tracer_Yellow",
+    },
+    "_1000rnd": {
+      "belt": "1000Rnd_65x39_Belt",
+      "belt_tracer_red": "1000Rnd_65x39_Belt_Tracer_Red",
+      "belt_green": "1000Rnd_65x39_Belt_Green",
+      "belt_tracer_green": "1000Rnd_65x39_Belt_Tracer_Green",
+      "belt_yellow": "1000Rnd_65x39_Belt_Yellow",
+      "belt_tracer_yellow": "1000Rnd_65x39_Belt_Tracer_Yellow",
+    },
+    "_2000rnd": {
+      "belt": "2000Rnd_65x39_Belt",
+      "belt_tracer_red": "2000Rnd_65x39_Belt_Tracer_Red",
+      "belt_green": "2000Rnd_65x39_Belt_Green",
+      "belt_tracer_green": "2000Rnd_65x39_Belt_Tracer_Green",
+      "belt_tracer_green_splash": "2000Rnd_65x39_Belt_Tracer_Green_Splash",
+      "belt_yellow": "2000Rnd_65x39_Belt_Yellow",
+      "belt_tracer_yellow": "2000Rnd_65x39_Belt_Tracer_Yellow",
+      "belt_tracer_yellow_splash": "2000Rnd_65x39_Belt_Tracer_Yellow_Splash",
+    },
+    "_500rnd": {
+      "belt": "500Rnd_65x39_Belt",
+      "belt_tracer_red_splash": "500Rnd_65x39_Belt_Tracer_Red_Splash",
+      "belt_tracer_green_splash": "500Rnd_65x39_Belt_Tracer_Green_Splash",
+      "belt_tracer_yellow_splash": "500Rnd_65x39_Belt_Tracer_Yellow_Splash",
+    },
+  },
+  "_762x51": {
+    "_20rnd": {
+      "mag": "20Rnd_762x51_Mag",
+    },
+    "_5000rnd": {
+      "belt": "5000Rnd_762x51_Belt",
+      "yellow_belt": "5000Rnd_762x51_Yellow_Belt",
+    },
+    "_150rnd": {
+      "box": "150Rnd_762x51_Box",
+      "box_tracer": "150Rnd_762x51_Box_Tracer",
+    },
+    "_10rnd": {
+      "mag": "10Rnd_762x51_Mag",
+    },
+    "_200rnd": {
+      "belt": "200Rnd_762x51_Belt",
+      "belt_red": "200Rnd_762x51_Belt_Red",
+      "belt_t_red": "200Rnd_762x51_Belt_T_Red",
+      "belt_green": "200Rnd_762x51_Belt_Green",
+      "belt_t_green": "200Rnd_762x51_Belt_T_Green",
+      "belt_yellow": "200Rnd_762x51_Belt_Yellow",
+      "belt_t_yellow": "200Rnd_762x51_Belt_T_Yellow",
+    },
+    "_1000rnd": {
+      "belt": "1000Rnd_762x51_Belt",
+      "belt_red": "1000Rnd_762x51_Belt_Red",
+      "belt_t_red": "1000Rnd_762x51_Belt_T_Red",
+      "belt_green": "1000Rnd_762x51_Belt_Green",
+      "belt_t_green": "1000Rnd_762x51_Belt_T_Green",
+      "belt_yellow": "1000Rnd_762x51_Belt_Yellow",
+      "belt_t_yellow": "1000Rnd_762x51_Belt_T_Yellow",
+    },
+    "_2000rnd": {
+      "belt": "2000Rnd_762x51_Belt",
+      "belt_red": "2000Rnd_762x51_Belt_Red",
+      "belt_t_red": "2000Rnd_762x51_Belt_T_Red",
+      "belt_green": "2000Rnd_762x51_Belt_Green",
+      "belt_t_green": "2000Rnd_762x51_Belt_T_Green",
+      "belt_yellow": "2000Rnd_762x51_Belt_Yellow",
+      "belt_t_yellow": "2000Rnd_762x51_Belt_T_Yellow",
+    },
+  },
+  "_408": {
+    "_7rnd": {
+      "mag": "7Rnd_408_Mag",
+    },
+  },
+  "_127x108": {
+    "_5rnd": {
+      "mag": "5Rnd_127x108_Mag",
+      "apds_mag": "5Rnd_127x108_APDS_Mag",
+    },
+    "_450rnd": {
+      "ball": "450Rnd_127x108_Ball",
+    },
+    "_150rnd": {
+      "ball": "150Rnd_127x108_Ball",
+    },
+    "_50rnd": {
+      "ball": "50Rnd_127x108_Ball",
+    },
+  },
+  "_9x21": {
+    "_30rnd": {
+      "mag": "30Rnd_9x21_Mag",
+      "red_mag": "30Rnd_9x21_Red_Mag",
+      "yellow_mag": "30Rnd_9x21_Yellow_Mag",
+      "green_mag": "30Rnd_9x21_Green_Mag",
+      "mag_smg_02": "30Rnd_9x21_Mag_SMG_02",
+      "mag_smg_02_tracer_red": "30Rnd_9x21_Mag_SMG_02_Tracer_Red",
+      "mag_smg_02_tracer_yellow": "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow",
+      "mag_smg_02_tracer_green": "30Rnd_9x21_Mag_SMG_02_Tracer_Green",
+    },
+    "_16rnd": {
+      "mag": "16Rnd_9x21_Mag",
+      "red_mag": "16Rnd_9x21_red_Mag",
+      "green_mag": "16Rnd_9x21_green_Mag",
+      "yellow_mag": "16Rnd_9x21_yellow_Mag",
+    },
+    "_10rnd": {
+      "mag": "10Rnd_9x21_Mag",
+    },
+  },
+  "rpg32": {
+    "he": cfgNode("RPG32_HE_F", {}),
+  },
+  "he": {
+    "_1rnd": {
+      "grenade_shell": "1Rnd_HE_Grenade_shell",
+    },
+    "_3rnd": {
+      "grenade_shell": "3Rnd_HE_Grenade_shell",
+    },
+  },
+  "smoke": {
+    "_1rnd": {
+      "grenade_shell": "1Rnd_Smoke_Grenade_shell",
+    },
+    "_3rnd": {
+      "grenade_shell": "3Rnd_Smoke_Grenade_shell",
+    },
+  },
+  "smokered": {
+    "_1rnd": {
+      "grenade_shell": "1Rnd_SmokeRed_Grenade_shell",
+    },
+    "_3rnd": {
+      "grenade_shell": "3Rnd_SmokeRed_Grenade_shell",
+    },
+  },
+  "smokegreen": {
+    "_1rnd": {
+      "grenade_shell": "1Rnd_SmokeGreen_Grenade_shell",
+    },
+    "_3rnd": {
+      "grenade_shell": "3Rnd_SmokeGreen_Grenade_shell",
+    },
+  },
+  "smokeyellow": {
+    "_1rnd": {
+      "grenade_shell": "1Rnd_SmokeYellow_Grenade_shell",
+    },
+    "_3rnd": {
+      "grenade_shell": "3Rnd_SmokeYellow_Grenade_shell",
+    },
+  },
+  "smokepurple": {
+    "_1rnd": {
+      "grenade_shell": "1Rnd_SmokePurple_Grenade_shell",
+    },
+    "_3rnd": {
+      "grenade_shell": "3Rnd_SmokePurple_Grenade_shell",
+    },
+  },
+  "smokeblue": {
+    "_1rnd": {
+      "grenade_shell": "1Rnd_SmokeBlue_Grenade_shell",
+    },
+    "_3rnd": {
+      "grenade_shell": "3Rnd_SmokeBlue_Grenade_shell",
+    },
+  },
+  "smokeorange": {
+    "_1rnd": {
+      "grenade_shell": "1Rnd_SmokeOrange_Grenade_shell",
+    },
+    "_3rnd": {
+      "grenade_shell": "3Rnd_SmokeOrange_Grenade_shell",
+    },
+  },
+  "handgrenade": {
+    "stone": cfgNode("HandGrenade_Stone", {}),
+  },
+  "chemlight": {
+    "green": cfgNode("Chemlight_green", {}),
+    "red": cfgNode("Chemlight_red", {}),
+    "yellow": cfgNode("Chemlight_yellow", {}),
+    "blue": cfgNode("Chemlight_blue", {}),
+  },
+  "cmflaremagazine": {
+    "_60rnd": cfgNode("60Rnd_CMFlareMagazine", {}),
+    "_120rnd": cfgNode("120Rnd_CMFlareMagazine", {}),
+    "_240rnd": cfgNode("240Rnd_CMFlareMagazine", {}),
+  },
+  "cmflare": {
+    "_60rnd": {
+      "chaff_magazine": "60Rnd_CMFlare_Chaff_Magazine",
+    },
+    "_120rnd": {
+      "chaff_magazine": "120Rnd_CMFlare_Chaff_Magazine",
+    },
+    "_240rnd": {
+      "chaff_magazine": "240Rnd_CMFlare_Chaff_Magazine",
+    },
+    "_192rnd": {
+      "chaff_magazine": "192Rnd_CMFlare_Chaff_Magazine",
+    },
+    "_168rnd": {
+      "chaff_magazine": "168Rnd_CMFlare_Chaff_Magazine",
+    },
+    "_300rnd": {
+      "chaff_magazine": "300Rnd_CMFlare_Chaff_Magazine",
+    },
+  },
+  "smokelaunchermag": {
+    "single": cfgNode("SmokeLauncherMag_Single", {}),
+    "boat": cfgNode("SmokeLauncherMag_boat", {}),
+  },
+  "_127x99": {
+    "_500rnd": {
+      "mag": "500Rnd_127x99_mag",
+      "mag_tracer_red": "500Rnd_127x99_mag_Tracer_Red",
+      "mag_tracer_green": "500Rnd_127x99_mag_Tracer_Green",
+      "mag_tracer_yellow": "500Rnd_127x99_mag_Tracer_Yellow",
+    },
+    "_200rnd": {
+      "mag": "200Rnd_127x99_mag",
+      "mag_tracer_red": "200Rnd_127x99_mag_Tracer_Red",
+      "mag_tracer_green": "200Rnd_127x99_mag_Tracer_Green",
+      "mag_tracer_yellow": "200Rnd_127x99_mag_Tracer_Yellow",
+    },
+    "_100rnd": {
+      "mag": "100Rnd_127x99_mag",
+      "mag_tracer_red": "100Rnd_127x99_mag_Tracer_Red",
+      "mag_tracer_green": "100Rnd_127x99_mag_Tracer_Green",
+      "mag_tracer_yellow": "100Rnd_127x99_mag_Tracer_Yellow",
+    },
+  },
+  "_40mm": {
+    "_200rnd": {
+      "g_belt": "200Rnd_40mm_G_belt",
+    },
+    "_96rnd": {
+      "g_belt": "96Rnd_40mm_G_belt",
+    },
+    "_64rnd": {
+      "g_belt": "64Rnd_40mm_G_belt",
+    },
+    "_32rnd": {
+      "g_belt": "32Rnd_40mm_G_belt",
+    },
+    "_60rnd": {
+      "gpr_shells": "60Rnd_40mm_GPR_shells",
+      "gpr_tracer_red_shells": "60Rnd_40mm_GPR_Tracer_Red_shells",
+      "gpr_tracer_green_shells": "60Rnd_40mm_GPR_Tracer_Green_shells",
+      "gpr_tracer_yellow_shells": "60Rnd_40mm_GPR_Tracer_Yellow_shells",
+    },
+    "_40rnd": {
+      "apfsds_shells": "40Rnd_40mm_APFSDS_shells",
+      "apfsds_tracer_red_shells": "40Rnd_40mm_APFSDS_Tracer_Red_shells",
+      "apfsds_tracer_green_shells": "40Rnd_40mm_APFSDS_Tracer_Green_shells",
+      "apfsds_tracer_yellow_shells": "40Rnd_40mm_APFSDS_Tracer_Yellow_shells",
+    },
+    "_160rnd": {
+      "apfsds_tracer_red_shells": "160Rnd_40mm_APFSDS_Tracer_Red_shells",
+    },
+    "_240rnd": {
+      "gpr_tracer_red_shells": "240Rnd_40mm_GPR_Tracer_Red_shells",
+    },
+  },
+  "_20mm": {
+    "_200rnd": {
+      "g_belt": "200Rnd_20mm_G_belt",
+    },
+    "_40rnd": {
+      "g_belt": "40Rnd_20mm_G_belt",
+    },
+    "_300rnd": {
+      "shells": "300Rnd_20mm_shells",
+    },
+    "_1000rnd": {
+      "shells": "1000Rnd_20mm_shells",
+    },
+    "_2000rnd": {
+      "shells": "2000Rnd_20mm_shells",
+    },
+    "_4000rnd": {
+      "tracer_red_shells": "4000Rnd_20mm_Tracer_Red_shells",
+    },
+    "_60rnd": {
+      "he_shells": "60Rnd_20mm_HE_shells",
+      "ap_shells": "60Rnd_20mm_AP_shells",
+    },
+  },
+  "pg": {
+    "_24rnd": {
+      "missiles": "24Rnd_PG_missiles",
+    },
+    "_12rnd": {
+      "missiles": "12Rnd_PG_missiles",
+    },
+  },
+  "missiles": {
+    "_24rnd": cfgNode("24Rnd_missiles", {}),
+    "_12rnd": cfgNode("12Rnd_missiles", {}),
+  },
+  "_155mm": {
+    "_32rnd": {
+      "mo_shells": "32Rnd_155mm_Mo_shells",
+      "mo_shells_o": "32Rnd_155mm_Mo_shells_O",
+    },
+    "_6rnd": {
+      "mo_smoke": "6Rnd_155mm_Mo_smoke",
+      "mo_smoke_o": "6Rnd_155mm_Mo_smoke_O",
+      "mo_mine": "6Rnd_155mm_Mo_mine",
+      "mo_mine_o": "6Rnd_155mm_Mo_mine_O",
+      "mo_at_mine": "6Rnd_155mm_Mo_AT_mine",
+      "mo_at_mine_o": "6Rnd_155mm_Mo_AT_mine_O",
+    },
+    "_2rnd": {
+      "mo_guided": "2Rnd_155mm_Mo_guided",
+      "mo_guided_o": "2Rnd_155mm_Mo_guided_O",
+      "mo_lg": "2Rnd_155mm_Mo_LG",
+      "mo_cluster": "2Rnd_155mm_Mo_Cluster",
+      "mo_cluster_o": "2Rnd_155mm_Mo_Cluster_O",
+    },
+    "_4rnd": {
+      "mo_guided": "4Rnd_155mm_Mo_guided",
+      "mo_guided_o": "4Rnd_155mm_Mo_guided_O",
+      "mo_lg": "4Rnd_155mm_Mo_LG",
+      "mo_lg_o": "4Rnd_155mm_Mo_LG_O",
+    },
+  },
+  "_82mm": {
+    "_8rnd": {
+      "mo_shells": "8Rnd_82mm_Mo_shells",
+      "mo_flare_white": "8Rnd_82mm_Mo_Flare_white",
+      "mo_smoke_white": "8Rnd_82mm_Mo_Smoke_white",
+      "mo_guided": "8Rnd_82mm_Mo_guided",
+      "mo_lg": "8Rnd_82mm_Mo_LG",
+    },
+  },
+  "ugl": {
+    "flarewhite": cfgNode("UGL_FlareWhite_F", {}),
+    "_3rnd": {
+      "flarewhite": "3Rnd_UGL_FlareWhite_F",
+      "flaregreen": "3Rnd_UGL_FlareGreen_F",
+      "flarered": "3Rnd_UGL_FlareRed_F",
+      "flareyellow": "3Rnd_UGL_FlareYellow_F",
+      "flarecir": "3Rnd_UGL_FlareCIR_F",
+    },
+    "flaregreen": cfgNode("UGL_FlareGreen_F", {}),
+    "flarered": cfgNode("UGL_FlareRed_F", {}),
+    "flareyellow": cfgNode("UGL_FlareYellow_F", {}),
+    "flarecir": cfgNode("UGL_FlareCIR_F", {}),
+  },
+  "_45acp": {
+    "_30rnd": {
+      "mag_smg_01": "30Rnd_45ACP_Mag_SMG_01",
+      "mag_smg_01_tracer_green": "30Rnd_45ACP_Mag_SMG_01_Tracer_Green",
+      "mag_smg_01_tracer_red": "30Rnd_45ACP_Mag_SMG_01_Tracer_Red",
+      "mag_smg_01_tracer_yellow": "30Rnd_45ACP_Mag_SMG_01_Tracer_Yellow",
+    },
+    "_9rnd": {
+      "mag": "9Rnd_45ACP_Mag",
+    },
+    "_11rnd": {
+      "mag": "11Rnd_45ACP_Mag",
+    },
+    "_6rnd": {
+      "cylinder": "6Rnd_45ACP_Cylinder",
+    },
+  },
+  "_762x54": {
+    "_150rnd": {
+      "box": "150Rnd_762x54_Box",
+      "box_tracer": "150Rnd_762x54_Box_Tracer",
+    },
+    "_10rnd": {
+      "mag": "10Rnd_762x54_Mag",
+    },
+  },
+  "titan": {
+    "aa": cfgNode("Titan_AA", {}),
+    "ap": cfgNode("Titan_AP", {}),
+    "at": cfgNode("Titan_AT", {}),
+    "_4rnd": {
+      "long_missiles": "4Rnd_Titan_long_missiles",
+      "long_missiles_o": "4Rnd_Titan_long_missiles_O",
+    },
+  },
+  "_25mm": {
+    "_300rnd": {
+      "shells": "300Rnd_25mm_shells",
+    },
+    "_1000rnd": {
+      "shells": "1000Rnd_25mm_shells",
+    },
+  },
+  "_30mm": {
+    "_250rnd": {
+      "he_shells": "250Rnd_30mm_HE_shells",
+      "he_shells_tracer_red": "250Rnd_30mm_HE_shells_Tracer_Red",
+      "he_shells_tracer_green": "250Rnd_30mm_HE_shells_Tracer_Green",
+      "apds_shells": "250Rnd_30mm_APDS_shells",
+      "apds_shells_tracer_red": "250Rnd_30mm_APDS_shells_Tracer_Red",
+      "apds_shells_tracer_green": "250Rnd_30mm_APDS_shells_Tracer_Green",
+      "apds_shells_tracer_yellow": "250Rnd_30mm_APDS_shells_Tracer_Yellow",
+    },
+    "_140rnd": {
+      "mp_shells": "140Rnd_30mm_MP_shells",
+      "mp_shells_tracer_red": "140Rnd_30mm_MP_shells_Tracer_Red",
+      "mp_shells_tracer_green": "140Rnd_30mm_MP_shells_Tracer_Green",
+      "mp_shells_tracer_yellow": "140Rnd_30mm_MP_shells_Tracer_Yellow",
+    },
+    "_60rnd": {
+      "apfsds_shells": "60Rnd_30mm_APFSDS_shells",
+      "apfsds_shells_tracer_red": "60Rnd_30mm_APFSDS_shells_Tracer_Red",
+      "apfsds_shells_tracer_green": "60Rnd_30mm_APFSDS_shells_Tracer_Green",
+      "apfsds_shells_tracer_yellow": "60Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+      "mp_shells_tracer_green": "60Rnd_30mm_MP_shells_Tracer_Green",
+    },
+  },
+  "lg": {
+    "_8rnd": {
+      "scalpel": "8Rnd_LG_scalpel",
+    },
+    "_6rnd": {
+      "scalpel": "6Rnd_LG_scalpel",
+    },
+    "_2rnd": {
+      "scalpel": "2Rnd_LG_scalpel",
+      "scalpel_hidden": "2Rnd_LG_scalpel_hidden",
+    },
+    "_4rnd": {
+      "jian": "4Rnd_LG_Jian",
+    },
+  },
+  "_80mm": {
+    "_14rnd": {
+      "rockets": "14Rnd_80mm_rockets",
+    },
+    "_38rnd": {
+      "rockets": "38Rnd_80mm_rockets",
+    },
+  },
+  "_230mm": {
+    "_12rnd": {
+      "rockets": "12Rnd_230mm_rockets",
+      "rockets_cluster": "12Rnd_230mm_rockets_cluster",
+    },
+  },
+  "aaa": {
+    "_2rnd": {
+      "missiles": "2Rnd_AAA_missiles",
+      "missiles_mi02": "2Rnd_AAA_missiles_MI02",
+      "missiles_mi06": "2Rnd_AAA_missiles_MI06",
+    },
+    "_4rnd": {
+      "missiles": "4Rnd_AAA_missiles",
+      "missiles_mi02": "4Rnd_AAA_missiles_MI02",
+    },
+  },
+  "gaa": {
+    "_4rnd": {
+      "missiles": "4Rnd_GAA_missiles",
+    },
+    "_1rnd": {
+      "missiles": "1Rnd_GAA_missiles",
+    },
+  },
+  "gat": {
+    "_5rnd": {
+      "missiles": "5Rnd_GAT_missiles",
+    },
+    "_2rnd": {
+      "missiles": "2Rnd_GAT_missiles",
+      "missiles_o": "2Rnd_GAT_missiles_O",
+    },
+    "_1rnd": {
+      "missiles": "1Rnd_GAT_missiles",
+    },
+  },
+  "_120mm": {
+    "_30rnd": {
+      "he_shells": "30Rnd_120mm_HE_shells",
+      "he_shells_tracer_red": "30Rnd_120mm_HE_shells_Tracer_Red",
+      "he_shells_tracer_green": "30Rnd_120mm_HE_shells_Tracer_Green",
+      "he_shells_tracer_yellow": "30Rnd_120mm_HE_shells_Tracer_Yellow",
+      "apfsds_shells": "30Rnd_120mm_APFSDS_shells",
+      "apfsds_shells_tracer_red": "30Rnd_120mm_APFSDS_shells_Tracer_Red",
+      "apfsds_shells_tracer_green": "30Rnd_120mm_APFSDS_shells_Tracer_Green",
+      "apfsds_shells_tracer_yellow": "30Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+    },
+    "_16rnd": {
+      "he_shells": "16Rnd_120mm_HE_shells",
+      "he_shells_tracer_red": "16Rnd_120mm_HE_shells_Tracer_Red",
+      "he_shells_tracer_green": "16Rnd_120mm_HE_shells_Tracer_Green",
+      "he_shells_tracer_yellow": "16Rnd_120mm_HE_shells_Tracer_Yellow",
+    },
+    "_14rnd": {
+      "he_shells": "14Rnd_120mm_HE_shells",
+      "he_shells_tracer_red": "14Rnd_120mm_HE_shells_Tracer_Red",
+      "he_shells_tracer_green": "14Rnd_120mm_HE_shells_Tracer_Green",
+      "he_shells_tracer_yellow": "14Rnd_120mm_HE_shells_Tracer_Yellow",
+    },
+    "_12rnd": {
+      "he_shells": "12Rnd_120mm_HE_shells",
+      "he_shells_tracer_red": "12Rnd_120mm_HE_shells_Tracer_Red",
+      "he_shells_tracer_green": "12Rnd_120mm_HE_shells_Tracer_Green",
+      "he_shells_tracer_yellow": "12Rnd_120mm_HE_shells_Tracer_Yellow",
+      "apfsds_shells": "12Rnd_120mm_APFSDS_shells",
+      "apfsds_shells_tracer_red": "12Rnd_120mm_APFSDS_shells_Tracer_Red",
+      "apfsds_shells_tracer_green": "12Rnd_120mm_APFSDS_shells_Tracer_Green",
+      "apfsds_shells_tracer_yellow": "12Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+      "heat_mp": "12Rnd_120mm_HEAT_MP",
+      "heat_mp_t_red": "12Rnd_120mm_HEAT_MP_T_Red",
+      "heat_mp_t_green": "12Rnd_120mm_HEAT_MP_T_Green",
+      "heat_mp_t_yellow": "12Rnd_120mm_HEAT_MP_T_Yellow",
+    },
+    "_8rnd": {
+      "he_shells": "8Rnd_120mm_HE_shells",
+      "he_shells_tracer_red": "8Rnd_120mm_HE_shells_Tracer_Red",
+      "he_shells_tracer_green": "8Rnd_120mm_HE_shells_Tracer_Green",
+      "he_shells_tracer_yellow": "8Rnd_120mm_HE_shells_Tracer_Yellow",
+      "heat_mp": "8Rnd_120mm_HEAT_MP",
+      "heat_mp_t_red": "8Rnd_120mm_HEAT_MP_T_Red",
+      "heat_mp_t_green": "8Rnd_120mm_HEAT_MP_T_Green",
+      "heat_mp_t_yellow": "8Rnd_120mm_HEAT_MP_T_Yellow",
+    },
+    "_32rnd": {
+      "apfsds_shells": "32Rnd_120mm_APFSDS_shells",
+      "apfsds_shells_tracer_red": "32Rnd_120mm_APFSDS_shells_Tracer_Red",
+      "apfsds_shells_tracer_green": "32Rnd_120mm_APFSDS_shells_Tracer_Green",
+      "apfsds_shells_tracer_yellow": "32Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+    },
+    "_28rnd": {
+      "apfsds_shells": "28Rnd_120mm_APFSDS_shells",
+      "apfsds_shells_tracer_red": "28Rnd_120mm_APFSDS_shells_Tracer_Red",
+      "apfsds_shells_tracer_green": "28Rnd_120mm_APFSDS_shells_Tracer_Green",
+      "apfsds_shells_tracer_yellow": "28Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+    },
+    "_24rnd": {
+      "apfsds_shells": "24Rnd_120mm_APFSDS_shells",
+      "apfsds_shells_tracer_red": "24Rnd_120mm_APFSDS_shells_Tracer_Red",
+      "apfsds_shells_tracer_green": "24Rnd_120mm_APFSDS_shells_Tracer_Green",
+      "apfsds_shells_tracer_yellow": "24Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+    },
+    "_20rnd": {
+      "apfsds_shells": "20Rnd_120mm_APFSDS_shells",
+      "apfsds_shells_tracer_red": "20Rnd_120mm_APFSDS_shells_Tracer_Red",
+      "apfsds_shells_tracer_green": "20Rnd_120mm_APFSDS_shells_Tracer_Green",
+      "apfsds_shells_tracer_yellow": "20Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+      "heat_mp": "20Rnd_120mm_HEAT_MP",
+      "heat_mp_t_red": "20Rnd_120mm_HEAT_MP_T_Red",
+      "heat_mp_t_green": "20Rnd_120mm_HEAT_MP_T_Green",
+      "heat_mp_t_yellow": "20Rnd_120mm_HEAT_MP_T_Yellow",
+    },
+    "_4rnd": {
+      "cannon_missiles": "4Rnd_120mm_cannon_missiles",
+      "lg_cannon_missiles": "4Rnd_120mm_LG_cannon_missiles",
+    },
+  },
+  "_125mm": {
+    "_12rnd": {
+      "he": "12Rnd_125mm_HE",
+      "he_t_red": "12Rnd_125mm_HE_T_Red",
+      "he_t_green": "12Rnd_125mm_HE_T_Green",
+      "he_t_yellow": "12Rnd_125mm_HE_T_Yellow",
+      "heat": "12Rnd_125mm_HEAT",
+      "heat_t_red": "12Rnd_125mm_HEAT_T_Red",
+      "heat_t_green": "12Rnd_125mm_HEAT_T_Green",
+      "heat_t_yellow": "12Rnd_125mm_HEAT_T_Yellow",
+    },
+    "_8rnd": {
+      "he": "8Rnd_125mm_HE",
+      "he_t_red": "8Rnd_125mm_HE_T_Red",
+      "he_t_green": "8Rnd_125mm_HE_T_Green",
+      "he_t_yellow": "8Rnd_125mm_HE_T_Yellow",
+    },
+    "_20rnd": {
+      "apfsds": "20Rnd_125mm_APFSDS",
+      "apfsds_t_red": "20Rnd_125mm_APFSDS_T_Red",
+      "apfsds_t_green": "20Rnd_125mm_APFSDS_T_Green",
+      "apfsds_t_yellow": "20Rnd_125mm_APFSDS_T_Yellow",
+    },
+    "_24rnd": {
+      "apfsds": "24Rnd_125mm_APFSDS",
+      "apfsds_t_red": "24Rnd_125mm_APFSDS_T_Red",
+      "apfsds_t_green": "24Rnd_125mm_APFSDS_T_Green",
+      "apfsds_t_yellow": "24Rnd_125mm_APFSDS_T_Yellow",
+    },
+    "_16rnd": {
+      "apfsds": "16Rnd_125mm_APFSDS",
+      "apfsds_t_red": "16Rnd_125mm_APFSDS_T_Red",
+      "apfsds_t_green": "16Rnd_125mm_APFSDS_T_Green",
+      "apfsds_t_yellow": "16Rnd_125mm_APFSDS_T_Yellow",
+    },
+    "_4rnd": {
+      "cannon_missiles": "4Rnd_125mm_cannon_missiles",
+    },
+  },
+  "_105mm": {
+    "_40rnd": {
+      "apfsds": "40Rnd_105mm_APFSDS",
+      "apfsds_t_red": "40Rnd_105mm_APFSDS_T_Red",
+      "apfsds_t_green": "40Rnd_105mm_APFSDS_T_Green",
+      "apfsds_t_yellow": "40Rnd_105mm_APFSDS_T_Yellow",
+    },
+    "_20rnd": {
+      "heat_mp": "20Rnd_105mm_HEAT_MP",
+      "heat_mp_t_red": "20Rnd_105mm_HEAT_MP_T_Red",
+      "heat_mp_t_green": "20Rnd_105mm_HEAT_MP_T_Green",
+      "heat_mp_t_yellow": "20Rnd_105mm_HEAT_MP_T_Yellow",
+    },
+    "_100rnd": {
+      "heat_mp": "100Rnd_105mm_HEAT_MP",
+    },
+  },
+  "_35mm": {
+    "_680rnd": {
+      "aa_shells": "680Rnd_35mm_AA_shells",
+      "aa_shells_tracer_red": "680Rnd_35mm_AA_shells_Tracer_Red",
+      "aa_shells_tracer_green": "680Rnd_35mm_AA_shells_Tracer_Green",
+      "aa_shells_tracer_yellow": "680Rnd_35mm_AA_shells_Tracer_Yellow",
+    },
+  },
+  "aat": {
+    "_6rnd": {
+      "missiles": "6Rnd_AAT_missiles",
+    },
+    "_4rnd": {
+      "missiles": "4Rnd_AAT_missiles",
+    },
+  },
+  "gbu12": {
+    "_2rnd": {
+      "lgb": "2Rnd_GBU12_LGB",
+      "lgb_mi10": "2Rnd_GBU12_LGB_MI10",
+    },
+  },
+  "mk82": {
+    "_2rnd": cfgNode("2Rnd_Mk82", {
+      "mi08": "2Rnd_Mk82_MI08",
+    }),
+  },
+  "b": {
+    "ir": {
+      "grenade": "B_IR_Grenade",
+    },
+  },
+  "o": {
+    "ir": {
+      "grenade": "O_IR_Grenade",
+    },
+    "r": {
+      "ir_grenade": "O_R_IR_Grenade",
+    },
+  },
+  "i": {
+    "ir": {
+      "grenade": "I_IR_Grenade",
+    },
+    "e": {
+      "ir_grenade": "I_E_IR_Grenade",
+    },
+  },
+  "gatling": {
+    "_1000rnd": {
+      "30mm_plane_cas_01": "1000Rnd_Gatling_30mm_Plane_CAS_01_F",
+    },
+  },
+  "missile": {
+    "_2rnd": {
+      "aa_04": "2Rnd_Missile_AA_04_F",
+      "aa_03": "2Rnd_Missile_AA_03_F",
+    },
+    "_6rnd": {
+      "agm_02": "6Rnd_Missile_AGM_02_F",
+    },
+    "_4rnd": {
+      "agm_01": "4Rnd_Missile_AGM_01_F",
+    },
+  },
+  "rocket": {
+    "_7rnd": {
+      "04_he": "7Rnd_Rocket_04_HE_F",
+      "04_ap": "7Rnd_Rocket_04_AP_F",
+    },
+    "_20rnd": {
+      "03_he": "20Rnd_Rocket_03_HE_F",
+      "03_ap": "20Rnd_Rocket_03_AP_F",
+    },
+  },
+  "bomb": {
+    "_4rnd": {
+      "04": "4Rnd_Bomb_04_F",
+    },
+    "_2rnd": {
+      "03": "2Rnd_Bomb_03_F",
+    },
+  },
+  "cannon": {
+    "_500rnd": {
+      "30mm_plane_cas_02": "500Rnd_Cannon_30mm_Plane_CAS_02_F",
+    },
+  },
+  "pylonrack": {
+    "_1rnd": {
+      "missile_aa_04": "PylonRack_1Rnd_Missile_AA_04_F",
+      "aaa_missiles": "PylonRack_1Rnd_AAA_missiles",
+      "gaa_missiles": "PylonRack_1Rnd_GAA_missiles",
+      "missile_agm_02": "PylonRack_1Rnd_Missile_AGM_02_F",
+      "lg_scalpel": "PylonRack_1Rnd_LG_scalpel",
+      "missile_aa_03": "PylonRack_1Rnd_Missile_AA_03_F",
+      "missile_agm_01": "PylonRack_1Rnd_Missile_AGM_01_F",
+    },
+    "_3rnd": {
+      "missile_agm_02": "PylonRack_3Rnd_Missile_AGM_02_F",
+      "lg_scalpel": "PylonRack_3Rnd_LG_scalpel",
+    },
+    "_4rnd": {
+      "lg_scalpel": "PylonRack_4Rnd_LG_scalpel",
+      "bombdemine_01": "PylonRack_4Rnd_BombDemine_01_F",
+      "bombdemine_01_dummy": "PylonRack_4Rnd_BombDemine_01_Dummy_F",
+    },
+    "_7rnd": {
+      "rocket_04_he": "PylonRack_7Rnd_Rocket_04_HE_F",
+      "rocket_04_ap": "PylonRack_7Rnd_Rocket_04_AP_F",
+    },
+    "_12rnd": {
+      "pg_missiles": "PylonRack_12Rnd_PG_missiles",
+      "missiles": "PylonRack_12Rnd_missiles",
+    },
+    "_20rnd": {
+      "rocket_03_he": "PylonRack_20Rnd_Rocket_03_HE_F",
+      "rocket_03_ap": "PylonRack_20Rnd_Rocket_03_AP_F",
+    },
+    "_19rnd": {
+      "rocket_skyfire": "PylonRack_19Rnd_Rocket_Skyfire",
+    },
+    "missile": {
+      "amraam_c_x1": "PylonRack_Missile_AMRAAM_C_x1",
+      "amraam_c_x2": "PylonRack_Missile_AMRAAM_C_x2",
+      "amraam_d_x1": "PylonRack_Missile_AMRAAM_D_x1",
+      "amraam_d_x2": "PylonRack_Missile_AMRAAM_D_x2",
+      "bim9x_x1": "PylonRack_Missile_BIM9X_x1",
+      "bim9x_x2": "PylonRack_Missile_BIM9X_x2",
+      "agm_02_x1": "PylonRack_Missile_AGM_02_x1",
+      "agm_02_x2": "PylonRack_Missile_AGM_02_x2",
+      "harm_x1": "PylonRack_Missile_HARM_x1",
+    },
+    "bomb": {
+      "gbu12_x2": "PylonRack_Bomb_GBU12_x2",
+      "sdb_x4": "PylonRack_Bomb_SDB_x4",
+    },
+    "_2rnd": {
+      "bombcluster_01": "PylonRack_2Rnd_BombCluster_01_F",
+      "bombcluster_03": "PylonRack_2Rnd_BombCluster_03_F",
+    },
+  },
+  "pylonmissile": {
+    "_1rnd": {
+      "missile_aa_04": "PylonMissile_1Rnd_Missile_AA_04_F",
+      "aaa_missiles": "PylonMissile_1Rnd_AAA_missiles",
+      "gaa_missiles": "PylonMissile_1Rnd_GAA_missiles",
+      "lg_scalpel": "PylonMissile_1Rnd_LG_scalpel",
+      "bomb_04": "PylonMissile_1Rnd_Bomb_04_F",
+      "mk82": "PylonMissile_1Rnd_Mk82_F",
+      "missile_aa_03": "PylonMissile_1Rnd_Missile_AA_03_F",
+      "bomb_03": "PylonMissile_1Rnd_Bomb_03_F",
+      "bombcluster_01": "PylonMissile_1Rnd_BombCluster_01_F",
+      "bombcluster_02": "PylonMissile_1Rnd_BombCluster_02_F",
+      "bombcluster_02_cap": "PylonMissile_1Rnd_BombCluster_02_cap_F",
+      "bombcluster_03": "PylonMissile_1Rnd_BombCluster_03_F",
+    },
+    "missile": {
+      "amraam_c_x1": "PylonMissile_Missile_AMRAAM_C_x1",
+      "amraam_d_x1": "PylonMissile_Missile_AMRAAM_D_x1",
+      "amraam_d_int_x1": "PylonMissile_Missile_AMRAAM_D_INT_x1",
+      "bim9x_x1": "PylonMissile_Missile_BIM9X_x1",
+      "agm_02_x1": "PylonMissile_Missile_AGM_02_x1",
+      "agm_02_x2": "PylonMissile_Missile_AGM_02_x2",
+      "aa_r73_x1": "PylonMissile_Missile_AA_R73_x1",
+      "aa_r77_x1": "PylonMissile_Missile_AA_R77_x1",
+      "aa_r77_int_x1": "PylonMissile_Missile_AA_R77_INT_x1",
+      "agm_kh25_x1": "PylonMissile_Missile_AGM_KH25_x1",
+      "agm_kh25_int_x1": "PylonMissile_Missile_AGM_KH25_INT_x1",
+      "harm_x1": "PylonMissile_Missile_HARM_x1",
+      "harm_int_x1": "PylonMissile_Missile_HARM_INT_x1",
+      "kh58_x1": "PylonMissile_Missile_KH58_x1",
+      "kh58_int_x1": "PylonMissile_Missile_KH58_INT_x1",
+    },
+    "bomb": {
+      "gbu12_x1": "PylonMissile_Bomb_GBU12_x1",
+      "kab250_x1": "PylonMissile_Bomb_KAB250_x1",
+    },
+  },
+  "pylonweapon": {
+    "_300rnd": {
+      "20mm_shells": "PylonWeapon_300Rnd_20mm_shells",
+    },
+    "_2000rnd": {
+      "65x39_belt": "PylonWeapon_2000Rnd_65x39_belt",
+    },
+  },
+  "atmine": {
+    "range": {
+      "mag": "ATMine_Range_Mag",
+    },
+  },
+  "apersmine": {
+    "range": {
+      "mag": "APERSMine_Range_Mag",
+    },
+  },
+  "apersboundingmine": {
+    "range": {
+      "mag": "APERSBoundingMine_Range_Mag",
+    },
+  },
+  "slamdirectionalmine": {
+    "wire": {
+      "mag": "SLAMDirectionalMine_Wire_Mag",
+    },
+  },
+  "aperstripmine": {
+    "wire": {
+      "mag": "APERSTripMine_Wire_Mag",
+    },
+  },
+  "claymoredirectionalmine": {
+    "remote": {
+      "mag": "ClaymoreDirectionalMine_Remote_Mag",
+    },
+  },
+  "satchelcharge": {
+    "remote": {
+      "mag": "SatchelCharge_Remote_Mag",
+    },
+  },
+  "democharge": {
+    "remote": {
+      "mag": "DemoCharge_Remote_Mag",
+    },
+  },
+  "iedurbanbig": {
+    "remote": {
+      "mag": "IEDUrbanBig_Remote_Mag",
+    },
+  },
+  "iedlandbig": {
+    "remote": {
+      "mag": "IEDLandBig_Remote_Mag",
+    },
+  },
+  "iedurbansmall": {
+    "remote": {
+      "mag": "IEDUrbanSmall_Remote_Mag",
+    },
+  },
+  "iedlandsmall": {
+    "remote": {
+      "mag": "IEDLandSmall_Remote_Mag",
+    },
+  },
+  "greensignal": {
+    "_6rnd": cfgNode("6Rnd_GreenSignal_F", {}),
+  },
+  "redsignal": {
+    "_6rnd": cfgNode("6Rnd_RedSignal_F", {}),
+  },
+  "_338": {
+    "_10rnd": {
+      "mag": "10Rnd_338_Mag",
+    },
+    "_130rnd": {
+      "mag": "130Rnd_338_Mag",
+    },
+    "_200rnd": {
+      "mag": "200Rnd_338_Mag",
+    },
+  },
+  "_127x54": {
+    "_10rnd": {
+      "mag": "10Rnd_127x54_Mag",
+    },
+  },
+  "_93x64": {
+    "_150rnd": {
+      "mag": "150Rnd_93x64_Mag",
+    },
+    "_10rnd": {
+      "dmr_05_mag": "10Rnd_93x64_DMR_05_Mag",
+    },
+  },
+  "_570x28": {
+    "_50rnd": {
+      "smg_03": "50Rnd_570x28_SMG_03",
+    },
+  },
+  "_580x42": {
+    "_30rnd": {
+      "mag": "30Rnd_580x42_Mag_F",
+      "mag_tracer": "30Rnd_580x42_Mag_Tracer_F",
+    },
+    "_100rnd": {
+      "mag": "100Rnd_580x42_Mag_F",
+      "mag_tracer": "100Rnd_580x42_Mag_Tracer_F",
+      "hex_mag": "100Rnd_580x42_hex_Mag_F",
+      "hex_mag_tracer": "100Rnd_580x42_hex_Mag_Tracer_F",
+      "ghex_mag": "100Rnd_580x42_ghex_Mag_F",
+      "ghex_mag_tracer": "100Rnd_580x42_ghex_Mag_Tracer_F",
+    },
+  },
+  "_650x39": {
+    "_20rnd": {
+      "cased_mag": "20Rnd_650x39_Cased_Mag_F",
+    },
+  },
+  "_50bw": {
+    "_10rnd": {
+      "mag": "10Rnd_50BW_Mag_F",
+    },
+  },
+  "_762x39": {
+    "_30rnd": {
+      "mag": "30Rnd_762x39_Mag_F",
+      "mag_green": "30Rnd_762x39_Mag_Green_F",
+      "mag_tracer": "30Rnd_762x39_Mag_Tracer_F",
+      "mag_tracer_green": "30Rnd_762x39_Mag_Tracer_Green_F",
+      "ak12_mag": "30Rnd_762x39_AK12_Mag_F",
+      "ak12_mag_tracer": "30Rnd_762x39_AK12_Mag_Tracer_F",
+      "ak12_mag_green": "30Rnd_762x39_AK12_Mag_Green_F",
+      "ak12_mag_tracer_green": "30Rnd_762x39_AK12_Mag_Tracer_Green_F",
+      "ak12_lush_mag": "30rnd_762x39_AK12_Lush_Mag_F",
+      "ak12_lush_mag_tracer": "30rnd_762x39_AK12_Lush_Mag_Tracer_F",
+      "ak12_arid_mag": "30rnd_762x39_AK12_Arid_Mag_F",
+      "ak12_arid_mag_tracer": "30rnd_762x39_AK12_Arid_Mag_Tracer_F",
+    },
+    "_75rnd": {
+      "mag": "75Rnd_762x39_Mag_F",
+      "mag_tracer": "75Rnd_762x39_Mag_Tracer_F",
+      "ak12_mag": "75rnd_762x39_AK12_Mag_F",
+      "ak12_mag_tracer": "75rnd_762x39_AK12_Mag_Tracer_F",
+      "ak12_lush_mag": "75rnd_762x39_AK12_Lush_Mag_F",
+      "ak12_lush_mag_tracer": "75rnd_762x39_AK12_Lush_Mag_Tracer_F",
+      "ak12_arid_mag": "75rnd_762x39_AK12_Arid_Mag_F",
+      "ak12_arid_mag_tracer": "75rnd_762x39_AK12_Arid_Mag_Tracer_F",
+    },
+  },
+  "_545x39": {
+    "_30rnd": {
+      "mag": "30Rnd_545x39_Mag_F",
+      "mag_green": "30Rnd_545x39_Mag_Green_F",
+      "mag_tracer": "30Rnd_545x39_Mag_Tracer_F",
+      "mag_tracer_green": "30Rnd_545x39_Mag_Tracer_Green_F",
+    },
+  },
+  "magazine": {
+    "missile": {
+      "rim116_x21": "magazine_Missile_rim116_x21",
+      "rim162_x8": "magazine_Missile_rim162_x8",
+      "amraam_c_x1": "magazine_Missile_AMRAAM_C_x1",
+      "amraam_d_x1": "magazine_Missile_AMRAAM_D_x1",
+      "bim9x_x1": "magazine_Missile_BIM9X_x1",
+      "agm_02_x1": "magazine_Missile_AGM_02_x1",
+      "aa_r73_x1": "magazine_Missile_AA_R73_x1",
+      "aa_r77_x1": "magazine_Missile_AA_R77_x1",
+      "agm_kh25_x1": "magazine_Missile_AGM_KH25_x1",
+      "mim145_x4": "magazine_Missile_mim145_x4",
+      "s750_x4": "magazine_Missile_s750_x4",
+      "harm_x1": "magazine_Missile_HARM_x1",
+      "kh58_x1": "magazine_Missile_KH58_x1",
+    },
+    "cannon": {
+      "phalanx_x1550": "magazine_Cannon_Phalanx_x1550",
+    },
+    "fighter01": {
+      "gun20mm_aa_x450": "magazine_Fighter01_Gun20mm_AA_x450",
+    },
+    "fighter04": {
+      "gun20mm_aa_x150": "magazine_Fighter04_Gun20mm_AA_x150",
+      "gun20mm_aa_x250": "magazine_Fighter04_Gun20mm_AA_x250",
+    },
+    "bomb": {
+      "gbu12_x1": "magazine_Bomb_GBU12_x1",
+      "kab250_x1": "magazine_Bomb_KAB250_x1",
+      "sdb_x1": "magazine_Bomb_SDB_x1",
+    },
+    "fighter02": {
+      "gun30mm_aa_x180": "magazine_Fighter02_Gun30mm_AA_x180",
+    },
+    "missiles": {
+      "cruise_01_x18": "magazine_Missiles_Cruise_01_x18",
+      "cruise_01_cluster_x18": "magazine_Missiles_Cruise_01_Cluster_x18",
+    },
+    "shipcannon": {
+      "120mm_he_shells_x32": "magazine_ShipCannon_120mm_HE_shells_x32",
+      "120mm_smoke_shells_x6": "magazine_ShipCannon_120mm_smoke_shells_x6",
+      "120mm_he_guided_shells_x2": "magazine_ShipCannon_120mm_HE_guided_shells_x2",
+      "120mm_he_lg_shells_x2": "magazine_ShipCannon_120mm_HE_LG_shells_x2",
+      "120mm_mine_shells_x6": "magazine_ShipCannon_120mm_mine_shells_x6",
+      "120mm_he_cluster_shells_x2": "magazine_ShipCannon_120mm_HE_cluster_shells_x2",
+      "120mm_at_mine_shells_x6": "magazine_ShipCannon_120mm_AT_mine_shells_x6",
+    },
+  },
+  "leaflets": {
+    "_1rnd": {
+      "west": "1Rnd_Leaflets_West_F",
+      "east": "1Rnd_Leaflets_East_F",
+      "guer": "1Rnd_Leaflets_Guer_F",
+      "civ": "1Rnd_Leaflets_Civ_F",
+      "custom_01": "1Rnd_Leaflets_Custom_01_F",
+      "custom_02": "1Rnd_Leaflets_Custom_02_F",
+      "custom_03": "1Rnd_Leaflets_Custom_03_F",
+      "custom_04": "1Rnd_Leaflets_Custom_04_F",
+      "custom_05": "1Rnd_Leaflets_Custom_05_F",
+      "custom_06": "1Rnd_Leaflets_Custom_06_F",
+      "custom_07": "1Rnd_Leaflets_Custom_07_F",
+      "custom_08": "1Rnd_Leaflets_Custom_08_F",
+      "custom_09": "1Rnd_Leaflets_Custom_09_F",
+      "custom_10": "1Rnd_Leaflets_Custom_10_F",
+    },
+  },
+  "bombcluster": {
+    "_4rnd": {
+      "01": "4Rnd_BombCluster_01_F",
+      "02": "4Rnd_BombCluster_02_F",
+      "03": "4Rnd_BombCluster_03_F",
+    },
+  },
+  "pylon": {
+    "_1rnd": {
+      "leaflets_west": "Pylon_1Rnd_Leaflets_West_F",
+      "leaflets_east": "Pylon_1Rnd_Leaflets_East_F",
+      "leaflets_guer": "Pylon_1Rnd_Leaflets_Guer_F",
+      "leaflets_civ": "Pylon_1Rnd_Leaflets_Civ_F",
+      "leaflets_custom_01": "Pylon_1Rnd_Leaflets_Custom_01_F",
+      "leaflets_custom_02": "Pylon_1Rnd_Leaflets_Custom_02_F",
+      "leaflets_custom_03": "Pylon_1Rnd_Leaflets_Custom_03_F",
+      "leaflets_custom_04": "Pylon_1Rnd_Leaflets_Custom_04_F",
+      "leaflets_custom_05": "Pylon_1Rnd_Leaflets_Custom_05_F",
+      "leaflets_custom_06": "Pylon_1Rnd_Leaflets_Custom_06_F",
+      "leaflets_custom_07": "Pylon_1Rnd_Leaflets_Custom_07_F",
+      "leaflets_custom_08": "Pylon_1Rnd_Leaflets_Custom_08_F",
+      "leaflets_custom_09": "Pylon_1Rnd_Leaflets_Custom_09_F",
+      "leaflets_custom_10": "Pylon_1Rnd_Leaflets_Custom_10_F",
+    },
+  },
+  "apersminedispenser": {
+    "mag": cfgNode("APERSMineDispenser_Mag", {}),
+  },
+  "trainingmine": {
+    "mag": cfgNode("TrainingMine_Mag", {}),
+  },
+  "vorona": {
+    "heat": cfgNode("Vorona_HEAT", {}),
+    "he": cfgNode("Vorona_HE", {}),
+  },
+  "spg9": {
+    "heat": cfgNode("SPG9_HEAT", {}),
+    "_12rnd": {
+      "heat": "12rnd_SPG9_HEAT",
+    },
+    "he": cfgNode("SPG9_HE", {}),
+    "_8rnd": {
+      "he": "8rnd_SPG9_HE",
+    },
+  },
+  "_70mm": {
+    "_4rnd": {
+      "saami_missiles": "4Rnd_70mm_SAAMI_missiles",
+    },
+  },
+  "_127mm": {
+    "_2rnd": {
+      "firefist_missiles": "2Rnd_127mm_Firefist_missiles",
+    },
+  },
+  "mraws": {
+    "heat": cfgNode("MRAWS_HEAT_F", {}),
+    "he": cfgNode("MRAWS_HE_F", {}),
+    "heat55": cfgNode("MRAWS_HEAT55_F", {}),
+  },
+  "mk14": {
+    "_10rnd": {
+      "762x51_mag": "10Rnd_Mk14_762x51_Mag",
+    },
+  },
+  "_12gauge": {
+    "_2rnd": {
+      "pellets": "2Rnd_12Gauge_Pellets",
+      "slug": "2Rnd_12Gauge_Slug",
+    },
+    "_6rnd": {
+      "pellets": "6Rnd_12Gauge_Pellets",
+      "slug": "6Rnd_12Gauge_Slug",
+    },
+    "_15rnd": {
+      "pellets": "15Rnd_12Gauge_Pellets",
+      "slug": "15Rnd_12Gauge_Slug",
+    },
+  },
+  "probingweapon": {
+    "_01": {
+      "magazine": "ProbingWeapon_01_magazine",
+    },
+    "_02": {
+      "magazine": "ProbingWeapon_02_magazine",
+    },
+  },
+  "dummy": {
+    "magazine": cfgNode("Dummy_Magazine_Base", {}),
+  },
+  "esd": {
+    "_01": {
+      "dummymagazine_base": "ESD_01_DummyMagazine_base",
+      "dummymagazine_1": "ESD_01_DummyMagazine_1",
+      "dummymagazine_2": "ESD_01_DummyMagazine_2",
+      "dummymagazine_3": "ESD_01_DummyMagazine_3",
+      "dummymagazine_4": "ESD_01_DummyMagazine_4",
+      "dummymagazine_5": "ESD_01_DummyMagazine_5",
+      "dummymagazine_6": "ESD_01_DummyMagazine_6",
+      "dummymagazine_7": "ESD_01_DummyMagazine_7",
+      "dummymagazine_8": "ESD_01_DummyMagazine_8",
+      "dummymagazine_9": "ESD_01_DummyMagazine_9",
+      "dummymagazine_10": "ESD_01_DummyMagazine_10",
+      "dummymagazine_11": "ESD_01_DummyMagazine_11",
+      "dummymagazine_12": "ESD_01_DummyMagazine_12",
+      "dummymagazine_13": "ESD_01_DummyMagazine_13",
+      "dummymagazine_14": "ESD_01_DummyMagazine_14",
+      "dummymagazine_15": "ESD_01_DummyMagazine_15",
+      "dummymagazine_16": "ESD_01_DummyMagazine_16",
+      "dummymagazine_17": "ESD_01_DummyMagazine_17",
+      "dummymagazine_18": "ESD_01_DummyMagazine_18",
+      "dummymagazine_19": "ESD_01_DummyMagazine_19",
+      "dummymagazine_20": "ESD_01_DummyMagazine_20",
+    },
+  },
+  "om": {
+    "magazine": cfgNode("OM_Magazine", {}),
+  },
+  "files": {
+    "diary": cfgNode("Files_diary", {}),
+    "researchnotes": cfgNode("Files_researchNotes", {}),
+  },
+  "wallet": {
+    "id": cfgNode("Wallet_ID", {}),
+  },
+  "csat": {
+    "id": {
+      "01": "Csat_Id_01",
+      "02": "Csat_Id_02",
+      "03": "Csat_Id_03",
+      "04": "Csat_Id_04",
+      "05": "Csat_Id_05",
+    },
+  },
+  "laptop": {
+    "unfolded": cfgNode("Laptop_Unfolded", {}),
+    "closed": cfgNode("Laptop_Closed", {}),
+  },
+  "money": {
+    "bunch": cfgNode("Money_bunch", {}),
+    "roll": cfgNode("Money_roll", {}),
+    "stack": cfgNode("Money_stack", {
+      "quest": "Money_stack_quest",
+    }),
+  },
+  "sleeping": {
+    "bag": {
+      "folded_01": "Sleeping_bag_folded_01",
+    },
+  },
+  "drone": {
+    "range": {
+      "mag": "Drone_Range_Mag",
+      "mag_dummy": "Drone_Range_Mag_dummy",
+    },
+  },
+  "_75mm": {
+    "_60rnd": {
+      "railgun_apfsds_mag": "60Rnd_75mm_RailGun_APFSDS_mag",
+    },
+  },
+  "railgun": {
+    "_01": {
+      "dummymagazine": "RailGun_01_DummyMagazine",
+    },
+  },
+} as const;
+
+export const magazines = {
+  cfgMagazines,
+} as const;

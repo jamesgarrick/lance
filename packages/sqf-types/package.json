@@ -1,0 +1,17 @@
+{
+  "name": "lance-sqf-types",
+  "module": "index.ts",
+  "types": "./src/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "typecheck": "bunx tsc --noEmit -p tsconfig.json",
+    "generate:cfg-weapons": "node scripts/generate-cfg-tree.mjs cfgWeapons.json src/cfg-weapons.ts cfgWeapons weapons",
+    "generate:cfg-weapons-items": "node scripts/generate-cfg-tree.mjs cfgWeaponsItems.json src/cfg-weapons-items.ts cfgWeaponsItems weaponsItems",
+    "generate:cfg-magazines": "node scripts/generate-cfg-tree.mjs cfgMagazines.json src/cfg-magazines.ts cfgMagazines magazines",
+    "generate:cfg": "bun run generate:cfg-weapons && bun run generate:cfg-weapons-items && bun run generate:cfg-magazines"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,18 +1,16 @@
 {
-  "name": "lance",
-  "module": "index.ts",
-  "type": "module",
+  "name": "lance-monorepo",
   "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "compile": "bun run src/cli.ts compile"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^6.0.3"
-  },
-  "dependencies": {
-    "ts-morph": "^28.0.0"
+    "compile": "bun run --cwd packages/transpiler compile",
+    "typecheck": "bun run transpiler:typecheck && bun run sqf-types:typecheck",
+    "transpiler:compile": "bun run --cwd packages/transpiler compile",
+    "transpiler:typecheck": "bun run --cwd packages/transpiler typecheck",
+    "sqf-types:typecheck": "bun run --cwd packages/sqf-types typecheck",
+    "sqf-types:generate": "bun run --cwd packages/sqf-types generate:cfg"
   }
 }
