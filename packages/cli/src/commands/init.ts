@@ -1,6 +1,9 @@
 import { confirm, input, number, select } from "@inquirer/prompts";
 import { Command } from "@oclif/core";
-import { basename, join, resolve } from "node:path";
+import { basename, join, resolve, dirname } from "node:path";
+import { execSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
+
 
 export default class Init extends Command {
   static override id = "init";
@@ -115,6 +118,16 @@ outDir = "${outDir}"
       this.log(`  Created ${entrypoint}`);
     }
 
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = dirname(__filename);
+
+    const sqfTypesPath = resolve(__dirname, "../../../sqf-types");
+
+    execSync(`bun add lance-sqf-types@file:${sqfTypesPath}`, {
+      cwd,
+      stdio: "inherit",
+    });
+
     this.log(`\nDone! Run \`lance compile\` to build your project.`);
   }
 }
@@ -130,7 +143,7 @@ async function writeProjectTsConfig(cwd: string): Promise<void> {
   const tsconfig = {
     compilerOptions: {
       lib: ["ESNext"],
-      types: ["bun", "lance-sqf-types"],
+      types: ["bun"],
       target: "ESNext",
       module: "Preserve",
       moduleDetection: "force",
