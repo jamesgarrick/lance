@@ -31,6 +31,7 @@ import type {
 import { sqfMethodCommandRegistry } from "../semantic/command-registry";
 import type { CfgRootName, SemanticContext } from "../semantic/context";
 import { resolveCfgReference } from "../semantic/context";
+import { lowerBinaryOperator } from "./lower-operators";
 
 // ─── public API ──────────────────────────────────────────────────────────────
 
@@ -212,7 +213,7 @@ function lowerStatement(
     const expr = statement.getExpression();
     if (Node.isAwaitExpression(expr)) {
       diagnostics.add({
-        code: "AWAIT_OUTSIDE_ASYNC",
+        code: "LANCE_AWAIT_OUTSIDE_ASYNC",
         severity: "warning",
         phase: "lowering",
         message: "await expression outside async function — skipped",
@@ -286,7 +287,7 @@ function lowerStatement(
   }
 
   diagnostics.add({
-    code: "UNSUPPORTED_STATEMENT",
+    code: "LANCE_UNSUPPORTED_STATEMENT",
     severity: "warning",
     phase: "lowering",
     message: `Unsupported statement kind: ${statement.getKindName()}`,
@@ -401,16 +402,17 @@ function lowerExpression(
   }
 
   if (Node.isBinaryExpression(expression)) {
+    const operator = lowerBinaryOperator(expression.getOperatorToken().getText(), expression, diagnostics);
     return {
       kind: "BinaryExpression",
-      operator: expression.getOperatorToken().getText(),
+      operator,
       left: lowerExpression(expression.getLeft(), diagnostics, bindings, semanticContext, scope),
       right: lowerExpression(expression.getRight(), diagnostics, bindings, semanticContext, scope),
     };
   }
 
   diagnostics.add({
-    code: "UNSUPPORTED_EXPRESSION",
+    code: "LANCE_UNSUPPORTED_EXPRESSION",
     severity: "warning",
     phase: "lowering",
     message: `Unsupported expression kind: ${expression.getKindName()}`,
@@ -523,7 +525,7 @@ function tryLowerCfgLiteral(
   const resolved = resolveImportedCfgReference(path, bindings, semanticContext);
   if (!resolved) {
     diagnostics.add({
-      code: "UNRESOLVED_CFG_REFERENCE",
+      code: "LANCE_UNRESOLVED_CFG_REFERENCE",
       severity: "error",
       phase: "lowering",
       message: `Could not resolve cfg reference: ${path.join(".")}`,

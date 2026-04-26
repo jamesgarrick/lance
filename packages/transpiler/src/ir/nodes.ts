@@ -23,8 +23,10 @@ export type SqfStatement =
   | SqfRawTsStatement
   | SqfVariableStatement
   | SqfExpressionStatement
+  | SqfTrailingExpressionStatement
   | SqfReturnStatement
   | SqfIfStatement
+  | SqfIfExitWithStatement
   | SqfWhileStatement;
 
 export interface SqfRawTsStatement {
@@ -43,9 +45,37 @@ export interface SqfExpressionStatement {
   readonly expression: SqfExpression;
 }
 
+/**
+ * `return X` outside of an `if` body — at top level of a function block. After
+ * normalization, the trailing return becomes a {@link SqfTrailingExpressionStatement}
+ * (no `return` keyword) and intermediate returns become {@link SqfIfExitWithStatement}.
+ *
+ * If a `SqfReturnStatement` survives normalization, it indicates a return in a
+ * position Lance can't yet lower (see docs/spec/control-flow.md §3.7.3).
+ */
 export interface SqfReturnStatement {
   readonly kind: "ReturnStatement";
   readonly expression?: SqfExpression;
+}
+
+/**
+ * Bare expression at the end of a function body, emitted without a trailing
+ * semicolon so SQF treats it as the block's return value. See spec §2.7 / §3.7.1.
+ */
+export interface SqfTrailingExpressionStatement {
+  readonly kind: "TrailingExpressionStatement";
+  readonly expression: SqfExpression;
+}
+
+/**
+ * `if (cond) exitWith { value };` — the SQF idiom for an early return guarded by
+ * a condition. Produced by normalization from `if (cond) return X;`.
+ * See spec §3.7.2.
+ */
+export interface SqfIfExitWithStatement {
+  readonly kind: "IfExitWithStatement";
+  readonly condition: SqfExpression;
+  readonly value?: SqfExpression;
 }
 
 export interface SqfIfStatement {

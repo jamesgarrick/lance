@@ -8,10 +8,12 @@ import type {
   SqfCommandExpression,
   SqfExpression,
   SqfFunctionFile,
+  SqfIfExitWithStatement,
   SqfIfStatement,
   SqfProgram,
   SqfReturnStatement,
   SqfStatement,
+  SqfTrailingExpressionStatement,
   SqfVariableStatement,
   SqfWhileStatement,
 } from "../ir/nodes";
@@ -66,10 +68,14 @@ function emitSqfStatement(statement: SqfStatement): string {
       return emitVariableStatement(statement);
     case "ExpressionStatement":
       return `${emitSqfExpression(statement.expression)};`;
+    case "TrailingExpressionStatement":
+      return emitTrailingExpressionStatement(statement);
     case "ReturnStatement":
       return emitReturnStatement(statement);
     case "IfStatement":
       return emitIfStatement(statement);
+    case "IfExitWithStatement":
+      return emitIfExitWithStatement(statement);
     case "WhileStatement":
       return emitWhileStatement(statement);
   }
@@ -81,7 +87,21 @@ function emitVariableStatement(statement: SqfVariableStatement): string {
 }
 
 function emitReturnStatement(statement: SqfReturnStatement): string {
-  return statement.expression ? `return ${emitSqfExpression(statement.expression)};` : "return;";
+  // Reaching emit means normalization couldn't simplify it (a diagnostic was already raised).
+  // Emit as a comment so the SQF still parses; the diagnostic surfaces the real problem.
+  const text = statement.expression ? emitSqfExpression(statement.expression) : "";
+  return `/* unsupported: return ${text} */`;
+}
+
+function emitTrailingExpressionStatement(statement: SqfTrailingExpressionStatement): string {
+  // No trailing semicolon: SQF blocks return their last expression, and the
+  // idiomatic form omits the `;` to make that explicit.
+  return emitSqfExpression(statement.expression);
+}
+
+function emitIfExitWithStatement(statement: SqfIfExitWithStatement): string {
+  const body = statement.value ? ` ${emitSqfExpression(statement.value)} ` : "";
+  return `if (${emitSqfExpression(statement.condition)}) exitWith {${body}};`;
 }
 
 function emitIfStatement(statement: SqfIfStatement): string {

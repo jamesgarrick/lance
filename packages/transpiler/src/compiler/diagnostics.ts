@@ -1,4 +1,13 @@
+import type { DiagnosticCode } from "./diagnostic-codes";
+
 export type DiagnosticSeverity = "error" | "warning" | "info";
+
+export type CompilerPhase =
+  | "load"
+  | "semantic"
+  | "lowering"
+  | "normalize"
+  | "emit";
 
 export interface SourceSpan {
   readonly filePath: string;
@@ -7,11 +16,11 @@ export interface SourceSpan {
 }
 
 export interface CompilerDiagnostic {
-  readonly code: string;
+  readonly code: DiagnosticCode;
   readonly severity: DiagnosticSeverity;
   readonly message: string;
   readonly span?: SourceSpan;
-  readonly phase?: string;
+  readonly phase?: CompilerPhase;
   readonly hint?: string;
 }
 

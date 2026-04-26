@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "compile": "bun run src/cli.ts compile",
-    "typecheck": "bunx tsc --noEmit -p tsconfig.json"
+    "typecheck": "bunx tsc --noEmit -p tsconfig.json",
+    "test": "bun test"
   },
   "devDependencies": {
     "@types/bun": "latest",
