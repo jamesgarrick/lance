@@ -80,8 +80,13 @@ function emitWhileStatement(statement: SqfWhileStatement): string {
 }
 
 function emitFunctionDeclaration(statement: SqfFunctionDeclaration): string {
+  const paramsLine =
+    statement.parameters.length > 0
+      ? `  params [${statement.parameters.map((parameter) => JSON.stringify(`_${parameter}`)).join(", ")}];`
+      : undefined;
   return [
     `${statement.name} = {`,
+    ...(paramsLine ? [paramsLine] : []),
     ...statement.body.map((child) => `  ${emitSqfStatement(child)}`),
     "};",
   ].join("\n");
@@ -107,8 +112,18 @@ function emitSqfExpression(expression: SqfExpression): string {
 }
 
 function emitCallExpression(expression: SqfCallExpression): string {
+  const callee = emitSqfExpression(expression.callee);
+
+  if (expression.args.length === 0) {
+    return `[] call ${callee}`;
+  }
+
+  if (expression.args.length === 1) {
+    return `${emitSqfExpression(expression.args[0]!)} call ${callee}`;
+  }
+
   const args = expression.args.map(emitSqfExpression).join(", ");
-  return `${emitSqfExpression(expression.callee)}(${args})`;
+  return `[${args}] call ${callee}`;
 }
 
 function emitCommandExpression(expression: SqfCommandExpression): string {

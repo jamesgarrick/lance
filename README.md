@@ -45,3 +45,13 @@ Optional output file:
 ```bash
 bun run compile tests/fixtures/basic-unit-script/input.ts out.sqf
 ```
+
+## Reference SQF
+
+Short reference SQF scripts for round-trip targeting live in:
+
+- `tests/reference-sqf/01_add_weapon.sqf`
+- `tests/reference-sqf/02_loadout_setup.sqf`
+- `tests/reference-sqf/03_simple_function_call.sqf`
+- `tests/reference-sqf/04_function_with_param.sqf`
+- `tests/reference-sqf/05_function_with_two_params.sqf`

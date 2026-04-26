@@ -79,7 +79,7 @@ Key questions:
 - Does `lance` compile one file to one SQF file, or one TS module graph to one
   SQF bundle?
 - How are relative imports lowered in SQF, if at all?
-- Do we require a single entrypoint function like `main()`?
+- How much top-level executable TS should map directly to top-level SQF?
 
 Deliverable:
 - `compileProject(...)` and `compileFile(...)` entry APIs.

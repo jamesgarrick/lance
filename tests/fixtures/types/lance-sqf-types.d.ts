@@ -1,18 +1,18 @@
 declare module "lance-sqf-types" {
   export const cfgWeapons: {
     readonly arifle: {
-      readonly ak12: unknown;
+      readonly ak12: string;
     };
   };
   export const cfgWeaponsItems: {
     readonly optic: {
-      readonly arco: unknown;
+      readonly arco: string;
     };
   };
   export const cfgMagazines: {
     readonly _762x39: {
       readonly _30rnd: {
-        readonly ak12_mag: unknown;
+        readonly ak12_mag: string;
       };
     };
   };

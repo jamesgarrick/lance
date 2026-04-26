@@ -34,6 +34,10 @@ interface SourceFileSemanticBindings {
   readonly importedLocalNames: Readonly<Record<string, string | undefined>>;
 }
 
+interface LoweringScope {
+  readonly localNames: Set<string>;
+}
+
 export function lowerSourceFile(
   sourceFile: SourceFile,
   diagnostics: DiagnosticBag,
@@ -41,6 +45,7 @@ export function lowerSourceFile(
   semanticContext: SemanticContext,
 ): SqfSourceFile {
   const bindings = collectSemanticBindings(sourceFile);
+  const scope = createScope();
 
   return {
     kind: "SourceFile",
@@ -49,7 +54,7 @@ export function lowerSourceFile(
       .getStatements()
       .filter((statement) => !Node.isImportDeclaration(statement))
       .map((statement) =>
-        lowerStatement(statement, diagnostics, bindings, semanticContext),
+        lowerStatement(statement, diagnostics, bindings, semanticContext, scope),
       ),
   };
 }
@@ -59,18 +64,21 @@ function lowerStatement(
   diagnostics: DiagnosticBag,
   bindings: SourceFileSemanticBindings,
   semanticContext: SemanticContext,
+  scope: LoweringScope,
 ): SqfStatement {
   if (Node.isVariableStatement(statement)) {
     const declaration = statement.getDeclarations()[0];
+    const name = declaration?.getName() ?? "unknown";
     return {
       kind: "VariableStatement",
-      name: declaration?.getName() ?? "unknown",
+      name,
       initializer: declaration?.getInitializer()
         ? lowerExpression(
             declaration.getInitializerOrThrow(),
             diagnostics,
             bindings,
             semanticContext,
+            addLocalName(scope, name),
           )
         : undefined,
     } satisfies SqfVariableStatement;
@@ -84,6 +92,7 @@ function lowerStatement(
         diagnostics,
         bindings,
         semanticContext,
+        scope,
       ),
     } satisfies SqfExpressionStatement;
   }
@@ -97,6 +106,7 @@ function lowerStatement(
             diagnostics,
             bindings,
             semanticContext,
+            scope,
           )
         : undefined,
     } satisfies SqfReturnStatement;
@@ -111,15 +121,17 @@ function lowerStatement(
         diagnostics,
         bindings,
         semanticContext,
+        scope,
       ),
       thenStatements: lowerStatementBlock(
         statement.getThenStatement(),
         diagnostics,
         bindings,
         semanticContext,
+        scope,
       ),
       elseStatements: elseStatement
-        ? lowerStatementBlock(elseStatement, diagnostics, bindings, semanticContext)
+        ? lowerStatementBlock(elseStatement, diagnostics, bindings, semanticContext, scope)
         : [],
     } satisfies SqfIfStatement;
   }
@@ -132,26 +144,36 @@ function lowerStatement(
         diagnostics,
         bindings,
         semanticContext,
+        scope,
       ),
       body: lowerStatementBlock(
         statement.getStatement(),
         diagnostics,
         bindings,
         semanticContext,
+        scope,
       ),
     } satisfies SqfWhileStatement;
   }
 
   if (Node.isFunctionDeclaration(statement)) {
     const body = statement.getBody();
+    const parameters = statement.getParameters().map((parameter) => parameter.getName());
+    const functionScope = addLocalNames(createScope(), parameters);
     return {
       kind: "FunctionDeclaration",
       name: statement.getName() ?? "anonymous",
-      parameters: statement.getParameters().map((parameter) => parameter.getName()),
+      parameters,
       body:
         body && Node.isBlock(body)
           ? body.getStatements().map((innerStatement) =>
-              lowerStatement(innerStatement, diagnostics, bindings, semanticContext),
+              lowerStatement(
+                innerStatement,
+                diagnostics,
+                bindings,
+                semanticContext,
+                functionScope,
+              ),
             )
           : [],
     } satisfies SqfFunctionDeclaration;
@@ -179,14 +201,22 @@ function lowerStatementBlock(
   diagnostics: DiagnosticBag,
   bindings: SourceFileSemanticBindings,
   semanticContext: SemanticContext,
+  parentScope: LoweringScope,
 ): readonly SqfStatement[] {
+  const blockScope = cloneScope(parentScope);
   if (Node.isBlock(statement)) {
     return statement.getStatements().map((innerStatement) =>
-      lowerStatement(innerStatement, diagnostics, bindings, semanticContext),
+      lowerStatement(
+        innerStatement,
+        diagnostics,
+        bindings,
+        semanticContext,
+        blockScope,
+      ),
     );
   }
 
-  return [lowerStatement(statement, diagnostics, bindings, semanticContext)];
+  return [lowerStatement(statement, diagnostics, bindings, semanticContext, blockScope)];
 }
 
 function lowerExpression(
@@ -194,12 +224,14 @@ function lowerExpression(
   diagnostics: DiagnosticBag,
   bindings: SourceFileSemanticBindings,
   semanticContext: SemanticContext,
+  scope: LoweringScope,
 ): SqfExpression {
   const commandExpression = tryLowerSpecialCommandExpression(
     expression,
     diagnostics,
     bindings,
     semanticContext,
+    scope,
   );
   if (commandExpression) {
     return commandExpression;
@@ -213,7 +245,7 @@ function lowerExpression(
   if (Node.isIdentifier(expression)) {
     return {
       kind: "Identifier",
-      text: expression.getText(),
+      text: resolveIdentifierText(expression.getText(), scope),
     } satisfies SqfIdentifier;
   }
 
@@ -237,12 +269,13 @@ function lowerExpression(
         diagnostics,
         bindings,
         semanticContext,
+        scope,
       ),
       args: expression
         .getArguments()
         .filter(Node.isExpression)
         .map((argument) =>
-          lowerExpression(argument, diagnostics, bindings, semanticContext),
+          lowerExpression(argument, diagnostics, bindings, semanticContext, scope),
         ),
     } satisfies SqfCallExpression;
   }
@@ -255,6 +288,7 @@ function lowerExpression(
         diagnostics,
         bindings,
         semanticContext,
+        scope,
       ),
       property: expression.getName(),
     } satisfies SqfPropertyAccessExpression;
@@ -266,7 +300,7 @@ function lowerExpression(
       elements: expression
         .getElements()
         .map((element) =>
-          lowerArrayElement(element, diagnostics, bindings, semanticContext),
+          lowerArrayElement(element, diagnostics, bindings, semanticContext, scope),
         ),
     } satisfies SqfArrayExpression;
   }
@@ -280,12 +314,14 @@ function lowerExpression(
         diagnostics,
         bindings,
         semanticContext,
+        scope,
       ),
       right: lowerExpression(
         expression.getRight(),
         diagnostics,
         bindings,
         semanticContext,
+        scope,
       ),
     } satisfies SqfBinaryExpression;
   }
@@ -312,9 +348,10 @@ function lowerArrayElement(
   diagnostics: DiagnosticBag,
   bindings: SourceFileSemanticBindings,
   semanticContext: SemanticContext,
+  scope: LoweringScope,
 ): SqfExpression {
   if (Node.isExpression(element)) {
-    return lowerExpression(element, diagnostics, bindings, semanticContext);
+    return lowerExpression(element, diagnostics, bindings, semanticContext, scope);
   }
 
   return {
@@ -354,6 +391,7 @@ function tryLowerSpecialCommandExpression(
   diagnostics: DiagnosticBag,
   bindings: SourceFileSemanticBindings,
   semanticContext: SemanticContext,
+  scope: LoweringScope,
 ): SqfCommandExpression | undefined {
   if (!Node.isCallExpression(expression)) {
     return undefined;
@@ -387,7 +425,7 @@ function tryLowerSpecialCommandExpression(
     .getArguments()
     .filter(Node.isExpression)
     .map((argument) =>
-      lowerExpression(argument, diagnostics, bindings, semanticContext),
+      lowerExpression(argument, diagnostics, bindings, semanticContext, scope),
     );
 
   return {
@@ -460,4 +498,32 @@ function resolveImportedCfgReference(
 
 function isCfgRootName(value: string): value is CfgRootName {
   return value === "cfgWeapons" || value === "cfgWeaponsItems" || value === "cfgMagazines";
+}
+
+function createScope(): LoweringScope {
+  return {
+    localNames: new Set<string>(),
+  };
+}
+
+function cloneScope(scope: LoweringScope): LoweringScope {
+  return {
+    localNames: new Set(scope.localNames),
+  };
+}
+
+function addLocalName(scope: LoweringScope, name: string): LoweringScope {
+  scope.localNames.add(name);
+  return scope;
+}
+
+function addLocalNames(scope: LoweringScope, names: readonly string[]): LoweringScope {
+  for (const name of names) {
+    scope.localNames.add(name);
+  }
+  return scope;
+}
+
+function resolveIdentifierText(name: string, scope: LoweringScope): string {
+  return scope.localNames.has(name) ? `_${name}` : name;
 }
