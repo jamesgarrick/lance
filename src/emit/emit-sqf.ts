@@ -3,6 +3,7 @@ import type {
   SqfArrayExpression,
   SqfBinaryExpression,
   SqfCallExpression,
+  SqfCommandExpression,
   SqfExpression,
   SqfFunctionDeclaration,
   SqfIfStatement,
@@ -79,10 +80,8 @@ function emitWhileStatement(statement: SqfWhileStatement): string {
 }
 
 function emitFunctionDeclaration(statement: SqfFunctionDeclaration): string {
-  const params = statement.parameters.join(", ");
   return [
     `${statement.name} = {`,
-    `  /* params: ${params} */`,
     ...statement.body.map((child) => `  ${emitSqfStatement(child)}`),
     "};",
   ].join("\n");
@@ -96,6 +95,8 @@ function emitSqfExpression(expression: SqfExpression): string {
       return expression.text;
     case "CallExpression":
       return emitCallExpression(expression);
+    case "CommandExpression":
+      return emitCommandExpression(expression);
     case "PropertyAccessExpression":
       return emitPropertyAccessExpression(expression);
     case "ArrayExpression":
@@ -108,6 +109,18 @@ function emitSqfExpression(expression: SqfExpression): string {
 function emitCallExpression(expression: SqfCallExpression): string {
   const args = expression.args.map(emitSqfExpression).join(", ");
   return `${emitSqfExpression(expression.callee)}(${args})`;
+}
+
+function emitCommandExpression(expression: SqfCommandExpression): string {
+  if (expression.args.length === 0) {
+    return `${emitSqfExpression(expression.receiver)} ${expression.command}`;
+  }
+
+  if (expression.args.length === 1) {
+    return `${emitSqfExpression(expression.receiver)} ${expression.command} ${emitSqfExpression(expression.args[0]!)}`;
+  }
+
+  return `${emitSqfExpression(expression.receiver)} ${expression.command} [${expression.args.map(emitSqfExpression).join(", ")}]`;
 }
 
 function emitPropertyAccessExpression(expression: SqfPropertyAccessExpression): string {

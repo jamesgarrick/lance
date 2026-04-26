@@ -3,6 +3,7 @@ import { emitSqfProgram } from "../emit/emit-sqf";
 import type { SqfProgram } from "../ir/nodes";
 import { lowerSourceFile } from "../lowering/lower-source-file";
 import { normalizeSqfProgram } from "../normalize/normalize-program";
+import { createSemanticContext } from "../semantic/context";
 import { DiagnosticBag, type CompilerDiagnostic } from "./diagnostics";
 import {
   defaultCompilerOptions,
@@ -21,8 +22,17 @@ export async function compileProject(
 ): Promise<CompileResult> {
   const diagnostics = new DiagnosticBag();
   const compilerProject = loadCompilerProject(options);
+  const semanticContext = await createSemanticContext({
+    ...defaultCompilerOptions,
+    ...options,
+  });
 
-  const irProgram = lowerProjectToIr(compilerProject.project, options, diagnostics);
+  const irProgram = lowerProjectToIr(
+    compilerProject.project,
+    options,
+    diagnostics,
+    semanticContext,
+  );
   const normalizedProgram = normalizeSqfProgram(irProgram, diagnostics);
   const sqf = emitSqfProgram(normalizedProgram, diagnostics);
 
@@ -45,6 +55,7 @@ function lowerProjectToIr(
   project: Project,
   options: CompilerOptions,
   diagnostics: DiagnosticBag,
+  semanticContext: Awaited<ReturnType<typeof createSemanticContext>>,
 ): SqfProgram {
   const sourceFiles = options.entryFilePaths.map((entryFilePath) =>
     project.getSourceFileOrThrow(entryFilePath),
@@ -54,7 +65,7 @@ function lowerProjectToIr(
     kind: "Program",
     entryFilePaths: [...options.entryFilePaths],
     sourceFiles: sourceFiles.map((sourceFile) =>
-      lowerSourceFile(sourceFile, diagnostics, options),
+      lowerSourceFile(sourceFile, diagnostics, options, semanticContext),
     ),
   };
 }

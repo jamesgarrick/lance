@@ -64,6 +64,7 @@ export type SqfExpression =
   | SqfIdentifier
   | SqfLiteral
   | SqfCallExpression
+  | SqfCommandExpression
   | SqfPropertyAccessExpression
   | SqfArrayExpression
   | SqfBinaryExpression;
@@ -81,6 +82,13 @@ export interface SqfLiteral {
 export interface SqfCallExpression {
   readonly kind: "CallExpression";
   readonly callee: SqfExpression;
+  readonly args: readonly SqfExpression[];
+}
+
+export interface SqfCommandExpression {
+  readonly kind: "CommandExpression";
+  readonly receiver: SqfExpression;
+  readonly command: string;
   readonly args: readonly SqfExpression[];
 }
 
