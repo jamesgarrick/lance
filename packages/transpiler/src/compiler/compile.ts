@@ -1,4 +1,6 @@
 import type { Project } from "ts-morph";
+import { emitDescriptionExt } from "../config/emit-description-ext";
+import type { LanceConfig } from "../config/schema";
 import { emitSqfProgram } from "../emit/emit-sqf";
 import type { SqfProgram } from "../ir/nodes";
 import { lowerSourceFile } from "../lowering/lower-source-file";
@@ -49,6 +51,28 @@ export async function compileFile(entryFilePath: string): Promise<CompileResult>
     tsConfigFilePath: "tsconfig.json",
     ...defaultCompilerOptions,
   });
+}
+
+export interface CompileFromConfigResult extends CompileResult {
+  readonly descriptionExt: string;
+}
+
+export async function compileFromConfig(
+  config: LanceConfig,
+): Promise<CompileFromConfigResult> {
+  const { build, mission } = config;
+
+  const options: CompilerOptions = {
+    entryFilePaths: [build.entrypoint],
+    tsConfigFilePath: build.tsConfig ?? "tsconfig.json",
+    typesPackageName: build.typesPackage ?? defaultCompilerOptions.typesPackageName,
+    typesPackageRoot: build.typesPackageRoot ?? defaultCompilerOptions.typesPackageRoot,
+  };
+
+  const result = await compileProject(options);
+  const descriptionExt = emitDescriptionExt(mission);
+
+  return { ...result, descriptionExt };
 }
 
 function lowerProjectToIr(
