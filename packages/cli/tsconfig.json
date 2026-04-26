@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@lance/transpiler": ["../transpiler/index.ts"]
+    }
+  },
+  "include": ["bin/**/*.ts", "src/**/*.ts"]
+}

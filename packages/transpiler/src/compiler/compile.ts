@@ -54,7 +54,7 @@ export async function compileFile(entryFilePath: string): Promise<CompileResult>
 }
 
 export interface CompileFromConfigResult extends CompileResult {
-  readonly descriptionExt: string;
+  readonly descriptionExt: string | null;
 }
 
 export async function compileFromConfig(
@@ -70,7 +70,7 @@ export async function compileFromConfig(
   };
 
   const result = await compileProject(options);
-  const descriptionExt = emitDescriptionExt(mission);
+  const descriptionExt = config.mission ? emitDescriptionExt(config.mission) : null;
 
   return { ...result, descriptionExt };
 }

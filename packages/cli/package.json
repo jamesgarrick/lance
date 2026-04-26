@@ -1,5 +1,21 @@
 {
   "name": "lance",
+  "version": "0.1.0",
   "type": "module",
-  "private": true
+  "private": true,
+  "bin": {
+    "lance": "./bin/lance.ts"
+  },
+  "scripts": {
+    "typecheck": "bunx tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7",
+    "@lance/transpiler": "workspace:*",
+    "@oclif/core": "^4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^6.0.3"
+  }
 }

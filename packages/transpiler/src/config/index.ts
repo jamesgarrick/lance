@@ -9,6 +9,8 @@ export type {
   MissionConfig,
   MissionParam,
   MusicEntry,
+  ProjectConfig,
+  ProjectType,
   RadioEntry,
   RespawnType,
   SoundEntry,

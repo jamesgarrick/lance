@@ -130,6 +130,14 @@ export interface MissionConfig {
   function?: FunctionEntry[];
 }
 
+export type ProjectType = "mission" | "library";
+
+export interface ProjectConfig {
+  name: string;
+  type: ProjectType;
+  version?: string;
+}
+
 export interface BuildConfig {
   entrypoint: string;
   outDir?: string;
@@ -139,6 +147,8 @@ export interface BuildConfig {
 }
 
 export interface LanceConfig {
-  mission: MissionConfig;
+  project: ProjectConfig;
+  /** Only present for mission-type projects */
+  mission?: MissionConfig;
   build: BuildConfig;
 }

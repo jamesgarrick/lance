@@ -16,8 +16,18 @@ export async function loadLanceConfig(projectRoot: string): Promise<LanceConfig>
   const text = await file.text();
   const raw = Bun.TOML.parse(text) as Record<string, unknown>;
 
-  assertSection(raw, "mission", configPath);
+  assertSection(raw, "project", configPath);
   assertSection(raw, "build", configPath);
+
+  const project = raw.project as Record<string, unknown>;
+  if (typeof project.name !== "string") {
+    throw new Error(`Invalid config at ${configPath}: [project].name is required`);
+  }
+  if (project.type !== "mission" && project.type !== "library") {
+    throw new Error(
+      `Invalid config at ${configPath}: [project].type must be "mission" or "library"`,
+    );
+  }
 
   const build = raw.build as Record<string, unknown>;
   if (typeof build.entrypoint !== "string") {
