@@ -36,7 +36,7 @@ export declare function waitUntil<TResult>(
   timeout: number,
 ): TResult | undefined;
 
-export declare function sleep(delay: number): void;
+export declare function sleep(delay: number): Promise<void>;
 export declare function compile<TReturn = unknown, TArg = unknown>(
   source: SqfString,
 ): SqfCode<TReturn, readonly [TArg]>;

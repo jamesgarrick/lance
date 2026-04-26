@@ -1,13 +1,22 @@
 export interface SqfProgram {
   readonly kind: "Program";
-  readonly entryFilePaths: readonly string[];
-  readonly sourceFiles: readonly SqfSourceFile[];
+  /** Absolute path of the entry TypeScript file. */
+  readonly entryFilePath: string;
+  /** Top-level non-function statements from the entry file → emitted into the entry .sqf */
+  readonly entryStatements: readonly SqfStatement[];
+  /** Every function declaration from all reachable files → each gets its own .sqf */
+  readonly functionFiles: readonly SqfFunctionFile[];
 }
 
-export interface SqfSourceFile {
-  readonly kind: "SourceFile";
-  readonly filePath: string;
-  readonly statements: readonly SqfStatement[];
+export interface SqfFunctionFile {
+  readonly kind: "FunctionFile";
+  readonly sqfName: string;       // e.g. "LNC_medical_fnc_healSquad"
+  readonly outputPath: string;    // e.g. "functions/medical/fn_healSquad.sqf"
+  readonly category: string | null;
+  readonly functionName: string;
+  readonly tag: string;
+  readonly parameters: readonly string[];
+  readonly body: readonly SqfStatement[];
 }
 
 export type SqfStatement =
@@ -16,8 +25,7 @@ export type SqfStatement =
   | SqfExpressionStatement
   | SqfReturnStatement
   | SqfIfStatement
-  | SqfWhileStatement
-  | SqfFunctionDeclaration;
+  | SqfWhileStatement;
 
 export interface SqfRawTsStatement {
   readonly kind: "RawTsStatement";
@@ -53,13 +61,6 @@ export interface SqfWhileStatement {
   readonly body: readonly SqfStatement[];
 }
 
-export interface SqfFunctionDeclaration {
-  readonly kind: "FunctionDeclaration";
-  readonly name: string;
-  readonly parameters: readonly string[];
-  readonly body: readonly SqfStatement[];
-}
-
 export type SqfExpression =
   | SqfIdentifier
   | SqfLiteral
@@ -67,7 +68,8 @@ export type SqfExpression =
   | SqfCommandExpression
   | SqfPropertyAccessExpression
   | SqfArrayExpression
-  | SqfBinaryExpression;
+  | SqfBinaryExpression
+  | SqfCodeBlock;
 
 export interface SqfIdentifier {
   readonly kind: "Identifier";
@@ -108,4 +110,10 @@ export interface SqfBinaryExpression {
   readonly operator: string;
   readonly left: SqfExpression;
   readonly right: SqfExpression;
+}
+
+/** An inline SQF code block: { stmt; stmt; }. Used for async CPS callbacks. */
+export interface SqfCodeBlock {
+  readonly kind: "CodeBlock";
+  readonly body: readonly SqfStatement[];
 }

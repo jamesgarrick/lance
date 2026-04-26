@@ -136,6 +136,8 @@ export interface ProjectConfig {
   name: string;
   type: ProjectType;
   version?: string;
+  /** SQF function name prefix. Default: "LNC" */
+  tag?: string;
 }
 
 export interface BuildConfig {
@@ -144,6 +146,8 @@ export interface BuildConfig {
   tsConfig?: string;
   typesPackage?: string;
   typesPackageRoot?: string;
+  /** Root directory for source files, used for SQF function naming. Default: "src" */
+  sourceRoot?: string;
 }
 
 export interface LanceConfig {

@@ -1,6 +1,7 @@
 import { compileFromConfig, loadLanceConfig } from "@lance/transpiler";
 import { Command, Flags } from "@oclif/core";
-import { basename, join, resolve } from "node:path";
+import { mkdir } from "node:fs/promises";
+import { dirname, join, resolve } from "node:path";
 
 export default class Compile extends Command {
   static override id = "compile";
@@ -31,7 +32,7 @@ export default class Compile extends Command {
     this.log(`Compiling ${config.project.name}...`);
 
     const startMs = Date.now();
-    const result = await compileFromConfig(config).catch((err: unknown) => {
+    const result = await compileFromConfig(config, projectRoot).catch((err: unknown) => {
       this.error(err instanceof Error ? err.message : String(err));
     });
 
@@ -46,23 +47,31 @@ export default class Compile extends Command {
       this.error("Compilation failed with errors");
     }
 
-    // Warn on non-error diagnostics
     for (const d of result.diagnostics.filter((d) => d.severity !== "error")) {
       const loc = d.span ? ` ${d.span.filePath}${d.span.line ? `:${d.span.line}` : ""}` : "";
       this.warn(`${d.code}${loc}: ${d.message}`);
     }
 
-    // Write compiled SQF
-    const entryName = basename(config.build.entrypoint, ".ts");
-    const sqfOutPath = join(outDir, `${entryName}.sqf`);
-    await Bun.write(sqfOutPath, result.sqf);
-    this.log(`  Wrote ${relative(projectRoot, sqfOutPath)}`);
+    // Write all SQF output files
+    for (const file of result.outputFiles) {
+      const dest = join(outDir, file.path);
+      await mkdir(dirname(dest), { recursive: true });
+      await Bun.write(dest, file.content);
+      this.log(`  Wrote ${displayPath(outDir, dest)}`);
+    }
 
-    // Write description.ext for missions
+    // Write description.ext
     if (result.descriptionExt !== null) {
-      const extOutPath = join(outDir, "description.ext");
-      await Bun.write(extOutPath, result.descriptionExt);
-      this.log(`  Wrote ${relative(projectRoot, extOutPath)}`);
+      const dest = join(outDir, "description.ext");
+      await Bun.write(dest, result.descriptionExt);
+      this.log(`  Wrote ${displayPath(outDir, dest)}`);
+    }
+
+    // Write CfgFunctions.hpp
+    if (result.cfgFunctionsHpp !== null) {
+      const dest = join(outDir, "CfgFunctions.hpp");
+      await Bun.write(dest, result.cfgFunctionsHpp);
+      this.log(`  Wrote ${displayPath(outDir, dest)}`);
     }
 
     const elapsed = ((Date.now() - startMs) / 1000).toFixed(2);
@@ -70,7 +79,6 @@ export default class Compile extends Command {
   }
 }
 
-function relative(from: string, to: string): string {
-  // Simple relative path for display — strip the project root prefix
-  return to.startsWith(from) ? to.slice(from.length + 1) : to;
+function displayPath(outDir: string, dest: string): string {
+  return dest.startsWith(outDir) ? dest.slice(outDir.length + 1) : dest;
 }

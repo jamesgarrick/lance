@@ -3,9 +3,14 @@ export interface CompilerOptions {
   readonly entryFilePaths: readonly string[];
   readonly typesPackageName?: string;
   readonly typesPackageRoot?: string;
+  /** Absolute path to the source root directory, for SQF function naming. */
+  readonly sourceRoot?: string;
+  /** SQF function name prefix tag. Default: "LNC" */
+  readonly tag?: string;
 }
 
 export const defaultCompilerOptions = {
   typesPackageName: "lance-sqf-types",
   typesPackageRoot: "../sqf-types",
-} satisfies Pick<CompilerOptions, "typesPackageName" | "typesPackageRoot">;
+  tag: "LNC",
+} satisfies Pick<CompilerOptions, "typesPackageName" | "typesPackageRoot" | "tag">;
