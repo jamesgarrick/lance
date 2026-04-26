@@ -155,9 +155,11 @@ export declare function isKindOf(
   target: SqfObject,
   typeName: SqfClassName,
 ): SqfBoolean;
-export declare function local(target: SqfObject): SqfBoolean;
+export declare function isKindOf(
+  className: SqfClassName,
+  lookup: readonly [baseClassName: SqfClassName, targetConfig: SqfConfig],
+): SqfBoolean;
 export declare function alive(target: SqfObject): SqfBoolean;
-export declare function isNull(target: SqfObject): SqfBoolean;
 
 export declare function setDamage(target: SqfObject, damage: DamageValue): SqfCommand;
 export declare function setDamage(target: SqfObject, options: SetDamageOptions): SqfCommand;

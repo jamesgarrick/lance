@@ -536,6 +536,6 @@ export const cfgWeapons = {
   },
 } as const;
 
-export const weapons = {
+export const weaponsList = {
   cfgWeapons,
 } as const;

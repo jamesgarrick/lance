@@ -87,7 +87,6 @@ export declare function allVariables(
   space: SqfVariableSpace,
 ): SqfArray<SqfVariableName>;
 
-export declare function publicVariable(name: SqfVariableName): void;
 export declare function publicVariableServer(name: SqfVariableName): void;
 export declare function saveProfileNamespace(): void;
 export declare function saveMissionProfileNamespace(): SqfBoolean;

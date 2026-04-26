@@ -18,6 +18,7 @@ export * from "./tasks";
 export * from "./simulation";
 export * from "./vehicle-crew";
 export * from "./values";
+export * from "./polymorphic";
 export * from "./cfg-runtime";
 export * from "./cfg-weapons";
 export * from "./cfg-weapons-items";

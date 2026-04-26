@@ -1298,6 +1298,6 @@ export const cfgMagazines = {
   },
 } as const;
 
-export const magazines = {
+export const magazinesList = {
   cfgMagazines,
 } as const;

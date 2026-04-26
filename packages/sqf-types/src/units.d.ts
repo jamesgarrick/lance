@@ -310,14 +310,13 @@ export declare class Unit extends Person<"Unit"> {
 
 export declare class Soldier extends Unit {}
 
+export declare const player: Unit;
+
 export declare function group(unit: Unit): Group;
 export declare function leader(group: Group | Unit): Unit;
 export declare function units(group: Group | Unit): SqfArray<Unit>;
 export declare function side(target: Unit | Group | SqfLocation): Side;
 export declare function vehicle(unit: Unit): Unit | Vehicle;
-export declare function assignedVehicleRole(unit: Unit): import("./vehicle-crew").AssignedVehicleRoleInfo;
-export declare function local(target: Group): SqfBoolean;
-export declare function isNull(target: Group): SqfBoolean;
 
 export declare function currentCommand(unit: Unit): UnitCurrentCommand;
 export declare function stance(unit: Unit): UnitStance;
