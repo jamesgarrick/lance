@@ -26,12 +26,12 @@ import type {
   SqfVariableStatement,
   SqfWhileStatement,
 } from "../ir/nodes";
-import type { SemanticContext } from "../semantic/context";
-import { resolveCfgPathValue } from "../semantic/context";
+import { sqfMethodCommandRegistry } from "../semantic/command-registry";
+import type { CfgRootName, SemanticContext } from "../semantic/context";
+import { resolveCfgReference } from "../semantic/context";
 
 interface SourceFileSemanticBindings {
-  readonly cfgWeaponsLocalName?: string;
-  readonly playerLocalName?: string;
+  readonly importedLocalNames: Readonly<Record<string, string | undefined>>;
 }
 
 export function lowerSourceFile(
@@ -329,8 +329,12 @@ function collectSemanticBindings(sourceFile: SourceFile): SourceFileSemanticBind
     .find((importDeclaration) => importDeclaration.getModuleSpecifierValue() === "lance-sqf-types");
 
   return {
-    cfgWeaponsLocalName: getNamedImportLocalName(lanceImport, "cfgWeapons"),
-    playerLocalName: getNamedImportLocalName(lanceImport, "player"),
+    importedLocalNames: {
+      player: getNamedImportLocalName(lanceImport, "player"),
+      cfgWeapons: getNamedImportLocalName(lanceImport, "cfgWeapons"),
+      cfgWeaponsItems: getNamedImportLocalName(lanceImport, "cfgWeaponsItems"),
+      cfgMagazines: getNamedImportLocalName(lanceImport, "cfgMagazines"),
+    },
   };
 }
 
@@ -361,21 +365,22 @@ function tryLowerSpecialCommandExpression(
   }
 
   const receiverExpression = callee.getExpression();
-  if (
-    !Node.isIdentifier(receiverExpression) ||
-    receiverExpression.getText() !== bindings.playerLocalName
-  ) {
+  if (!Node.isIdentifier(receiverExpression)) {
     return undefined;
   }
 
-  const command = callee.getName();
-  if (command !== "addWeapon" && command !== "setBehaviour") {
+  const spec = sqfMethodCommandRegistry.find(
+    (entry) =>
+      bindings.importedLocalNames[entry.exportedReceiverName] === receiverExpression.getText() &&
+      entry.methodName === callee.getName(),
+  );
+  if (!spec) {
     return undefined;
   }
 
   const receiver: SqfIdentifier = {
     kind: "Identifier",
-    text: "player",
+    text: spec.exportedReceiverName,
   };
 
   const args = expression
@@ -388,7 +393,7 @@ function tryLowerSpecialCommandExpression(
   return {
     kind: "CommandExpression",
     receiver,
-    command,
+    command: spec.emittedCommand,
     args,
   };
 }
@@ -398,28 +403,24 @@ function tryLowerCfgLiteral(
   bindings: SourceFileSemanticBindings,
   semanticContext: SemanticContext,
 ): SqfLiteral | undefined {
-  const cfgRootName = bindings.cfgWeaponsLocalName;
-  if (!cfgRootName) {
-    return undefined;
-  }
-
   const pathSegments = getPropertyAccessPath(expression);
-  if (!pathSegments || pathSegments[0] !== cfgRootName) {
+  if (!pathSegments) {
     return undefined;
   }
 
-  const resolvedValue = resolveCfgPathValue(
-    semanticContext.cfgWeapons,
-    pathSegments.slice(1),
+  const resolvedCfgReference = resolveImportedCfgReference(
+    pathSegments,
+    bindings,
+    semanticContext,
   );
 
-  if (!resolvedValue) {
+  if (!resolvedCfgReference) {
     return undefined;
   }
 
   return {
     kind: "Literal",
-    text: JSON.stringify(resolvedValue),
+    text: JSON.stringify(resolvedCfgReference),
   };
 }
 
@@ -434,4 +435,29 @@ function getPropertyAccessPath(expression: Expression): readonly string[] | unde
   }
 
   return undefined;
+}
+
+function resolveImportedCfgReference(
+  pathSegments: readonly string[],
+  bindings: SourceFileSemanticBindings,
+  semanticContext: SemanticContext,
+): string | undefined {
+  const cfgRootEntries = Object.entries(bindings.importedLocalNames).filter(
+    ([exportedName, localName]) =>
+      localName &&
+      isCfgRootName(exportedName) &&
+      pathSegments[0] === localName,
+  ) as [CfgRootName, string][];
+
+  const entry = cfgRootEntries[0];
+  if (!entry) {
+    return undefined;
+  }
+
+  const [rootName] = entry;
+  return resolveCfgReference(semanticContext, rootName, pathSegments.slice(1));
+}
+
+function isCfgRootName(value: string): value is CfgRootName {
+  return value === "cfgWeapons" || value === "cfgWeaponsItems" || value === "cfgMagazines";
 }

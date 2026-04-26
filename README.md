@@ -33,3 +33,15 @@ bun install
 ```bash
 bunx tsc --noEmit
 ```
+
+## Manual Compile
+
+```bash
+bun run compile tests/fixtures/basic-unit-script/input.ts
+```
+
+Optional output file:
+
+```bash
+bun run compile tests/fixtures/basic-unit-script/input.ts out.sqf
+```
