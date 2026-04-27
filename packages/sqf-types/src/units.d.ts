@@ -332,26 +332,8 @@ export declare class Person extends Unit<"Person"> {
    */
   readonly backpack: SqfString;
 
-  /**
-   * Returns name of currently used goggles (for NVGoggles use hmd).
-   *
-   * @since 0.50
-   *
-   * @see {@link https://community.bistudio.com/wiki/goggles goggles}
-   */
-  readonly goggles: SqfString;
 
-  /**
-   * Returns name of currently used handgun weapon (an empty string if there is none).
-   *
-   * @remarks
-   * Locality: _Global Argument_
-   *
-   * @since 0.50
-   *
-   * @see {@link https://community.bistudio.com/wiki/handgunWeapon handgunWeapon}
-   */
-  readonly handgunWeapon: SqfString;
+
   //
   //handgunMagazine
   //handgunItems
@@ -363,26 +345,6 @@ export declare class Person extends Unit<"Person"> {
   //currentWeapon
   //weapons
 
-  /**
-   * Returns name of currently used vest.
-   *
-   * @since 0.50
-   *
-   * @see {@link https://community.bistudio.com/wiki/vest vest}
-   */
-  readonly vest: SqfString;
-
-  /**
-   * Create a new vest and try to link it into vest slot.
-   *
-   * @remarks
-   * Locality: _Global Argument, Global Effect._
-   *
-   * @since 0.50
-   *
-   * @see {@link https://community.bistudio.com/wiki/addVest addVest}
-   */
-  addVest(vestClass: SqfString): SqfCommand;
 }
 
 export declare function group(unit: Unit): Group;
