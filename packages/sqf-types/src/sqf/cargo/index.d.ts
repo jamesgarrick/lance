@@ -92,4 +92,4 @@ export function addWeaponCargoGlobal(unit: Unit, weaponClass: SqfString, count: 
  *
  * @see {@link https://community.bistudio.com/wiki/backpackCargo backpackCargo}
  */
-export function backpackCargo(object: sqfObject): SqfString;
+export function backpackCargo(object: SqfObject): SqfString;
