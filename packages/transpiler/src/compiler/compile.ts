@@ -6,7 +6,7 @@ import { emitSqfProgram, type OutputFile } from "../emit/emit-sqf";
 import type { SqfProgram } from "../ir/nodes";
 import { lowerSourceFile } from "../lowering/lower-source-file";
 import { normalizeSqfProgram } from "../normalize/normalize-program";
-import { LANCE_RUNTIME_FILES } from "../runtime/lance-runtime";
+import { LANCE_RUNTIME_FILES, LANCE_RUNTIME_FUNCTION_FILES } from "../runtime/lance-runtime";
 import { createSemanticContext } from "../semantic/context";
 import { DiagnosticBag, type CompilerDiagnostic } from "./diagnostics";
 import { defaultCompilerOptions, type CompilerOptions } from "./options";
@@ -72,8 +72,13 @@ export async function compileFromConfig(
   const result = await compileProject(options);
 
   const hasFunctions = result.program.functionFiles.length > 0;
+
+  // CfgFunctions registration must include runtime functions (LANCE_fnc_*) so
+  // that calls like `[…] call LANCE_fnc_waitAndExecute` actually resolve at
+  // runtime. Without these, the runtime files were being written but never
+  // registered.
   const cfgFunctionsHpp = hasFunctions
-    ? emitCfgFunctionsHpp(result.program.functionFiles)
+    ? emitCfgFunctionsHpp([...result.program.functionFiles, ...LANCE_RUNTIME_FUNCTION_FILES])
     : null;
 
   let descriptionExt = mission ? emitDescriptionExt(mission) : null;
@@ -81,9 +86,10 @@ export async function compileFromConfig(
     descriptionExt += '\n\n#include "CfgFunctions.hpp"';
   }
 
-  // Include runtime SQF files whenever there are async functions that use waitAndExecute
+  // Include runtime SQF files whenever there are any user functions or entry-point body
+  // that may throw (which is effectively always: init.sqf is auto-wrapped).
   const outputFiles: OutputFile[] = [...result.outputFiles];
-  if (hasFunctions) {
+  if (hasFunctions || result.program.entryStatements.length > 0) {
     outputFiles.push(...LANCE_RUNTIME_FILES);
   }
 

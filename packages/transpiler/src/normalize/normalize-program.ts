@@ -19,6 +19,7 @@ import type {
   SqfTrailingExpressionStatement,
 } from "../ir/nodes";
 import { normalizeLoopBody } from "./normalize-loops";
+import { wrapEntryStatements } from "./normalize-entry-point";
 
 export function normalizeSqfProgram(
   program: SqfProgram,
@@ -37,9 +38,13 @@ export function normalizeSqfProgram(
     normalizeFunctionFile(fn, diagnostics),
   );
 
+  // Auto-wrap the mission entry-point body in try/catch → LANCE_fnc_handleError
+  // so any uncaught error during init reaches the global handler. Spec §14.6.1.
+  const wrappedEntry = wrapEntryStatements(loopNormalizedEntry);
+
   return {
     ...program,
-    entryStatements: loopNormalizedEntry,
+    entryStatements: wrappedEntry,
     functionFiles: normalizedFunctions,
   };
 }
