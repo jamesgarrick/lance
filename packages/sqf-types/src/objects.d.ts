@@ -124,8 +124,6 @@ export declare class Vehicle extends SqfObject<"Vehicle"> {
   setHitPointDamage(options: SetHitPointDamageOptions): SqfCommand;
 }
 
-export declare class Person<TKind extends string = "Person"> extends SqfObject<TKind> {}
-
 export declare class Animal extends Person<"Animal"> {}
 
 export declare class Building extends SqfObject<"Building"> {}

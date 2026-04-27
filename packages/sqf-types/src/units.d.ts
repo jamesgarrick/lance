@@ -8,7 +8,7 @@ import type {
   SqfString,
   SqfVariableName,
 } from "./primitives";
-import type { Person, SqfObject, Vehicle } from "./objects";
+import type { SqfObject, Vehicle } from "./objects";
 import type { Side, SqfConfig, SqfLocation } from "./world";
 import { SqfEntity } from "./core";
 import type {
@@ -176,7 +176,7 @@ export declare class Group<
 }
 export declare const grpNull: Group;
 
-export declare class Unit extends Person<"Unit"> {
+export declare class Unit extends SqfObject<"Unit"> {
   getGroup(): Group;
   getSide(): Side;
   getAssignedVehicle(): Vehicle | undefined;
@@ -185,8 +185,17 @@ export declare class Unit extends Person<"Unit"> {
   getCurrentWeapon(): WeaponClassName | "";
   getCurrentMagazine(): MagazineClassName | "";
   getLoadout(): UnitLoadout;
-  getWeapons(): SqfArray<WeaponClassName>;
-  getMagazines(): SqfArray<MagazineClassName>;
+  weapons(): SqfArray<WeaponClassName>;
+
+  /**
+   *
+   * Returns array of type names of all unit's magazines. The command
+   * will omit magazines already loaded into unit's weapons.
+   * Use currentMagazine to get this information for a currently loaded magazine.
+   *
+   * @since 0.50
+   */
+  magazines(includeEmpty: boolean = false): SqfArray<MagazineClassName>;
   getItems(): SqfArray<ItemClassName>;
   getAssignedItems(): SqfArray<ItemClassName>;
   getLinkedItems(): SqfArray<ItemClassName>;
@@ -310,7 +319,85 @@ export declare class Unit extends Person<"Unit"> {
 
 export declare class Soldier extends Unit {}
 
-export declare const player: Unit;
+export declare const player: Unit
+
+/**
+ * Adds a backpack for a unit.
+ *
+ * @remarks
+ * Locality: _Global Argument, Global Effect._
+ * - If a person already has a backpack, the old backpack will be placed on the ground under the person.
+ * - Items defined in the backpack's config will be added as well.
+ *
+ * @since 0.50
+ *
+ * @see {@link https://community.bistudio.com/wiki/addBackpack addBackpack}
+ */
+export function addBackpack(unit: Unit, backpackClass: SqfString): SqfCommand;
+
+export declare class Person extends Unit<"Person"> {
+
+  /**
+   * Returns a class of a backpack.
+   *
+   * @since 0.50
+   *
+   * @see {@link https://community.bistudio.com/wiki/backpack backpack}
+   */
+  readonly backpack: SqfString;
+
+  /**
+   * Returns name of currently used goggles (for NVGoggles use hmd).
+   *
+   * @since 0.50
+   *
+   * @see {@link https://community.bistudio.com/wiki/goggles goggles}
+   */
+  readonly goggles: SqfString;
+
+  /**
+   * Returns name of currently used handgun weapon (an empty string if there is none).
+   *
+   * @remarks
+   * Locality: _Global Argument_
+   *
+   * @since 0.50
+   *
+   * @see {@link https://community.bistudio.com/wiki/handgunWeapon handgunWeapon}
+   */
+  readonly handgunWeapon: SqfString;
+  //
+  //handgunMagazine
+  //handgunItems
+  //addHandgunItem
+  //removeHandgunItem
+  //removeAllHandgunItems
+  //primaryWeapon
+  //secondaryWeapon
+  //currentWeapon
+  //weapons
+
+  /**
+   * Returns name of currently used vest.
+   *
+   * @since 0.50
+   *
+   * @see {@link https://community.bistudio.com/wiki/vest vest}
+   */
+  readonly vest: SqfString;
+
+  /**
+   * Create a new vest and try to link it into vest slot.
+   *
+   * @remarks
+   * Locality: _Global Argument, Global Effect._
+   *
+   * @since 0.50
+   *
+   * @see {@link https://community.bistudio.com/wiki/addVest addVest}
+   */
+  addVest(vestClass: SqfString): SqfCommand;
+}
 
 export declare function group(unit: Unit): Group;
 export declare function leader(group: Group | Unit): Unit;
