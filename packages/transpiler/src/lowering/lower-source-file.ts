@@ -484,6 +484,22 @@ function lowerExpression(
           args,
         } satisfies SqfCallExpression;
       }
+
+      const commandName = bindings.sqfCommandFunctions.get(callee.getText());
+      if (commandName !== undefined) {
+        // 0 args → nular: `command`
+        // 1 arg  → unary: `command arg`
+        // 2 args → binary: `arg0 command arg1`
+        if (args.length <= 1) {
+          return { kind: "CommandExpression", command: commandName, args } satisfies SqfCommandExpression;
+        }
+        return {
+          kind: "CommandExpression",
+          receiver: args[0]!,
+          command: commandName,
+          args: args.slice(1),
+        } satisfies SqfCommandExpression;
+      }
     }
 
     return {
@@ -567,6 +583,8 @@ interface SourceFileSemanticBindings {
   readonly importedLocalNames: Readonly<Record<string, string | undefined>>;
   readonly sleepLocalName: string | undefined;
   readonly importedProjectFunctions: ReadonlyMap<string, string>;
+  /** localName → exported SQF command name, for free functions imported from the types package */
+  readonly sqfCommandFunctions: ReadonlyMap<string, string>;
 }
 
 function collectSemanticBindings(
@@ -600,7 +618,21 @@ function collectSemanticBindings(
     }
   }
 
-  return { importedLocalNames, sleepLocalName, importedProjectFunctions };
+  // All other named imports from the types package are SQF command free functions.
+  // Nular commands (player, etc.) and cfg roots are already handled via importedLocalNames;
+  // sleep is handled separately — skip those by exported name.
+  const sqfCommandFunctions = new Map<string, string>();
+  const skipExportedNames = new Set<string>(["player", "cfgWeapons", "cfgWeaponsItems", "cfgMagazines", "sleep"]);
+  if (lanceImport) {
+    for (const named of lanceImport.getNamedImports()) {
+      const exportedName = named.getName();
+      if (skipExportedNames.has(exportedName)) continue;
+      const localName = named.getAliasNode()?.getText() ?? exportedName;
+      sqfCommandFunctions.set(localName, exportedName);
+    }
+  }
+
+  return { importedLocalNames, sleepLocalName, importedProjectFunctions, sqfCommandFunctions };
 }
 
 function getNamedImportLocalName(
