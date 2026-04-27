@@ -29,6 +29,7 @@ function compile(source: string): { sqf: string; diagnostics: DiagnosticBag } {
       export function handgunWeapon(unit: unknown): string;
       export function addVest(unit: unknown, cls: string): void;
       export function linkItem(unit: unknown, item: string): void;
+      export function addWeaponCargoGlobal(unit: unknown, weaponClass: string, count: number): void;
     }`,
   );
   const sourceFile = project.createSourceFile("/test.ts", source);
@@ -111,6 +112,27 @@ describe("SQF binary commands (2-arg free functions)", () => {
       linkItem(unit, item);
     `);
     expect(sqf).toContain("_unit linkItem _item");
+    expect(diagnostics.toArray()).toEqual([]);
+  });
+});
+
+describe("SQF binary commands with array right-operand (3+ arg free functions)", () => {
+  test("addWeaponCargoGlobal(unit, weapon, count) → unit addWeaponCargoGlobal [weapon, count]", () => {
+    const { sqf, diagnostics } = compile(`
+      import { player, addWeaponCargoGlobal } from "lance";
+      addWeaponCargoGlobal(player, "arifle_AK12_F", 5);
+    `);
+    expect(sqf).toContain(`player addWeaponCargoGlobal ["arifle_AK12_F", 5]`);
+    expect(diagnostics.toArray()).toEqual([]);
+  });
+
+  test("3-arg command with local receiver → _unit addWeaponCargoGlobal [weapon, count]", () => {
+    const { sqf, diagnostics } = compile(`
+      import { player, addWeaponCargoGlobal } from "lance";
+      const vehicle = player;
+      addWeaponCargoGlobal(vehicle, "arifle_AK12_F", 2);
+    `);
+    expect(sqf).toContain(`_vehicle addWeaponCargoGlobal ["arifle_AK12_F", 2]`);
     expect(diagnostics.toArray()).toEqual([]);
   });
 });
