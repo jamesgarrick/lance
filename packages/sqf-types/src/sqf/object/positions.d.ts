@@ -57,6 +57,9 @@ export function buildingPos(object: SqfObject, index: number): PositionASL;
  */
 export function eyePos(object: Person | Vehicle): PositionASL;
 
+// !TODO - check this
+export function formationPosition(unit: Person | Vehicle): Position;
+
 export function getPos(object: SqfObject): PositionAGLS;
 export function getPos(location: Location): PositionAGLS;
 export function getPos(origin: SqfObject | Position2D | Position3D, offsetArgs: [number, number]): PositionAGLS;
