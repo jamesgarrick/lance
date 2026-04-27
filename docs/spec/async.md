@@ -67,7 +67,7 @@ The continuation is duplicated into both branches, or hoisted after the conditio
 
 ### 7.3.3 await Inside try/catch
 
-(catch-block participates in the continuation; thrown values propagate into the next `LANCE_fnc_waitAndExecute` callback's error path)
+The catch block participates in the continuation. Each `LANCE_fnc_waitAndExecute` callback is itself an entry point and is auto-wrapped — see [errors.md](./errors.md) §14.6.3. An error thrown after an `await` that escapes the user's catch reaches the global handler with the async continuation's source name.
 
 ### 7.3.4 Early Return in Async
 

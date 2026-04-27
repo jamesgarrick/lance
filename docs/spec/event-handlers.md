@@ -92,7 +92,11 @@ Object event handlers fire only on machines where the object is local (mostly). 
 
 (if/when supported — out of v1)
 
-## 9.5 Async Handlers
+## 9.5 Auto-Wrapped as Entry Points
+
+Every event handler registration site is an execution entry point and is auto-wrapped with `try { … } catch { LANCE_fnc_handleError }`. Users do not write the boilerplate. See [errors.md](./errors.md) §14.6 for the full rules.
+
+## 9.6 Async Handlers
 
 Handlers can be async functions. The CPS transform from [async.md](./async.md) applies:
 
@@ -105,7 +109,7 @@ addEventHandler(player, "Killed", async (killed, killer) => {
 
 The synchronous prefix runs in-frame; the post-await continuation runs via `LANCE_fnc_waitAndExecute`.
 
-## 9.6 Open Questions
+## 9.7 Open Questions
 
 - Wildcard / namespaced events: should we support a Lance-managed event bus on top of public variables?
 - How to handle the `_thisEventHandler` magic variable cleanly (currently auto-bound by `params`).

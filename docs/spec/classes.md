@@ -117,7 +117,17 @@ When inheritance is in play, the call goes through the class tag:
 
 (`private` / `protected` / `public` — type-checked but not enforced at runtime; private fields use `#name` mangling)
 
-## 10.10 Lifecycle
+## 10.10 Error Classes
+
+Classes extending `Error` (built-in or user-defined) are subject to the additional invariants in [errors.md](./errors.md) §14.2. The compiler enforces:
+
+- the constructor must call `super(message)` (or accept a `message` parameter passed up the chain)
+- the runtime hashmap has guaranteed `__class`, `__hierarchy`, `message`, and `source` fields
+- `instanceof` narrowing is checked against `__hierarchy`, not just `__class`, so subclass relationships work
+
+Otherwise Error subclasses follow the standard class lowering rules.
+
+## 10.11 Lifecycle
 
 ### 10.10.1 Construction
 

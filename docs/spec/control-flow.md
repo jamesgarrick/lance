@@ -318,6 +318,8 @@ private _role = switch (_rank) do {
 
 ## 3.5 Try / Catch / Finally / Throw
 
+This section covers the **structural** lowering of `try` / `catch` / `finally` / `throw`. The runtime error model — what can be thrown, error classes, entry-point auto-wrapping, the global handler — is specified in [errors.md](./errors.md) §14.
+
 SQF's `try { ... } catch { ... }` exposes the thrown value as `_exception` inside the catch block. We emulate `finally` for SQF.
 
 ### 3.5.1 Basic Try / Catch
@@ -326,7 +328,7 @@ SQF's `try { ... } catch { ... }` exposes the thrown value as `_exception` insid
 try {
   riskyCall();
 } catch (err) {
-  log(err);
+  log(err.message);
 }
 ```
 
@@ -335,31 +337,26 @@ try {
   call _riskyCall;
 } catch {
   private _err = _exception;
-  [_err] call _log;
+  [_err get "message"] call _log;
 };
 ```
 
 ### 3.5.2 Throw
 
+Lance accepts only `throw new <ErrorSubclass>(...)`. Throwing bare values (strings, numbers, plain objects) is rejected with `LANCE_NON_ERROR_THROW`. See [errors.md](./errors.md) §14.4.
+
 ```ts
-throw "something went wrong";
+throw new NotImplementedError("Physics engine WIP");
 ```
 
 ```sqf
-throw "something went wrong";
+throw (createHashMapFromArray [
+  ["__class", "NotImplementedError"],
+  ["__hierarchy", ["NotImplementedError", "Error"]],
+  ["message", "Physics engine WIP"],
+  ["source", _fnc_scriptName]
+]);
 ```
-
-Throwing an object is supported:
-
-```ts
-throw { code: 42, message: "bad input" };
-```
-
-```sqf
-throw [["code", 42], ["message", "bad input"]];
-```
-
-(Object literal lowering is covered in the values spec.)
 
 ### 3.5.3 Try / Catch / Finally
 

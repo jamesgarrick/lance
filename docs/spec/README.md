@@ -20,7 +20,8 @@ Each section follows the same shape: short prose explaining the model, then `ts`
 | 10  | [classes.md](./classes.md)                 | OOP lowering strategy — fields, methods, dispatch                |
 | 11  | [types.md](./types.md)                     | lance-sqf-types contract, branded primitives, type-driven emit   |
 | 12  | [cfg.md](./cfg.md)                         | `cfgWeapons` / `cfgMagazines` / etc. resolution to string class names |
-| 13  | [diagnostics.md](./diagnostics.md)         | error/warning model, codes, fix suggestions                      |
+| 13  | [diagnostics.md](./diagnostics.md)         | compile-time error/warning model, codes, fix suggestions         |
+| 14  | [errors.md](./errors.md)                   | runtime errors: `throw`/`catch`, Error class hierarchy, auto-wrap |
 
 ## Conventions
 
