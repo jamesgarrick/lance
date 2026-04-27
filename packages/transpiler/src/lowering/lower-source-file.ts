@@ -7,6 +7,13 @@ import {
   type SourceFile,
   type Statement,
 } from "ts-morph";
+import {
+  lowerForOfStatement,
+  lowerForStatement,
+  type ForLoweringContext,
+} from "./lower-for-statement";
+import { lowerSwitchStatement, type SwitchLoweringContext } from "./lower-switch-statement";
+import { lowerThrowStatement, type ThrowLoweringContext } from "./lower-throw-statement";
 import type { DiagnosticBag } from "../compiler/diagnostics";
 import type { CompilerOptions } from "../compiler/options";
 import type { FunctionRegistry } from "../compiler/project";
@@ -16,6 +23,7 @@ import type {
   SqfCallExpression,
   SqfCodeBlock,
   SqfCommandExpression,
+  SqfConditionalExpression,
   SqfExpression,
   SqfExpressionStatement,
   SqfFunctionFile,
@@ -25,6 +33,7 @@ import type {
   SqfPropertyAccessExpression,
   SqfReturnStatement,
   SqfStatement,
+  SqfUnaryExpression,
   SqfVariableStatement,
   SqfWhileStatement,
 } from "../ir/nodes";
@@ -286,6 +295,22 @@ function lowerStatement(
     } satisfies SqfWhileStatement;
   }
 
+  if (Node.isForStatement(statement)) {
+    return lowerForStatement(statement, makeForContext(diagnostics, bindings, semanticContext, scope), diagnostics);
+  }
+
+  if (Node.isForOfStatement(statement)) {
+    return lowerForOfStatement(statement, makeForContext(diagnostics, bindings, semanticContext, scope), diagnostics);
+  }
+
+  if (Node.isSwitchStatement(statement)) {
+    return lowerSwitchStatement(statement, makeSwitchContext(diagnostics, bindings, semanticContext, scope), diagnostics);
+  }
+
+  if (Node.isThrowStatement(statement)) {
+    return lowerThrowStatement(statement, makeThrowContext(diagnostics, bindings, semanticContext, scope), diagnostics);
+  }
+
   diagnostics.add({
     code: "LANCE_UNSUPPORTED_STATEMENT",
     severity: "warning",
@@ -298,6 +323,43 @@ function lowerStatement(
   });
 
   return { kind: "RawTsStatement", text: statement.getText() };
+}
+
+// ─── lowering-context builders for sub-modules ───────────────────────────────
+
+function makeForContext(
+  diagnostics: DiagnosticBag,
+  bindings: SourceFileSemanticBindings,
+  semanticContext: SemanticContext,
+  scope: LoweringScope,
+): ForLoweringContext {
+  return {
+    lowerExpression: (expr) => lowerExpression(expr, diagnostics, bindings, semanticContext, scope),
+    lowerStatementBlock: (stmt) => lowerStatementBlock(stmt, diagnostics, bindings, semanticContext, scope),
+  };
+}
+
+function makeSwitchContext(
+  diagnostics: DiagnosticBag,
+  bindings: SourceFileSemanticBindings,
+  semanticContext: SemanticContext,
+  scope: LoweringScope,
+): SwitchLoweringContext {
+  return {
+    lowerExpression: (expr) => lowerExpression(expr, diagnostics, bindings, semanticContext, scope),
+    lowerStatement: (stmt) => lowerStatement(stmt, diagnostics, bindings, semanticContext, scope),
+  };
+}
+
+function makeThrowContext(
+  diagnostics: DiagnosticBag,
+  bindings: SourceFileSemanticBindings,
+  semanticContext: SemanticContext,
+  scope: LoweringScope,
+): ThrowLoweringContext {
+  return {
+    lowerExpression: (expr) => lowerExpression(expr, diagnostics, bindings, semanticContext, scope),
+  };
 }
 
 function lowerStatementBlock(
@@ -336,6 +398,10 @@ function lowerExpression(
 
   const cfgLiteral = tryLowerCfgLiteral(expression, bindings, semanticContext, diagnostics);
   if (cfgLiteral) return cfgLiteral;
+
+  if (Node.isParenthesizedExpression(expression)) {
+    return lowerExpression(expression.getExpression(), diagnostics, bindings, semanticContext, scope);
+  }
 
   if (Node.isIdentifier(expression)) {
     return {
@@ -409,6 +475,27 @@ function lowerExpression(
       left: lowerExpression(expression.getLeft(), diagnostics, bindings, semanticContext, scope),
       right: lowerExpression(expression.getRight(), diagnostics, bindings, semanticContext, scope),
     };
+  }
+
+  if (Node.isConditionalExpression(expression)) {
+    return {
+      kind: "ConditionalExpression",
+      condition: lowerExpression(expression.getCondition(), diagnostics, bindings, semanticContext, scope),
+      whenTrue: lowerExpression(expression.getWhenTrue(), diagnostics, bindings, semanticContext, scope),
+      whenFalse: lowerExpression(expression.getWhenFalse(), diagnostics, bindings, semanticContext, scope),
+    } satisfies SqfConditionalExpression;
+  }
+
+  if (Node.isPrefixUnaryExpression(expression)) {
+    const operatorKind = expression.getOperatorToken();
+    const operand = lowerExpression(expression.getOperand(), diagnostics, bindings, semanticContext, scope);
+    if (operatorKind === SyntaxKind.ExclamationToken) {
+      return { kind: "UnaryExpression", operator: "!", operand } satisfies SqfUnaryExpression;
+    }
+    if (operatorKind === SyntaxKind.MinusToken) {
+      return { kind: "UnaryExpression", operator: "-", operand } satisfies SqfUnaryExpression;
+    }
+    // ++ / -- in expression position falls through to the unsupported diagnostic below.
   }
 
   diagnostics.add({

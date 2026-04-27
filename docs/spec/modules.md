@@ -77,7 +77,7 @@ Lowered to global SQF variables on first assignment. See [variables.md](./variab
 
 ### 6.5.1 Mission Projects
 
-Top-level statements in the entrypoint emit directly into `init.sqf`. Function declarations within the entrypoint are still lifted to `CfgFunctions`.
+Top-level statements in the entrypoint emit directly into `init.sqf`. Function declarations within the entrypoint are still lifted to `CfgFunctions`. The body of `init.sqf` is auto-wrapped in a `try { … } catch { LANCE_fnc_handleError }` per [errors.md](./errors.md) §14.6 — uncaught errors during mission init reach the global handler.
 
 ### 6.5.2 Library Projects
 

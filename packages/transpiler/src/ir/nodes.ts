@@ -27,7 +27,11 @@ export type SqfStatement =
   | SqfReturnStatement
   | SqfIfStatement
   | SqfIfExitWithStatement
-  | SqfWhileStatement;
+  | SqfWhileStatement
+  | SqfForFromToStatement
+  | SqfForEachStatement
+  | SqfThrowStatement
+  | SqfSwitchStatement;
 
 export interface SqfRawTsStatement {
   readonly kind: "RawTsStatement";
@@ -91,6 +95,63 @@ export interface SqfWhileStatement {
   readonly body: readonly SqfStatement[];
 }
 
+/**
+ * `for "_i" from A to B [step S] do { body }` — spec §3.3.1–§3.3.3.
+ *
+ * `variable` is the unmangled TS identifier (e.g. `"i"`); emit produces `"_i"`.
+ */
+export interface SqfForFromToStatement {
+  readonly kind: "ForFromToStatement";
+  readonly variable: string;
+  readonly from: SqfExpression;
+  readonly to: SqfExpression;
+  readonly step?: SqfExpression;
+  readonly body: readonly SqfStatement[];
+}
+
+/**
+ * `{ body } forEach iterable` — spec §3.3.5.
+ *
+ * If `variable` is `"x"`, emit hoists the rebinding `private _<variable> = _x;` at the top of the body.
+ * If it's already `"_x"`, the rebinding is elided.
+ */
+export interface SqfForEachStatement {
+  readonly kind: "ForEachStatement";
+  readonly variable: string;
+  readonly iterable: SqfExpression;
+  readonly body: readonly SqfStatement[];
+}
+
+/**
+ * `throw <value>;` — spec §3.5.2 / §14.4. Lance enforces that `<value>` is a
+ * structured Error instance (HashMap with `__class` etc.) but the IR itself
+ * just carries an expression; the lowering layer is responsible for the shape.
+ */
+export interface SqfThrowStatement {
+  readonly kind: "ThrowStatement";
+  readonly expression: SqfExpression;
+}
+
+/**
+ * `switch (d) do { case A: { body }; case B; case C: { body }; default { body }; }`
+ * — spec §3.4.
+ *
+ * Each `SqfSwitchCase` may carry multiple labels (the "shared empty cases"
+ * fallthrough pattern from §3.4.2). Executable fallthrough is rejected at
+ * lowering time and never reaches the IR.
+ */
+export interface SqfSwitchStatement {
+  readonly kind: "SwitchStatement";
+  readonly discriminant: SqfExpression;
+  readonly cases: readonly SqfSwitchCase[];
+  readonly defaultCase?: readonly SqfStatement[];
+}
+
+export interface SqfSwitchCase {
+  readonly labels: readonly SqfExpression[];
+  readonly body: readonly SqfStatement[];
+}
+
 export type SqfExpression =
   | SqfIdentifier
   | SqfLiteral
@@ -99,7 +160,9 @@ export type SqfExpression =
   | SqfPropertyAccessExpression
   | SqfArrayExpression
   | SqfBinaryExpression
-  | SqfCodeBlock;
+  | SqfCodeBlock
+  | SqfConditionalExpression
+  | SqfUnaryExpression;
 
 export interface SqfIdentifier {
   readonly kind: "Identifier";
@@ -117,9 +180,14 @@ export interface SqfCallExpression {
   readonly args: readonly SqfExpression[];
 }
 
+/**
+ * SQF command call. Models both the unary form (`command arg`) and the binary
+ * form (`receiver command args`). When `receiver` is undefined, the command is
+ * unary — used for built-ins like `createHashMapFromArray`, `count`, `alive`.
+ */
 export interface SqfCommandExpression {
   readonly kind: "CommandExpression";
-  readonly receiver: SqfExpression;
+  readonly receiver?: SqfExpression;
   readonly command: string;
   readonly args: readonly SqfExpression[];
 }
@@ -146,4 +214,19 @@ export interface SqfBinaryExpression {
 export interface SqfCodeBlock {
   readonly kind: "CodeBlock";
   readonly body: readonly SqfStatement[];
+}
+
+/** TypeScript ternary `cond ? a : b` → `if (cond) then { a } else { b }`. Spec §3.1.4. */
+export interface SqfConditionalExpression {
+  readonly kind: "ConditionalExpression";
+  readonly condition: SqfExpression;
+  readonly whenTrue: SqfExpression;
+  readonly whenFalse: SqfExpression;
+}
+
+/** Prefix unary: `!x`, `-x`. Postfix `x++` is rewritten at lowering, never reaches the IR. */
+export interface SqfUnaryExpression {
+  readonly kind: "UnaryExpression";
+  readonly operator: "!" | "-";
+  readonly operand: SqfExpression;
 }

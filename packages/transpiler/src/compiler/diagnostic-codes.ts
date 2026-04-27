@@ -31,6 +31,7 @@ export const DIAGNOSTIC_CODES = {
   LANCE_AWAITED_NON_AWAITABLE: "await on a non-awaitable expression",
   LANCE_AMBIGUOUS_NULL: "null literal where multiple sentinels could apply",
   LANCE_LOCALITY_MISMATCH: "local-effect command on non-local target",
+  LANCE_NON_ERROR_THROW: "throw must be `throw new <ErrorSubclass>(...)`",
 
   // ── Lowering ───────────────────────────────────────────────────────────────
   LANCE_LOWERING_INTERNAL: "internal compiler error during lowering",

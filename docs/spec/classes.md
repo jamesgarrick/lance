@@ -129,15 +129,15 @@ Otherwise Error subclasses follow the standard class lowering rules.
 
 ## 10.11 Lifecycle
 
-### 10.10.1 Construction
+### 10.11.1 Construction
 
 (constructor body runs after field defaults; no implicit super-call rules — must be explicit)
 
-### 10.10.2 Destruction
+### 10.11.2 Destruction
 
 (no destructor; explicit `dispose()` pattern; integrates with [event-handlers.md](./event-handlers.md) §9.3.2 scoped registration)
 
-## 10.11 Open Questions
+## 10.12 Open Questions
 
 - Should classes be allowed at all in v1, or pushed to v2? (Plan suggests they're a "later" feature.)
 - Cost of vtable dispatch in inner loops — measure before committing.

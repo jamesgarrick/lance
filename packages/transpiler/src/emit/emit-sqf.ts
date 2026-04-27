@@ -6,14 +6,20 @@ import type {
   SqfCallExpression,
   SqfCodeBlock,
   SqfCommandExpression,
+  SqfConditionalExpression,
   SqfExpression,
+  SqfForEachStatement,
+  SqfForFromToStatement,
   SqfFunctionFile,
   SqfIfExitWithStatement,
   SqfIfStatement,
   SqfProgram,
   SqfReturnStatement,
   SqfStatement,
+  SqfSwitchStatement,
+  SqfThrowStatement,
   SqfTrailingExpressionStatement,
+  SqfUnaryExpression,
   SqfVariableStatement,
   SqfWhileStatement,
 } from "../ir/nodes";
@@ -78,6 +84,14 @@ function emitSqfStatement(statement: SqfStatement): string {
       return emitIfExitWithStatement(statement);
     case "WhileStatement":
       return emitWhileStatement(statement);
+    case "ForFromToStatement":
+      return emitForFromToStatement(statement);
+    case "ForEachStatement":
+      return emitForEachStatement(statement);
+    case "ThrowStatement":
+      return emitThrowStatement(statement);
+    case "SwitchStatement":
+      return emitSwitchStatement(statement);
   }
 }
 
@@ -123,6 +137,69 @@ function emitWhileStatement(statement: SqfWhileStatement): string {
   ].join("\n");
 }
 
+function emitForFromToStatement(statement: SqfForFromToStatement): string {
+  const stepClause = statement.step ? ` step ${emitSqfExpression(statement.step)}` : "";
+  return [
+    `for "_${statement.variable}" from ${emitSqfExpression(statement.from)} to ${emitSqfExpression(statement.to)}${stepClause} do {`,
+    ...statement.body.map((s) => `    ${emitSqfStatement(s)}`),
+    "};",
+  ].join("\n");
+}
+
+function emitForEachStatement(statement: SqfForEachStatement): string {
+  // If the user already named the loop var `_x`, no rebinding is needed (spec §3.3.5).
+  const needsRebind = statement.variable !== "_x" && statement.variable !== "x";
+  const bodyLines = needsRebind
+    ? [
+        `    private _${statement.variable} = _x;`,
+        ...statement.body.map((s) => `    ${emitSqfStatement(s)}`),
+      ]
+    : statement.body.map((s) => `    ${emitSqfStatement(s)}`);
+
+  return [
+    "{",
+    ...bodyLines,
+    `} forEach ${emitSqfExpression(statement.iterable)};`,
+  ].join("\n");
+}
+
+function emitThrowStatement(statement: SqfThrowStatement): string {
+  return `throw ${emitSqfExpression(statement.expression)};`;
+}
+
+function emitSwitchStatement(statement: SqfSwitchStatement): string {
+  const lines: string[] = [`switch (${emitSqfExpression(statement.discriminant)}) do {`];
+
+  for (const branch of statement.cases) {
+    // The "shared empty cases" pattern: every label except the last gets a bare
+    // `case <label>;`, and the last carries the body. Spec §3.4.2.
+    for (let i = 0; i < branch.labels.length - 1; i++) {
+      lines.push(`    case ${emitSqfExpression(branch.labels[i]!)};`);
+    }
+    const finalLabel = branch.labels[branch.labels.length - 1]!;
+    if (branch.body.length === 0) {
+      lines.push(`    case ${emitSqfExpression(finalLabel)}: {};`);
+    } else {
+      lines.push(`    case ${emitSqfExpression(finalLabel)}: {`);
+      for (const stmt of branch.body) lines.push(`        ${emitSqfStatement(stmt)}`);
+      lines.push("    };");
+    }
+  }
+
+  if (statement.defaultCase) {
+    if (statement.defaultCase.length === 0) {
+      lines.push("    default {};");
+    } else {
+      lines.push("    default {");
+      for (const stmt of statement.defaultCase) lines.push(`        ${emitSqfStatement(stmt)}`);
+      lines.push("    };");
+    }
+  }
+
+  lines.push("};");
+  return lines.join("\n");
+}
+
 // ─── expressions ─────────────────────────────────────────────────────────────
 
 function emitSqfExpression(expression: SqfExpression): string {
@@ -143,6 +220,10 @@ function emitSqfExpression(expression: SqfExpression): string {
       return emitBinaryExpression(expression);
     case "CodeBlock":
       return emitCodeBlock(expression);
+    case "ConditionalExpression":
+      return emitConditionalExpression(expression);
+    case "UnaryExpression":
+      return emitUnaryExpression(expression);
   }
 }
 
@@ -154,6 +235,16 @@ function emitCallExpression(expression: SqfCallExpression): string {
 }
 
 function emitCommandExpression(expression: SqfCommandExpression): string {
+  // Unary command (no receiver): `command arg` — e.g. `createHashMapFromArray [...]`.
+  if (!expression.receiver) {
+    if (expression.args.length === 0) return expression.command;
+    if (expression.args.length === 1) {
+      return `${expression.command} ${emitSqfExpression(expression.args[0]!)}`;
+    }
+    return `${expression.command} [${expression.args.map(emitSqfExpression).join(", ")}]`;
+  }
+
+  // Binary command form: `receiver command args`.
   if (expression.args.length === 0) {
     return `${emitSqfExpression(expression.receiver)} ${expression.command}`;
   }
@@ -174,4 +265,14 @@ function emitCodeBlock(block: SqfCodeBlock): string {
     ...block.body.map((s) => `    ${emitSqfStatement(s)}`),
     "}",
   ].join("\n");
+}
+
+function emitConditionalExpression(expression: SqfConditionalExpression): string {
+  // SQF idiom: `if (cond) then { a } else { b }` — used inline as a value.
+  return `if (${emitSqfExpression(expression.condition)}) then { ${emitSqfExpression(expression.whenTrue)} } else { ${emitSqfExpression(expression.whenFalse)} }`;
+}
+
+function emitUnaryExpression(expression: SqfUnaryExpression): string {
+  // Always parenthesize the operand so the prefix doesn't get tangled with adjacent operators.
+  return `${expression.operator}(${emitSqfExpression(expression.operand)})`;
 }

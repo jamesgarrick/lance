@@ -1,6 +1,6 @@
 # 13. Diagnostics
 
-Specifies the compiler's error / warning model: how unsupported syntax, semantic errors, and lowering failures are reported.
+Specifies the compiler's **compile-time** error / warning model: how unsupported syntax, semantic errors, and lowering failures are reported. Runtime errors (throw / catch / unhandled exceptions in compiled code) are covered in [errors.md](./errors.md) §14.
 
 A diagnostic is structured data, not just a string. Every diagnostic has a stable code so users can grep and tooling can filter.
 
@@ -51,6 +51,8 @@ Codes use the `LANCE_<CATEGORY>_<NAME>` form. A non-exhaustive registry:
 - `LANCE_AMBIGUOUS_NULL` — `null` literal where multiple sentinels apply
 - `LANCE_REQUIRED_ASYNC` — `await` used in non-async function
 - `LANCE_AWAITED_NON_PROMISE` — `await` on a non-awaitable
+- `LANCE_NON_STRICT_EQUALITY` — `==` / `!=` used; require `===` / `!==`
+- `LANCE_NON_ERROR_THROW` — `throw` of a non-Error value (see [errors.md](./errors.md) §14.4.2)
 
 ### 13.3.4 Lowering
 
