@@ -321,20 +321,6 @@ export declare class Soldier extends Unit {}
 
 export declare const player: Unit
 
-/**
- * Adds a backpack for a unit.
- *
- * @remarks
- * Locality: _Global Argument, Global Effect._
- * - If a person already has a backpack, the old backpack will be placed on the ground under the person.
- * - Items defined in the backpack's config will be added as well.
- *
- * @since 0.50
- *
- * @see {@link https://community.bistudio.com/wiki/addBackpack addBackpack}
- */
-export function addBackpack(unit: Unit, backpackClass: SqfString): SqfCommand;
-
 export declare class Person extends Unit<"Person"> {
 
   /**
