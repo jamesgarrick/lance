@@ -13,7 +13,7 @@ This section is the "runtime errors" counterpart to [diagnostics.md](./diagnosti
 
 ## 14.2 The Error Class Hierarchy
 
-Lance ships a small built-in hierarchy in `lance-sqf-types`. All extend a base `Error`.
+Lance ships a small built-in hierarchy in `lance`. All extend a base `Error`.
 
 ### 14.2.1 Built-in Classes
 

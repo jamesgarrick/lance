@@ -28,7 +28,7 @@ Specifies how SQF event handlers are surfaced in TypeScript and how registration
 
 ### 9.2.1 Typed Event Names
 
-`lance-sqf-types` exports event names as a string-literal union per category, with the handler signature inferred from the name:
+`lance` exports event names as a string-literal union per category, with the handler signature inferred from the name:
 
 ```ts
 declare function addEventHandler<E extends ObjectEventName>(

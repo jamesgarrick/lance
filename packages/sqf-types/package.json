@@ -1,5 +1,5 @@
 {
-  "name": "lance-sqf-types",
+  "name": "lance",
   "module": "index.ts",
   "types": "./dist/src/index.d.ts",
   "type": "module",

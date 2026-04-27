@@ -53,7 +53,7 @@ TST_utils_fnc_delayedEquip = {
 
 ### 7.2.3 await on User-Defined Promise
 
-(rejected v1; only the built-in `sleep` / `waitUntil` from `lance-sqf-types` are awaitable)
+(rejected v1; only the built-in `sleep` / `waitUntil` from `lance` are awaitable)
 
 ## 7.3 Control Flow Inside Async
 

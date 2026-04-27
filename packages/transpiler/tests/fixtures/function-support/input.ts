@@ -1,4 +1,4 @@
-import { cfgMagazines, cfgWeapons, player } from "lance-sqf-types";
+import { cfgMagazines, cfgWeapons, player } from "lance";
 
 function equipRifle() {
   player.addWeapon(cfgWeapons.arifle.ak12);

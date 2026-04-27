@@ -1,7 +1,7 @@
 # Lance AST Transpilation Plan
 
 This document outlines the major work required to turn `lance` into a
-TypeScript-to-SQF transpiler that uses the `lance-sqf-types` type library as a
+TypeScript-to-SQF transpiler that uses the `lance` type library as a
 semantic contract.
 
 The current repo has `ts-morph` available, but no compiler pipeline exists yet.
@@ -11,7 +11,7 @@ transpiler architecture from scratch.
 ## Goals
 
 - Accept TypeScript source files as input.
-- Load and understand the `lance-sqf-types` type library during analysis.
+- Load and understand the `lance` type library during analysis.
 - Produce valid, readable SQF output.
 - Prefer idiomatic TS authoring over literal SQF parity where the language model
   permits it.
@@ -41,7 +41,7 @@ Before implementing codegen, define exactly which TypeScript features `lance`
   metaprogramming, destructuring edge cases, etc.
 - Decide how strict the compiler should be:
   reject unsupported syntax immediately instead of guessing.
-- Define the supported `lance-sqf-types` usage style:
+- Define the supported `lance` usage style:
   free functions, instance-style calls, cfg object usage, and namespace-backed
   globals.
 
@@ -72,7 +72,7 @@ Build the front door of the compiler.
 - Create a `ts-morph` project loader.
 - Support one or more source entry files.
 - Resolve imports against local project files.
-- Resolve typings from `lance-sqf-types`.
+- Resolve typings from `lance`.
 - Expose compiler options and entrypoints via a small CLI and programmatic API.
 
 Key questions:
@@ -90,7 +90,7 @@ Build the analysis layer that understands not just syntax, but meaning.
 
 - Resolve symbols for variables, functions, imports, classes, methods, and
   property accesses.
-- Resolve call targets against `lance-sqf-types`.
+- Resolve call targets against `lance`.
 - Classify expressions as:
   local variable access, namespace/global access, SQF intrinsic call, cfg value,
   method call, literal, etc.
@@ -147,7 +147,7 @@ Priorities:
 
 Important special cases:
 - method calls on typed SQF objects
-- free-function calls from `lance-sqf-types`
+- free-function calls from `lance`
 - cfg object accesses like `cfgWeapons.arifle.ak12`
 - imported constants and aliases
 
@@ -253,7 +253,7 @@ The first true milestone should be deliberately small.
 
 Suggested milestone:
 - compile a single TS file
-- support imports from `lance-sqf-types`
+- support imports from `lance`
 - support variable declarations, function calls, `if`, and simple loops
 - support object/unit method lowering
 - support cfg object values
@@ -319,7 +319,7 @@ If starting implementation now, the order should be:
 1. Write the supported TS subset spec.
 2. Define the compiler pipeline and Lance IR.
 3. Build project loading with `ts-morph`.
-4. Implement semantic classification for `lance-sqf-types` calls and cfg access.
+4. Implement semantic classification for `lance` calls and cfg access.
 5. Lower a very small TS subset into IR.
 6. Emit SQF for direct command-call examples.
 7. Add tests and golden fixtures around that vertical slice.
@@ -330,7 +330,7 @@ If starting implementation now, the order should be:
 The best first real feature slice is:
 
 - parse one TS file
-- resolve import from `lance-sqf-types`
+- resolve import from `lance`
 - support:
   `const`
   local variables
@@ -370,7 +370,7 @@ As implementation starts, add:
 
 The AST transpilation effort is on the right track when:
 
-- TS code using `lance-sqf-types` can be semantically resolved.
+- TS code using `lance` can be semantically resolved.
 - The compiler rejects unsupported syntax clearly.
 - A small TS program consistently emits valid SQF.
 - The emission path is driven by resolved meaning, not brittle string matching.

@@ -86,7 +86,7 @@ Specifies operator semantics and how compound expressions lower to SQF. SQF oper
 
 ## 5.10 SQF-Specific Operators
 
-(`isKindOf`, `countSide`, `countType` etc. — exposed as functions in `lance-sqf-types`, called as normal TS functions)
+(`isKindOf`, `countSide`, `countType` etc. — exposed as functions in `lance`, called as normal TS functions)
 
 ## 5.11 Precedence and Parenthesization
 

@@ -45,7 +45,7 @@ equipRifleman();
 
 ### 6.3.2 Package Imports
 
-Only `lance-sqf-types` (or another configured types-only package) is allowed. Importing arbitrary npm packages is rejected at compile time.
+Only `lance` (or another configured types-only package) is allowed. Importing arbitrary npm packages is rejected at compile time.
 
 ### 6.3.3 Type-Only Imports
 

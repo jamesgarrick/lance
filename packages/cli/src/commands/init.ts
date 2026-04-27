@@ -123,7 +123,7 @@ outDir = "${outDir}"
 
     const sqfTypesPath = resolve(__dirname, "../../../sqf-types");
 
-    execSync(`bun add lance-sqf-types@file:${sqfTypesPath}`, {
+    execSync(`bun add lance@file:${sqfTypesPath}`, {
       cwd,
       stdio: "inherit",
     });
@@ -162,7 +162,7 @@ async function writeProjectTsConfig(cwd: string): Promise<void> {
 
 function entrypointTemplate(type: "mission" | "library"): string {
   if (type === "mission") {
-    return `import { player } from "lance-sqf-types";\n\n// Mission entry point\n`;
+    return `import { player } from "lance";\n\n// Mission entry point\n`;
   }
   return `// Library entry point\n`;
 }

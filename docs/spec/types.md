@@ -1,6 +1,6 @@
 # 11. Types
 
-Specifies the role of the TypeScript type system in Lance — what types do at compile time, what (if anything) survives to runtime, and how `lance-sqf-types` encodes SQF semantics.
+Specifies the role of the TypeScript type system in Lance — what types do at compile time, what (if anything) survives to runtime, and how `lance` encodes SQF semantics.
 
 Lance is **type-driven**: the same TS expression can lower to different SQF depending on the static type of its operands. This means `tsc` strict mode is mandatory.
 
@@ -21,7 +21,7 @@ Some types influence emission and must be reflected in IR metadata:
 
 ## 11.2 Branded Primitives
 
-`lance-sqf-types` brands SQF's primitive types so that, e.g., a `SqfClassName` is not interchangeable with a `SqfVariableName` even though both are strings at runtime.
+`lance` brands SQF's primitive types so that, e.g., a `SqfClassName` is not interchangeable with a `SqfVariableName` even though both are strings at runtime.
 
 ### 11.2.1 Why
 
@@ -99,7 +99,7 @@ The compiler requires:
 
 Violations are surfaced before lowering begins. Loosening these is not supported.
 
-## 11.8 The lance-sqf-types Contract
+## 11.8 The lance Contract
 
 ### 11.8.1 Versioning
 

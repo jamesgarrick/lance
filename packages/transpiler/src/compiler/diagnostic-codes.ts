@@ -25,7 +25,7 @@ export const DIAGNOSTIC_CODES = {
 
   // ── Type / Semantic ────────────────────────────────────────────────────────
   LANCE_UNRESOLVED_CFG_REFERENCE: "cfg reference cannot be resolved",
-  LANCE_UNKNOWN_SQF_COMMAND: "call target not found in lance-sqf-types",
+  LANCE_UNKNOWN_SQF_COMMAND: "call target not found in lance types package",
   LANCE_NON_STRICT_EQUALITY: "Lance requires strict equality (=== / !==)",
   LANCE_AWAIT_OUTSIDE_ASYNC: "await used outside an async function",
   LANCE_AWAITED_NON_AWAITABLE: "await on a non-awaitable expression",

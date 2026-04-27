@@ -9,7 +9,7 @@ export interface SemanticContext {
 export async function createSemanticContext(
   options: CompilerOptions,
 ): Promise<SemanticContext> {
-  const typesPackageRoot = options.typesPackageRoot ?? "../lance-sqf-types";
+  const typesPackageRoot = options.typesPackageRoot ?? "../sqf-types";
   const cfgRoots = {
     cfgWeapons: await readCfgJson(typesPackageRoot, "cfgWeapons.json"),
     cfgWeaponsItems: await readCfgJson(typesPackageRoot, "cfgWeaponsItems.json"),

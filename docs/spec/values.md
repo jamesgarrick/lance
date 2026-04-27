@@ -84,7 +84,7 @@ SQF has no first-class object/dictionary type pre–Arma 3 v2.02. Lance targets 
 
 ### 4.6.1 SQF objNull / grpNull / etc.
 
-(typed null sentinels — when authoring, use the imported constants from `lance-sqf-types`; equality covered in expressions.md)
+(typed null sentinels — when authoring, use the imported constants from `lance`; equality covered in expressions.md)
 
 ### 4.6.2 Side Constants
 

@@ -46,7 +46,7 @@ Codes use the `LANCE_<CATEGORY>_<NAME>` form. A non-exhaustive registry:
 ### 13.3.3 Type / Semantic
 
 - `LANCE_UNRESOLVED_CFG_REFERENCE`
-- `LANCE_UNKNOWN_SQF_COMMAND` — call target not in `lance-sqf-types`
+- `LANCE_UNKNOWN_SQF_COMMAND` — call target not in `lance`
 - `LANCE_LOCALITY_MISMATCH` — local-effect command on non-local target
 - `LANCE_AMBIGUOUS_NULL` — `null` literal where multiple sentinels apply
 - `LANCE_REQUIRED_ASYNC` — `await` used in non-async function

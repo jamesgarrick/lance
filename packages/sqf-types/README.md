@@ -1,4 +1,4 @@
-# lance-sqf-types
+# lance
 
 First-pass TypeScript typings for `lance`, a TypeScript-to-SQF transpiler.
 
@@ -88,7 +88,7 @@ import {
   setUnitPos,
   weapons,
   west,
-} from "lance-sqf-types";
+} from "lance";
 
 declare const squadLead: Unit;
 declare const squad: Group;

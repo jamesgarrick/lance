@@ -1,4 +1,4 @@
-import { cfgMagazines, cfgWeapons, cfgWeaponsItems, player } from "lance-sqf-types";
+import { cfgMagazines, cfgWeapons, cfgWeaponsItems, player } from "lance";
 
 player.addWeapon(cfgWeapons.arifle.ak12);
 player.addPrimaryWeaponItem(cfgWeaponsItems.optic.arco);

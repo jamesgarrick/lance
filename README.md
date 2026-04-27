@@ -9,7 +9,7 @@ Monorepo for the `lance` toolchain.
 - `packages/cli`
   Reserved workspace for the future `lance` CLI and package-manager surface.
 - `packages/sqf-types`
-  Home of the `lance-sqf-types` package used by the transpiler.
+  Home of the `lance` package used by the transpiler.
 - `docs/`
   Shared planning and architecture notes.
 

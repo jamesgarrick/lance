@@ -18,7 +18,7 @@ Each section follows the same shape: short prose explaining the model, then `ts`
 | 8   | [networking.md](./networking.md)           | locality, `publicVariable`, `remoteExec`, JIP                    |
 | 9   | [event-handlers.md](./event-handlers.md)   | object/mission/UI event handlers, lifetimes                      |
 | 10  | [classes.md](./classes.md)                 | OOP lowering strategy — fields, methods, dispatch                |
-| 11  | [types.md](./types.md)                     | lance-sqf-types contract, branded primitives, type-driven emit   |
+| 11  | [types.md](./types.md)                     | lance contract, branded primitives, type-driven emit   |
 | 12  | [cfg.md](./cfg.md)                         | `cfgWeapons` / `cfgMagazines` / etc. resolution to string class names |
 | 13  | [diagnostics.md](./diagnostics.md)         | compile-time error/warning model, codes, fix suggestions         |
 | 14  | [errors.md](./errors.md)                   | runtime errors: `throw`/`catch`, Error class hierarchy, auto-wrap |

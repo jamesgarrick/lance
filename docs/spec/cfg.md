@@ -2,7 +2,7 @@
 
 Specifies how `cfgWeapons` / `cfgMagazines` / `cfgWeaponsItems` / etc. accesses lower to SQF string literals at compile time.
 
-The user authors structured paths like `cfgWeapons.arifle.mx.base` and the compiler resolves them to the underlying class name string (`"arifle_MX_F"`) via a JSON tree shipped in `lance-sqf-types`.
+The user authors structured paths like `cfgWeapons.arifle.mx.base` and the compiler resolves them to the underlying class name string (`"arifle_MX_F"`) via a JSON tree shipped in `lance`.
 
 ## 12.1 Why Compile-Time Resolution
 

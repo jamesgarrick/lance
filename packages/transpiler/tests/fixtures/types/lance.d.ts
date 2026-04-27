@@ -1,4 +1,4 @@
-declare module "lance-sqf-types" {
+declare module "lance" {
   export const cfgWeapons: {
     readonly arifle: {
       readonly ak12: string;

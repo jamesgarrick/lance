@@ -12,13 +12,13 @@ SQF object locality is a property of each entity: it is "local" on exactly one m
 - **Global effects**: replicate automatically (e.g. `addAction`, `setVehiclePosition`)
 - **Local arguments**: must run where the *argument* is local
 
-`lance-sqf-types` annotates each function with its locality requirement.
+`lance` annotates each function with its locality requirement.
 
 ## 8.2 Locality Annotations
 
 ### 8.2.1 In the Type System
 
-Functions in `lance-sqf-types` carry a `Locality` brand:
+Functions in `lance` carry a `Locality` brand:
 
 ```ts
 declare function setDamage(unit: Unit, damage: number): LocalEffect<Unit>;

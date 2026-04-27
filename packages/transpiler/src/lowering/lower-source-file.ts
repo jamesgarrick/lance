@@ -55,11 +55,12 @@ export function lowerSourceFile(
   sourceFile: SourceFile,
   isEntry: boolean,
   diagnostics: DiagnosticBag,
-  _options: CompilerOptions,
+  options: CompilerOptions,
   semanticContext: SemanticContext,
   functionRegistry: FunctionRegistry,
 ): LoweringResult {
-  const bindings = collectSemanticBindings(sourceFile, functionRegistry);
+  const typesPackageName = options.typesPackageName ?? "lance";
+  const bindings = collectSemanticBindings(sourceFile, functionRegistry, typesPackageName);
   const scope = createScope();
 
   const entryStatements: SqfStatement[] = [];
@@ -571,10 +572,11 @@ interface SourceFileSemanticBindings {
 function collectSemanticBindings(
   sourceFile: SourceFile,
   functionRegistry: FunctionRegistry,
+  typesPackageName: string,
 ): SourceFileSemanticBindings {
   const lanceImport = sourceFile
     .getImportDeclarations()
-    .find((d) => d.getModuleSpecifierValue() === "lance-sqf-types");
+    .find((d) => d.getModuleSpecifierValue() === typesPackageName);
 
   const importedLocalNames = {
     player: getNamedImportLocalName(lanceImport, "player"),
