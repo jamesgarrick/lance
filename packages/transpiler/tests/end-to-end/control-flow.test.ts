@@ -32,16 +32,14 @@ function compile({ source, asEntry = true }: CompileOptions): {
   const diagnostics = new DiagnosticBag();
   const registry: FunctionRegistry = new Map();
   const semanticContext: SemanticContext = {
-    cfgWeapons: {},
-    cfgWeaponsItems: {},
-    cfgMagazines: {},
+    cfgRoots: { cfgWeapons: {}, cfgWeaponsItems: {}, cfgMagazines: {} },
   };
 
   const result = lowerSourceFile(
     sourceFile,
     asEntry,
     diagnostics,
-    defaultCompilerOptions,
+    { ...defaultCompilerOptions, entryFilePaths: ["/test.ts"], tsConfigFilePath: "tsconfig.json" },
     semanticContext,
     registry,
   );
@@ -206,6 +204,125 @@ describe("end-to-end: throw (§3.5.2 / §14.4)", () => {
     });
     const codes = diagnostics.toArray().map((d) => d.code);
     expect(codes).toContain("LANCE_NON_ERROR_THROW");
+  });
+});
+
+describe("end-to-end: break / continue (§3.6)", () => {
+  test("`break` inside while emits SQF break", () => {
+    const { sqf, diagnostics } = compile({
+      source: `while (active) { if (done) break; }`,
+    });
+    expect(sqf).toContain(`break;`);
+    expect(diagnostics.toArray()).toEqual([]);
+  });
+
+  test("for-of loop without continue emits unwrapped forEach", () => {
+    const { sqf } = compile({
+      source: `for (const u of units) { doStuff(u); }`,
+    });
+    // Should NOT contain a `call { … }` wrapper since there's no continue.
+    expect(sqf).not.toContain(`[] call`);
+    expect(sqf).toContain(`} forEach units;`);
+  });
+
+  test("for-of loop with continue gets the call-wrapper trick", () => {
+    const { sqf, diagnostics } = compile({
+      source: `
+        for (const u of units) {
+          if (skip) continue;
+          doStuff(u);
+        }
+      `,
+    });
+    // continue → exitWith {}, body wrapped in `[] call { … }`.
+    expect(sqf).toContain(`exitWith {};`);
+    expect(sqf).toContain(`[] call {`);
+    expect(diagnostics.toArray()).toEqual([]);
+  });
+
+  test("for-of where the continue is in a nested loop does NOT wrap the outer", () => {
+    const { sqf } = compile({
+      source: `
+        for (const a of as) {
+          for (const b of bs) {
+            if (cond) continue;
+          }
+        }
+      `,
+    });
+    // Only the inner forEach (the one containing the `continue`) gets wrapped.
+    const wrapperCount = (sqf.match(/\[\] call \{/g) ?? []).length;
+    expect(wrapperCount).toBe(1);
+  });
+});
+
+describe("end-to-end: do/while (§3.2.1)", () => {
+  test("do { body } while (cond) lowers to while-true with bottom guard", () => {
+    const { sqf, diagnostics } = compile({
+      source: `do { tick(); } while (running);`,
+    });
+    expect(sqf).toContain(`while {true} do {`);
+    expect(sqf).toContain(`if (!(running))`);
+    expect(sqf).toContain(`break;`);
+    expect(diagnostics.toArray()).toEqual([]);
+  });
+});
+
+describe("end-to-end: try/catch (§3.5)", () => {
+  test("basic try/catch rebinds _exception to the catch parameter", () => {
+    const { sqf, diagnostics } = compile({
+      source: `
+        try {
+          riskyCall();
+        } catch (err) {
+          log(err);
+        }
+      `,
+    });
+    expect(sqf).toContain(`try {`);
+    expect(sqf).toContain(`} catch {`);
+    expect(sqf).toContain(`private _err = _exception;`);
+    expect(diagnostics.toArray()).toEqual([]);
+  });
+
+  test("catch with no parameter omits the rebind", () => {
+    const { sqf, diagnostics } = compile({
+      source: `
+        try {
+          riskyCall();
+        } catch {
+          log("oops");
+        }
+      `,
+    });
+    expect(sqf).toContain(`try {`);
+    expect(sqf).toContain(`} catch {`);
+    expect(sqf).not.toContain(`= _exception`);
+    expect(diagnostics.toArray()).toEqual([]);
+  });
+
+  test("try/finally without catch surfaces a diagnostic", () => {
+    const { diagnostics } = compile({
+      source: `try { riskyCall(); } finally { cleanup(); }`,
+    });
+    const codes = diagnostics.toArray().map((d) => d.code);
+    expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
+  });
+
+  test("try with throw inside + finally surfaces a diagnostic (open question)", () => {
+    const { diagnostics } = compile({
+      source: `
+        try {
+          throw new Error("boom");
+        } catch (e) {
+          log(e);
+        } finally {
+          cleanup();
+        }
+      `,
+    });
+    const codes = diagnostics.toArray().map((d) => d.code);
+    expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
   });
 });
 

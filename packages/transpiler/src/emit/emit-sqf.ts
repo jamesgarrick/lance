@@ -19,6 +19,7 @@ import type {
   SqfSwitchStatement,
   SqfThrowStatement,
   SqfTrailingExpressionStatement,
+  SqfTryCatchStatement,
   SqfUnaryExpression,
   SqfVariableStatement,
   SqfWhileStatement,
@@ -92,6 +93,12 @@ function emitSqfStatement(statement: SqfStatement): string {
       return emitThrowStatement(statement);
     case "SwitchStatement":
       return emitSwitchStatement(statement);
+    case "BreakStatement":
+      return "break;";
+    case "ContinueStatement":
+      return "exitWith {};";
+    case "TryCatchStatement":
+      return emitTryCatchStatement(statement);
   }
 }
 
@@ -119,13 +126,14 @@ function emitIfExitWithStatement(statement: SqfIfExitWithStatement): string {
 }
 
 function emitIfStatement(statement: SqfIfStatement): string {
-  const lines = [
-    `if (${emitSqfExpression(statement.condition)}) then {`,
-    ...statement.thenStatements.map((s) => `    ${emitSqfStatement(s)}`),
-    `}${statement.elseStatements.length > 0 ? " else {" : ""}`,
-    ...statement.elseStatements.map((s) => `    ${emitSqfStatement(s)}`),
-    statement.elseStatements.length > 0 ? "};" : ";",
-  ];
+  const hasElse = statement.elseStatements.length > 0;
+  const lines: string[] = [`if (${emitSqfExpression(statement.condition)}) then {`];
+  for (const s of statement.thenStatements) lines.push(`    ${emitSqfStatement(s)}`);
+  if (hasElse) {
+    lines.push("} else {");
+    for (const s of statement.elseStatements) lines.push(`    ${emitSqfStatement(s)}`);
+  }
+  lines.push("};");
   return lines.join("\n");
 }
 
@@ -265,6 +273,24 @@ function emitCodeBlock(block: SqfCodeBlock): string {
     ...block.body.map((s) => `    ${emitSqfStatement(s)}`),
     "}",
   ].join("\n");
+}
+
+function emitTryCatchStatement(statement: SqfTryCatchStatement): string {
+  const lines: string[] = ["try {"];
+  for (const s of statement.tryBody) lines.push(`    ${emitSqfStatement(s)}`);
+  lines.push("} catch {");
+
+  if (statement.catchParameterName) {
+    lines.push(`    private _${statement.catchParameterName} = _exception;`);
+  }
+  for (const s of statement.catchBody) lines.push(`    ${emitSqfStatement(s)}`);
+  lines.push(statement.finallyBody ? "};" : "};");
+
+  if (statement.finallyBody) {
+    for (const s of statement.finallyBody) lines.push(emitSqfStatement(s));
+  }
+
+  return lines.join("\n");
 }
 
 function emitConditionalExpression(expression: SqfConditionalExpression): string {

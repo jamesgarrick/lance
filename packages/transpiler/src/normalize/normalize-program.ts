@@ -18,17 +18,28 @@ import type {
   SqfStatement,
   SqfTrailingExpressionStatement,
 } from "../ir/nodes";
+import { normalizeLoopBody } from "./normalize-loops";
 
 export function normalizeSqfProgram(
   program: SqfProgram,
   diagnostics: DiagnosticBag,
 ): SqfProgram {
-  const normalizedFunctions = program.functionFiles.map((fn) =>
+  // Loop normalization (continue → call/exitWith wrapper) runs before return
+  // normalization so that any `if (cond) return X;` inside a loop body that's
+  // about to get wrapped is rewritten correctly.
+  const loopNormalizedFunctions = program.functionFiles.map((fn) => ({
+    ...fn,
+    body: normalizeLoopBody(fn.body),
+  }));
+  const loopNormalizedEntry = normalizeLoopBody(program.entryStatements);
+
+  const normalizedFunctions = loopNormalizedFunctions.map((fn) =>
     normalizeFunctionFile(fn, diagnostics),
   );
 
   return {
     ...program,
+    entryStatements: loopNormalizedEntry,
     functionFiles: normalizedFunctions,
   };
 }

@@ -31,7 +31,10 @@ export type SqfStatement =
   | SqfForFromToStatement
   | SqfForEachStatement
   | SqfThrowStatement
-  | SqfSwitchStatement;
+  | SqfSwitchStatement
+  | SqfBreakStatement
+  | SqfContinueStatement
+  | SqfTryCatchStatement;
 
 export interface SqfRawTsStatement {
   readonly kind: "RawTsStatement";
@@ -150,6 +153,38 @@ export interface SqfSwitchStatement {
 export interface SqfSwitchCase {
   readonly labels: readonly SqfExpression[];
   readonly body: readonly SqfStatement[];
+}
+
+/** `break;` — exits the innermost loop. Spec §3.6.1. */
+export interface SqfBreakStatement {
+  readonly kind: "BreakStatement";
+}
+
+/**
+ * `continue;` — skips to the next iteration of the innermost loop. Spec §3.6.2.
+ * Lowering wraps the affected loop body in `call { ... }` and emits this as
+ * `exitWith {}` so the inner block exits but the outer loop continues.
+ */
+export interface SqfContinueStatement {
+  readonly kind: "ContinueStatement";
+}
+
+/**
+ * `try { … } catch { … }` — spec §3.5. Catch always binds `_exception` (SQF's
+ * implicit), and the catch parameter name (TS `catch (e)`) is rebound from
+ * `_exception` at the top of the catch body.
+ *
+ * `finally` (when present) is emitted as a cleanup block running after the
+ * try/catch — see spec §3.5.3. If the try or catch body contains any control
+ * transfer (`return`, `throw`, `break`, `continue`), normalization surfaces a
+ * diagnostic since the cleanup ordering is an open question.
+ */
+export interface SqfTryCatchStatement {
+  readonly kind: "TryCatchStatement";
+  readonly tryBody: readonly SqfStatement[];
+  readonly catchParameterName?: string;
+  readonly catchBody: readonly SqfStatement[];
+  readonly finallyBody?: readonly SqfStatement[];
 }
 
 export type SqfExpression =

@@ -14,6 +14,8 @@ import {
 } from "./lower-for-statement";
 import { lowerSwitchStatement, type SwitchLoweringContext } from "./lower-switch-statement";
 import { lowerThrowStatement, type ThrowLoweringContext } from "./lower-throw-statement";
+import { lowerDoWhileStatement, type DoWhileLoweringContext } from "./lower-do-while";
+import { lowerTryStatement, type TryLoweringContext } from "./lower-try-statement";
 import type { DiagnosticBag } from "../compiler/diagnostics";
 import type { CompilerOptions } from "../compiler/options";
 import type { FunctionRegistry } from "../compiler/project";
@@ -311,6 +313,29 @@ function lowerStatement(
     return lowerThrowStatement(statement, makeThrowContext(diagnostics, bindings, semanticContext, scope), diagnostics);
   }
 
+  if (Node.isDoStatement(statement)) {
+    return lowerDoWhileStatement(
+      statement,
+      makeDoWhileContext(diagnostics, bindings, semanticContext, scope),
+    );
+  }
+
+  if (Node.isTryStatement(statement)) {
+    return lowerTryStatement(
+      statement,
+      makeTryContext(diagnostics, bindings, semanticContext, scope),
+      diagnostics,
+    );
+  }
+
+  if (Node.isBreakStatement(statement)) {
+    return { kind: "BreakStatement" };
+  }
+
+  if (Node.isContinueStatement(statement)) {
+    return { kind: "ContinueStatement" };
+  }
+
   diagnostics.add({
     code: "LANCE_UNSUPPORTED_STATEMENT",
     severity: "warning",
@@ -359,6 +384,29 @@ function makeThrowContext(
 ): ThrowLoweringContext {
   return {
     lowerExpression: (expr) => lowerExpression(expr, diagnostics, bindings, semanticContext, scope),
+  };
+}
+
+function makeDoWhileContext(
+  diagnostics: DiagnosticBag,
+  bindings: SourceFileSemanticBindings,
+  semanticContext: SemanticContext,
+  scope: LoweringScope,
+): DoWhileLoweringContext {
+  return {
+    lowerExpression: (expr) => lowerExpression(expr, diagnostics, bindings, semanticContext, scope),
+    lowerStatementBlock: (stmt) => lowerStatementBlock(stmt, diagnostics, bindings, semanticContext, scope),
+  };
+}
+
+function makeTryContext(
+  diagnostics: DiagnosticBag,
+  bindings: SourceFileSemanticBindings,
+  semanticContext: SemanticContext,
+  scope: LoweringScope,
+): TryLoweringContext {
+  return {
+    lowerStatementBlock: (stmt) => lowerStatementBlock(stmt, diagnostics, bindings, semanticContext, scope),
   };
 }
 
