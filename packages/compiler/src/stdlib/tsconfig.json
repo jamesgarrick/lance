@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "noLib": true,
+    "types": []
+  },
+  "files": ["../packages/core/globals.d.ts"]
+}

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2019",
     "module": "commonjs",
-    "moduleResolution": "node",
+    "moduleResolution": "node10",
     "ignoreDeprecations": "6.0",
     "outDir": "dist",
     "rootDir": "src",

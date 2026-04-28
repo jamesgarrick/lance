@@ -1,17 +1,26 @@
 import type { String as IString } from "@lance/core/types/string";
-import { count } from "@lance/core";
+import { toArray, select, count, joinString } from "@lance/core";
+
 
 export class CString implements IString {
-  charAt(pos: number): string {
-    return "";
+  private _string!: string;
+
+  charAt(index: number): string {
+    if (index < 0 || index >= this._string.length) return "";
+
+    return select(this._string, index);
   }
 
   charCodeAt(index: number): number {
-    return 0;
+    // !TODO - NAN is 1e-39? handle in compiler
+    if (index < 0 || index >= this._string.length) return NaN;
+
+    const charArray = toArray(this._string);
+    return select(charArray, index);
   }
 
   concat(...strings: string[]): string {
-    return "";
+    return joinString([this._string, ...strings], "");
   }
 
   indexOf(searchString: string, position?: number): number {
