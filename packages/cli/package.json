@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^7",
-    "@lance/transpiler": "workspace:*",
+    "@lance/compiler": "workspace:*",
     "@oclif/core": "^4"
   },
   "devDependencies": {

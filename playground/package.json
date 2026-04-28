@@ -1,7 +1,6 @@
 {
   "name": "playground",
   "private": true,
-  "noLib": true,
   "type": "module",
   "dependencies": {
     "@lance/core": "workspace:*",
