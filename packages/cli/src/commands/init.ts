@@ -123,13 +123,13 @@ outDir = "${outDir}"
     const __dirname = dirname(__filename);
 
     const corePath = resolve(__dirname, "../../../core");
-    const tsPluginPath = resolve(__dirname, "../../../ts-plugin");
+    // const tsPluginPath = resolve(__dirname, "../../../ts-plugin");
     const coreSpec = existsSync(corePath) ? `@lance/core@file:${corePath}` : "@lance/core";
-    const tsPluginSpec = existsSync(tsPluginPath)
-      ? `@lance/ts-plugin@file:${tsPluginPath}`
-      : "@lance/ts-plugin";
+    // const tsPluginSpec = existsSync(tsPluginPath)
+    //   ? `@lance/ts-plugin@file:${tsPluginPath}`
+    //   : "@lance/ts-plugin";
 
-    execSync(`bun add ${coreSpec} ${tsPluginSpec}`, {
+    execSync(`bun add ${coreSpec}`, {
       cwd,
       stdio: "inherit",
     });

@@ -3,7 +3,5 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@lance/core": "workspace:*",
-    "@lance/ts-plugin": "workspace:*"
-  }
+    "@lance/core": "workspace:*"  }
 }
