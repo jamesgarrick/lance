@@ -3,6 +3,7 @@ import { Command } from "@oclif/core";
 import { basename, join, resolve, dirname } from "node:path";
 import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { existsSync } from "node:fs";
 
 
 export default class Init extends Command {
@@ -121,9 +122,14 @@ outDir = "${outDir}"
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
 
-    const sqfTypesPath = resolve(__dirname, "../../../sqf-types");
+    const corePath = resolve(__dirname, "../../../core");
+    const tsPluginPath = resolve(__dirname, "../../../ts-plugin");
+    const coreSpec = existsSync(corePath) ? `@lance/core@file:${corePath}` : "@lance/core";
+    const tsPluginSpec = existsSync(tsPluginPath)
+      ? `@lance/ts-plugin@file:${tsPluginPath}`
+      : "@lance/ts-plugin";
 
-    execSync(`bun add lance@file:${sqfTypesPath}`, {
+    execSync(`bun add ${coreSpec} ${tsPluginSpec}`, {
       cwd,
       stdio: "inherit",
     });
@@ -142,19 +148,16 @@ async function writeProjectTsConfig(cwd: string): Promise<void> {
 
   const tsconfig = {
     compilerOptions: {
-      lib: ["ESNext"],
-      types: ["bun"],
-      target: "ESNext",
-      module: "Preserve",
-      moduleDetection: "force",
-      moduleResolution: "bundler",
-      allowImportingTsExtensions: true,
-      verbatimModuleSyntax: true,
-      noEmit: true,
       strict: true,
+      noLib: true,
       skipLibCheck: true,
+      moduleResolution: "bundler",
+      module: "ESNext",
+      types: [],
+      plugins: [{ name: "@lance/ts-plugin" }],
     },
-    include: ["src/**/*.ts"],
+    files: ["./node_modules/@lance/core/globals.d.ts"],
+    include: ["**/*.ts"],
   };
 
   await Bun.write(tsconfigPath, JSON.stringify(tsconfig, null, 2) + "\n");
@@ -162,7 +165,7 @@ async function writeProjectTsConfig(cwd: string): Promise<void> {
 
 function entrypointTemplate(type: "mission" | "library"): string {
   if (type === "mission") {
-    return `import { player } from "lance";\n\n// Mission entry point\n`;
+    return `import { player } from "@lance/core";\n\n// Mission entry point\n`;
   }
   return `// Library entry point\n`;
 }
