@@ -1,6 +1,11 @@
 import type { String as IString } from "@lance/core/types/string";
 import { toArray, select, count, joinString } from "@lance/core";
 
+// !TODO implement in global declarations
+interface RegExpMatchArray {
+
+}
+
 export class CString implements IString {
   private _string!: string;
 

@@ -11,6 +11,6 @@ export interface CompilerOptions {
 
 export const defaultCompilerOptions = {
   typesPackageName: "lance",
-  typesPackageRoot: "../sqf-types",
+  typesPackageRoot: "../core",
   tag: "LNC",
 } satisfies Pick<CompilerOptions, "typesPackageName" | "typesPackageRoot" | "tag">;
