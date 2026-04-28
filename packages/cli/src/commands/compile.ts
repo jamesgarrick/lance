@@ -1,7 +1,8 @@
-import { compileFromConfig, loadLanceConfig } from "@lance/transpiler";
+import { compileFromConfig, loadLanceConfig } from "../../../compiler";
 import { Command, Flags } from "@oclif/core";
 import { mkdir } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
+"".replace
 
 export default class Compile extends Command {
   static override id = "compile";
