@@ -1,15 +1,15 @@
 # @lance/compiler
 
-Early-stage TypeScript-to-SQF compiler scaffold.
+TypeScript-to-SQF compiler.
 
-## Current Status
+**currently very unstable**
 
-The package contains the first compiler structure:
+The package contains a general compiler structure:
 
 - `src/compiler/`
   project loading, diagnostics, orchestration
 - `src/ir/`
-  initial IR node shapes
+  IR node shapes
 - `src/lowering/`
   TypeScript AST to IR lowering
 - `src/normalize/`
@@ -17,10 +17,7 @@ The package contains the first compiler structure:
 - `src/emit/`
   SQF text emission
 - `tests/fixtures/`
-  first vertical-slice fixture layout
-
-This is not a full compiler yet. It is the scaffolding for the first end-to-end
-vertical slice.
+  vertical-slice fixture layout
 
 ## Validate
 

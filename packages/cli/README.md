@@ -1,8 +1,8 @@
 # lance
 
-Reserved workspace for the future `lance` CLI.
+`lance` CLI tool.
 
-Planned responsibilities:
+Primarily for:
 
 - `lance init`
 - `lance compile`

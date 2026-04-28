@@ -1,81 +1,22 @@
-# lance
+# @lance/core
 
-First-pass TypeScript typings for `lance`, a TypeScript-to-SQF transpiler.
+TypeScript typings for `lance` framework.
 
-The goal is not to mirror SQF literally. The goal is to give SQF authors a more
-organized, idiomatic TypeScript surface while keeping the underlying command
+The goal for this using TypeScript is to give SQF authors a more
+organized, idiomatic OOP surface while keeping the underlying command
 model recognizable.
-
-## Current coverage
-
-- Core scalar, vector, color, date, and position aliases
-- Declaration layout:
-  `primitives.d.ts`, `core.d.ts`, `world.d.ts`, `objects.d.ts`,
-  `units.d.ts`, `unit-loadout.d.ts`, `unit-health.d.ts`,
-  `unit-status.d.ts`, `variables.d.ts`, `program-flow.d.ts`,
-  `config.d.ts`, `event-handlers.d.ts`, `multiplayer.d.ts`,
-  `markers.d.ts`, `briefing.d.ts`, `tasks.d.ts`,
-  `simulation.d.ts`, `vehicle-crew.d.ts`,
-  `values.d.ts`
-- Core language values:
-  `SqfArray`, `SqfCode`, `SqfPrimitive`, `SqfSimpleValue`
-- Reference/data-handle types:
-  `Side`, `SqfNamespace`, `SqfConfig`, `SqfDisplay`, `SqfControl`,
-  `SqfStructuredText`, `SqfLocation`, `SqfTask`, `SqfTeam`,
-  `SqfTeamMember`, `SqfScriptHandle`, `SqfHashMap`
-- Object hierarchy:
-  `SqfObject`, `Person`, `Unit`, `Soldier`, `Vehicle`, `Animal`,
-  `Building`, `GameLogic`, `EditorObject`, `Rope`, `Group`
-- Unit-focused API:
-  AI behaviour, stance/command state, identity, inventory, loadout,
-  vehicle assignment, medical/damage methods, and stamina/readiness
-  methods on `Unit`
-- Typed config access:
-  `weapons.cfgWeapons...` with `base` entries collapsed into the parent
-  node's string value
-  `weaponsItems.cfgWeaponsItems...` and `magazines.cfgMagazines...`
-  follow the same pattern
-- Initial object manipulation commands:
-  `getPos*`, `setPos*`, `getDir`, `setDir`, `typeOf`, `isKindOf`,
-  `vehicle`, `objectParent`, `attachedTo`, `attachedObjects`,
-  `setDamage`, `setHitPointDamage`
-- Foundational script/runtime commands:
-  `getVariable`, `setVariable`, `allVariables`, `isNil`, `call`, `spawn`,
-  `waitUntil`, `sleep`, `compile`, `compileFinal`
-- Config/runtime roots:
-  `configFile`, `missionConfigFile`, `campaignConfigFile`,
-  `configName`, `configClasses`, `configOf`
-- Event handler/runtime systems:
-  `addEventHandler`, `addMPEventHandler`, `addMissionEventHandler`,
-  `ctrlAddEventHandler`, `displayAddEventHandler`, `getEventHandlerInfo`
-- Multiplayer/runtime systems:
-  `remoteExec`, `remoteExecCall`, `owner`, `groupOwner`, `setOwner`,
-  `setGroupOwner`, `publicVariableClient`, `isServer`, `isDedicated`,
-  `hasInterface`, `isRemoteExecuted`
-- Marker/task systems:
-  `createMarker`, `createMarkerLocal`, `markerPos`, `setMarkerPos*`,
-  `setMarkerType*`, `setMarkerText*`, `allMapMarkers`, `markerExists`,
-  `createSimpleTask`,
-  `setSimpleTaskDescription`, `setSimpleTaskDestination`, `setTaskState`
-- Briefing/diary systems:
-  `createDiarySubject`, `createDiaryRecord`, `allDiarySubjects`,
-  `allDiaryRecords`, `setDiaryRecordText`, `setDiarySubjectPicture`
-- Simulation/vehicle runtime:
-  `simulationEnabled`, `enableSimulation*`, `hideObject*`,
-  `isObjectHidden`, `crew`, `driver`, `gunner`, `commander`,
-  `effectiveCommander`, `fullCrew`, `assignedVehicleRole`
 
 ## Style direction
 
 The package currently exposes both:
 
 - free functions, e.g. `setDamage(target, 1)`
-- instance-style methods, e.g. `target.setDamage(1)`
+- instance-style methods, e.g. `string.substr('XX,'X')`
 
-That gives `lance` room to support either a function-first or an OOP-oriented
-authoring style.
+That gives `lance` room to support either a wide range of programming styles,
+letting you opt-in to use the framework in the way that best suits you.
 
-## Example
+## Specification Example (not implemented)
 
 ```ts
 import {

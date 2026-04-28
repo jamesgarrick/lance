@@ -1,8 +1,8 @@
-# lance
+# Lance
 
-Monorepo for the Lance TypeScript-to-SQF toolchain.
+Unified Typescript-to-SQF E2E Framework
 
-## Workspaces
+## Packages
 
 - `packages/core` — typed SQF/core/cfg bindings (`@lance/core`)
 - `packages/compiler` — TS → SQF compiler (`@lance/compiler`)
