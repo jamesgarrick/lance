@@ -3,7 +3,6 @@ interface Function {}
 interface CallableFunction extends Function {}
 interface NewableFunction extends Function {}
 interface Boolean {}
-interface Number {}
 interface Object {}
 interface RegExp {}
 interface IArguments {}
@@ -13,6 +12,7 @@ interface Array<T> {
 }
 
 interface String {
+  /** Returns the length of the string */
   readonly length: number;
 
   /**
@@ -22,4 +22,12 @@ interface String {
    * @param replaceValue A string containing the text to replace. When the {@linkcode searchValue} is a `RegExp`, all matches are replaced if the `g` flag is set (or only those matches at the beginning, if the `y` flag is also present). Otherwise, only the first match of {@linkcode searchValue} is replaced.
    */
   replace(pattern: string, replacement: string): string;
+}
+
+interface HashMap {
+
+}
+
+interface Number {
+
 }

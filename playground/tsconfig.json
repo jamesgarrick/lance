@@ -7,6 +7,6 @@
     "module": "ESNext",
     "types": []
   },
-  "files": ["../packages/lance-core/globals.d.ts"],
+  "files": ["../packages/core/globals.d.ts"],
   "include": ["**/*.ts"],
 }

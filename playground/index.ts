@@ -1,1 +1,1 @@
-import { addBackpack } from "lance";
+import addBackpack from "../packages/core/dist/src";
