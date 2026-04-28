@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+
+    "noLib": true,
+
+    "types": ["../packages/sqf-types/globals.d.ts"],
+  },
+  "include": ["**/*.ts"],
+}
