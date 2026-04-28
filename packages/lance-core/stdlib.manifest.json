@@ -1,0 +1,6 @@
+{
+  "prototypeMappings": {
+    "String": "lance-core/lib/string.ts",
+    "Array": "lance-core/lib/array.ts"
+  }
+}

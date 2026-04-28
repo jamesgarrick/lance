@@ -4,7 +4,7 @@
 
     "noLib": true,
 
-    "types": ["../packages/sqf-types/globals.d.ts"],
+    "types": ["../packages/lance-core/globals.d.ts"],
   },
   "include": ["**/*.ts"],
 }
