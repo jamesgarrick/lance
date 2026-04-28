@@ -1,5 +1,6 @@
-import type ts from "typescript/lib/tsserverlibrary";
+import type * as ts from "typescript/lib/tsserverlibrary";
 import * as path from "path";
+import * as fs from "fs";
 
 function init(modules: { typescript: typeof import("typescript/lib/tsserverlibrary") }) {
   function create(info: ts.server.PluginCreateInfo) {
@@ -17,12 +18,8 @@ function init(modules: { typescript: typeof import("typescript/lib/tsserverlibra
       const projectDir = info.project.getCurrentDirectory();
 
       prior.entries = prior.entries.filter((entry) => {
-        // Not an auto-import (local variable, keyword, etc.) — always allow
         if (!entry.source) return true;
-
-        // Relative imports are within the same project — always allow
         if (entry.source.startsWith(".")) return true;
-
         return isLancePackage(entry.source, projectDir);
       });
 
@@ -32,10 +29,6 @@ function init(modules: { typescript: typeof import("typescript/lib/tsserverlibra
     return proxy;
   }
 
-  /**
-   * Returns true if the given package name has `"lance": true` in its package.json.
-   * Walks up from projectDir through node_modules to support hoisted installs.
-   */
   function isLancePackage(packageName: string, projectDir: string): boolean {
     let dir = projectDir;
 
@@ -43,15 +36,15 @@ function init(modules: { typescript: typeof import("typescript/lib/tsserverlibra
       const pkgJsonPath = path.join(dir, "node_modules", packageName, "package.json");
 
       try {
-        const raw = require("fs").readFileSync(pkgJsonPath, "utf-8");
+        const raw = fs.readFileSync(pkgJsonPath, "utf-8");
         const pkg = JSON.parse(raw);
         return pkg.lance === true;
       } catch {
-        // Not found at this level — walk up
+        // not found at this level — walk up
       }
 
       const parent = path.dirname(dir);
-      if (parent === dir) break; // reached filesystem root
+      if (parent === dir) break;
       dir = parent;
     }
 

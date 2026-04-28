@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
     "strict": true,
-
     "noLib": true,
-
-    "paths": {
-      "lance": ["../packages/lance-core/src/index.ts"]
-    },
-
-    "plugins": [{ "name": "@lance/ts-plugin" }]
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "types": []
   },
   "files": ["../packages/lance-core/globals.d.ts"],
   "include": ["**/*.ts"],
