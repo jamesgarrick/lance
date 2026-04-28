@@ -1,5 +1,5 @@
 {
-  "name": "@lance/transpiler",
+  "name": "@lance/compiler",
   "module": "index.ts",
   "type": "module",
   "private": true,

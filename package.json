@@ -1,6 +1,5 @@
 {
-  "name": "lance-monorepo",
-  "private": true,
+  "name": "lance",
   "type": "module",
   "workspaces": [
     "packages/*",

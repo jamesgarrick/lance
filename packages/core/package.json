@@ -1,5 +1,5 @@
 {
-  "name": "lance",
+  "name": "@lance/core",
   "lance": true,
   "module": "index.ts",
   "types": "./dist/src/index.d.ts",
