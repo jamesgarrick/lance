@@ -1,0 +1,9 @@
+{
+  "name": "playground",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "lance": "workspace:*",
+    "@lance/ts-plugin": "workspace:*"
+  }
+}

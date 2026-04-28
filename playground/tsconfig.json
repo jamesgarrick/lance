@@ -4,7 +4,12 @@
 
     "noLib": true,
 
-    "types": ["../packages/lance-core/globals.d.ts"],
+    "paths": {
+      "lance": ["../packages/lance-core/src/index.ts"]
+    },
+
+    "plugins": [{ "name": "@lance/ts-plugin" }]
   },
+  "files": ["../packages/lance-core/globals.d.ts"],
   "include": ["**/*.ts"],
 }
