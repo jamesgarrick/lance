@@ -56,6 +56,15 @@ export function addMagazineCargo(object: SqfObject, magazineClass: SqfString, co
 export function addMagazineCargoGlobal(object: SqfObject, magazineClass: SqfString, count: SqfString): SqfCommand;
 
 /**
+ * Get array with weapons from ammo box (or any general weapon holder container).
+ *
+ * @since 0.50
+ *
+ * @see {@link https://community.bistudio.com/wiki/weaponCargo weaponCargo}
+ */
+export function weaponCargo(object: Object): Array<string>;
+
+/**
  * Add weapons to the cargo space of vehicles, which can be taken out by infantry units.
  * Ignores available cargo space.
  *

@@ -102,7 +102,39 @@ export function primaryWeapon(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/secondaryWeapon secondaryWeapon}
  */
-export function secondaryWeapon(person: Person): SqfString;
+export function secondaryWeapon(person: Person): string;
+
+/**
+ * Returns array with all items assigned to the secondaryWeapon except magazines.
+ * Use secondaryWeaponMagazine command for the latter. This command is used for infantry weapons only.
+ *
+ * @returns Array - [silencer, laserpointer/flashlight, optics, bipod]
+ *
+ * @since 0.50
+ *
+ * @see {@link https://community.bistudio.com/wiki/secondaryWeaponItems secondaryWeaponItems}
+ */
+export function secondaryWeaponItems(person: Person): [string, string, string, string];
+
+/**
+ * Adds weapon item, including magazine, directly to the secondaryWeapon.
+ * This is used for infantry weapons.
+ *
+ * @since 0.50
+ *
+ * @see {@link https://community.bistudio.com/wiki/addSecondaryWeaponItem addSecondaryWeaponItem}
+ */
+export function addSecondaryWeaponItem(person: Person, item: string): void;
+
+/**
+ * Collects all loaded magazines from all secondaryWeapon muzzles and returns them in Array,
+ * otherwise it returns []. This command is used for infantry weapons only.
+ *
+ * @since 0.70
+ *
+ * @see {@link https://community.bistudio.com/wiki/secondaryWeaponMagazine secondaryWeaponMagazine}
+ */
+export function secondaryWeaponMagazine(person: Person): Array<string>;
 
 
 /**
@@ -118,7 +150,7 @@ export function secondaryWeapon(person: Person): SqfString;
  * @see {@link https://community.bistudio.com/wiki/linkItem linkItem}
  * @see {@link https://community.bistudio.com/wiki/assignItem assignItem}
  */
-export function linkItem(person: Person, item: SqfString): SqfString;
+export function linkItem(person: Person, item: string): void;
 
 
 /**
@@ -131,7 +163,7 @@ export function linkItem(person: Person, item: SqfString): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/forceAddUniform forceAddUniform}
  */
-export function forceAddUniform(person: Person, uniform: SqfString): SqfString;
+export function forceAddUniform(person: Person, uniform: string): void;
 
 /**
  * Returns name of person's uniform.
@@ -143,7 +175,7 @@ export function forceAddUniform(person: Person, uniform: SqfString): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/uniform uniform}
  */
-export function uniform(person: Person): SqfString;
+export function uniform(person: Person): string;
 
 /**
  * Create a new uniform and try to link it into uniform slot
@@ -158,7 +190,7 @@ export function uniform(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/addUniform addUniform}
  */
-export function addUniform(person: Person, uniform: SqfString): SqfString;
+export function addUniform(person: Person, uniform: string): void;
 
 /**
  * Check whether given uniform can be dressed by target soldier.
@@ -170,7 +202,7 @@ export function addUniform(person: Person, uniform: SqfString): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/isUniformAllowed isUniformAllowed}
  */
-export function isUniformAllowed(person: Person, uniform: SqfString): SqfString;
+export function isUniformAllowed(person: Person, uniform: string): boolean;
 
 /**
  * Removes uniform from person.
@@ -182,7 +214,7 @@ export function isUniformAllowed(person: Person, uniform: SqfString): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/removeUniform removeUniform}
  */
-export function removeUniform(person: Person): SqfString;
+export function removeUniform(person: Person): void;
 
 /**
  * Returns an array of names of all unit's stored items,
@@ -195,7 +227,7 @@ export function removeUniform(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/items items}
  */
-export function items(person: Person): SqfString;
+export function items(person: Person): string[];
 
 /**
  * Returns array with all items assigned to the primaryWeapon except magazines.
@@ -208,10 +240,12 @@ export function items(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/primaryWeaponItems primaryWeaponItems}
  */
-export function primaryWeaponItems(person: Person): SqfString;
+export function primaryWeaponItems(person: Person): [muzzle: string, rail: string, optic: string, bipod: string];
 
 /**
  * Adds weapon item, including magazine, directly to the primaryWeapon. This is used for infantry weapons.
+ *
+ * @returns void or boolean - false is returned if item can not be added
  *
  * @remarks
  * Locality: _Global Argument, Local Effect_
@@ -223,4 +257,13 @@ export function primaryWeaponItems(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/addPrimaryWeaponItem addPrimaryWeaponItem}
  */
-export function addPrimaryWeaponItem(person: Person, item: SqfString): SqfString;
+export function addPrimaryWeaponItem(person: Person, item: string): (void | boolean);
+
+/**
+ * Returns array of names of all person's weapons.
+ *
+ * @since 0.50
+ *
+ * @see {@link https://community.bistudio.com/wiki/weapons weapons}
+ */
+export function weapons(person: Person): Array<string>;
