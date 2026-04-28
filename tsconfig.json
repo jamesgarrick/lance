@@ -1,7 +1,7 @@
 {
   "files": [],
   "references": [
-    { "path": "./packages/transpiler" },
-    { "path": "./packages/sqf-types" }
-  ]
+    { "path": "./packages/compiler" },
+    { "path": "./packages/core" },
+  ],
 }

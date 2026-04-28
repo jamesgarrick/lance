@@ -1,5 +1,4 @@
-import String from "./types/string";
-
+import type { String as IString } from "./types/string";
 
 declare global {
   // --- INTERNAL TYPESCRIPT REQUIREMENTS ---
@@ -15,14 +14,9 @@ declare global {
     length: number;
   }
 
+  interface HashMap {}
 
-  interface HashMap {
+  interface Number {}
 
-  }
-
-  interface Number {
-
-  }
-
-  interface String {}
+  interface String extends IString {}
 }
