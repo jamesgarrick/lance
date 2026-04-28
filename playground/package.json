@@ -4,7 +4,7 @@
   "noLib": true,
   "type": "module",
   "dependencies": {
-    "lance": "workspace:*",
+    "@lance/core": "workspace:*",
     "@lance/ts-plugin": "workspace:*"
   }
 }

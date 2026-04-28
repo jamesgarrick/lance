@@ -2,7 +2,7 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "paths": {
-      "@lance/transpiler": ["../transpiler/index.ts"]
+      "@lance/compiler": ["../compiler/index.ts"]
     }
   },
   "include": ["bin/**/*.ts", "src/**/*.ts"]
