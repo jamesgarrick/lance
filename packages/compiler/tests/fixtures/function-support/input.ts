@@ -1,4 +1,4 @@
-import { cfgMagazines, cfgWeapons, player } from "lance";
+import { cfgMagazines, cfgWeapons, player } from "@lance/core";
 
 function equipRifle() {
   player.addWeapon(cfgWeapons.arifle.ak12);

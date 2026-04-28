@@ -64,7 +64,7 @@ export async function compileFromConfig(
     typesPackageName: build.typesPackage ?? defaultCompilerOptions.typesPackageName,
     typesPackageRoot: build.typesPackageRoot
       ? resolve(projectRoot, build.typesPackageRoot)
-      : defaultCompilerOptions.typesPackageRoot,
+      : undefined,
     sourceRoot: resolve(projectRoot, build.sourceRoot ?? "src"),
     tag,
   };

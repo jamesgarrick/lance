@@ -20,8 +20,8 @@ import type { SemanticContext } from "../../src/semantic/context";
 function compile(source: string): { sqf: string; diagnostics: DiagnosticBag } {
   const project = new Project({ useInMemoryFileSystem: true });
   project.createSourceFile(
-    "/node_modules/lance/index.d.ts",
-    `declare module "lance" {
+    "/node_modules/@lance/core/index.d.ts",
+    `declare module "@lance/core" {
       export const player: unknown;
       export function goggles(unit: unknown): string;
       export function vest(unit: unknown): string;
@@ -66,7 +66,7 @@ function compile(source: string): { sqf: string; diagnostics: DiagnosticBag } {
 describe("SQF unary commands (1-arg free functions)", () => {
   test("goggles(player) → goggles player", () => {
     const { sqf, diagnostics } = compile(`
-      import { player, goggles } from "lance";
+      import { player, goggles } from "@lance/core";
       const g = goggles(player);
     `);
     expect(sqf).toContain("goggles player");
@@ -75,7 +75,7 @@ describe("SQF unary commands (1-arg free functions)", () => {
 
   test("result of unary command assigned to local variable", () => {
     const { sqf, diagnostics } = compile(`
-      import { player, vest } from "lance";
+      import { player, vest } from "@lance/core";
       const unit = player;
       const v = vest(unit);
     `);
@@ -87,7 +87,7 @@ describe("SQF unary commands (1-arg free functions)", () => {
 describe("SQF binary commands (2-arg free functions)", () => {
   test("addVest(player, cls) → player addVest cls", () => {
     const { sqf, diagnostics } = compile(`
-      import { player, addVest } from "lance";
+      import { player, addVest } from "@lance/core";
       addVest(player, "V_PlateCarrier1_rgr_F");
     `);
     expect(sqf).toContain(`player addVest "V_PlateCarrier1_rgr_F"`);
@@ -96,7 +96,7 @@ describe("SQF binary commands (2-arg free functions)", () => {
 
   test("addVest(unit, cls) — local var receiver → _unit addVest cls", () => {
     const { sqf, diagnostics } = compile(`
-      import { player, addVest } from "lance";
+      import { player, addVest } from "@lance/core";
       const unit = player;
       addVest(unit, "V_PlateCarrier1_rgr_F");
     `);
@@ -106,7 +106,7 @@ describe("SQF binary commands (2-arg free functions)", () => {
 
   test("linkItem(unit, item) → _unit linkItem _item", () => {
     const { sqf, diagnostics } = compile(`
-      import { player, linkItem } from "lance";
+      import { player, linkItem } from "@lance/core";
       const unit = player;
       const item = "NVGoggles";
       linkItem(unit, item);
@@ -119,7 +119,7 @@ describe("SQF binary commands (2-arg free functions)", () => {
 describe("SQF binary commands with array right-operand (3+ arg free functions)", () => {
   test("addWeaponCargoGlobal(unit, weapon, count) → unit addWeaponCargoGlobal [weapon, count]", () => {
     const { sqf, diagnostics } = compile(`
-      import { player, addWeaponCargoGlobal } from "lance";
+      import { player, addWeaponCargoGlobal } from "@lance/core";
       addWeaponCargoGlobal(player, "arifle_AK12_F", 5);
     `);
     expect(sqf).toContain(`player addWeaponCargoGlobal ["arifle_AK12_F", 5]`);
@@ -128,7 +128,7 @@ describe("SQF binary commands with array right-operand (3+ arg free functions)",
 
   test("3-arg command with local receiver → _unit addWeaponCargoGlobal [weapon, count]", () => {
     const { sqf, diagnostics } = compile(`
-      import { player, addWeaponCargoGlobal } from "lance";
+      import { player, addWeaponCargoGlobal } from "@lance/core";
       const vehicle = player;
       addWeaponCargoGlobal(vehicle, "arifle_AK12_F", 2);
     `);
@@ -140,7 +140,7 @@ describe("SQF binary commands with array right-operand (3+ arg free functions)",
 describe("SQF commands with player (nular import as receiver)", () => {
   test("goggles(player) → goggles player", () => {
     const { sqf, diagnostics } = compile(`
-      import { player, goggles } from "lance";
+      import { player, goggles } from "@lance/core";
       const g = goggles(player);
     `);
     expect(sqf).toContain("goggles player");
@@ -149,7 +149,7 @@ describe("SQF commands with player (nular import as receiver)", () => {
 
   test("addVest(player, cls) → player addVest cls", () => {
     const { sqf, diagnostics } = compile(`
-      import { player, addVest } from "lance";
+      import { player, addVest } from "@lance/core";
       addVest(player, "V_PlateCarrier1_rgr_F");
     `);
     expect(sqf).toContain(`player addVest "V_PlateCarrier1_rgr_F"`);
@@ -158,9 +158,9 @@ describe("SQF commands with player (nular import as receiver)", () => {
 });
 
 describe("aliased imports", () => {
-  test("import { goggles as getGoggles } from 'lance' still lowers to goggles command", () => {
+  test("import { goggles as getGoggles } from '/core' still lowers to goggles command", () => {
     const { sqf, diagnostics } = compile(`
-      import { goggles as getGoggles, player } from "lance";
+      import { goggles as getGoggles, player } from "@lance/core";
       const g = getGoggles(player);
     `);
     expect(sqf).toContain("goggles player");

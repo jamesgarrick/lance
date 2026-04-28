@@ -48,7 +48,7 @@ export function lowerSourceFile(
   semanticContext: SemanticContext,
   functionRegistry: FunctionRegistry,
 ): LoweringResult {
-  const typesPackageName = options.typesPackageName ?? "lance";
+  const typesPackageName = options.typesPackageName ?? "@lance/core";
   const rawBindings = collectSemanticBindings(sourceFile, functionRegistry, typesPackageName);
   const classModel = collectClassModel(sourceFile, options.tag ?? "LNC");
   const bindings: SourceFileSemanticBindings = {

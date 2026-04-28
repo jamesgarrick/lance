@@ -105,6 +105,7 @@ ${missionToml}
 [build]
 entrypoint = "${entrypoint}"
 outDir = "${outDir}"
+typesPackage = "@lance/core"
 `;
 
     await Bun.write(configPath, configToml);

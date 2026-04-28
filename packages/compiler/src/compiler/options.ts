@@ -10,7 +10,6 @@ export interface CompilerOptions {
 }
 
 export const defaultCompilerOptions = {
-  typesPackageName: "lance",
-  typesPackageRoot: "../core",
+  typesPackageName: "@lance/core",
   tag: "LNC",
-} satisfies Pick<CompilerOptions, "typesPackageName" | "typesPackageRoot" | "tag">;
+} satisfies Pick<CompilerOptions, "typesPackageName" | "tag">;

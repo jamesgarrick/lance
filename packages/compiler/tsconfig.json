@@ -6,7 +6,7 @@
   "include": [
     "index.ts",
     "src/**/*.ts",
-    "tests/**/*.ts"
+    "tests/**/*.test.ts"
   ],
   "exclude": [
     "src/stdlib/**"

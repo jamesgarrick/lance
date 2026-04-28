@@ -1,4 +1,4 @@
-declare module "lance" {
+declare module "@lance/core" {
   export const cfgWeapons: {
     readonly arifle: {
       readonly ak12: string;

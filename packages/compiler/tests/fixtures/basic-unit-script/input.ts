@@ -1,4 +1,4 @@
-import { cfgMagazines, cfgWeapons, cfgWeaponsItems, player } from "lance";
+import { cfgMagazines, cfgWeapons, cfgWeaponsItems, player } from "@lance/core";
 
 player.addWeapon(cfgWeapons.arifle.ak12);
 player.addPrimaryWeaponItem(cfgWeaponsItems.optic.arco);

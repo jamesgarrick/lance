@@ -11,7 +11,7 @@ import type { SemanticContext } from "../../src/semantic/context";
 
 function compile(source: string): { sqf: string; functionBodies: string; diagnostics: DiagnosticBag } {
   const project = new Project({ useInMemoryFileSystem: true });
-  project.createSourceFile('/node_modules/lance/index.d.ts', 'declare module "lance" {}');
+  project.createSourceFile('/node_modules/@lance/core/index.d.ts', 'declare module "@lance/core" {}');
   const sourceFile = project.createSourceFile("/test.ts", source);
 
   const diagnostics = new DiagnosticBag();
