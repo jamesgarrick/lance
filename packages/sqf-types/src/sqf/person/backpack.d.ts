@@ -13,6 +13,18 @@
 export function addBackpack(person: Person, backpackClass: SqfString): SqfCommand;
 
 /**
+ * Remove person's backpack.
+ *
+ * @remarks
+ * Locality: Local Argument, Global Effect._
+ *
+ * @since 0.50
+ *
+ * @see {@link https://community.bistudio.com/wiki/removeBackpack removeBackpack}
+ */
+export function removeBackpack(person: Person): SqfString;
+
+/**
  * Create new item and store it to soldier's backpack. The item can also be a weapon or a magazine.
  *
  * @remarks
