@@ -45,7 +45,7 @@ export function addItemToBackpack(person: Person, backpackClass: SqfString, item
  *
  * @see {@link https://community.bistudio.com/wiki/backpack backpack}
  */
-export function backpack(person: Person): SqfString;
+export function backpack(person: Person): string;
 
 /**
  *
