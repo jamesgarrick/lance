@@ -8,6 +8,30 @@
 export function goggles(person: Person): SqfString;
 
 /**
+ * Create a new item and try to link it into goggles (glasses) slot.
+ *
+ * @since 0.50
+ *
+ * !TODO - needs version
+ * @remarks
+ * This command does not add NVGs, which are hmd slot items (see linkItem instead).
+ *
+ * @see {@link https://community.bistudio.com/wiki/addGoggles addGoggles}
+ */
+export function addGoggles(person: Person, gogglesClass: SqfString): SqfCommand;
+
+/**
+ * Removes goggles from unit (diver goggles for example).
+ * This command does not remove NVGoggles.
+ * Use unassignItem and removeItem or just unlinkItem for latter.
+ *
+ * @since 0.50
+ *
+ * @see {@link https://community.bistudio.com/wiki/removeGoggles removeGoggles}
+ */
+export function removeGoggles(person: Person): SqfString;
+
+/**
  * Returns name of currently used vest.
  *
  * @since 0.50
@@ -159,3 +183,44 @@ export function isUniformAllowed(person: Person, uniform: SqfString): SqfString;
  * @see {@link https://community.bistudio.com/wiki/removeUniform removeUniform}
  */
 export function removeUniform(person: Person): SqfString;
+
+/**
+ * Returns an array of names of all unit's stored items,
+ * including weapons but excluding magazines (see itemsWithMagazines) and assignedItems.
+ *
+ * @remarks
+ * Locality: _Global Argument_
+ *
+ * @since 0.50
+ *
+ * @see {@link https://community.bistudio.com/wiki/items items}
+ */
+export function items(person: Person): SqfString;
+
+/**
+ * Returns array with all items assigned to the primaryWeapon except magazines.
+ *  Use primaryWeaponMagazine command for the latter. This command is used for infantry weapons only.
+ *
+ * @remarks
+ * Locality: _Global Argument_
+ *
+ * @since 0.50
+ *
+ * @see {@link https://community.bistudio.com/wiki/primaryWeaponItems primaryWeaponItems}
+ */
+export function primaryWeaponItems(person: Person): SqfString;
+
+/**
+ * Adds weapon item, including magazine, directly to the primaryWeapon. This is used for infantry weapons.
+ *
+ * @remarks
+ * Locality: _Global Argument, Local Effect_
+ * - If the item being added is not supported by the unit's weapon then the command will simply fail silently.
+ * The item is also **not** added to the unit's inventory in such a case.
+ *
+ * @since 0.50
+ *
+ *
+ * @see {@link https://community.bistudio.com/wiki/addPrimaryWeaponItem addPrimaryWeaponItem}
+ */
+export function addPrimaryWeaponItem(person: Person, item: SqfString): SqfString;
