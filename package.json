@@ -1,17 +1,21 @@
 {
   "name": "lance",
+  "version": "0.0.1",
+  "private": true,
   "type": "module",
   "workspaces": [
     "packages/*",
     "playground"
   ],
   "scripts": {
-    "compile": "bun run --cwd packages/transpiler compile",
-    "typecheck": "bun run transpiler:typecheck && bun run sqf-types:typecheck",
-    "transpiler:compile": "bun run --cwd packages/transpiler compile",
-    "transpiler:typecheck": "bun run --cwd packages/transpiler typecheck",
-    "sqf-types:typecheck": "bun run --cwd packages/sqf-types typecheck",
-    "sqf-types:generate": "bun run --cwd packages/sqf-types generate:cfg"
+    "compile": "bun run --cwd packages/compiler compile",
+    "typecheck": "bunx tsc --noEmit -p packages/compiler/tsconfig.json && bunx tsc --noEmit -p packages/core/tsconfig.json && bunx tsc --noEmit -p packages/cli/tsconfig.json",
+    "test": "bun run --cwd packages/compiler test",
+    "compiler:compile": "bun run --cwd packages/compiler compile",
+    "compiler:typecheck": "bunx tsc --noEmit -p packages/compiler/tsconfig.json",
+    "core:typecheck": "bunx tsc --noEmit -p packages/core/tsconfig.json",
+    "core:generate": "bun run --cwd packages/core generate:cfg",
+    "cli:typecheck": "bunx tsc --noEmit -p packages/cli/tsconfig.json"
   },
   "dependencies": {
     "@types/bun": "^1.3.13"

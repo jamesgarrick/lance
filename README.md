@@ -1,26 +1,13 @@
 # lance
 
-Monorepo for the `lance` toolchain.
+Monorepo for the Lance TypeScript-to-SQF toolchain.
 
-## Workspace Layout
+## Workspaces
 
-- `packages/transpiler`
-  Current TypeScript-to-SQF transpiler package and compiler scaffold.
-- `packages/cli`
-  Reserved workspace for the future `lance` CLI and package-manager surface.
-- `packages/sqf-types`
-  Home of the `lance` package used by the transpiler.
-- `docs/`
-  Shared planning and architecture notes.
-
-## Current Focus
-
-Implemented packages today:
-
-- `packages/transpiler`
-- `packages/sqf-types`
-
-The CLI workspace is still scaffold-only.
+- `packages/core` — typed SQF/core/cfg bindings (`@lance/core`)
+- `packages/compiler` — TS → SQF compiler (`@lance/compiler`)
+- `packages/cli` — `lance` CLI (`@lance/cli`)
+- `playground` — scratch
 
 ## Install
 
@@ -28,26 +15,26 @@ The CLI workspace is still scaffold-only.
 bun install
 ```
 
-## Validate
+Get CLI:
+```bash
+scripts/install-cli.sh
+```
+
+## Common Commands
 
 ```bash
 bun run typecheck
+bun run test
 ```
 
-Regenerate cfg-derived runtime trees:
+Compile a project with the compiler package:
 
 ```bash
-bun run sqf-types:generate
+bun run compile
 ```
 
-## Manual Compile
+Regenerate cfg-derived typed trees in core:
 
 ```bash
-bun run compile tests/fixtures/basic-unit-script/input.ts
-```
-
-Optional output file:
-
-```bash
-bun run compile tests/fixtures/basic-unit-script/input.ts out.sqf
+bun run core:generate
 ```

@@ -1,7 +1,11 @@
 {
   "name": "@lance/core",
+  "version": "0.0.1",
   "lance": true,
   "module": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
   "types": "./dist/src/index.d.ts",
   "type": "module",
   "scripts": {

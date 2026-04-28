@@ -1,6 +1,10 @@
 {
   "name": "@lance/compiler",
+  "version": "0.0.1",
   "module": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
   "type": "module",
   "private": true,
   "scripts": {

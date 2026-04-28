@@ -1,6 +1,6 @@
-# @lance/transpiler
+# @lance/compiler
 
-Early-stage TypeScript-to-SQF transpiler scaffold.
+Early-stage TypeScript-to-SQF compiler scaffold.
 
 ## Current Status
 
