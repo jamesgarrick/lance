@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "strict": true,
     "noLib": true,
+    "skipLibCheck": true,
     "types": []
   },
-  "files": ["../packages/core/globals.d.ts"]
+  "files": ["../../../../packages/core/globals.d.ts"],
+  "include": ["**/*.ts"],
 }

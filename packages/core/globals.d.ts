@@ -19,4 +19,22 @@ declare global {
   interface Number {}
 
   interface String extends IString {}
+
+  interface Error {
+    readonly message: string;
+    readonly name: string;
+  }
+
+  interface ErrorConstructor {
+    new(message?: string): Error;
+  }
+  declare var Error: ErrorConstructor;
+
+  interface TypeError extends Error {}
+  interface TypeErrorConstructor extends ErrorConstructor {}
+  declare var TypeError: TypeErrorConstructor;
+
+  interface RangeError extends Error {}
+  interface RangeErrorConstructor extends ErrorConstructor {}
+  declare var RangeError: RangeErrorConstructor;
 }

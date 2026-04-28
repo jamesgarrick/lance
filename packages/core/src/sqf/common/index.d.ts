@@ -16,5 +16,5 @@ export function toArray(hash): [keys: Array, values: Array];
 
 
 
-export function joinString(array: Array<any>): string;
-export function joinString(array: Array<string>): string;
+export function joinString(array: Array<any>, separator: string): string;
+export function joinString(array: Array<string>, separator: string): string;

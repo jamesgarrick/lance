@@ -1,7 +1,6 @@
 import type { String as IString } from "@lance/core/types/string";
 import { toArray, select, count, joinString } from "@lance/core";
 
-
 export class CString implements IString {
   private _string!: string;
 
@@ -13,7 +12,7 @@ export class CString implements IString {
 
   charCodeAt(index: number): number {
     // !TODO - NAN is 1e-39? handle in compiler
-    if (index < 0 || index >= this._string.length) return NaN;
+    if (index < 0 || index >= this._string.length) throw new RangeError("Index out of bounds");
 
     const charArray = toArray(this._string);
     return select(charArray, index);
