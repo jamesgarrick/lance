@@ -1,4 +1,4 @@
-import type { Position2D, Position3D } from "../primitives";
+import type { Position2D, Position3D } from "../../primitives";
 
 /**
  * Searches for an empty area around the specified position,

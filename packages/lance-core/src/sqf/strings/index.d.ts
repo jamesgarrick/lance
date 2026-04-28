@@ -1,4 +1,4 @@
-import type { SqfCode, SqfString } from "../primitives";
+import type { SqfCode, SqfString } from "../../primitives";
 
 export * from "./regex";
 

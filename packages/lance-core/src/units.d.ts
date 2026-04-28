@@ -410,14 +410,9 @@ export declare function getAllHitPointsDamage(
 ): HitPointDamageSnapshot | [];
 export declare function weapons(unit: Unit): SqfArray<WeaponClassName>;
 export declare function magazines(unit: Unit): SqfArray<MagazineClassName>;
-export declare function items(unit: Unit): SqfArray<ItemClassName>;
 export declare function assignedItems(unit: Unit): SqfArray<ItemClassName>;
 export declare function linkedItems(unit: Unit): SqfArray<ItemClassName>;
-export declare function uniform(unit: Unit): UniformClassName | "";
-export declare function vest(unit: Unit): VestClassName | "";
-export declare function backpack(unit: Unit): BackpackClassName | "";
 export declare function headgear(unit: Unit): HeadgearClassName | "";
-export declare function goggles(unit: Unit): GogglesClassName | "";
 
 export declare function setBehaviour(
   target: Group | Unit,
@@ -526,29 +521,11 @@ export declare function removeMagazine(
 ): SqfCommand;
 export declare function addItem(unit: Unit, item: ItemClassName): SqfCommand;
 export declare function removeItem(unit: Unit, item: ItemClassName): SqfCommand;
-export declare function addBackpack(
-  unit: Unit,
-  backpack: BackpackClassName,
-): SqfCommand;
-export declare function removeBackpack(unit: Unit): SqfCommand;
-export declare function addUniform(
-  unit: Unit,
-  uniform: UniformClassName,
-): SqfCommand;
-export declare function removeUniform(unit: Unit): SqfCommand;
-export declare function addVest(unit: Unit, vest: VestClassName): SqfCommand;
-export declare function removeVest(unit: Unit): SqfCommand;
 export declare function addHeadgear(
   unit: Unit,
   headgear: HeadgearClassName,
 ): SqfCommand;
 export declare function removeHeadgear(unit: Unit): SqfCommand;
-export declare function addGoggles(
-  unit: Unit,
-  goggles: GogglesClassName,
-): SqfCommand;
-export declare function removeGoggles(unit: Unit): SqfCommand;
-export declare function linkItem(unit: Unit, item: ItemClassName): SqfCommand;
 export declare function unlinkItem(unit: Unit, item: ItemClassName): SqfCommand;
 export declare function selectWeapon(
   unit: Unit,

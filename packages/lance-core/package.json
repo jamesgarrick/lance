@@ -5,7 +5,7 @@
   "types": "./dist/src/index.d.ts",
   "type": "module",
   "scripts": {
-      "build": "bunx tsc -p tsconfig.json && cp src/*.d.ts dist/src/",
+      "build": "bunx tsc -p tsconfig.json && rsync -a --include='*/' --include='*.d.ts' --exclude='*' src/ dist/src/",
       "typecheck": "bunx tsc --noEmit -p tsconfig.json",
       "generate:cfg-weapons": "node scripts/generate-cfg-tree.mjs cfgWeapons.json src/cfg-weapons.ts cfgWeapons weapons",
       "generate:cfg-weapons-items": "node scripts/generate-cfg-tree.mjs cfgWeaponsItems.json src/cfg-weapons-items.ts cfgWeaponsItems weaponsItems",

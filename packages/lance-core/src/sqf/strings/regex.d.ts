@@ -1,4 +1,4 @@
-import type { SqfArray, SqfBoolean } from "../primitives";
+import type { SqfArray, SqfBoolean } from "../../primitives";
 
 /** * Represents a single captured group: [Match Text, Offset]
  */
