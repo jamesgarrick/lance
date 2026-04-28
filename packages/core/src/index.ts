@@ -1,26 +1,6 @@
 export * from "./sqf/index"
 
-export type * from "./primitives";
-
-export * from "./core";
-export * from "./world";
-export * from "./objects";
-export * from "./unit-loadout";
-export * from "./unit-health";
-export * from "./unit-status";
-export * from "./variables";
-export * from "./program-flow";
-export * from "./config";
-export * from "./event-handlers";
-export * from "./multiplayer";
-export * from "./markers";
-export * from "./briefing";
-export * from "./tasks";
-export * from "./simulation";
-export * from "./vehicle-crew";
-export * from "./values";
-export * from "./polymorphic";
-export * from "./cfg-runtime";
-export * from "./cfg-weapons";
-export * from "./cfg-weapons-items";
-export * from "./cfg-magazines";
+export * from "./cfg/cfg-runtime";
+export * from "./cfg/cfg-weapons";
+export * from "./cfg/cfg-weapons-items";
+export * from "./cfg/cfg-magazines";
