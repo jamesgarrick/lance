@@ -55,9 +55,13 @@ const sourcePath = path.join(rootDir, sourceFile);
 const targetPath = path.join(rootDir, targetFile);
 const json = JSON.parse(await readFile(sourcePath, "utf8"));
 
-const output = `import { cfgNode } from "./cfg-runtime";
+const typeName = `Cfg${exportName[0].toUpperCase()}${exportName.slice(1)}`;
 
-export const ${exportName} = ${emitValue(json, 0)} as const;
+const output = `import { cfgNode, type CfgTree } from "./cfg-runtime";
+
+export const ${exportName} = ${emitValue(json, 0)} as const satisfies CfgTree;
+
+export type ${typeName} = typeof ${exportName};
 ${
   aliasName
     ? `

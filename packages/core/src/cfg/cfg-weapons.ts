@@ -1,4 +1,4 @@
-import { cfgNode } from "./cfg-runtime";
+import { cfgNode, type CfgTree } from "./cfg-runtime";
 
 export const cfgWeapons = {
   "arifle": {
@@ -534,7 +534,9 @@ export const cfgWeapons = {
       "tna_lrps": "srifle_LRR_tna_LRPS_F",
     }),
   },
-} as const;
+} as const satisfies CfgTree;
+
+export type CfgWeapons = typeof cfgWeapons;
 
 export const weaponsList = {
   cfgWeapons,

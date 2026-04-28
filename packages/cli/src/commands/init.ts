@@ -134,6 +134,13 @@ outDir = "${outDir}"
       stdio: "inherit",
     });
 
+    // TODO(cli): Future `lance add <mod>` flow should:
+    // 1) install the mod package,
+    // 2) detect exported `CfgContribution`,
+    // 3) update project config,
+    // 4) regenerate merged cfg runtime + static cfg typings.
+    // Deferred for now until add/remove package lifecycle is implemented.
+
     this.log(`\nDone! Run \`lance compile\` to build your project.`);
   }
 }

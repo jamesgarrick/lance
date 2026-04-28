@@ -1,4 +1,4 @@
-import { cfgNode } from "./cfg-runtime";
+import { cfgNode, type CfgTree } from "./cfg-runtime";
 
 export const cfgMagazines = {
   "misc": {
@@ -1296,7 +1296,9 @@ export const cfgMagazines = {
       "dummymagazine": "RailGun_01_DummyMagazine",
     },
   },
-} as const;
+} as const satisfies CfgTree;
+
+export type CfgMagazines = typeof cfgMagazines;
 
 export const magazinesList = {
   cfgMagazines,
