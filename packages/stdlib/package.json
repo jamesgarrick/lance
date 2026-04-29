@@ -1,6 +1,10 @@
 {
   "name": "@lance/stdlib",
   "private": true,
+  "exports": {
+    "./types/*": "./types/*.d.ts",
+    "./globals": "./globals.d.ts"
+  },
   "type": "module",
   "dependencies": {
     "@lance/core": "workspace:*"

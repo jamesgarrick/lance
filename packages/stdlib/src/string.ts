@@ -1,4 +1,4 @@
-import type { String as IString } from "@lance/core/types/string";
+import type { String as IString } from "@lance/stdlib/types/string";
 import { toArray, select, count, joinString } from "@lance/core";
 
 // !TODO implement in global declarations

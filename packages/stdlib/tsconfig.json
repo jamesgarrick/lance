@@ -9,6 +9,6 @@
     "moduleResolution": "bundler",
     "verbatimModuleSyntax": true
   },
-  "files": ["../core/globals.d.ts"],
+  "files": ["./globals.d.ts"],
   "include": ["**/*.ts"],
 }
