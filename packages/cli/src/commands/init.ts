@@ -4,6 +4,7 @@ import { basename, join, resolve, dirname } from "node:path";
 import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { existsSync } from "node:fs";
+import { LOCK_FILE, MANIFEST_FILE } from "../lib/manifest";
 
 
 export default class Init extends Command {
@@ -110,6 +111,31 @@ typesPackage = "@lance/core"
 
     await Bun.write(configPath, configToml);
     this.log(`  Created lance.config.toml`);
+
+    const manifestPath = join(cwd, MANIFEST_FILE);
+    if (!(await Bun.file(manifestPath).exists())) {
+      await Bun.write(
+        manifestPath,
+        `${JSON.stringify(
+          {
+            name: `@local/${name}`,
+            version: "0.0.1",
+            type,
+            registry: process.env.LANCE_REGISTRY_URL ?? "http://localhost:8787",
+            dependencies: {},
+          },
+          null,
+          2,
+        )}\n`,
+      );
+      this.log(`  Created ${MANIFEST_FILE}`);
+    }
+
+    const lockPath = join(cwd, LOCK_FILE);
+    if (!(await Bun.file(lockPath).exists())) {
+      await Bun.write(lockPath, `${JSON.stringify({ lockfileVersion: 1, dependencies: {} }, null, 2)}\n`);
+      this.log(`  Created ${LOCK_FILE}`);
+    }
 
     await writeProjectTsConfig(cwd);
     this.log(`  Created tsconfig.json`);

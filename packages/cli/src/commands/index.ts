@@ -1,2 +1,15 @@
+export { default as Add } from "./add.ts";
 export { default as Compile } from "./compile.ts";
+export { default as Info } from "./info.ts";
 export { default as Init } from "./init.ts";
+export { default as Install } from "./install.ts";
+export { default as List } from "./list.ts";
+export { default as Login } from "./login.ts";
+export { default as Logout } from "./logout.ts";
+export { default as Outdated } from "./outdated.ts";
+export { default as Publish } from "./publish.ts";
+export { default as Remove } from "./remove.ts";
+export { default as Search } from "./search.ts";
+export { default as Unpublish } from "./unpublish.ts";
+export { default as Update } from "./update.ts";
+export { default as WhoAmI } from "./whoami.ts";
