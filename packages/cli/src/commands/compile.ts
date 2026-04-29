@@ -1,4 +1,9 @@
-import { compileFromConfig, loadLanceConfig } from "../../../compiler";
+import {
+  compileFromConfig,
+  formatCompilerDiagnostic,
+  formatDiagnosticSummary,
+  loadLanceConfig,
+} from "../../../compiler";
 import { Command, Flags } from "@oclif/core";
 import { mkdir } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
@@ -38,18 +43,20 @@ export default class Compile extends Command {
 
     if (result.diagnostics.some((d) => d.severity === "error")) {
       for (const d of result.diagnostics) {
-        const loc = d.span
-          ? `${d.span.filePath}${d.span.line ? `:${d.span.line}` : ""}`
-          : "unknown";
-        const phase = d.phase ? ` [${d.phase}]` : "";
-        this.warn(`${d.severity.toUpperCase()} ${d.code}${phase} ${loc}\n  ${d.message}`);
+        this.warn(formatCompilerDiagnostic(d));
       }
-      this.error("Compilation failed with errors");
+      for (const phase of result.phases) {
+        const duration = `${phase.durationMs.toFixed(1)}ms`;
+        const note = phase.note ? ` (${phase.note})` : "";
+        this.log(
+          `Phase ${phase.phase}: ${phase.status} (${duration}, ${phase.errorCount} error(s), ${phase.diagnosticCount} diagnostic(s))${note}`,
+        );
+      }
+      this.error(`Compilation failed with errors: ${formatDiagnosticSummary(result.diagnostics)}`);
     }
 
     for (const d of result.diagnostics.filter((d) => d.severity !== "error")) {
-      const loc = d.span ? ` ${d.span.filePath}${d.span.line ? `:${d.span.line}` : ""}` : "";
-      this.warn(`${d.code}${loc}: ${d.message}`);
+      this.warn(formatCompilerDiagnostic(d));
     }
 
     // Write all SQF output files

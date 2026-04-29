@@ -13,6 +13,7 @@ export const DIAGNOSTIC_CODES = {
   LANCE_ENTRYPOINT_NOT_FOUND: "entrypoint file does not exist",
   LANCE_UNSUPPORTED_PACKAGE_IMPORT: "non-types package imported",
   LANCE_CIRCULAR_IMPORT: "circular import detected",
+  LANCE_LOAD_INTERNAL: "internal compiler error during project loading",
 
   // ── Unsupported syntax ─────────────────────────────────────────────────────
   LANCE_UNSUPPORTED_STATEMENT: "statement form not supported",
@@ -32,6 +33,7 @@ export const DIAGNOSTIC_CODES = {
   LANCE_AMBIGUOUS_NULL: "null literal where multiple sentinels could apply",
   LANCE_LOCALITY_MISMATCH: "local-effect command on non-local target",
   LANCE_NON_ERROR_THROW: "throw must be `throw new <ErrorSubclass>(...)`",
+  LANCE_SEMANTIC_INTERNAL: "internal compiler error during semantic analysis",
 
   // ── Lowering ───────────────────────────────────────────────────────────────
   LANCE_LOWERING_INTERNAL: "internal compiler error during lowering",
@@ -44,6 +46,8 @@ export const DIAGNOSTIC_CODES = {
   LANCE_DUPLICATE_FUNCTION_NAME: "two functions resolve to the same SQF name",
   LANCE_RESERVED_TAG: "the LANCE tag is reserved by the runtime",
   LANCE_INVALID_IDENTIFIER: "identifier cannot be safely lowered",
+  LANCE_NORMALIZE_INTERNAL: "internal compiler error during normalization",
+  LANCE_EMIT_INTERNAL: "internal compiler error during emission",
 } as const;
 
 export type DiagnosticCode = keyof typeof DIAGNOSTIC_CODES;

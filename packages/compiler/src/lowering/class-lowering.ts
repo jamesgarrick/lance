@@ -10,7 +10,8 @@ import {
 import type { DiagnosticBag } from "../compiler/diagnostics";
 import type { SqfExpression, SqfFunctionFile, SqfStatement } from "../ir/nodes";
 import type { SemanticContext } from "../semantic/context";
-import { addLocalNames, createScope, type LoweringScope } from "./lowering-scope";
+import type { LoweringContext } from "./lowering-context";
+import { addLocalNames, createScope } from "./lowering-scope";
 import type {
   ClassFunctionBinding,
   SourceFileSemanticBindings,
@@ -53,17 +54,11 @@ export function lowerClassDeclaration(
   tag: string,
   lowerExpression: (
     expression: Expression,
-    diagnostics: DiagnosticBag,
-    bindings: SourceFileSemanticBindings,
-    semanticContext: SemanticContext,
-    scope: LoweringScope,
+    context: LoweringContext,
   ) => SqfExpression,
   lowerStatement: (
     statement: import("ts-morph").Statement,
-    diagnostics: DiagnosticBag,
-    bindings: SourceFileSemanticBindings,
-    semanticContext: SemanticContext,
-    scope: LoweringScope,
+    context: LoweringContext,
   ) => SqfStatement,
 ): readonly SqfFunctionFile[] {
   const className = cls.getName();
@@ -120,22 +115,21 @@ function lowerClassConstructor(
   tag: string,
   lowerExpression: (
     expression: Expression,
-    diagnostics: DiagnosticBag,
-    bindings: SourceFileSemanticBindings,
-    semanticContext: SemanticContext,
-    scope: LoweringScope,
+    context: LoweringContext,
   ) => SqfExpression,
   lowerStatement: (
     statement: import("ts-morph").Statement,
-    diagnostics: DiagnosticBag,
-    bindings: SourceFileSemanticBindings,
-    semanticContext: SemanticContext,
-    scope: LoweringScope,
+    context: LoweringContext,
   ) => SqfStatement,
 ): SqfFunctionFile {
   const className = cls.getName() ?? "AnonymousClass";
   const params = (ctor?.getParameters() ?? []).map((p) => p.getName());
-  const scope = addLocalNames(createScope(), [...params, "self"]);
+  const context: LoweringContext = {
+    diagnostics,
+    bindings,
+    semanticContext,
+    scope: addLocalNames(createScope(), [...params, "self"]),
+  };
 
   const body: SqfStatement[] = [];
   const baseClass = cls.getBaseClass();
@@ -145,7 +139,7 @@ function lowerClassConstructor(
     const superArgs = superCall
       .getArguments()
       .filter(Node.isExpression)
-      .map((a) => lowerExpression(a, diagnostics, bindings, semanticContext, scope));
+      .map((argument) => lowerExpression(argument, context));
     body.push({
       kind: "VariableStatement",
       name: "self",
@@ -176,7 +170,7 @@ function lowerClassConstructor(
           kind: "ArrayExpression",
           elements: [
             { kind: "Literal", text: JSON.stringify(field.getName()) },
-            lowerExpression(init, diagnostics, bindings, semanticContext, scope),
+            lowerExpression(init, context),
           ],
         }],
       },
@@ -187,7 +181,7 @@ function lowerClassConstructor(
   if (ctorBody && Node.isBlock(ctorBody)) {
     for (const stmt of ctorBody.getStatements()) {
       if (isSuperCallStatement(stmt)) continue;
-      body.push(lowerStatement(stmt, diagnostics, bindings, semanticContext, scope));
+      body.push(lowerStatement(stmt, context));
     }
   }
 
@@ -231,17 +225,19 @@ function lowerClassMethod(
   tag: string,
   lowerStatement: (
     statement: import("ts-morph").Statement,
-    diagnostics: DiagnosticBag,
-    bindings: SourceFileSemanticBindings,
-    semanticContext: SemanticContext,
-    scope: LoweringScope,
+    context: LoweringContext,
   ) => SqfStatement,
 ): SqfFunctionFile {
   const parameters = method.getParameters().map((p) => p.getName());
   const methodParams = method.isStatic() ? parameters : ["self", ...parameters];
-  const scope = addLocalNames(createScope(), methodParams);
+  const context: LoweringContext = {
+    diagnostics,
+    bindings,
+    semanticContext,
+    scope: addLocalNames(createScope(), methodParams),
+  };
   const raw = getBlockStatements(method.getBody());
-  const body = raw.map((s) => lowerStatement(s, diagnostics, bindings, semanticContext, scope));
+  const body = raw.map((statement) => lowerStatement(statement, context));
 
   return {
     kind: "FunctionFile",

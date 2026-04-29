@@ -8,7 +8,9 @@ import { lowerSourceFile } from "../lowering/lower-source-file";
 import { normalizeSqfProgram } from "../normalize/normalize-program";
 import { LANCE_RUNTIME_FILES, LANCE_RUNTIME_FUNCTION_FILES } from "../runtime/lance-runtime";
 import { createSemanticContext } from "../semantic/context";
+import { type DiagnosticCode } from "./diagnostic-codes";
 import { DiagnosticBag, type CompilerDiagnostic } from "./diagnostics";
+import type { CompilerPhase } from "./diagnostics";
 import { defaultCompilerOptions, type CompilerOptions } from "./options";
 import { loadCompilerProject, type CompilerProject } from "./project";
 
@@ -18,6 +20,7 @@ export interface CompileResult {
   readonly program: SqfProgram;
   readonly outputFiles: readonly OutputFile[];
   readonly diagnostics: readonly CompilerDiagnostic[];
+  readonly phases: readonly CompilePhaseReport[];
 }
 
 export interface CompileFromConfigResult {
@@ -26,18 +29,106 @@ export interface CompileFromConfigResult {
   readonly descriptionExt: string | null;
   readonly cfgFunctionsHpp: string | null;
   readonly diagnostics: readonly CompilerDiagnostic[];
+  readonly phases: readonly CompilePhaseReport[];
+}
+
+export interface CompilePhaseReport {
+  readonly phase: CompilerPhase;
+  readonly status: "completed" | "failed" | "skipped";
+  readonly durationMs: number;
+  readonly diagnosticCount: number;
+  readonly errorCount: number;
+  readonly note?: string;
 }
 
 export async function compileProject(options: CompilerOptions): Promise<CompileResult> {
   const diagnostics = new DiagnosticBag();
-  const compilerProject = loadCompilerProject(options);
-  const semanticContext = await createSemanticContext({ ...defaultCompilerOptions, ...options });
+  const phases: CompilePhaseReport[] = [];
+  const normalizedOptions = { ...defaultCompilerOptions, ...options };
+  const emptyProgram = createEmptyProgram(options);
 
-  const irProgram = lowerProjectToIr(compilerProject, options, diagnostics, semanticContext);
-  const normalizedProgram = normalizeSqfProgram(irProgram, diagnostics);
-  const outputFiles = emitSqfProgram(normalizedProgram, diagnostics);
+  const compilerProject = await runCompilePhase(
+    phases,
+    diagnostics,
+    "load",
+    "LANCE_LOAD_INTERNAL",
+    () => loadCompilerProject(normalizedOptions),
+  );
+  if (!compilerProject || diagnostics.hasErrors()) {
+    skipRemainingPhases(phases, "semantic", "lowering", "normalize", "emit");
+    return {
+      program: emptyProgram,
+      outputFiles: [],
+      diagnostics: diagnostics.toArray(),
+      phases,
+    };
+  }
 
-  return { program: normalizedProgram, outputFiles, diagnostics: diagnostics.toArray() };
+  const semanticContext = await runCompilePhase(
+    phases,
+    diagnostics,
+    "semantic",
+    "LANCE_SEMANTIC_INTERNAL",
+    () => createSemanticContext(normalizedOptions),
+  );
+  if (!semanticContext || diagnostics.hasErrors()) {
+    skipRemainingPhases(phases, "lowering", "normalize", "emit");
+    return {
+      program: emptyProgram,
+      outputFiles: [],
+      diagnostics: diagnostics.toArray(),
+      phases,
+    };
+  }
+
+  const irProgram = await runCompilePhase(
+    phases,
+    diagnostics,
+    "lowering",
+    "LANCE_LOWERING_INTERNAL",
+    () => lowerProjectToIr(compilerProject, normalizedOptions, diagnostics, semanticContext),
+  );
+  if (!irProgram || diagnostics.hasErrors()) {
+    skipRemainingPhases(phases, "normalize", "emit");
+    return {
+      program: irProgram ?? emptyProgram,
+      outputFiles: [],
+      diagnostics: diagnostics.toArray(),
+      phases,
+    };
+  }
+
+  const normalizedProgram = await runCompilePhase(
+    phases,
+    diagnostics,
+    "normalize",
+    "LANCE_NORMALIZE_INTERNAL",
+    () => normalizeSqfProgram(irProgram, diagnostics),
+  );
+  if (!normalizedProgram || diagnostics.hasErrors()) {
+    skipRemainingPhases(phases, "emit");
+    return {
+      program: normalizedProgram ?? irProgram,
+      outputFiles: [],
+      diagnostics: diagnostics.toArray(),
+      phases,
+    };
+  }
+
+  const outputFiles = await runCompilePhase(
+    phases,
+    diagnostics,
+    "emit",
+    "LANCE_EMIT_INTERNAL",
+    () => emitSqfProgram(normalizedProgram, diagnostics),
+  );
+
+  return {
+    program: normalizedProgram,
+    outputFiles: outputFiles ?? [],
+    diagnostics: diagnostics.toArray(),
+    phases,
+  };
 }
 
 /** Compile a single entry file. Returns the entry .sqf content as a string. */
@@ -99,7 +190,74 @@ export async function compileFromConfig(
     descriptionExt,
     cfgFunctionsHpp,
     diagnostics: result.diagnostics,
+    phases: result.phases,
   };
+}
+
+function createEmptyProgram(options: CompilerOptions): SqfProgram {
+  return {
+    kind: "Program",
+    entryFilePath: options.entryFilePaths[0] ?? "init.ts",
+    entryStatements: [],
+    functionFiles: [],
+  };
+}
+
+async function runCompilePhase<T>(
+  phases: CompilePhaseReport[],
+  diagnostics: DiagnosticBag,
+  phase: CompilerPhase,
+  internalErrorCode: DiagnosticCode,
+  action: () => T | Promise<T>,
+): Promise<T | undefined> {
+  const startedAt = performance.now();
+  const diagnosticsBefore = diagnostics.toArray().length;
+  const errorsBefore = diagnostics.errorCount();
+
+  try {
+    const value = await action();
+    phases.push({
+      phase,
+      status: diagnostics.errorCount() > errorsBefore ? "failed" : "completed",
+      durationMs: performance.now() - startedAt,
+      diagnosticCount: diagnostics.toArray().length - diagnosticsBefore,
+      errorCount: diagnostics.errorCount() - errorsBefore,
+    });
+    return value;
+  } catch (error: unknown) {
+    diagnostics.add({
+      code: internalErrorCode,
+      severity: "error",
+      phase,
+      message: error instanceof Error ? error.message : String(error),
+    });
+    phases.push({
+      phase,
+      status: "failed",
+      durationMs: performance.now() - startedAt,
+      diagnosticCount: diagnostics.toArray().length - diagnosticsBefore,
+      errorCount: diagnostics.errorCount() - errorsBefore,
+      note: "phase aborted by exception",
+    });
+    return undefined;
+  }
+}
+
+function skipRemainingPhases(
+  phases: CompilePhaseReport[],
+  ...remainingPhases: CompilerPhase[]
+): void {
+  for (const phase of remainingPhases) {
+    if (phases.some((report) => report.phase === phase)) continue;
+    phases.push({
+      phase,
+      status: "skipped",
+      durationMs: 0,
+      diagnosticCount: 0,
+      errorCount: 0,
+      note: "skipped because an earlier phase failed",
+    });
+  }
 }
 
 function lowerProjectToIr(
