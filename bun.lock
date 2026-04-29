@@ -66,6 +66,12 @@
         "typescript": "^6.0.3",
       },
     },
+    "packages/stdlib": {
+      "name": "@lance/stdlib",
+      "dependencies": {
+        "@lance/core": "workspace:*",
+      },
+    },
     "playground": {
       "name": "playground",
       "dependencies": {
@@ -173,6 +179,8 @@
     "@lance/core": ["@lance/core@workspace:packages/core"],
 
     "@lance/registry": ["@lance/registry@workspace:packages/registry"],
+
+    "@lance/stdlib": ["@lance/stdlib@workspace:packages/stdlib"],
 
     "@nodable/entities": ["@nodable/entities@2.1.0", "", {}, "sha512-nyT7T3nbMyBI/lvr6L5TyWbFJAI9FTgVRakNoBqCD+PmID8DzFrrNdLLtHMwMszOtqZa8PAOV24ZqDnQrhQINA=="],
 

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noLib": true,
+    "skipLibCheck": true,
+    "types": [],
+    "target": "ESNext",
+    "module": "Preserve",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true
+  },
+  "files": ["../core/globals.d.ts"],
+  "include": ["**/*.ts"],
+}

@@ -9,6 +9,6 @@
     "tests/**/*.test.ts"
   ],
   "exclude": [
-    "src/stdlib/**"
+    "../stdlib/**"
   ]
 }

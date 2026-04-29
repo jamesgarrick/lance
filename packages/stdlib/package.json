@@ -1,0 +1,8 @@
+{
+  "name": "@lance/stdlib",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@lance/core": "workspace:*"
+  }
+}
