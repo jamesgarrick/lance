@@ -7,7 +7,6 @@
     "target": "ESNext",
     "module": "Preserve",
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true
   },
   "files": ["../core/globals.d.ts"],
