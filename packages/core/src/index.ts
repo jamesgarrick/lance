@@ -5,3 +5,4 @@ export * from "./cfg/config-file";
 export * from "./cfg/cfg-weapons";
 export * from "./cfg/cfg-weapons-items";
 export * from "./cfg/cfg-magazines";
+export * from "./primitives";
