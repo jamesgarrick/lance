@@ -3,11 +3,9 @@ export * from "./sqf/index"
 export * from "./cfg/cfg-runtime";
 export * from "./cfg/config-file";
 export * from "./cfg/cfg-glasses";
-export * from "./cfg/cfg-weapons";
 export * from "./cfg/cfg-weapons-equipment";
 export * from "./cfg/cfg-weapons-items";
 export * from "./cfg/cfg-weapons-vehicle-weapons";
-export * from "./cfg/cfg-weapons-weapons";
 export * from "./cfg/cfg-magazines";
 export * from "./cfg/cfg-vehicles-animals";
 export * from "./cfg/cfg-vehicles-backpacks";
