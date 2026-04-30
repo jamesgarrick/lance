@@ -1,11 +1,17 @@
+import type { GlobalArgument, Effect } from "../locality";
+import type { Unit } from "../../primitives";
+
 /**
  * Returns name of currently used goggles (for NVGoggles use hmd).
  *
  * @since 0.50
  *
+ * @remarks
+ * Locality: _Global Argument._
+ *
  * @see {@link https://community.bistudio.com/wiki/goggles goggles}
  */
-export function goggles(person: Person): SqfString;
+export function goggles(unit: GlobalArgument<Unit>): Effect<string, "anywhere", "pure">;
 
 /**
  * Create a new item and try to link it into goggles (glasses) slot.
@@ -13,12 +19,13 @@ export function goggles(person: Person): SqfString;
  * @since 0.50
  *
  * !TODO - needs version
+ * !TODO - no locality info
  * @remarks
  * This command does not add NVGs, which are hmd slot items (see linkItem instead).
  *
  * @see {@link https://community.bistudio.com/wiki/addGoggles addGoggles}
  */
-export function addGoggles(person: Person, gogglesClass: SqfString): SqfCommand;
+export function addGoggles(unit: Unit, gogglesClass: string): SqfCommand;
 
 /**
  * Removes goggles from unit (diver goggles for example).
@@ -29,7 +36,7 @@ export function addGoggles(person: Person, gogglesClass: SqfString): SqfCommand;
  *
  * @see {@link https://community.bistudio.com/wiki/removeGoggles removeGoggles}
  */
-export function removeGoggles(person: Person): SqfString;
+export function removeGoggles(unit: Unit): string;
 
 /**
  * Returns name of currently used vest.
@@ -38,7 +45,7 @@ export function removeGoggles(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/vest vest}
  */
-export function vest(person: Person): SqfString;
+export function vest(unit: Unit): string;
 
 /**
  * Create a new vest and try to link it into vest slot.
@@ -50,7 +57,7 @@ export function vest(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/addVest addVest}
  */
-export function addVest(person: Person, vestClass: SqfString): SqfCommand;
+export function addVest(unit: Unit, vestClass: string): SqfCommand;
 
 /**
  * Removes vest from person.
@@ -62,7 +69,7 @@ export function addVest(person: Person, vestClass: SqfString): SqfCommand;
  *
  * @see {@link https://community.bistudio.com/wiki/removeVest removeVest}
  */
-export function removeVest(person: Person): SqfString;
+export function removeVest(unit: Unit): string;
 
 /**
  * Returns name of currently used handgun weapon (an empty string if there is none).
@@ -74,7 +81,7 @@ export function removeVest(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/handgunWeapon handgunWeapon}
  */
-export function handgunWeapon(person: Person): SqfString;
+export function handgunWeapon(unit: Unit): string;
 
 
 /**
@@ -90,7 +97,7 @@ export function handgunWeapon(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/primaryWeapon primaryWeapon}
  */
-export function primaryWeapon(person: Person): SqfString;
+export function primaryWeapon(unit: Unit): string;
 
 /**
  * Returns name of person's secondary weapon.
@@ -102,7 +109,7 @@ export function primaryWeapon(person: Person): SqfString;
  *
  * @see {@link https://community.bistudio.com/wiki/secondaryWeapon secondaryWeapon}
  */
-export function secondaryWeapon(person: Person): string;
+export function secondaryWeapon(unit: Unit): string;
 
 /**
  * Returns array with all items assigned to the secondaryWeapon except magazines.
@@ -124,7 +131,7 @@ export function secondaryWeaponItems(person: Person): [string, string, string, s
  *
  * @see {@link https://community.bistudio.com/wiki/addSecondaryWeaponItem addSecondaryWeaponItem}
  */
-export function addSecondaryWeaponItem(person: Person, item: string): void;
+export function addSecondaryWeaponItem(unit: Unit, item: string): void;
 
 /**
  * Collects all loaded magazines from all secondaryWeapon muzzles and returns them in Array,
@@ -134,7 +141,7 @@ export function addSecondaryWeaponItem(person: Person, item: string): void;
  *
  * @see {@link https://community.bistudio.com/wiki/secondaryWeaponMagazine secondaryWeaponMagazine}
  */
-export function secondaryWeaponMagazine(person: Person): Array<string>;
+export function secondaryWeaponMagazine(unit: Unit): Array<string>;
 
 
 /**
@@ -150,7 +157,7 @@ export function secondaryWeaponMagazine(person: Person): Array<string>;
  * @see {@link https://community.bistudio.com/wiki/linkItem linkItem}
  * @see {@link https://community.bistudio.com/wiki/assignItem assignItem}
  */
-export function linkItem(person: Person, item: string): void;
+export function linkItem(unit: Unit, item: string): void;
 
 
 /**
@@ -163,7 +170,7 @@ export function linkItem(person: Person, item: string): void;
  *
  * @see {@link https://community.bistudio.com/wiki/forceAddUniform forceAddUniform}
  */
-export function forceAddUniform(person: Person, uniform: string): void;
+export function forceAddUniform(unit: Unit, uniform: string): void;
 
 /**
  * Returns name of person's uniform.
@@ -175,7 +182,7 @@ export function forceAddUniform(person: Person, uniform: string): void;
  *
  * @see {@link https://community.bistudio.com/wiki/uniform uniform}
  */
-export function uniform(person: Person): string;
+export function uniform(unit: Unit): Effect<string, "anywhere", "pure">;
 
 /**
  * Create a new uniform and try to link it into uniform slot
@@ -190,7 +197,7 @@ export function uniform(person: Person): string;
  *
  * @see {@link https://community.bistudio.com/wiki/addUniform addUniform}
  */
-export function addUniform(person: Person, uniform: string): void;
+export function addUniform(unit: GlobalArgument<Unit>, uniform: string): Effect<void, "anywhere", "global">;
 
 /**
  * Check whether given uniform can be dressed by target soldier.
@@ -202,7 +209,7 @@ export function addUniform(person: Person, uniform: string): void;
  *
  * @see {@link https://community.bistudio.com/wiki/isUniformAllowed isUniformAllowed}
  */
-export function isUniformAllowed(person: Person, uniform: string): boolean;
+export function isUniformAllowed(unit: GlobalArgument<Unit>, uniform: string): Effect<boolean, "anywhere", "pure">;
 
 /**
  * Removes uniform from person.
@@ -214,7 +221,7 @@ export function isUniformAllowed(person: Person, uniform: string): boolean;
  *
  * @see {@link https://community.bistudio.com/wiki/removeUniform removeUniform}
  */
-export function removeUniform(person: Person): void;
+export function removeUniform(unit: GlobalArgument<Unit>): Effect<void, "anywhere", "global">;
 
 /**
  * Returns an array of names of all unit's stored items,
@@ -227,11 +234,11 @@ export function removeUniform(person: Person): void;
  *
  * @see {@link https://community.bistudio.com/wiki/items items}
  */
-export function items(person: Person): string[];
+export function items(unit: GlobalArgument<Unit>): Effect<readonly string[], "anywhere", "pure">;
 
 /**
  * Returns array with all items assigned to the primaryWeapon except magazines.
- *  Use primaryWeaponMagazine command for the latter. This command is used for infantry weapons only.
+ * Use primaryWeaponMagazine command for the latter. This command is used for infantry weapons only.
  *
  * @remarks
  * Locality: _Global Argument_
@@ -240,7 +247,13 @@ export function items(person: Person): string[];
  *
  * @see {@link https://community.bistudio.com/wiki/primaryWeaponItems primaryWeaponItems}
  */
-export function primaryWeaponItems(person: Person): [muzzle: string, rail: string, optic: string, bipod: string];
+export function primaryWeaponItems(
+  unit: GlobalArgument<Unit>
+): Effect<
+  readonly [muzzle: string, rail: string, optic: string, bipod: string],
+  "anywhere",
+  "pure"
+>;
 
 /**
  * Adds weapon item, including magazine, directly to the primaryWeapon. This is used for infantry weapons.
@@ -257,13 +270,13 @@ export function primaryWeaponItems(person: Person): [muzzle: string, rail: strin
  *
  * @see {@link https://community.bistudio.com/wiki/addPrimaryWeaponItem addPrimaryWeaponItem}
  */
-export function addPrimaryWeaponItem(person: Person, item: string): (void | boolean);
+export function addPrimaryWeaponItem(unit: Unit, item: string): (void | boolean);
 
 /**
- * Returns array of names of all person's weapons.
+ * Returns array of names of all unit's weapons.
  *
  * @since 0.50
  *
  * @see {@link https://community.bistudio.com/wiki/weapons weapons}
  */
-export function weapons(person: Person): Array<string>;
+export function weapons(unit: Unit): Array<string>;

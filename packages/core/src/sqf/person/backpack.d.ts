@@ -67,13 +67,13 @@ export function backpack(
  *
  * @returns Object - container or objNull
  *
- * @since 0.50
+ * @since 1.04
  *
  * @see {@link https://community.bistudio.com/wiki/backpackContainer backpackContainer}
  */
 export function backpackContainer(
   unit: GlobalArgument<Unit>
-): Effect<SqfObject | null, "anywhere", "pure">;
+): Effect<SQFObject | null, "anywhere", "pure">;
 
 /**
  * Get array with all items in backpack of the given person.
