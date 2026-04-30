@@ -1,5 +1,7 @@
 import type { GlobalArgument, Effect } from "../locality";
 import type { Unit } from "../../primitives";
+import type { GlassesClassName } from "../../cfg/cfg-glasses";
+import type { MagazineClassName } from "../../cfg/cfg-magazines";
 import type { UniformClassName, VestClassName } from "../../cfg/cfg-weapons-equipment";
 import type {
   BipodClassName,
@@ -7,6 +9,7 @@ import type {
   OpticClassName,
   RailItemClassName,
 } from "../../cfg/cfg-weapons-items";
+import type { WeaponClassName } from "../../cfg/cfg-weapons-weapons";
 
 /**
  * Returns name of currently used goggles (for NVGoggles use hmd).
@@ -18,7 +21,7 @@ import type {
  *
  * @see {@link https://community.bistudio.com/wiki/goggles goggles}
  */
-export function goggles(unit: GlobalArgument<Unit>): Effect<string, "anywhere", "pure">;
+export function goggles(unit: GlobalArgument<Unit>): Effect<GlassesClassName | "", "anywhere", "pure">;
 
 /**
  * Create a new item and try to link it into goggles (glasses) slot.
@@ -32,7 +35,7 @@ export function goggles(unit: GlobalArgument<Unit>): Effect<string, "anywhere", 
  *
  * @see {@link https://community.bistudio.com/wiki/addGoggles addGoggles}
  */
-export function addGoggles(unit: Unit, gogglesClass: string): SqfCommand;
+export function addGoggles(unit: Unit, gogglesClass: GlassesClassName): SqfCommand;
 
 /**
  * Removes goggles from unit (diver goggles for example).
@@ -43,7 +46,7 @@ export function addGoggles(unit: Unit, gogglesClass: string): SqfCommand;
  *
  * @see {@link https://community.bistudio.com/wiki/removeGoggles removeGoggles}
  */
-export function removeGoggles(unit: Unit): string;
+export function removeGoggles(unit: Unit): GlassesClassName | "";
 
 /**
  * Returns name of currently used vest.
@@ -88,7 +91,7 @@ export function removeVest(unit: Unit): string;
  *
  * @see {@link https://community.bistudio.com/wiki/handgunWeapon handgunWeapon}
  */
-export function handgunWeapon(unit: Unit): string;
+export function handgunWeapon(unit: Unit): WeaponClassName | "";
 
 
 /**
@@ -104,7 +107,7 @@ export function handgunWeapon(unit: Unit): string;
  *
  * @see {@link https://community.bistudio.com/wiki/primaryWeapon primaryWeapon}
  */
-export function primaryWeapon(unit: Unit): string;
+export function primaryWeapon(unit: Unit): WeaponClassName | "";
 
 /**
  * Returns name of person's secondary weapon.
@@ -116,7 +119,7 @@ export function primaryWeapon(unit: Unit): string;
  *
  * @see {@link https://community.bistudio.com/wiki/secondaryWeapon secondaryWeapon}
  */
-export function secondaryWeapon(unit: Unit): string;
+export function secondaryWeapon(unit: Unit): WeaponClassName | "";
 
 /**
  * Returns array with all items assigned to the secondaryWeapon except magazines.
@@ -148,7 +151,7 @@ export function addSecondaryWeaponItem(unit: Unit, item: string): void;
  *
  * @see {@link https://community.bistudio.com/wiki/secondaryWeaponMagazine secondaryWeaponMagazine}
  */
-export function secondaryWeaponMagazine(unit: Unit): Array<string>;
+export function secondaryWeaponMagazine(unit: Unit): Array<MagazineClassName>;
 
 
 /**

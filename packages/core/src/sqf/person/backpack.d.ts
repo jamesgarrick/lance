@@ -1,5 +1,6 @@
 import type { Unit } from "../../primitives";
 import type { Effect, GlobalArgument, LocalArgument } from "../locality";
+import type { BackpackClassName } from "../../cfg/cfg-vehicles-backpacks";
 
 /**
  * Adds a backpack for a unit.
@@ -15,7 +16,7 @@ import type { Effect, GlobalArgument, LocalArgument } from "../locality";
  */
 export function addBackpack(
   unit: GlobalArgument<Unit>,
-  backpackClass: string
+  backpackClass: BackpackClassName
 ): Effect<void, "anywhere", "global">;
 
 /**
@@ -44,7 +45,7 @@ export function removeBackpack(
  */
 export function addItemToBackpack(
   unit: GlobalArgument<Unit>,
-  backpackClass: string,
+  backpackClass: BackpackClassName,
   itemClass: string
 ): Effect<void, "anywhere", "global">;
 
@@ -59,7 +60,7 @@ export function addItemToBackpack(
  */
 export function backpack(
   unit: GlobalArgument<Unit>
-): Effect<string, "anywhere", "pure">;
+): Effect<BackpackClassName | "", "anywhere", "pure">;
 
 /**
  *

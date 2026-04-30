@@ -16,11 +16,7 @@
   "scripts": {
       "build": "bunx tsc -p tsconfig.json && rsync -a --include='*/' --include='*.d.ts' --exclude='*' src/ dist/src/",
       "typecheck": "bunx tsc --noEmit -p tsconfig.json",
-      "generate:cfg-weapons": "node scripts/generate-cfg-tree.mjs data/cfgWeapons.json src/cfg/cfg-weapons.ts cfgWeapons weapons",
-      "generate:cfg-weapons-equipment": "node scripts/generate-cfg-tree.mjs data/cfgWeaponsEquipment.json src/cfg/cfg-weapons-equipment.ts cfgWeaponsEquipment weaponsEquipment",
-      "generate:cfg-weapons-items": "node scripts/generate-cfg-tree.mjs data/cfgWeaponsItems.json src/cfg/cfg-weapons-items.ts cfgWeaponsItems weaponsItems",
-      "generate:cfg-magazines": "node scripts/generate-cfg-tree.mjs data/cfgMagazines.json src/cfg/cfg-magazines.ts cfgMagazines magazines",
-      "generate:cfg": "bun run generate:cfg-weapons && bun run generate:cfg-weapons-equipment && bun run generate:cfg-weapons-items && bun run generate:cfg-magazines"
+      "generate:cfg": "node scripts/generate-cfg-all.mjs"
     },
   "devDependencies": {
     "@types/bun": "latest",

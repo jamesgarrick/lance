@@ -7,6 +7,12 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, "..");
 
 const datasetOptions = {
+  cfgGlasses: {
+    subsetExports: [{ constName: "glasses", typeName: "GlassesClassName", sourceKey: "g", stripPrefix: "G_" }],
+  },
+  cfgMagazines: {
+    subsetExports: [{ constName: "magazines", typeName: "MagazineClassName" }],
+  },
   cfgWeaponsItems: {
     subsetExports: [
       { constName: "railItems", typeName: "RailItemClassName", sourceKey: "acc", stripPrefix: "acc_" },
@@ -21,6 +27,15 @@ const datasetOptions = {
       { constName: "uniforms", typeName: "UniformClassName", sourceKey: "u", stripPrefix: "U_" },
       { constName: "vests", typeName: "VestClassName", sourceKey: "v", stripPrefix: "V_" },
     ],
+  },
+  cfgWeaponsWeapons: {
+    subsetExports: [{ constName: "weapons", typeName: "WeaponClassName" }],
+  },
+  cfgVehiclesBackpacks: {
+    subsetExports: [{ constName: "backpacks", typeName: "BackpackClassName" }],
+  },
+  cfgVehiclesStructures: {
+    subsetExports: [{ constName: "structures", typeName: "StructureClassName" }],
   },
 };
 
@@ -58,6 +73,9 @@ function escapeJsDoc(text) {
 }
 
 /**
+ * @param {JsonValue} value
+ * @returns {string | undefined}
+ */
 function getLeafName(value) {
   if (isLeafDescriptor(value)) {
     return value.name?.trim() || undefined;
@@ -92,6 +110,26 @@ function getLeafSubCategory(value) {
 
 /**
  * @param {JsonValue} value
+ * @returns {string | LeafDescriptor | null}
+ */
+function resolveBaseLeaf(value) {
+  if (typeof value === "string" || isLeafDescriptor(value)) {
+    return value;
+  }
+
+  if (!value || typeof value !== "object") {
+    return null;
+  }
+
+  if (!("base" in value)) {
+    return null;
+  }
+
+  return resolveBaseLeaf(value.base);
+}
+
+/**
+ * @param {JsonValue} value
  * @returns {string}
  */
 function getLeafClassName(value) {
@@ -103,6 +141,11 @@ function getLeafClassName(value) {
     return value.className;
   }
 
+  const baseLeaf = resolveBaseLeaf(value);
+  if (baseLeaf) {
+    return getLeafClassName(baseLeaf);
+  }
+
   throw new Error("Expected leaf cfg value");
 }
 
@@ -111,12 +154,7 @@ function getLeafClassName(value) {
  * @returns {string[]}
  */
 function getDocLines(value) {
-  const leaf =
-    typeof value === "string"
-      ? null
-      : isLeafDescriptor(value)
-        ? value
-        : Object.entries(value).find(([key]) => key === "base")?.[1];
+  const leaf = typeof value === "string" ? null : isLeafDescriptor(value) ? value : resolveBaseLeaf(value);
 
   if (!leaf || typeof leaf === "string") {
     return [];
@@ -148,7 +186,10 @@ function emitJsDoc(lines, indent) {
     return `${indent}/** ${escapeJsDoc(lines[0])} */\n`;
   }
 
-  return `${indent}/**\n${lines.map((line) => `${indent} * ${escapeJsDoc(line)}`).join("\n")}\n${indent} */\n`;
+  const [summary, ...details] = lines;
+  return `${indent}/**\n${indent} * ${escapeJsDoc(summary)}\n${indent} *\n${details
+    .map((line) => `${indent} * - ${escapeJsDoc(line)}`)
+    .join("\n")}\n${indent} */\n`;
 }
 
 /**
@@ -274,12 +315,14 @@ function emitSubsetExports(exportName, json) {
 
   return options.subsetExports
     .map(({ constName, typeName, sourceKey, stripPrefix }) => {
-      if (!(sourceKey in json)) {
+      const sourceValue = sourceKey ? json[sourceKey] : json;
+
+      if (sourceKey && !(sourceKey in json)) {
         throw new Error(`Missing subset source key "${sourceKey}" in dataset "${exportName}"`);
       }
 
       const classDocs = new Map();
-      collectLeafDocs(json[sourceKey], classDocs);
+      collectLeafDocs(sourceValue, classDocs);
 
       return `
 export const ${constName} = ${emitFlatClassRecord([...classDocs.entries()], stripPrefix)};
