@@ -1,4 +1,5 @@
-import type { String as IString } from "@lance/stdlib/types/string";
+import type { String } from "../types/string";
+import { Math } from "./math";
 import { toArray, select, count, joinString } from "@lance/core";
 
 // !TODO implement in global declarations
@@ -6,7 +7,7 @@ interface RegExpMatchArray {
 
 }
 
-export class CString implements IString {
+export class CString implements String {
   private _string!: string;
 
   charAt(index: number): string {
@@ -56,7 +57,18 @@ export class CString implements IString {
   }
 
   substring(start: number, end?: number): string {
-    return "";
+      if (end === undefined) end = this._string.length;
+
+      // substring-specific: coerce negatives to 0
+      start = Math.max(0, start);
+      end = Math.max(0, end);
+
+      // substring-specific: swap if start > end
+      if (start > end) {
+          [start, end] = [end, start];
+      }
+
+      return select(this._string, start, end - start);
   }
 
   toLowerCase(): string {

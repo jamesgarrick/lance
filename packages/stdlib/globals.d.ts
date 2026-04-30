@@ -8,15 +8,18 @@ declare global {
   interface Boolean {}
   interface Object {}
   interface RegExp {}
-  interface IArguments {}
+  interface IArguments { }
+
+  declare const Math: typeof import('./math').Math;
 
   interface Array<T> {
+    [index: number]: T;
     length: number;
   }
 
   interface HashMap {}
 
-  interface Number {}
+  //interface Number {}
 
   interface String extends IString {}
 
