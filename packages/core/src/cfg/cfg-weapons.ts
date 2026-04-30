@@ -538,6 +538,7 @@ export const cfgWeapons = {
 
 export type CfgWeapons = typeof cfgWeapons;
 
-export const weaponsList = {
+
+export const weapons = {
   cfgWeapons,
 } as const;

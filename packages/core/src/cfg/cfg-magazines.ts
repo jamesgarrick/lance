@@ -1300,6 +1300,7 @@ export const cfgMagazines = {
 
 export type CfgMagazines = typeof cfgMagazines;
 
-export const magazinesList = {
+
+export const magazines = {
   cfgMagazines,
 } as const;

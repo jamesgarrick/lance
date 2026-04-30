@@ -37,8 +37,74 @@ function buildTypeName(exportName) {
 }
 
 /**
- * @typedef {string | Record<string, JsonValue>} JsonValue
+ * @typedef {{ className: string, name?: string }} LeafDescriptor
+ * @typedef {string | LeafDescriptor | Record<string, JsonValue>} JsonValue
  */
+
+/**
+ * @param {JsonValue} value
+ * @returns {value is LeafDescriptor}
+ */
+function isLeafDescriptor(value) {
+  return typeof value === "object" && value !== null && "className" in value;
+}
+
+/**
+ * @param {string} text
+ * @returns {string}
+ */
+function escapeJsDoc(text) {
+  return text.replace(/\*\//g, "*\\/");
+}
+
+/**
+ * @param {JsonValue} value
+ * @returns {string | undefined}
+ */
+function getLeafName(value) {
+  if (isLeafDescriptor(value)) {
+    return value.name?.trim() || undefined;
+  }
+
+  return undefined;
+}
+
+/**
+ * @param {JsonValue} value
+ * @returns {string}
+ */
+function getLeafClassName(value) {
+  if (typeof value === "string") {
+    return value;
+  }
+
+  if (isLeafDescriptor(value)) {
+    return value.className;
+  }
+
+  throw new Error("Expected leaf cfg value");
+}
+
+/**
+ * @param {JsonValue} value
+ * @returns {string | undefined}
+ */
+function getDocLabel(value) {
+  if (typeof value === "string") {
+    return undefined;
+  }
+
+  if (isLeafDescriptor(value)) {
+    return getLeafName(value);
+  }
+
+  const baseEntry = Object.entries(value).find(([key]) => key === "base");
+  if (!baseEntry) {
+    return undefined;
+  }
+
+  return getLeafName(baseEntry[1]);
+}
 
 /**
  * @param {JsonValue} value
@@ -46,8 +112,8 @@ function buildTypeName(exportName) {
  * @returns {string}
  */
 function emitValue(value, depth) {
-  if (typeof value === "string") {
-    return JSON.stringify(value);
+  if (typeof value === "string" || isLeafDescriptor(value)) {
+    return JSON.stringify(getLeafClassName(value));
   }
 
   const indent = "  ".repeat(depth);
@@ -60,14 +126,15 @@ function emitValue(value, depth) {
     childEntries.length === 0
       ? "{}"
       : `{\n${childEntries
-          .map(
-            ([key, child]) =>
-              `${childIndent}${JSON.stringify(key)}: ${emitValue(child, depth + 1)},`,
-          )
+          .map(([key, child]) => {
+            const docLabel = getDocLabel(child);
+            const docBlock = docLabel ? `${childIndent}/** ${escapeJsDoc(docLabel)} */\n` : "";
+            return `${docBlock}${childIndent}${JSON.stringify(key)}: ${emitValue(child, depth + 1)},`;
+          })
           .join("\n")}\n${indent}}`;
 
   if (baseEntry) {
-    return `cfgNode(${JSON.stringify(baseEntry[1])}, ${renderedChildren})`;
+    return `cfgNode(${JSON.stringify(getLeafClassName(baseEntry[1]))}, ${renderedChildren})`;
   }
 
   return renderedChildren;
@@ -78,13 +145,32 @@ function emitValue(value, depth) {
  * @param {Set<string>} out
  */
 function collectClassNames(value, out) {
-  if (typeof value === "string") {
-    out.add(value);
+  if (typeof value === "string" || isLeafDescriptor(value)) {
+    out.add(getLeafClassName(value));
     return;
   }
 
   for (const child of Object.values(value)) {
     collectClassNames(child, out);
+  }
+}
+
+/**
+ * @param {JsonValue} value
+ * @param {Map<string, string | undefined>} out
+ */
+function collectLeafDocs(value, out) {
+  if (typeof value === "string" || isLeafDescriptor(value)) {
+    const className = getLeafClassName(value);
+    const name = getLeafName(value);
+    if (!out.has(className)) {
+      out.set(className, name);
+    }
+    return;
+  }
+
+  for (const child of Object.values(value)) {
+    collectLeafDocs(child, out);
   }
 }
 
@@ -100,20 +186,21 @@ function toIdentifierKey(className) {
 }
 
 /**
- * @param {readonly string[]} classNames
+ * @param {readonly [string, string | undefined][]} classEntries
  * @returns {string}
  */
-function emitFlatClassRecord(classNames) {
+function emitFlatClassRecord(classEntries) {
   const usedKeys = new Map();
-  const entries = classNames
+  const entries = classEntries
     .slice()
-    .sort()
-    .map((className) => {
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([className, docLabel]) => {
       const baseKey = toIdentifierKey(className);
       const nextCount = (usedKeys.get(baseKey) ?? 0) + 1;
       usedKeys.set(baseKey, nextCount);
       const key = nextCount === 1 ? baseKey : `${baseKey}_${nextCount}`;
-      return `  ${JSON.stringify(key)}: ${JSON.stringify(className)},`;
+      const docBlock = docLabel ? `  /** ${escapeJsDoc(docLabel)} */\n` : "";
+      return `${docBlock}  ${JSON.stringify(key)}: ${JSON.stringify(className)},`;
     });
 
   return `{\n${entries.join("\n")}\n} as const`;
@@ -136,11 +223,11 @@ function emitSubsetExports(exportName, json) {
         throw new Error(`Missing subset source key "${sourceKey}" in dataset "${exportName}"`);
       }
 
-      const classNames = new Set();
-      collectClassNames(json[sourceKey], classNames);
+      const classDocs = new Map();
+      collectLeafDocs(json[sourceKey], classDocs);
 
       return `
-export const ${constName} = ${emitFlatClassRecord([...classNames])};
+export const ${constName} = ${emitFlatClassRecord([...classDocs.entries()])};
 export type ${typeName} = typeof ${constName}[keyof typeof ${constName}];`;
     })
     .join("\n");
