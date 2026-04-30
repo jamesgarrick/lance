@@ -104,3 +104,25 @@ export function isIn(position: (Pos2D | Pos3D), location: Location): boolean;
  * @see {@link https://community.bistudio.com/wiki/in in}
  */
 export function isIn(substring: string, string: string): boolean;
+
+export declare function deleteAt(array: any[], index: number): any | null;
+
+// type enriched syntax
+export function deleteAt<T>(array: Array<T>, index: number): T | null;
+
+export function deleteAt(hashmap: Hashmap, key: HashmapKey): any;
+
+export function deleteAt(array: any[], indexes: number[]): any[];
+export function deleteAt<T>(array: Array<T>, indexes: number[]): Array<T>;
+
+/** Insert an element to the back of the given array.
+ * This command modifies the original array. (see also: pushBackUnique)
+ *
+ */
+export function pushBack(array: any[], item: any): number;
+
+/** Insert an element to the back of the given array.
+ * This command modifies the original array. (see also: pushBackUnique)
+ *
+ */
+export function pushBack<T>(array: Array<T>, item: T): number;

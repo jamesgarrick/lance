@@ -1,4 +1,4 @@
-interface Math {
+export interface Math {
     /** The mathematical constant e. This is Euler's number, the base of natural logarithms. */
     readonly E: number;
     /** The natural logarithm of 10. */

@@ -40,4 +40,41 @@ declare global {
   interface RangeError extends Error {}
   interface RangeErrorConstructor extends ErrorConstructor {}
   declare var RangeError: RangeErrorConstructor;
+
+  interface Iterator<T> {
+      next(): IteratorResult<T>;
+  }
+
+  interface IteratorResult<T> {
+      value: T;
+      done: boolean;
+  }
+
+  interface Iterable<T> {
+      [Symbol.iterator](): Iterator<T>;
+  }
+
+  interface IterableIterator<T> extends Iterator<T> {
+      [Symbol.iterator](): IterableIterator<T>;
+  }
+
+  declare namespace Symbol {
+      const iterator: unique symbol;
+  }
+
+  interface Symbol {
+      readonly description: string | undefined;
+  }
+
+  declare type PropertyKey = string | number | symbol;
+
+  //
+  //
+
+  interface ConcatArray<T> {
+      readonly length: number;
+      readonly [n: number]: T;
+      join(separator?: string): string;
+      slice(start?: number, end?: number): T[];
+  }
 }

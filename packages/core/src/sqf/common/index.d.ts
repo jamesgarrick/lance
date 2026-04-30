@@ -1,6 +1,8 @@
 export * from "./find";
 export * from "./count";
 export * from "./select";
+export * from "./array";
+
 
 /**
  * Converts the supplied String into an Array of Numbers.

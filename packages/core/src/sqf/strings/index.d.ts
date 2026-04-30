@@ -29,3 +29,10 @@ export function compileFinal(
   // Compiler logic here
   return {} as any;
 }
+
+
+export type SimpleArrayValue = number | string | boolean | null | SimpleArrayValue[];
+export function parseSimpleArray(stringArray: string): SimpleArrayValue[];
+
+// TODO! Anything in BIKI is defined as all data types or nothing - strongly type this
+export function str(value: any): string;
