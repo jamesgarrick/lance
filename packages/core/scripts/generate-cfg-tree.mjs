@@ -9,17 +9,17 @@ const rootDir = path.resolve(__dirname, "..");
 const datasetOptions = {
   cfgWeaponsItems: {
     subsetExports: [
-      { constName: "railItems", typeName: "RailItemClassName", sourceKey: "acc" },
-      { constName: "bipods", typeName: "BipodClassName", sourceKey: "bipod" },
-      { constName: "muzzles", typeName: "MuzzleClassName", sourceKey: "muzzle" },
-      { constName: "optics", typeName: "OpticClassName", sourceKey: "optic" },
+      { constName: "railItems", typeName: "RailItemClassName", sourceKey: "acc", stripPrefix: "acc_" },
+      { constName: "bipods", typeName: "BipodClassName", sourceKey: "bipod", stripPrefix: "bipod_" },
+      { constName: "muzzles", typeName: "MuzzleClassName", sourceKey: "muzzle", stripPrefix: "muzzle_" },
+      { constName: "optics", typeName: "OpticClassName", sourceKey: "optic", stripPrefix: "optic_" },
     ],
   },
   cfgWeaponsEquipment: {
     subsetExports: [
-      { constName: "headgear", typeName: "HeadgearClassName", sourceKey: "h" },
-      { constName: "uniforms", typeName: "UniformClassName", sourceKey: "u" },
-      { constName: "vests", typeName: "VestClassName", sourceKey: "v" },
+      { constName: "headgear", typeName: "HeadgearClassName", sourceKey: "h", stripPrefix: "H_" },
+      { constName: "uniforms", typeName: "UniformClassName", sourceKey: "u", stripPrefix: "U_" },
+      { constName: "vests", typeName: "VestClassName", sourceKey: "v", stripPrefix: "V_" },
     ],
   },
 };
@@ -176,10 +176,16 @@ function collectLeafDocs(value, out) {
 
 /**
  * @param {string} className
+ * @param {string | undefined} stripPrefix
  * @returns {string}
  */
-function toIdentifierKey(className) {
-  return className
+function toIdentifierKey(className, stripPrefix) {
+  const normalizedClassName =
+    stripPrefix && className.startsWith(stripPrefix)
+      ? className.slice(stripPrefix.length)
+      : className;
+
+  return normalizedClassName
     .replace(/[^a-zA-Z0-9]+/g, "_")
     .replace(/^_+|_+$/g, "")
     .toLowerCase();
@@ -187,15 +193,16 @@ function toIdentifierKey(className) {
 
 /**
  * @param {readonly [string, string | undefined][]} classEntries
+ * @param {string | undefined} stripPrefix
  * @returns {string}
  */
-function emitFlatClassRecord(classEntries) {
+function emitFlatClassRecord(classEntries, stripPrefix) {
   const usedKeys = new Map();
   const entries = classEntries
     .slice()
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([className, docLabel]) => {
-      const baseKey = toIdentifierKey(className);
+      const baseKey = toIdentifierKey(className, stripPrefix);
       const nextCount = (usedKeys.get(baseKey) ?? 0) + 1;
       usedKeys.set(baseKey, nextCount);
       const key = nextCount === 1 ? baseKey : `${baseKey}_${nextCount}`;
@@ -218,7 +225,7 @@ function emitSubsetExports(exportName, json) {
   }
 
   return options.subsetExports
-    .map(({ constName, typeName, sourceKey }) => {
+    .map(({ constName, typeName, sourceKey, stripPrefix }) => {
       if (!(sourceKey in json)) {
         throw new Error(`Missing subset source key "${sourceKey}" in dataset "${exportName}"`);
       }
@@ -227,7 +234,7 @@ function emitSubsetExports(exportName, json) {
       collectLeafDocs(json[sourceKey], classDocs);
 
       return `
-export const ${constName} = ${emitFlatClassRecord([...classDocs.entries()])};
+export const ${constName} = ${emitFlatClassRecord([...classDocs.entries()], stripPrefix)};
 export type ${typeName} = typeof ${constName}[keyof typeof ${constName}];`;
     })
     .join("\n");
