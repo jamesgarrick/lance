@@ -1,9 +1,24 @@
-import { count, str, deleteAt, pushBack } from "@lance/core";
+import { count, str, deleteAt, pushBack, joinString, reverse, select, apply, sort as sortArray } from "@lance/core";
 
 
 export class Array<T> {
-  [Symbol.iterator](): Iterator<T>;
-  private _array!: Array<T>;
+  [Symbol.iterator](): Iterator<T> {
+      let index = 0;
+      const array = this._array;
+
+      return {
+          next(): IteratorResult<T> {
+              if (index >= array.length) {
+                  return { value: undefined as T, done: true };
+              }
+
+              const value = select(array, index);
+              index += 1;
+              return { value, done: false };
+          },
+      };
+  }
+  private _array!: T[];
 
   get length(): number {
       return count(this._array);
@@ -23,60 +38,74 @@ export class Array<T> {
      * @param items New elements to add to the array.
      */
   push(...items: T[]): number {
-    return pushBack(this._array, ...items);
+    let length = this._array.length;
+
+    for (const item of items) {
+        length = pushBack(this._array, item);
+    }
+
+    return length;
     }
 
     concat(...items: ConcatArray<T>[]): T[];
     concat(...items: (T | ConcatArray<T>)[]): T[] {
-        let result = this._array;
+        const result = select(this._array, 0, this._array.length) as T[];
+
         for (const item of items) {
-            if (item instanceof Array) {
-                // item is ConcatArray<T> — spread it in
-                result = result + item; // SQF array + array concatenation
+            if (typeof item === "object" && item !== null && "length" in item) {
+                for (const element of item as ConcatArray<T>) {
+                    pushBack(result, element);
+                }
             } else {
-                // item is T — single element
-                result = result + [item]; // wrap in array first
+                pushBack(result, item);
             }
         }
+
         return result;
     }
 
-    /**
-     * Adds all the elements of an array into a string, separated by the specified separator string.
-     * @param separator A string used to separate one element of the array from the next in the resulting string. If omitted, the array elements are separated with a comma.
-     */
-    join(separator?: string): string;
-    /**
-     * Reverses the elements in an array in place.
-     * This method mutates the array and returns a reference to the same array.
-     */
-    reverse(): T[];
-    /**
-     * Removes the first element from an array and returns it.
-     * If the array is empty, undefined is returned and the array is not modified.
-     */
-    shift(): T | undefined;
-    /**
-     * Returns a copy of a section of an array.
-     * For both start and end, a negative index can be used to indicate an offset from the end of the array.
-     * For example, -2 refers to the second to last element of the array.
-     * @param start The beginning index of the specified portion of the array.
-     * If start is undefined, then the slice begins at index 0.
-     * @param end The end index of the specified portion of the array. This is exclusive of the element at the index 'end'.
-     * If end is undefined, then the slice extends to the end of the array.
-     */
-    slice(start?: number, end?: number): T[];
-    /**
-     * Sorts an array in place.
-     * This method mutates the array and returns a reference to the same array.
-     * @param compareFn Function used to determine the order of the elements. It is expected to return
-     * a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
-     * value otherwise. If omitted, the elements are sorted in ascending, UTF-16 code unit order.
-     * ```ts
-     * [11,2,22,1].sort((a, b) => a - b)
-     * ```
-     */
-    sort(compareFn?: (a: T, b: T) => number): this;
+  join(separator?: string): string {
+    return joinString(this._array, separator ?? ",");
+    }
+
+  reverse(): T[] {
+      this._array = reverse(this._array);
+      return this._array;
+    }
+
+  shift(): T | undefined {
+      if (this._array.length === 0) return undefined;
+      const result = this._array[0];
+      this._array = this._array.slice(1);
+      return result;
+    }
+
+  slice(start?: number, end?: number): T[] {
+      // must calculate count from end
+    if (end === undefined) end = this._array.length;
+    if (start === undefined) start = 0;
+      return select(this._array, start, end - start)
+    }
+
+  sort(compareFn?: (a: T, b: T) => number): this {
+      if (this._array.length < 2) {
+          return this;
+      }
+
+      if (compareFn === undefined) {
+          this._array = sortArray(this._array, true);
+          return this;
+      }
+
+      const decorated = apply(this._array, (item) => {
+          const rank = count((other: T) => compareFn(item, other) > 0, this._array);
+          return [rank, item] as [number, T];
+      });
+
+      const sortedDecorated = sortArray(decorated, true);
+      this._array = apply(sortedDecorated, (entry) => select(entry, 1));
+      return this;
+    }
     /**
      * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
      * @param start The zero-based location in the array from which to start removing elements.

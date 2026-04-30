@@ -12,6 +12,7 @@ declare global {
 
   interface Array<T> {
     length: number;
+    [index: number]: T;
   }
 
   interface HashMap {}
@@ -37,4 +38,33 @@ declare global {
   interface RangeError extends Error {}
   interface RangeErrorConstructor extends ErrorConstructor {}
   declare var RangeError: RangeErrorConstructor;
+
+  interface Iterator<T> {
+    next(): IteratorResult<T>;
+  }
+
+  interface IteratorResult<T> {
+    value: T;
+    done: boolean;
+  }
+
+  interface Iterable<T> {
+    [Symbol.iterator](): Iterator<T>;
+  }
+
+  declare namespace Symbol {
+    const iterator: unique symbol;
+  }
+
+  interface Symbol {
+    readonly description: string | undefined;
+  }
+
+  interface ConcatArray<T> {
+    readonly length: number;
+    readonly [n: number]: T;
+    [Symbol.iterator](): Iterator<T>;
+    join(separator?: string): string;
+    slice(start?: number, end?: number): T[];
+  }
 }

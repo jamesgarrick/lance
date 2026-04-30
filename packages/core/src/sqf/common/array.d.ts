@@ -24,7 +24,7 @@ export function append<T>(array1: Array<T>, array2: Array<T>): Array<T>;
  *
  * @see {@link https://community.bistudio.com/wiki/apply apply}
  */
-export function apply(array: Array<any>, code: (item: any) => void): Array<any>;
+export function apply(array: Array<any>, code: (item: any) => any): Array<any>;
 
 // type enriched
 /**
@@ -34,7 +34,7 @@ export function apply(array: Array<any>, code: (item: any) => void): Array<any>;
  *
  * @see {@link https://community.bistudio.com/wiki/apply apply}
  */
-export function apply<T>(array: Array<T>, code: (item: T) => void): Array<T>;
+export function apply<T, U>(array: Array<T>, code: (item: T) => U): Array<U>;
 
 
 // syntax 1
@@ -115,7 +115,8 @@ export function deleteAt(hashmap: Hashmap, key: HashmapKey): any;
 export function deleteAt(array: any[], indexes: number[]): any[];
 export function deleteAt<T>(array: Array<T>, indexes: number[]): Array<T>;
 
-/** Insert an element to the back of the given array.
+/**
+ * Insert an element to the back of the given array.
  * This command modifies the original array. (see also: pushBackUnique)
  *
  */
@@ -126,3 +127,94 @@ export function pushBack(array: any[], item: any): number;
  *
  */
 export function pushBack<T>(array: Array<T>, item: T): number;
+
+
+export function joinString(array: any[], separator: string): string;
+
+// type enriched
+export function joinString<T>(array: Array<T>, separator: string): string;
+
+export function reverse(array: any[]): any[];
+export function reverse<T>(array: T[]): T[];
+
+// string
+export function reverse(string: string): string;
+
+/**
+ * Sorts an array in place in ascending or descending order, depending on the
+ * supplied boolean flag.
+ *
+ * @since 2.10
+ *
+ * @see {@link https://community.bistudio.com/wiki/sort sort}
+ */
+export function sort(array: any[], ascending?: boolean): any[];
+
+// type enriched
+/**
+ * Sorts an array in place in ascending or descending order, depending on the
+ * supplied boolean flag.
+ *
+ * @since 2.10
+ *
+ * @see {@link https://community.bistudio.com/wiki/sort sort}
+ */
+export function sort<T>(array: T[], ascending?: boolean): T[];
+
+
+export function apply(array: any[], func: Function): any[];
+
+// type enriched
+export function apply<T, U>(array: T[], func: (item: T) => U): U[];
+
+/**
+ * Flattens an array
+ *
+ * @since 2.02
+ *
+ * @param array
+ */
+export function flatten(array: any[]): any[];
+
+/**
+ * Flattens an array
+ *
+ * @since 2.02
+ *
+ * @param array
+ */
+export function flatten<T>(array: T[]): T[];
+
+/**
+ * Executes given code for each element in the array
+ *
+ * @since 0.50
+ *
+ * @param code
+ * @param array
+ */
+export function forEach(code: (item: any) => void, array: any[]): any;
+
+// type enriched
+/**
+ * Executes given code for each element in the array
+ *
+ * @since 0.50
+ *
+ * @param code
+ * @param array
+ */
+export function forEach<T>(code: (item: T) => void, array: T[]): void;
+
+export function resize(array: any[], length: number, fill?: any): any[];
+
+
+/**
+ * Resizes an array to the specified length
+ *
+ * @since 0.50
+ *
+ * @param array
+ * @param length
+ */
+export function resize<T>(array: T[], length: number, fill?: T): T[];

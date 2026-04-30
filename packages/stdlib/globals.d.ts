@@ -15,6 +15,7 @@ declare global {
   interface Array<T> {
     [index: number]: T;
     length: number;
+    [Symbol.iterator](): Iterator<T>;
   }
 
   interface HashMap {}
@@ -74,6 +75,7 @@ declare global {
   interface ConcatArray<T> {
       readonly length: number;
       readonly [n: number]: T;
+      [Symbol.iterator](): Iterator<T>;
       join(separator?: string): string;
       slice(start?: number, end?: number): T[];
   }
