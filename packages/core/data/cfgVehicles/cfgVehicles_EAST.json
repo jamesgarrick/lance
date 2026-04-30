@@ -1,0 +1,2449 @@
+{
+  "o": {
+    "targetsoldier": {
+      "base": {
+        "className": "O_TargetSoldier",
+        "name": "Invisible Target Soldier",
+        "category": "CSAT",
+        "subCategory": "Targets"
+      }
+    },
+    "g": {
+      "soldier": {
+        "className": "O_G_Soldier_F",
+        "name": "Rifleman",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_lite": {
+        "className": "O_G_Soldier_lite_F",
+        "name": "Rifleman (Light)",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_sl": {
+        "className": "O_G_Soldier_SL_F",
+        "name": "Squad Leader",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_tl": {
+        "className": "O_G_Soldier_TL_F",
+        "name": "Team Leader",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_ar": {
+        "className": "O_G_Soldier_AR_F",
+        "name": "Autorifleman",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "medic": {
+        "className": "O_G_medic_F",
+        "name": "Combat Life Saver",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "engineer": {
+        "className": "O_G_engineer_F",
+        "name": "Engineer",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_exp": {
+        "className": "O_G_Soldier_exp_F",
+        "name": "Explosive Specialist",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_gl": {
+        "className": "O_G_Soldier_GL_F",
+        "name": "Grenadier",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_m": {
+        "className": "O_G_Soldier_M_F",
+        "name": "Marksman",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_lat": {
+        "className": "O_G_Soldier_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_a": {
+        "className": "O_G_Soldier_A_F",
+        "name": "Ammo Bearer",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "officer": {
+        "className": "O_G_officer_F",
+        "name": "Officer",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_unarmed": {
+        "className": "O_G_Soldier_unarmed_F",
+        "name": "Rifleman (Unarmed)",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "survivor": {
+        "className": "O_G_Survivor_F",
+        "name": "Survivor",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_universal": {
+        "className": "O_G_Soldier_universal_F",
+        "name": "Soldier",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "sharpshooter": {
+        "className": "O_G_Sharpshooter_F",
+        "name": "Sharpshooter",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "hmg_02": {
+        "className": "O_G_HMG_02_F",
+        "name": "M2 HMG .50",
+        "category": "FIA",
+        "subCategory": "Turrets"
+      },
+      "hmg_02_high": {
+        "className": "O_G_HMG_02_high_F",
+        "name": "M2 HMG .50 (Raised)",
+        "category": "FIA",
+        "subCategory": "Turrets"
+      },
+      "mortar_01": {
+        "className": "O_G_Mortar_01_F",
+        "name": "Mk6 Mortar",
+        "category": "FIA",
+        "subCategory": "Turrets"
+      },
+      "boat_transport_01": {
+        "className": "O_G_Boat_Transport_01_F",
+        "name": "Assault Boat",
+        "category": "FIA",
+        "subCategory": "Boats"
+      },
+      "offroad_01_repair": {
+        "className": "O_G_Offroad_01_repair_F",
+        "name": "Offroad (Repair)",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "offroad_01": {
+        "className": "O_G_Offroad_01_F",
+        "name": "Offroad",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "offroad_01_armed": {
+        "className": "O_G_Offroad_01_armed_F",
+        "name": "Offroad (HMG)",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "offroad_01_at": {
+        "className": "O_G_Offroad_01_AT_F",
+        "name": "Offroad (AT)",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "quadbike_01": {
+        "className": "O_G_Quadbike_01_F",
+        "name": "Quad Bike",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "van_01_transport": {
+        "className": "O_G_Van_01_transport_F",
+        "name": "Truck",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "van_01_fuel": {
+        "className": "O_G_Van_01_fuel_F",
+        "name": "Fuel Truck",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "boat_transport_02": {
+        "className": "O_G_Boat_Transport_02_F",
+        "name": "RHIB",
+        "category": "FIA",
+        "subCategory": "Boats"
+      },
+      "van_02_transport": {
+        "className": "O_G_Van_02_transport_F",
+        "name": "Van Transport",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "van_02_vehicle": {
+        "className": "O_G_Van_02_vehicle_F",
+        "name": "Van (Cargo)",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "soldier_lat2": {
+        "className": "O_G_Soldier_LAT2_F",
+        "name": "Rifleman (Light AT)",
+        "category": "FIA",
+        "subCategory": "Men"
+      }
+    },
+    "soldier": {
+      "base": {
+        "className": "O_Soldier_F",
+        "name": "Rifleman",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "lite": {
+        "className": "O_Soldier_lite_F",
+        "name": "Rifleman (Light)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "gl": {
+        "className": "O_Soldier_GL_F",
+        "name": "Grenadier",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "ar": {
+        "className": "O_Soldier_AR_F",
+        "name": "Autorifleman",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "sl": {
+        "className": "O_Soldier_SL_F",
+        "name": "Squad Leader",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "tl": {
+        "className": "O_Soldier_TL_F",
+        "name": "Team Leader",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "m": {
+        "className": "O_soldier_M_F",
+        "name": "Marksman",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "lat": {
+        "className": "O_Soldier_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "repair": {
+        "className": "O_soldier_repair_F",
+        "name": "Repair Specialist",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "exp": {
+        "className": "O_soldier_exp_F",
+        "name": "Explosive Specialist",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "a": {
+        "className": "O_Soldier_A_F",
+        "name": "Ammo Bearer",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "at": {
+        "className": "O_Soldier_AT_F",
+        "name": "Missile Specialist (AT)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "aa": {
+        "className": "O_Soldier_AA_F",
+        "name": "Missile Specialist (AA)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "pg": {
+        "className": "O_soldier_PG_F",
+        "name": "Para Trooper",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "uav": {
+        "className": "O_soldier_UAV_F",
+        "name": "UAV Operator",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "universal": {
+        "className": "O_Soldier_universal_F",
+        "name": "Soldier",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "unarmed": {
+        "className": "O_Soldier_unarmed_F",
+        "name": "Rifleman (Unarmed)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "aar": {
+        "className": "O_Soldier_AAR_F",
+        "name": "Asst. Autorifleman",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "aat": {
+        "className": "O_Soldier_AAT_F",
+        "name": "Asst. Missile Specialist (AT)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "aaa": {
+        "className": "O_Soldier_AAA_F",
+        "name": "Asst. Missile Specialist (AA)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "vr": {
+        "className": "O_Soldier_VR_F",
+        "name": "VR Entity",
+        "category": "CSAT",
+        "subCategory": "Men (Virtual Reality)"
+      },
+      "uav_06": {
+        "className": "O_soldier_UAV_06_F",
+        "name": "UAV Operator (AL-6)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "uav_06_medical": {
+        "className": "O_soldier_UAV_06_medical_F",
+        "name": "UAV Operator (AL-6, Medical)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "mine": {
+        "className": "O_soldier_mine_F",
+        "name": "Mine Specialist",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "hat": {
+        "className": "O_Soldier_HAT_F",
+        "name": "Rifleman (Heavy AT)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "ahat": {
+        "className": "O_Soldier_AHAT_F",
+        "name": "Asst. Heavy AT",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "officer": {
+      "base": {
+        "className": "O_officer_F",
+        "name": "Officer",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "parade": {
+        "className": "O_Officer_Parade_F",
+        "name": "Officer (Parade Dress)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "parade_veteran": {
+        "className": "O_Officer_Parade_Veteran_F",
+        "name": "Officer (Veteran, Parade Dress)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "medic": {
+      "base": {
+        "className": "O_medic_F",
+        "name": "Combat Life Saver",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "helipilot": {
+      "base": {
+        "className": "O_helipilot_F",
+        "name": "Helicopter Pilot",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "engineer": {
+      "base": {
+        "className": "O_engineer_F",
+        "name": "Engineer",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "u": {
+        "className": "O_engineer_U_F",
+        "name": "Engineer",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      }
+    },
+    "crew": {
+      "base": {
+        "className": "O_crew_F",
+        "name": "Crewman",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "pilot": {
+      "base": {
+        "className": "O_Pilot_F",
+        "name": "Pilot",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "helicrew": {
+      "base": {
+        "className": "O_helicrew_F",
+        "name": "Helicopter Crew",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "story": {
+      "colonel": {
+        "className": "O_Story_Colonel_F",
+        "name": "Namdar",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "ceo": {
+        "className": "O_Story_CEO_F",
+        "name": "Attar",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      }
+    },
+    "survivor": {
+      "base": {
+        "className": "O_Survivor_F",
+        "name": "Survivor",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "diver": {
+      "base": {
+        "className": "O_diver_F",
+        "name": "Assault Diver",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "tl": {
+        "className": "O_diver_TL_F",
+        "name": "Diver Team Leader",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "exp": {
+        "className": "O_diver_exp_F",
+        "name": "Diver Explosive Specialist",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "spotter": {
+      "base": {
+        "className": "O_spotter_F",
+        "name": "Spotter",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "sniper": {
+      "base": {
+        "className": "O_sniper_F",
+        "name": "Sniper",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "recon": {
+      "base": {
+        "className": "O_recon_F",
+        "name": "Recon Scout",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "m": {
+        "className": "O_recon_M_F",
+        "name": "Recon Marksman",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "lat": {
+        "className": "O_recon_LAT_F",
+        "name": "Recon Scout (AT)",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "medic": {
+        "className": "O_recon_medic_F",
+        "name": "Recon Paramedic",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "exp": {
+        "className": "O_recon_exp_F",
+        "name": "Recon Demo Specialist",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "jtac": {
+        "className": "O_recon_JTAC_F",
+        "name": "Recon JTAC",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "tl": {
+        "className": "O_recon_TL_F",
+        "name": "Recon Team Leader",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "support": {
+      "mg": {
+        "className": "O_support_MG_F",
+        "name": "Gunner (HMG)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "gmg": {
+        "className": "O_support_GMG_F",
+        "name": "Gunner (GMG)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "mort": {
+        "className": "O_support_Mort_F",
+        "name": "Gunner (Mk6)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "amg": {
+        "className": "O_support_AMG_F",
+        "name": "Asst. Gunner (HMG/GMG)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "amort": {
+        "className": "O_support_AMort_F",
+        "name": "Asst. Gunner (Mk6)",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "soldieru": {
+      "base": {
+        "className": "O_soldierU_F",
+        "name": "Rifleman",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "ar": {
+        "className": "O_soldierU_AR_F",
+        "name": "Autorifleman",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "aar": {
+        "className": "O_soldierU_AAR_F",
+        "name": "Asst. Autorifleman",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "lat": {
+        "className": "O_soldierU_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "at": {
+        "className": "O_soldierU_AT_F",
+        "name": "Missile Specialist (AT)",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "aat": {
+        "className": "O_soldierU_AAT_F",
+        "name": "Asst. Missile Specialist (AT)",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "aa": {
+        "className": "O_soldierU_AA_F",
+        "name": "Missile Specialist (AA)",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "aaa": {
+        "className": "O_soldierU_AAA_F",
+        "name": "Asst. Missile Specialist (AA)",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "tl": {
+        "className": "O_soldierU_TL_F",
+        "name": "Team Leader",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "sl": {
+        "className": "O_SoldierU_SL_F",
+        "name": "Squad Leader",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "medic": {
+        "className": "O_soldierU_medic_F",
+        "name": "Combat Life Saver",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "repair": {
+        "className": "O_soldierU_repair_F",
+        "name": "Repair Specialist",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "exp": {
+        "className": "O_soldierU_exp_F",
+        "name": "Explosive Specialist",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "m": {
+        "className": "O_soldierU_M_F",
+        "name": "Marksman",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "a": {
+        "className": "O_soldierU_A_F",
+        "name": "Ammo Bearer",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "gl": {
+        "className": "O_SoldierU_GL_F",
+        "name": "Grenadier",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "unarmed": {
+        "className": "O_SoldierU_unarmed_F",
+        "name": "Rifleman (Unarmed)",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      }
+    },
+    "protagonist": {
+      "vr": {
+        "className": "O_Protagonist_VR_F",
+        "name": "VR Soldier",
+        "category": "CSAT",
+        "subCategory": "Men (Virtual Reality)"
+      }
+    },
+    "ghillie": {
+      "lsh": {
+        "className": "O_ghillie_lsh_F",
+        "name": "Sniper (Lush)",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "sard": {
+        "className": "O_ghillie_sard_F",
+        "name": "Sniper (Semi-Arid)",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "ard": {
+        "className": "O_ghillie_ard_F",
+        "name": "Sniper (Arid)",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "sharpshooter": {
+      "base": {
+        "className": "O_Sharpshooter_F",
+        "name": "Sharpshooter",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "urban": {
+      "sharpshooter": {
+        "className": "O_Urban_Sharpshooter_F",
+        "name": "Sharpshooter",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      },
+      "heavygunner": {
+        "className": "O_Urban_HeavyGunner_F",
+        "name": "Heavy Gunner",
+        "category": "CSAT",
+        "subCategory": "Men (Urban)"
+      }
+    },
+    "pathfinder": {
+      "base": {
+        "className": "O_Pathfinder_F",
+        "name": "Recon Pathfinder",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "heavygunner": {
+      "base": {
+        "className": "O_HeavyGunner_F",
+        "name": "Heavy Gunner",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "hmg": {
+      "01": {
+        "className": "O_HMG_01_F",
+        "name": "Mk30 HMG .50",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      },
+      "01_high": {
+        "className": "O_HMG_01_high_F",
+        "name": "Mk30 HMG .50 (Raised)",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      },
+      "01_a": {
+        "className": "O_HMG_01_A_F",
+        "name": "Mk30A HMG .50",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      },
+      "02": {
+        "className": "O_HMG_02_F",
+        "name": "M2 HMG .50",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      },
+      "02_high": {
+        "className": "O_HMG_02_high_F",
+        "name": "M2 HMG .50 (Raised)",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      }
+    },
+    "gmg": {
+      "01": {
+        "className": "O_GMG_01_F",
+        "name": "Mk32 GMG 20 mm",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      },
+      "01_high": {
+        "className": "O_GMG_01_high_F",
+        "name": "Mk32 GMG 20 mm (Raised)",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      },
+      "01_a": {
+        "className": "O_GMG_01_A_F",
+        "name": "Mk32A GMG 20 mm",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      }
+    },
+    "mortar": {
+      "01": {
+        "className": "O_Mortar_01_F",
+        "name": "Mk6 Mortar",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      }
+    },
+    "heli": {
+      "light_02_dynamicloadout": {
+        "className": "O_Heli_Light_02_dynamicLoadout_F",
+        "name": "PO-30 Orca",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "light_02": {
+        "className": "O_Heli_Light_02_F",
+        "name": "PO-30 Orca",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "light_02_unarmed": {
+        "className": "O_Heli_Light_02_unarmed_F",
+        "name": "PO-30 Orca (Unarmed)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "light_02_v2": {
+        "className": "O_Heli_Light_02_v2_F",
+        "name": "PO-30 Orca (Black & White)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "attack_02": {
+        "className": "O_Heli_Attack_02_F",
+        "name": "Mi-48 Kajman",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "attack_02_black": {
+        "className": "O_Heli_Attack_02_black_F",
+        "name": "Mi-48 Kajman (Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "attack_02_dynamicloadout": {
+        "className": "O_Heli_Attack_02_dynamicLoadout_F",
+        "name": "Mi-48 Kajman",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "attack_02_dynamicloadout_black": {
+        "className": "O_Heli_Attack_02_dynamicLoadout_black_F",
+        "name": "Mi-48 Kajman (Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04": {
+        "className": "O_Heli_Transport_04_F",
+        "name": "Mi-290 Taru",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_ammo": {
+        "className": "O_Heli_Transport_04_ammo_F",
+        "name": "Mi-290 Taru (Ammo)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_bench": {
+        "className": "O_Heli_Transport_04_bench_F",
+        "name": "Mi-290 Taru (Bench)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_box": {
+        "className": "O_Heli_Transport_04_box_F",
+        "name": "Mi-290 Taru (Cargo)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_covered": {
+        "className": "O_Heli_Transport_04_covered_F",
+        "name": "Mi-290 Taru (Transport)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_fuel": {
+        "className": "O_Heli_Transport_04_fuel_F",
+        "name": "Mi-290 Taru (Fuel)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_medevac": {
+        "className": "O_Heli_Transport_04_medevac_F",
+        "name": "Mi-290 Taru (Medical)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_repair": {
+        "className": "O_Heli_Transport_04_repair_F",
+        "name": "Mi-290 Taru (Repair)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_black": {
+        "className": "O_Heli_Transport_04_black_F",
+        "name": "Mi-280 Taru (Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_ammo_black": {
+        "className": "O_Heli_Transport_04_ammo_black_F",
+        "name": "Mi-280 Taru (Ammo, Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_bench_black": {
+        "className": "O_Heli_Transport_04_bench_black_F",
+        "name": "Mi-280 Taru (Bench, Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_box_black": {
+        "className": "O_Heli_Transport_04_box_black_F",
+        "name": "Mi-280 Taru (Cargo, Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_covered_black": {
+        "className": "O_Heli_Transport_04_covered_black_F",
+        "name": "Mi-280 Taru (Transport, Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_fuel_black": {
+        "className": "O_Heli_Transport_04_fuel_black_F",
+        "name": "Mi-280 Taru (Fuel, Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_medevac_black": {
+        "className": "O_Heli_Transport_04_medevac_black_F",
+        "name": "Mi-280 Taru (Medical, Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      },
+      "transport_04_repair_black": {
+        "className": "O_Heli_Transport_04_repair_black_F",
+        "name": "Mi-280 Taru (Repair, Black)",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      }
+    },
+    "parachute": {
+      "02": {
+        "className": "O_Parachute_02_F",
+        "name": "Cargo Parachute",
+        "category": "CSAT",
+        "subCategory": "Helicopters"
+      }
+    },
+    "apc": {
+      "tracked_02_cannon": {
+        "className": "O_APC_Tracked_02_cannon_F",
+        "name": "BTR-K Kamysh",
+        "category": "CSAT",
+        "subCategory": "APCs"
+      },
+      "tracked_02_aa": {
+        "className": "O_APC_Tracked_02_AA_F",
+        "name": "ZSU-39 Tigris",
+        "category": "CSAT",
+        "subCategory": "Anti-Air"
+      },
+      "wheeled_02_rcws": {
+        "className": "O_APC_Wheeled_02_rcws_F",
+        "name": "MSE-3 Marid",
+        "category": "CSAT",
+        "subCategory": "APCs"
+      },
+      "wheeled_02_rcws_v2": {
+        "className": "O_APC_Wheeled_02_rcws_v2_F",
+        "name": "MSE-3 Marid",
+        "category": "CSAT",
+        "subCategory": "APCs"
+      }
+    },
+    "mbt": {
+      "02_cannon": {
+        "className": "O_MBT_02_cannon_F",
+        "name": "T-100 Varsuk",
+        "category": "CSAT",
+        "subCategory": "Tanks"
+      },
+      "02_arty": {
+        "className": "O_MBT_02_arty_F",
+        "name": "2S9 Sochor",
+        "category": "CSAT",
+        "subCategory": "Artillery"
+      },
+      "04_cannon": {
+        "className": "O_MBT_04_cannon_F",
+        "name": "T-140 Angara",
+        "category": "CSAT",
+        "subCategory": "Tanks"
+      },
+      "04_command": {
+        "className": "O_MBT_04_command_F",
+        "name": "T-140K Angara",
+        "category": "CSAT",
+        "subCategory": "Tanks"
+      },
+      "02_railgun": {
+        "className": "O_MBT_02_railgun_F",
+        "name": "T-100X Futura",
+        "category": "CSAT",
+        "subCategory": "Tanks"
+      }
+    },
+    "boat": {
+      "armed_01_hmg": {
+        "className": "O_Boat_Armed_01_hmg_F",
+        "name": "Speedboat HMG",
+        "category": "CSAT",
+        "subCategory": "Boats"
+      },
+      "transport_01": {
+        "className": "O_Boat_Transport_01_F",
+        "name": "Assault Boat",
+        "category": "CSAT",
+        "subCategory": "Boats"
+      }
+    },
+    "lifeboat": {
+      "base": {
+        "className": "O_Lifeboat",
+        "name": "Rescue Boat",
+        "category": "CSAT",
+        "subCategory": "Boats"
+      }
+    },
+    "sdv": {
+      "01": {
+        "className": "O_SDV_01_F",
+        "name": "SDV",
+        "category": "CSAT",
+        "subCategory": "Submersibles"
+      }
+    },
+    "uav": {
+      "ai": {
+        "className": "O_UAV_AI_F",
+        "name": "AI",
+        "category": "CSAT",
+        "subCategory": "Men"
+      },
+      "01": {
+        "className": "O_UAV_01_F",
+        "name": "Tayran AR-2",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      },
+      "02": {
+        "className": "O_UAV_02_F",
+        "name": "K40 Ababil-3",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      },
+      "02_cas": {
+        "className": "O_UAV_02_CAS_F",
+        "name": "K40 Ababil-3 (CAS)",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      },
+      "02_dynamicloadout": {
+        "className": "O_UAV_02_dynamicLoadout_F",
+        "name": "K40 Ababil-3",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      },
+      "06": {
+        "className": "O_UAV_06_F",
+        "name": "Jinaah AL-6",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      },
+      "06_medical": {
+        "className": "O_UAV_06_medical_F",
+        "name": "Jinaah AL-6 (Medical)",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      },
+      "01_mine": {
+        "className": "O_UAV_01_Mine_F",
+        "name": "Sentry Drone",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      }
+    },
+    "mrap": {
+      "02": {
+        "className": "O_MRAP_02_F",
+        "name": "Ifrit",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_hmg": {
+        "className": "O_MRAP_02_hmg_F",
+        "name": "Ifrit HMG",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_gmg": {
+        "className": "O_MRAP_02_gmg_F",
+        "name": "Ifrit GMG",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      }
+    },
+    "quadbike": {
+      "01": {
+        "className": "O_Quadbike_01_F",
+        "name": "Quad Bike",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      }
+    },
+    "truck": {
+      "02_covered": {
+        "className": "O_Truck_02_covered_F",
+        "name": "Zamak Transport (Covered)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_transport": {
+        "className": "O_Truck_02_transport_F",
+        "name": "Zamak Transport",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_box": {
+        "className": "O_Truck_02_box_F",
+        "name": "Zamak Repair",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_medical": {
+        "className": "O_Truck_02_medical_F",
+        "name": "Zamak Medical",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_ammo": {
+        "className": "O_Truck_02_Ammo_F",
+        "name": "Zamak Ammo",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_fuel": {
+        "className": "O_Truck_02_fuel_F",
+        "name": "Zamak Fuel",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "03_transport": {
+        "className": "O_Truck_03_transport_F",
+        "name": "Tempest Transport",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "03_covered": {
+        "className": "O_Truck_03_covered_F",
+        "name": "Tempest Transport (Covered)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "03_repair": {
+        "className": "O_Truck_03_repair_F",
+        "name": "Tempest Repair",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "03_ammo": {
+        "className": "O_Truck_03_ammo_F",
+        "name": "Tempest Ammo",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "03_fuel": {
+        "className": "O_Truck_03_fuel_F",
+        "name": "Tempest Fuel",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "03_medical": {
+        "className": "O_Truck_03_medical_F",
+        "name": "Tempest Medical",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "03_device": {
+        "className": "O_Truck_03_device_F",
+        "name": "Tempest (Device)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      }
+    },
+    "static": {
+      "aa": {
+        "className": "O_static_AA_F",
+        "name": "Static Titan Launcher (AA) [CSAT]",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      },
+      "at": {
+        "className": "O_static_AT_F",
+        "name": "Static Titan Launcher (AT) [CSAT]",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      },
+      "designator_02": {
+        "className": "O_Static_Designator_02_F",
+        "name": "Remote Designator [CSAT]",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      }
+    },
+    "ejection": {
+      "seat_plane_cas_02": {
+        "className": "O_Ejection_Seat_Plane_CAS_02_F",
+        "name": "Ejection Seat",
+        "category": "CSAT",
+        "subCategory": "Objects"
+      },
+      "seat_plane_fighter_02": {
+        "className": "O_Ejection_Seat_Plane_Fighter_02_F",
+        "name": "Ejection Seat",
+        "category": "CSAT",
+        "subCategory": "Objects"
+      }
+    },
+    "plane": {
+      "cas_02": {
+        "className": "O_Plane_CAS_02_F",
+        "name": "To-199 Neophron (CAS)",
+        "category": "CSAT",
+        "subCategory": "Planes"
+      },
+      "cas_02_dynamicloadout": {
+        "className": "O_Plane_CAS_02_dynamicLoadout_F",
+        "name": "To-199 Neophron (CAS)",
+        "category": "CSAT",
+        "subCategory": "Planes"
+      },
+      "fighter_02": {
+        "className": "O_Plane_Fighter_02_F",
+        "name": "To-201 Shikra",
+        "category": "CSAT",
+        "subCategory": "Planes"
+      },
+      "fighter_02_stealth": {
+        "className": "O_Plane_Fighter_02_Stealth_F",
+        "name": "To-201 Shikra (Stealth)",
+        "category": "CSAT",
+        "subCategory": "Planes"
+      },
+      "cas_02_cluster": {
+        "className": "O_Plane_CAS_02_Cluster_F",
+        "name": "To-199 Neophron (Cluster)",
+        "category": "CSAT",
+        "subCategory": "Planes"
+      },
+      "fighter_02_cluster": {
+        "className": "O_Plane_Fighter_02_Cluster_F",
+        "name": "To-201 Shikra (Cluster)",
+        "category": "CSAT",
+        "subCategory": "Planes"
+      }
+    },
+    "ugv": {
+      "01": {
+        "className": "O_UGV_01_F",
+        "name": "UGV Saif",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      },
+      "01_rcws": {
+        "className": "O_UGV_01_rcws_F",
+        "name": "UGV Saif RCWS",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      },
+      "02_science": {
+        "className": "O_UGV_02_Science_F",
+        "name": "Sayyah ED-1E",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      },
+      "02_demining": {
+        "className": "O_UGV_02_Demining_F",
+        "name": "Akinaka ED-1D",
+        "category": "CSAT",
+        "subCategory": "Drones"
+      }
+    },
+    "t": {
+      "lsv_02_armed": {
+        "className": "O_T_LSV_02_armed_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_armed_viper": {
+        "className": "O_T_LSV_02_armed_viper_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_unarmed": {
+        "className": "O_T_LSV_02_unarmed_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_at": {
+        "className": "O_T_LSV_02_AT_F",
+        "name": "Qilin (AT)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_unarmed_viper": {
+        "className": "O_T_LSV_02_unarmed_viper_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_armed_black": {
+        "className": "O_T_LSV_02_armed_black_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_armed_ghex": {
+        "className": "O_T_LSV_02_armed_ghex_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_armed_arid": {
+        "className": "O_T_LSV_02_armed_arid_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_unarmed_black": {
+        "className": "O_T_LSV_02_unarmed_black_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_unarmed_ghex": {
+        "className": "O_T_LSV_02_unarmed_ghex_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "lsv_02_unarmed_arid": {
+        "className": "O_T_LSV_02_unarmed_arid_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "mrap_02_ghex": {
+        "className": "O_T_MRAP_02_ghex_F",
+        "name": "Ifrit",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "mrap_02_hmg_ghex": {
+        "className": "O_T_MRAP_02_hmg_ghex_F",
+        "name": "Ifrit HMG",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "mrap_02_gmg_ghex": {
+        "className": "O_T_MRAP_02_gmg_ghex_F",
+        "name": "Ifrit GMG",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "quadbike_01_ghex": {
+        "className": "O_T_Quadbike_01_ghex_F",
+        "name": "Quad Bike",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_02": {
+        "className": "O_T_Truck_02_F",
+        "name": "Zamak Transport (Covered)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_02_transport": {
+        "className": "O_T_Truck_02_transport_F",
+        "name": "Zamak Transport",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_02_fuel": {
+        "className": "O_T_Truck_02_fuel_F",
+        "name": "Zamak Fuel",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_02_ammo": {
+        "className": "O_T_Truck_02_Ammo_F",
+        "name": "Zamak Ammo",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_02_box": {
+        "className": "O_T_Truck_02_Box_F",
+        "name": "Zamak Repair",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_02_medical": {
+        "className": "O_T_Truck_02_Medical_F",
+        "name": "Zamak Medical",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_03_transport_ghex": {
+        "className": "O_T_Truck_03_transport_ghex_F",
+        "name": "Tempest Transport",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_03_covered_ghex": {
+        "className": "O_T_Truck_03_covered_ghex_F",
+        "name": "Tempest Transport (Covered)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_03_repair_ghex": {
+        "className": "O_T_Truck_03_repair_ghex_F",
+        "name": "Tempest Repair",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_03_ammo_ghex": {
+        "className": "O_T_Truck_03_ammo_ghex_F",
+        "name": "Tempest Ammo",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_03_fuel_ghex": {
+        "className": "O_T_Truck_03_fuel_ghex_F",
+        "name": "Tempest Fuel",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_03_medical_ghex": {
+        "className": "O_T_Truck_03_medical_ghex_F",
+        "name": "Tempest Medical",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "truck_03_device_ghex": {
+        "className": "O_T_Truck_03_device_ghex_F",
+        "name": "Tempest (Device)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Cars"
+      },
+      "ugv_01_ghex": {
+        "className": "O_T_UGV_01_ghex_F",
+        "name": "UGV Saif",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Drones"
+      },
+      "ugv_01_rcws_ghex": {
+        "className": "O_T_UGV_01_rcws_ghex_F",
+        "name": "UGV Saif RCWS",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Drones"
+      },
+      "uav_04_cas": {
+        "className": "O_T_UAV_04_CAS_F",
+        "name": "KH-3A Fenghuang",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Drones"
+      },
+      "vtol_02_infantry": {
+        "className": "O_T_VTOL_02_infantry_F",
+        "name": "Y-32 Xi'an (Infantry Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "vtol_02_vehicle": {
+        "className": "O_T_VTOL_02_vehicle_F",
+        "name": "Y-32 Xi'an (Vehicle Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "vtol_02_infantry_dynamicloadout": {
+        "className": "O_T_VTOL_02_infantry_dynamicLoadout_F",
+        "name": "Y-32 Xi'an (Infantry Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "vtol_02_vehicle_dynamicloadout": {
+        "className": "O_T_VTOL_02_vehicle_dynamicLoadout_F",
+        "name": "Y-32 Xi'an (Vehicle Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "vtol_02_infantry_hex": {
+        "className": "O_T_VTOL_02_infantry_hex_F",
+        "name": "Y-32 Xi'an (Infantry Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "vtol_02_infantry_ghex": {
+        "className": "O_T_VTOL_02_infantry_ghex_F",
+        "name": "Y-32 Xi'an (Infantry Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "vtol_02_infantry_grey": {
+        "className": "O_T_VTOL_02_infantry_grey_F",
+        "name": "Y-32 Xi'an (Infantry Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "vtol_02_vehicle_hex": {
+        "className": "O_T_VTOL_02_vehicle_hex_F",
+        "name": "Y-32 Xi'an (Vehicle Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "vtol_02_vehicle_ghex": {
+        "className": "O_T_VTOL_02_vehicle_ghex_F",
+        "name": "Y-32 Xi'an (Vehicle Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "vtol_02_vehicle_grey": {
+        "className": "O_T_VTOL_02_vehicle_grey_F",
+        "name": "Y-32 Xi'an (Vehicle Transport)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Planes"
+      },
+      "apc_tracked_02_cannon_ghex": {
+        "className": "O_T_APC_Tracked_02_cannon_ghex_F",
+        "name": "BTR-K Kamysh",
+        "category": "CSAT (Pacific)",
+        "subCategory": "APCs"
+      },
+      "apc_tracked_02_aa_ghex": {
+        "className": "O_T_APC_Tracked_02_AA_ghex_F",
+        "name": "ZSU-39 Tigris",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Anti-Air"
+      },
+      "apc_wheeled_02_rcws_ghex": {
+        "className": "O_T_APC_Wheeled_02_rcws_ghex_F",
+        "name": "MSE-3 Marid",
+        "category": "CSAT (Pacific)",
+        "subCategory": "APCs"
+      },
+      "apc_wheeled_02_rcws_v2_ghex": {
+        "className": "O_T_APC_Wheeled_02_rcws_v2_ghex_F",
+        "name": "MSE-3 Marid",
+        "category": "CSAT (Pacific)",
+        "subCategory": "APCs"
+      },
+      "mbt_02_cannon_ghex": {
+        "className": "O_T_MBT_02_cannon_ghex_F",
+        "name": "T-100 Varsuk",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Tanks"
+      },
+      "mbt_02_arty_ghex": {
+        "className": "O_T_MBT_02_arty_ghex_F",
+        "name": "2S9 Sochor",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Artillery"
+      },
+      "boat_armed_01_hmg": {
+        "className": "O_T_Boat_Armed_01_hmg_F",
+        "name": "Speedboat HMG",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Boats"
+      },
+      "boat_transport_01": {
+        "className": "O_T_Boat_Transport_01_F",
+        "name": "Assault Boat",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Boats"
+      },
+      "lifeboat": {
+        "className": "O_T_Lifeboat",
+        "name": "Rescue Boat",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Boats"
+      },
+      "soldier_a": {
+        "className": "O_T_Soldier_A_F",
+        "name": "Ammo Bearer",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_aar": {
+        "className": "O_T_Soldier_AAR_F",
+        "name": "Asst. Autorifleman",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "support_amg": {
+        "className": "O_T_Support_AMG_F",
+        "name": "Asst. Gunner (HMG/GMG)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "support_amort": {
+        "className": "O_T_Support_AMort_F",
+        "name": "Asst. Gunner (Mk6)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_aaa": {
+        "className": "O_T_Soldier_AAA_F",
+        "name": "Asst. Missile Specialist (AA)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_aat": {
+        "className": "O_T_Soldier_AAT_F",
+        "name": "Asst. Missile Specialist (AT)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_ar": {
+        "className": "O_T_Soldier_AR_F",
+        "name": "Autorifleman",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "medic": {
+        "className": "O_T_Medic_F",
+        "name": "Combat Life Saver",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "crew": {
+        "className": "O_T_Crew_F",
+        "name": "Crewman",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "engineer": {
+        "className": "O_T_Engineer_F",
+        "name": "Engineer",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_exp": {
+        "className": "O_T_Soldier_Exp_F",
+        "name": "Explosive Specialist",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_gl": {
+        "className": "O_T_Soldier_GL_F",
+        "name": "Grenadier",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "support_gmg": {
+        "className": "O_T_Support_GMG_F",
+        "name": "Gunner (GMG)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "support_mg": {
+        "className": "O_T_Support_MG_F",
+        "name": "Gunner (HMG)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "support_mort": {
+        "className": "O_T_Support_Mort_F",
+        "name": "Gunner (Mk6)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "helicrew": {
+        "className": "O_T_Helicrew_F",
+        "name": "Helicopter Crew",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "helipilot": {
+        "className": "O_T_Helipilot_F",
+        "name": "Helicopter Pilot",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_m": {
+        "className": "O_T_Soldier_M_F",
+        "name": "Marksman",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_aa": {
+        "className": "O_T_Soldier_AA_F",
+        "name": "Missile Specialist (AA)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_at": {
+        "className": "O_T_Soldier_AT_F",
+        "name": "Missile Specialist (AT)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "officer": {
+        "className": "O_T_Officer_F",
+        "name": "Officer",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_pg": {
+        "className": "O_T_Soldier_PG_F",
+        "name": "Para Trooper",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "pilot": {
+        "className": "O_T_Pilot_F",
+        "name": "Pilot",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_repair": {
+        "className": "O_T_Soldier_Repair_F",
+        "name": "Repair Specialist",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier": {
+        "className": "O_T_Soldier_F",
+        "name": "Rifleman",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_lat": {
+        "className": "O_T_Soldier_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_sl": {
+        "className": "O_T_Soldier_SL_F",
+        "name": "Squad Leader",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_tl": {
+        "className": "O_T_Soldier_TL_F",
+        "name": "Team Leader",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_uav": {
+        "className": "O_T_Soldier_UAV_F",
+        "name": "UAV Operator",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "diver": {
+        "className": "O_T_Diver_F",
+        "name": "Assault Diver",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "diver_exp": {
+        "className": "O_T_Diver_Exp_F",
+        "name": "Diver Explosive Specialist",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "diver_tl": {
+        "className": "O_T_Diver_TL_F",
+        "name": "Diver Team Leader",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_exp": {
+        "className": "O_T_Recon_Exp_F",
+        "name": "Recon Demo Specialist",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_jtac": {
+        "className": "O_T_Recon_JTAC_F",
+        "name": "Recon JTAC",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_m": {
+        "className": "O_T_Recon_M_F",
+        "name": "Recon Marksman",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_medic": {
+        "className": "O_T_Recon_Medic_F",
+        "name": "Recon Paramedic",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon": {
+        "className": "O_T_Recon_F",
+        "name": "Recon Scout",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_lat": {
+        "className": "O_T_Recon_LAT_F",
+        "name": "Recon Scout (AT)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_tl": {
+        "className": "O_T_Recon_TL_F",
+        "name": "Recon Team Leader",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "sniper": {
+        "className": "O_T_Sniper_F",
+        "name": "Sniper",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "spotter": {
+        "className": "O_T_Spotter_F",
+        "name": "Spotter",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "ghillie_tna": {
+        "className": "O_T_ghillie_tna_F",
+        "name": "Sniper (Jungle)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "soldier_universal": {
+        "className": "O_T_Soldier_universal_F",
+        "name": "Soldier",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_unarmed": {
+        "className": "O_T_Soldier_unarmed_F",
+        "name": "Rifleman (Unarmed)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_uav_06": {
+        "className": "O_T_soldier_UAV_06_F",
+        "name": "UAV Operator (AL-6)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_uav_06_medical": {
+        "className": "O_T_soldier_UAV_06_medical_F",
+        "name": "UAV Operator (AL-6, Medical)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_mine": {
+        "className": "O_T_soldier_mine_F",
+        "name": "Mine Specialist",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "mbt_04_cannon": {
+        "className": "O_T_MBT_04_cannon_F",
+        "name": "T-140 Angara",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Tanks"
+      },
+      "mbt_04_command": {
+        "className": "O_T_MBT_04_command_F",
+        "name": "T-140K Angara",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Tanks"
+      },
+      "soldier_hat": {
+        "className": "O_T_Soldier_HAT_F",
+        "name": "Rifleman (Heavy AT)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "soldier_ahat": {
+        "className": "O_T_Soldier_AHAT_F",
+        "name": "Asst. Heavy AT",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men"
+      },
+      "mbt_02_railgun_ghex": {
+        "className": "O_T_MBT_02_railgun_ghex_F",
+        "name": "T-100X Futura",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Tanks"
+      }
+    },
+    "lsv": {
+      "02_armed": {
+        "className": "O_LSV_02_armed_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_armed_viper": {
+        "className": "O_LSV_02_armed_viper_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_unarmed": {
+        "className": "O_LSV_02_unarmed_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_at": {
+        "className": "O_LSV_02_AT_F",
+        "name": "Qilin (AT)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_viper": {
+        "className": "O_LSV_02_unarmed_viper_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_armed_black": {
+        "className": "O_LSV_02_armed_black_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_armed_ghex": {
+        "className": "O_LSV_02_armed_ghex_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_armed_arid": {
+        "className": "O_LSV_02_armed_arid_F",
+        "name": "Qilin (Minigun)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_black": {
+        "className": "O_LSV_02_unarmed_black_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_ghex": {
+        "className": "O_LSV_02_unarmed_ghex_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_arid": {
+        "className": "O_LSV_02_unarmed_arid_F",
+        "name": "Qilin (Unarmed)",
+        "category": "CSAT",
+        "subCategory": "Cars"
+      }
+    },
+    "v": {
+      "soldier_viper": {
+        "className": "O_V_Soldier_Viper_F",
+        "name": "TBD: Viper Operative (Green Hex)",
+        "category": "CSAT",
+        "subCategory": "Men (Special Forces)"
+      },
+      "soldier_viper_hex": {
+        "className": "O_V_Soldier_Viper_hex_F",
+        "name": "TBD: Viper Operative (Hex)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Special Forces)"
+      },
+      "soldier_hex": {
+        "className": "O_V_Soldier_hex_F",
+        "name": "Viper Operative",
+        "category": "CSAT",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_tl_hex": {
+        "className": "O_V_Soldier_TL_hex_F",
+        "name": "Viper Team Leader",
+        "category": "CSAT",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_exp_hex": {
+        "className": "O_V_Soldier_Exp_hex_F",
+        "name": "Viper Demo Specialist",
+        "category": "CSAT",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_medic_hex": {
+        "className": "O_V_Soldier_Medic_hex_F",
+        "name": "Viper Paramedic",
+        "category": "CSAT",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_m_hex": {
+        "className": "O_V_Soldier_M_hex_F",
+        "name": "Viper Marksman",
+        "category": "CSAT",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_lat_hex": {
+        "className": "O_V_Soldier_LAT_hex_F",
+        "name": "Viper Rifleman (AT)",
+        "category": "CSAT",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_jtac_hex": {
+        "className": "O_V_Soldier_JTAC_hex_F",
+        "name": "Viper JTAC",
+        "category": "CSAT",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_ghex": {
+        "className": "O_V_Soldier_ghex_F",
+        "name": "Viper Operative",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_tl_ghex": {
+        "className": "O_V_Soldier_TL_ghex_F",
+        "name": "Viper Team Leader",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_exp_ghex": {
+        "className": "O_V_Soldier_Exp_ghex_F",
+        "name": "Viper Demo Specialist",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_medic_ghex": {
+        "className": "O_V_Soldier_Medic_ghex_F",
+        "name": "Viper Paramedic",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_m_ghex": {
+        "className": "O_V_Soldier_M_ghex_F",
+        "name": "Viper Marksman",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_lat_ghex": {
+        "className": "O_V_Soldier_LAT_ghex_F",
+        "name": "Viper Rifleman (AT)",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Viper)"
+      },
+      "soldier_jtac_ghex": {
+        "className": "O_V_Soldier_JTAC_ghex_F",
+        "name": "Viper JTAC",
+        "category": "CSAT (Pacific)",
+        "subCategory": "Men (Viper)"
+      }
+    },
+    "fighter": {
+      "pilot": {
+        "className": "O_Fighter_Pilot_F",
+        "name": "Fighter Pilot",
+        "category": "CSAT",
+        "subCategory": "Men"
+      }
+    },
+    "a": {
+      "soldier_a": {
+        "className": "O_A_soldier_A_F",
+        "name": "Ammo Bearer",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "soldier_ar": {
+        "className": "O_A_soldier_AR_F",
+        "name": "Autorifleman",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "medic": {
+        "className": "O_A_medic_F",
+        "name": "Combat Life Saver",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "soldier_gl": {
+        "className": "O_A_soldier_GL_F",
+        "name": "Grenadier",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "soldier_m": {
+        "className": "O_A_soldier_M_F",
+        "name": "Marksman",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "officer": {
+        "className": "O_A_officer_F",
+        "name": "Officer",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "soldier": {
+        "className": "O_A_soldier_F",
+        "name": "Rifleman",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "soldier_lat": {
+        "className": "O_A_soldier_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "soldier_sl": {
+        "className": "O_A_soldier_SL_F",
+        "name": "Squad Leader",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "soldier_tl": {
+        "className": "O_A_soldier_TL_F",
+        "name": "Team Leader",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "soldier_aa": {
+        "className": "O_A_soldier_AA_F",
+        "name": "Missile Specialist (AA)",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      },
+      "soldier_at": {
+        "className": "O_A_soldier_AT_F",
+        "name": "Missile Specialist (AT)",
+        "category": "CSAT",
+        "subCategory": "Men (Story)"
+      }
+    },
+    "radar": {
+      "system_02": {
+        "className": "O_Radar_System_02_F",
+        "name": "R-750 Cronus Radar",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      }
+    },
+    "sam": {
+      "system_04": {
+        "className": "O_SAM_System_04_F",
+        "name": "S-750 Rhea",
+        "category": "CSAT",
+        "subCategory": "Turrets"
+      }
+    },
+    "r": {
+      "gorka_base": {
+        "className": "O_R_Gorka_base_F",
+        "name": "Rifleman",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "gorka": {
+        "className": "O_R_Gorka_F",
+        "name": "Rifleman",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "gorka_camo": {
+        "className": "O_R_Gorka_camo_F",
+        "name": "Rifleman",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "gorka_brown": {
+        "className": "O_R_Gorka_brown_F",
+        "name": "Rifleman",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "gorka_black": {
+        "className": "O_R_Gorka_black_F",
+        "name": "Rifleman",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "soldier_tl": {
+        "className": "O_R_Soldier_TL_F",
+        "name": "Team Leader",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "soldier_gl": {
+        "className": "O_R_Soldier_GL_F",
+        "name": "Grenadier",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "soldier_exp": {
+        "className": "O_R_soldier_exp_F",
+        "name": "Explosive Specialist",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "soldier_ar": {
+        "className": "O_R_Soldier_AR_F",
+        "name": "Autorifleman",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "soldier_m": {
+        "className": "O_R_soldier_M_F",
+        "name": "Marksman",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "medic": {
+        "className": "O_R_medic_F",
+        "name": "Combat Life Saver",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "soldier_lat": {
+        "className": "O_R_Soldier_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "jtac": {
+        "className": "O_R_JTAC_F",
+        "name": "JTAC",
+        "category": "Spetsnaz",
+        "subCategory": "Men"
+      },
+      "recon_tl": {
+        "className": "O_R_recon_TL_F",
+        "name": "Recon Team Leader",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_exp": {
+        "className": "O_R_recon_exp_F",
+        "name": "Recon Demo Specialist",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_ar": {
+        "className": "O_R_recon_AR_F",
+        "name": "Recon Autorifleman",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_m": {
+        "className": "O_R_recon_M_F",
+        "name": "Recon Marksman",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_medic": {
+        "className": "O_R_recon_medic_F",
+        "name": "Recon Paramedic",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_gl": {
+        "className": "O_R_recon_GL_F",
+        "name": "Recon Grenadier",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_lat": {
+        "className": "O_R_recon_LAT_F",
+        "name": "Recon Scout (AT)",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Special Forces)"
+      },
+      "recon_jtac": {
+        "className": "O_R_recon_JTAC_F",
+        "name": "Recon JTAC",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Special Forces)"
+      },
+      "patrol_soldier_tl": {
+        "className": "O_R_Patrol_Soldier_TL_F",
+        "name": "Team Leader",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      },
+      "patrol_soldier_ar": {
+        "className": "O_R_Patrol_Soldier_AR_F",
+        "name": "Autorifleman",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      },
+      "patrol_soldier_ar2": {
+        "className": "O_R_Patrol_Soldier_AR2_F",
+        "name": "Autorifleman",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      },
+      "patrol_soldier_gl": {
+        "className": "O_R_Patrol_Soldier_GL_F",
+        "name": "Grenadier",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      },
+      "patrol_soldier_a": {
+        "className": "O_R_Patrol_Soldier_A_F",
+        "name": "Ammo Bearer",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      },
+      "patrol_soldier_m": {
+        "className": "O_R_Patrol_Soldier_M_F",
+        "name": "Sharpshooter",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      },
+      "patrol_soldier_m2": {
+        "className": "O_R_Patrol_Soldier_M2_F",
+        "name": "Marksman",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      },
+      "patrol_soldier_medic": {
+        "className": "O_R_Patrol_Soldier_Medic",
+        "name": "Combat Life Saver",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      },
+      "patrol_soldier_engineer": {
+        "className": "O_R_Patrol_Soldier_Engineer_F",
+        "name": "Engineer",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      },
+      "patrol_soldier_lat": {
+        "className": "O_R_Patrol_Soldier_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "Spetsnaz",
+        "subCategory": "Men (Combat Patrol)"
+      }
+    },
+    "gen": {
+      "soldier": {
+        "className": "O_GEN_Soldier_F",
+        "name": "Gendarme",
+        "category": "Gendarmerie",
+        "subCategory": "Men"
+      },
+      "commander": {
+        "className": "O_GEN_Commander_F",
+        "name": "Gendarmerie Commander",
+        "category": "Gendarmerie",
+        "subCategory": "Men"
+      }
+    }
+  },
+  "nvg": {
+    "targetw": {
+      "base": {
+        "className": "NVG_TargetW",
+        "name": "NVG target",
+        "category": "Other"
+      }
+    }
+  },
+  "i": {
+    "ejection": {
+      "seat_plane_fighter_03": {
+        "className": "I_Ejection_Seat_Plane_Fighter_03_F",
+        "name": "Ejection Seat",
+        "category": "AAF",
+        "subCategory": "Objects"
+      }
+    }
+  },
+  "b": {
+    "ejection": {
+      "seat_plane_cas_01": {
+        "className": "B_Ejection_Seat_Plane_CAS_01_F",
+        "name": "Ejection Seat",
+        "category": "NATO",
+        "subCategory": "Objects"
+      }
+    }
+  },
+  "land": {
+    "pod": {
+      "heli_transport_04_bench": {
+        "className": "Land_Pod_Heli_Transport_04_bench_F",
+        "name": "Taru Bench Pod",
+        "category": "CSAT",
+        "subCategory": "Storage"
+      },
+      "heli_transport_04_covered": {
+        "className": "Land_Pod_Heli_Transport_04_covered_F",
+        "name": "Taru Transport Pod",
+        "category": "CSAT",
+        "subCategory": "Storage"
+      },
+      "heli_transport_04_medevac": {
+        "className": "Land_Pod_Heli_Transport_04_medevac_F",
+        "name": "Taru Medical Pod",
+        "category": "CSAT",
+        "subCategory": "Storage"
+      },
+      "heli_transport_04_bench_black": {
+        "className": "Land_Pod_Heli_Transport_04_bench_black_F",
+        "name": "Taru Bench Pod (Black)",
+        "category": "CSAT",
+        "subCategory": "Storage"
+      },
+      "heli_transport_04_covered_black": {
+        "className": "Land_Pod_Heli_Transport_04_covered_black_F",
+        "name": "Taru Transport Pod (Black)",
+        "category": "CSAT",
+        "subCategory": "Storage"
+      },
+      "heli_transport_04_medevac_black": {
+        "className": "Land_Pod_Heli_Transport_04_medevac_black_F",
+        "name": "Taru Medical Pod (Black)",
+        "category": "CSAT",
+        "subCategory": "Storage"
+      }
+    }
+  }
+}

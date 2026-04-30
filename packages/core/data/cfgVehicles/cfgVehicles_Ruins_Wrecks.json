@@ -1,0 +1,1536 @@
+{
+  "wreck": {
+    "base": {
+      "base": {
+        "className": "Wreck_Base",
+        "category": "Wrecks",
+        "subCategory": "Military"
+      }
+    }
+  },
+  "land": {
+    "belltower": {
+      "02_v1_ruins": {
+        "className": "Land_BellTower_02_V1_ruins_F",
+        "name": "Bell Tower (Big, New, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Religious"
+      },
+      "02_v2_ruins": {
+        "className": "Land_BellTower_02_V2_ruins_F",
+        "name": "Bell Tower (Big, Old, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Religious"
+      }
+    },
+    "chapel": {
+      "v1_ruins": {
+        "className": "Land_Chapel_V1_ruins_F",
+        "name": "Chapel (Big, New, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Religious"
+      },
+      "v2_ruins": {
+        "className": "Land_Chapel_V2_ruins_F",
+        "name": "Chapel (Big, Old, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Religious"
+      },
+      "small_v1_ruins": {
+        "className": "Land_Chapel_Small_V1_ruins_F",
+        "name": "Chapel (Small, New, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Religious"
+      },
+      "small_v2_ruins": {
+        "className": "Land_Chapel_Small_V2_ruins_F",
+        "name": "Chapel (Small, Old, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Religious"
+      }
+    },
+    "castle": {
+      "01_tower_ruins": {
+        "className": "Land_Castle_01_tower_ruins_F",
+        "name": "Castle Tower (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Historical"
+      }
+    },
+    "lighthouse": {
+      "ruins": {
+        "className": "Land_LightHouse_ruins_F",
+        "name": "Lighthouse (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Seaport"
+      },
+      "small_ruins": {
+        "className": "Land_Lighthouse_small_ruins_F",
+        "name": "Lighthouse (Small, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Seaport"
+      }
+    },
+    "wip": {
+      "ruins": {
+        "className": "Land_WIP_ruins_F",
+        "name": "Unfinished Complex (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "City"
+      }
+    },
+    "addon": {
+      "01_v1_ruins": {
+        "className": "Land_Addon_01_V1_ruins_F",
+        "name": "Pergola (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "02_v1_ruins": {
+        "className": "Land_Addon_02_V1_ruins_F",
+        "name": "House Addon (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "03_v1_ruins": {
+        "className": "Land_Addon_03_V1_ruins_F",
+        "name": "Inn Garden (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "03mid_v1_ruins": {
+        "className": "Land_Addon_03mid_V1_ruins_F",
+        "name": "Inn Garden (Middle, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "04_v1_ruins": {
+        "className": "Land_Addon_04_V1_ruins_F",
+        "name": "Inn Garden (No Roof, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "01_ruins": {
+        "className": "Land_Addon_01_ruins_F",
+        "name": "House Addon (Small, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "City"
+      },
+      "02_ruins": {
+        "className": "Land_Addon_02_ruins_F",
+        "name": "House Addon (Big, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "City"
+      },
+      "03_ruins": {
+        "className": "Land_Addon_03_ruins_F",
+        "name": "House Addon (Coffee Bar, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "City"
+      },
+      "04_ruins": {
+        "className": "Land_Addon_04_ruins_F",
+        "name": "House Addon (Terrace, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "City"
+      },
+      "05_ruins": {
+        "className": "Land_Addon_05_ruins_F",
+        "name": "House Addon (Garage, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "City"
+      }
+    },
+    "garage": {
+      "v1_ruins": {
+        "className": "Land_Garage_V1_ruins_F",
+        "name": "Garage (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      }
+    },
+    "metal": {
+      "shed_ruins": {
+        "className": "Land_Metal_Shed_ruins_F",
+        "name": "Grey Metal Shed (Large, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      }
+    },
+    "house": {
+      "big_01_v1_ruins": {
+        "className": "Land_House_Big_01_V1_ruins_F",
+        "name": "House (Large, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "City"
+      },
+      "big_02_v1_ruins": {
+        "className": "Land_House_Big_02_V1_ruins_F",
+        "name": "House (Big, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "City"
+      },
+      "small_01_v1_ruins": {
+        "className": "Land_House_Small_01_V1_ruins_F",
+        "name": "House (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "small_02_v1_ruins": {
+        "className": "Land_House_Small_02_V1_ruins_F",
+        "name": "House (Small, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "small_03_v1_ruins": {
+        "className": "Land_House_Small_03_V1_ruins_F",
+        "name": "Bungalow (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "City"
+      },
+      "big_01_ruins": {
+        "className": "Land_House_Big_01_ruins_F",
+        "name": "Bungalow (Yellow, Large, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "native_01_ruins": {
+        "className": "Land_House_Native_01_ruins_F",
+        "name": "Native House (Big, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Historical"
+      },
+      "native_02_ruins": {
+        "className": "Land_House_Native_02_ruins_F",
+        "name": "Native House (Small, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Historical"
+      },
+      "small_01_ruins": {
+        "className": "Land_House_Small_01_ruins_F",
+        "name": "Metal Bungalow (Yellow, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "small_02_ruins": {
+        "className": "Land_House_Small_02_ruins_F",
+        "name": "Brick Bungalow (Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "small_03_ruins": {
+        "className": "Land_House_Small_03_ruins_F",
+        "name": "Bungalow (Turquoise, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "small_04_ruins": {
+        "className": "Land_House_Small_04_ruins_F",
+        "name": "Bungalow (Blue Roof, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "City"
+      },
+      "small_05_ruins": {
+        "className": "Land_House_Small_05_ruins_F",
+        "name": "Bungalow (Grey Roof, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "City"
+      }
+    },
+    "shop": {
+      "01_v1_ruins": {
+        "className": "Land_Shop_01_V1_ruins_F",
+        "name": "Shop House (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "City"
+      },
+      "02_v1_ruins": {
+        "className": "Land_Shop_02_V1_ruins_F",
+        "name": "Shop (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "City"
+      },
+      "town_01_ruins": {
+        "className": "Land_Shop_Town_01_ruins_F",
+        "name": "Medium Shop (White, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "town_02_ruins": {
+        "className": "Land_Shop_Town_02_ruins_F",
+        "name": "Small Shop (Yellow, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "town_03_ruins": {
+        "className": "Land_Shop_Town_03_ruins_F",
+        "name": "Large Shop (White, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "town_04_ruins": {
+        "className": "Land_Shop_Town_04_ruins_F",
+        "name": "Small Shop (Red, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      }
+    },
+    "cargo": {
+      "house_slum_ruins": {
+        "className": "Land_cargo_house_slum_ruins_F",
+        "name": "Slum House Container (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "house_v1_ruins": {
+        "className": "Land_Cargo_House_V1_ruins_F",
+        "name": "Military Cargo House (Green, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "house_v2_ruins": {
+        "className": "Land_Cargo_House_V2_ruins_F",
+        "name": "Military Cargo House (Rusty, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "house_v3_ruins": {
+        "className": "Land_Cargo_House_V3_ruins_F",
+        "name": "Military Cargo House (Brown, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "hq_v1_ruins": {
+        "className": "Land_Cargo_HQ_V1_ruins_F",
+        "name": "Military Cargo HQ (Green, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "hq_v2_ruins": {
+        "className": "Land_Cargo_HQ_V2_ruins_F",
+        "name": "Military Cargo HQ (Rusty, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "hq_v3_ruins": {
+        "className": "Land_Cargo_HQ_V3_ruins_F",
+        "name": "Military Cargo HQ (Brown, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "patrol_v1_ruins": {
+        "className": "Land_Cargo_Patrol_V1_ruins_F",
+        "name": "Military Cargo Post (Green, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "patrol_v2_ruins": {
+        "className": "Land_Cargo_Patrol_V2_ruins_F",
+        "name": "Military Cargo Post (Rusty, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "patrol_v3_ruins": {
+        "className": "Land_Cargo_Patrol_V3_ruins_F",
+        "name": "Military Cargo Post (Brown, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "tower_v1_ruins": {
+        "className": "Land_Cargo_Tower_V1_ruins_F",
+        "name": "Military Cargo Tower (Green, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "tower_v2_ruins": {
+        "className": "Land_Cargo_Tower_V2_ruins_F",
+        "name": "Military Cargo Tower (Rusty, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "tower_v3_ruins": {
+        "className": "Land_Cargo_Tower_V3_ruins_F",
+        "name": "Military Cargo Tower (Brown, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "house_v4_ruins": {
+        "className": "Land_Cargo_House_V4_ruins_F",
+        "name": "Military Cargo House (Jungle, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Military"
+      },
+      "hq_v4_ruins": {
+        "className": "Land_Cargo_HQ_V4_ruins_F",
+        "name": "Military Cargo HQ (Jungle, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Military"
+      },
+      "patrol_v4_ruins": {
+        "className": "Land_Cargo_Patrol_V4_ruins_F",
+        "name": "Military Cargo Post (Jungle, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Military"
+      },
+      "tower_v4_ruins": {
+        "className": "Land_Cargo_Tower_V4_ruins_F",
+        "name": "Military Cargo Tower (Jungle, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Military"
+      }
+    },
+    "slum": {
+      "house01_ruins": {
+        "className": "Land_Slum_House01_ruins_F",
+        "name": "Slum House (Small, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "house02_ruins": {
+        "className": "Land_Slum_House02_ruins_F",
+        "name": "Slum House (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "house03_ruins": {
+        "className": "Land_Slum_House03_ruins_F",
+        "name": "Slum House (Big, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      }
+    },
+    "stone": {
+      "housebig_v1_ruins": {
+        "className": "Land_Stone_HouseBig_V1_ruins_F",
+        "name": "Stone House (Big, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "shed_v1_ruins": {
+        "className": "Land_Stone_Shed_V1_ruins_F",
+        "name": "Stone House (Small, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      },
+      "housesmall_v1_ruins": {
+        "className": "Land_Stone_HouseSmall_V1_ruins_F",
+        "name": "Stone House (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Village"
+      }
+    },
+    "unfinished": {
+      "building_01_ruins": {
+        "className": "Land_Unfinished_Building_01_ruins_F",
+        "name": "Unfinished Building (Big, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "City"
+      },
+      "building_02_ruins": {
+        "className": "Land_Unfinished_Building_02_ruins_F",
+        "name": "Unfinished Building (Large, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "City"
+      }
+    },
+    "airport": {
+      "tower_ruins": {
+        "className": "Land_Airport_Tower_ruins_F",
+        "name": "Airport Control Tower (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Airport"
+      }
+    },
+    "cargo20": {
+      "color_v1_ruins": {
+        "className": "Land_Cargo20_color_V1_ruins_F",
+        "name": "Cargo Container (Medium, Brick Red, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "color_v2_ruins": {
+        "className": "Land_Cargo20_color_V2_ruins_F",
+        "name": "Cargo Container (Medium, Light Blue, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "color_v3_ruins": {
+        "className": "Land_Cargo20_color_V3_ruins_F",
+        "name": "Cargo Container (Medium, Blue, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "china_color_v1_ruins": {
+        "className": "Land_Cargo20_china_color_V1_ruins_F",
+        "name": "Cargo Container (Medium, Grey, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "china_color_v2_ruins": {
+        "className": "Land_Cargo20_china_color_V2_ruins_F",
+        "name": "Cargo Container (Medium, White, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "military_ruins": {
+        "className": "Land_Cargo20_military_ruins_F",
+        "name": "Cargo Container (Medium, Military Green, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "idap_ruins": {
+        "className": "Land_Cargo20_idap_ruins_F",
+        "name": "Cargo Container (Medium, Ruin) [IDAP]",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      }
+    },
+    "cargo40": {
+      "color_v1_ruins": {
+        "className": "Land_Cargo40_color_V1_ruins_F",
+        "name": "Cargo Container (Long, Brick Red, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "color_v2_ruins": {
+        "className": "Land_Cargo40_color_V2_ruins_F",
+        "name": "Cargo Container (Long, Light Blue, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "color_v3_ruins": {
+        "className": "Land_Cargo40_color_V3_ruins_F",
+        "name": "Cargo Container (Long, Blue, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "china_color_v1_ruins": {
+        "className": "Land_Cargo40_china_color_V1_ruins_F",
+        "name": "Cargo Container (Long, Grey, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "china_color_v2_ruins": {
+        "className": "Land_Cargo40_china_color_V2_ruins_F",
+        "name": "Cargo Container (Long, White, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "military_ruins": {
+        "className": "Land_Cargo40_military_ruins_F",
+        "name": "Cargo Container (Long, Military Green, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      },
+      "idap_ruins": {
+        "className": "Land_Cargo40_idap_ruins_F",
+        "name": "Cargo Container (Long, Ruin) [IDAP]",
+        "category": "Ruins (Altis)",
+        "subCategory": "Storage"
+      }
+    },
+    "cmp": {
+      "hopper_ruins": {
+        "className": "Land_cmp_Hopper_ruins_F",
+        "name": "Concrete Mixing Hopper (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "shed_ruins": {
+        "className": "Land_cmp_Shed_ruins_F",
+        "name": "Concrete Mixing Shed (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "tower_ruins": {
+        "className": "Land_cmp_Tower_ruins_F",
+        "name": "Concrete Mixing Tower (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      }
+    },
+    "dp": {
+      "bigtank_ruins": {
+        "className": "Land_dp_bigTank_ruins_F",
+        "name": "Diesel Storage Tank (Big, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "smalltank_ruins": {
+        "className": "Land_dp_smallTank_ruins_F",
+        "name": "Diesel Storage Tank (Small, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      }
+    },
+    "factory": {
+      "conv1_10_ruins": {
+        "className": "Land_Factory_Conv1_10_ruins_F",
+        "name": "Factory Conveyor Belt (Ground, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "conv1_main_ruins": {
+        "className": "Land_Factory_Conv1_Main_ruins_F",
+        "name": "Factory Conveyor Belt (Main, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "conv2_ruins": {
+        "className": "Land_Factory_Conv2_ruins_F",
+        "name": "Factory Conveyor Belt (Slope, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "hopper_ruins": {
+        "className": "Land_Factory_Hopper_ruins_F",
+        "name": "Factory Hopper (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "main_ruins": {
+        "className": "Land_Factory_Main_ruins_F",
+        "name": "Factory (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      }
+    },
+    "fuelstation": {
+      "build_ruins": {
+        "className": "Land_FuelStation_Build_ruins_F",
+        "name": "Gas Station (Sun Oil, Shop, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Services"
+      },
+      "shed_ruins": {
+        "className": "Land_FuelStation_Shed_ruins_F",
+        "name": "Gas Station (Sun Oil, Roof, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Services"
+      }
+    },
+    "reservoirtank": {
+      "airport_ruins": {
+        "className": "Land_ReservoirTank_Airport_ruins_F",
+        "name": "Reservoir Tank (Airport, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      },
+      "rust_ruins": {
+        "className": "Land_ReservoirTank_Rust_ruins_F",
+        "name": "Reservoir Tank (Rust, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      },
+      "v1_ruins": {
+        "className": "Land_ReservoirTank_V1_ruins_F",
+        "name": "Reservoir Tank (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      }
+    },
+    "reservoirtower": {
+      "ruins": {
+        "className": "Land_ReservoirTower_ruins_F",
+        "name": "Reservoir Tower (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      }
+    },
+    "shed": {
+      "big_ruins": {
+        "className": "Land_Shed_Big_ruins_F",
+        "name": "Industrial Shed (Big, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "small_ruins": {
+        "className": "Land_Shed_Small_ruins_F",
+        "name": "Industrial Shed (Small, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "ind_ruins": {
+        "className": "Land_Shed_Ind_ruins_F",
+        "name": "Industrial Shed (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Industrial"
+      },
+      "01_ruins": {
+        "className": "Land_Shed_01_ruins_F",
+        "name": "Yellow Metal Shed (Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "02_ruins": {
+        "className": "Land_Shed_02_ruins_F",
+        "name": "Grey Metal Shed (Small, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "03_ruins": {
+        "className": "Land_Shed_03_ruins_F",
+        "name": "Grey Metal Shed (Unfinished, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "04_ruins": {
+        "className": "Land_Shed_04_ruins_F",
+        "name": "Yellow Metal Shed (Small, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "05_ruins": {
+        "className": "Land_Shed_05_ruins_F",
+        "name": "Grey Metal Shed (Medium, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "06_ruins": {
+        "className": "Land_Shed_06_ruins_F",
+        "name": "Grey Metal Shed (Roof, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      },
+      "07_ruins": {
+        "className": "Land_Shed_07_ruins_F",
+        "name": "Grey Metal Shed (Large, Weathered, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      }
+    },
+    "spp": {
+      "mirror_ruins": {
+        "className": "Land_spp_Mirror_ruins_F",
+        "name": "Solar Mirrors (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      },
+      "tower_ruins": {
+        "className": "Land_spp_Tower_ruins_F",
+        "name": "Solar Tower (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      },
+      "transformer_ruins": {
+        "className": "Land_spp_Transformer_ruins_F",
+        "name": "Solar Transformer (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      }
+    },
+    "tbox": {
+      "ruins": {
+        "className": "Land_TBox_ruins_F",
+        "name": "Transmitter Box (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      }
+    },
+    "ttowerbig": {
+      "1_ruins": {
+        "className": "Land_TTowerBig_1_ruins_F",
+        "name": "Transmitter Tower (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      },
+      "2_ruins": {
+        "className": "Land_TTowerBig_2_ruins_F",
+        "name": "Transmitter Tower (Tall, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Utilities"
+      }
+    },
+    "windmill01": {
+      "ruins": {
+        "className": "Land_Windmill01_ruins_F",
+        "name": "Windmill (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Historical"
+      }
+    },
+    "barracks": {
+      "ruins": {
+        "className": "Land_Barracks_ruins_F",
+        "name": "Barracks (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      }
+    },
+    "medevac": {
+      "house_v1_ruins": {
+        "className": "Land_Medevac_house_V1_ruins_F",
+        "name": "Military Cargo House (Medical, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "hq_v1_ruins": {
+        "className": "Land_Medevac_HQ_V1_ruins_F",
+        "name": "Military Cargo HQ (Medical, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      }
+    },
+    "radar": {
+      "ruins": {
+        "className": "Land_Radar_ruins_F",
+        "name": "Radar (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Airport"
+      },
+      "small_ruins": {
+        "className": "Land_Radar_Small_ruins_F",
+        "name": "Radar (Small, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Airport"
+      }
+    },
+    "tenthangar": {
+      "v1_ruins": {
+        "className": "Land_TentHangar_V1_ruins_F",
+        "name": "Tent Hangar (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Airport"
+      }
+    },
+    "rowboat": {
+      "v1": {
+        "className": "Land_RowBoat_V1_F",
+        "name": "Rowboat (v1)",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "v2": {
+        "className": "Land_RowBoat_V2_F",
+        "name": "Rowboat (v2)",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "v3": {
+        "className": "Land_RowBoat_V3_F",
+        "name": "Rowboat (v3)",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      }
+    },
+    "research": {
+      "house_v1_ruins": {
+        "className": "Land_Research_house_V1_ruins_F",
+        "name": "Research House (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "hq_ruins": {
+        "className": "Land_Research_HQ_ruins_F",
+        "name": "Research HQ (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      }
+    },
+    "slidecastle": {
+      "ruins": {
+        "className": "Land_SlideCastle_ruins_F",
+        "name": "Slide (Castle, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Sport & Recreation"
+      }
+    },
+    "kiosk": {
+      "blueking_ruins": {
+        "className": "Land_Kiosk_blueking_ruins_F",
+        "name": "Kiosk (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Services"
+      }
+    },
+    "gh": {
+      "gazebo_ruins": {
+        "className": "Land_GH_Gazebo_ruins_F",
+        "name": "Ghost Hotel (Gazebo, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Services"
+      },
+      "house_ruins": {
+        "className": "Land_GH_House_ruins_F",
+        "name": "Ghost Hotel (House, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Services"
+      }
+    },
+    "uwreck": {
+      "fishingboat": {
+        "className": "Land_UWreck_FishingBoat_F",
+        "name": "Small Fishing Boat Wreck",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "heli_attack_02": {
+        "className": "Land_UWreck_Heli_Attack_02_F",
+        "name": "Mi-48 Wreck (Underwater)",
+        "category": "Wrecks",
+        "subCategory": "Helicopters"
+      },
+      "mv22": {
+        "className": "Land_UWreck_MV22_F",
+        "name": "V/STOL Wreck",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      }
+    },
+    "wreck": {
+      "bmp2": {
+        "className": "Land_Wreck_BMP2_F",
+        "name": "BMP2 Wreck",
+        "category": "Wrecks",
+        "subCategory": "APCs"
+      },
+      "brdm2": {
+        "className": "Land_Wreck_BRDM2_F",
+        "name": "BRDM-2 Wreck",
+        "category": "Wrecks",
+        "subCategory": "APCs"
+      },
+      "car": {
+        "className": "Land_Wreck_Car_F",
+        "name": "Hatchback Wreck 1",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "car2": {
+        "className": "Land_Wreck_Car2_F",
+        "name": "Hatchback Wreck (Tilted)",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "car3": {
+        "className": "Land_Wreck_Car3_F",
+        "name": "Hatchback Wreck 2",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "cardismantled": {
+        "className": "Land_Wreck_CarDismantled_F",
+        "name": "Dismantled car",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "heli_attack_01": {
+        "className": "Land_Wreck_Heli_Attack_01_F",
+        "name": "Blackfoot Wreck",
+        "category": "Wrecks",
+        "subCategory": "Helicopters"
+      },
+      "heli_attack_02": {
+        "className": "Land_Wreck_Heli_Attack_02_F",
+        "name": "Mi-48 Wreck",
+        "category": "Wrecks",
+        "subCategory": "Helicopters"
+      },
+      "hmmwv": {
+        "className": "Land_Wreck_HMMWV_F",
+        "name": "Army Car Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "hunter": {
+        "className": "Land_Wreck_Hunter_F",
+        "name": "Hunter Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "offroad": {
+        "className": "Land_Wreck_Offroad_F",
+        "name": "Offroad Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "offroad2": {
+        "className": "Land_Wreck_Offroad2_F",
+        "name": "Offroad Wreck (Doorless)",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "plane_transport_01": {
+        "className": "Land_Wreck_Plane_Transport_01_F",
+        "name": "C-192 Wreck",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "skodovka": {
+        "className": "Land_Wreck_Skodovka_F",
+        "name": "Car Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "slammer": {
+        "className": "Land_Wreck_Slammer_F",
+        "name": "Slammer Wreck",
+        "category": "Wrecks",
+        "subCategory": "Tanks"
+      },
+      "slammer_hull": {
+        "className": "Land_Wreck_Slammer_hull_F",
+        "name": "Slammer Wreck (Hull)",
+        "category": "Wrecks",
+        "subCategory": "Tanks"
+      },
+      "slammer_turret": {
+        "className": "Land_Wreck_Slammer_turret_F",
+        "name": "Slammer Wreck (Turret)",
+        "category": "Wrecks",
+        "subCategory": "Tanks"
+      },
+      "t72_hull": {
+        "className": "Land_Wreck_T72_hull_F",
+        "name": "T-72 Wreck (Hull)",
+        "category": "Wrecks",
+        "subCategory": "Tanks"
+      },
+      "t72_turret": {
+        "className": "Land_Wreck_T72_turret_F",
+        "name": "T-72 Wreck (Turret)",
+        "category": "Wrecks",
+        "subCategory": "Tanks"
+      },
+      "traw": {
+        "className": "Land_Wreck_Traw_F",
+        "name": "Trawler Wreck (Front)",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "traw2": {
+        "className": "Land_Wreck_Traw2_F",
+        "name": "Trawler Wreck (Back)",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "truck_dropside": {
+        "className": "Land_Wreck_Truck_dropside_F",
+        "name": "Truck Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "truck": {
+        "className": "Land_Wreck_Truck_F",
+        "name": "Fuel Truck Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "uaz": {
+        "className": "Land_Wreck_UAZ_F",
+        "name": "Rusty Car Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "ural": {
+        "className": "Land_Wreck_Ural_F",
+        "name": "Rusty Truck Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "van": {
+        "className": "Land_Wreck_Van_F",
+        "name": "Minivan Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      },
+      "mbt_04": {
+        "className": "Land_Wreck_MBT_04_F",
+        "name": "Angara Wreck",
+        "category": "Wrecks",
+        "subCategory": "Tanks"
+      },
+      "lt_01": {
+        "className": "Land_Wreck_LT_01_F",
+        "name": "Nyx Wreck",
+        "category": "Wrecks",
+        "subCategory": "Tanks"
+      },
+      "afv_wheeled_01": {
+        "className": "Land_Wreck_AFV_Wheeled_01_F",
+        "name": "Rhino MGS Wreck",
+        "category": "Wrecks",
+        "subCategory": "APCs"
+      },
+      "heli_02_wreck_01": {
+        "className": "Land_Wreck_Heli_02_Wreck_01_F",
+        "name": "PO-30 Wreck (Fuselage)",
+        "category": "Wrecks",
+        "subCategory": "Helicopters"
+      },
+      "heli_02_wreck_02": {
+        "className": "Land_Wreck_Heli_02_Wreck_02_F",
+        "name": "PO-30 Wreck (Tail)",
+        "category": "Wrecks",
+        "subCategory": "Helicopters"
+      },
+      "heli_02_wreck_03": {
+        "className": "Land_Wreck_Heli_02_Wreck_03_F",
+        "name": "PO-30 Wreck (Rotor Blade)",
+        "category": "Wrecks",
+        "subCategory": "Helicopters"
+      },
+      "heli_02_wreck_04": {
+        "className": "Land_Wreck_Heli_02_Wreck_04_F",
+        "name": "PO-30 Wreck (Door)",
+        "category": "Wrecks",
+        "subCategory": "Helicopters"
+      }
+    },
+    "bulldozer": {
+      "01_abandoned": {
+        "className": "Land_Bulldozer_01_abandoned_F",
+        "name": "Locked Bulldozer",
+        "category": "Wrecks",
+        "subCategory": "Industrial"
+      },
+      "01_wreck": {
+        "className": "Land_Bulldozer_01_wreck_F",
+        "name": "Abandoned Bulldozer",
+        "category": "Wrecks",
+        "subCategory": "Industrial"
+      }
+    },
+    "combineharvester": {
+      "01_wreck": {
+        "className": "Land_CombineHarvester_01_wreck_F",
+        "name": "Abandoned Combine Harvester",
+        "category": "Wrecks",
+        "subCategory": "Industrial"
+      }
+    },
+    "excavator": {
+      "01_abandoned": {
+        "className": "Land_Excavator_01_abandoned_F",
+        "name": "Locked Digger",
+        "category": "Wrecks",
+        "subCategory": "Industrial"
+      },
+      "01_wreck": {
+        "className": "Land_Excavator_01_wreck_F",
+        "name": "Abandoned Digger",
+        "category": "Wrecks",
+        "subCategory": "Industrial"
+      }
+    },
+    "haultruck": {
+      "01_abandoned": {
+        "className": "Land_HaulTruck_01_abandoned_F",
+        "name": "Haul Truck",
+        "category": "Wrecks",
+        "subCategory": "Industrial"
+      }
+    },
+    "miningshovel": {
+      "01_abandoned": {
+        "className": "Land_MiningShovel_01_abandoned_F",
+        "name": "Mining Shovel",
+        "category": "Wrecks",
+        "subCategory": "Industrial"
+      }
+    },
+    "locomotive": {
+      "01_v1": {
+        "className": "Land_Locomotive_01_v1_F",
+        "name": "Locomotive (Grey)",
+        "category": "Wrecks",
+        "subCategory": "Trains"
+      },
+      "01_v2": {
+        "className": "Land_Locomotive_01_v2_F",
+        "name": "Locomotive (Yellow)",
+        "category": "Wrecks",
+        "subCategory": "Trains"
+      },
+      "01_v3": {
+        "className": "Land_Locomotive_01_v3_F",
+        "name": "Locomotive (Orange)",
+        "category": "Wrecks",
+        "subCategory": "Trains"
+      }
+    },
+    "railwaycar": {
+      "01_passenger": {
+        "className": "Land_RailwayCar_01_passenger_F",
+        "name": "Railway Car (Passenger)",
+        "category": "Wrecks",
+        "subCategory": "Trains"
+      },
+      "01_sugarcane_empty": {
+        "className": "Land_RailwayCar_01_sugarcane_empty_F",
+        "name": "Railway Car (Sugarcane, Empty)",
+        "category": "Wrecks",
+        "subCategory": "Trains"
+      },
+      "01_sugarcane": {
+        "className": "Land_RailwayCar_01_sugarcane_F",
+        "name": "Railway Car (Sugarcane, Loaded)",
+        "category": "Wrecks",
+        "subCategory": "Trains"
+      },
+      "01_tank": {
+        "className": "Land_RailwayCar_01_tank_F",
+        "name": "Railway Car (Tank)",
+        "category": "Wrecks",
+        "subCategory": "Trains"
+      }
+    },
+    "historicalplanedebris": {
+      "01": {
+        "className": "Land_HistoricalPlaneDebris_01_F",
+        "name": "Plane Wreck Debris 1",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "02": {
+        "className": "Land_HistoricalPlaneDebris_02_F",
+        "name": "Plane Wreck Debris 2",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "03": {
+        "className": "Land_HistoricalPlaneDebris_03_F",
+        "name": "Plane Wreck Debris 3",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "04": {
+        "className": "Land_HistoricalPlaneDebris_04_F",
+        "name": "Plane Wreck Debris 4",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      }
+    },
+    "historicalplanewreck": {
+      "01": {
+        "className": "Land_HistoricalPlaneWreck_01_F",
+        "name": "Plane Wreck (A6M)",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "02_front": {
+        "className": "Land_HistoricalPlaneWreck_02_front_F",
+        "name": "Plane Wreck (G4M, Front)",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "02_front_water": {
+        "className": "Land_HistoricalPlaneWreck_02_front_water_F",
+        "name": "Plane Wreck (G4M, Front)",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "02_rear": {
+        "className": "Land_HistoricalPlaneWreck_02_rear_F",
+        "name": "Plane Wreck (G4M, Back)",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "02_rear_water": {
+        "className": "Land_HistoricalPlaneWreck_02_rear_water_F",
+        "name": "Plane Wreck (G4M, Back)",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "02_wing_left": {
+        "className": "Land_HistoricalPlaneWreck_02_wing_left_F",
+        "name": "Plane Wreck (G4M, Left Wing)",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "02_wing_right": {
+        "className": "Land_HistoricalPlaneWreck_02_wing_right_F",
+        "name": "Plane Wreck (G4M, Right Wing)",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "03": {
+        "className": "Land_HistoricalPlaneWreck_03_F",
+        "name": "Plane Wreck (B-25)",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      }
+    },
+    "boat": {
+      "01_abandoned_blue": {
+        "className": "Land_Boat_01_abandoned_blue_F",
+        "name": "Abandoned Boat (Blue)",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "01_abandoned_red": {
+        "className": "Land_Boat_01_abandoned_red_F",
+        "name": "Abandoned Boat (Red)",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "02_abandoned": {
+        "className": "Land_Boat_02_abandoned_F",
+        "name": "Abandoned Boat (Engine)",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "03_abandoned": {
+        "className": "Land_Boat_03_abandoned_F",
+        "name": "Abandoned Boat (Dry Dock)",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "04_wreck": {
+        "className": "Land_Boat_04_wreck_F",
+        "name": "Old Boat Wreck",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "05_wreck": {
+        "className": "Land_Boat_05_wreck_F",
+        "name": "Wooden Boat Wreck",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      },
+      "06_wreck": {
+        "className": "Land_Boat_06_wreck_F",
+        "name": "Metal Boat Wreck",
+        "category": "Wrecks",
+        "subCategory": "Boats"
+      }
+    },
+    "garageshelter": {
+      "01_ruins": {
+        "className": "Land_GarageShelter_01_ruins_F",
+        "name": "House with Parking Shelter (Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Village"
+      }
+    },
+    "metalshelter": {
+      "01_ruins": {
+        "className": "Land_MetalShelter_01_ruins_F",
+        "name": "Metal Market Roof (Small, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Market"
+      },
+      "02_ruins": {
+        "className": "Land_MetalShelter_02_ruins_F",
+        "name": "Metal Market Roof (Large, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Market"
+      }
+    },
+    "woodenshelter": {
+      "01_ruins": {
+        "className": "Land_WoodenShelter_01_ruins_F",
+        "name": "Wooden Shelter (Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Market"
+      }
+    },
+    "warehouse": {
+      "03_ruins": {
+        "className": "Land_Warehouse_03_ruins_F",
+        "name": "Warehouse (Blue, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Industrial"
+      }
+    },
+    "mausoleum": {
+      "01_ruins": {
+        "className": "Land_Mausoleum_01_ruins_F",
+        "name": "Mausoleum (Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Religious"
+      }
+    },
+    "church": {
+      "01_ruins": {
+        "className": "Land_Church_01_ruins_F",
+        "name": "Church (Big, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Religious"
+      },
+      "02_ruins": {
+        "className": "Land_Church_02_ruins_F",
+        "name": "Church (Village, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Religious"
+      },
+      "03_ruins": {
+        "className": "Land_Church_03_ruins_F",
+        "name": "Church (Town, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Religious"
+      }
+    },
+    "temple": {
+      "native_01_ruins": {
+        "className": "Land_Temple_Native_01_ruins_F",
+        "name": "Native Temple (Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Historical"
+      }
+    },
+    "watertower": {
+      "01_ruins": {
+        "className": "Land_WaterTower_01_ruins_F",
+        "name": "Water Tower (Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Utilities"
+      }
+    },
+    "tankwreck": {
+      "01_turret": {
+        "className": "Land_TankWreck_01_turret_F",
+        "name": "ARGO TankWreck_01_turret_F",
+        "category": "Wrecks",
+        "subCategory": "Tanks"
+      }
+    },
+    "repairdepot": {
+      "01_base_ruins": {
+        "className": "Land_RepairDepot_01_base_ruins_F",
+        "name": "Repair depot (Civilian, Ruin)",
+        "category": "Ruins",
+        "subCategory": "Military"
+      },
+      "01_civ_ruins": {
+        "className": "Land_RepairDepot_01_civ_ruins_F",
+        "name": "Repair depot (Civilian, Ruin)",
+        "category": "Ruins",
+        "subCategory": "Military"
+      },
+      "01_tan_ruins": {
+        "className": "Land_RepairDepot_01_tan_ruins_F",
+        "name": "Repair depot (Tan, Ruin)",
+        "category": "Ruins",
+        "subCategory": "Military"
+      },
+      "01_green_ruins": {
+        "className": "Land_RepairDepot_01_green_ruins_F",
+        "name": "Repair depot (Green, Ruin)",
+        "category": "Ruins",
+        "subCategory": "Military"
+      }
+    },
+    "cargoplaftorm": {
+      "01_ruins": {
+        "className": "Land_CargoPlaftorm_01_ruins_F",
+        "name": "Military Cargo Platform (Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      }
+    },
+    "mi8": {
+      "wreck": {
+        "className": "Land_Mi8_wreck_F",
+        "name": "Mi-17 Wreck",
+        "category": "Wrecks",
+        "subCategory": "Helicopters"
+      }
+    },
+    "powergenerator": {
+      "wreck": {
+        "className": "Land_PowerGenerator_wreck_F",
+        "name": "Power Generator Wreck",
+        "category": "Wrecks",
+        "subCategory": "Industrial"
+      }
+    },
+    "trailercistern": {
+      "wreck": {
+        "className": "Land_TrailerCistern_wreck_F",
+        "name": "Old Cistern Trailer",
+        "category": "Wrecks",
+        "subCategory": "Industrial"
+      }
+    },
+    "v3s": {
+      "wreck": {
+        "className": "Land_V3S_wreck_F",
+        "name": "V3S Wreck",
+        "category": "Wrecks",
+        "subCategory": "Cars"
+      }
+    }
+  },
+  "plane": {
+    "fighter": {
+      "03_wreck": {
+        "className": "Plane_Fighter_03_wreck_F",
+        "name": "Wreck",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "01_wreck": {
+        "className": "Plane_Fighter_01_wreck_F",
+        "name": "Wreck",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "02_wreck": {
+        "className": "Plane_Fighter_02_wreck_F",
+        "name": "To-201 Shikra wreck",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      },
+      "04_wreck": {
+        "className": "Plane_Fighter_04_wreck_F",
+        "name": "Wreck",
+        "category": "Wrecks",
+        "subCategory": "Planes"
+      }
+    }
+  },
+  "cargoplaftorm": {
+    "01": {
+      "green_ruins": {
+        "className": "CargoPlaftorm_01_green_ruins_F",
+        "name": "Military Cargo Platform (Green, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "brown_ruins": {
+        "className": "CargoPlaftorm_01_brown_ruins_F",
+        "name": "Military Cargo Platform (Brown, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      },
+      "jungle_ruins": {
+        "className": "CargoPlaftorm_01_jungle_ruins_F",
+        "name": "Military Cargo Platform (Jungle, Ruin)",
+        "category": "Ruins (Tanoa)",
+        "subCategory": "Military"
+      },
+      "rusty_ruins": {
+        "className": "CargoPlaftorm_01_rusty_ruins_F",
+        "name": "Military Cargo Platform (Rusty, Ruin)",
+        "category": "Ruins (Altis)",
+        "subCategory": "Military"
+      }
+    }
+  },
+  "spaceship": {
+    "base": {
+      "base": {
+        "className": "Spaceship_base_F",
+        "category": "Wrecks",
+        "subCategory": "Space"
+      }
+    }
+  },
+  "spaceshipcapsule": {
+    "01": {
+      "wreck": {
+        "className": "SpaceshipCapsule_01_wreck_F",
+        "name": "Space Capsule Wreck",
+        "category": "Wrecks",
+        "subCategory": "Space"
+      },
+      "debris": {
+        "className": "SpaceshipCapsule_01_debris_F",
+        "name": "Space Capsule Wreck (Debris)",
+        "category": "Wrecks",
+        "subCategory": "Space"
+      }
+    }
+  }
+}

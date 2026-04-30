@@ -1,0 +1,186 @@
+{
+  "land": {
+    "vr": {
+      "block_01": {
+        "className": "Land_VR_Block_01_F",
+        "name": "VR Obstacle (20x10x8)",
+        "category": "VR Objects",
+        "subCategory": "Blocks"
+      },
+      "block_02": {
+        "className": "Land_VR_Block_02_F",
+        "name": "VR Obstacle (12x12x4)",
+        "category": "VR Objects",
+        "subCategory": "Blocks"
+      },
+      "block_03": {
+        "className": "Land_VR_Block_03_F",
+        "name": "VR Obstacle (12x7.5x6)",
+        "category": "VR Objects",
+        "subCategory": "Blocks"
+      },
+      "block_04": {
+        "className": "Land_VR_Block_04_F",
+        "name": "VR Obstacle (10.5x10.5x9)",
+        "category": "VR Objects",
+        "subCategory": "Blocks"
+      },
+      "block_05": {
+        "className": "Land_VR_Block_05_F",
+        "name": "VR Obstacle (10x5x4)",
+        "category": "VR Objects",
+        "subCategory": "Blocks"
+      },
+      "coverobject_01_kneellow": {
+        "className": "Land_VR_CoverObject_01_kneelLow_F",
+        "name": "VR Cover Object (Low kneel)",
+        "category": "VR Objects",
+        "subCategory": "Obstacles"
+      },
+      "coverobject_01_kneel": {
+        "className": "Land_VR_CoverObject_01_kneel_F",
+        "name": "VR Cover Object (Kneel)",
+        "category": "VR Objects",
+        "subCategory": "Obstacles"
+      },
+      "coverobject_01_kneelhigh": {
+        "className": "Land_VR_CoverObject_01_kneelHigh_F",
+        "name": "VR Cover Object (High kneel)",
+        "category": "VR Objects",
+        "subCategory": "Obstacles"
+      },
+      "coverobject_01_stand": {
+        "className": "Land_VR_CoverObject_01_stand_F",
+        "name": "VR Cover Object (Stand)",
+        "category": "VR Objects",
+        "subCategory": "Obstacles"
+      },
+      "coverobject_01_standhigh": {
+        "className": "Land_VR_CoverObject_01_standHigh_F",
+        "name": "VR Cover Object (High stand)",
+        "category": "VR Objects",
+        "subCategory": "Obstacles"
+      },
+      "shape_01_cube_1m": {
+        "className": "Land_VR_Shape_01_cube_1m_F",
+        "name": "VR Game Block (Cube, 1m)",
+        "category": "VR Objects",
+        "subCategory": "Blocks"
+      },
+      "slope_01": {
+        "className": "Land_VR_Slope_01_F",
+        "name": "VR Slope (10x5x4)",
+        "category": "VR Objects",
+        "subCategory": "Blocks"
+      }
+    }
+  },
+  "vr": {
+    "3dselector": {
+      "01_default": {
+        "className": "VR_3DSelector_01_default_F",
+        "name": "VR Selector",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_incomplete": {
+        "className": "VR_3DSelector_01_incomplete_F",
+        "name": "VR Selector (Incomplete)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_complete": {
+        "className": "VR_3DSelector_01_complete_F",
+        "name": "VR Selector (Complete)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_exit": {
+        "className": "VR_3DSelector_01_exit_F",
+        "name": "VR Selector (Exit)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      }
+    },
+    "area": {
+      "01_circle_4_grey": {
+        "className": "VR_Area_01_circle_4_grey_F",
+        "name": "VR Area (Circle, 4m, Grey)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_circle_4_yellow": {
+        "className": "VR_Area_01_circle_4_yellow_F",
+        "name": "VR Area (Circle, 4m, Yellow)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_square_1x1_grey": {
+        "className": "VR_Area_01_square_1x1_grey_F",
+        "name": "VR Area (Square, 1x1, Grey)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_square_2x2_grey": {
+        "className": "VR_Area_01_square_2x2_grey_F",
+        "name": "VR Area (Square, 2x2, Grey)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_square_4x4_grey": {
+        "className": "VR_Area_01_square_4x4_grey_F",
+        "name": "VR Area (Square, 4x4, Grey)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_square_1x1_yellow": {
+        "className": "VR_Area_01_square_1x1_yellow_F",
+        "name": "VR Area (Square, 1x1, Yellow)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_square_2x2_yellow": {
+        "className": "VR_Area_01_square_2x2_yellow_F",
+        "name": "VR Area (Square, 2x2, Yellow)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_square_4x4_yellow": {
+        "className": "VR_Area_01_square_4x4_yellow_F",
+        "name": "VR Area (Square, 4x4, Yellow)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      }
+    },
+    "billboard": {
+      "01": {
+        "className": "VR_Billboard_01_F",
+        "name": "VR Wall",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      }
+    },
+    "groundicon": {
+      "01": {
+        "className": "VR_GroundIcon_01_F",
+        "name": "VR Ground Icon",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      }
+    },
+    "sector": {
+      "01_60deg_50_grey": {
+        "className": "VR_Sector_01_60deg_50_grey_F",
+        "name": "VR Sector (60deg, 50m, Grey)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      },
+      "01_60deg_50_red": {
+        "className": "VR_Sector_01_60deg_50_red_F",
+        "name": "VR Sector (60deg, 50m, Red)",
+        "category": "VR Objects",
+        "subCategory": "Helpers"
+      }
+    }
+  }
+}

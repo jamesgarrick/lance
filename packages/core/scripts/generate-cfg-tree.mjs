@@ -37,7 +37,7 @@ function buildTypeName(exportName) {
 }
 
 /**
- * @typedef {{ className: string, name?: string }} LeafDescriptor
+ * @typedef {{ className: string, name?: string, category?: string, subCategory?: string }} LeafDescriptor
  * @typedef {string | LeafDescriptor | Record<string, JsonValue>} JsonValue
  */
 
@@ -58,12 +58,33 @@ function escapeJsDoc(text) {
 }
 
 /**
- * @param {JsonValue} value
- * @returns {string | undefined}
- */
 function getLeafName(value) {
   if (isLeafDescriptor(value)) {
     return value.name?.trim() || undefined;
+  }
+
+  return undefined;
+}
+
+/**
+ * @param {JsonValue} value
+ * @returns {string | undefined}
+ */
+function getLeafCategory(value) {
+  if (isLeafDescriptor(value)) {
+    return value.category?.trim() || undefined;
+  }
+
+  return undefined;
+}
+
+/**
+ * @param {JsonValue} value
+ * @returns {string | undefined}
+ */
+function getLeafSubCategory(value) {
+  if (isLeafDescriptor(value)) {
+    return value.subCategory?.trim() || undefined;
   }
 
   return undefined;
@@ -87,23 +108,47 @@ function getLeafClassName(value) {
 
 /**
  * @param {JsonValue} value
- * @returns {string | undefined}
+ * @returns {string[]}
  */
-function getDocLabel(value) {
-  if (typeof value === "string") {
-    return undefined;
+function getDocLines(value) {
+  const leaf =
+    typeof value === "string"
+      ? null
+      : isLeafDescriptor(value)
+        ? value
+        : Object.entries(value).find(([key]) => key === "base")?.[1];
+
+  if (!leaf || typeof leaf === "string") {
+    return [];
   }
 
-  if (isLeafDescriptor(value)) {
-    return getLeafName(value);
+  const lines = [];
+  const name = getLeafName(leaf);
+  const category = getLeafCategory(leaf);
+  const subCategory = getLeafSubCategory(leaf);
+
+  if (name) lines.push(name);
+  if (category) lines.push(`Category: ${category}`);
+  if (subCategory) lines.push(`Subcategory: ${subCategory}`);
+
+  return lines;
+}
+
+/**
+ * @param {string[]} lines
+ * @param {string} indent
+ * @returns {string}
+ */
+function emitJsDoc(lines, indent) {
+  if (lines.length === 0) {
+    return "";
   }
 
-  const baseEntry = Object.entries(value).find(([key]) => key === "base");
-  if (!baseEntry) {
-    return undefined;
+  if (lines.length === 1) {
+    return `${indent}/** ${escapeJsDoc(lines[0])} */\n`;
   }
 
-  return getLeafName(baseEntry[1]);
+  return `${indent}/**\n${lines.map((line) => `${indent} * ${escapeJsDoc(line)}`).join("\n")}\n${indent} */\n`;
 }
 
 /**
@@ -125,10 +170,9 @@ function emitValue(value, depth) {
   const renderedChildren =
     childEntries.length === 0
       ? "{}"
-      : `{\n${childEntries
+        : `{\n${childEntries
           .map(([key, child]) => {
-            const docLabel = getDocLabel(child);
-            const docBlock = docLabel ? `${childIndent}/** ${escapeJsDoc(docLabel)} */\n` : "";
+            const docBlock = emitJsDoc(getDocLines(child), childIndent);
             return `${docBlock}${childIndent}${JSON.stringify(key)}: ${emitValue(child, depth + 1)},`;
           })
           .join("\n")}\n${indent}}`;
@@ -157,14 +201,18 @@ function collectClassNames(value, out) {
 
 /**
  * @param {JsonValue} value
- * @param {Map<string, string | undefined>} out
+ * @param {Map<string, LeafDescriptor>} out
  */
 function collectLeafDocs(value, out) {
   if (typeof value === "string" || isLeafDescriptor(value)) {
     const className = getLeafClassName(value);
-    const name = getLeafName(value);
     if (!out.has(className)) {
-      out.set(className, name);
+      out.set(className, {
+        className,
+        name: getLeafName(value),
+        category: getLeafCategory(value),
+        subCategory: getLeafSubCategory(value),
+      });
     }
     return;
   }
@@ -192,7 +240,7 @@ function toIdentifierKey(className, stripPrefix) {
 }
 
 /**
- * @param {readonly [string, string | undefined][]} classEntries
+ * @param {readonly [string, LeafDescriptor][]} classEntries
  * @param {string | undefined} stripPrefix
  * @returns {string}
  */
@@ -201,12 +249,12 @@ function emitFlatClassRecord(classEntries, stripPrefix) {
   const entries = classEntries
     .slice()
     .sort(([a], [b]) => a.localeCompare(b))
-    .map(([className, docLabel]) => {
+    .map(([className, descriptor]) => {
       const baseKey = toIdentifierKey(className, stripPrefix);
       const nextCount = (usedKeys.get(baseKey) ?? 0) + 1;
       usedKeys.set(baseKey, nextCount);
       const key = nextCount === 1 ? baseKey : `${baseKey}_${nextCount}`;
-      const docBlock = docLabel ? `  /** ${escapeJsDoc(docLabel)} */\n` : "";
+      const docBlock = emitJsDoc(getDocLines(descriptor), "  ");
       return `${docBlock}  ${JSON.stringify(key)}: ${JSON.stringify(className)},`;
     });
 

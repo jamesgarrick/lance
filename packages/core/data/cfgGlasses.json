@@ -1,0 +1,364 @@
+{
+  "g": {
+    "airpurifyingrespirator": {
+      "01": {
+        "className": "G_AirPurifyingRespirator_01_F",
+        "name": "APR [NATO]"
+      },
+      "01_nofilter": {
+        "className": "G_AirPurifyingRespirator_01_nofilter_F",
+        "name": "APR [NATO]"
+      },
+      "02_black": {
+        "className": "G_AirPurifyingRespirator_02_black_F",
+        "name": "APR (Black) [CSAT]"
+      },
+      "02_black_nofilter": {
+        "className": "G_AirPurifyingRespirator_02_black_nofilter_F",
+        "name": "APR (Black) [CSAT]"
+      },
+      "02_olive": {
+        "className": "G_AirPurifyingRespirator_02_olive_F",
+        "name": "APR (Olive) [CSAT]"
+      },
+      "02_olive_nofilter": {
+        "className": "G_AirPurifyingRespirator_02_olive_nofilter_F",
+        "name": "APR (Olive) [CSAT]"
+      },
+      "02_sand": {
+        "className": "G_AirPurifyingRespirator_02_sand_F",
+        "name": "APR (Sand) [CSAT]"
+      },
+      "02_sand_nofilter": {
+        "className": "G_AirPurifyingRespirator_02_sand_nofilter_F",
+        "name": "APR (Sand) [CSAT]"
+      }
+    },
+    "aviator": {
+      "base": {
+        "className": "G_Aviator",
+        "name": "Aviator Glasses"
+      }
+    },
+    "b": {
+      "diving": {
+        "className": "G_B_Diving",
+        "name": "Diving Goggles [NATO]"
+      }
+    },
+    "balaclava": {
+      "blk": {
+        "className": "G_Balaclava_blk",
+        "name": "Balaclava (Black)"
+      },
+      "bluestrips": {
+        "className": "G_Balaclava_BlueStrips",
+        "name": "Balaclava (Blue Stripe)"
+      },
+      "combat": {
+        "className": "G_Balaclava_combat",
+        "name": "Balaclava (Combat Goggles)"
+      },
+      "flames1": {
+        "className": "G_Balaclava_Flames1",
+        "name": "Balaclava (Orange Pattern)"
+      },
+      "flecktarn": {
+        "className": "G_Balaclava_Flecktarn",
+        "name": "Balaclava (Flecktarn)"
+      },
+      "halloween_01": {
+        "className": "G_Balaclava_Halloween_01",
+        "name": "Balaclava (Halloween)"
+      },
+      "lowprofile": {
+        "className": "G_Balaclava_lowprofile",
+        "name": "Balaclava (Low Profile Goggles)"
+      },
+      "oli": {
+        "className": "G_Balaclava_oli",
+        "name": "Balaclava (Olive)"
+      },
+      "scarecrow_01": {
+        "className": "G_Balaclava_Scarecrow_01",
+        "name": "Balaclava (Scarecrow)"
+      },
+      "skull1": {
+        "className": "G_Balaclava_Skull1",
+        "name": "Balaclava (Skull)"
+      },
+      "ti_blk": {
+        "className": "G_Balaclava_TI_blk_F",
+        "name": "Stealth Balaclava (Black)"
+      },
+      "ti_g_blk": {
+        "className": "G_Balaclava_TI_G_blk_F",
+        "name": "Stealth Balaclava (Black, Goggles)"
+      },
+      "ti_g_tna": {
+        "className": "G_Balaclava_TI_G_tna_F",
+        "name": "Stealth Balaclava (Green, Goggles)"
+      },
+      "ti_tna": {
+        "className": "G_Balaclava_TI_tna_F",
+        "name": "Stealth Balaclava (Green)"
+      },
+      "tropentarn": {
+        "className": "G_Balaclava_Tropentarn",
+        "name": "Balaclava (Tropentarn)"
+      }
+    },
+    "bandanna": {
+      "aviator": {
+        "className": "G_Bandanna_aviator",
+        "name": "Bandana (Aviator)"
+      },
+      "beast": {
+        "className": "G_Bandanna_beast",
+        "name": "Bandana (Beast)"
+      },
+      "blk": {
+        "className": "G_Bandanna_blk",
+        "name": "Bandana (Black)"
+      },
+      "blueflame1": {
+        "className": "G_Bandanna_BlueFlame1",
+        "name": "Bandana (Blue Flame)"
+      },
+      "blueflame2": {
+        "className": "G_Bandanna_BlueFlame2",
+        "name": "Bandana (Blue Flames)"
+      },
+      "candyskull": {
+        "className": "G_Bandanna_CandySkull",
+        "name": "Bandana (Candy Skull)"
+      },
+      "khk": {
+        "className": "G_Bandanna_khk",
+        "name": "Bandana (Khaki)"
+      },
+      "oli": {
+        "className": "G_Bandanna_oli",
+        "name": "Bandana (Olive)"
+      },
+      "orangeflame1": {
+        "className": "G_Bandanna_OrangeFlame1",
+        "name": "Bandana (Orange Flames)"
+      },
+      "redflame1": {
+        "className": "G_Bandanna_RedFlame1",
+        "name": "Bandana (Red Flames)"
+      },
+      "shades": {
+        "className": "G_Bandanna_shades",
+        "name": "Bandana (Shades)"
+      },
+      "skull1": {
+        "className": "G_Bandanna_Skull1",
+        "name": "Bandana (Skull)"
+      },
+      "skull2": {
+        "className": "G_Bandanna_Skull2",
+        "name": "Bandana (Skull, Ornamental)"
+      },
+      "sport": {
+        "className": "G_Bandanna_sport",
+        "name": "Bandana (Sport)"
+      },
+      "syndikat1": {
+        "className": "G_Bandanna_Syndikat1",
+        "name": "Bandana (Skull) [Syndikat]"
+      },
+      "syndikat2": {
+        "className": "G_Bandanna_Syndikat2",
+        "name": "Bandana [Syndikat]"
+      },
+      "tan": {
+        "className": "G_Bandanna_tan",
+        "name": "Bandana (Tan)"
+      },
+      "vampire_01": {
+        "className": "G_Bandanna_Vampire_01",
+        "name": "Bandana (Vampire)"
+      }
+    },
+    "blindfold": {
+      "01_black": {
+        "className": "G_Blindfold_01_black_F",
+        "name": "Blindfold (Black)"
+      },
+      "01_white": {
+        "className": "G_Blindfold_01_white_F",
+        "name": "Blindfold (White)"
+      }
+    },
+    "combat": {
+      "base": {
+        "className": "G_Combat",
+        "name": "Combat Goggles"
+      },
+      "goggles_tna": {
+        "className": "G_Combat_Goggles_tna_F",
+        "name": "Combat Goggles (Green)"
+      }
+    },
+    "diving": {
+      "base": {
+        "className": "G_Diving",
+        "name": "Diving Goggles"
+      }
+    },
+    "eyeprotectors": {
+      "earpiece": {
+        "className": "G_EyeProtectors_Earpiece_F",
+        "name": "Safety Goggles (Earpiece)"
+      },
+      "base": {
+        "className": "G_EyeProtectors_F",
+        "name": "Safety Goggles"
+      }
+    },
+    "goggles": {
+      "vr": {
+        "className": "G_Goggles_VR",
+        "name": "VR Goggles"
+      }
+    },
+    "i": {
+      "diving": {
+        "className": "G_I_Diving",
+        "name": "Diving Goggles [AAF]"
+      }
+    },
+    "lady": {
+      "blue": {
+        "className": "G_Lady_Blue",
+        "name": "Ladies Shades"
+      },
+      "dark": {
+        "className": "G_Lady_Dark",
+        "name": "Ladies Shades (Sea)"
+      },
+      "mirror": {
+        "className": "G_Lady_Mirror",
+        "name": "Ladies Shades (Iridium)"
+      },
+      "red": {
+        "className": "G_Lady_Red",
+        "name": "Ladies Shades (Fire)"
+      }
+    },
+    "lowprofile": {
+      "base": {
+        "className": "G_Lowprofile",
+        "name": "Low Profile Goggles"
+      }
+    },
+    "o": {
+      "diving": {
+        "className": "G_O_Diving",
+        "name": "Diving Goggles [CSAT]"
+      }
+    },
+    "regulatormask": {
+      "base": {
+        "className": "G_RegulatorMask_F",
+        "name": "Regulator Facepiece"
+      }
+    },
+    "respirator": {
+      "blue": {
+        "className": "G_Respirator_blue_F",
+        "name": "Respirator (Blue)"
+      },
+      "white": {
+        "className": "G_Respirator_white_F",
+        "name": "Respirator (White)"
+      },
+      "yellow": {
+        "className": "G_Respirator_yellow_F",
+        "name": "Respirator (Yellow)"
+      }
+    },
+    "shades": {
+      "black": {
+        "className": "G_Shades_Black",
+        "name": "Shades (Black)"
+      },
+      "blue": {
+        "className": "G_Shades_Blue",
+        "name": "Shades (Blue)"
+      },
+      "green": {
+        "className": "G_Shades_Green",
+        "name": "Shades (Green)"
+      },
+      "red": {
+        "className": "G_Shades_Red",
+        "name": "Shades (Red)"
+      }
+    },
+    "spectacles": {
+      "base": {
+        "className": "G_Spectacles",
+        "name": "Spectacle Glasses"
+      },
+      "tinted": {
+        "className": "G_Spectacles_Tinted",
+        "name": "Tinted Spectacles"
+      }
+    },
+    "sport": {
+      "blackred": {
+        "className": "G_Sport_Blackred",
+        "name": "Sport Shades (Vulcan)"
+      },
+      "blackwhite": {
+        "className": "G_Sport_BlackWhite",
+        "name": "Sport Shades (Shadow)"
+      },
+      "blackyellow": {
+        "className": "G_Sport_Blackyellow",
+        "name": "Sport Shades (Poison)"
+      },
+      "checkered": {
+        "className": "G_Sport_Checkered",
+        "name": "Sport Shades (Style)"
+      },
+      "greenblack": {
+        "className": "G_Sport_Greenblack",
+        "name": "Sport Shades (Yetti)"
+      },
+      "red": {
+        "className": "G_Sport_Red",
+        "name": "Sport Shades (Fire)"
+      }
+    },
+    "squares": {
+      "base": {
+        "className": "G_Squares",
+        "name": "Square Spectacles"
+      },
+      "tinted": {
+        "className": "G_Squares_Tinted",
+        "name": "Square Shades"
+      }
+    },
+    "tactical": {
+      "black": {
+        "className": "G_Tactical_Black",
+        "name": "Tactical Shades"
+      },
+      "clear": {
+        "className": "G_Tactical_Clear",
+        "name": "Tactical Glasses"
+      }
+    },
+    "wirelessearpiece": {
+      "base": {
+        "className": "G_WirelessEarpiece_F",
+        "name": "Wireless Earpiece"
+      }
+    }
+  }
+}

@@ -1,0 +1,2500 @@
+{
+  "c": {
+    "man": {
+      "1": {
+        "className": "C_man_1",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_1": {
+        "className": "C_man_1_1_F",
+        "name": "Commoner 1",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_2": {
+        "className": "C_man_1_2_F",
+        "name": "Commoner 2",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_3": {
+        "className": "C_man_1_3_F",
+        "name": "Commoner 3",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "polo_1": {
+        "className": "C_man_polo_1_F",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "polo_1_f_afro": {
+        "className": "C_man_polo_1_F_afro",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_1_f_euro": {
+        "className": "C_man_polo_1_F_euro",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "polo_1_f_asia": {
+        "className": "C_man_polo_1_F_asia",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "polo_2": {
+        "className": "C_man_polo_2_F",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "polo_2_f_afro": {
+        "className": "C_man_polo_2_F_afro",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_2_f_euro": {
+        "className": "C_man_polo_2_F_euro",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "polo_2_f_asia": {
+        "className": "C_man_polo_2_F_asia",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "polo_3": {
+        "className": "C_man_polo_3_F",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "polo_3_f_afro": {
+        "className": "C_man_polo_3_F_afro",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_3_f_euro": {
+        "className": "C_man_polo_3_F_euro",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "polo_3_f_asia": {
+        "className": "C_man_polo_3_F_asia",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "polo_4": {
+        "className": "C_man_polo_4_F",
+        "name": "Civilian 4",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "polo_4_f_afro": {
+        "className": "C_man_polo_4_F_afro",
+        "name": "Civilian 4",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_4_f_euro": {
+        "className": "C_man_polo_4_F_euro",
+        "name": "Civilian 4",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "polo_4_f_asia": {
+        "className": "C_man_polo_4_F_asia",
+        "name": "Civilian 4",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "polo_5": {
+        "className": "C_man_polo_5_F",
+        "name": "Civilian 5",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "polo_5_f_afro": {
+        "className": "C_man_polo_5_F_afro",
+        "name": "Civilian 5",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_5_f_euro": {
+        "className": "C_man_polo_5_F_euro",
+        "name": "Civilian 5",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "polo_5_f_asia": {
+        "className": "C_man_polo_5_F_asia",
+        "name": "Civilian 5",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "polo_6": {
+        "className": "C_man_polo_6_F",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "polo_6_f_afro": {
+        "className": "C_man_polo_6_F_afro",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_6_f_euro": {
+        "className": "C_man_polo_6_F_euro",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "polo_6_f_asia": {
+        "className": "C_man_polo_6_F_asia",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "p_fugitive": {
+        "className": "C_man_p_fugitive_F",
+        "name": "Fugitive",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "p_fugitive_f_afro": {
+        "className": "C_man_p_fugitive_F_afro",
+        "name": "Fugitive",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "p_fugitive_f_euro": {
+        "className": "C_man_p_fugitive_F_euro",
+        "name": "Fugitive",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "p_fugitive_f_asia": {
+        "className": "C_man_p_fugitive_F_asia",
+        "name": "Fugitive",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "p_beggar": {
+        "className": "C_man_p_beggar_F",
+        "name": "Beggar",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "p_beggar_f_afro": {
+        "className": "C_man_p_beggar_F_afro",
+        "name": "Beggar",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "p_beggar_f_euro": {
+        "className": "C_man_p_beggar_F_euro",
+        "name": "Beggar",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "p_beggar_f_asia": {
+        "className": "C_man_p_beggar_F_asia",
+        "name": "Beggar",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "w_worker": {
+        "className": "C_man_w_worker_F",
+        "name": "Worker",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "hunter_1": {
+        "className": "C_man_hunter_1_F",
+        "name": "Hunter (green)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "p_shorts_1": {
+        "className": "C_man_p_shorts_1_F",
+        "name": "Fugitive (shorts)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "p_shorts_1_f_afro": {
+        "className": "C_man_p_shorts_1_F_afro",
+        "name": "Fugitive (shorts)",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "p_shorts_1_f_euro": {
+        "className": "C_man_p_shorts_1_F_euro",
+        "name": "Fugitive (shorts)",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "p_shorts_1_f_asia": {
+        "className": "C_man_p_shorts_1_F_asia",
+        "name": "Fugitive (shorts)",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "shorts_1": {
+        "className": "C_man_shorts_1_F",
+        "name": "Commoner (shorts)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "shorts_1_f_afro": {
+        "className": "C_man_shorts_1_F_afro",
+        "name": "Commoner (shorts)",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "shorts_1_f_euro": {
+        "className": "C_man_shorts_1_F_euro",
+        "name": "Commoner (shorts)",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "shorts_1_f_asia": {
+        "className": "C_man_shorts_1_F_asia",
+        "name": "Commoner (shorts)",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "shorts_2": {
+        "className": "C_man_shorts_2_F",
+        "name": "Surfer 1",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "shorts_2_f_afro": {
+        "className": "C_man_shorts_2_F_afro",
+        "name": "Surfer 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "shorts_2_f_euro": {
+        "className": "C_man_shorts_2_F_euro",
+        "name": "Surfer 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "shorts_2_f_asia": {
+        "className": "C_man_shorts_2_F_asia",
+        "name": "Surfer 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "shorts_3": {
+        "className": "C_man_shorts_3_F",
+        "name": "Surfer 2",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "shorts_3_f_afro": {
+        "className": "C_man_shorts_3_F_afro",
+        "name": "Surfer 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "shorts_3_f_euro": {
+        "className": "C_man_shorts_3_F_euro",
+        "name": "Surfer 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "shorts_3_f_asia": {
+        "className": "C_man_shorts_3_F_asia",
+        "name": "Surfer 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "shorts_4": {
+        "className": "C_man_shorts_4_F",
+        "name": "Surfer 3",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "shorts_4_f_afro": {
+        "className": "C_man_shorts_4_F_afro",
+        "name": "Surfer 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "shorts_4_f_euro": {
+        "className": "C_man_shorts_4_F_euro",
+        "name": "Surfer 3",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "shorts_4_f_asia": {
+        "className": "C_man_shorts_4_F_asia",
+        "name": "Surfer 3",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "pilot": {
+        "className": "C_man_pilot_F",
+        "name": "Pilot",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "sport_1": {
+        "className": "C_man_sport_1_F",
+        "name": "Civilian (Sport) 1",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "sport_1_f_afro": {
+        "className": "C_man_sport_1_F_afro",
+        "name": "Civilian (Sport) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "sport_1_f_euro": {
+        "className": "C_man_sport_1_F_euro",
+        "name": "Civilian (Sport) 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "sport_1_f_asia": {
+        "className": "C_man_sport_1_F_asia",
+        "name": "Civilian (Sport) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "sport_1_f_tanoan": {
+        "className": "C_man_sport_1_F_tanoan",
+        "name": "Civilian (Sport) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "sport_2": {
+        "className": "C_man_sport_2_F",
+        "name": "Civilian (Sport) 2",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "sport_2_f_afro": {
+        "className": "C_man_sport_2_F_afro",
+        "name": "Civilian (Sport) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "sport_2_f_euro": {
+        "className": "C_man_sport_2_F_euro",
+        "name": "Civilian (Sport) 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "sport_2_f_asia": {
+        "className": "C_man_sport_2_F_asia",
+        "name": "Civilian (Sport) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "sport_2_f_tanoan": {
+        "className": "C_man_sport_2_F_tanoan",
+        "name": "Civilian (Sport) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "sport_3": {
+        "className": "C_man_sport_3_F",
+        "name": "Civilian (Sport) 3",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "sport_3_f_afro": {
+        "className": "C_man_sport_3_F_afro",
+        "name": "Civilian (Sport) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "sport_3_f_euro": {
+        "className": "C_man_sport_3_F_euro",
+        "name": "Civilian (Sport) 3",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "sport_3_f_asia": {
+        "className": "C_man_sport_3_F_asia",
+        "name": "Civilian (Sport) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "sport_3_f_tanoan": {
+        "className": "C_man_sport_3_F_tanoan",
+        "name": "Civilian (Sport) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_1": {
+        "className": "C_Man_casual_1_F",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_1_f_afro": {
+        "className": "C_Man_casual_1_F_afro",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_1_f_euro": {
+        "className": "C_Man_casual_1_F_euro",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_1_f_asia": {
+        "className": "C_Man_casual_1_F_asia",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_1_f_tanoan": {
+        "className": "C_Man_casual_1_F_tanoan",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_2": {
+        "className": "C_Man_casual_2_F",
+        "name": "Civilian (Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_2_f_afro": {
+        "className": "C_Man_casual_2_F_afro",
+        "name": "Civilian (Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_2_f_euro": {
+        "className": "C_Man_casual_2_F_euro",
+        "name": "Civilian (Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_2_f_asia": {
+        "className": "C_Man_casual_2_F_asia",
+        "name": "Civilian (Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_2_f_tanoan": {
+        "className": "C_Man_casual_2_F_tanoan",
+        "name": "Civilian (Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_3": {
+        "className": "C_Man_casual_3_F",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_3_f_afro": {
+        "className": "C_Man_casual_3_F_afro",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_3_f_euro": {
+        "className": "C_Man_casual_3_F_euro",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_3_f_asia": {
+        "className": "C_Man_casual_3_F_asia",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_3_f_tanoan": {
+        "className": "C_Man_casual_3_F_tanoan",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_4": {
+        "className": "C_Man_casual_4_F",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_4_f_afro": {
+        "className": "C_Man_casual_4_F_afro",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_4_f_euro": {
+        "className": "C_Man_casual_4_F_euro",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_4_f_asia": {
+        "className": "C_Man_casual_4_F_asia",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_4_f_tanoan": {
+        "className": "C_Man_casual_4_F_tanoan",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_5": {
+        "className": "C_Man_casual_5_F",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_5_f_afro": {
+        "className": "C_Man_casual_5_F_afro",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_5_f_euro": {
+        "className": "C_Man_casual_5_F_euro",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_5_f_asia": {
+        "className": "C_Man_casual_5_F_asia",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_5_f_tanoan": {
+        "className": "C_Man_casual_5_F_tanoan",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_6": {
+        "className": "C_Man_casual_6_F",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_6_f_afro": {
+        "className": "C_Man_casual_6_F_afro",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_6_f_euro": {
+        "className": "C_Man_casual_6_F_euro",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_6_f_asia": {
+        "className": "C_Man_casual_6_F_asia",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_6_f_tanoan": {
+        "className": "C_Man_casual_6_F_tanoan",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "french_universal": {
+        "className": "C_Man_French_universal_F",
+        "name": "Soldier",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "constructionworker_01_red": {
+        "className": "C_Man_ConstructionWorker_01_Red_F",
+        "name": "Construction Worker (Red)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "constructionworker_01_vrana": {
+        "className": "C_Man_ConstructionWorker_01_Vrana_F",
+        "name": "Construction Worker (Vrana)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "constructionworker_01_black": {
+        "className": "C_Man_ConstructionWorker_01_Black_F",
+        "name": "Construction Worker (Black)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "constructionworker_01_blue": {
+        "className": "C_Man_ConstructionWorker_01_Blue_F",
+        "name": "Construction Worker (Blue)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "paramedic_01": {
+        "className": "C_Man_Paramedic_01_F",
+        "name": "Paramedic",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "utilityworker_01": {
+        "className": "C_Man_UtilityWorker_01_F",
+        "name": "Utility Worker",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "uav_06": {
+        "className": "C_Man_UAV_06_F",
+        "name": "UAV Operator (Utility)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "uav_06_medical": {
+        "className": "C_Man_UAV_06_medical_F",
+        "name": "UAV Operator (Utility, Medical)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "fisherman_01": {
+        "className": "C_Man_Fisherman_01_F",
+        "name": "Fisherman",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "messenger_01": {
+        "className": "C_Man_Messenger_01_F",
+        "name": "Messenger",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_enoch": {
+        "className": "C_Man_1_enoch_F",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "2_enoch": {
+        "className": "C_Man_2_enoch_F",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "3_enoch": {
+        "className": "C_Man_3_enoch_F",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "4_enoch": {
+        "className": "C_Man_4_enoch_F",
+        "name": "Civilian 4",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "5_enoch": {
+        "className": "C_Man_5_enoch_F",
+        "name": "Civilian 5",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "6_enoch": {
+        "className": "C_Man_6_enoch_F",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "p_beggar_f_afro_sick": {
+        "className": "C_man_p_beggar_F_afro_sick",
+        "name": "Beggar",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_1_f_afro_sick": {
+        "className": "C_Man_casual_1_F_afro_sick",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_3_f_afro_sick": {
+        "className": "C_Man_casual_3_F_afro_sick",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_4_f_afro_sick": {
+        "className": "C_Man_casual_4_F_afro_sick",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_5_f_afro_sick": {
+        "className": "C_Man_casual_5_F_afro_sick",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_6_f_afro_sick": {
+        "className": "C_Man_casual_6_F_afro_sick",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_1_f_afro_sick": {
+        "className": "C_man_polo_1_F_afro_sick",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_2_f_afro_sick": {
+        "className": "C_man_polo_2_F_afro_sick",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_3_f_afro_sick": {
+        "className": "C_man_polo_3_F_afro_sick",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "polo_6_f_afro_sick": {
+        "className": "C_man_polo_6_F_afro_sick",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "sport_2_f_afro_sick": {
+        "className": "C_man_sport_2_F_afro_sick",
+        "name": "Civilian (Sport) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "formal_1": {
+        "className": "C_Man_formal_1_F",
+        "name": "Civilian (Formal) 1",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formal_1_f_afro": {
+        "className": "C_Man_formal_1_F_afro",
+        "name": "Civilian (Formal) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "formal_1_f_euro": {
+        "className": "C_Man_formal_1_F_euro",
+        "name": "Civilian (Formal) 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "formal_1_f_asia": {
+        "className": "C_Man_formal_1_F_asia",
+        "name": "Civilian (Formal) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "formal_1_f_tanoan": {
+        "className": "C_Man_formal_1_F_tanoan",
+        "name": "Civilian (Formal) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "formal_2": {
+        "className": "C_Man_formal_2_F",
+        "name": "Civilian (Formal) 2",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formal_2_f_afro": {
+        "className": "C_Man_formal_2_F_afro",
+        "name": "Civilian (Formal) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "formal_2_f_euro": {
+        "className": "C_Man_formal_2_F_euro",
+        "name": "Civilian (Formal) 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "formal_2_f_asia": {
+        "className": "C_Man_formal_2_F_asia",
+        "name": "Civilian (Formal) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "formal_2_f_tanoan": {
+        "className": "C_Man_formal_2_F_tanoan",
+        "name": "Civilian (Formal) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "formal_3": {
+        "className": "C_Man_formal_3_F",
+        "name": "Civilian (Formal) 3",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formal_3_f_afro": {
+        "className": "C_Man_formal_3_F_afro",
+        "name": "Civilian (Formal) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "formal_3_f_euro": {
+        "className": "C_Man_formal_3_F_euro",
+        "name": "Civilian (Formal) 3",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "formal_3_f_asia": {
+        "className": "C_Man_formal_3_F_asia",
+        "name": "Civilian (Formal) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "formal_3_f_tanoan": {
+        "className": "C_Man_formal_3_F_tanoan",
+        "name": "Civilian (Formal) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "formal_4": {
+        "className": "C_Man_formal_4_F",
+        "name": "Civilian (Formal) 4",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formal_4_f_afro": {
+        "className": "C_Man_formal_4_F_afro",
+        "name": "Civilian (Formal) 4",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "formal_4_f_euro": {
+        "className": "C_Man_formal_4_F_euro",
+        "name": "Civilian (Formal) 4",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "formal_4_f_asia": {
+        "className": "C_Man_formal_4_F_asia",
+        "name": "Civilian (Formal) 4",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "formal_4_f_tanoan": {
+        "className": "C_Man_formal_4_F_tanoan",
+        "name": "Civilian (Formal) 4",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "smart_casual_1": {
+        "className": "C_Man_smart_casual_1_F",
+        "name": "Civilian (Smart Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "smart_casual_1_f_afro": {
+        "className": "C_Man_smart_casual_1_F_afro",
+        "name": "Civilian (Smart Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "smart_casual_1_f_euro": {
+        "className": "C_Man_smart_casual_1_F_euro",
+        "name": "Civilian (Smart Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "smart_casual_1_f_asia": {
+        "className": "C_Man_smart_casual_1_F_asia",
+        "name": "Civilian (Smart Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "smart_casual_1_f_tanoan": {
+        "className": "C_Man_smart_casual_1_F_tanoan",
+        "name": "Civilian (Smart Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "smart_casual_2": {
+        "className": "C_Man_smart_casual_2_F",
+        "name": "Civilian (Smart Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "smart_casual_2_f_afro": {
+        "className": "C_Man_smart_casual_2_F_afro",
+        "name": "Civilian (Smart Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "smart_casual_2_f_euro": {
+        "className": "C_Man_smart_casual_2_F_euro",
+        "name": "Civilian (Smart Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "smart_casual_2_f_asia": {
+        "className": "C_Man_smart_casual_2_F_asia",
+        "name": "Civilian (Smart Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "smart_casual_2_f_tanoan": {
+        "className": "C_Man_smart_casual_2_F_tanoan",
+        "name": "Civilian (Smart Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_4_v2": {
+        "className": "C_Man_casual_4_v2_F",
+        "name": "Civilian (Casual) 4",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_4_v2_f_afro": {
+        "className": "C_Man_casual_4_v2_F_afro",
+        "name": "Civilian (Casual) 4",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_4_v2_f_euro": {
+        "className": "C_Man_casual_4_v2_F_euro",
+        "name": "Civilian (Casual) 4",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_4_v2_f_asia": {
+        "className": "C_Man_casual_4_v2_F_asia",
+        "name": "Civilian (Casual) 4",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_4_v2_f_tanoan": {
+        "className": "C_Man_casual_4_v2_F_tanoan",
+        "name": "Civilian (Casual) 4",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_5_v2": {
+        "className": "C_Man_casual_5_v2_F",
+        "name": "Civilian (Casual) 5",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_5_v2_f_afro": {
+        "className": "C_Man_casual_5_v2_F_afro",
+        "name": "Civilian (Casual) 5",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_5_v2_f_euro": {
+        "className": "C_Man_casual_5_v2_F_euro",
+        "name": "Civilian (Casual) 5",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_5_v2_f_asia": {
+        "className": "C_Man_casual_5_v2_F_asia",
+        "name": "Civilian (Casual) 5",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_5_v2_f_tanoan": {
+        "className": "C_Man_casual_5_v2_F_tanoan",
+        "name": "Civilian (Casual) 5",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_6_v2": {
+        "className": "C_Man_casual_6_v2_F",
+        "name": "Civilian (Casual) 6",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_6_v2_f_afro": {
+        "className": "C_Man_casual_6_v2_F_afro",
+        "name": "Civilian (Casual) 6",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_6_v2_f_euro": {
+        "className": "C_Man_casual_6_v2_F_euro",
+        "name": "Civilian (Casual) 6",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_6_v2_f_asia": {
+        "className": "C_Man_casual_6_v2_F_asia",
+        "name": "Civilian (Casual) 6",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_6_v2_f_tanoan": {
+        "className": "C_Man_casual_6_v2_F_tanoan",
+        "name": "Civilian (Casual) 6",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_7": {
+        "className": "C_Man_casual_7_F",
+        "name": "Civilian (Casual) 7",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_7_f_afro": {
+        "className": "C_Man_casual_7_F_afro",
+        "name": "Civilian (Casual) 7",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_7_f_euro": {
+        "className": "C_Man_casual_7_F_euro",
+        "name": "Civilian (Casual) 7",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_7_f_asia": {
+        "className": "C_Man_casual_7_F_asia",
+        "name": "Civilian (Casual) 7",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_7_f_tanoan": {
+        "className": "C_Man_casual_7_F_tanoan",
+        "name": "Civilian (Casual) 7",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_8": {
+        "className": "C_Man_casual_8_F",
+        "name": "Civilian (Casual) 8",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_8_f_afro": {
+        "className": "C_Man_casual_8_F_afro",
+        "name": "Civilian (Casual) 8",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_8_f_euro": {
+        "className": "C_Man_casual_8_F_euro",
+        "name": "Civilian (Casual) 8",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_8_f_asia": {
+        "className": "C_Man_casual_8_F_asia",
+        "name": "Civilian (Casual) 8",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_8_f_tanoan": {
+        "className": "C_Man_casual_8_F_tanoan",
+        "name": "Civilian (Casual) 8",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "casual_9": {
+        "className": "C_Man_casual_9_F",
+        "name": "Civilian (Casual) 9",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "casual_9_f_afro": {
+        "className": "C_Man_casual_9_F_afro",
+        "name": "Civilian (Casual) 9",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "casual_9_f_euro": {
+        "className": "C_Man_casual_9_F_euro",
+        "name": "Civilian (Casual) 9",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "casual_9_f_asia": {
+        "className": "C_Man_casual_9_F_asia",
+        "name": "Civilian (Casual) 9",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "casual_9_f_tanoan": {
+        "className": "C_Man_casual_9_F_tanoan",
+        "name": "Civilian (Casual) 9",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      }
+    },
+    "scientist": {
+      "base": {
+        "className": "C_scientist_F",
+        "name": "Scientist",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "01_formal": {
+        "className": "C_scientist_01_formal_F",
+        "name": "Scientist (Formal) 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "02_formal": {
+        "className": "C_scientist_02_formal_F",
+        "name": "Scientist (Formal) 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "01_informal": {
+        "className": "C_scientist_01_informal_F",
+        "name": "Scientist (Informal) 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "02_informal": {
+        "className": "C_scientist_02_informal_F",
+        "name": "Scientist (Informal) 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      }
+    },
+    "journalist": {
+      "base": {
+        "className": "C_journalist_F",
+        "name": "Journalist",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "01_war": {
+        "className": "C_Journalist_01_War_F",
+        "name": "Journalist (War)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    },
+    "orestes": {
+      "base": {
+        "className": "C_Orestes",
+        "name": "Orestes",
+        "category": "Civilians",
+        "subCategory": "Men (Story)"
+      }
+    },
+    "nikos": {
+      "base": {
+        "className": "C_Nikos",
+        "name": "Nikos",
+        "category": "Civilians",
+        "subCategory": "Men (Story)"
+      },
+      "aged": {
+        "className": "C_Nikos_aged",
+        "name": "Nikos (Formal)",
+        "category": "Civilians",
+        "subCategory": "Men (Story)"
+      }
+    },
+    "driver": {
+      "1": {
+        "className": "C_Driver_1_F",
+        "name": "Driver (Fuel)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "2": {
+        "className": "C_Driver_2_F",
+        "name": "Driver (Bluking)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "3": {
+        "className": "C_Driver_3_F",
+        "name": "Driver (Redstone)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "4": {
+        "className": "C_Driver_4_F",
+        "name": "Driver (Vrana)",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_random_base": {
+        "className": "C_Driver_1_random_base_F",
+        "name": "Driver",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_black": {
+        "className": "C_Driver_1_black_F",
+        "name": "Driver",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_blue": {
+        "className": "C_Driver_1_blue_F",
+        "name": "Driver",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_green": {
+        "className": "C_Driver_1_green_F",
+        "name": "Driver",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_red": {
+        "className": "C_Driver_1_red_F",
+        "name": "Driver",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_white": {
+        "className": "C_Driver_1_white_F",
+        "name": "Driver",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_yellow": {
+        "className": "C_Driver_1_yellow_F",
+        "name": "Driver",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "1_orange": {
+        "className": "C_Driver_1_orange_F",
+        "name": "Driver",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    },
+    "marshal": {
+      "base": {
+        "className": "C_Marshal_F",
+        "name": "Marshal",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    },
+    "soldier": {
+      "vr": {
+        "className": "C_Soldier_VR_F",
+        "name": "VR Entity",
+        "category": "Civilians",
+        "subCategory": "Men (Virtual Reality)"
+      }
+    },
+    "protagonist": {
+      "vr": {
+        "className": "C_Protagonist_VR_F",
+        "name": "VR Man",
+        "category": "Civilians",
+        "subCategory": "Men (Virtual Reality)"
+      }
+    },
+    "heli": {
+      "light_01_civil": {
+        "className": "C_Heli_Light_01_civil_F",
+        "name": "M-900",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_blue": {
+        "className": "C_Heli_light_01_blue_F",
+        "name": "M-900 (Blue)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_red": {
+        "className": "C_Heli_light_01_red_F",
+        "name": "M-900 (Red)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_ion": {
+        "className": "C_Heli_light_01_ion_F",
+        "name": "M-900 (ION)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_blueline": {
+        "className": "C_Heli_light_01_blueLine_F",
+        "name": "M-900 (BlueLine)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_digital": {
+        "className": "C_Heli_light_01_digital_F",
+        "name": "M-900 (Digital)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_elliptical": {
+        "className": "C_Heli_light_01_elliptical_F",
+        "name": "M-900 (Elliptical)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_furious": {
+        "className": "C_Heli_light_01_furious_F",
+        "name": "M-900 (Furious)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_graywatcher": {
+        "className": "C_Heli_light_01_graywatcher_F",
+        "name": "M-900 (GrayWatcher)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_jeans": {
+        "className": "C_Heli_light_01_jeans_F",
+        "name": "M-900 (Jeans)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_light": {
+        "className": "C_Heli_light_01_light_F",
+        "name": "M-900 (Light)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_shadow": {
+        "className": "C_Heli_light_01_shadow_F",
+        "name": "M-900 (Shadow)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_sheriff": {
+        "className": "C_Heli_light_01_sheriff_F",
+        "name": "M-900 (Sheriff)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_speedy": {
+        "className": "C_Heli_light_01_speedy_F",
+        "name": "M-900 (Speedy)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_sunset": {
+        "className": "C_Heli_light_01_sunset_F",
+        "name": "M-900 (Sunset)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_vrana": {
+        "className": "C_Heli_light_01_vrana_F",
+        "name": "M-900 (VRANA)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_wasp": {
+        "className": "C_Heli_light_01_wasp_F",
+        "name": "M-900 (Wasp)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_wave": {
+        "className": "C_Heli_light_01_wave_F",
+        "name": "M-900 (Wave)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_stripped": {
+        "className": "C_Heli_light_01_stripped_F",
+        "name": "M-900 (Stripped)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      },
+      "light_01_luxe": {
+        "className": "C_Heli_light_01_luxe_F",
+        "name": "M-900 (Luxe)",
+        "category": "Civilians",
+        "subCategory": "Helicopters"
+      }
+    },
+    "rubberboat": {
+      "base": {
+        "className": "C_Rubberboat",
+        "name": "Rescue Boat",
+        "category": "Civilians",
+        "subCategory": "Boats"
+      }
+    },
+    "boat": {
+      "civil_01": {
+        "className": "C_Boat_Civil_01_F",
+        "name": "Motorboat",
+        "category": "Civilians",
+        "subCategory": "Boats"
+      },
+      "civil_01_rescue": {
+        "className": "C_Boat_Civil_01_rescue_F",
+        "name": "Motorboat (Rescue)",
+        "category": "Civilians",
+        "subCategory": "Boats"
+      },
+      "civil_01_police": {
+        "className": "C_Boat_Civil_01_police_F",
+        "name": "Motorboat (Police)",
+        "category": "Civilians",
+        "subCategory": "Boats"
+      },
+      "transport_02": {
+        "className": "C_Boat_Transport_02_F",
+        "name": "RHIB",
+        "category": "Civilians",
+        "subCategory": "Boats"
+      }
+    },
+    "offroad": {
+      "01": {
+        "className": "C_Offroad_01_F",
+        "name": "Offroad",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_repair": {
+        "className": "C_Offroad_01_repair_F",
+        "name": "Offroad (Services)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_red": {
+        "className": "C_Offroad_01_red_F",
+        "name": "Offroad (Red)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_sand": {
+        "className": "C_Offroad_01_sand_F",
+        "name": "Offroad (Beige)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_white": {
+        "className": "C_Offroad_01_white_F",
+        "name": "Offroad (White)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_blue": {
+        "className": "C_Offroad_01_blue_F",
+        "name": "Offroad (Blue)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_darkred": {
+        "className": "C_Offroad_01_darkred_F",
+        "name": "Offroad (Dark Red)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_bluecustom": {
+        "className": "C_Offroad_01_bluecustom_F",
+        "name": "Offroad (Blue Custom)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "luxe": {
+        "className": "C_Offroad_luxe_F",
+        "name": "Offroad (Luxe)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "default": {
+        "className": "C_Offroad_default_F",
+        "name": "Offroad",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "stripped": {
+        "className": "C_Offroad_stripped_F",
+        "name": "Offroad (Stripped-down)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_unarmed": {
+        "className": "C_Offroad_02_unarmed_F",
+        "name": "MB 4WD",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_black": {
+        "className": "C_Offroad_02_unarmed_black_F",
+        "name": "MB 4WD (Black)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_blue": {
+        "className": "C_Offroad_02_unarmed_blue_F",
+        "name": "MB 4WD (Blue)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_green": {
+        "className": "C_Offroad_02_unarmed_green_F",
+        "name": "MB 4WD (Green)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_orange": {
+        "className": "C_Offroad_02_unarmed_orange_F",
+        "name": "MB 4WD (Orange)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_red": {
+        "className": "C_Offroad_02_unarmed_red_F",
+        "name": "MB 4WD (Red)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_unarmed_white": {
+        "className": "C_Offroad_02_unarmed_white_F",
+        "name": "MB 4WD (White)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_covered": {
+        "className": "C_Offroad_01_covered_F",
+        "name": "Offroad (Covered)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_comms": {
+        "className": "C_Offroad_01_comms_F",
+        "name": "Offroad (Comms)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      }
+    },
+    "quadbike": {
+      "01": {
+        "className": "C_Quadbike_01_F",
+        "name": "Quad Bike",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_black": {
+        "className": "C_Quadbike_01_black_F",
+        "name": "Quad Bike (Black)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_blue": {
+        "className": "C_Quadbike_01_blue_F",
+        "name": "Quad Bike (Blue)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_red": {
+        "className": "C_Quadbike_01_red_F",
+        "name": "Quad Bike (Red)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_white": {
+        "className": "C_Quadbike_01_white_F",
+        "name": "Quad Bike (White)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      }
+    },
+    "truck": {
+      "02_covered": {
+        "className": "C_Truck_02_covered_F",
+        "name": "Zamak Transport (Covered)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_transport": {
+        "className": "C_Truck_02_transport_F",
+        "name": "Zamak Transport",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_fuel": {
+        "className": "C_Truck_02_fuel_F",
+        "name": "Zamak Fuel",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_box": {
+        "className": "C_Truck_02_box_F",
+        "name": "Zamak Repair",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      }
+    },
+    "hatchback": {
+      "01": {
+        "className": "C_Hatchback_01_F",
+        "name": "Hatchback",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_sport": {
+        "className": "C_Hatchback_01_sport_F",
+        "name": "Hatchback (Sport)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_grey": {
+        "className": "C_Hatchback_01_grey_F",
+        "name": "Hatchback (Grey)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_green": {
+        "className": "C_Hatchback_01_green_F",
+        "name": "Hatchback (Green)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_blue": {
+        "className": "C_Hatchback_01_blue_F",
+        "name": "Hatchback (Blue)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_bluecustom": {
+        "className": "C_Hatchback_01_bluecustom_F",
+        "name": "Hatchback (Custom Blue)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_beigecustom": {
+        "className": "C_Hatchback_01_beigecustom_F",
+        "name": "Hatchback (Custom Beige)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_yellow": {
+        "className": "C_Hatchback_01_yellow_F",
+        "name": "Hatchback (Yellow)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_white": {
+        "className": "C_Hatchback_01_white_F",
+        "name": "Hatchback (White)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_black": {
+        "className": "C_Hatchback_01_black_F",
+        "name": "Hatchback (Black)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_dark": {
+        "className": "C_Hatchback_01_dark_F",
+        "name": "Hatchback (Dark)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_sport_red": {
+        "className": "C_Hatchback_01_sport_red_F",
+        "name": "Hatchback (Sport, Red)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_sport_blue": {
+        "className": "C_Hatchback_01_sport_blue_F",
+        "name": "Hatchback (Sport, Blue)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_sport_orange": {
+        "className": "C_Hatchback_01_sport_orange_F",
+        "name": "Hatchback (Sport, Orange)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_sport_white": {
+        "className": "C_Hatchback_01_sport_white_F",
+        "name": "Hatchback (Sport, White)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_sport_grey": {
+        "className": "C_Hatchback_01_sport_grey_F",
+        "name": "Hatchback (Sport, Grey)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_sport_green": {
+        "className": "C_Hatchback_01_sport_green_F",
+        "name": "Hatchback (Sport, Green)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      }
+    },
+    "suv": {
+      "01": {
+        "className": "C_SUV_01_F",
+        "name": "SUV",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      }
+    },
+    "van": {
+      "01_transport": {
+        "className": "C_Van_01_transport_F",
+        "name": "Truck",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_box": {
+        "className": "C_Van_01_box_F",
+        "name": "Truck Boxer",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_fuel": {
+        "className": "C_Van_01_fuel_F",
+        "name": "Fuel Truck",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_transport_white": {
+        "className": "C_Van_01_transport_white_F",
+        "name": "Truck (White)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_transport_red": {
+        "className": "C_Van_01_transport_red_F",
+        "name": "Truck (Red)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_box_white": {
+        "className": "C_Van_01_box_white_F",
+        "name": "Truck Boxer (White)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_box_red": {
+        "className": "C_Van_01_box_red_F",
+        "name": "Truck Boxer (Red)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_fuel_white": {
+        "className": "C_Van_01_fuel_white_F",
+        "name": "Fuel Truck (White)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_fuel_red": {
+        "className": "C_Van_01_fuel_red_F",
+        "name": "Fuel Truck (Red, White Tank)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_fuel_white_v2": {
+        "className": "C_Van_01_fuel_white_v2_F",
+        "name": "Fuel Truck (White, Red Tank)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_fuel_red_v2": {
+        "className": "C_Van_01_fuel_red_v2_F",
+        "name": "Fuel Truck (Red)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_transport": {
+        "className": "C_Van_02_transport_F",
+        "name": "Van Transport",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_vehicle": {
+        "className": "C_Van_02_vehicle_F",
+        "name": "Van (Cargo)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_medevac": {
+        "className": "C_Van_02_medevac_F",
+        "name": "Van (Ambulance)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "02_service": {
+        "className": "C_Van_02_service_F",
+        "name": "Van (Services)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      }
+    },
+    "kart": {
+      "01": {
+        "className": "C_Kart_01_F",
+        "name": "Kart",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_fuel": {
+        "className": "C_Kart_01_Fuel_F",
+        "name": "Kart (Fuel)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_blu": {
+        "className": "C_Kart_01_Blu_F",
+        "name": "Kart (Bluking)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_red": {
+        "className": "C_Kart_01_Red_F",
+        "name": "Kart (Redstone)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_vrana": {
+        "className": "C_Kart_01_Vrana_F",
+        "name": "Kart (Vrana)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_green": {
+        "className": "C_Kart_01_green_F",
+        "name": "Kart (Green)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_orange": {
+        "className": "C_Kart_01_orange_F",
+        "name": "Kart (Orange)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_white": {
+        "className": "C_Kart_01_white_F",
+        "name": "Kart (White)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_yellow": {
+        "className": "C_Kart_01_yellow_F",
+        "name": "Kart (Yellow)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "01_black": {
+        "className": "C_Kart_01_black_F",
+        "name": "Kart (Black)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      }
+    },
+    "plane": {
+      "civil_01": {
+        "className": "C_Plane_Civil_01_F",
+        "name": "Caesar BTT",
+        "category": "Civilians",
+        "subCategory": "Planes"
+      },
+      "civil_01_racing": {
+        "className": "C_Plane_Civil_01_racing_F",
+        "name": "Caesar BTT (Racing)",
+        "category": "Civilians",
+        "subCategory": "Planes"
+      }
+    },
+    "scooter": {
+      "transport_01": {
+        "className": "C_Scooter_Transport_01_F",
+        "name": "Water Scooter",
+        "category": "Civilians",
+        "subCategory": "Boats"
+      }
+    },
+    "uav": {
+      "06": {
+        "className": "C_UAV_06_F",
+        "name": "Utility Drone",
+        "category": "Civilians",
+        "subCategory": "Drones"
+      },
+      "06_medical": {
+        "className": "C_UAV_06_medical_F",
+        "name": "Utility Drone (Medical)",
+        "category": "Civilians",
+        "subCategory": "Drones"
+      },
+      "ai": {
+        "className": "C_UAV_AI_F",
+        "name": "AI",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    },
+    "paramedic": {
+      "01_base": {
+        "className": "C_Paramedic_01_base_F",
+        "name": "Paramedic",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    },
+    "story": {
+      "mechanic_01": {
+        "className": "C_Story_Mechanic_01_F",
+        "name": "Markos Kouris",
+        "category": "Civilians",
+        "subCategory": "Men (Story)"
+      }
+    },
+    "tractor": {
+      "01": {
+        "className": "C_Tractor_01_F",
+        "name": "Tractor",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      }
+    },
+    "e": {
+      "looterjacket_01": {
+        "className": "C_E_LooterJacket_01_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    },
+    "uniform": {
+      "scientist_01": {
+        "className": "C_Uniform_Scientist_01_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "scientist_01_formal": {
+        "className": "C_Uniform_Scientist_01_formal_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "scientist_02": {
+        "className": "C_Uniform_Scientist_02_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "scientist_02_formal": {
+        "className": "C_Uniform_Scientist_02_formal_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "farmer_01": {
+        "className": "C_Uniform_Farmer_01_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "arttshirt_01_v1": {
+        "className": "C_Uniform_ArtTShirt_01_v1_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "arttshirt_01_v2": {
+        "className": "C_Uniform_ArtTShirt_01_v2_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "arttshirt_01_v3": {
+        "className": "C_Uniform_ArtTShirt_01_v3_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "arttshirt_01_v4": {
+        "className": "C_Uniform_ArtTShirt_01_v4_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "arttshirt_01_v5": {
+        "className": "C_Uniform_ArtTShirt_01_v5_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "arttshirt_01_v6": {
+        "className": "C_Uniform_ArtTShirt_01_v6_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formalsuit_01_black": {
+        "className": "C_Uniform_FormalSuit_01_black_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formalsuit_01_gray": {
+        "className": "C_Uniform_FormalSuit_01_gray_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formalsuit_01_blue": {
+        "className": "C_Uniform_FormalSuit_01_blue_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formalsuit_01_khaki": {
+        "className": "C_Uniform_FormalSuit_01_khaki_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formalsuit_01_tshirt_black": {
+        "className": "C_Uniform_FormalSuit_01_tshirt_black_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "formalsuit_01_tshirt_gray": {
+        "className": "C_Uniform_FormalSuit_01_tshirt_gray_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    },
+    "farmer": {
+      "01_enoch": {
+        "className": "C_Farmer_01_enoch_F",
+        "name": "Farmer",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      }
+    }
+  },
+  "suv": {
+    "01": {
+      "base_red": {
+        "className": "SUV_01_base_red_F",
+        "name": "SUV (Red)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "base_black": {
+        "className": "SUV_01_base_black_F",
+        "name": "SUV (Black)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "base_grey": {
+        "className": "SUV_01_base_grey_F",
+        "name": "SUV (Grey)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      },
+      "base_orange": {
+        "className": "SUV_01_base_orange_F",
+        "name": "SUV (Orange)",
+        "category": "Civilians",
+        "subCategory": "Cars"
+      }
+    }
+  },
+  "civilianpresence": {
+    "c": {
+      "man_casual_1_f_tanoan": {
+        "className": "CivilianPresence_C_Man_casual_1_F_tanoan",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "man_casual_2_f_tanoan": {
+        "className": "CivilianPresence_C_Man_casual_2_F_tanoan",
+        "name": "Civilian (Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "man_casual_3_f_tanoan": {
+        "className": "CivilianPresence_C_Man_casual_3_F_tanoan",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "man_casual_4_f_tanoan": {
+        "className": "CivilianPresence_C_Man_casual_4_F_tanoan",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "man_casual_5_f_tanoan": {
+        "className": "CivilianPresence_C_Man_casual_5_F_tanoan",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "man_casual_6_f_tanoan": {
+        "className": "CivilianPresence_C_Man_casual_6_F_tanoan",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Tanoan)"
+      },
+      "man_casual_1_f_euro": {
+        "className": "CivilianPresence_C_Man_casual_1_F_euro",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_casual_2_f_euro": {
+        "className": "CivilianPresence_C_Man_casual_2_F_euro",
+        "name": "Civilian (Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_casual_3_f_euro": {
+        "className": "CivilianPresence_C_Man_casual_3_F_euro",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_casual_4_f_euro": {
+        "className": "CivilianPresence_C_Man_casual_4_F_euro",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_casual_5_f_euro": {
+        "className": "CivilianPresence_C_Man_casual_5_F_euro",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_casual_6_f_euro": {
+        "className": "CivilianPresence_C_Man_casual_6_F_euro",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_polo_1_f_euro": {
+        "className": "CivilianPresence_C_man_polo_1_F_euro",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_polo_2_f_euro": {
+        "className": "CivilianPresence_C_man_polo_2_F_euro",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_polo_3_f_euro": {
+        "className": "CivilianPresence_C_man_polo_3_F_euro",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_polo_4_f_euro": {
+        "className": "CivilianPresence_C_man_polo_4_F_euro",
+        "name": "Civilian 4",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_polo_5_f_euro": {
+        "className": "CivilianPresence_C_man_polo_5_F_euro",
+        "name": "Civilian 5",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_polo_6_f_euro": {
+        "className": "CivilianPresence_C_man_polo_6_F_euro",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men (European)"
+      },
+      "man_casual_1_f_asia": {
+        "className": "CivilianPresence_C_Man_casual_1_F_asia",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_casual_2_f_asia": {
+        "className": "CivilianPresence_C_Man_casual_2_F_asia",
+        "name": "Civilian (Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_casual_3_f_asia": {
+        "className": "CivilianPresence_C_Man_casual_3_F_asia",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_casual_4_f_asia": {
+        "className": "CivilianPresence_C_Man_casual_4_F_asia",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_casual_5_f_asia": {
+        "className": "CivilianPresence_C_Man_casual_5_F_asia",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_casual_6_f_asia": {
+        "className": "CivilianPresence_C_Man_casual_6_F_asia",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_polo_1_f_asia": {
+        "className": "CivilianPresence_C_man_polo_1_F_asia",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_polo_2_f_asia": {
+        "className": "CivilianPresence_C_man_polo_2_F_asia",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_polo_3_f_asia": {
+        "className": "CivilianPresence_C_man_polo_3_F_asia",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_polo_4_f_asia": {
+        "className": "CivilianPresence_C_man_polo_4_F_asia",
+        "name": "Civilian 4",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_polo_5_f_asia": {
+        "className": "CivilianPresence_C_man_polo_5_F_asia",
+        "name": "Civilian 5",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_polo_6_f_asia": {
+        "className": "CivilianPresence_C_man_polo_6_F_asia",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men (Asian)"
+      },
+      "man_casual_1_f_afro": {
+        "className": "CivilianPresence_C_Man_casual_1_F_afro",
+        "name": "Civilian (Casual) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_casual_2_f_afro": {
+        "className": "CivilianPresence_C_Man_casual_2_F_afro",
+        "name": "Civilian (Casual) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_casual_3_f_afro": {
+        "className": "CivilianPresence_C_Man_casual_3_F_afro",
+        "name": "Civilian (Casual) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_casual_4_f_afro": {
+        "className": "CivilianPresence_C_Man_casual_4_F_afro",
+        "name": "Civilian (Summer) 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_casual_5_f_afro": {
+        "className": "CivilianPresence_C_Man_casual_5_F_afro",
+        "name": "Civilian (Summer) 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_casual_6_f_afro": {
+        "className": "CivilianPresence_C_Man_casual_6_F_afro",
+        "name": "Civilian (Summer) 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_polo_1_f_afro": {
+        "className": "CivilianPresence_C_man_polo_1_F_afro",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_polo_2_f_afro": {
+        "className": "CivilianPresence_C_man_polo_2_F_afro",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_polo_3_f_afro": {
+        "className": "CivilianPresence_C_man_polo_3_F_afro",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_polo_4_f_afro": {
+        "className": "CivilianPresence_C_man_polo_4_F_afro",
+        "name": "Civilian 4",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_polo_5_f_afro": {
+        "className": "CivilianPresence_C_man_polo_5_F_afro",
+        "name": "Civilian 5",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_polo_6_f_afro": {
+        "className": "CivilianPresence_C_man_polo_6_F_afro",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men (Africans)"
+      },
+      "man_1_enoch": {
+        "className": "CivilianPresence_C_Man_1_enoch_F",
+        "name": "Civilian 1",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "man_2_enoch": {
+        "className": "CivilianPresence_C_Man_2_enoch_F",
+        "name": "Civilian 2",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "man_3_enoch": {
+        "className": "CivilianPresence_C_Man_3_enoch_F",
+        "name": "Civilian 3",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "man_4_enoch": {
+        "className": "CivilianPresence_C_Man_4_enoch_F",
+        "name": "Civilian 4",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "man_5_enoch": {
+        "className": "CivilianPresence_C_Man_5_enoch_F",
+        "name": "Civilian 5",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "man_6_enoch": {
+        "className": "CivilianPresence_C_Man_6_enoch_F",
+        "name": "Civilian 6",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      },
+      "farmer_01_enoch": {
+        "className": "CivilianPresence_C_Farmer_01_enoch_F",
+        "name": "Farmer",
+        "category": "Civilians",
+        "subCategory": "Men (Livonia)"
+      }
+    }
+  },
+  "b": {
+    "uniform": {
+      "paradeuniform_01_us": {
+        "className": "B_Uniform_ParadeUniform_01_US_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "paradeuniform_01_us_decorated": {
+        "className": "B_Uniform_ParadeUniform_01_US_decorated_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    }
+  },
+  "o": {
+    "uniform": {
+      "paradeuniform_01_csat": {
+        "className": "O_Uniform_ParadeUniform_01_CSAT_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "paradeuniform_01_csat_decorated": {
+        "className": "O_Uniform_ParadeUniform_01_CSAT_decorated_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    }
+  },
+  "i": {
+    "uniform": {
+      "paradeuniform_01_aaf": {
+        "className": "I_Uniform_ParadeUniform_01_AAF_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "paradeuniform_01_aaf_decorated": {
+        "className": "I_Uniform_ParadeUniform_01_AAF_decorated_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    },
+    "e": {
+      "uniform_paradeuniform_01_ldf": {
+        "className": "I_E_Uniform_ParadeUniform_01_LDF_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      },
+      "uniform_paradeuniform_01_ldf_decorated": {
+        "className": "I_E_Uniform_ParadeUniform_01_LDF_decorated_F",
+        "name": "Civilian",
+        "category": "Civilians",
+        "subCategory": "Men"
+      }
+    }
+  }
+}

@@ -1,0 +1,651 @@
+{
+  "acc": {
+    "esd": {
+      "01_flashlight": {
+        "className": "acc_esd_01_flashlight",
+        "name": "SD Flashlight"
+      }
+    },
+    "flashlight": {
+      "base": {
+        "className": "acc_flashlight",
+        "name": "Flashlight"
+      },
+      "pistol": {
+        "className": "acc_flashlight_pistol",
+        "name": "Pistol Flashlight"
+      },
+      "smg_01": {
+        "className": "acc_flashlight_smg_01",
+        "name": "Flashlight"
+      }
+    },
+    "pointer": {
+      "ir": {
+        "className": "acc_pointer_IR",
+        "name": "IR Laser Pointer"
+      }
+    }
+  },
+  "b": {
+    "uavterminal": {
+      "base": {
+        "className": "B_UavTerminal",
+        "name": "UAV Terminal [NATO]"
+      }
+    }
+  },
+  "bipod": {
+    "01": {
+      "f_blk": {
+        "className": "bipod_01_F_blk",
+        "name": "Bipod (Black) [NATO]"
+      },
+      "f_khk": {
+        "className": "bipod_01_F_khk",
+        "name": "Bipod (Khaki) [NATO]"
+      },
+      "f_mtp": {
+        "className": "bipod_01_F_mtp",
+        "name": "Bipod (MTP) [NATO]"
+      },
+      "f_snd": {
+        "className": "bipod_01_F_snd",
+        "name": "Bipod (Sand) [NATO]"
+      }
+    },
+    "02": {
+      "f_arid": {
+        "className": "bipod_02_F_arid",
+        "name": "Bipod (Arid) [Spetsnaz]"
+      },
+      "f_blk": {
+        "className": "bipod_02_F_blk",
+        "name": "Bipod (Black) [CSAT]"
+      },
+      "f_hex": {
+        "className": "bipod_02_F_hex",
+        "name": "Bipod (Hex) [CSAT]"
+      },
+      "f_lush": {
+        "className": "bipod_02_F_lush",
+        "name": "Bipod (Lush) [Spetsnaz]"
+      },
+      "f_tan": {
+        "className": "bipod_02_F_tan",
+        "name": "Bipod (Tan) [CSAT]"
+      }
+    },
+    "03": {
+      "f_blk": {
+        "className": "bipod_03_F_blk",
+        "name": "Bipod (Black) [AAF]"
+      },
+      "f_oli": {
+        "className": "bipod_03_F_oli",
+        "name": "Bipod (Olive) [AAF]"
+      }
+    }
+  },
+  "c": {
+    "uavterminal": {
+      "base": {
+        "className": "C_UavTerminal",
+        "name": "UAV Terminal [Civilians]"
+      }
+    }
+  },
+  "chemicaldetector": {
+    "01": {
+      "base": {
+        "className": "ChemicalDetector_01_base_F"
+      },
+      "black": {
+        "className": "ChemicalDetector_01_black_F",
+        "name": "Chemical Detector (Cover, Black)"
+      },
+      "olive": {
+        "className": "ChemicalDetector_01_olive_F",
+        "name": "Chemical Detector (Cover, Olive)"
+      },
+      "tan": {
+        "className": "ChemicalDetector_01_tan_F",
+        "name": "Chemical Detector (Cover, Tan)"
+      },
+      "watch": {
+        "className": "ChemicalDetector_01_watch_F",
+        "name": "Chemical Detector"
+      }
+    }
+  },
+  "i": {
+    "e": {
+      "uavterminal": {
+        "className": "I_E_UavTerminal",
+        "name": "UAV Terminal [LDF]"
+      }
+    },
+    "uavterminal": {
+      "base": {
+        "className": "I_UavTerminal",
+        "name": "UAV Terminal [AAF]"
+      }
+    }
+  },
+  "integrated": {
+    "nvg": {
+      "base": {
+        "className": "Integrated_NVG_F",
+        "name": "NV Goggles (Brown)"
+      },
+      "ti_0": {
+        "className": "Integrated_NVG_TI_0_F",
+        "name": "NV Goggles (Brown)"
+      },
+      "ti_1": {
+        "className": "Integrated_NVG_TI_1_F",
+        "name": "NV Goggles (Brown)"
+      }
+    }
+  },
+  "item": {
+    "antidotekit": {
+      "01": {
+        "className": "Item_AntidoteKit_01_F",
+        "name": "Antidote Kit"
+      }
+    },
+    "deconkit": {
+      "01": {
+        "className": "Item_DeconKit_01_F",
+        "name": "Decon Kit"
+      }
+    }
+  },
+  "laserdesignator": {
+    "01": {
+      "khk": {
+        "className": "Laserdesignator_01_khk_F",
+        "name": "Laser Designator (Khaki)"
+      }
+    },
+    "02": {
+      "base": {
+        "className": "Laserdesignator_02",
+        "name": "Laser Designator (Hex)"
+      },
+      "ghex": {
+        "className": "Laserdesignator_02_ghex_F",
+        "name": "Laser Designator (Green Hex)"
+      }
+    },
+    "03": {
+      "base": {
+        "className": "Laserdesignator_03",
+        "name": "Laser Designator (Olive)"
+      }
+    }
+  },
+  "muzzle": {
+    "antenna": {
+      "01": {
+        "className": "muzzle_antenna_01_f",
+        "name": "SD Military Antenna (78-89 MHz)"
+      },
+      "02": {
+        "className": "muzzle_antenna_02_f",
+        "name": "SD Experimental Antenna (390-500 MHz)"
+      },
+      "03": {
+        "className": "muzzle_antenna_03_f",
+        "name": "SD Jammer Antenna (433 MHz)"
+      },
+      "test_01": {
+        "className": "muzzle_antenna_test_01",
+        "name": "Antenna Test 01"
+      }
+    },
+    "snds": {
+      "570": {
+        "className": "muzzle_snds_570",
+        "name": "Sound Suppressor (5.7 mm)"
+      },
+      "338_black": {
+        "className": "muzzle_snds_338_black",
+        "name": "Sound Suppressor (.338, Black)"
+      },
+      "338_green": {
+        "className": "muzzle_snds_338_green",
+        "name": "Sound Suppressor (.338, Green)"
+      },
+      "338_sand": {
+        "className": "muzzle_snds_338_sand",
+        "name": "Sound Suppressor (.338, Sand)"
+      },
+      "58_blk": {
+        "className": "muzzle_snds_58_blk_F",
+        "name": "Stealth Sound Suppressor (5.8 mm, Black)"
+      },
+      "58_ghex": {
+        "className": "muzzle_snds_58_ghex_F",
+        "name": "Stealth Sound Suppressor (5.8 mm, Green Hex)"
+      },
+      "58_hex": {
+        "className": "muzzle_snds_58_hex_F",
+        "name": "Stealth Sound Suppressor (5.8 mm, Hex)"
+      },
+      "58_wdm": {
+        "className": "muzzle_snds_58_wdm_F",
+        "name": "Stealth Sound Suppressor (5.8 mm, Green Hex)"
+      },
+      "65_ti_blk": {
+        "className": "muzzle_snds_65_TI_blk_F",
+        "name": "Stealth Sound Suppressor (6.5 mm, Black)"
+      },
+      "65_ti_ghex": {
+        "className": "muzzle_snds_65_TI_ghex_F",
+        "name": "Stealth Sound Suppressor (6.5 mm, Green Hex)"
+      },
+      "65_ti_hex": {
+        "className": "muzzle_snds_65_TI_hex_F",
+        "name": "Stealth Sound Suppressor (6.5 mm, Hex)"
+      },
+      "93mmg": {
+        "className": "muzzle_snds_93mmg",
+        "name": "Sound Suppressor (9.3mm, Black)"
+      },
+      "93mmg_tan": {
+        "className": "muzzle_snds_93mmg_tan",
+        "name": "Sound Suppressor (9.3mm, Tan)"
+      },
+      "acp": {
+        "className": "muzzle_snds_acp",
+        "name": "Sound Suppressor (.45 ACP)"
+      },
+      "b": {
+        "className": "muzzle_snds_B",
+        "name": "Sound Suppressor (7.62 mm)"
+      },
+      "b_arid": {
+        "className": "muzzle_snds_B_arid_F",
+        "name": "Sound Suppressor (7.62 mm, Arid)"
+      },
+      "b_khk": {
+        "className": "muzzle_snds_B_khk_F",
+        "name": "Sound Suppressor (7.62 mm, Khaki)"
+      },
+      "b_lush": {
+        "className": "muzzle_snds_B_lush_F",
+        "name": "Sound Suppressor (7.62 mm, Lush)"
+      },
+      "b_snd": {
+        "className": "muzzle_snds_B_snd_F",
+        "name": "Sound Suppressor (7.62 mm, Sand)"
+      },
+      "h": {
+        "className": "muzzle_snds_H",
+        "name": "Sound Suppressor (6.5 mm)"
+      },
+      "h_khk": {
+        "className": "muzzle_snds_H_khk_F",
+        "name": "Sound Suppressor (6.5 mm, Khaki)"
+      },
+      "h_mg": {
+        "className": "muzzle_snds_H_MG",
+        "name": "Sound Suppressor LMG (6.5 mm)"
+      },
+      "h_mg_blk": {
+        "className": "muzzle_snds_H_MG_blk_F",
+        "name": "Sound Suppressor LMG (6.5 mm, Black)"
+      },
+      "h_mg_khk": {
+        "className": "muzzle_snds_H_MG_khk_F",
+        "name": "Sound Suppressor LMG (6.5 mm, Khaki)"
+      },
+      "h_snd": {
+        "className": "muzzle_snds_H_snd_F",
+        "name": "Sound Suppressor (6.5 mm, Sand)"
+      },
+      "h_sw": {
+        "className": "muzzle_snds_H_SW",
+        "name": "Sound Suppressor LMG (6.5 mm)"
+      },
+      "l": {
+        "className": "muzzle_snds_L",
+        "name": "Sound Suppressor (9 mm)"
+      },
+      "m": {
+        "className": "muzzle_snds_M",
+        "name": "Sound Suppressor (5.56 mm)"
+      },
+      "m_khk": {
+        "className": "muzzle_snds_m_khk_F",
+        "name": "Sound Suppressor (5.56 mm, Khaki)"
+      },
+      "m_snd": {
+        "className": "muzzle_snds_m_snd_F",
+        "name": "Sound Suppressor (5.56 mm, Sand)"
+      }
+    },
+    "tma": {
+      "65": {
+        "className": "muzzle_tma_65",
+        "name": "SIMCOM Adapter (6.5 mm)"
+      }
+    }
+  },
+  "nvgoggles": {
+    "indep": {
+      "base": {
+        "className": "NVGoggles_INDEP",
+        "name": "NV Goggles (Green)"
+      }
+    },
+    "opfor": {
+      "base": {
+        "className": "NVGoggles_OPFOR",
+        "name": "NV Goggles (Black)"
+      }
+    },
+    "tna": {
+      "base": {
+        "className": "NVGoggles_tna_F",
+        "name": "NV Goggles (Tropic)"
+      }
+    }
+  },
+  "nvgogglesb": {
+    "blk": {
+      "base": {
+        "className": "NVGogglesB_blk_F",
+        "name": "ENVG-II (Black)"
+      }
+    },
+    "grn": {
+      "base": {
+        "className": "NVGogglesB_grn_F",
+        "name": "ENVG-II (Green)"
+      }
+    },
+    "gry": {
+      "base": {
+        "className": "NVGogglesB_gry_F",
+        "name": "ENVG-II (Grey)"
+      }
+    }
+  },
+  "o": {
+    "nvgoggles": {
+      "ghex": {
+        "className": "O_NVGoggles_ghex_F",
+        "name": "Compact NVG (Green Hex)"
+      },
+      "grn": {
+        "className": "O_NVGoggles_grn_F",
+        "name": "Compact NVG (Green)"
+      },
+      "hex": {
+        "className": "O_NVGoggles_hex_F",
+        "name": "Compact NVG (Hex)"
+      },
+      "urb": {
+        "className": "O_NVGoggles_urb_F",
+        "name": "Compact NVG (Urban)"
+      }
+    },
+    "uavterminal": {
+      "base": {
+        "className": "O_UavTerminal",
+        "name": "UAV Terminal [CSAT]"
+      }
+    }
+  },
+  "optic": {
+    "aco": {
+      "base": {
+        "className": "optic_Aco",
+        "name": "ACO (Red)"
+      },
+      "grn": {
+        "className": "optic_ACO_grn",
+        "name": "ACO (Green)"
+      },
+      "grn_smg": {
+        "className": "optic_ACO_grn_smg",
+        "name": "ACO SMG (Green)"
+      },
+      "smg": {
+        "className": "optic_Aco_smg",
+        "name": "ACO SMG (Red)"
+      }
+    },
+    "ams": {
+      "base": {
+        "className": "optic_AMS",
+        "name": "AMS (Black)"
+      },
+      "khk": {
+        "className": "optic_AMS_khk",
+        "name": "AMS (Khaki)"
+      },
+      "snd": {
+        "className": "optic_AMS_snd",
+        "name": "AMS (Sand)"
+      }
+    },
+    "arco": {
+      "base": {
+        "className": "optic_Arco",
+        "name": "ARCO"
+      },
+      "ak_arid": {
+        "className": "optic_Arco_AK_arid_F",
+        "name": "ARCO AK (Arid)"
+      },
+      "ak_blk": {
+        "className": "optic_Arco_AK_blk_F",
+        "name": "ARCO AK (Black)"
+      },
+      "ak_lush": {
+        "className": "optic_Arco_AK_lush_F",
+        "name": "ARCO AK (Lush)"
+      },
+      "arid": {
+        "className": "optic_Arco_arid_F",
+        "name": "ARCO (Arid)"
+      },
+      "blk": {
+        "className": "optic_Arco_blk_F",
+        "name": "ARCO (Black)"
+      },
+      "ghex": {
+        "className": "optic_Arco_ghex_F",
+        "name": "ARCO (Green Hex)"
+      },
+      "lush": {
+        "className": "optic_Arco_lush_F",
+        "name": "ARCO (Lush)"
+      }
+    },
+    "dms": {
+      "base": {
+        "className": "optic_DMS",
+        "name": "DMS"
+      },
+      "ghex": {
+        "className": "optic_DMS_ghex_F",
+        "name": "DMS (Green Hex)"
+      },
+      "weathered": {
+        "className": "optic_DMS_weathered_F",
+        "name": "DMS (Old)"
+      },
+      "weathered_kir": {
+        "className": "optic_DMS_weathered_Kir_F",
+        "name": "DMS Kir (Old)"
+      }
+    },
+    "erco": {
+      "blk": {
+        "className": "optic_ERCO_blk_F",
+        "name": "ERCO (Black)"
+      },
+      "khk": {
+        "className": "optic_ERCO_khk_F",
+        "name": "ERCO (Khaki)"
+      },
+      "snd": {
+        "className": "optic_ERCO_snd_F",
+        "name": "ERCO (Sand)"
+      }
+    },
+    "hamr": {
+      "base": {
+        "className": "optic_Hamr",
+        "name": "RCO"
+      },
+      "khk": {
+        "className": "optic_Hamr_khk_F",
+        "name": "RCO (Khaki)"
+      }
+    },
+    "holosight": {
+      "base": {
+        "className": "optic_Holosight",
+        "name": "Mk17 Holosight"
+      },
+      "arid": {
+        "className": "optic_Holosight_arid_F",
+        "name": "Mk17 Holosight (Arid)"
+      },
+      "blk": {
+        "className": "optic_Holosight_blk_F",
+        "name": "Mk17 Holosight (Black)"
+      },
+      "khk": {
+        "className": "optic_Holosight_khk_F",
+        "name": "Mk17 Holosight (Khaki)"
+      },
+      "lush": {
+        "className": "optic_Holosight_lush_F",
+        "name": "Mk17 Holosight (Lush)"
+      },
+      "smg": {
+        "className": "optic_Holosight_smg",
+        "name": "Mk17 Holosight SMG"
+      },
+      "smg_blk": {
+        "className": "optic_Holosight_smg_blk_F",
+        "name": "Mk17 Holosight SMG (Black)"
+      },
+      "smg_khk": {
+        "className": "optic_Holosight_smg_khk_F",
+        "name": "Mk17 Holosight SMG (Khaki)"
+      }
+    },
+    "ico": {
+      "01_black": {
+        "className": "optic_ico_01_black_f",
+        "name": "Promet Modular Sight (Black)"
+      },
+      "01_camo": {
+        "className": "optic_ico_01_camo_f",
+        "name": "Promet Modular Sight (Camo)"
+      },
+      "01": {
+        "className": "optic_ico_01_f",
+        "name": "Promet Modular Sight"
+      },
+      "01_sand": {
+        "className": "optic_ico_01_sand_f",
+        "name": "Promet Modular Sight (Sand)"
+      }
+    },
+    "khs": {
+      "blk": {
+        "className": "optic_KHS_blk",
+        "name": "Kahlia (Black)"
+      },
+      "hex": {
+        "className": "optic_KHS_hex",
+        "name": "Kahlia (Hex)"
+      },
+      "old": {
+        "className": "optic_KHS_old",
+        "name": "Kahlia (Old)"
+      },
+      "tan": {
+        "className": "optic_KHS_tan",
+        "name": "Kahlia (Tan)"
+      }
+    },
+    "lrps": {
+      "base": {
+        "className": "optic_LRPS",
+        "name": "LRPS"
+      },
+      "ghex": {
+        "className": "optic_LRPS_ghex_F",
+        "name": "LRPS (Green Hex)"
+      },
+      "tna": {
+        "className": "optic_LRPS_tna_F",
+        "name": "LRPS (Tropic)"
+      }
+    },
+    "mrco": {
+      "base": {
+        "className": "optic_MRCO",
+        "name": "MRCO"
+      }
+    },
+    "mrd": {
+      "base": {
+        "className": "optic_MRD",
+        "name": "MRD"
+      },
+      "black": {
+        "className": "optic_MRD_black",
+        "name": "MRD (Black)"
+      }
+    },
+    "nightstalker": {
+      "base": {
+        "className": "optic_Nightstalker",
+        "name": "Nightstalker"
+      }
+    },
+    "nvs": {
+      "base": {
+        "className": "optic_NVS",
+        "name": "NVS"
+      }
+    },
+    "sos": {
+      "base": {
+        "className": "optic_SOS",
+        "name": "MOS"
+      },
+      "khk": {
+        "className": "optic_SOS_khk_F",
+        "name": "MOS (Khaki)"
+      }
+    },
+    "tws": {
+      "base": {
+        "className": "optic_tws",
+        "name": "TWS"
+      },
+      "mg": {
+        "className": "optic_tws_mg",
+        "name": "TWS MG"
+      }
+    },
+    "yorris": {
+      "base": {
+        "className": "optic_Yorris",
+        "name": "Yorris J2"
+      }
+    }
+  }
+}

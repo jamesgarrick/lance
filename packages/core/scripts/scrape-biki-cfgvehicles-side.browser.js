@@ -1,11 +1,19 @@
 (() => {
   /**
-   * Browser-console scraper for BIKI cfg list pages.
+   * Browser-console scraper for BIKI CfgVehicles side pages.
    *
    * Usage:
-   * 1. Open a page like https://community.bistudio.com/wiki/Arma_3:_CfgWeapons_Equipment
+   * 1. Open a page like https://community.bistudio.com/wiki/Arma_3:_CfgVehicles_WEST
    * 2. Paste this script into devtools console.
    * 3. A JSON download will start automatically.
+   *
+   * Extracted leaf shape:
+   * {
+   *   className: string,
+   *   name?: string,
+   *   category?: string,
+   *   subCategory?: string
+   * }
    */
 
   const rows = document.querySelectorAll("table.wikitable tr");
@@ -16,8 +24,15 @@
   const headerRow = rows[0];
   const headerCells = headerRow?.querySelectorAll("th") ?? [];
   const headerLabels = Array.from(headerCells, (cell) => cell.textContent?.trim().toLowerCase() ?? "");
-  const classNameColumn = headerLabels.findIndex((label) => label === "classname" || label === "class" || label === "class name");
+
+  const classNameColumn = headerLabels.findIndex((label) =>
+    label === "classname" || label === "class" || label === "class name",
+  );
   const nameColumn = headerLabels.findIndex((label) => label === "name" || label === "display name");
+  const categoryColumn = headerLabels.findIndex((label) => label === "category");
+  const subCategoryColumn = headerLabels.findIndex((label) =>
+    label === "subcategory" || label === "sub category" || label === "sub-category",
+  );
 
   if (classNameColumn === -1) {
     throw new Error("Could not find a 'Classname' column in the first wikitable.");
@@ -27,11 +42,11 @@
   const cfgData = {};
 
   /**
-   * @param {string} className
+   * @param {string} value
    * @returns {string[]}
    */
-  function normalizeParts(className) {
-    return className
+  function normalizeParts(value) {
+    return value
       .trim()
       .split("_")
       .map((part) => part.trim())
@@ -39,9 +54,18 @@
   }
 
   /**
+   * @param {Element | undefined} cell
+   * @returns {string | undefined}
+   */
+  function readCell(cell) {
+    const text = cell?.textContent?.replace(/\s+/g, " ").trim();
+    return text ? text : undefined;
+  }
+
+  /**
    * @param {Record<string, unknown>} target
    * @param {string[]} path
-   * @param {{ className: string, name?: string }} leaf
+   * @param {{ className: string, name?: string, category?: string, subCategory?: string }} leaf
    */
   function assignPath(target, path, leaf) {
     let cursor = target;
@@ -55,6 +79,7 @@
       if (typeof next !== "object" || next === null || Array.isArray(next)) {
         throw new Error(`Path collision while assigning ${leaf.className} at "${path.join(".")}"`);
       }
+
       cursor = /** @type {Record<string, unknown>} */ (next);
     }
 
@@ -65,10 +90,8 @@
     const cells = row.querySelectorAll("td");
     if (cells.length <= classNameColumn) continue;
 
-    const className = cells[classNameColumn]?.textContent?.trim();
+    const className = readCell(cells[classNameColumn]);
     if (!className) continue;
-
-    const name = nameColumn >= 0 ? cells[nameColumn]?.textContent?.trim() || undefined : undefined;
 
     const parts = normalizeParts(className);
     if (parts.length < 2) continue;
@@ -82,10 +105,16 @@
     }
 
     const variant = variantParts.length > 0 ? variantParts.join("_").toLowerCase() : "base";
-    assignPath(cfgData, [prefix, family, variant], { className, name });
+
+    assignPath(cfgData, [prefix, family, variant], {
+      className,
+      name: nameColumn >= 0 ? readCell(cells[nameColumn]) : undefined,
+      category: categoryColumn >= 0 ? readCell(cells[categoryColumn]) : undefined,
+      subCategory: subCategoryColumn >= 0 ? readCell(cells[subCategoryColumn]) : undefined,
+    });
   }
 
-  const pageSlug = location.pathname.split("/").filter(Boolean).at(-1) ?? "cfg-data";
+  const pageSlug = location.pathname.split("/").filter(Boolean).at(-1) ?? "cfgvehicles-side";
   const fileName = `${pageSlug.replace(/[^a-z0-9]+/gi, "_").toLowerCase()}.json`;
   const jsonOutput = JSON.stringify(cfgData, null, 2);
 

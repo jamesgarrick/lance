@@ -1,0 +1,1755 @@
+{
+  "i": {
+    "targetsoldier": {
+      "base": {
+        "className": "I_TargetSoldier",
+        "name": "Invisible Target Soldier",
+        "category": "AAF",
+        "subCategory": "Targets"
+      }
+    },
+    "g": {
+      "soldier": {
+        "className": "I_G_Soldier_F",
+        "name": "Rifleman",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_lite": {
+        "className": "I_G_Soldier_lite_F",
+        "name": "Rifleman (Light)",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_sl": {
+        "className": "I_G_Soldier_SL_F",
+        "name": "Squad Leader",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_tl": {
+        "className": "I_G_Soldier_TL_F",
+        "name": "Team Leader",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_ar": {
+        "className": "I_G_Soldier_AR_F",
+        "name": "Autorifleman",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "medic": {
+        "className": "I_G_medic_F",
+        "name": "Combat Life Saver",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "engineer": {
+        "className": "I_G_engineer_F",
+        "name": "Engineer",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_exp": {
+        "className": "I_G_Soldier_exp_F",
+        "name": "Explosive Specialist",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_gl": {
+        "className": "I_G_Soldier_GL_F",
+        "name": "Grenadier",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_m": {
+        "className": "I_G_Soldier_M_F",
+        "name": "Marksman",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_lat": {
+        "className": "I_G_Soldier_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_a": {
+        "className": "I_G_Soldier_A_F",
+        "name": "Ammo Bearer",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "officer": {
+        "className": "I_G_officer_F",
+        "name": "Officer",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_unarmed": {
+        "className": "I_G_Soldier_unarmed_F",
+        "name": "Rifleman (Unarmed)",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "survivor": {
+        "className": "I_G_Survivor_F",
+        "name": "Survivor",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "soldier_universal": {
+        "className": "I_G_Soldier_universal_F",
+        "name": "Soldier",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "sharpshooter": {
+        "className": "I_G_Sharpshooter_F",
+        "name": "Sharpshooter",
+        "category": "FIA",
+        "subCategory": "Men"
+      },
+      "hmg_02": {
+        "className": "I_G_HMG_02_F",
+        "name": "M2 HMG .50",
+        "category": "FIA",
+        "subCategory": "Turrets"
+      },
+      "hmg_02_high": {
+        "className": "I_G_HMG_02_high_F",
+        "name": "M2 HMG .50 (Raised)",
+        "category": "FIA",
+        "subCategory": "Turrets"
+      },
+      "mortar_01": {
+        "className": "I_G_Mortar_01_F",
+        "name": "Mk6 Mortar",
+        "category": "FIA",
+        "subCategory": "Turrets"
+      },
+      "boat_transport_01": {
+        "className": "I_G_Boat_Transport_01_F",
+        "name": "Assault Boat",
+        "category": "FIA",
+        "subCategory": "Boats"
+      },
+      "offroad_01_repair": {
+        "className": "I_G_Offroad_01_repair_F",
+        "name": "Offroad (Repair)",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "offroad_01": {
+        "className": "I_G_Offroad_01_F",
+        "name": "Offroad",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "offroad_01_at": {
+        "className": "I_G_Offroad_01_AT_F",
+        "name": "Offroad (AT)",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "offroad_01_armed": {
+        "className": "I_G_Offroad_01_armed_F",
+        "name": "Offroad (HMG)",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "quadbike_01": {
+        "className": "I_G_Quadbike_01_F",
+        "name": "Quad Bike",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "van_01_transport": {
+        "className": "I_G_Van_01_transport_F",
+        "name": "Truck",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "van_01_fuel": {
+        "className": "I_G_Van_01_fuel_F",
+        "name": "Fuel Truck",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "boat_transport_02": {
+        "className": "I_G_Boat_Transport_02_F",
+        "name": "RHIB",
+        "category": "FIA",
+        "subCategory": "Boats"
+      },
+      "van_02_transport": {
+        "className": "I_G_Van_02_transport_F",
+        "name": "Van Transport",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "van_02_vehicle": {
+        "className": "I_G_Van_02_vehicle_F",
+        "name": "Van (Cargo)",
+        "category": "FIA",
+        "subCategory": "Cars"
+      },
+      "soldier_lat2": {
+        "className": "I_G_Soldier_LAT2_F",
+        "name": "Rifleman (Light AT)",
+        "category": "FIA",
+        "subCategory": "Men"
+      }
+    },
+    "soldier": {
+      "base": {
+        "className": "I_soldier_F",
+        "name": "Rifleman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "lite": {
+        "className": "I_Soldier_lite_F",
+        "name": "Rifleman (Light)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "a": {
+        "className": "I_Soldier_A_F",
+        "name": "Ammo Bearer",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "gl": {
+        "className": "I_Soldier_GL_F",
+        "name": "Grenadier",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "ar": {
+        "className": "I_Soldier_AR_F",
+        "name": "Autorifleman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "sl": {
+        "className": "I_Soldier_SL_F",
+        "name": "Squad Leader",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "tl": {
+        "className": "I_Soldier_TL_F",
+        "name": "Team Leader",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "m": {
+        "className": "I_Soldier_M_F",
+        "name": "Marksman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "lat": {
+        "className": "I_Soldier_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "at": {
+        "className": "I_Soldier_AT_F",
+        "name": "Missile Specialist (AT)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "aa": {
+        "className": "I_Soldier_AA_F",
+        "name": "Missile Specialist (AA)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "repair": {
+        "className": "I_Soldier_repair_F",
+        "name": "Repair Specialist",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "exp": {
+        "className": "I_Soldier_exp_F",
+        "name": "Explosive Specialist",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "uav": {
+        "className": "I_soldier_UAV_F",
+        "name": "UAV Operator",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "universal": {
+        "className": "I_Soldier_universal_F",
+        "name": "Soldier",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "unarmed": {
+        "className": "I_Soldier_unarmed_F",
+        "name": "Rifleman (Unarmed)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "aar": {
+        "className": "I_Soldier_AAR_F",
+        "name": "Asst. Autorifleman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "aat": {
+        "className": "I_Soldier_AAT_F",
+        "name": "Asst. Missile Specialist (AT)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "aaa": {
+        "className": "I_Soldier_AAA_F",
+        "name": "Asst. Missile Specialist (AA)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "vr": {
+        "className": "I_Soldier_VR_F",
+        "name": "VR Entity",
+        "category": "AAF",
+        "subCategory": "Men (Virtual Reality)"
+      },
+      "uav_06": {
+        "className": "I_soldier_UAV_06_F",
+        "name": "UAV Operator (AL-6)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "uav_06_medical": {
+        "className": "I_soldier_UAV_06_medical_F",
+        "name": "UAV Operator (AL-6, Medical)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "mine": {
+        "className": "I_soldier_mine_F",
+        "name": "Mine Specialist",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "lat2": {
+        "className": "I_Soldier_LAT2_F",
+        "name": "Rifleman (Light AT)",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "medic": {
+      "base": {
+        "className": "I_medic_F",
+        "name": "Combat Life Saver",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "engineer": {
+      "base": {
+        "className": "I_engineer_F",
+        "name": "Engineer",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "crew": {
+      "base": {
+        "className": "I_crew_F",
+        "name": "Crewman",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "helipilot": {
+      "base": {
+        "className": "I_helipilot_F",
+        "name": "Helicopter Pilot",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "pilot": {
+      "base": {
+        "className": "I_pilot_F",
+        "name": "Pilot",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "helicrew": {
+      "base": {
+        "className": "I_helicrew_F",
+        "name": "Helicopter Crew",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "officer": {
+      "base": {
+        "className": "I_officer_F",
+        "name": "Officer",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "parade": {
+        "className": "I_Officer_Parade_F",
+        "name": "Officer (Parade Dress)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "parade_veteran": {
+        "className": "I_Officer_Parade_Veteran_F",
+        "name": "Officer (Veteran, Parade Dress)",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "story": {
+      "colonel": {
+        "className": "I_Story_Colonel_F",
+        "name": "Akhanteros",
+        "category": "AAF",
+        "subCategory": "Men (Story)"
+      },
+      "officer_01": {
+        "className": "I_Story_Officer_01_F",
+        "name": "Major Gavras",
+        "category": "AAF",
+        "subCategory": "Men (Story)"
+      },
+      "crew": {
+        "className": "I_Story_Crew_F",
+        "name": "Kyros Kalogeros",
+        "category": "AAF",
+        "subCategory": "Men (Story)"
+      }
+    },
+    "survivor": {
+      "base": {
+        "className": "I_Survivor_F",
+        "name": "Survivor",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "diver": {
+      "base": {
+        "className": "I_diver_F",
+        "name": "Assault Diver",
+        "category": "AAF",
+        "subCategory": "Men (Special Forces)"
+      },
+      "exp": {
+        "className": "I_diver_exp_F",
+        "name": "Diver Explosive Specialist",
+        "category": "AAF",
+        "subCategory": "Men (Special Forces)"
+      },
+      "tl": {
+        "className": "I_diver_TL_F",
+        "name": "Diver Team Leader",
+        "category": "AAF",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "spotter": {
+      "base": {
+        "className": "I_Spotter_F",
+        "name": "Spotter",
+        "category": "AAF",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "sniper": {
+      "base": {
+        "className": "I_Sniper_F",
+        "name": "Sniper",
+        "category": "AAF",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "support": {
+      "mg": {
+        "className": "I_support_MG_F",
+        "name": "Gunner (HMG)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "gmg": {
+        "className": "I_support_GMG_F",
+        "name": "Gunner (GMG)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "mort": {
+        "className": "I_support_Mort_F",
+        "name": "Gunner (Mk6)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "amg": {
+        "className": "I_support_AMG_F",
+        "name": "Asst. Gunner (HMG/GMG)",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "amort": {
+        "className": "I_support_AMort_F",
+        "name": "Asst. Gunner (Mk6)",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "protagonist": {
+      "vr": {
+        "className": "I_Protagonist_VR_F",
+        "name": "VR Soldier",
+        "category": "AAF",
+        "subCategory": "Men (Virtual Reality)"
+      }
+    },
+    "ghillie": {
+      "lsh": {
+        "className": "I_ghillie_lsh_F",
+        "name": "Sniper (Lush)",
+        "category": "AAF",
+        "subCategory": "Men (Special Forces)"
+      },
+      "sard": {
+        "className": "I_ghillie_sard_F",
+        "name": "Sniper (Semi-Arid)",
+        "category": "AAF",
+        "subCategory": "Men (Special Forces)"
+      },
+      "ard": {
+        "className": "I_ghillie_ard_F",
+        "name": "Sniper (Arid)",
+        "category": "AAF",
+        "subCategory": "Men (Special Forces)"
+      }
+    },
+    "captain": {
+      "hladas": {
+        "className": "I_Captain_Hladas_F",
+        "name": "Dr. HladÃ­k",
+        "category": "AAF",
+        "subCategory": "Men (Story)"
+      }
+    },
+    "hmg": {
+      "01": {
+        "className": "I_HMG_01_F",
+        "name": "Mk30 HMG .50",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      },
+      "01_high": {
+        "className": "I_HMG_01_high_F",
+        "name": "Mk30 HMG .50 (Raised)",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      },
+      "01_a": {
+        "className": "I_HMG_01_A_F",
+        "name": "Mk30A HMG .50",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      },
+      "02": {
+        "className": "I_HMG_02_F",
+        "name": "M2 HMG .50",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      },
+      "02_high": {
+        "className": "I_HMG_02_high_F",
+        "name": "M2 HMG .50 (Raised)",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      }
+    },
+    "gmg": {
+      "01": {
+        "className": "I_GMG_01_F",
+        "name": "Mk32 GMG 20 mm",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      },
+      "01_high": {
+        "className": "I_GMG_01_high_F",
+        "name": "Mk32 GMG 20 mm (Raised)",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      },
+      "01_a": {
+        "className": "I_GMG_01_A_F",
+        "name": "Mk32A GMG 20 mm",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      }
+    },
+    "e": {
+      "hmg_02": {
+        "className": "I_E_HMG_02_F",
+        "name": "M2 HMG .50",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "hmg_02_high": {
+        "className": "I_E_HMG_02_high_F",
+        "name": "M2 HMG .50 (Raised)",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "offroad_01": {
+        "className": "I_E_Offroad_01_F",
+        "name": "Offroad",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "offroad_01_covered": {
+        "className": "I_E_Offroad_01_covered_F",
+        "name": "Offroad (Covered)",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "offroad_01_comms": {
+        "className": "I_E_Offroad_01_comms_F",
+        "name": "Offroad (Comms)",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "quadbike_01": {
+        "className": "I_E_Quadbike_01_F",
+        "name": "Quad Bike",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "truck_02": {
+        "className": "I_E_Truck_02_F",
+        "name": "Zamak Transport (Covered)",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "truck_02_transport": {
+        "className": "I_E_Truck_02_transport_F",
+        "name": "Zamak Transport",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "truck_02_fuel": {
+        "className": "I_E_Truck_02_fuel_F",
+        "name": "Zamak Fuel",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "truck_02_ammo": {
+        "className": "I_E_Truck_02_Ammo_F",
+        "name": "Zamak Ammo",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "truck_02_box": {
+        "className": "I_E_Truck_02_Box_F",
+        "name": "Zamak Repair",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "truck_02_medical": {
+        "className": "I_E_Truck_02_Medical_F",
+        "name": "Zamak Medical",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "truck_02_mrl": {
+        "className": "I_E_Truck_02_MRL_F",
+        "name": "Zamak MRL",
+        "category": "LDF",
+        "subCategory": "Artillery"
+      },
+      "ugv_01": {
+        "className": "I_E_UGV_01_F",
+        "name": "UGV Stomper",
+        "category": "LDF",
+        "subCategory": "Drones"
+      },
+      "ugv_01_rcws": {
+        "className": "I_E_UGV_01_rcws_F",
+        "name": "UGV Stomper RCWS",
+        "category": "LDF",
+        "subCategory": "Drones"
+      },
+      "ugv_02_science": {
+        "className": "I_E_UGV_02_Science_F",
+        "name": "ED-1E Roller",
+        "category": "LDF",
+        "subCategory": "Drones"
+      },
+      "ugv_02_demining": {
+        "className": "I_E_UGV_02_Demining_F",
+        "name": "ED-1D Pelter",
+        "category": "LDF",
+        "subCategory": "Drones"
+      },
+      "van_02_vehicle": {
+        "className": "I_E_Van_02_vehicle_F",
+        "name": "Van (Cargo)",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "van_02_transport": {
+        "className": "I_E_Van_02_transport_F",
+        "name": "Van Transport",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "van_02_transport_mp": {
+        "className": "I_E_Van_02_transport_MP_F",
+        "name": "Van Transport (MP)",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "van_02_medevac": {
+        "className": "I_E_Van_02_medevac_F",
+        "name": "Van (Ambulance)",
+        "category": "LDF",
+        "subCategory": "Cars"
+      },
+      "static_aa": {
+        "className": "I_E_Static_AA_F",
+        "name": "Static Titan Launcher (AA) [LDF]",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "static_at": {
+        "className": "I_E_Static_AT_F",
+        "name": "Static Titan Launcher (AT) [LDF]",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "gmg_01": {
+        "className": "I_E_GMG_01_F",
+        "name": "Mk32 GMG 20 mm",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "gmg_01_high": {
+        "className": "I_E_GMG_01_high_F",
+        "name": "Mk32 GMG 20 mm (Raised)",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "gmg_01_a": {
+        "className": "I_E_GMG_01_A_F",
+        "name": "Mk32A GMG 20 mm",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "hmg_01": {
+        "className": "I_E_HMG_01_F",
+        "name": "Mk30 HMG .50",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "hmg_01_high": {
+        "className": "I_E_HMG_01_high_F",
+        "name": "Mk30 HMG .50 (Raised)",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "hmg_01_a": {
+        "className": "I_E_HMG_01_A_F",
+        "name": "Mk30A HMG .50",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "mortar_01": {
+        "className": "I_E_Mortar_01_F",
+        "name": "Mk6 Mortar",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "radar_system_01": {
+        "className": "I_E_Radar_System_01_F",
+        "name": "AN/MPQ-105 Radar",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "sam_system_03": {
+        "className": "I_E_SAM_System_03_F",
+        "name": "MIM-145 Defender",
+        "category": "LDF",
+        "subCategory": "Turrets"
+      },
+      "heli_light_03_dynamicloadout": {
+        "className": "I_E_Heli_light_03_dynamicLoadout_F",
+        "name": "WY-55 Czapla",
+        "category": "LDF",
+        "subCategory": "Helicopters"
+      },
+      "heli_light_03_unarmed": {
+        "className": "I_E_Heli_light_03_unarmed_F",
+        "name": "WY-55 Czapla (Unarmed)",
+        "category": "LDF",
+        "subCategory": "Helicopters"
+      },
+      "uav_01": {
+        "className": "I_E_UAV_01_F",
+        "name": "AR-2 Darter",
+        "category": "LDF",
+        "subCategory": "Drones"
+      },
+      "uav_06": {
+        "className": "I_E_UAV_06_F",
+        "name": "AL-6 Pelican",
+        "category": "LDF",
+        "subCategory": "Drones"
+      },
+      "uav_06_medical": {
+        "className": "I_E_UAV_06_medical_F",
+        "name": "AL-6 Pelican (Medical)",
+        "category": "LDF",
+        "subCategory": "Drones"
+      },
+      "apc_tracked_03_cannon": {
+        "className": "I_E_APC_tracked_03_cannon_F",
+        "name": "FV-720 Odyniec",
+        "category": "LDF",
+        "subCategory": "APCs"
+      },
+      "uniform_01": {
+        "className": "I_E_Uniform_01_F",
+        "name": "Rifleman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "uniform_01_tanktop": {
+        "className": "I_E_Uniform_01_tanktop_F",
+        "name": "Rifleman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "uniform_01_shortsleeve": {
+        "className": "I_E_Uniform_01_shortsleeve_F",
+        "name": "Rifleman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "uniform_01_officer": {
+        "className": "I_E_Uniform_01_officer_F",
+        "name": "Rifleman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "uniform_01_sweater": {
+        "className": "I_E_Uniform_01_sweater_F",
+        "name": "Rifleman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "uniform_01_coveralls": {
+        "className": "I_E_Uniform_01_coveralls_F",
+        "name": "Rifleman",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "soldier": {
+        "className": "I_E_Soldier_F",
+        "name": "Rifleman",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_unarmed": {
+        "className": "I_E_Soldier_unarmed_F",
+        "name": "Rifleman (Unarmed)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_a": {
+        "className": "I_E_Soldier_A_F",
+        "name": "Ammo Bearer",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_aar": {
+        "className": "I_E_Soldier_AAR_F",
+        "name": "Asst. Autorifleman",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_ar": {
+        "className": "I_E_Soldier_AR_F",
+        "name": "Autorifleman",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_lite": {
+        "className": "I_E_Soldier_lite_F",
+        "name": "Rifleman (Light)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_gl": {
+        "className": "I_E_Soldier_GL_F",
+        "name": "Grenadier",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_m": {
+        "className": "I_E_soldier_M_F",
+        "name": "Marksman",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "officer": {
+        "className": "I_E_Officer_F",
+        "name": "Officer",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_sl": {
+        "className": "I_E_Soldier_SL_F",
+        "name": "Squad Leader",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_tl": {
+        "className": "I_E_Soldier_TL_F",
+        "name": "Team Leader",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "survivor": {
+        "className": "I_E_Survivor_F",
+        "name": "Survivor",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "radiooperator": {
+        "className": "I_E_RadioOperator_F",
+        "name": "Radio Operator",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_aa": {
+        "className": "I_E_Soldier_AA_F",
+        "name": "Missile Specialist (AA)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_at": {
+        "className": "I_E_Soldier_AT_F",
+        "name": "Missile Specialist (AT)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_lat": {
+        "className": "I_E_Soldier_LAT_F",
+        "name": "Rifleman (AT)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_lat2": {
+        "className": "I_E_Soldier_LAT2_F",
+        "name": "Rifleman (Light AT)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_aaa": {
+        "className": "I_E_Soldier_AAA_F",
+        "name": "Asst. Missile Specialist (AA)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_aat": {
+        "className": "I_E_Soldier_AAT_F",
+        "name": "Asst. Missile Specialist (AT)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "support_gmg": {
+        "className": "I_E_Support_GMG_F",
+        "name": "Gunner (GMG)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "support_mg": {
+        "className": "I_E_Support_MG_F",
+        "name": "Gunner (HMG)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "support_mort": {
+        "className": "I_E_Support_Mort_F",
+        "name": "Gunner (Mk6)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "support_amg": {
+        "className": "I_E_Support_AMG_F",
+        "name": "Asst. Gunner (HMG/GMG)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "support_amort": {
+        "className": "I_E_Support_AMort_F",
+        "name": "Asst. Gunner (Mk6)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_pathfinder": {
+        "className": "I_E_Soldier_Pathfinder_F",
+        "name": "Pathfinder",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "engineer": {
+        "className": "I_E_Engineer_F",
+        "name": "Engineer",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_exp": {
+        "className": "I_E_Soldier_Exp_F",
+        "name": "Explosive Specialist",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_mine": {
+        "className": "I_E_soldier_Mine_F",
+        "name": "Mine Specialist",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_repair": {
+        "className": "I_E_Soldier_Repair_F",
+        "name": "Repair Specialist",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_cbrn": {
+        "className": "I_E_Soldier_CBRN_F",
+        "name": "CBRN Specialist",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "scientist": {
+        "className": "I_E_Scientist_F",
+        "name": "Military Scientist",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "scientist_unarmed": {
+        "className": "I_E_Scientist_Unarmed_F",
+        "name": "Military Scientist (Unarmed)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "medic": {
+        "className": "I_E_Medic_F",
+        "name": "Combat Life Saver",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_mp": {
+        "className": "I_E_Soldier_MP_F",
+        "name": "Military Police Officer",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "crew": {
+        "className": "I_E_Crew_F",
+        "name": "Crewman",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "helipilot": {
+        "className": "I_E_Helipilot_F",
+        "name": "Helicopter Pilot",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "helicrew": {
+        "className": "I_E_Helicrew_F",
+        "name": "Helicopter Crew",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_uav": {
+        "className": "I_E_Soldier_UAV_F",
+        "name": "UAV Operator",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_uav_06": {
+        "className": "I_E_soldier_UAV_06_F",
+        "name": "UAV Operator (AL-6)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_uav_06_medical": {
+        "className": "I_E_soldier_UAV_06_medical_F",
+        "name": "UAV Operator (AL-6, Medical)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_ugv_02_science": {
+        "className": "I_E_soldier_UGV_02_Science_F",
+        "name": "UGV Operator (ED-1E)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_ugv_02_demining": {
+        "className": "I_E_soldier_UGV_02_Demining_F",
+        "name": "UGV Operator (ED-1D)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "soldier_universal": {
+        "className": "I_E_Soldier_universal_F",
+        "name": "Soldier",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "officer_parade": {
+        "className": "I_E_Officer_Parade_F",
+        "name": "Officer (Parade Dress)",
+        "category": "LDF",
+        "subCategory": "Men"
+      },
+      "officer_parade_veteran": {
+        "className": "I_E_Officer_Parade_Veteran_F",
+        "name": "Officer (Veteran, Parade Dress)",
+        "category": "LDF",
+        "subCategory": "Men"
+      }
+    },
+    "c": {
+      "hmg_02": {
+        "className": "I_C_HMG_02_F",
+        "name": "M2 HMG .50",
+        "category": "Syndikat",
+        "subCategory": "Turrets"
+      },
+      "hmg_02_high": {
+        "className": "I_C_HMG_02_high_F",
+        "name": "M2 HMG .50 (Raised)",
+        "category": "Syndikat",
+        "subCategory": "Turrets"
+      },
+      "offroad_02_unarmed": {
+        "className": "I_C_Offroad_02_unarmed_F",
+        "name": "MB 4WD",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "offroad_02_unarmed_brown": {
+        "className": "I_C_Offroad_02_unarmed_brown_F",
+        "name": "MB 4WD (Brown)",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "offroad_02_unarmed_olive": {
+        "className": "I_C_Offroad_02_unarmed_olive_F",
+        "name": "MB 4WD (Olive)",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "offroad_02_lmg": {
+        "className": "I_C_Offroad_02_LMG_F",
+        "name": "MB 4WD (LMG)",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "offroad_02_at": {
+        "className": "I_C_Offroad_02_AT_F",
+        "name": "MB 4WD (AT)",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "van_01_transport": {
+        "className": "I_C_Van_01_transport_F",
+        "name": "Truck",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "van_01_transport_brown": {
+        "className": "I_C_Van_01_transport_brown_F",
+        "name": "Truck (Brown)",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "van_01_transport_olive": {
+        "className": "I_C_Van_01_transport_olive_F",
+        "name": "Truck (Olive)",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "heli_light_01_civil": {
+        "className": "I_C_Heli_Light_01_civil_F",
+        "name": "M-900",
+        "category": "Syndikat",
+        "subCategory": "Helicopters"
+      },
+      "plane_civil_01": {
+        "className": "I_C_Plane_Civil_01_F",
+        "name": "Caesar BTT",
+        "category": "Syndikat",
+        "subCategory": "Planes"
+      },
+      "boat_transport_01": {
+        "className": "I_C_Boat_Transport_01_F",
+        "name": "Assault Boat",
+        "category": "Syndikat",
+        "subCategory": "Boats"
+      },
+      "boat_transport_02": {
+        "className": "I_C_Boat_Transport_02_F",
+        "name": "RHIB",
+        "category": "Syndikat",
+        "subCategory": "Boats"
+      },
+      "soldier_para_1": {
+        "className": "I_C_Soldier_Para_1_F",
+        "name": "Soldier (Rifle)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_para_2": {
+        "className": "I_C_Soldier_Para_2_F",
+        "name": "Enforcer (Rifle)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_para_3": {
+        "className": "I_C_Soldier_Para_3_F",
+        "name": "Militiaman (Medikit)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_para_4": {
+        "className": "I_C_Soldier_Para_4_F",
+        "name": "Oppressor (Machine Gun)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_para_5": {
+        "className": "I_C_Soldier_Para_5_F",
+        "name": "Specialist (Launcher)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_para_6": {
+        "className": "I_C_Soldier_Para_6_F",
+        "name": "Raider (UGL)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_para_7": {
+        "className": "I_C_Soldier_Para_7_F",
+        "name": "Deserter (Rifle)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_para_8": {
+        "className": "I_C_Soldier_Para_8_F",
+        "name": "Saboteur (Explosives)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_bandit_1": {
+        "className": "I_C_Soldier_Bandit_1_F",
+        "name": "Snatcher (Medikit)",
+        "category": "Syndikat",
+        "subCategory": "Men (Bandits)"
+      },
+      "soldier_bandit_2": {
+        "className": "I_C_Soldier_Bandit_2_F",
+        "name": "Hireling (Launcher)",
+        "category": "Syndikat",
+        "subCategory": "Men (Bandits)"
+      },
+      "soldier_bandit_3": {
+        "className": "I_C_Soldier_Bandit_3_F",
+        "name": "Guard (Machine Gun)",
+        "category": "Syndikat",
+        "subCategory": "Men (Bandits)"
+      },
+      "soldier_bandit_4": {
+        "className": "I_C_Soldier_Bandit_4_F",
+        "name": "Watcher (Rifle)",
+        "category": "Syndikat",
+        "subCategory": "Men (Bandits)"
+      },
+      "soldier_bandit_5": {
+        "className": "I_C_Soldier_Bandit_5_F",
+        "name": "Scout (Rifle)",
+        "category": "Syndikat",
+        "subCategory": "Men (Bandits)"
+      },
+      "soldier_bandit_6": {
+        "className": "I_C_Soldier_Bandit_6_F",
+        "name": "Smuggler (UGL)",
+        "category": "Syndikat",
+        "subCategory": "Men (Bandits)"
+      },
+      "soldier_bandit_7": {
+        "className": "I_C_Soldier_Bandit_7_F",
+        "name": "Dealer (Rifle)",
+        "category": "Syndikat",
+        "subCategory": "Men (Bandits)"
+      },
+      "soldier_bandit_8": {
+        "className": "I_C_Soldier_Bandit_8_F",
+        "name": "Thug (Mines)",
+        "category": "Syndikat",
+        "subCategory": "Men (Bandits)"
+      },
+      "soldier_camo": {
+        "className": "I_C_Soldier_Camo_F",
+        "name": "Solomon Maru",
+        "category": "Syndikat",
+        "subCategory": "Men (Story)"
+      },
+      "pilot": {
+        "className": "I_C_Pilot_F",
+        "name": "Pilot",
+        "category": "Syndikat",
+        "subCategory": "Men (Bandits)"
+      },
+      "helipilot": {
+        "className": "I_C_Helipilot_F",
+        "name": "Helicopter Pilot",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_universal": {
+        "className": "I_C_Soldier_universal_F",
+        "name": "Soldier",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "soldier_base_unarmed": {
+        "className": "I_C_Soldier_base_unarmed_F",
+        "name": "Rifleman (Unarmed)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      },
+      "van_02_transport": {
+        "className": "I_C_Van_02_transport_F",
+        "name": "Van Transport",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "van_02_vehicle": {
+        "className": "I_C_Van_02_vehicle_F",
+        "name": "Van (Cargo)",
+        "category": "Syndikat",
+        "subCategory": "Cars"
+      },
+      "soldier_para_9": {
+        "className": "I_C_Soldier_Para_9_F",
+        "name": "Soldier (Rifle)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      }
+    },
+    "mortar": {
+      "01": {
+        "className": "I_Mortar_01_F",
+        "name": "Mk6 Mortar",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      }
+    },
+    "heli": {
+      "transport_02": {
+        "className": "I_Heli_Transport_02_F",
+        "name": "CH-49 Mohawk",
+        "category": "AAF",
+        "subCategory": "Helicopters"
+      },
+      "light_03": {
+        "className": "I_Heli_light_03_F",
+        "name": "WY-55 Hellcat",
+        "category": "AAF",
+        "subCategory": "Helicopters"
+      },
+      "light_03_dynamicloadout": {
+        "className": "I_Heli_light_03_dynamicLoadout_F",
+        "name": "WY-55 Hellcat",
+        "category": "AAF",
+        "subCategory": "Helicopters"
+      },
+      "light_03_unarmed": {
+        "className": "I_Heli_light_03_unarmed_F",
+        "name": "WY-55 Hellcat (Unarmed)",
+        "category": "AAF",
+        "subCategory": "Helicopters"
+      }
+    },
+    "parachute": {
+      "02": {
+        "className": "I_Parachute_02_F",
+        "name": "Cargo Parachute",
+        "category": "AAF",
+        "subCategory": "Helicopters"
+      }
+    },
+    "plane": {
+      "fighter_03_cas": {
+        "className": "I_Plane_Fighter_03_CAS_F",
+        "name": "A-143 Buzzard (CAS)",
+        "category": "AAF",
+        "subCategory": "Planes"
+      },
+      "fighter_03_aa": {
+        "className": "I_Plane_Fighter_03_AA_F",
+        "name": "A-143 Buzzard (AA)",
+        "category": "AAF",
+        "subCategory": "Planes"
+      },
+      "fighter_03_dynamicloadout": {
+        "className": "I_Plane_Fighter_03_dynamicLoadout_F",
+        "name": "A-143 Buzzard (CAS)",
+        "category": "AAF",
+        "subCategory": "Planes"
+      },
+      "fighter_04": {
+        "className": "I_Plane_Fighter_04_F",
+        "name": "A-149 Gryphon",
+        "category": "AAF",
+        "subCategory": "Planes"
+      },
+      "fighter_03_cluster": {
+        "className": "I_Plane_Fighter_03_Cluster_F",
+        "name": "A-143 Buzzard (Cluster)",
+        "category": "AAF",
+        "subCategory": "Planes"
+      },
+      "fighter_04_cluster": {
+        "className": "I_Plane_Fighter_04_Cluster_F",
+        "name": "A-149 Gryphon (Cluster)",
+        "category": "AAF",
+        "subCategory": "Planes"
+      }
+    },
+    "boat": {
+      "armed_01_minigun": {
+        "className": "I_Boat_Armed_01_minigun_F",
+        "name": "Speedboat Minigun",
+        "category": "AAF",
+        "subCategory": "Boats"
+      },
+      "transport_01": {
+        "className": "I_Boat_Transport_01_F",
+        "name": "Assault Boat",
+        "category": "AAF",
+        "subCategory": "Boats"
+      }
+    },
+    "sdv": {
+      "01": {
+        "className": "I_SDV_01_F",
+        "name": "SDV",
+        "category": "AAF",
+        "subCategory": "Submersibles"
+      }
+    },
+    "uav": {
+      "ai": {
+        "className": "I_UAV_AI_F",
+        "name": "AI",
+        "category": "AAF",
+        "subCategory": "Men"
+      },
+      "01": {
+        "className": "I_UAV_01_F",
+        "name": "AR-2 Darter",
+        "category": "AAF",
+        "subCategory": "Drones"
+      },
+      "02": {
+        "className": "I_UAV_02_F",
+        "name": "K40 Ababil-3",
+        "category": "AAF",
+        "subCategory": "Drones"
+      },
+      "02_cas": {
+        "className": "I_UAV_02_CAS_F",
+        "name": "K40 Ababil-3 (CAS)",
+        "category": "AAF",
+        "subCategory": "Drones"
+      },
+      "02_dynamicloadout": {
+        "className": "I_UAV_02_dynamicLoadout_F",
+        "name": "K40 Ababil-3",
+        "category": "AAF",
+        "subCategory": "Drones"
+      },
+      "06": {
+        "className": "I_UAV_06_F",
+        "name": "AL-6 Pelican",
+        "category": "AAF",
+        "subCategory": "Drones"
+      },
+      "06_medical": {
+        "className": "I_UAV_06_medical_F",
+        "name": "AL-6 Pelican (Medical)",
+        "category": "AAF",
+        "subCategory": "Drones"
+      }
+    },
+    "quadbike": {
+      "01": {
+        "className": "I_Quadbike_01_F",
+        "name": "Quad Bike",
+        "category": "AAF",
+        "subCategory": "Cars"
+      }
+    },
+    "mrap": {
+      "03": {
+        "className": "I_MRAP_03_F",
+        "name": "Strider",
+        "category": "AAF",
+        "subCategory": "Cars"
+      },
+      "03_hmg": {
+        "className": "I_MRAP_03_hmg_F",
+        "name": "Strider HMG",
+        "category": "AAF",
+        "subCategory": "Cars"
+      },
+      "03_gmg": {
+        "className": "I_MRAP_03_gmg_F",
+        "name": "Strider GMG",
+        "category": "AAF",
+        "subCategory": "Cars"
+      }
+    },
+    "truck": {
+      "02_covered": {
+        "className": "I_Truck_02_covered_F",
+        "name": "Zamak Transport (Covered)",
+        "category": "AAF",
+        "subCategory": "Cars"
+      },
+      "02_transport": {
+        "className": "I_Truck_02_transport_F",
+        "name": "Zamak Transport",
+        "category": "AAF",
+        "subCategory": "Cars"
+      },
+      "02_ammo": {
+        "className": "I_Truck_02_ammo_F",
+        "name": "Zamak Ammo",
+        "category": "AAF",
+        "subCategory": "Cars"
+      },
+      "02_box": {
+        "className": "I_Truck_02_box_F",
+        "name": "Zamak Repair",
+        "category": "AAF",
+        "subCategory": "Cars"
+      },
+      "02_medical": {
+        "className": "I_Truck_02_medical_F",
+        "name": "Zamak Medical",
+        "category": "AAF",
+        "subCategory": "Cars"
+      },
+      "02_fuel": {
+        "className": "I_Truck_02_fuel_F",
+        "name": "Zamak Fuel",
+        "category": "AAF",
+        "subCategory": "Cars"
+      },
+      "02_mrl": {
+        "className": "I_Truck_02_MRL_F",
+        "name": "Zamak MRL",
+        "category": "AAF",
+        "subCategory": "Artillery"
+      }
+    },
+    "static": {
+      "aa": {
+        "className": "I_static_AA_F",
+        "name": "Static Titan Launcher (AA) [AAF]",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      },
+      "at": {
+        "className": "I_static_AT_F",
+        "name": "Static Titan Launcher (AT) [AAF]",
+        "category": "AAF",
+        "subCategory": "Turrets"
+      }
+    },
+    "apc": {
+      "tracked_03_cannon": {
+        "className": "I_APC_tracked_03_cannon_F",
+        "name": "FV-720 Mora",
+        "category": "AAF",
+        "subCategory": "APCs"
+      },
+      "wheeled_03_cannon": {
+        "className": "I_APC_Wheeled_03_cannon_F",
+        "name": "AFV-4 Gorgon",
+        "category": "AAF",
+        "subCategory": "APCs"
+      }
+    },
+    "mbt": {
+      "03_cannon": {
+        "className": "I_MBT_03_cannon_F",
+        "name": "MBT-52 Kuma",
+        "category": "AAF",
+        "subCategory": "Tanks"
+      }
+    },
+    "ugv": {
+      "01": {
+        "className": "I_UGV_01_F",
+        "name": "UGV Stomper",
+        "category": "AAF",
+        "subCategory": "Drones"
+      },
+      "01_rcws": {
+        "className": "I_UGV_01_rcws_F",
+        "name": "UGV Stomper RCWS",
+        "category": "AAF",
+        "subCategory": "Drones"
+      },
+      "02_science": {
+        "className": "I_UGV_02_Science_F",
+        "name": "ED-1E Roller",
+        "category": "AAF",
+        "subCategory": "Drones"
+      },
+      "02_demining": {
+        "className": "I_UGV_02_Demining_F",
+        "name": "ED-1D Pelter",
+        "category": "AAF",
+        "subCategory": "Drones"
+      }
+    },
+    "ejection": {
+      "seat_plane_fighter_04": {
+        "className": "I_Ejection_Seat_Plane_Fighter_04_F",
+        "name": "Ejection Seat",
+        "category": "AAF",
+        "subCategory": "Objects"
+      }
+    },
+    "fighter": {
+      "pilot": {
+        "className": "I_Fighter_Pilot_F",
+        "name": "Fighter Pilot",
+        "category": "AAF",
+        "subCategory": "Men"
+      }
+    },
+    "lt": {
+      "01_at": {
+        "className": "I_LT_01_AT_F",
+        "name": "AWC 301 Nyx (AT)",
+        "category": "AAF",
+        "subCategory": "Tanks"
+      },
+      "01_scout": {
+        "className": "I_LT_01_scout_F",
+        "name": "AWC 303 Nyx (Recon)",
+        "category": "AAF",
+        "subCategory": "Tanks"
+      },
+      "01_aa": {
+        "className": "I_LT_01_AA_F",
+        "name": "AWC 302 Nyx (AA)",
+        "category": "AAF",
+        "subCategory": "Anti-Air"
+      },
+      "01_cannon": {
+        "className": "I_LT_01_cannon_F",
+        "name": "AWC 304 Nyx (Autocannon)",
+        "category": "AAF",
+        "subCategory": "Tanks"
+      }
+    },
+    "l": {
+      "looter_pistol": {
+        "className": "I_L_Looter_Pistol_F",
+        "name": "Looter (Pistol)",
+        "category": "Looters",
+        "subCategory": "Men"
+      },
+      "looter_sg": {
+        "className": "I_L_Looter_SG_F",
+        "name": "Looter (Shotgun)",
+        "category": "Looters",
+        "subCategory": "Men"
+      },
+      "looter_rifle": {
+        "className": "I_L_Looter_Rifle_F",
+        "name": "Looter (Rifle)",
+        "category": "Looters",
+        "subCategory": "Men"
+      },
+      "looter_smg": {
+        "className": "I_L_Looter_SMG_F",
+        "name": "Looter (SMG)",
+        "category": "Looters",
+        "subCategory": "Men"
+      },
+      "criminal_sg": {
+        "className": "I_L_Criminal_SG_F",
+        "name": "Criminal (Shotgun)",
+        "category": "Looters",
+        "subCategory": "Men"
+      },
+      "criminal_smg": {
+        "className": "I_L_Criminal_SMG_F",
+        "name": "Criminal (SMG)",
+        "category": "Looters",
+        "subCategory": "Men"
+      },
+      "hunter": {
+        "className": "I_L_Hunter_F",
+        "name": "Hunter (Rifle)",
+        "category": "Looters",
+        "subCategory": "Men"
+      }
+    }
+  },
+  "nvg": {
+    "targetg": {
+      "base": {
+        "className": "NVG_TargetG",
+        "name": "NVG target",
+        "category": "Other"
+      }
+    }
+  },
+  "syndikatsoldier": {
+    "default": {
+      "base": {
+        "className": "SyndikatSoldier_Default",
+        "name": "Soldier (Rifle)",
+        "category": "Syndikat",
+        "subCategory": "Men (Paramilitary)"
+      }
+    }
+  }
+}
