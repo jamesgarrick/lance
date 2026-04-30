@@ -1,12 +1,12 @@
 export type CfgNode<TBase extends string, TChildren extends object> = TChildren & {
-  readonly __cfgBase?: TBase;
+  readonly __cfgBase: TBase;
 };
 
 export type CfgTree = {
   readonly [key: string]: string | CfgNode<string, CfgTree> | CfgTree;
 };
 
-export type CfgNodeBase<T> = T extends { readonly __cfgBase?: infer TBase extends string }
+export type CfgNodeBase<T> = T extends { readonly __cfgBase: infer TBase extends string }
   ? TBase
   : Extract<T, string>;
 

@@ -1,0 +1,773 @@
+{
+  "h": {
+    "bandanna": {
+      "blu": "H_Bandanna_blu",
+      "camo": "H_Bandanna_camo",
+      "cbr": "H_Bandanna_cbr",
+      "gry": "H_Bandanna_gry",
+      "khk": "H_Bandanna_khk",
+      "khk_hs": "H_Bandanna_khk_hs",
+      "mcamo": "H_Bandanna_mcamo",
+      "sand": "H_Bandanna_sand",
+      "sgg": "H_Bandanna_sgg",
+      "surfer": "H_Bandanna_surfer",
+      "surfer_blk": "H_Bandanna_surfer_blk",
+      "surfer_grn": "H_Bandanna_surfer_grn"
+    },
+    "bandmask": {
+      "blk": "H_BandMask_blk",
+      "demon": "H_BandMask_demon",
+      "khk": "H_BandMask_khk",
+      "reaper": "H_BandMask_reaper"
+    },
+    "beret": {
+      "02": "H_Beret_02",
+      "blk": "H_Beret_blk",
+      "blk_police": "H_Beret_blk_POLICE",
+      "brn_sf": "H_Beret_brn_SF",
+      "colonel": "H_Beret_Colonel",
+      "csat_01": "H_Beret_CSAT_01_F",
+      "eaf_01": "H_Beret_EAF_01_F",
+      "gen": "H_Beret_gen_F",
+      "grn": "H_Beret_grn",
+      "grn_sf": "H_Beret_grn_SF",
+      "ocamo": "H_Beret_ocamo",
+      "red": "H_Beret_red"
+    },
+    "booniehat": {
+      "dgtl": "H_Booniehat_dgtl",
+      "dirty": "H_Booniehat_dirty",
+      "eaf": "H_Booniehat_eaf",
+      "grn": "H_Booniehat_grn",
+      "indp": "H_Booniehat_indp",
+      "khk": "H_Booniehat_khk",
+      "khk_hs": "H_Booniehat_khk_hs",
+      "mcamo": "H_Booniehat_mcamo",
+      "mgrn": "H_Booniehat_mgrn",
+      "oli": "H_Booniehat_oli",
+      "taiga": "H_Booniehat_taiga",
+      "tan": "H_Booniehat_tan",
+      "tna": "H_Booniehat_tna_F",
+      "wdl": "H_Booniehat_wdl"
+    },
+    "cap": {
+      "black_idap": "H_Cap_Black_IDAP_F",
+      "blk": "H_Cap_blk",
+      "blk_cmmg": "H_Cap_blk_CMMG",
+      "blk_ion": "H_Cap_blk_ION",
+      "blk_raven": "H_Cap_blk_Raven",
+      "blk_syndikat": "H_Cap_blk_Syndikat_F",
+      "blu": "H_Cap_blu",
+      "brn_specops": "H_Cap_brn_SPECOPS",
+      "grn": "H_Cap_grn",
+      "grn_bi": "H_Cap_grn_BI",
+      "grn_syndikat": "H_Cap_grn_Syndikat_F",
+      "headphones": "H_Cap_headphones",
+      "khaki_specops_uk": "H_Cap_khaki_specops_UK",
+      "lyfe": "H_Cap_Lyfe",
+      "maldentours": "H_Cap_MaldenTours",
+      "marshal": "H_Cap_marshal",
+      "oli": "H_Cap_oli",
+      "oli_hs": "H_Cap_oli_hs",
+      "oli_syndikat": "H_Cap_oli_Syndikat_F",
+      "orange_idap": "H_Cap_Orange_IDAP_F",
+      "police": "H_Cap_police",
+      "press": "H_Cap_press",
+      "red": "H_Cap_red",
+      "surfer": "H_Cap_surfer",
+      "tan": "H_Cap_tan",
+      "tan_specops_us": "H_Cap_tan_specops_US",
+      "tan_syndikat": "H_Cap_tan_Syndikat_F",
+      "usblack": "H_Cap_usblack",
+      "white_idap": "H_Cap_White_IDAP_F"
+    },
+    "construction": {
+      "basic_black": "H_Construction_basic_black_F",
+      "basic_orange": "H_Construction_basic_orange_F",
+      "basic_red": "H_Construction_basic_red_F",
+      "basic_vrana": "H_Construction_basic_vrana_F",
+      "basic_white": "H_Construction_basic_white_F",
+      "basic_yellow": "H_Construction_basic_yellow_F",
+      "earprot_black": "H_Construction_earprot_black_F",
+      "earprot_orange": "H_Construction_earprot_orange_F",
+      "earprot_red": "H_Construction_earprot_red_F",
+      "earprot_vrana": "H_Construction_earprot_vrana_F",
+      "earprot_white": "H_Construction_earprot_white_F",
+      "earprot_yellow": "H_Construction_earprot_yellow_F",
+      "headset_black": "H_Construction_headset_black_F",
+      "headset_orange": "H_Construction_headset_orange_F",
+      "headset_red": "H_Construction_headset_red_F",
+      "headset_vrana": "H_Construction_headset_vrana_F",
+      "headset_white": "H_Construction_headset_white_F",
+      "headset_yellow": "H_Construction_headset_yellow_F"
+    },
+    "crewhelmetheli": {
+      "b": "H_CrewHelmetHeli_B",
+      "i": "H_CrewHelmetHeli_I",
+      "i_e": "H_CrewHelmetHeli_I_E",
+      "o": "H_CrewHelmetHeli_O"
+    },
+    "earprotectors": {
+      "black": "H_EarProtectors_black_F",
+      "orange": "H_EarProtectors_orange_F",
+      "red": "H_EarProtectors_red_F",
+      "white": "H_EarProtectors_white_F",
+      "yellow": "H_EarProtectors_yellow_F"
+    },
+    "hat": {
+      "blue": "H_Hat_blue",
+      "brown": "H_Hat_brown",
+      "camo": "H_Hat_camo",
+      "checker": "H_Hat_checker",
+      "grey": "H_Hat_grey",
+      "safari_olive": "H_Hat_Safari_olive_F",
+      "safari_sand": "H_Hat_Safari_sand_F",
+      "tan": "H_Hat_tan",
+      "tinfoil": "H_Hat_Tinfoil_F"
+    },
+    "headbandage": {
+      "bloody": "H_HeadBandage_bloody_F",
+      "clean": "H_HeadBandage_clean_F",
+      "stained": "H_HeadBandage_stained_F"
+    },
+    "headset": {
+      "black": "H_HeadSet_black_F",
+      "orange": "H_HeadSet_orange_F",
+      "red": "H_HeadSet_red_F",
+      "white": "H_HeadSet_white_F",
+      "yellow": "H_HeadSet_yellow_F"
+    },
+    "helmet": {
+      "kerry": "H_Helmet_Kerry",
+      "skate": "H_Helmet_Skate"
+    },
+    "helmetaggressor": {
+      "cover": "H_HelmetAggressor_cover_F",
+      "cover_taiga": "H_HelmetAggressor_cover_taiga_F",
+      "base": "H_HelmetAggressor_F"
+    },
+    "helmetb": {
+      "base": "H_HelmetB",
+      "black": "H_HelmetB_black",
+      "camo": "H_HelmetB_camo",
+      "desert": "H_HelmetB_desert",
+      "enh_tna": "H_HelmetB_Enh_tna_F",
+      "grass": "H_HelmetB_grass",
+      "light": "H_HelmetB_light",
+      "light_black": "H_HelmetB_light_black",
+      "light_desert": "H_HelmetB_light_desert",
+      "light_grass": "H_HelmetB_light_grass",
+      "light_sand": "H_HelmetB_light_sand",
+      "light_snakeskin": "H_HelmetB_light_snakeskin",
+      "light_tna": "H_HelmetB_Light_tna_F",
+      "light_wdl": "H_HelmetB_light_wdl",
+      "paint": "H_HelmetB_paint",
+      "plain_blk": "H_HelmetB_plain_blk",
+      "plain_mcamo": "H_HelmetB_plain_mcamo",
+      "plain_wdl": "H_HelmetB_plain_wdl",
+      "sand": "H_HelmetB_sand",
+      "snakeskin": "H_HelmetB_snakeskin",
+      "ti_arid": "H_HelmetB_TI_arid_F",
+      "ti_tna": "H_HelmetB_TI_tna_F",
+      "tna": "H_HelmetB_tna_F"
+    },
+    "helmetcrew": {
+      "b": "H_HelmetCrew_B",
+      "i": "H_HelmetCrew_I",
+      "i_e": "H_HelmetCrew_I_E",
+      "o": "H_HelmetCrew_O",
+      "o_ghex": "H_HelmetCrew_O_ghex_F"
+    },
+    "helmethbk": {
+      "chops": "H_HelmetHBK_chops_F",
+      "ear": "H_HelmetHBK_ear_F",
+      "base": "H_HelmetHBK_F",
+      "headset": "H_HelmetHBK_headset_F"
+    },
+    "helmetia": {
+      "base": "H_HelmetIA",
+      "camo": "H_HelmetIA_camo",
+      "net": "H_HelmetIA_net"
+    },
+    "helmetleadero": {
+      "ghex": "H_HelmetLeaderO_ghex_F",
+      "ocamo": "H_HelmetLeaderO_ocamo",
+      "oucamo": "H_HelmetLeaderO_oucamo"
+    },
+    "helmeto": {
+      "ghex": "H_HelmetO_ghex_F",
+      "ocamo": "H_HelmetO_ocamo",
+      "oucamo": "H_HelmetO_oucamo",
+      "vipersp_ghex": "H_HelmetO_ViperSP_ghex_F",
+      "vipersp_hex": "H_HelmetO_ViperSP_hex_F"
+    },
+    "helmetspecb": {
+      "base": "H_HelmetSpecB",
+      "blk": "H_HelmetSpecB_blk",
+      "paint1": "H_HelmetSpecB_paint1",
+      "paint2": "H_HelmetSpecB_paint2",
+      "sand": "H_HelmetSpecB_sand",
+      "snakeskin": "H_HelmetSpecB_snakeskin",
+      "wdl": "H_HelmetSpecB_wdl"
+    },
+    "helmetspeco": {
+      "blk": "H_HelmetSpecO_blk",
+      "ghex": "H_HelmetSpecO_ghex_F",
+      "ocamo": "H_HelmetSpecO_ocamo"
+    },
+    "milcap": {
+      "blue": "H_MilCap_blue",
+      "dgtl": "H_MilCap_dgtl",
+      "eaf": "H_MilCap_eaf",
+      "gen": "H_MilCap_gen_F",
+      "ghex": "H_MilCap_ghex_F",
+      "grn": "H_MilCap_grn",
+      "gry": "H_MilCap_gry",
+      "mcamo": "H_MilCap_mcamo",
+      "ocamo": "H_MilCap_ocamo",
+      "oucamo": "H_MilCap_oucamo",
+      "rucamo": "H_MilCap_rucamo",
+      "taiga": "H_MilCap_taiga",
+      "tna": "H_MilCap_tna_F",
+      "wdl": "H_MilCap_wdl"
+    },
+    "paradedresscap": {
+      "01_aaf": "H_ParadeDressCap_01_AAF_F",
+      "01_csat": "H_ParadeDressCap_01_CSAT_F",
+      "01_ldf": "H_ParadeDressCap_01_LDF_F",
+      "01_us": "H_ParadeDressCap_01_US_F"
+    },
+    "pasgt": {
+      "basic_black": "H_PASGT_basic_black_F",
+      "basic_blue": "H_PASGT_basic_blue_F",
+      "basic_blue_press": "H_PASGT_basic_blue_press_F",
+      "basic_olive": "H_PASGT_basic_olive_F",
+      "basic_white": "H_PASGT_basic_white_F",
+      "neckprot_blue_press": "H_PASGT_neckprot_blue_press_F"
+    },
+    "pilothelmetfighter": {
+      "b": "H_PilotHelmetFighter_B",
+      "i": "H_PilotHelmetFighter_I",
+      "i_e": "H_PilotHelmetFighter_I_E",
+      "o": "H_PilotHelmetFighter_O"
+    },
+    "pilothelmetheli": {
+      "b": "H_PilotHelmetHeli_B",
+      "i": "H_PilotHelmetHeli_I",
+      "i_e": "H_PilotHelmetHeli_I_E",
+      "o": "H_PilotHelmetHeli_O"
+    },
+    "racinghelmet": {
+      "1": "H_RacingHelmet_1_F",
+      "2": "H_RacingHelmet_2_F",
+      "3": "H_RacingHelmet_3_F",
+      "4": "H_RacingHelmet_4_F",
+      "1_black": "H_RacingHelmet_1_black_F",
+      "1_blue": "H_RacingHelmet_1_blue_F",
+      "1_green": "H_RacingHelmet_1_green_F",
+      "1_orange": "H_RacingHelmet_1_orange_F",
+      "1_red": "H_RacingHelmet_1_red_F",
+      "1_white": "H_RacingHelmet_1_white_F",
+      "1_yellow": "H_RacingHelmet_1_yellow_F"
+    },
+    "shemag": {
+      "khk": "H_Shemag_khk",
+      "olive": "H_Shemag_olive",
+      "olive_hs": "H_Shemag_olive_hs",
+      "tan": "H_Shemag_tan"
+    },
+    "shemagopen": {
+      "khk": "H_ShemagOpen_khk",
+      "tan": "H_ShemagOpen_tan"
+    },
+    "strawhat": {
+      "base": "H_StrawHat",
+      "dark": "H_StrawHat_dark"
+    },
+    "tank": {
+      "black": "H_Tank_black_F",
+      "eaf": "H_Tank_eaf_F"
+    },
+    "turbano": {
+      "blk": "H_TurbanO_blk"
+    },
+    "watchcap": {
+      "blk": "H_Watchcap_blk",
+      "camo": "H_Watchcap_camo",
+      "cbr": "H_Watchcap_cbr",
+      "khk": "H_Watchcap_khk",
+      "sgg": "H_Watchcap_sgg"
+    },
+    "wirelessearpiece": {
+      "base": "H_WirelessEarpiece_F"
+    }
+  },
+  "u": {
+    "antigonabody": {
+      "base": "U_AntigonaBody"
+    },
+    "attisbody": {
+      "base": "U_AttisBody"
+    },
+    "b": {
+      "cbrn_suit_01_mtp": "U_B_CBRN_Suit_01_MTP_F",
+      "cbrn_suit_01_tropic": "U_B_CBRN_Suit_01_Tropic_F",
+      "cbrn_suit_01_wdl": "U_B_CBRN_Suit_01_Wdl_F",
+      "combatuniform_mcam": "U_B_CombatUniform_mcam",
+      "combatuniform_mcam_tshirt": "U_B_CombatUniform_mcam_tshirt",
+      "combatuniform_mcam_vest": "U_B_CombatUniform_mcam_vest",
+      "combatuniform_mcam_wdl": "U_B_CombatUniform_mcam_wdl_f",
+      "combatuniform_mcam_worn": "U_B_CombatUniform_mcam_worn",
+      "combatuniform_sgg": "U_B_CombatUniform_sgg",
+      "combatuniform_sgg_tshirt": "U_B_CombatUniform_sgg_tshirt",
+      "combatuniform_sgg_vest": "U_B_CombatUniform_sgg_vest",
+      "combatuniform_tshirt_mcam_wdl": "U_B_CombatUniform_tshirt_mcam_wdL_f",
+      "combatuniform_vest_mcam_wdl": "U_B_CombatUniform_vest_mcam_wdl_f",
+      "combatuniform_wdl": "U_B_CombatUniform_wdl",
+      "combatuniform_wdl_tshirt": "U_B_CombatUniform_wdl_tshirt",
+      "combatuniform_wdl_vest": "U_B_CombatUniform_wdl_vest",
+      "ctrg_1": "U_B_CTRG_1",
+      "ctrg_2": "U_B_CTRG_2",
+      "ctrg_3": "U_B_CTRG_3",
+      "ctrg_soldier_2_arid": "U_B_CTRG_Soldier_2_Arid_F",
+      "ctrg_soldier_2": "U_B_CTRG_Soldier_2_F",
+      "ctrg_soldier_3_arid": "U_B_CTRG_Soldier_3_Arid_F",
+      "ctrg_soldier_3": "U_B_CTRG_Soldier_3_F",
+      "ctrg_soldier_arid": "U_B_CTRG_Soldier_Arid_F",
+      "ctrg_soldier": "U_B_CTRG_Soldier_F",
+      "ctrg_soldier_urb_1": "U_B_CTRG_Soldier_urb_1_F",
+      "ctrg_soldier_urb_2": "U_B_CTRG_Soldier_urb_2_F",
+      "ctrg_soldier_urb_3": "U_B_CTRG_Soldier_urb_3_F",
+      "fullghillie_ard": "U_B_FullGhillie_ard",
+      "fullghillie_lsh": "U_B_FullGhillie_lsh",
+      "fullghillie_sard": "U_B_FullGhillie_sard",
+      "g_captain_ivan": "U_B_G_Captain_Ivan_F",
+      "gen_commander": "U_B_GEN_Commander_F",
+      "gen_soldier": "U_B_GEN_Soldier_F",
+      "ghilliesuit": "U_B_GhillieSuit",
+      "helipilotcoveralls": "U_B_HeliPilotCoveralls",
+      "paradeuniform_01_us_decorated": "U_B_ParadeUniform_01_US_decorated_F",
+      "paradeuniform_01_us": "U_B_ParadeUniform_01_US_F",
+      "pilotcoveralls": "U_B_PilotCoveralls",
+      "protagonist_vr": "U_B_Protagonist_VR",
+      "soldier_vr": "U_B_Soldier_VR",
+      "specopsuniform_sgg": "U_B_SpecopsUniform_sgg",
+      "survival_uniform": "U_B_survival_uniform",
+      "t_fullghillie_tna": "U_B_T_FullGhillie_tna_F",
+      "t_sniper": "U_B_T_Sniper_F",
+      "t_soldier_ar": "U_B_T_Soldier_AR_F",
+      "t_soldier": "U_B_T_Soldier_F",
+      "t_soldier_sl": "U_B_T_Soldier_SL_F",
+      "wetsuit": "U_B_Wetsuit"
+    },
+    "basicbody": {
+      "base": "U_BasicBody"
+    },
+    "bg": {
+      "guerilla1_1": "U_BG_Guerilla1_1",
+      "guerilla1_2": "U_BG_Guerilla1_2_F",
+      "guerilla2_1": "U_BG_Guerilla2_1",
+      "guerilla2_2": "U_BG_Guerilla2_2",
+      "guerilla2_3": "U_BG_Guerilla2_3",
+      "guerilla3_1": "U_BG_Guerilla3_1",
+      "guerilla3_2": "U_BG_Guerilla3_2",
+      "guerrilla_6_1": "U_BG_Guerrilla_6_1",
+      "leader": "U_BG_leader"
+    },
+    "c": {
+      "arttshirt_01_v1": "U_C_ArtTShirt_01_v1_F",
+      "arttshirt_01_v2": "U_C_ArtTShirt_01_v2_F",
+      "arttshirt_01_v3": "U_C_ArtTShirt_01_v3_F",
+      "arttshirt_01_v4": "U_C_ArtTShirt_01_v4_F",
+      "arttshirt_01_v5": "U_C_ArtTShirt_01_v5_F",
+      "arttshirt_01_v6": "U_C_ArtTShirt_01_v6_F",
+      "cbrn_suit_01_blue": "U_C_CBRN_Suit_01_Blue_F",
+      "cbrn_suit_01_white": "U_C_CBRN_Suit_01_White_F",
+      "commoner1_1": "U_C_Commoner1_1",
+      "commoner1_2": "U_C_Commoner1_2",
+      "commoner1_3": "U_C_Commoner1_3",
+      "commoner2_1": "U_C_Commoner2_1",
+      "commoner2_2": "U_C_Commoner2_2",
+      "commoner2_3": "U_C_Commoner2_3",
+      "commoner_shorts": "U_C_Commoner_shorts",
+      "constructioncoverall_black": "U_C_ConstructionCoverall_Black_F",
+      "constructioncoverall_blue": "U_C_ConstructionCoverall_Blue_F",
+      "constructioncoverall_red": "U_C_ConstructionCoverall_Red_F",
+      "constructioncoverall_vrana": "U_C_ConstructionCoverall_Vrana_F",
+      "driver_1": "U_C_Driver_1",
+      "driver_1_black": "U_C_Driver_1_black",
+      "driver_1_blue": "U_C_Driver_1_blue",
+      "driver_1_green": "U_C_Driver_1_green",
+      "driver_1_orange": "U_C_Driver_1_orange",
+      "driver_1_red": "U_C_Driver_1_red",
+      "driver_1_white": "U_C_Driver_1_white",
+      "driver_1_yellow": "U_C_Driver_1_yellow",
+      "driver_2": "U_C_Driver_2",
+      "driver_3": "U_C_Driver_3",
+      "driver_4": "U_C_Driver_4",
+      "e_looterjacket_01": "U_C_E_LooterJacket_01_F",
+      "farmer": "U_C_Farmer",
+      "fisherman": "U_C_Fisherman",
+      "fishermanoveralls": "U_C_FishermanOveralls",
+      "formalsuit_01_black": "U_C_FormalSuit_01_black_F",
+      "formalsuit_01_blue": "U_C_FormalSuit_01_blue_F",
+      "formalsuit_01_gray": "U_C_FormalSuit_01_gray_F",
+      "formalsuit_01_khaki": "U_C_FormalSuit_01_khaki_F",
+      "formalsuit_01_tshirt_black": "U_C_FormalSuit_01_tshirt_black_F",
+      "formalsuit_01_tshirt_gray": "U_C_FormalSuit_01_tshirt_gray_F",
+      "hunterbody_brn": "U_C_HunterBody_brn",
+      "hunterbody_grn": "U_C_HunterBody_grn",
+      "idap_man_cargo": "U_C_IDAP_Man_cargo_F",
+      "idap_man_casual": "U_C_IDAP_Man_casual_F",
+      "idap_man_jeans": "U_C_IDAP_Man_Jeans_F",
+      "idap_man_shorts": "U_C_IDAP_Man_shorts_F",
+      "idap_man_tee": "U_C_IDAP_Man_Tee_F",
+      "idap_man_teeshorts": "U_C_IDAP_Man_TeeShorts_F",
+      "journalist": "U_C_Journalist",
+      "man_casual_1": "U_C_Man_casual_1_F",
+      "man_casual_1_sick": "U_C_Man_casual_1_sick_F",
+      "man_casual_2": "U_C_Man_casual_2_F",
+      "man_casual_2_sick": "U_C_Man_casual_2_sick_F",
+      "man_casual_3": "U_C_Man_casual_3_F",
+      "man_casual_3_sick": "U_C_Man_casual_3_sick_F",
+      "man_casual_4": "U_C_Man_casual_4_F",
+      "man_casual_4_sick": "U_C_Man_casual_4_sick_F",
+      "man_casual_5": "U_C_Man_casual_5_F",
+      "man_casual_5_sick": "U_C_Man_casual_5_sick_F",
+      "man_casual_6": "U_C_Man_casual_6_F",
+      "man_casual_6_sick": "U_C_Man_casual_6_sick_F",
+      "man_sport_1": "U_C_man_sport_1_F",
+      "man_sport_2": "U_C_man_sport_2_F",
+      "man_sport_2_sick": "U_C_man_sport_2_sick_F",
+      "man_sport_3": "U_C_man_sport_3_F",
+      "mechanic_01": "U_C_Mechanic_01_F",
+      "novak": "U_C_Novak",
+      "paramedic_01": "U_C_Paramedic_01_F",
+      "poloshirt_blue": "U_C_Poloshirt_blue",
+      "poloshirt_blue_sick": "U_C_Poloshirt_blue_sick",
+      "poloshirt_burgundy": "U_C_Poloshirt_burgundy",
+      "poloshirt_burgundy_sick": "U_C_Poloshirt_burgundy_sick",
+      "poloshirt_redwhite": "U_C_Poloshirt_redwhite",
+      "poloshirt_redwhite_sick": "U_C_Poloshirt_redwhite_sick",
+      "poloshirt_salmon": "U_C_Poloshirt_salmon",
+      "poloshirt_stripped": "U_C_Poloshirt_stripped",
+      "poloshirt_stripped_sick": "U_C_Poloshirt_stripped_sick",
+      "poloshirt_tricolour": "U_C_Poloshirt_tricolour",
+      "poor_1": "U_C_Poor_1",
+      "poor_2": "U_C_Poor_2",
+      "poor_2_sick": "U_C_Poor_2_sick",
+      "poor_shorts_1": "U_C_Poor_shorts_1",
+      "poor_shorts_2": "U_C_Poor_shorts_2",
+      "priestbody": "U_C_PriestBody",
+      "protagonist_vr": "U_C_Protagonist_VR",
+      "scavenger_1": "U_C_Scavenger_1",
+      "scavenger_2": "U_C_Scavenger_2",
+      "scientist": "U_C_Scientist",
+      "shirtsurfer_shorts": "U_C_ShirtSurfer_shorts",
+      "soldier_vr": "U_C_Soldier_VR",
+      "teesurfer_shorts_1": "U_C_TeeSurfer_shorts_1",
+      "teesurfer_shorts_2": "U_C_TeeSurfer_shorts_2",
+      "uniform_farmer_01": "U_C_Uniform_Farmer_01_F",
+      "uniform_scientist_01": "U_C_Uniform_Scientist_01_F",
+      "uniform_scientist_01_formal": "U_C_Uniform_Scientist_01_formal_F",
+      "uniform_scientist_02": "U_C_Uniform_Scientist_02_F",
+      "uniform_scientist_02_formal": "U_C_Uniform_Scientist_02_formal_F",
+      "workercoveralls": "U_C_WorkerCoveralls",
+      "workeroveralls": "U_C_WorkerOveralls"
+    },
+    "competitor": {
+      "base": "U_Competitor"
+    },
+    "i": {
+      "c_soldier_bandit_1": "U_I_C_Soldier_Bandit_1_F",
+      "c_soldier_bandit_2": "U_I_C_Soldier_Bandit_2_F",
+      "c_soldier_bandit_3": "U_I_C_Soldier_Bandit_3_F",
+      "c_soldier_bandit_4": "U_I_C_Soldier_Bandit_4_F",
+      "c_soldier_bandit_5": "U_I_C_Soldier_Bandit_5_F",
+      "c_soldier_camo": "U_I_C_Soldier_Camo_F",
+      "c_soldier_para_1": "U_I_C_Soldier_Para_1_F",
+      "c_soldier_para_2": "U_I_C_Soldier_Para_2_F",
+      "c_soldier_para_3": "U_I_C_Soldier_Para_3_F",
+      "c_soldier_para_4": "U_I_C_Soldier_Para_4_F",
+      "c_soldier_para_5": "U_I_C_Soldier_Para_5_F",
+      "cbrn_suit_01_aaf": "U_I_CBRN_Suit_01_AAF_F",
+      "combatuniform": "U_I_CombatUniform",
+      "combatuniform_shortsleeve": "U_I_CombatUniform_shortsleeve",
+      "combatuniform_tshirt": "U_I_CombatUniform_tshirt",
+      "e_cbrn_suit_01_eaf": "U_I_E_CBRN_Suit_01_EAF_F",
+      "e_paradeuniform_01_ldf_decorated": "U_I_E_ParadeUniform_01_LDF_decorated_F",
+      "e_paradeuniform_01_ldf": "U_I_E_ParadeUniform_01_LDF_F",
+      "e_uniform_01_coveralls": "U_I_E_Uniform_01_coveralls_F",
+      "e_uniform_01": "U_I_E_Uniform_01_F",
+      "e_uniform_01_officer": "U_I_E_Uniform_01_officer_F",
+      "e_uniform_01_shortsleeve": "U_I_E_Uniform_01_shortsleeve_F",
+      "e_uniform_01_sweater": "U_I_E_Uniform_01_sweater_F",
+      "e_uniform_01_tanktop": "U_I_E_Uniform_01_tanktop_F",
+      "fullghillie_ard": "U_I_FullGhillie_ard",
+      "fullghillie_lsh": "U_I_FullGhillie_lsh",
+      "fullghillie_sard": "U_I_FullGhillie_sard",
+      "g_resistanceleader": "U_I_G_resistanceLeader_F",
+      "g_story_protagonist": "U_I_G_Story_Protagonist_F",
+      "ghilliesuit": "U_I_GhillieSuit",
+      "helipilotcoveralls": "U_I_HeliPilotCoveralls",
+      "l_uniform_01_camo": "U_I_L_Uniform_01_camo_F",
+      "l_uniform_01_deserter": "U_I_L_Uniform_01_deserter_F",
+      "l_uniform_01_tshirt_black": "U_I_L_Uniform_01_tshirt_black_F",
+      "l_uniform_01_tshirt_olive": "U_I_L_Uniform_01_tshirt_olive_F",
+      "l_uniform_01_tshirt_skull": "U_I_L_Uniform_01_tshirt_skull_F",
+      "l_uniform_01_tshirt_sport": "U_I_L_Uniform_01_tshirt_sport_F",
+      "officeruniform": "U_I_OfficerUniform",
+      "paradeuniform_01_aaf_decorated": "U_I_ParadeUniform_01_AAF_decorated_F",
+      "paradeuniform_01_aaf": "U_I_ParadeUniform_01_AAF_F",
+      "pilotcoveralls": "U_I_pilotCoveralls",
+      "protagonist_vr": "U_I_Protagonist_VR",
+      "soldier_vr": "U_I_Soldier_VR",
+      "wetsuit": "U_I_Wetsuit"
+    },
+    "ig": {
+      "guerilla1_1": "U_IG_Guerilla1_1",
+      "guerilla2_1": "U_IG_Guerilla2_1",
+      "guerilla2_2": "U_IG_Guerilla2_2",
+      "guerilla2_3": "U_IG_Guerilla2_3",
+      "guerilla3_1": "U_IG_Guerilla3_1",
+      "guerilla3_2": "U_IG_Guerilla3_2",
+      "guerrilla_6_1": "U_IG_Guerrilla_6_1",
+      "leader": "U_IG_leader",
+      "menelaos": "U_IG_Menelaos"
+    },
+    "kerrybody": {
+      "base": "U_KerryBody"
+    },
+    "marshal": {
+      "base": "U_Marshal"
+    },
+    "millerbody": {
+      "base": "U_MillerBody"
+    },
+    "nikosagedbody": {
+      "base": "U_NikosAgedBody"
+    },
+    "nikosbody": {
+      "base": "U_NikosBody"
+    },
+    "o": {
+      "combatuniform_ocamo": "U_O_CombatUniform_ocamo",
+      "combatuniform_oucamo": "U_O_CombatUniform_oucamo",
+      "fullghillie_ard": "U_O_FullGhillie_ard",
+      "fullghillie_lsh": "U_O_FullGhillie_lsh",
+      "fullghillie_sard": "U_O_FullGhillie_sard",
+      "gen_commander": "U_O_GEN_Commander_F",
+      "gen_soldier": "U_O_GEN_Soldier_F",
+      "ghilliesuit": "U_O_GhillieSuit",
+      "officer_noinsignia_hex": "U_O_officer_noInsignia_hex_F",
+      "officeruniform_ocamo": "U_O_OfficerUniform_ocamo",
+      "paradeuniform_01_csat_decorated": "U_O_ParadeUniform_01_CSAT_decorated_F",
+      "paradeuniform_01_csat": "U_O_ParadeUniform_01_CSAT_F",
+      "pilotcoveralls": "U_O_PilotCoveralls",
+      "protagonist_vr": "U_O_Protagonist_VR",
+      "r_gorka_01_black": "U_O_R_Gorka_01_black_F",
+      "r_gorka_01_brown": "U_O_R_Gorka_01_brown_F",
+      "r_gorka_01_camo": "U_O_R_Gorka_01_camo_F",
+      "r_gorka_01": "U_O_R_Gorka_01_F",
+      "soldier_vr": "U_O_Soldier_VR",
+      "specopsuniform_blk": "U_O_SpecopsUniform_blk",
+      "specopsuniform_ocamo": "U_O_SpecopsUniform_ocamo",
+      "t_fullghillie_tna": "U_O_T_FullGhillie_tna_F",
+      "t_officer": "U_O_T_Officer_F",
+      "t_sniper": "U_O_T_Sniper_F",
+      "t_soldier": "U_O_T_Soldier_F",
+      "v_soldier_viper": "U_O_V_Soldier_Viper_F",
+      "v_soldier_viper_hex": "U_O_V_Soldier_Viper_hex_F",
+      "wetsuit": "U_O_Wetsuit"
+    },
+    "og": {
+      "guerilla1_1": "U_OG_Guerilla1_1",
+      "guerilla2_1": "U_OG_Guerilla2_1",
+      "guerilla2_2": "U_OG_Guerilla2_2",
+      "guerilla2_3": "U_OG_Guerilla2_3",
+      "guerilla3_1": "U_OG_Guerilla3_1",
+      "guerilla3_2": "U_OG_Guerilla3_2",
+      "guerrilla_6_1": "U_OG_Guerrilla_6_1",
+      "leader": "U_OG_leader"
+    },
+    "oi": {
+      "scientist": "U_OI_Scientist"
+    },
+    "orestesbody": {
+      "base": "U_OrestesBody"
+    },
+    "rangemaster": {
+      "base": "U_Rangemaster"
+    },
+    "tank": {
+      "green": "U_Tank_green_F"
+    },
+    "virtualman": {
+      "base": "U_VirtualMan_F"
+    }
+  },
+  "v": {
+    "bandollierb": {
+      "blk": "V_BandollierB_blk",
+      "cbr": "V_BandollierB_cbr",
+      "ghex": "V_BandollierB_ghex_F",
+      "khk": "V_BandollierB_khk",
+      "oli": "V_BandollierB_oli",
+      "rgr": "V_BandollierB_rgr"
+    },
+    "carrierrigkbt": {
+      "01_eaf": "V_CarrierRigKBT_01_EAF_F",
+      "01_heavy_eaf": "V_CarrierRigKBT_01_heavy_EAF_F",
+      "01_heavy_olive": "V_CarrierRigKBT_01_heavy_Olive_F",
+      "01_light_eaf": "V_CarrierRigKBT_01_light_EAF_F",
+      "01_light_olive": "V_CarrierRigKBT_01_light_Olive_F",
+      "01_olive": "V_CarrierRigKBT_01_Olive_F"
+    },
+    "chestrig": {
+      "blk": "V_Chestrig_blk",
+      "khk": "V_Chestrig_khk",
+      "oli": "V_Chestrig_oli",
+      "rgr": "V_Chestrig_rgr"
+    },
+    "deckcrew": {
+      "blue": "V_DeckCrew_blue_F",
+      "brown": "V_DeckCrew_brown_F",
+      "green": "V_DeckCrew_green_F",
+      "red": "V_DeckCrew_red_F",
+      "violet": "V_DeckCrew_violet_F",
+      "white": "V_DeckCrew_white_F",
+      "yellow": "V_DeckCrew_yellow_F"
+    },
+    "eod": {
+      "blue": "V_EOD_blue_F",
+      "coyote": "V_EOD_coyote_F",
+      "idap_blue": "V_EOD_IDAP_blue_F",
+      "olive": "V_EOD_olive_F"
+    },
+    "harnesso": {
+      "brn": "V_HarnessO_brn",
+      "ghex": "V_HarnessO_ghex_F",
+      "gry": "V_HarnessO_gry"
+    },
+    "harnessogl": {
+      "brn": "V_HarnessOGL_brn",
+      "ghex": "V_HarnessOGL_ghex_F",
+      "gry": "V_HarnessOGL_gry"
+    },
+    "harnessospec": {
+      "brn": "V_HarnessOSpec_brn",
+      "gry": "V_HarnessOSpec_gry"
+    },
+    "i": {
+      "g_resistanceleader": "V_I_G_resistanceLeader_F"
+    },
+    "legstrapbag": {
+      "black": "V_LegStrapBag_black_F",
+      "coyote": "V_LegStrapBag_coyote_F",
+      "olive": "V_LegStrapBag_olive_F"
+    },
+    "plain": {
+      "crystal": "V_Plain_crystal_F",
+      "medical": "V_Plain_medical_F"
+    },
+    "platecarrier1": {
+      "blk": "V_PlateCarrier1_blk",
+      "rgr": "V_PlateCarrier1_rgr",
+      "rgr_noflag": "V_PlateCarrier1_rgr_noflag_F",
+      "tna": "V_PlateCarrier1_tna_F",
+      "wdl": "V_PlateCarrier1_wdl"
+    },
+    "platecarrier2": {
+      "blk": "V_PlateCarrier2_blk",
+      "rgr": "V_PlateCarrier2_rgr",
+      "rgr_noflag": "V_PlateCarrier2_rgr_noflag_F",
+      "tna": "V_PlateCarrier2_tna_F",
+      "wdl": "V_PlateCarrier2_wdl"
+    },
+    "platecarrier3": {
+      "rgr": "V_PlateCarrier3_rgr"
+    },
+    "platecarrier": {
+      "kerry": "V_PlateCarrier_Kerry"
+    },
+    "platecarriergl": {
+      "blk": "V_PlateCarrierGL_blk",
+      "mtp": "V_PlateCarrierGL_mtp",
+      "rgr": "V_PlateCarrierGL_rgr",
+      "tna": "V_PlateCarrierGL_tna_F",
+      "wdl": "V_PlateCarrierGL_wdl"
+    },
+    "platecarrierh": {
+      "ctrg": "V_PlateCarrierH_CTRG"
+    },
+    "platecarrieria1": {
+      "dgtl": "V_PlateCarrierIA1_dgtl"
+    },
+    "platecarrieria2": {
+      "dgtl": "V_PlateCarrierIA2_dgtl"
+    },
+    "platecarrieriagl": {
+      "dgtl": "V_PlateCarrierIAGL_dgtl",
+      "oli": "V_PlateCarrierIAGL_oli"
+    },
+    "platecarrierl": {
+      "ctrg": "V_PlateCarrierL_CTRG"
+    },
+    "platecarrierspec": {
+      "blk": "V_PlateCarrierSpec_blk",
+      "mtp": "V_PlateCarrierSpec_mtp",
+      "rgr": "V_PlateCarrierSpec_rgr",
+      "tna": "V_PlateCarrierSpec_tna_F",
+      "wdl": "V_PlateCarrierSpec_wdl"
+    },
+    "pocketed": {
+      "black": "V_Pocketed_black_F",
+      "coyote": "V_Pocketed_coyote_F",
+      "olive": "V_Pocketed_olive_F"
+    },
+    "press": {
+      "base": "V_Press_F"
+    },
+    "rangemaster": {
+      "belt": "V_Rangemaster_belt"
+    },
+    "rebreatherb": {
+      "base": "V_RebreatherB"
+    },
+    "rebreatheria": {
+      "base": "V_RebreatherIA"
+    },
+    "rebreatherir": {
+      "base": "V_RebreatherIR"
+    },
+    "safety": {
+      "blue": "V_Safety_blue_F",
+      "orange": "V_Safety_orange_F",
+      "yellow": "V_Safety_yellow_F"
+    },
+    "smershvest": {
+      "01": "V_SmershVest_01_F",
+      "01_radio": "V_SmershVest_01_radio_F"
+    },
+    "tacchestrig": {
+      "cbr": "V_TacChestrig_cbr_F",
+      "grn": "V_TacChestrig_grn_F",
+      "oli": "V_TacChestrig_oli_F"
+    },
+    "tacvest": {
+      "blk": "V_TacVest_blk",
+      "blk_police": "V_TacVest_blk_POLICE",
+      "brn": "V_TacVest_brn",
+      "camo": "V_TacVest_camo",
+      "gen": "V_TacVest_gen_F",
+      "khk": "V_TacVest_khk",
+      "oli": "V_TacVest_oli"
+    },
+    "tacvestcamo": {
+      "khk": "V_TacVestCamo_khk"
+    },
+    "tacvestir": {
+      "blk": "V_TacVestIR_blk"
+    }
+  }
+}

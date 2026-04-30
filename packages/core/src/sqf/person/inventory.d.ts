@@ -1,5 +1,12 @@
 import type { GlobalArgument, Effect } from "../locality";
 import type { Unit } from "../../primitives";
+import type { UniformClassName, VestClassName } from "../../cfg/cfg-weapons-equipment";
+import type {
+  BipodClassName,
+  MuzzleClassName,
+  OpticClassName,
+  RailItemClassName,
+} from "../../cfg/cfg-weapons-items";
 
 /**
  * Returns name of currently used goggles (for NVGoggles use hmd).
@@ -45,7 +52,7 @@ export function removeGoggles(unit: Unit): string;
  *
  * @see {@link https://community.bistudio.com/wiki/vest vest}
  */
-export function vest(unit: Unit): string;
+export function vest(unit: GlobalArgument<Unit>): Effect<VestClassName | "", "anywhere", "pure">;
 
 /**
  * Create a new vest and try to link it into vest slot.
@@ -57,7 +64,7 @@ export function vest(unit: Unit): string;
  *
  * @see {@link https://community.bistudio.com/wiki/addVest addVest}
  */
-export function addVest(unit: Unit, vestClass: string): SqfCommand;
+export function addVest(unit: GlobalArgument<Unit>, vestClass: VestClassName): Effect<void, "anywhere", "global">;
 
 /**
  * Removes vest from person.
@@ -170,7 +177,10 @@ export function linkItem(unit: Unit, item: string): void;
  *
  * @see {@link https://community.bistudio.com/wiki/forceAddUniform forceAddUniform}
  */
-export function forceAddUniform(unit: Unit, uniform: string): void;
+export function forceAddUniform(
+  unit: GlobalArgument<Unit>,
+  uniform: UniformClassName
+): Effect<void, "anywhere", "global">;
 
 /**
  * Returns name of person's uniform.
@@ -182,7 +192,7 @@ export function forceAddUniform(unit: Unit, uniform: string): void;
  *
  * @see {@link https://community.bistudio.com/wiki/uniform uniform}
  */
-export function uniform(unit: Unit): Effect<string, "anywhere", "pure">;
+export function uniform(unit: GlobalArgument<Unit>): Effect<UniformClassName | "", "anywhere", "pure">;
 
 /**
  * Create a new uniform and try to link it into uniform slot
@@ -197,7 +207,10 @@ export function uniform(unit: Unit): Effect<string, "anywhere", "pure">;
  *
  * @see {@link https://community.bistudio.com/wiki/addUniform addUniform}
  */
-export function addUniform(unit: GlobalArgument<Unit>, uniform: string): Effect<void, "anywhere", "global">;
+export function addUniform(
+  unit: GlobalArgument<Unit>,
+  uniform: UniformClassName
+): Effect<void, "anywhere", "global">;
 
 /**
  * Check whether given uniform can be dressed by target soldier.
@@ -209,7 +222,10 @@ export function addUniform(unit: GlobalArgument<Unit>, uniform: string): Effect<
  *
  * @see {@link https://community.bistudio.com/wiki/isUniformAllowed isUniformAllowed}
  */
-export function isUniformAllowed(unit: GlobalArgument<Unit>, uniform: string): Effect<boolean, "anywhere", "pure">;
+export function isUniformAllowed(
+  unit: GlobalArgument<Unit>,
+  uniform: UniformClassName
+): Effect<boolean, "anywhere", "pure">;
 
 /**
  * Removes uniform from person.
@@ -250,7 +266,12 @@ export function items(unit: GlobalArgument<Unit>): Effect<readonly string[], "an
 export function primaryWeaponItems(
   unit: GlobalArgument<Unit>
 ): Effect<
-  readonly [muzzle: string, rail: string, optic: string, bipod: string],
+  readonly [
+    muzzle: MuzzleClassName | "",
+    rail: RailItemClassName | "",
+    optic: OpticClassName | "",
+    bipod: BipodClassName | "",
+  ],
   "anywhere",
   "pure"
 >;
