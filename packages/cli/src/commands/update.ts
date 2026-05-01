@@ -24,7 +24,7 @@ export default class Update extends Command {
 				registry,
 				`/packages/${encodeURIComponent(name)}`,
 			);
-			const v = info.versions.filter((x) => semver.satisfies(x, range)).at(-1);
+			const v = semver.maxSatisfying(info.versions, range);
 			if (!v) this.error(`Could not resolve ${name} with range ${range}`);
 			resolved[name] = { version: v };
 			this.log(`${name}@${v}`);

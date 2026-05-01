@@ -59,11 +59,11 @@ export default class Add extends Command {
 			? semver.valid(version)
 				? flags.exact
 					? version
-					: `^${version}`
+					: defaultRangeForVersion(version)
 				: version
 			: flags.exact
 				? resolved
-				: `^${resolved}`;
+				: defaultRangeForVersion(resolved);
 
 		manifest.dependencies = manifest.dependencies ?? {};
 		manifest.dependencies[name] = depRange;
@@ -78,9 +78,7 @@ export default class Add extends Command {
 							registry,
 							`/packages/${encodeURIComponent(pkg)}`,
 						);
-			const v = pkgInfo.versions
-				.filter((x) => semver.satisfies(x, range))
-				.at(-1);
+			const v = semver.maxSatisfying(pkgInfo.versions, range);
 			if (!v) this.error(`Could not resolve ${pkg} for range ${range}`);
 			lockDeps[pkg] = { version: v };
 		}
@@ -88,4 +86,11 @@ export default class Add extends Command {
 		await installDependency(cwd, registry, name, lockDeps[name]!.version);
 		this.log(`Added ${name}@${depRange}`);
 	}
+}
+
+function defaultRangeForVersion(version: string): string {
+	const parsed = semver.parse(version);
+	if (!parsed) return `^${version}`;
+	if (parsed.major === 0) return `~${version}`;
+	return `^${version}`;
 }
