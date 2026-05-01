@@ -6,7 +6,6 @@
  * @see {@link https://community.bistudio.com/wiki/missionNamespace missionNamespace}
  */
 export declare const missionNamespace: SqfNamespace;
-export declare const missionProfileNamespace: SqfNamespace;
 export declare const parsingNamespace: SqfNamespace;
 export declare const uiNamespace: SqfNamespace;
 

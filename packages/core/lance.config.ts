@@ -1,6 +1,6 @@
 export default {
   name: "@lance/core",
-  version: "0.0.1",
+  version: "0.0.2",
   type: "library",
   exports: [
     "./index.ts",
