@@ -6,6 +6,8 @@ export interface LanceManifest {
 	version: string;
 	type: "mission" | "library";
 	registry?: string;
+	exports?: string | string[];
+	include?: string[];
 	dependencies?: Record<string, string>;
 }
 
@@ -133,10 +135,39 @@ function normalizeManifest(value: unknown, sourcePath: string): LanceManifest {
 		version: raw.version,
 		type: raw.type,
 		registry: raw.registry,
+		exports: normalizeExportsField(raw.exports, sourcePath),
+		include: normalizeIncludeField(raw.include, sourcePath),
 		dependencies: Object.fromEntries(
 			Object.entries(dependencies).map(([k, v]) => [k, String(v)]),
 		),
 	};
+}
+
+function normalizeExportsField(
+	value: unknown,
+	sourcePath: string,
+): string | string[] | undefined {
+	if (value === undefined) return undefined;
+	if (typeof value === "string") return value;
+	if (Array.isArray(value) && value.every((x) => typeof x === "string")) {
+		return value as string[];
+	}
+	throw new Error(
+		`Invalid manifest at ${sourcePath}: "exports" must be a string or string[]`,
+	);
+}
+
+function normalizeIncludeField(
+	value: unknown,
+	sourcePath: string,
+): string[] | undefined {
+	if (value === undefined) return undefined;
+	if (Array.isArray(value) && value.every((x) => typeof x === "string")) {
+		return value as string[];
+	}
+	throw new Error(
+		`Invalid manifest at ${sourcePath}: "include" must be a string[]`,
+	);
 }
 
 function renderManifestTs(manifest: LanceManifest): string {
@@ -151,6 +182,12 @@ function renderManifestTs(manifest: LanceManifest): string {
 		`  version: ${JSON.stringify(manifest.version)},`,
 		`  type: ${JSON.stringify(manifest.type)},`,
 		...(manifest.registry ? [`  registry: ${JSON.stringify(manifest.registry)},`] : []),
+		...(manifest.exports
+			? [`  exports: ${JSON.stringify(manifest.exports)},`]
+			: []),
+		...(manifest.include
+			? [`  include: ${JSON.stringify(manifest.include)},`]
+			: []),
 		"  dependencies: {",
 		...dependenciesLines,
 		"  },",
@@ -159,6 +196,8 @@ function renderManifestTs(manifest: LanceManifest): string {
 		'  version: string;',
 		'  type: "mission" | "library";',
 		"  registry?: string;",
+		"  exports?: string | string[];",
+		"  include?: string[];",
 		"  dependencies?: Record<string, string>;",
 		"};",
 	].join("\n");
