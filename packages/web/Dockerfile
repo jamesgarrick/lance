@@ -9,8 +9,9 @@ RUN bun install --frozen-lockfile
 
 FROM base AS builder
 ENV NEXT_TELEMETRY_DISABLED=1
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+COPY --from=deps /app/node_modules ./node_modules
+RUN bun install --frozen-lockfile
 WORKDIR /app/packages/web
 RUN bun run build
 
