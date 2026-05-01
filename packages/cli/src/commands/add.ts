@@ -1,4 +1,4 @@
-import { Command, Flags } from "@oclif/core";
+import { Args, Command, Flags } from "@oclif/core";
 import semver from "semver";
 import {
 	defaultRegistry,
@@ -18,6 +18,12 @@ interface PackageInfoResponse {
 export default class Add extends Command {
 	static override id = "add";
 	static override description = "Add a dependency to lance.config.ts";
+	static override args = {
+		spec: Args.string({
+			description: "Dependency spec: @scope/name[@version|@range]",
+			required: true,
+		}),
+	};
 	static override flags = {
 		exact: Flags.boolean({
 			description: "Pin exact version instead of ^range",
@@ -26,9 +32,8 @@ export default class Add extends Command {
 	};
 
 	async run(): Promise<void> {
-		const { flags } = await this.parse(Add);
-		const spec = this.argv[0];
-		if (!spec) this.error("Usage: lance add @scope/name[@version|@range]");
+		const { flags, args } = await this.parse(Add);
+		const spec = args.spec;
 		const cwd = process.cwd();
 		const manifest = await readManifest(cwd);
 		const { name, version } = splitPackageAndVersion(spec);
