@@ -2,7 +2,6 @@ import { homedir } from "node:os";
 import { join } from "node:path";
 
 export interface LanceRc {
-	registry?: string;
 	token?: string;
 }
 

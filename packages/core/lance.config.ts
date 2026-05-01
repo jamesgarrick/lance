@@ -17,7 +17,6 @@ export default {
   name: string;
   version: string;
   type: "mission" | "library";
-  registry?: string;
   exports?: string | string[];
   include?: string[];
   dependencies?: Record<string, string>;

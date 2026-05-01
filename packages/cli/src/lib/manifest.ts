@@ -5,7 +5,6 @@ export interface LanceManifest {
 	name: string;
 	version: string;
 	type: "mission" | "library";
-	registry?: string;
 	exports?: string | string[];
 	include?: string[];
 	dependencies?: Record<string, string>;
@@ -26,6 +25,7 @@ export interface LanceLockfile {
 export const MANIFEST_FILE = "lance.config.ts";
 const LEGACY_MANIFEST_FILE = "lance.json";
 export const LOCK_FILE = "lance.lock";
+export const BUILTIN_REGISTRY_URL = "http://lance-registry-dguc6p-821e3a-64-181-217-234.traefik.me";
 
 export async function readManifest(cwd: string): Promise<LanceManifest> {
 	const tsPath = join(cwd, MANIFEST_FILE);
@@ -71,12 +71,8 @@ export async function writeLockfile(
 	await Bun.write(path, `${JSON.stringify(lock, null, 2)}\n`);
 }
 
-export function defaultRegistry(manifest: LanceManifest): string {
-	return (
-		manifest.registry ??
-		process.env.LANCE_REGISTRY_URL ??
-		"http://localhost:8787"
-	);
+export function defaultRegistry(_manifest?: LanceManifest): string {
+	return process.env.LANCE_REGISTRY_URL ?? BUILTIN_REGISTRY_URL;
 }
 
 export function ensurePackageName(name: string): void {
@@ -134,7 +130,6 @@ function normalizeManifest(value: unknown, sourcePath: string): LanceManifest {
 		name: raw.name,
 		version: raw.version,
 		type: raw.type,
-		registry: raw.registry,
 		exports: normalizeExportsField(raw.exports, sourcePath),
 		include: normalizeIncludeField(raw.include, sourcePath),
 		dependencies: Object.fromEntries(
@@ -181,7 +176,6 @@ function renderManifestTs(manifest: LanceManifest): string {
 		`  name: ${JSON.stringify(manifest.name)},`,
 		`  version: ${JSON.stringify(manifest.version)},`,
 		`  type: ${JSON.stringify(manifest.type)},`,
-		...(manifest.registry ? [`  registry: ${JSON.stringify(manifest.registry)},`] : []),
 		...(manifest.exports
 			? [`  exports: ${JSON.stringify(manifest.exports)},`]
 			: []),
@@ -195,7 +189,6 @@ function renderManifestTs(manifest: LanceManifest): string {
 		"  name: string;",
 		'  version: string;',
 		'  type: "mission" | "library";',
-		"  registry?: string;",
 		"  exports?: string | string[];",
 		"  include?: string[];",
 		"  dependencies?: Record<string, string>;",

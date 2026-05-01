@@ -5,7 +5,7 @@ import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { existsSync } from "node:fs";
 import { LOCK_FILE, MANIFEST_FILE } from "../lib/manifest";
-import { readRc } from "../lib/auth";
+import { getToken } from "../lib/auth";
 import { registryFetch } from "../lib/registry-client";
 
 export default class Init extends Command {
@@ -37,9 +37,7 @@ export default class Init extends Command {
 			],
 		});
 
-		const rc = await readRc();
-		const defaultRegistry =
-			rc.registry ?? process.env.LANCE_REGISTRY_URL ?? "http://localhost:8787";
+		const defaultRegistry = process.env.LANCE_REGISTRY_URL ?? "http://localhost:8787";
 		const defaultPackageName =
 			type === "library"
 				? await suggestDefaultPackageName(defaultRegistry, projectName).catch(
@@ -72,7 +70,6 @@ export default class Init extends Command {
 				`  name: ${JSON.stringify(packageName)},`,
 				'  version: "0.0.1",',
 				`  type: ${JSON.stringify(type)},`,
-				`  registry: ${JSON.stringify(defaultRegistry)},`,
 				`  exports: ${JSON.stringify(exportsPath)},`,
 				`  include: ${JSON.stringify(include)},`,
 				"  dependencies: {},",
@@ -80,7 +77,6 @@ export default class Init extends Command {
 				"  name: string;",
 				'  version: string;',
 				'  type: "mission" | "library";',
-				"  registry?: string;",
 				"  exports?: string | string[];",
 				"  include?: string[];",
 				"  dependencies?: Record<string, string>;",
@@ -128,10 +124,10 @@ async function suggestDefaultPackageName(
 	registry: string,
 	projectName: string,
 ): Promise<string> {
-	const rc = await readRc();
-	if (!rc.token) return `@local/${projectName}`;
+	const token = await getToken();
+	if (!token) return `@local/${projectName}`;
 	const me = await registryFetch<{ user: string }>(registry, "/auth/whoami", {
-		token: rc.token,
+		token,
 	});
 	return `@${me.user}/${projectName}`;
 }
