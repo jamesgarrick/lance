@@ -24,17 +24,24 @@ export function append<T>(array1: Array<T>, array2: Array<T>): Array<T>;
  *
  * @see {@link https://community.bistudio.com/wiki/apply apply}
  */
-export function apply(array: Array<any>, code: (item: any) => any): Array<any>;
+export function apply(
+  array: Array<any>,
+  code: (item: any, index: number, array: any[]) => any,
+): Array<any>;
 
 // type enriched
 /**
- * Applies the given code to each element of the given data structure and collects the results in an array.
+ * Applies the given code to each element of the given
+ * data structure and collects the results in an array.
  *
  * @since 1.56
  *
  * @see {@link https://community.bistudio.com/wiki/apply apply}
  */
-export function apply<T, U>(array: Array<T>, code: (item: T) => U): Array<U>;
+export function apply<T, U>(
+  array: T[],
+  code: (item: T, index: number, array: T[]) => U,
+): Array<U>;
 
 
 // syntax 1
@@ -115,6 +122,9 @@ export function deleteAt(hashmap: Hashmap, key: HashmapKey): any;
 export function deleteAt(array: any[], indexes: number[]): any[];
 export function deleteAt<T>(array: Array<T>, indexes: number[]): Array<T>;
 
+export function deleteRange(array: any[], start: number, count: number): any[];
+export function deleteRange<T>(array: Array<T>, start: number, count: number): Array<T>;
+
 /**
  * Insert an element to the back of the given array.
  * This command modifies the original array. (see also: pushBackUnique)
@@ -128,6 +138,9 @@ export function pushBack(array: any[], item: any): number;
  */
 export function pushBack<T>(array: Array<T>, item: T): number;
 
+/** Inserts multiple values into Array/String/HashMap. */
+export function insert(array: any[], index: number, item: any, onlyIfUnique?: boolean): number;
+export function insert<T>(array: Array<T>, index: number, item: T, onlyIfUnique?: boolean): number;
 
 export function joinString(array: any[], separator: string): string;
 
@@ -162,10 +175,16 @@ export function sort(array: any[], ascending?: boolean): any[];
 export function sort<T>(array: T[], ascending?: boolean): T[];
 
 
-export function apply(array: any[], func: Function): any[];
+export function apply(
+  array: any[],
+  func: (item: any, index: number, array: any[]) => any,
+): any[];
 
 // type enriched
-export function apply<T, U>(array: T[], func: (item: T) => U): U[];
+export function apply<T, U>(
+  array: T[],
+  func: (item: T, index: number, array: T[]) => U,
+): U[];
 
 /**
  * Flattens an array
@@ -193,7 +212,10 @@ export function flatten<T>(array: T[]): T[];
  * @param code
  * @param array
  */
-export function forEach(code: (item: any) => void, array: any[]): any;
+export function forEach(
+  code: (item: any, index: number, array: any[]) => void,
+  array: any[],
+): any;
 
 // type enriched
 /**
@@ -204,7 +226,10 @@ export function forEach(code: (item: any) => void, array: any[]): any;
  * @param code
  * @param array
  */
-export function forEach<T>(code: (item: T) => void, array: T[]): void;
+export function forEach<T>(
+  code: (item: T, index: number, array: T[]) => void,
+  array: T[],
+): void;
 
 export function resize(array: any[], length: number, fill?: any): any[];
 
@@ -218,3 +243,26 @@ export function resize(array: any[], length: number, fill?: any): any[];
  * @param length
  */
 export function resize<T>(array: T[], length: number, fill?: T): T[];
+
+// Intersects two arrays returning an array of unique common elements, avoiding nil values. Using the same array as both parameters will return unique elements of that array. Intersects only the first dimension of said arrays.
+/**
+ *
+ * @param a
+ * @param b
+ */
+export function arrayIntersect(a: any[], b: any[]): any[];
+
+// type enriched
+export function arrayIntersect<T>(a: T[], b: T[]): T[];
+
+/** Check if config entry represents array. */
+export function isArray(config: Config): boolean;
+
+/** Check if all elements in the array are of type `val`. */
+export function isEqualTypeAll(array: any[], val: any): boolean;
+
+/** Compares types of all elements of `a1` to types of all elements of `a2`. */
+export function isEqualTypeArray(a1: any[], a2: any[]): boolean;
+
+export function arraySet(array: any[], index: number, value: any): void;
+export function arraySet<T>(array: T[], index: number, value: T): void;

@@ -1,4 +1,16 @@
-import { count, str, deleteAt, pushBack, joinString, reverse, select, apply, sort as sortArray } from "@lance/core";
+import {
+  count,
+  str,
+  deleteAt,
+  pushBack,
+  joinString,
+  reverse,
+  select,
+  apply,
+  sort as sortArray,
+  resize,
+  forEach
+} from "@lance/core";
 
 
 export class Array<T> {
@@ -169,18 +181,16 @@ export class Array<T> {
      * If thisArg is omitted, undefined is used as the this value.
      */
     some(predicate: (value: T, index: number, array: T[]) => unknown, thisArg?: any): boolean;
-    /**
-     * Performs the specified action for each element in an array.
-     * @param callbackfn A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
-     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-     */
-    forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
-    /**
-     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
-     * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
-     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-     */
-    map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
+
+  forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void {
+    // TODO! not sure about thisArg yet
+    forEach(callbackfn, this._array);
+    return;
+  }
+
+  map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[] {
+      return apply(this._array, callbackfn)
+    }
     /**
      * Returns the elements of an array that meet the condition specified in a callback function.
      * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.

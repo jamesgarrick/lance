@@ -1,7 +1,14 @@
-import { Node, SyntaxKind, type Expression } from "ts-morph";
+import {
+  Node,
+  SyntaxKind,
+  type ArrowFunction,
+  type Expression,
+  type FunctionExpression,
+} from "ts-morph";
 import type {
   SqfArrayExpression,
   SqfCallExpression,
+  SqfCodeBlock,
   SqfCommandExpression,
   SqfConditionalExpression,
   SqfExpression,
@@ -14,9 +21,10 @@ import { sqfMethodCommandRegistry } from "../semantic/command-registry";
 import type { CfgRootName } from "../semantic/context";
 import { resolveCfgReference } from "../semantic/context";
 import { tryLowerClassExpression } from "./class-expression-lowering";
+import { lowerStatement } from "./lower-statements";
 import type { LoweringContext } from "./lowering-context";
 import { lowerBinaryOperator } from "./lower-operators";
-import { resolveIdentifierText } from "./lowering-scope";
+import { addLocalNames, cloneScope, resolveIdentifierText } from "./lowering-scope";
 
 export function lowerExpression(
   expression: Expression,
@@ -58,14 +66,12 @@ export function lowerExpression(
 
   if (Node.isCallExpression(expression)) {
     const callee = expression.getExpression();
-    const args = expression
-      .getArguments()
-      .filter(Node.isExpression)
-      .map((argument) => lowerExpression(argument, context));
+    const argNodes = expression.getArguments().filter(Node.isExpression);
 
     if (Node.isIdentifier(callee)) {
       const sqfName = context.bindings.importedProjectFunctions.get(callee.getText());
       if (sqfName) {
+        const args = argNodes.map((argument) => lowerExpression(argument, context));
         return {
           kind: "CallExpression",
           callee: { kind: "Identifier", text: sqfName },
@@ -75,6 +81,9 @@ export function lowerExpression(
 
       const commandName = context.bindings.sqfCommandFunctions.get(callee.getText());
       if (commandName !== undefined) {
+        const args = argNodes.map((argument, index) =>
+          lowerCommandArgument(commandName, argNodes, index, argument, context),
+        );
         if (args.length <= 1) {
           return { kind: "CommandExpression", command: commandName, args } satisfies SqfCommandExpression;
         }
@@ -87,6 +96,7 @@ export function lowerExpression(
       }
     }
 
+    const args = argNodes.map((argument) => lowerExpression(argument, context));
     return {
       kind: "CallExpression",
       callee: lowerExpression(callee, context),
@@ -159,6 +169,126 @@ export function lowerExpression(
     span: { filePath: expression.getSourceFile().getFilePath(), line: expression.getStartLineNumber() },
   });
   return { kind: "Literal", text: expression.getText() };
+}
+
+function lowerCommandArgument(
+  commandName: string,
+  argNodes: Expression[],
+  index: number,
+  argument: Expression,
+  context: LoweringContext,
+): SqfExpression {
+  if (commandName === "forEach" && index === 0) {
+    return tryLowerCallbackExpression(argument, context, lowerExpression(argNodes[1]!, context));
+  }
+  if (commandName === "apply" && index === 1) {
+    return tryLowerCallbackExpression(argument, context, lowerExpression(argNodes[0]!, context));
+  }
+  if (commandName === "count" && index === 0 && argNodes.length >= 2) {
+    return tryLowerCallbackExpression(argument, context, lowerExpression(argNodes[1]!, context));
+  }
+  return lowerExpression(argument, context);
+}
+
+function tryLowerCallbackExpression(
+  expression: Expression,
+  context: LoweringContext,
+  sourceArray: SqfExpression,
+): SqfExpression {
+  if (!Node.isArrowFunction(expression) && !Node.isFunctionExpression(expression)) {
+    return lowerExpression(expression, context);
+  }
+
+  const lowered = lowerCallbackFunction(expression, context, sourceArray);
+  if (!lowered) return { kind: "Literal", text: expression.getText() };
+  return lowered;
+}
+
+function lowerCallbackFunction(
+  fn: ArrowFunction | FunctionExpression,
+  context: LoweringContext,
+  sourceArray: SqfExpression,
+): SqfCodeBlock | undefined {
+  const paramNames = getCallbackParamNames(fn);
+  if (!paramNames) return undefined;
+
+  const callbackScope = addLocalNames(cloneScope(context.scope), paramNames);
+  const callbackContext: LoweringContext = { ...context, scope: callbackScope };
+  const prelude = buildCallbackPrelude(paramNames, sourceArray);
+
+  const body = fn.getBody();
+  if (Node.isBlock(body)) {
+    const loweredBody = body.getStatements().map((statement) =>
+      lowerStatement(statement, callbackContext),
+    );
+    return { kind: "CodeBlock", body: [...prelude, ...loweredBody] };
+  }
+
+  return {
+    kind: "CodeBlock",
+    body: [
+      ...prelude,
+      {
+        kind: "TrailingExpressionStatement",
+        expression: lowerExpression(body as Expression, callbackContext),
+      },
+    ],
+  };
+}
+
+function getCallbackParamNames(
+  fn: ArrowFunction | FunctionExpression,
+): string[] | undefined {
+  const names: string[] = [];
+  for (const param of fn.getParameters()) {
+    const nameNode = param.getNameNode();
+    if (!Node.isIdentifier(nameNode)) return undefined;
+    names.push(nameNode.getText());
+  }
+  return names;
+}
+
+function buildCallbackPrelude(
+  paramNames: readonly string[],
+  sourceArray: SqfExpression,
+) {
+  const prelude: {
+    kind: "VariableStatement";
+    name: string;
+    initializer: SqfExpression;
+  }[] = [];
+  const valueParam = paramNames[0];
+  if (valueParam && valueParam !== "x" && valueParam !== "_x") {
+    prelude.push({
+      kind: "VariableStatement",
+      name: valueParam,
+      initializer: { kind: "Identifier", text: "_x" } satisfies SqfIdentifier,
+    });
+  }
+
+  const indexParam = paramNames[1];
+  if (
+    indexParam
+    && indexParam !== "forEachIndex"
+    && indexParam !== "_forEachIndex"
+  ) {
+    prelude.push({
+      kind: "VariableStatement",
+      name: indexParam,
+      initializer: { kind: "Identifier", text: "_forEachIndex" } satisfies SqfIdentifier,
+    });
+  }
+
+  const arrayParam = paramNames[2];
+  if (arrayParam) {
+    prelude.push({
+      kind: "VariableStatement",
+      name: arrayParam,
+      initializer: sourceArray,
+    });
+  }
+
+  return prelude;
 }
 
 function tryLowerSpecialCommandExpression(
