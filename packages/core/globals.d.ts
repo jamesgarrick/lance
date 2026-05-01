@@ -10,6 +10,7 @@ declare global {
 	interface RegExp {}
 	interface IArguments {}
 
+
 	interface Array<T> {
 		length: number;
 		[index: number]: T;

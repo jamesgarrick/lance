@@ -18,6 +18,9 @@
       "recommended": true,
       "suspicious": {
         "noShadowRestrictedNames": "off"
+      },
+      "complexity": {
+        "noStaticOnlyClass": "off"
       }
     }
   },

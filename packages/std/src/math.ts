@@ -1,22 +1,22 @@
-import
-{
-  random,
-  round,
-  sin,
-  sqrt,
-  tan,
+import {
   abs,
   acos,
   asin,
   atan,
   atan2,
   ceil,
-  floor,
   cos,
   exp,
-  log,
+  floor,
   ln,
-  pi
+  pi,
+  random,
+  round,
+  selectMax,
+  selectMin,
+  sin,
+  sqrt,
+  tan
 } from '@lance/core';
 
 export declare const Infinity: number;
