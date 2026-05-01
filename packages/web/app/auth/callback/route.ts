@@ -17,6 +17,11 @@ interface RegistryLoginResponse {
 	error?: string;
 }
 
+interface OAuthStatePayload {
+	nonce?: string;
+	return_to?: string;
+}
+
 function requiredEnv(name: string): string {
 	const value = process.env[name];
 	if (!value) throw new Error(`Missing required env var: ${name}`);
@@ -31,6 +36,29 @@ function getDefaultSuccessRedirect(): string | null {
 	return process.env.OAUTH_SUCCESS_REDIRECT ?? null;
 }
 
+function fromBase64Url(input: string): string {
+	return Buffer.from(input, "base64url").toString("utf8");
+}
+
+function parseStatePayload(state: string): OAuthStatePayload | null {
+	if (!state) return null;
+	try {
+		return JSON.parse(fromBase64Url(state)) as OAuthStatePayload;
+	} catch {
+		return null;
+	}
+}
+
+function isLocalCallbackTarget(target: string): boolean {
+	try {
+		const url = new URL(target);
+		if (url.protocol !== "http:") return false;
+		return url.hostname === "localhost" || url.hostname === "127.0.0.1";
+	} catch {
+		return false;
+	}
+}
+
 function buildRedirectWithParams(target: string, params: Record<string, string>): URL {
 	const url = new URL(target);
 	for (const [key, value] of Object.entries(params)) {
@@ -42,7 +70,12 @@ function buildRedirectWithParams(target: string, params: Record<string, string>)
 export async function GET(req: NextRequest): Promise<NextResponse> {
 	const code = req.nextUrl.searchParams.get("code");
 	const state = req.nextUrl.searchParams.get("state") ?? "";
-	const returnTo = req.nextUrl.searchParams.get("return_to");
+	const returnToFromQuery = req.nextUrl.searchParams.get("return_to");
+	const statePayload = parseStatePayload(state);
+	const returnToFromState = statePayload?.return_to ?? null;
+	const returnTo =
+		returnToFromQuery ??
+		(isLocalCallbackTarget(returnToFromState ?? "") ? returnToFromState : null);
 
 	if (!code) {
 		return NextResponse.json({ error: "Missing code query parameter" }, { status: 400 });
