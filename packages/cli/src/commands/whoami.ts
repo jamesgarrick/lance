@@ -1,5 +1,5 @@
 import { Command } from "@oclif/core";
-import { getToken } from "../lib/auth";
+import { getToken, readRc } from "../lib/auth";
 import { defaultRegistry, readManifest } from "../lib/manifest";
 import { registryFetch } from "../lib/registry-client";
 
@@ -19,7 +19,19 @@ export default class WhoAmI extends Command {
 			version: "",
 			type: "library" as const,
 		}));
-		const registry = defaultRegistry(manifest);
+		const rc = await readRc();
+		const defaultFromManifest = defaultRegistry(manifest);
+		const registry =
+			rc.registry
+			?? process.env.LANCE_REGISTRY_URL
+			?? (defaultFromManifest !== "http://localhost:8787"
+				? defaultFromManifest
+				: null);
+		if (!registry) {
+			this.error(
+				"Registry URL is not configured. Run `lance login --registry https://<your-registry-host>` or set LANCE_REGISTRY_URL.",
+			);
+		}
 		const me = await registryFetch<WhoAmIResponse>(registry, "/auth/whoami", {
 			token,
 		});

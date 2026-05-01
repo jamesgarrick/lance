@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 interface OAuthStatePayload {
 	nonce: string;
 	return_to?: string;
+	registry?: string;
 }
 
 function requiredEnv(name: string): string {
@@ -15,10 +16,11 @@ function toBase64Url(input: string): string {
 	return Buffer.from(input, "utf8").toString("base64url");
 }
 
-function createState(returnTo: string | null): string {
+function createState(returnTo: string | null, registry: string | null): string {
 	const payload: OAuthStatePayload = {
 		nonce: crypto.randomUUID(),
 		return_to: returnTo ?? undefined,
+		registry: registry ?? undefined,
 	};
 	return toBase64Url(JSON.stringify(payload));
 }
@@ -31,8 +33,9 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 	try {
 		const clientId = requiredEnv("GITHUB_CLIENT_ID");
 		const returnTo = req.nextUrl.searchParams.get("return_to");
+		const registry = req.nextUrl.searchParams.get("registry");
 		const redirectUri = getRedirectUri(req);
-		const state = createState(returnTo);
+		const state = createState(returnTo, registry);
 
 		const githubUrl = new URL("https://github.com/login/oauth/authorize");
 		githubUrl.searchParams.set("client_id", clientId);

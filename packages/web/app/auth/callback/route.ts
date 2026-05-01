@@ -20,6 +20,7 @@ interface RegistryLoginResponse {
 interface OAuthStatePayload {
 	nonce?: string;
 	return_to?: string;
+	registry?: string;
 }
 
 async function parseJsonResponse<T>(response: Response): Promise<{
@@ -91,6 +92,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 	const returnToFromQuery = req.nextUrl.searchParams.get("return_to");
 	const statePayload = parseStatePayload(state);
 	const returnToFromState = statePayload?.return_to ?? null;
+	const registryFromState = statePayload?.registry ?? null;
 	const returnTo =
 		returnToFromQuery ??
 		(isLocalCallbackTarget(returnToFromState ?? "") ? returnToFromState : null);
@@ -220,6 +222,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 				user: registryBody.user ?? githubUser,
 				scope: registryBody.scope ?? "",
 				state,
+				registry: registryFromState ?? "",
 			});
 			return NextResponse.redirect(redirectUrl);
 		}
@@ -230,6 +233,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 			user: registryBody.user ?? githubUser,
 			scope: registryBody.scope ?? "",
 			state,
+			registry: registryFromState ?? "",
 		});
 	} catch (error) {
 		return NextResponse.json(

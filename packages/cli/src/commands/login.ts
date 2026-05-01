@@ -22,7 +22,10 @@ function getWebBaseUrl(webUrl?: string): string {
 	return webUrl ?? process.env.LANCE_WEB_URL ?? "https://lance.jamesgarrick.com";
 }
 
-async function waitForOAuthToken(port: number): Promise<string> {
+async function waitForOAuthToken(port: number): Promise<{
+	token: string;
+	registry: string | null;
+}> {
 	return new Promise((resolve, reject) => {
 		let settled = false;
 		const timeout = setTimeout(() => {
@@ -39,6 +42,7 @@ async function waitForOAuthToken(port: number): Promise<string> {
 				const url = new URL(req.url);
 				const token = url.searchParams.get("token") ?? "";
 				const error = url.searchParams.get("error") ?? "";
+				const registry = url.searchParams.get("registry") ?? "";
 
 				if (error) {
 					if (!settled) {
@@ -60,7 +64,10 @@ async function waitForOAuthToken(port: number): Promise<string> {
 					settled = true;
 					clearTimeout(timeout);
 					server.stop(true);
-					resolve(token);
+					resolve({
+						token,
+						registry: registry || null,
+					});
 				}
 				return new Response("Login successful. You can close this window.");
 			},
@@ -79,6 +86,9 @@ export default class Login extends Command {
 		webUrl: Flags.string({
 			description: "Web app base URL for OAuth flow",
 		}),
+		registry: Flags.string({
+			description: "Registry base URL to store in ~/.lancerc",
+		}),
 		callbackPort: Flags.integer({
 			description: "Local callback port for OAuth flow",
 			default: 53682,
@@ -88,17 +98,21 @@ export default class Login extends Command {
 	async run(): Promise<void> {
 		const { flags } = await this.parse(Login);
 		let token: string;
+		let registry: string | null = null;
+		const rc = await readRc();
 
 		if (flags.manual) {
 			token = await input({ message: "Paste registry JWT token" });
 			if (!token) this.error("No token provided");
+			registry = flags.registry ?? process.env.LANCE_REGISTRY_URL ?? rc.registry ?? null;
 		} else {
 			const manifest = await readManifest(process.cwd()).catch(() => ({
 				name: "",
 				version: "",
 				type: "library" as const,
 			}));
-			const registry = defaultRegistry(manifest);
+			const manifestRegistry = defaultRegistry(manifest);
+			registry = flags.registry ?? process.env.LANCE_REGISTRY_URL ?? rc.registry ?? manifestRegistry;
 			const webBase = getWebBaseUrl(flags.webUrl);
 			const callbackUrl = `http://127.0.0.1:${flags.callbackPort}/callback`;
 			const authStartUrl = new URL(`${webBase}/auth/start`);
@@ -107,11 +121,15 @@ export default class Login extends Command {
 
 			this.log(`Opening browser for OAuth: ${authStartUrl.toString()}`);
 			openBrowser(authStartUrl.toString());
-			token = await waitForOAuthToken(flags.callbackPort);
+			const oauthResult = await waitForOAuthToken(flags.callbackPort);
+			token = oauthResult.token;
+			if (oauthResult.registry) {
+				registry = oauthResult.registry;
+			}
 		}
 
-		const rc = await readRc();
 		rc.token = token;
+		if (registry && registry !== "http://localhost:8787") rc.registry = registry;
 		await writeRc(rc);
 		this.log("Login successful.");
 	}
