@@ -1,2534 +1,2534 @@
 {
-  "u": {
-    "c": {
-      "poor_shorts_2": {
-        "className": "U_C_Poor_shorts_2",
-        "name": "Worn Shorts 2"
-      },
-      "poor_shorts_1": {
-        "className": "U_C_Poor_shorts_1",
-        "name": "Worn Shorts 1"
-      },
-      "poor_1": {
-        "className": "U_C_Poor_1",
-        "name": "Worn Clothes"
-      },
-      "poor_2": {
-        "className": "U_C_Poor_2",
-        "name": "Worn Clothes"
-      },
-      "poor_2_sick": {
-        "className": "U_C_Poor_2_sick",
-        "name": "Worn Clothes"
-      },
-      "workercoveralls": {
-        "className": "U_C_WorkerCoveralls",
-        "name": "Worker Coveralls"
-      },
-      "workeroveralls": {
-        "className": "U_C_WorkerOveralls",
-        "name": "Worker Clothes"
-      },
-      "protagonist_vr": {
-        "className": "U_C_Protagonist_VR",
-        "name": "VR Suit [Civilians]"
-      },
-      "soldier_vr": {
-        "className": "U_C_Soldier_VR",
-        "name": "VR Entity Suit"
-      },
-      "teesurfer_shorts_2": {
-        "className": "U_C_TeeSurfer_shorts_2",
-        "name": "Surfer Outfit 3"
-      },
-      "teesurfer_shorts_1": {
-        "className": "U_C_TeeSurfer_shorts_1",
-        "name": "Surfer Outfit 2"
-      },
-      "shirtsurfer_shorts": {
-        "className": "U_C_ShirtSurfer_shorts",
-        "name": "Surfer Outfit 1"
-      },
-      "man_casual_5": {
-        "className": "U_C_Man_casual_5_F",
-        "name": "Summer Clothes (Yellow)"
-      },
-      "man_casual_5_sick": {
-        "className": "U_C_Man_casual_5_sick_F",
-        "name": "Summer Clothes (Yellow)"
-      },
-      "man_casual_4": {
-        "className": "U_C_Man_casual_4_F",
-        "name": "Summer Clothes (Sky)"
-      },
-      "man_casual_4_sick": {
-        "className": "U_C_Man_casual_4_sick_F",
-        "name": "Summer Clothes (Sky)"
-      },
-      "man_casual_6": {
-        "className": "U_C_Man_casual_6_F",
-        "name": "Summer Clothes (Red)"
-      },
-      "man_casual_6_sick": {
-        "className": "U_C_Man_casual_6_sick_F",
-        "name": "Summer Clothes (Red)"
-      },
-      "man_sport_2": {
-        "className": "U_C_man_sport_2_F",
-        "name": "Sport Clothes (Orange)"
-      },
-      "man_sport_2_sick": {
-        "className": "U_C_man_sport_2_sick_F",
-        "name": "Sport Clothes (Orange)"
-      },
-      "man_sport_3": {
-        "className": "U_C_man_sport_3_F",
-        "name": "Sport Clothes (Blue)"
-      },
-      "man_sport_1": {
-        "className": "U_C_man_sport_1_F",
-        "name": "Sport Clothes (Beach)"
-      },
-      "uniform_scientist_02_formal": {
-        "className": "U_C_Uniform_Scientist_02_formal_F",
-        "name": "Scientist Outfit (Informal, Red)"
-      },
-      "uniform_scientist_02": {
-        "className": "U_C_Uniform_Scientist_02_F",
-        "name": "Scientist Outfit (Informal, Black)"
-      },
-      "uniform_scientist_01": {
-        "className": "U_C_Uniform_Scientist_01_F",
-        "name": "Scientist Outfit (Formal, White)"
-      },
-      "uniform_scientist_01_formal": {
-        "className": "U_C_Uniform_Scientist_01_formal_F",
-        "name": "Scientist Outfit (Formal, Blue)"
-      },
-      "scientist": {
-        "className": "U_C_Scientist",
-        "name": "Scientist Clothes"
-      },
-      "scavenger_1": {
-        "className": "U_C_Scavenger_1",
-        "name": "Scavenger Clothes (Light)"
-      },
-      "scavenger_2": {
-        "className": "U_C_Scavenger_2",
-        "name": "Scavenger Clothes (Dark)"
-      },
-      "paramedic_01": {
-        "className": "U_C_Paramedic_01_F",
-        "name": "Paramedic Outfit"
-      },
-      "novak": {
-        "className": "U_C_Novak",
-        "name": "Novak's Leisure Suit"
-      },
-      "mechanic_01": {
-        "className": "U_C_Mechanic_01_F",
-        "name": "Mechanic Clothes"
-      },
-      "e_looterjacket_01": {
-        "className": "U_C_E_LooterJacket_01_F",
-        "name": "Looter Clothes (Leather Jacket)"
-      },
-      "journalist": {
-        "className": "U_C_Journalist",
-        "name": "Journalist Clothes"
-      },
-      "hunterbody_brn": {
-        "className": "U_C_HunterBody_brn",
-        "name": "Hunting Clothes (Brown)"
-      },
-      "hunterbody_grn": {
-        "className": "U_C_HunterBody_grn",
-        "name": "Hunting Clothes"
-      },
-      "formalsuit_01_tshirt_gray": {
-        "className": "U_C_FormalSuit_01_tshirt_gray_F",
-        "name": "Formal Suit (T-Shirt, Gray)"
-      },
-      "formalsuit_01_tshirt_black": {
-        "className": "U_C_FormalSuit_01_tshirt_black_F",
-        "name": "Formal Suit (T-Shirt, Black)"
-      },
-      "formalsuit_01_khaki": {
-        "className": "U_C_FormalSuit_01_khaki_F",
-        "name": "Formal Suit (Khaki)"
-      },
-      "formalsuit_01_gray": {
-        "className": "U_C_FormalSuit_01_gray_F",
-        "name": "Formal Suit (Gray)"
-      },
-      "formalsuit_01_blue": {
-        "className": "U_C_FormalSuit_01_blue_F",
-        "name": "Formal Suit (Blue)"
-      },
-      "formalsuit_01_black": {
-        "className": "U_C_FormalSuit_01_black_F",
-        "name": "Formal Suit (Black)"
-      },
-      "fishermanoveralls": {
-        "className": "U_C_FishermanOveralls",
-        "name": "Fishing Overalls"
-      },
-      "fisherman": {
-        "className": "U_C_Fisherman",
-        "name": "Fishing Clothes"
-      },
-      "uniform_farmer_01": {
-        "className": "U_C_Uniform_Farmer_01_F",
-        "name": "Farmer Outfit"
-      },
-      "farmer": {
-        "className": "U_C_Farmer",
-        "name": "Farmer Clothes"
-      },
-      "driver_1_yellow": {
-        "className": "U_C_Driver_1_yellow",
-        "name": "Driver Coverall (Yellow)"
-      },
-      "driver_1_white": {
-        "className": "U_C_Driver_1_white",
-        "name": "Driver Coverall (White)"
-      },
-      "driver_4": {
-        "className": "U_C_Driver_4",
-        "name": "Driver Coverall (Vrana)"
-      },
-      "driver_3": {
-        "className": "U_C_Driver_3",
-        "name": "Driver Coverall (Redstone)"
-      },
-      "driver_1_red": {
-        "className": "U_C_Driver_1_red",
-        "name": "Driver Coverall (Red)"
-      },
-      "driver_1_orange": {
-        "className": "U_C_Driver_1_orange",
-        "name": "Driver Coverall (Orange)"
-      },
-      "driver_1_green": {
-        "className": "U_C_Driver_1_green",
-        "name": "Driver Coverall (Green)"
-      },
-      "driver_1": {
-        "className": "U_C_Driver_1",
-        "name": "Driver Coverall (Fuel)"
-      },
-      "driver_2": {
-        "className": "U_C_Driver_2",
-        "name": "Driver Coverall (Bluking)"
-      },
-      "driver_1_blue": {
-        "className": "U_C_Driver_1_blue",
-        "name": "Driver Coverall (Blue)"
-      },
-      "driver_1_black": {
-        "className": "U_C_Driver_1_black",
-        "name": "Driver Coverall (Black)"
-      },
-      "constructioncoverall_vrana": {
-        "className": "U_C_ConstructionCoverall_Vrana_F",
-        "name": "Construction Coverall (Vrana)"
-      },
-      "constructioncoverall_red": {
-        "className": "U_C_ConstructionCoverall_Red_F",
-        "name": "Construction Coverall (Red)"
-      },
-      "constructioncoverall_blue": {
-        "className": "U_C_ConstructionCoverall_Blue_F",
-        "name": "Construction Coverall (Blue)"
-      },
-      "constructioncoverall_black": {
-        "className": "U_C_ConstructionCoverall_Black_F",
-        "name": "Construction Coverall (Black)"
-      },
-      "commoner_shorts": {
-        "className": "U_C_Commoner_shorts",
-        "name": "Commoner Shorts"
-      },
-      "commoner2_3": {
-        "className": "U_C_Commoner2_3",
-        "name": "Commoner Clothes 6"
-      },
-      "commoner2_2": {
-        "className": "U_C_Commoner2_2",
-        "name": "Commoner Clothes 5"
-      },
-      "commoner2_1": {
-        "className": "U_C_Commoner2_1",
-        "name": "Commoner Clothes 4"
-      },
-      "commoner1_3": {
-        "className": "U_C_Commoner1_3",
-        "name": "Commoner Clothes 3"
-      },
-      "commoner1_1": {
-        "className": "U_C_Commoner1_1",
-        "name": "Commoner Clothes 2"
-      },
-      "commoner1_2": {
-        "className": "U_C_Commoner1_2",
-        "name": "Commoner Clothes 2"
-      },
-      "poloshirt_tricolour": {
-        "className": "U_C_Poloshirt_tricolour",
-        "name": "Commoner Clothes (Tricolor)"
-      },
-      "poloshirt_stripped": {
-        "className": "U_C_Poloshirt_stripped",
-        "name": "Commoner Clothes (Striped)"
-      },
-      "poloshirt_stripped_sick": {
-        "className": "U_C_Poloshirt_stripped_sick",
-        "name": "Commoner Clothes (Striped)"
-      },
-      "poloshirt_salmon": {
-        "className": "U_C_Poloshirt_salmon",
-        "name": "Commoner Clothes (Salmon)"
-      },
-      "poloshirt_redwhite": {
-        "className": "U_C_Poloshirt_redwhite",
-        "name": "Commoner Clothes (Red-White)"
-      },
-      "poloshirt_redwhite_sick": {
-        "className": "U_C_Poloshirt_redwhite_sick",
-        "name": "Commoner Clothes (Red-White)"
-      },
-      "poloshirt_burgundy": {
-        "className": "U_C_Poloshirt_burgundy",
-        "name": "Commoner Clothes (Burgundy)"
-      },
-      "poloshirt_burgundy_sick": {
-        "className": "U_C_Poloshirt_burgundy_sick",
-        "name": "Commoner Clothes (Burgundy)"
-      },
-      "poloshirt_blue": {
-        "className": "U_C_Poloshirt_blue",
-        "name": "Commoner Clothes (Blue)"
-      },
-      "poloshirt_blue_sick": {
-        "className": "U_C_Poloshirt_blue_sick",
-        "name": "Commoner Clothes (Blue)"
-      },
-      "priestbody": {
-        "className": "U_C_PriestBody",
-        "name": "Clerical Robes"
-      },
-      "cbrn_suit_01_white": {
-        "className": "U_C_CBRN_Suit_01_White_F",
-        "name": "CBRN Suit (White)"
-      },
-      "cbrn_suit_01_blue": {
-        "className": "U_C_CBRN_Suit_01_Blue_F",
-        "name": "CBRN Suit (Blue)"
-      },
-      "arttshirt_01_v3": {
-        "className": "U_C_ArtTShirt_01_v3_F",
-        "name": "Casual Clothes (Waltham Robotics)"
-      },
-      "arttshirt_01_v5": {
-        "className": "U_C_ArtTShirt_01_v5_F",
-        "name": "Casual Clothes (Robogeddon)"
-      },
-      "man_casual_1": {
-        "className": "U_C_Man_casual_1_F",
-        "name": "Casual Clothes (Navy)"
-      },
-      "man_casual_1_sick": {
-        "className": "U_C_Man_casual_1_sick_F",
-        "name": "Casual Clothes (Navy)"
-      },
-      "man_casual_3": {
-        "className": "U_C_Man_casual_3_F",
-        "name": "Casual Clothes (Green)"
-      },
-      "man_casual_3_sick": {
-        "className": "U_C_Man_casual_3_sick_F",
-        "name": "Casual Clothes (Green)"
-      },
-      "arttshirt_01_v4": {
-        "className": "U_C_ArtTShirt_01_v4_F",
-        "name": "Casual Clothes (Exhibition)"
-      },
-      "arttshirt_01_v2": {
-        "className": "U_C_ArtTShirt_01_v2_F",
-        "name": "Casual Clothes (Drones)"
-      },
-      "man_casual_2": {
-        "className": "U_C_Man_casual_2_F",
-        "name": "Casual Clothes (Blue)"
-      },
-      "man_casual_2_sick": {
-        "className": "U_C_Man_casual_2_sick_F",
-        "name": "Casual Clothes (Blue)"
-      },
-      "arttshirt_01_v1": {
-        "className": "U_C_ArtTShirt_01_v1_F",
-        "name": "Casual Clothes (Art of War)"
-      },
-      "arttshirt_01_v6": {
-        "className": "U_C_ArtTShirt_01_v6_F",
-        "name": "Casual Clothes (Abstract)"
-      },
-      "idap_man_tee": {
-        "className": "U_C_IDAP_Man_Tee_F",
-        "name": "Aid Worker Clothes (Tee) [IDAP]"
-      },
-      "idap_man_teeshorts": {
-        "className": "U_C_IDAP_Man_TeeShorts_F",
-        "name": "Aid Worker Clothes (Tee, Shorts) [IDAP]"
-      },
-      "idap_man_casual": {
-        "className": "U_C_IDAP_Man_casual_F",
-        "name": "Aid Worker Clothes (Polo) [IDAP]"
-      },
-      "idap_man_shorts": {
-        "className": "U_C_IDAP_Man_shorts_F",
-        "name": "Aid Worker Clothes (Polo, Shorts) [IDAP]"
-      },
-      "idap_man_jeans": {
-        "className": "U_C_IDAP_Man_Jeans_F",
-        "name": "Aid Worker Clothes (Jeans) [IDAP]"
-      },
-      "idap_man_cargo": {
-        "className": "U_C_IDAP_Man_cargo_F",
-        "name": "Aid Worker Clothes (Cargo) [IDAP]"
-      }
-    },
-    "b": {
-      "combatuniform_mcam_worn": {
-        "className": "U_B_CombatUniform_mcam_worn",
-        "name": "Worn Combat Fatigues (MTP)"
-      },
-      "wetsuit": {
-        "className": "U_B_Wetsuit",
-        "name": "Wetsuit [NATO]"
-      },
-      "protagonist_vr": {
-        "className": "U_B_Protagonist_VR",
-        "name": "VR Suit [NATO]"
-      },
-      "soldier_vr": {
-        "className": "U_B_Soldier_VR",
-        "name": "VR Entity Suit"
-      },
-      "survival_uniform": {
-        "className": "U_B_survival_uniform",
-        "name": "Survival Fatigues"
-      },
-      "specopsuniform_sgg": {
-        "className": "U_B_SpecopsUniform_sgg",
-        "name": "Specop Fatigues (Sage)"
-      },
-      "combatuniform_vest_mcam_wdl": {
-        "className": "U_B_CombatUniform_vest_mcam_wdl_f",
-        "name": "Recon Fatigues (Woodland)"
-      },
-      "t_soldier_sl": {
-        "className": "U_B_T_Soldier_SL_F",
-        "name": "Recon Fatigues (Tropic)"
-      },
-      "combatuniform_mcam_vest": {
-        "className": "U_B_CombatUniform_mcam_vest",
-        "name": "Recon Fatigues (MTP)"
-      },
-      "combatuniform_sgg_vest": {
-        "className": "U_B_CombatUniform_sgg_vest",
-        "name": "Recon Fatigues (MTP)"
-      },
-      "combatuniform_wdl_vest": {
-        "className": "U_B_CombatUniform_wdl_vest",
-        "name": "Recon Fatigues (MTP)"
-      },
-      "pilotcoveralls": {
-        "className": "U_B_PilotCoveralls",
-        "name": "Pilot Coveralls [NATO]"
-      },
-      "g_captain_ivan": {
-        "className": "U_B_G_Captain_Ivan_F",
-        "name": "Paramilitary Garb (Jacket)"
-      },
-      "paradeuniform_01_us": {
-        "className": "U_B_ParadeUniform_01_US_F",
-        "name": "Parade Uniform [US]"
-      },
-      "paradeuniform_01_us_decorated": {
-        "className": "U_B_ParadeUniform_01_US_decorated_F",
-        "name": "Parade Uniform (Decorated) [US]"
-      },
-      "helipilotcoveralls": {
-        "className": "U_B_HeliPilotCoveralls",
-        "name": "Heli Pilot Coveralls [NATO]"
-      },
-      "ghilliesuit": {
-        "className": "U_B_GhillieSuit",
-        "name": "Ghillie Suit [NATO]"
-      },
-      "t_sniper": {
-        "className": "U_B_T_Sniper_F",
-        "name": "Ghillie Suit (Tropic) [NATO]"
-      },
-      "gen_soldier": {
-        "className": "U_B_GEN_Soldier_F",
-        "name": "Gendarmerie Uniform"
-      },
-      "gen_commander": {
-        "className": "U_B_GEN_Commander_F",
-        "name": "Gendarmerie Commander Uniform"
-      },
-      "fullghillie_sard": {
-        "className": "U_B_FullGhillie_sard",
-        "name": "Full Ghillie (Semi-Arid) [NATO]"
-      },
-      "fullghillie_lsh": {
-        "className": "U_B_FullGhillie_lsh",
-        "name": "Full Ghillie (Lush) [NATO]"
-      },
-      "t_fullghillie_tna": {
-        "className": "U_B_T_FullGhillie_tna_F",
-        "name": "Full Ghillie (Jungle) [NATO]"
-      },
-      "fullghillie_ard": {
-        "className": "U_B_FullGhillie_ard",
-        "name": "Full Ghillie (Arid) [NATO]"
-      },
-      "ctrg_soldier_urb_2": {
-        "className": "U_B_CTRG_Soldier_urb_2_F",
-        "name": "CTRG Urban Uniform (Tee)"
-      },
-      "ctrg_soldier_urb_3": {
-        "className": "U_B_CTRG_Soldier_urb_3_F",
-        "name": "CTRG Urban Uniform (Rolled-up)"
-      },
-      "ctrg_soldier_urb_1": {
-        "className": "U_B_CTRG_Soldier_urb_1_F",
-        "name": "CTRG Urban Uniform"
-      },
-      "ctrg_soldier_2": {
-        "className": "U_B_CTRG_Soldier_2_F",
-        "name": "CTRG Stealth Uniform (Tee)"
-      },
-      "ctrg_soldier_2_arid": {
-        "className": "U_B_CTRG_Soldier_2_Arid_F",
-        "name": "CTRG Stealth Uniform (Tee, Arid)"
-      },
-      "ctrg_soldier_3": {
-        "className": "U_B_CTRG_Soldier_3_F",
-        "name": "CTRG Stealth Uniform (Rolled-up)"
-      },
-      "ctrg_soldier_3_arid": {
-        "className": "U_B_CTRG_Soldier_3_Arid_F",
-        "name": "CTRG Stealth Uniform (Rolled-up, Arid)"
-      },
-      "ctrg_soldier_arid": {
-        "className": "U_B_CTRG_Soldier_Arid_F",
-        "name": "CTRG Stealth Uniform (Arid)"
-      },
-      "ctrg_soldier": {
-        "className": "U_B_CTRG_Soldier_F",
-        "name": "CTRG Stealth Uniform"
-      },
-      "ctrg_2": {
-        "className": "U_B_CTRG_2",
-        "name": "CTRG Combat Uniform (Tee)"
-      },
-      "ctrg_3": {
-        "className": "U_B_CTRG_3",
-        "name": "CTRG Combat Uniform (Rolled-up)"
-      },
-      "ctrg_1": {
-        "className": "U_B_CTRG_1",
-        "name": "CTRG Combat Uniform"
-      },
-      "combatuniform_mcam_wdl": {
-        "className": "U_B_CombatUniform_mcam_wdl_f",
-        "name": "Combat Fatigues (Woodland)"
-      },
-      "combatuniform_tshirt_mcam_wdl": {
-        "className": "U_B_CombatUniform_tshirt_mcam_wdL_f",
-        "name": "Combat Fatigues (Woodland, Tee)"
-      },
-      "t_soldier": {
-        "className": "U_B_T_Soldier_F",
-        "name": "Combat Fatigues (Tropic)"
-      },
-      "t_soldier_ar": {
-        "className": "U_B_T_Soldier_AR_F",
-        "name": "Combat Fatigues (Tropic, Tee)"
-      },
-      "combatuniform_mcam_tshirt": {
-        "className": "U_B_CombatUniform_mcam_tshirt",
-        "name": "Combat Fatigues (MTP) (Tee)"
-      },
-      "combatuniform_sgg_tshirt": {
-        "className": "U_B_CombatUniform_sgg_tshirt",
-        "name": "Combat Fatigues (MTP) (Tee)"
-      },
-      "combatuniform_wdl_tshirt": {
-        "className": "U_B_CombatUniform_wdl_tshirt",
-        "name": "Combat Fatigues (MTP) (Tee)"
-      },
-      "combatuniform_mcam": {
-        "className": "U_B_CombatUniform_mcam",
-        "name": "Combat Fatigues (MTP)"
-      },
-      "combatuniform_sgg": {
-        "className": "U_B_CombatUniform_sgg",
-        "name": "Combat Fatigues (MTP)"
-      },
-      "combatuniform_wdl": {
-        "className": "U_B_CombatUniform_wdl",
-        "name": "Combat Fatigues (MTP)"
-      },
-      "cbrn_suit_01_wdl": {
-        "className": "U_B_CBRN_Suit_01_Wdl_F",
-        "name": "CBRN Suit (Woodland) [NATO]"
-      },
-      "cbrn_suit_01_tropic": {
-        "className": "U_B_CBRN_Suit_01_Tropic_F",
-        "name": "CBRN Suit (Tropic) [NATO]"
-      },
-      "cbrn_suit_01_mtp": {
-        "className": "U_B_CBRN_Suit_01_MTP_F",
-        "name": "CBRN Suit (MTP) [NATO]"
-      }
-    },
-    "i": {
-      "g_story_protagonist": {
-        "className": "U_I_G_Story_Protagonist_F",
-        "name": "Worn Combat Fatigues (Kerry)"
-      },
-      "wetsuit": {
-        "className": "U_I_Wetsuit",
-        "name": "Wetsuit [AAF]"
-      },
-      "protagonist_vr": {
-        "className": "U_I_Protagonist_VR",
-        "name": "VR Suit [AAF]"
-      },
-      "soldier_vr": {
-        "className": "U_I_Soldier_VR",
-        "name": "VR Entity Suit"
-      },
-      "c_soldier_camo": {
-        "className": "U_I_C_Soldier_Camo_F",
-        "name": "Syndikat Uniform"
-      },
-      "pilotcoveralls": {
-        "className": "U_I_pilotCoveralls",
-        "name": "Pilot Coveralls [AAF]"
-      },
-      "c_soldier_para_1": {
-        "className": "U_I_C_Soldier_Para_1_F",
-        "name": "Paramilitary Garb (Tee)"
-      },
-      "c_soldier_para_4": {
-        "className": "U_I_C_Soldier_Para_4_F",
-        "name": "Paramilitary Garb (Tank Top)"
-      },
-      "c_soldier_para_5": {
-        "className": "U_I_C_Soldier_Para_5_F",
-        "name": "Paramilitary Garb (Shorts)"
-      },
-      "c_soldier_para_3": {
-        "className": "U_I_C_Soldier_Para_3_F",
-        "name": "Paramilitary Garb (Shirt)"
-      },
-      "c_soldier_para_2": {
-        "className": "U_I_C_Soldier_Para_2_F",
-        "name": "Paramilitary Garb (Jacket)"
-      },
-      "e_paradeuniform_01_ldf": {
-        "className": "U_I_E_ParadeUniform_01_LDF_F",
-        "name": "Parade Uniform [LDF]"
-      },
-      "paradeuniform_01_aaf": {
-        "className": "U_I_ParadeUniform_01_AAF_F",
-        "name": "Parade Uniform [AAF]"
-      },
-      "e_paradeuniform_01_ldf_decorated": {
-        "className": "U_I_E_ParadeUniform_01_LDF_decorated_F",
-        "name": "Parade Uniform (Decorated) [LDF]"
-      },
-      "paradeuniform_01_aaf_decorated": {
-        "className": "U_I_ParadeUniform_01_AAF_decorated_F",
-        "name": "Parade Uniform (Decorated) [AAF]"
-      },
-      "l_uniform_01_tshirt_sport": {
-        "className": "U_I_L_Uniform_01_tshirt_sport_F",
-        "name": "Looter Clothes (T-Shirt, Sport)"
-      },
-      "l_uniform_01_tshirt_skull": {
-        "className": "U_I_L_Uniform_01_tshirt_skull_F",
-        "name": "Looter Clothes (T-Shirt, Skull)"
-      },
-      "l_uniform_01_tshirt_olive": {
-        "className": "U_I_L_Uniform_01_tshirt_olive_F",
-        "name": "Looter Clothes (T-Shirt, Olive)"
-      },
-      "l_uniform_01_tshirt_black": {
-        "className": "U_I_L_Uniform_01_tshirt_black_F",
-        "name": "Looter Clothes (T-Shirt, Black)"
-      },
-      "e_uniform_01_coveralls": {
-        "className": "U_I_E_Uniform_01_coveralls_F",
-        "name": "Heli Pilot Coveralls [LDF]"
-      },
-      "helipilotcoveralls": {
-        "className": "U_I_HeliPilotCoveralls",
-        "name": "Heli Pilot Coveralls [AAF]"
-      },
-      "ghilliesuit": {
-        "className": "U_I_GhillieSuit",
-        "name": "Ghillie Suit [AAF]"
-      },
-      "fullghillie_sard": {
-        "className": "U_I_FullGhillie_sard",
-        "name": "Full Ghillie (Semi-Arid) [AAF]"
-      },
-      "fullghillie_lsh": {
-        "className": "U_I_FullGhillie_lsh",
-        "name": "Full Ghillie (Lush) [AAF]"
-      },
-      "fullghillie_ard": {
-        "className": "U_I_FullGhillie_ard",
-        "name": "Full Ghillie (Arid) [AAF]"
-      },
-      "l_uniform_01_deserter": {
-        "className": "U_I_L_Uniform_01_deserter_F",
-        "name": "Deserter Clothes (T-Shirt)"
-      },
-      "l_uniform_01_camo": {
-        "className": "U_I_L_Uniform_01_camo_F",
-        "name": "Deserter Clothes (Jacket)"
-      },
-      "e_uniform_01": {
-        "className": "U_I_E_Uniform_01_F",
-        "name": "Combat Fatigues [LDF]"
-      },
-      "combatuniform_shortsleeve": {
-        "className": "U_I_CombatUniform_shortsleeve",
-        "name": "Combat Fatigues [AAF] (Rolled-up)"
-      },
-      "combatuniform_tshirt": {
-        "className": "U_I_CombatUniform_tshirt",
-        "name": "Combat Fatigues [AAF] (Officer)"
-      },
-      "officeruniform": {
-        "className": "U_I_OfficerUniform",
-        "name": "Combat Fatigues [AAF] (Officer)"
-      },
-      "combatuniform": {
-        "className": "U_I_CombatUniform",
-        "name": "Combat Fatigues [AAF]"
-      },
-      "e_uniform_01_tanktop": {
-        "className": "U_I_E_Uniform_01_tanktop_F",
-        "name": "Combat Fatigues (Tank Top) [LDF]"
-      },
-      "e_uniform_01_sweater": {
-        "className": "U_I_E_Uniform_01_sweater_F",
-        "name": "Combat Fatigues (Sweater) [LDF]"
-      },
-      "g_resistanceleader": {
-        "className": "U_I_G_resistanceLeader_F",
-        "name": "Combat Fatigues (Stavrou)"
-      },
-      "e_uniform_01_shortsleeve": {
-        "className": "U_I_E_Uniform_01_shortsleeve_F",
-        "name": "Combat Fatigues (Rolled-up) [LDF]"
-      },
-      "e_uniform_01_officer": {
-        "className": "U_I_E_Uniform_01_officer_F",
-        "name": "Combat Fatigues (Officer) [LDF]"
-      },
-      "e_cbrn_suit_01_eaf": {
-        "className": "U_I_E_CBRN_Suit_01_EAF_F",
-        "name": "CBRN Suit [LDF]"
-      },
-      "cbrn_suit_01_aaf": {
-        "className": "U_I_CBRN_Suit_01_AAF_F",
-        "name": "CBRN Suit [AAF]"
-      },
-      "c_soldier_bandit_3": {
-        "className": "U_I_C_Soldier_Bandit_3_F",
-        "name": "Bandit Clothes (Tee)"
-      },
-      "c_soldier_bandit_5": {
-        "className": "U_I_C_Soldier_Bandit_5_F",
-        "name": "Bandit Clothes (Tank Top)"
-      },
-      "c_soldier_bandit_2": {
-        "className": "U_I_C_Soldier_Bandit_2_F",
-        "name": "Bandit Clothes (Skull)"
-      },
-      "c_soldier_bandit_1": {
-        "className": "U_I_C_Soldier_Bandit_1_F",
-        "name": "Bandit Clothes (Polo Shirt)"
-      },
-      "c_soldier_bandit_4": {
-        "className": "U_I_C_Soldier_Bandit_4_F",
-        "name": "Bandit Clothes (Checkered)"
-      }
-    },
-    "o": {
-      "wetsuit": {
-        "className": "U_O_Wetsuit",
-        "name": "Wetsuit [CSAT]"
-      },
-      "protagonist_vr": {
-        "className": "U_O_Protagonist_VR",
-        "name": "VR Suit [CSAT]"
-      },
-      "soldier_vr": {
-        "className": "U_O_Soldier_VR",
-        "name": "VR Entity Suit"
-      },
-      "r_gorka_01_black": {
-        "className": "U_O_R_Gorka_01_black_F",
-        "name": "Tracksuit (Black)"
-      },
-      "v_soldier_viper_hex": {
-        "className": "U_O_V_Soldier_Viper_hex_F",
-        "name": "Special Purpose Suit (Hex)"
-      },
-      "v_soldier_viper": {
-        "className": "U_O_V_Soldier_Viper_F",
-        "name": "Special Purpose Suit (Green Hex)"
-      },
-      "specopsuniform_ocamo": {
-        "className": "U_O_SpecopsUniform_ocamo",
-        "name": "Recon Fatigues (Hex)"
-      },
-      "specopsuniform_blk": {
-        "className": "U_O_SpecopsUniform_blk",
-        "name": "Recon Fatigues (Black)"
-      },
-      "pilotcoveralls": {
-        "className": "U_O_PilotCoveralls",
-        "name": "Pilot Coveralls [CSAT]"
-      },
-      "paradeuniform_01_csat": {
-        "className": "U_O_ParadeUniform_01_CSAT_F",
-        "name": "Parade Uniform [CSAT]"
-      },
-      "paradeuniform_01_csat_decorated": {
-        "className": "U_O_ParadeUniform_01_CSAT_decorated_F",
-        "name": "Parade Uniform (Decorated) [CSAT]"
-      },
-      "officeruniform_ocamo": {
-        "className": "U_O_OfficerUniform_ocamo",
-        "name": "Officer Fatigues (Hex)"
-      },
-      "t_officer": {
-        "className": "U_O_T_Officer_F",
-        "name": "Officer Fatigues (Green Hex) [CSAT]"
-      },
-      "officer_noinsignia_hex": {
-        "className": "U_O_officer_noInsignia_hex_F",
-        "name": "Light Fatigues (Hex)"
-      },
-      "r_gorka_01_camo": {
-        "className": "U_O_R_Gorka_01_camo_F",
-        "name": "Granit-T Suit"
-      },
-      "r_gorka_01_brown": {
-        "className": "U_O_R_Gorka_01_brown_F",
-        "name": "Granit-B Suit (Weathered)"
-      },
-      "r_gorka_01": {
-        "className": "U_O_R_Gorka_01_F",
-        "name": "Granit-B Suit"
-      },
-      "ghilliesuit": {
-        "className": "U_O_GhillieSuit",
-        "name": "Ghillie Suit [CSAT]"
-      },
-      "t_sniper": {
-        "className": "U_O_T_Sniper_F",
-        "name": "Ghillie Suit (Green Hex) [CSAT]"
-      },
-      "gen_soldier": {
-        "className": "U_O_GEN_Soldier_F",
-        "name": "Gendarmerie Uniform"
-      },
-      "gen_commander": {
-        "className": "U_O_GEN_Commander_F",
-        "name": "Gendarmerie Commander Uniform"
-      },
-      "fullghillie_sard": {
-        "className": "U_O_FullGhillie_sard",
-        "name": "Full Ghillie (Semi-Arid) [CSAT]"
-      },
-      "fullghillie_lsh": {
-        "className": "U_O_FullGhillie_lsh",
-        "name": "Full Ghillie (Lush) [CSAT]"
-      },
-      "t_fullghillie_tna": {
-        "className": "U_O_T_FullGhillie_tna_F",
-        "name": "Full Ghillie (Jungle) [CSAT]"
-      },
-      "fullghillie_ard": {
-        "className": "U_O_FullGhillie_ard",
-        "name": "Full Ghillie (Arid) [CSAT]"
-      },
-      "combatuniform_oucamo": {
-        "className": "U_O_CombatUniform_oucamo",
-        "name": "Fatigues (Urban) [CSAT]"
-      },
-      "combatuniform_ocamo": {
-        "className": "U_O_CombatUniform_ocamo",
-        "name": "Fatigues (Hex) [CSAT]"
-      },
-      "t_soldier": {
-        "className": "U_O_T_Soldier_F",
-        "name": "Fatigues (Green Hex) [CSAT]"
-      }
-    },
-    "antigonabody": {
-      "base": {
-        "className": "U_AntigonaBody",
-        "name": "Underwear 5"
-      }
-    },
-    "attisbody": {
-      "base": {
-        "className": "U_AttisBody",
-        "name": "Underwear 4"
-      }
-    },
-    "nikosagedbody": {
-      "base": {
-        "className": "U_NikosAgedBody",
-        "name": "Underwear 1"
-      }
-    },
-    "basicbody": {
-      "base": {
-        "className": "U_BasicBody",
-        "name": "Underwear"
-      }
-    },
-    "tank": {
-      "green": {
-        "className": "U_Tank_green_F",
-        "name": "Tanker Coveralls [AAF]"
-      }
-    },
-    "oi": {
-      "scientist": {
-        "className": "U_OI_Scientist",
-        "name": "Scientist Suit"
-      }
-    },
-    "rangemaster": {
-      "base": {
-        "className": "U_Rangemaster",
-        "name": "Rangemaster Suit"
-      }
-    },
-    "nikosbody": {
-      "base": {
-        "className": "U_NikosBody",
-        "name": "Nikos Clothes"
-      }
-    },
-    "marshal": {
-      "base": {
-        "className": "U_Marshal",
-        "name": "Marshal Clothes"
-      }
-    },
-    "ig": {
-      "menelaos": {
-        "className": "U_IG_Menelaos",
-        "name": "Kabeiroi Leader's Outfit"
-      },
-      "leader": {
-        "className": "U_IG_leader",
-        "name": "Guerilla Uniform"
-      },
-      "guerilla3_2": {
-        "className": "U_IG_Guerilla3_2",
-        "name": "Guerilla Smocks 1"
-      },
-      "guerilla3_1": {
-        "className": "U_IG_Guerilla3_1",
-        "name": "Guerilla Smocks"
-      },
-      "guerilla2_3": {
-        "className": "U_IG_Guerilla2_3",
-        "name": "Guerilla Outfit (Plain, Light)"
-      },
-      "guerilla2_1": {
-        "className": "U_IG_Guerilla2_1",
-        "name": "Guerilla Outfit (Plain, Dark)"
-      },
-      "guerilla2_2": {
-        "className": "U_IG_Guerilla2_2",
-        "name": "Guerilla Outfit (Pattern)"
-      },
-      "guerilla1_1": {
-        "className": "U_IG_Guerilla1_1",
-        "name": "Guerilla Garment"
-      },
-      "guerrilla_6_1": {
-        "className": "U_IG_Guerrilla_6_1",
-        "name": "Guerilla Apparel"
-      }
-    },
-    "orestesbody": {
-      "base": {
-        "className": "U_OrestesBody",
-        "name": "Jacket and Shorts"
-      }
-    },
-    "virtualman": {
-      "base": {
-        "className": "U_VirtualMan_F",
-        "name": "Invisible Uniform"
-      }
-    },
-    "bg": {
-      "leader": {
-        "className": "U_BG_leader",
-        "name": "Guerilla Uniform"
-      },
-      "guerilla3_2": {
-        "className": "U_BG_Guerilla3_2",
-        "name": "Guerilla Smocks 1"
-      },
-      "guerilla3_1": {
-        "className": "U_BG_Guerilla3_1",
-        "name": "Guerilla Smocks"
-      },
-      "guerilla2_3": {
-        "className": "U_BG_Guerilla2_3",
-        "name": "Guerilla Outfit (Plain, Light)"
-      },
-      "guerilla2_1": {
-        "className": "U_BG_Guerilla2_1",
-        "name": "Guerilla Outfit (Plain, Dark)"
-      },
-      "guerilla2_2": {
-        "className": "U_BG_Guerilla2_2",
-        "name": "Guerilla Outfit (Pattern)"
-      },
-      "guerilla1_2": {
-        "className": "U_BG_Guerilla1_2_F",
-        "name": "Guerilla Garment (Olive)"
-      },
-      "guerilla1_1": {
-        "className": "U_BG_Guerilla1_1",
-        "name": "Guerilla Garment"
-      },
-      "guerrilla_6_1": {
-        "className": "U_BG_Guerrilla_6_1",
-        "name": "Guerilla Apparel"
-      }
-    },
-    "og": {
-      "leader": {
-        "className": "U_OG_leader",
-        "name": "Guerilla Uniform"
-      },
-      "guerilla3_2": {
-        "className": "U_OG_Guerilla3_2",
-        "name": "Guerilla Smocks 1"
-      },
-      "guerilla3_1": {
-        "className": "U_OG_Guerilla3_1",
-        "name": "Guerilla Smocks"
-      },
-      "guerilla2_3": {
-        "className": "U_OG_Guerilla2_3",
-        "name": "Guerilla Outfit (Plain, Light)"
-      },
-      "guerilla2_1": {
-        "className": "U_OG_Guerilla2_1",
-        "name": "Guerilla Outfit (Plain, Dark)"
-      },
-      "guerilla2_2": {
-        "className": "U_OG_Guerilla2_2",
-        "name": "Guerilla Outfit (Pattern)"
-      },
-      "guerilla1_1": {
-        "className": "U_OG_Guerilla1_1",
-        "name": "Guerilla Garment"
-      },
-      "guerrilla_6_1": {
-        "className": "U_OG_Guerrilla_6_1",
-        "name": "Guerilla Apparel"
-      }
-    },
-    "competitor": {
-      "base": {
-        "className": "U_Competitor",
-        "name": "Competitor Suit"
-      }
-    },
-    "millerbody": {
-      "base": {
-        "className": "U_MillerBody",
-        "name": "Combat Fatigues (Miller)"
-      }
-    },
-    "kerrybody": {
-      "base": {
-        "className": "U_KerryBody",
-        "name": "Combat Fatigues (Kerry)"
-      }
-    }
-  },
-  "h": {
-    "wirelessearpiece": {
-      "base": {
-        "className": "H_WirelessEarpiece_F",
-        "name": "Wireless Earpiece"
-      }
-    },
-    "hat": {
-      "tinfoil": {
-        "className": "H_Hat_Tinfoil_F",
-        "name": "Tin Foil Hat"
-      },
-      "safari_sand": {
-        "className": "H_Hat_Safari_sand_F",
-        "name": "Safari Hat (Sand)"
-      },
-      "safari_olive": {
-        "className": "H_Hat_Safari_olive_F",
-        "name": "Safari Hat (Olive)"
-      },
-      "tan": {
-        "className": "H_Hat_tan",
-        "name": "Hat (Tan)"
-      },
-      "grey": {
-        "className": "H_Hat_grey",
-        "name": "Hat (Grey)"
-      },
-      "checker": {
-        "className": "H_Hat_checker",
-        "name": "Hat (Checker)"
-      },
-      "camo": {
-        "className": "H_Hat_camo",
-        "name": "Hat (Camo)"
-      },
-      "brown": {
-        "className": "H_Hat_brown",
-        "name": "Hat (Brown)"
-      },
-      "blue": {
-        "className": "H_Hat_blue",
-        "name": "Hat (Blue)"
-      }
-    },
-    "strawhat": {
-      "dark": {
-        "className": "H_StrawHat_dark",
-        "name": "Straw Hat (Dark)"
-      },
-      "base": {
-        "className": "H_StrawHat",
-        "name": "Straw Hat"
-      }
-    },
-    "helmetb": {
-      "ti_arid": {
-        "className": "H_HelmetB_TI_arid_F",
-        "name": "Stealth Combat Helmet (Arid)"
-      },
-      "ti_tna": {
-        "className": "H_HelmetB_TI_tna_F",
-        "name": "Stealth Combat Helmet"
-      },
-      "light_wdl": {
-        "className": "H_HelmetB_light_wdl",
-        "name": "Light Combat Helmet (Woodland)"
-      },
-      "light_tna": {
-        "className": "H_HelmetB_Light_tna_F",
-        "name": "Light Combat Helmet (Tropic)"
-      },
-      "light_snakeskin": {
-        "className": "H_HelmetB_light_snakeskin",
-        "name": "Light Combat Helmet (Snakeskin)"
-      },
-      "light_sand": {
-        "className": "H_HelmetB_light_sand",
-        "name": "Light Combat Helmet (Sand)"
-      },
-      "light_grass": {
-        "className": "H_HelmetB_light_grass",
-        "name": "Light Combat Helmet (Grass)"
-      },
-      "light_desert": {
-        "className": "H_HelmetB_light_desert",
-        "name": "Light Combat Helmet (Desert)"
-      },
-      "light_black": {
-        "className": "H_HelmetB_light_black",
-        "name": "Light Combat Helmet (Black)"
-      },
-      "light": {
-        "className": "H_HelmetB_light",
-        "name": "Light Combat Helmet"
-      },
-      "enh_tna": {
-        "className": "H_HelmetB_Enh_tna_F",
-        "name": "Enhanced Combat Helmet (Tropic)"
-      },
-      "plain_wdl": {
-        "className": "H_HelmetB_plain_wdl",
-        "name": "Combat Helmet (Woodland)"
-      },
-      "tna": {
-        "className": "H_HelmetB_tna_F",
-        "name": "Combat Helmet (Tropic)"
-      },
-      "paint": {
-        "className": "H_HelmetB_paint",
-        "name": "Combat Helmet (Spraypaint)"
-      },
-      "snakeskin": {
-        "className": "H_HelmetB_snakeskin",
-        "name": "Combat Helmet (Snakeskin)"
-      },
-      "sand": {
-        "className": "H_HelmetB_sand",
-        "name": "Combat Helmet (Sand)"
-      },
-      "grass": {
-        "className": "H_HelmetB_grass",
-        "name": "Combat Helmet (Grass)"
-      },
-      "desert": {
-        "className": "H_HelmetB_desert",
-        "name": "Combat Helmet (Desert)"
-      },
-      "camo": {
-        "className": "H_HelmetB_camo",
-        "name": "Combat Helmet (Camo)"
-      },
-      "plain_mcamo": {
-        "className": "H_HelmetB_plain_mcamo",
-        "name": "Combat Helmet (Camo)"
-      },
-      "black": {
-        "className": "H_HelmetB_black",
-        "name": "Combat Helmet (Black)"
-      },
-      "plain_blk": {
-        "className": "H_HelmetB_plain_blk",
-        "name": "Combat Helmet (Black)"
-      },
-      "base": {
-        "className": "H_HelmetB",
-        "name": "Combat Helmet"
-      }
-    },
-    "helmeto": {
-      "vipersp_hex": {
-        "className": "H_HelmetO_ViperSP_hex_F",
-        "name": "Special Purpose Helmet (Hex)"
-      },
-      "vipersp_ghex": {
-        "className": "H_HelmetO_ViperSP_ghex_F",
-        "name": "Special Purpose Helmet (Green Hex)"
-      },
-      "oucamo": {
-        "className": "H_HelmetO_oucamo",
-        "name": "Protector Helmet (Urban)"
-      },
-      "ocamo": {
-        "className": "H_HelmetO_ocamo",
-        "name": "Protector Helmet (Hex)"
-      },
-      "ghex": {
-        "className": "H_HelmetO_ghex_F",
-        "name": "Protector Helmet (Green Hex)"
-      }
-    },
-    "helmet": {
-      "skate": {
-        "className": "H_Helmet_Skate",
-        "name": "Skate Helmet"
-      },
-      "kerry": {
-        "className": "H_Helmet_Kerry",
-        "name": "Combat Helmet (Kerry)"
-      }
-    },
-    "shemag": {
-      "tan": {
-        "className": "H_Shemag_tan",
-        "name": "Shemag mask (Tan)"
-      },
-      "khk": {
-        "className": "H_Shemag_khk",
-        "name": "Shemag mask (Khaki)"
-      },
-      "olive": {
-        "className": "H_Shemag_olive",
-        "name": "Shemag (Olive)"
-      },
-      "olive_hs": {
-        "className": "H_Shemag_olive_hs",
-        "name": "Shemag (Olive, Headset)"
-      }
-    },
-    "shemagopen": {
-      "khk": {
-        "className": "H_ShemagOpen_khk",
-        "name": "Shemag (White)"
-      },
-      "tan": {
-        "className": "H_ShemagOpen_tan",
-        "name": "Shemag (Tan)"
-      }
-    },
-    "cap": {
-      "headphones": {
-        "className": "H_Cap_headphones",
-        "name": "Rangemaster Cap"
-      },
-      "marshal": {
-        "className": "H_Cap_marshal",
-        "name": "Marshal Cap"
-      },
-      "brn_specops": {
-        "className": "H_Cap_brn_SPECOPS",
-        "name": "Cap [OPFOR]"
-      },
-      "blk_raven": {
-        "className": "H_Cap_blk_Raven",
-        "name": "Cap [AAF]"
-      },
-      "white_idap": {
-        "className": "H_Cap_White_IDAP_F",
-        "name": "Cap (White) [IDAP]"
-      },
-      "tan_specops_us": {
-        "className": "H_Cap_tan_specops_US",
-        "name": "Cap (US MTP)"
-      },
-      "usblack": {
-        "className": "H_Cap_usblack",
-        "name": "Cap (US Black)"
-      },
-      "khaki_specops_uk": {
-        "className": "H_Cap_khaki_specops_UK",
-        "name": "Cap (UK)"
-      },
-      "tan": {
-        "className": "H_Cap_tan",
-        "name": "Cap (Tan)"
-      },
-      "tan_syndikat": {
-        "className": "H_Cap_tan_Syndikat_F",
-        "name": "Cap (Tan)"
-      },
-      "surfer": {
-        "className": "H_Cap_surfer",
-        "name": "Cap (Surfer)"
-      },
-      "red": {
-        "className": "H_Cap_red",
-        "name": "Cap (Red)"
-      },
-      "press": {
-        "className": "H_Cap_press",
-        "name": "Cap (Press)"
-      },
-      "police": {
-        "className": "H_Cap_police",
-        "name": "Cap (Police)"
-      },
-      "orange_idap": {
-        "className": "H_Cap_Orange_IDAP_F",
-        "name": "Cap (Orange) [IDAP]"
-      },
-      "oli": {
-        "className": "H_Cap_oli",
-        "name": "Cap (Olive)"
-      },
-      "oli_syndikat": {
-        "className": "H_Cap_oli_Syndikat_F",
-        "name": "Cap (Olive)"
-      },
-      "oli_hs": {
-        "className": "H_Cap_oli_hs",
-        "name": "Cap (Olive, Headset)"
-      },
-      "maldentours": {
-        "className": "H_Cap_MaldenTours",
-        "name": "Cap (Malden Tours)"
-      },
-      "lyfe": {
-        "className": "H_Cap_Lyfe",
-        "name": "Cap (Lyfe)"
-      },
-      "blk_ion": {
-        "className": "H_Cap_blk_ION",
-        "name": "Cap (ION)"
-      },
-      "grn": {
-        "className": "H_Cap_grn",
-        "name": "Cap (Green)"
-      },
-      "grn_syndikat": {
-        "className": "H_Cap_grn_Syndikat_F",
-        "name": "Cap (Green)"
-      },
-      "blk_cmmg": {
-        "className": "H_Cap_blk_CMMG",
-        "name": "Cap (CMMG)"
-      },
-      "blu": {
-        "className": "H_Cap_blu",
-        "name": "Cap (Blue)"
-      },
-      "black_idap": {
-        "className": "H_Cap_Black_IDAP_F",
-        "name": "Cap (Black) [IDAP]"
-      },
-      "blk": {
-        "className": "H_Cap_blk",
-        "name": "Cap (Black)"
-      },
-      "blk_syndikat": {
-        "className": "H_Cap_blk_Syndikat_F",
-        "name": "Cap (Black)"
-      },
-      "grn_bi": {
-        "className": "H_Cap_grn_BI",
-        "name": "Cap (BI)"
-      }
-    },
-    "racinghelmet": {
-      "1": {
-        "className": "H_RacingHelmet_1_F",
-        "name": "Racing Helmet (Fuel)"
-      },
-      "2": {
-        "className": "H_RacingHelmet_2_F",
-        "name": "Racing Helmet (Bluking)"
-      },
-      "3": {
-        "className": "H_RacingHelmet_3_F",
-        "name": "Racing Helmet (Redstone)"
-      },
-      "4": {
-        "className": "H_RacingHelmet_4_F",
-        "name": "Racing Helmet (Vrana)"
-      },
-      "1_yellow": {
-        "className": "H_RacingHelmet_1_yellow_F",
-        "name": "Racing Helmet (Yellow)"
-      },
-      "1_white": {
-        "className": "H_RacingHelmet_1_white_F",
-        "name": "Racing Helmet (White)"
-      },
-      "1_red": {
-        "className": "H_RacingHelmet_1_red_F",
-        "name": "Racing Helmet (Red)"
-      },
-      "1_orange": {
-        "className": "H_RacingHelmet_1_orange_F",
-        "name": "Racing Helmet (Orange)"
-      },
-      "1_green": {
-        "className": "H_RacingHelmet_1_green_F",
-        "name": "Racing Helmet (Green)"
-      },
-      "1_blue": {
-        "className": "H_RacingHelmet_1_blue_F",
-        "name": "Racing Helmet (Blue)"
-      },
-      "1_black": {
-        "className": "H_RacingHelmet_1_black_F",
-        "name": "Racing Helmet (Black)"
-      }
-    },
-    "pasgt": {
-      "neckprot_blue_press": {
-        "className": "H_PASGT_neckprot_blue_press_F",
-        "name": "Press Helmet (Neck Protection)"
-      },
-      "basic_blue_press": {
-        "className": "H_PASGT_basic_blue_press_F",
-        "name": "Press Helmet"
-      },
-      "basic_white": {
-        "className": "H_PASGT_basic_white_F",
-        "name": "Basic Helmet (White)"
-      },
-      "basic_olive": {
-        "className": "H_PASGT_basic_olive_F",
-        "name": "Basic Helmet (Olive)"
-      },
-      "basic_blue": {
-        "className": "H_PASGT_basic_blue_F",
-        "name": "Basic Helmet (Blue)"
-      },
-      "basic_black": {
-        "className": "H_PASGT_basic_black_F",
-        "name": "Basic Helmet (Black)"
-      }
-    },
-    "pilothelmetfighter": {
-      "b": {
-        "className": "H_PilotHelmetFighter_B",
-        "name": "Pilot Helmet [NATO]"
-      },
-      "i_e": {
-        "className": "H_PilotHelmetFighter_I_E",
-        "name": "Pilot Helmet [LDF]"
-      },
-      "o": {
-        "className": "H_PilotHelmetFighter_O",
-        "name": "Pilot Helmet [CSAT]"
-      },
-      "i": {
-        "className": "H_PilotHelmetFighter_I",
-        "name": "Pilot Helmet [AAF]"
-      }
-    },
-    "paradedresscap": {
-      "01_us": {
-        "className": "H_ParadeDressCap_01_US_F",
-        "name": "Parade Cap [US]"
-      },
-      "01_ldf": {
-        "className": "H_ParadeDressCap_01_LDF_F",
-        "name": "Parade Cap [LDF]"
-      },
-      "01_csat": {
-        "className": "H_ParadeDressCap_01_CSAT_F",
-        "name": "Parade Cap [CSAT]"
-      },
-      "01_aaf": {
-        "className": "H_ParadeDressCap_01_AAF_F",
-        "name": "Parade Cap [AAF]"
-      }
-    },
-    "helmetia": {
-      "base": {
-        "className": "H_HelmetIA",
-        "name": "Modular Helmet"
-      },
-      "camo": {
-        "className": "H_HelmetIA_camo",
-        "name": "MICH2 (Camo)"
-      },
-      "net": {
-        "className": "H_HelmetIA_net",
-        "name": "MICH (Camo)"
-      }
-    },
-    "milcap": {
-      "eaf": {
-        "className": "H_MilCap_eaf",
-        "name": "Military Cap [LDF]"
-      },
-      "dgtl": {
-        "className": "H_MilCap_dgtl",
-        "name": "Military Cap [AAF]"
-      },
-      "wdl": {
-        "className": "H_MilCap_wdl",
-        "name": "Military Cap (Woodland)"
-      },
-      "oucamo": {
-        "className": "H_MilCap_oucamo",
-        "name": "Military Cap (Urban)"
-      },
-      "tna": {
-        "className": "H_MilCap_tna_F",
-        "name": "Military Cap (Tropic)"
-      },
-      "taiga": {
-        "className": "H_MilCap_taiga",
-        "name": "Military Cap (Taiga)"
-      },
-      "rucamo": {
-        "className": "H_MilCap_rucamo",
-        "name": "Military Cap (Russia)"
-      },
-      "mcamo": {
-        "className": "H_MilCap_mcamo",
-        "name": "Military Cap (MTP)"
-      },
-      "ocamo": {
-        "className": "H_MilCap_ocamo",
-        "name": "Military Cap (Hex)"
-      },
-      "gry": {
-        "className": "H_MilCap_gry",
-        "name": "Military Cap (Grey)"
-      },
-      "grn": {
-        "className": "H_MilCap_grn",
-        "name": "Military Cap (Green)"
-      },
-      "ghex": {
-        "className": "H_MilCap_ghex_F",
-        "name": "Military Cap (Green Hex)"
-      },
-      "gen": {
-        "className": "H_MilCap_gen_F",
-        "name": "Military Cap (Gendarmerie)"
-      },
-      "blue": {
-        "className": "H_MilCap_blue",
-        "name": "Military Cap (Blue)"
-      }
-    },
-    "pilothelmetheli": {
-      "b": {
-        "className": "H_PilotHelmetHeli_B",
-        "name": "Heli Pilot Helmet [NATO]"
-      },
-      "i_e": {
-        "className": "H_PilotHelmetHeli_I_E",
-        "name": "Heli Pilot Helmet [LDF]"
-      },
-      "o": {
-        "className": "H_PilotHelmetHeli_O",
-        "name": "Heli Pilot Helmet [CSAT]"
-      },
-      "i": {
-        "className": "H_PilotHelmetHeli_I",
-        "name": "Heli Pilot Helmet [AAF]"
-      }
-    },
-    "crewhelmetheli": {
-      "b": {
-        "className": "H_CrewHelmetHeli_B",
-        "name": "Heli Crew Helmet [NATO]"
-      },
-      "i_e": {
-        "className": "H_CrewHelmetHeli_I_E",
-        "name": "Heli Crew Helmet [LDF]"
-      },
-      "o": {
-        "className": "H_CrewHelmetHeli_O",
-        "name": "Heli Crew Helmet [CSAT]"
-      },
-      "i": {
-        "className": "H_CrewHelmetHeli_I",
-        "name": "Heli Crew Helmet [AAF]"
-      }
-    },
-    "headset": {
-      "yellow": {
-        "className": "H_HeadSet_yellow_F",
-        "name": "Headset (Yellow)"
-      },
-      "white": {
-        "className": "H_HeadSet_white_F",
-        "name": "Headset (White)"
-      },
-      "red": {
-        "className": "H_HeadSet_red_F",
-        "name": "Headset (Red)"
-      },
-      "orange": {
-        "className": "H_HeadSet_orange_F",
-        "name": "Headset (Orange)"
-      },
-      "black": {
-        "className": "H_HeadSet_black_F",
-        "name": "Headset (Black)"
-      }
-    },
-    "headbandage": {
-      "bloody": {
-        "className": "H_HeadBandage_bloody_F",
-        "name": "Head Bandage (Severe)"
-      },
-      "stained": {
-        "className": "H_HeadBandage_stained_F",
-        "name": "Head Bandage (Moderate)"
-      },
-      "clean": {
-        "className": "H_HeadBandage_clean_F",
-        "name": "Head Bandage (Clean)"
-      }
-    },
-    "construction": {
-      "basic_yellow": {
-        "className": "H_Construction_basic_yellow_F",
-        "name": "Hard Hat (Yellow)"
-      },
-      "headset_yellow": {
-        "className": "H_Construction_headset_yellow_F",
-        "name": "Hard Hat (Yellow, Headset)"
-      },
-      "earprot_yellow": {
-        "className": "H_Construction_earprot_yellow_F",
-        "name": "Hard Hat (Yellow, Ear Protectors)"
-      },
-      "basic_white": {
-        "className": "H_Construction_basic_white_F",
-        "name": "Hard Hat (White)"
-      },
-      "headset_white": {
-        "className": "H_Construction_headset_white_F",
-        "name": "Hard Hat (White, Headset)"
-      },
-      "earprot_white": {
-        "className": "H_Construction_earprot_white_F",
-        "name": "Hard Hat (White, Ear Protectors)"
-      },
-      "basic_vrana": {
-        "className": "H_Construction_basic_vrana_F",
-        "name": "Hard Hat (Vrana)"
-      },
-      "headset_vrana": {
-        "className": "H_Construction_headset_vrana_F",
-        "name": "Hard Hat (Vrana, Headset)"
-      },
-      "earprot_vrana": {
-        "className": "H_Construction_earprot_vrana_F",
-        "name": "Hard Hat (Vrana, Ear Protectors)"
-      },
-      "basic_red": {
-        "className": "H_Construction_basic_red_F",
-        "name": "Hard Hat (Red)"
-      },
-      "headset_red": {
-        "className": "H_Construction_headset_red_F",
-        "name": "Hard Hat (Red, Headset)"
-      },
-      "earprot_red": {
-        "className": "H_Construction_earprot_red_F",
-        "name": "Hard Hat (Red, Ear Protectors)"
-      },
-      "basic_orange": {
-        "className": "H_Construction_basic_orange_F",
-        "name": "Hard Hat (Orange)"
-      },
-      "headset_orange": {
-        "className": "H_Construction_headset_orange_F",
-        "name": "Hard Hat (Orange, Headset)"
-      },
-      "earprot_orange": {
-        "className": "H_Construction_earprot_orange_F",
-        "name": "Hard Hat (Orange, Ear Protectors)"
-      },
-      "basic_black": {
-        "className": "H_Construction_basic_black_F",
-        "name": "Hard Hat (Black)"
-      },
-      "headset_black": {
-        "className": "H_Construction_headset_black_F",
-        "name": "Hard Hat (Black, Headset)"
-      },
-      "earprot_black": {
-        "className": "H_Construction_earprot_black_F",
-        "name": "Hard Hat (Black, Ear Protectors)"
-      }
-    },
-    "helmetspecb": {
-      "wdl": {
-        "className": "H_HelmetSpecB_wdl",
-        "name": "Enhanced Combat Helmet (Woodland)"
-      },
-      "snakeskin": {
-        "className": "H_HelmetSpecB_snakeskin",
-        "name": "Enhanced Combat Helmet (Snakeskin)"
-      },
-      "sand": {
-        "className": "H_HelmetSpecB_sand",
-        "name": "Enhanced Combat Helmet (Sand)"
-      },
-      "paint1": {
-        "className": "H_HelmetSpecB_paint1",
-        "name": "Enhanced Combat Helmet (Grass)"
-      },
-      "paint2": {
-        "className": "H_HelmetSpecB_paint2",
-        "name": "Enhanced Combat Helmet (Desert)"
-      },
-      "blk": {
-        "className": "H_HelmetSpecB_blk",
-        "name": "Enhanced Combat Helmet (Black)"
-      },
-      "base": {
-        "className": "H_HelmetSpecB",
-        "name": "Enhanced Combat Helmet"
-      }
-    },
-    "earprotectors": {
-      "yellow": {
-        "className": "H_EarProtectors_yellow_F",
-        "name": "Ear Protectors (Yellow)"
-      },
-      "white": {
-        "className": "H_EarProtectors_white_F",
-        "name": "Ear Protectors (White)"
-      },
-      "red": {
-        "className": "H_EarProtectors_red_F",
-        "name": "Ear Protectors (Red)"
-      },
-      "orange": {
-        "className": "H_EarProtectors_orange_F",
-        "name": "Ear Protectors (Orange)"
-      },
-      "black": {
-        "className": "H_EarProtectors_black_F",
-        "name": "Ear Protectors (Black)"
-      }
-    },
-    "helmetleadero": {
-      "oucamo": {
-        "className": "H_HelmetLeaderO_oucamo",
-        "name": "Defender Helmet (Urban)"
-      },
-      "ocamo": {
-        "className": "H_HelmetLeaderO_ocamo",
-        "name": "Defender Helmet (Hex)"
-      },
-      "ghex": {
-        "className": "H_HelmetLeaderO_ghex_F",
-        "name": "Defender Helmet (Green Hex)"
-      }
-    },
-    "helmetcrew": {
-      "b": {
-        "className": "H_HelmetCrew_B",
-        "name": "Crew Helmet [NATO]"
-      },
-      "i_e": {
-        "className": "H_HelmetCrew_I_E",
-        "name": "Crew Helmet [LDF]"
-      },
-      "o": {
-        "className": "H_HelmetCrew_O",
-        "name": "Crew Helmet [CSAT]"
-      },
-      "i": {
-        "className": "H_HelmetCrew_I",
-        "name": "Crew Helmet [AAF]"
-      },
-      "o_ghex": {
-        "className": "H_HelmetCrew_O_ghex_F",
-        "name": "Crew Helmet (Green Hex) [CSAT]"
-      }
-    },
-    "tank": {
-      "eaf": {
-        "className": "H_Tank_eaf_F",
-        "name": "Crew Helmet (Soft) [LDF]"
-      },
-      "black": {
-        "className": "H_Tank_black_F",
-        "name": "Crew Helmet (Soft) [CSAT]"
-      }
-    },
-    "booniehat": {
-      "eaf": {
-        "className": "H_Booniehat_eaf",
-        "name": "Booniehat [LDF]"
-      },
-      "dgtl": {
-        "className": "H_Booniehat_dgtl",
-        "name": "Booniehat [AAF]"
-      },
-      "wdl": {
-        "className": "H_Booniehat_wdl",
-        "name": "Booniehat (Woodland)"
-      },
-      "tna": {
-        "className": "H_Booniehat_tna_F",
-        "name": "Booniehat (Tropic)"
-      },
-      "taiga": {
-        "className": "H_Booniehat_taiga",
-        "name": "Booniehat (Taiga)"
-      },
-      "tan": {
-        "className": "H_Booniehat_tan",
-        "name": "Booniehat (Sand)"
-      },
-      "oli": {
-        "className": "H_Booniehat_oli",
-        "name": "Booniehat (Olive)"
-      },
-      "mcamo": {
-        "className": "H_Booniehat_mcamo",
-        "name": "Booniehat (MTP)"
-      },
-      "indp": {
-        "className": "H_Booniehat_indp",
-        "name": "Booniehat (Khaki)"
-      },
-      "khk": {
-        "className": "H_Booniehat_khk",
-        "name": "Booniehat (Khaki)"
-      },
-      "khk_hs": {
-        "className": "H_Booniehat_khk_hs",
-        "name": "Booniehat (Headset)"
-      },
-      "grn": {
-        "className": "H_Booniehat_grn",
-        "name": "Booniehat (Green)"
-      },
-      "mgrn": {
-        "className": "H_Booniehat_mgrn",
-        "name": "Booniehat (Green)"
-      },
-      "dirty": {
-        "className": "H_Booniehat_dirty",
-        "name": "Booniehat (Dirty)"
-      }
-    },
-    "turbano": {
-      "blk": {
-        "className": "H_TurbanO_blk",
-        "name": "Black Turban"
-      }
-    },
-    "beret": {
-      "colonel": {
-        "className": "H_Beret_Colonel",
-        "name": "Beret [NATO] (Colonel)"
-      },
-      "02": {
-        "className": "H_Beret_02",
-        "name": "Beret [NATO]"
-      },
-      "eaf_01": {
-        "className": "H_Beret_EAF_01_F",
-        "name": "Beret [LDF]"
-      },
-      "ocamo": {
-        "className": "H_Beret_ocamo",
-        "name": "Beret [CSAT]"
-      },
-      "grn_sf": {
-        "className": "H_Beret_grn_SF",
-        "name": "Beret (SF)"
-      },
-      "brn_sf": {
-        "className": "H_Beret_brn_SF",
-        "name": "Beret (SAS)"
-      },
-      "csat_01": {
-        "className": "H_Beret_CSAT_01_F",
-        "name": "Beret (Red) [CSAT]"
-      },
-      "red": {
-        "className": "H_Beret_red",
-        "name": "Beret (Red)"
-      },
-      "blk_police": {
-        "className": "H_Beret_blk_POLICE",
-        "name": "Beret (Police)"
-      },
-      "grn": {
-        "className": "H_Beret_grn",
-        "name": "Beret (Green)"
-      },
-      "gen": {
-        "className": "H_Beret_gen_F",
-        "name": "Beret (Gendarmerie)"
-      },
-      "blk": {
-        "className": "H_Beret_blk",
-        "name": "Beret (Black)"
-      }
-    },
-    "watchcap": {
-      "sgg": {
-        "className": "H_Watchcap_sgg",
-        "name": "Beanie (Sage)"
-      },
-      "khk": {
-        "className": "H_Watchcap_khk",
-        "name": "Beanie (Khaki)"
-      },
-      "camo": {
-        "className": "H_Watchcap_camo",
-        "name": "Beanie (Green)"
-      },
-      "cbr": {
-        "className": "H_Watchcap_cbr",
-        "name": "Beanie (Coyote)"
-      },
-      "blk": {
-        "className": "H_Watchcap_blk",
-        "name": "Beanie"
-      }
-    },
-    "bandmask": {
-      "reaper": {
-        "className": "H_BandMask_reaper",
-        "name": "Bandana Mask (Reaper)"
-      },
-      "khk": {
-        "className": "H_BandMask_khk",
-        "name": "Bandana Mask (Khaki)"
-      },
-      "demon": {
-        "className": "H_BandMask_demon",
-        "name": "Bandana Mask (Demon)"
-      },
-      "blk": {
-        "className": "H_BandMask_blk",
-        "name": "Bandana Mask (Black)"
-      }
-    },
-    "bandanna": {
-      "camo": {
-        "className": "H_Bandanna_camo",
-        "name": "Bandana (Woodland)"
-      },
-      "surfer": {
-        "className": "H_Bandanna_surfer",
-        "name": "Bandana (Surfer)"
-      },
-      "surfer_grn": {
-        "className": "H_Bandanna_surfer_grn",
-        "name": "Bandana (Surfer, Green)"
-      },
-      "surfer_blk": {
-        "className": "H_Bandanna_surfer_blk",
-        "name": "Bandana (Surfer, Black)"
-      },
-      "sand": {
-        "className": "H_Bandanna_sand",
-        "name": "Bandana (Sand)"
-      },
-      "sgg": {
-        "className": "H_Bandanna_sgg",
-        "name": "Bandana (Sage)"
-      },
-      "mcamo": {
-        "className": "H_Bandanna_mcamo",
-        "name": "Bandana (MTP)"
-      },
-      "khk": {
-        "className": "H_Bandanna_khk",
-        "name": "Bandana (Khaki)"
-      },
-      "khk_hs": {
-        "className": "H_Bandanna_khk_hs",
-        "name": "Bandana (Headset)"
-      },
-      "cbr": {
-        "className": "H_Bandanna_cbr",
-        "name": "Bandana (Coyote)"
-      },
-      "blu": {
-        "className": "H_Bandanna_blu",
-        "name": "Bandana (Blue)"
-      },
-      "gry": {
-        "className": "H_Bandanna_gry",
-        "name": "Bandana (Black)"
-      }
-    },
-    "helmetaggressor": {
-      "cover_taiga": {
-        "className": "H_HelmetAggressor_cover_taiga_F",
-        "name": "Avenger Helmet (Cover T)"
-      },
-      "cover": {
-        "className": "H_HelmetAggressor_cover_F",
-        "name": "Avenger Helmet (Cover B)"
-      },
-      "base": {
-        "className": "H_HelmetAggressor_F",
-        "name": "Avenger Helmet"
-      }
-    },
-    "helmetspeco": {
-      "ocamo": {
-        "className": "H_HelmetSpecO_ocamo",
-        "name": "Assassin Helmet (Hex)"
-      },
-      "ghex": {
-        "className": "H_HelmetSpecO_ghex_F",
-        "name": "Assassin Helmet (Green Hex)"
-      },
-      "blk": {
-        "className": "H_HelmetSpecO_blk",
-        "name": "Assassin Helmet (Black)"
-      }
-    },
-    "helmethbk": {
-      "base": {
-        "className": "H_HelmetHBK_F",
-        "name": "Advanced Modular Helmet (Olive)"
-      },
-      "ear": {
-        "className": "H_HelmetHBK_ear_F",
-        "name": "Advanced Modular Helmet (Ear Protectors)"
-      },
-      "chops": {
-        "className": "H_HelmetHBK_chops_F",
-        "name": "Advanced Modular Helmet (Chops)"
-      },
-      "headset": {
-        "className": "H_HelmetHBK_headset_F",
-        "name": "Advanced Modular Helmet"
-      }
-    }
-  },
-  "v": {
-    "press": {
-      "base": {
-        "className": "V_Press_F",
-        "name": "Vest (Press)"
-      }
-    },
-    "platecarrier": {
-      "kerry": {
-        "className": "V_PlateCarrier_Kerry",
-        "name": "US Plate Carrier Rig (Kerry)"
-      }
-    },
-    "i": {
-      "g_resistanceleader": {
-        "className": "V_I_G_resistanceLeader_F",
-        "name": "Tactical Vest (Stavrou)"
-      }
-    },
-    "tacvest": {
-      "blk_police": {
-        "className": "V_TacVest_blk_POLICE",
-        "name": "Tactical Vest (Police)"
-      },
-      "oli": {
-        "className": "V_TacVest_oli",
-        "name": "Tactical Vest (Olive)"
-      },
-      "khk": {
-        "className": "V_TacVest_khk",
-        "name": "Tactical Vest (Khaki)"
-      },
-      "camo": {
-        "className": "V_TacVest_camo",
-        "name": "Tactical Vest (Camo)"
-      },
-      "brn": {
-        "className": "V_TacVest_brn",
-        "name": "Tactical Vest (Brown)"
-      },
-      "blk": {
-        "className": "V_TacVest_blk",
-        "name": "Tactical Vest (Black)"
-      },
-      "gen": {
-        "className": "V_TacVest_gen_F",
-        "name": "Gendarmerie Vest"
-      }
-    },
-    "tacchestrig": {
-      "oli": {
-        "className": "V_TacChestrig_oli_F",
-        "name": "Tactical Chest Rig (Olive)"
-      },
-      "grn": {
-        "className": "V_TacChestrig_grn_F",
-        "name": "Tactical Chest Rig (Green)"
-      },
-      "cbr": {
-        "className": "V_TacChestrig_cbr_F",
-        "name": "Tactical Chest Rig (Coyote)"
-      }
-    },
-    "bandollierb": {
-      "oli": {
-        "className": "V_BandollierB_oli",
-        "name": "Slash Bandolier (Olive)"
-      },
-      "khk": {
-        "className": "V_BandollierB_khk",
-        "name": "Slash Bandolier (Khaki)"
-      },
-      "rgr": {
-        "className": "V_BandollierB_rgr",
-        "name": "Slash Bandolier (Green)"
-      },
-      "ghex": {
-        "className": "V_BandollierB_ghex_F",
-        "name": "Slash Bandolier (Green Hex)"
-      },
-      "cbr": {
-        "className": "V_BandollierB_cbr",
-        "name": "Slash Bandolier (Coyote)"
-      },
-      "blk": {
-        "className": "V_BandollierB_blk",
-        "name": "Slash Bandolier (Black)"
-      }
-    },
-    "safety": {
-      "yellow": {
-        "className": "V_Safety_yellow_F",
-        "name": "Safety Vest (Yellow)"
-      },
-      "orange": {
-        "className": "V_Safety_orange_F",
-        "name": "Safety Vest (Orange)"
-      },
-      "blue": {
-        "className": "V_Safety_blue_F",
-        "name": "Safety Vest (Blue)"
-      }
-    },
-    "rebreatherb": {
-      "base": {
-        "className": "V_RebreatherB",
-        "name": "Rebreather [NATO]"
-      }
-    },
-    "rebreatherir": {
-      "base": {
-        "className": "V_RebreatherIR",
-        "name": "Rebreather [CSAT]"
-      }
-    },
-    "rebreatheria": {
-      "base": {
-        "className": "V_RebreatherIA",
-        "name": "Rebreather [AAF]"
-      }
-    },
-    "tacvestir": {
-      "blk": {
-        "className": "V_TacVestIR_blk",
-        "name": "Raven Vest"
-      }
-    },
-    "rangemaster": {
-      "belt": {
-        "className": "V_Rangemaster_belt",
-        "name": "Rangemaster Belt"
-      }
-    },
-    "pocketed": {
-      "olive": {
-        "className": "V_Pocketed_olive_F",
-        "name": "Multi-Pocket Vest (Olive)"
-      },
-      "coyote": {
-        "className": "V_Pocketed_coyote_F",
-        "name": "Multi-Pocket Vest (Coyote)"
-      },
-      "black": {
-        "className": "V_Pocketed_black_F",
-        "name": "Multi-Pocket Vest (Black)"
-      }
-    },
-    "carrierrigkbt": {
-      "01_olive": {
-        "className": "V_CarrierRigKBT_01_Olive_F",
-        "name": "Modular Carrier Vest (Olive)"
-      },
-      "01_eaf": {
-        "className": "V_CarrierRigKBT_01_EAF_F",
-        "name": "Modular Carrier Vest (Geometric)"
-      },
-      "01_light_olive": {
-        "className": "V_CarrierRigKBT_01_light_Olive_F",
-        "name": "Modular Carrier Lite (Olive)"
-      },
-      "01_light_eaf": {
-        "className": "V_CarrierRigKBT_01_light_EAF_F",
-        "name": "Modular Carrier Lite (Geometric)"
-      },
-      "01_heavy_olive": {
-        "className": "V_CarrierRigKBT_01_heavy_Olive_F",
-        "name": "Modular Carrier GL Rig (Olive)"
-      },
-      "01_heavy_eaf": {
-        "className": "V_CarrierRigKBT_01_heavy_EAF_F",
-        "name": "Modular Carrier GL Rig (Geometric)"
-      }
-    },
-    "legstrapbag": {
-      "olive": {
-        "className": "V_LegStrapBag_olive_F",
-        "name": "Leg Strap Bag (Olive)"
-      },
-      "coyote": {
-        "className": "V_LegStrapBag_coyote_F",
-        "name": "Leg Strap Bag (Coyote)"
-      },
-      "black": {
-        "className": "V_LegStrapBag_black_F",
-        "name": "Leg Strap Bag (Black)"
-      }
-    },
-    "harnesso": {
-      "gry": {
-        "className": "V_HarnessO_gry",
-        "name": "LBV Harness (Grey)"
-      },
-      "ghex": {
-        "className": "V_HarnessO_ghex_F",
-        "name": "LBV Harness (Green Hex)"
-      },
-      "brn": {
-        "className": "V_HarnessO_brn",
-        "name": "LBV Harness"
-      }
-    },
-    "harnessogl": {
-      "gry": {
-        "className": "V_HarnessOGL_gry",
-        "name": "LBV Grenadier Harness (Grey)"
-      },
-      "ghex": {
-        "className": "V_HarnessOGL_ghex_F",
-        "name": "LBV Grenadier Harness (Green Hex)"
-      },
-      "brn": {
-        "className": "V_HarnessOGL_brn",
-        "name": "LBV Grenadier Harness"
-      }
-    },
-    "smershvest": {
-      "01_radio": {
-        "className": "V_SmershVest_01_radio_F",
-        "name": "Kipchak Vest (Tactical Radio)"
-      },
-      "01": {
-        "className": "V_SmershVest_01_F",
-        "name": "Kipchak Vest"
-      }
-    },
-    "plain": {
-      "medical": {
-        "className": "V_Plain_medical_F",
-        "name": "Identification Vest [IDAP]"
-      },
-      "crystal": {
-        "className": "V_Plain_crystal_F",
-        "name": "Identification Vest (Red Crystal)"
-      }
-    },
-    "platecarrieria2": {
-      "dgtl": {
-        "className": "V_PlateCarrierIA2_dgtl",
-        "name": "GA Carrier Rig (Digital)"
-      }
-    },
-    "platecarrieria1": {
-      "dgtl": {
-        "className": "V_PlateCarrierIA1_dgtl",
-        "name": "GA Carrier Lite (Digital)"
-      }
-    },
-    "platecarrieriagl": {
-      "oli": {
-        "className": "V_PlateCarrierIAGL_oli",
-        "name": "GA Carrier GL Rig (Olive)"
-      },
-      "dgtl": {
-        "className": "V_PlateCarrierIAGL_dgtl",
-        "name": "GA Carrier GL Rig (Digital)"
-      }
-    },
-    "eod": {
-      "olive": {
-        "className": "V_EOD_olive_F",
-        "name": "EOD Vest (Olive)"
-      },
-      "coyote": {
-        "className": "V_EOD_coyote_F",
-        "name": "EOD Vest (Coyote)"
-      },
-      "idap_blue": {
-        "className": "V_EOD_IDAP_blue_F",
-        "name": "EOD Vest (Blue) [IDAP]"
-      },
-      "blue": {
-        "className": "V_EOD_blue_F",
-        "name": "EOD Vest (Blue)"
-      }
-    },
-    "harnessospec": {
-      "gry": {
-        "className": "V_HarnessOSpec_gry",
-        "name": "ELBV Harness (Grey)"
-      },
-      "brn": {
-        "className": "V_HarnessOSpec_brn",
-        "name": "ELBV Harness"
-      }
-    },
-    "deckcrew": {
-      "yellow": {
-        "className": "V_DeckCrew_yellow_F",
-        "name": "Deck Crew Vest (Yellow)"
-      },
-      "white": {
-        "className": "V_DeckCrew_white_F",
-        "name": "Deck Crew Vest (White)"
-      },
-      "violet": {
-        "className": "V_DeckCrew_violet_F",
-        "name": "Deck Crew Vest (Violet)"
-      },
-      "red": {
-        "className": "V_DeckCrew_red_F",
-        "name": "Deck Crew Vest (Red)"
-      },
-      "green": {
-        "className": "V_DeckCrew_green_F",
-        "name": "Deck Crew Vest (Green)"
-      },
-      "brown": {
-        "className": "V_DeckCrew_brown_F",
-        "name": "Deck Crew Vest (Brown)"
-      },
-      "blue": {
-        "className": "V_DeckCrew_blue_F",
-        "name": "Deck Crew Vest (Blue)"
-      }
-    },
-    "platecarrierh": {
-      "ctrg": {
-        "className": "V_PlateCarrierH_CTRG",
-        "name": "CTRG Plate Carrier Rig Mk.2 (Heavy)"
-      }
-    },
-    "platecarrierl": {
-      "ctrg": {
-        "className": "V_PlateCarrierL_CTRG",
-        "name": "CTRG Plate Carrier Rig Mk.1 (Light)"
-      }
-    },
-    "chestrig": {
-      "oli": {
-        "className": "V_Chestrig_oli",
-        "name": "Chest Rig (Olive)"
-      },
-      "khk": {
-        "className": "V_Chestrig_khk",
-        "name": "Chest Rig (Khaki)"
-      },
-      "rgr": {
-        "className": "V_Chestrig_rgr",
-        "name": "Chest Rig (Green)"
-      },
-      "blk": {
-        "className": "V_Chestrig_blk",
-        "name": "Chest Rig (Black)"
-      }
-    },
-    "platecarrierspec": {
-      "wdl": {
-        "className": "V_PlateCarrierSpec_wdl",
-        "name": "Carrier Special Rig (Woodland)"
-      },
-      "tna": {
-        "className": "V_PlateCarrierSpec_tna_F",
-        "name": "Carrier Special Rig (Tropic)"
-      },
-      "mtp": {
-        "className": "V_PlateCarrierSpec_mtp",
-        "name": "Carrier Special Rig (MTP)"
-      },
-      "rgr": {
-        "className": "V_PlateCarrierSpec_rgr",
-        "name": "Carrier Special Rig (Green)"
-      },
-      "blk": {
-        "className": "V_PlateCarrierSpec_blk",
-        "name": "Carrier Special Rig (Black)"
-      }
-    },
-    "platecarrier2": {
-      "wdl": {
-        "className": "V_PlateCarrier2_wdl",
-        "name": "Carrier Rig (Woodland)"
-      },
-      "tna": {
-        "className": "V_PlateCarrier2_tna_F",
-        "name": "Carrier Rig (Tropic)"
-      },
-      "rgr": {
-        "className": "V_PlateCarrier2_rgr",
-        "name": "Carrier Rig (Green)"
-      },
-      "rgr_noflag": {
-        "className": "V_PlateCarrier2_rgr_noflag_F",
-        "name": "Carrier Rig (Green, No Flag)"
-      },
-      "blk": {
-        "className": "V_PlateCarrier2_blk",
-        "name": "Carrier Rig (Black)"
-      }
-    },
-    "platecarrier3": {
-      "rgr": {
-        "className": "V_PlateCarrier3_rgr",
-        "name": "Carrier Rig (Green)"
-      }
-    },
-    "platecarrier1": {
-      "wdl": {
-        "className": "V_PlateCarrier1_wdl",
-        "name": "Carrier Lite (Woodland)"
-      },
-      "tna": {
-        "className": "V_PlateCarrier1_tna_F",
-        "name": "Carrier Lite (Tropic)"
-      },
-      "rgr": {
-        "className": "V_PlateCarrier1_rgr",
-        "name": "Carrier Lite (Green)"
-      },
-      "rgr_noflag": {
-        "className": "V_PlateCarrier1_rgr_noflag_F",
-        "name": "Carrier Lite (Green, No Flag)"
-      },
-      "blk": {
-        "className": "V_PlateCarrier1_blk",
-        "name": "Carrier Lite (Black)"
-      }
-    },
-    "platecarriergl": {
-      "wdl": {
-        "className": "V_PlateCarrierGL_wdl",
-        "name": "Carrier GL Rig (Woodland)"
-      },
-      "tna": {
-        "className": "V_PlateCarrierGL_tna_F",
-        "name": "Carrier GL Rig (Tropic)"
-      },
-      "mtp": {
-        "className": "V_PlateCarrierGL_mtp",
-        "name": "Carrier GL Rig (MTP)"
-      },
-      "rgr": {
-        "className": "V_PlateCarrierGL_rgr",
-        "name": "Carrier GL Rig (Green)"
-      },
-      "blk": {
-        "className": "V_PlateCarrierGL_blk",
-        "name": "Carrier GL Rig (Black)"
-      }
-    },
-    "tacvestcamo": {
-      "khk": {
-        "className": "V_TacVestCamo_khk",
-        "name": "Camouflaged Vest"
-      }
-    }
-  }
+	"u": {
+		"c": {
+			"poor_shorts_2": {
+				"className": "U_C_Poor_shorts_2",
+				"name": "Worn Shorts 2"
+			},
+			"poor_shorts_1": {
+				"className": "U_C_Poor_shorts_1",
+				"name": "Worn Shorts 1"
+			},
+			"poor_1": {
+				"className": "U_C_Poor_1",
+				"name": "Worn Clothes"
+			},
+			"poor_2": {
+				"className": "U_C_Poor_2",
+				"name": "Worn Clothes"
+			},
+			"poor_2_sick": {
+				"className": "U_C_Poor_2_sick",
+				"name": "Worn Clothes"
+			},
+			"workercoveralls": {
+				"className": "U_C_WorkerCoveralls",
+				"name": "Worker Coveralls"
+			},
+			"workeroveralls": {
+				"className": "U_C_WorkerOveralls",
+				"name": "Worker Clothes"
+			},
+			"protagonist_vr": {
+				"className": "U_C_Protagonist_VR",
+				"name": "VR Suit [Civilians]"
+			},
+			"soldier_vr": {
+				"className": "U_C_Soldier_VR",
+				"name": "VR Entity Suit"
+			},
+			"teesurfer_shorts_2": {
+				"className": "U_C_TeeSurfer_shorts_2",
+				"name": "Surfer Outfit 3"
+			},
+			"teesurfer_shorts_1": {
+				"className": "U_C_TeeSurfer_shorts_1",
+				"name": "Surfer Outfit 2"
+			},
+			"shirtsurfer_shorts": {
+				"className": "U_C_ShirtSurfer_shorts",
+				"name": "Surfer Outfit 1"
+			},
+			"man_casual_5": {
+				"className": "U_C_Man_casual_5_F",
+				"name": "Summer Clothes (Yellow)"
+			},
+			"man_casual_5_sick": {
+				"className": "U_C_Man_casual_5_sick_F",
+				"name": "Summer Clothes (Yellow)"
+			},
+			"man_casual_4": {
+				"className": "U_C_Man_casual_4_F",
+				"name": "Summer Clothes (Sky)"
+			},
+			"man_casual_4_sick": {
+				"className": "U_C_Man_casual_4_sick_F",
+				"name": "Summer Clothes (Sky)"
+			},
+			"man_casual_6": {
+				"className": "U_C_Man_casual_6_F",
+				"name": "Summer Clothes (Red)"
+			},
+			"man_casual_6_sick": {
+				"className": "U_C_Man_casual_6_sick_F",
+				"name": "Summer Clothes (Red)"
+			},
+			"man_sport_2": {
+				"className": "U_C_man_sport_2_F",
+				"name": "Sport Clothes (Orange)"
+			},
+			"man_sport_2_sick": {
+				"className": "U_C_man_sport_2_sick_F",
+				"name": "Sport Clothes (Orange)"
+			},
+			"man_sport_3": {
+				"className": "U_C_man_sport_3_F",
+				"name": "Sport Clothes (Blue)"
+			},
+			"man_sport_1": {
+				"className": "U_C_man_sport_1_F",
+				"name": "Sport Clothes (Beach)"
+			},
+			"uniform_scientist_02_formal": {
+				"className": "U_C_Uniform_Scientist_02_formal_F",
+				"name": "Scientist Outfit (Informal, Red)"
+			},
+			"uniform_scientist_02": {
+				"className": "U_C_Uniform_Scientist_02_F",
+				"name": "Scientist Outfit (Informal, Black)"
+			},
+			"uniform_scientist_01": {
+				"className": "U_C_Uniform_Scientist_01_F",
+				"name": "Scientist Outfit (Formal, White)"
+			},
+			"uniform_scientist_01_formal": {
+				"className": "U_C_Uniform_Scientist_01_formal_F",
+				"name": "Scientist Outfit (Formal, Blue)"
+			},
+			"scientist": {
+				"className": "U_C_Scientist",
+				"name": "Scientist Clothes"
+			},
+			"scavenger_1": {
+				"className": "U_C_Scavenger_1",
+				"name": "Scavenger Clothes (Light)"
+			},
+			"scavenger_2": {
+				"className": "U_C_Scavenger_2",
+				"name": "Scavenger Clothes (Dark)"
+			},
+			"paramedic_01": {
+				"className": "U_C_Paramedic_01_F",
+				"name": "Paramedic Outfit"
+			},
+			"novak": {
+				"className": "U_C_Novak",
+				"name": "Novak's Leisure Suit"
+			},
+			"mechanic_01": {
+				"className": "U_C_Mechanic_01_F",
+				"name": "Mechanic Clothes"
+			},
+			"e_looterjacket_01": {
+				"className": "U_C_E_LooterJacket_01_F",
+				"name": "Looter Clothes (Leather Jacket)"
+			},
+			"journalist": {
+				"className": "U_C_Journalist",
+				"name": "Journalist Clothes"
+			},
+			"hunterbody_brn": {
+				"className": "U_C_HunterBody_brn",
+				"name": "Hunting Clothes (Brown)"
+			},
+			"hunterbody_grn": {
+				"className": "U_C_HunterBody_grn",
+				"name": "Hunting Clothes"
+			},
+			"formalsuit_01_tshirt_gray": {
+				"className": "U_C_FormalSuit_01_tshirt_gray_F",
+				"name": "Formal Suit (T-Shirt, Gray)"
+			},
+			"formalsuit_01_tshirt_black": {
+				"className": "U_C_FormalSuit_01_tshirt_black_F",
+				"name": "Formal Suit (T-Shirt, Black)"
+			},
+			"formalsuit_01_khaki": {
+				"className": "U_C_FormalSuit_01_khaki_F",
+				"name": "Formal Suit (Khaki)"
+			},
+			"formalsuit_01_gray": {
+				"className": "U_C_FormalSuit_01_gray_F",
+				"name": "Formal Suit (Gray)"
+			},
+			"formalsuit_01_blue": {
+				"className": "U_C_FormalSuit_01_blue_F",
+				"name": "Formal Suit (Blue)"
+			},
+			"formalsuit_01_black": {
+				"className": "U_C_FormalSuit_01_black_F",
+				"name": "Formal Suit (Black)"
+			},
+			"fishermanoveralls": {
+				"className": "U_C_FishermanOveralls",
+				"name": "Fishing Overalls"
+			},
+			"fisherman": {
+				"className": "U_C_Fisherman",
+				"name": "Fishing Clothes"
+			},
+			"uniform_farmer_01": {
+				"className": "U_C_Uniform_Farmer_01_F",
+				"name": "Farmer Outfit"
+			},
+			"farmer": {
+				"className": "U_C_Farmer",
+				"name": "Farmer Clothes"
+			},
+			"driver_1_yellow": {
+				"className": "U_C_Driver_1_yellow",
+				"name": "Driver Coverall (Yellow)"
+			},
+			"driver_1_white": {
+				"className": "U_C_Driver_1_white",
+				"name": "Driver Coverall (White)"
+			},
+			"driver_4": {
+				"className": "U_C_Driver_4",
+				"name": "Driver Coverall (Vrana)"
+			},
+			"driver_3": {
+				"className": "U_C_Driver_3",
+				"name": "Driver Coverall (Redstone)"
+			},
+			"driver_1_red": {
+				"className": "U_C_Driver_1_red",
+				"name": "Driver Coverall (Red)"
+			},
+			"driver_1_orange": {
+				"className": "U_C_Driver_1_orange",
+				"name": "Driver Coverall (Orange)"
+			},
+			"driver_1_green": {
+				"className": "U_C_Driver_1_green",
+				"name": "Driver Coverall (Green)"
+			},
+			"driver_1": {
+				"className": "U_C_Driver_1",
+				"name": "Driver Coverall (Fuel)"
+			},
+			"driver_2": {
+				"className": "U_C_Driver_2",
+				"name": "Driver Coverall (Bluking)"
+			},
+			"driver_1_blue": {
+				"className": "U_C_Driver_1_blue",
+				"name": "Driver Coverall (Blue)"
+			},
+			"driver_1_black": {
+				"className": "U_C_Driver_1_black",
+				"name": "Driver Coverall (Black)"
+			},
+			"constructioncoverall_vrana": {
+				"className": "U_C_ConstructionCoverall_Vrana_F",
+				"name": "Construction Coverall (Vrana)"
+			},
+			"constructioncoverall_red": {
+				"className": "U_C_ConstructionCoverall_Red_F",
+				"name": "Construction Coverall (Red)"
+			},
+			"constructioncoverall_blue": {
+				"className": "U_C_ConstructionCoverall_Blue_F",
+				"name": "Construction Coverall (Blue)"
+			},
+			"constructioncoverall_black": {
+				"className": "U_C_ConstructionCoverall_Black_F",
+				"name": "Construction Coverall (Black)"
+			},
+			"commoner_shorts": {
+				"className": "U_C_Commoner_shorts",
+				"name": "Commoner Shorts"
+			},
+			"commoner2_3": {
+				"className": "U_C_Commoner2_3",
+				"name": "Commoner Clothes 6"
+			},
+			"commoner2_2": {
+				"className": "U_C_Commoner2_2",
+				"name": "Commoner Clothes 5"
+			},
+			"commoner2_1": {
+				"className": "U_C_Commoner2_1",
+				"name": "Commoner Clothes 4"
+			},
+			"commoner1_3": {
+				"className": "U_C_Commoner1_3",
+				"name": "Commoner Clothes 3"
+			},
+			"commoner1_1": {
+				"className": "U_C_Commoner1_1",
+				"name": "Commoner Clothes 2"
+			},
+			"commoner1_2": {
+				"className": "U_C_Commoner1_2",
+				"name": "Commoner Clothes 2"
+			},
+			"poloshirt_tricolour": {
+				"className": "U_C_Poloshirt_tricolour",
+				"name": "Commoner Clothes (Tricolor)"
+			},
+			"poloshirt_stripped": {
+				"className": "U_C_Poloshirt_stripped",
+				"name": "Commoner Clothes (Striped)"
+			},
+			"poloshirt_stripped_sick": {
+				"className": "U_C_Poloshirt_stripped_sick",
+				"name": "Commoner Clothes (Striped)"
+			},
+			"poloshirt_salmon": {
+				"className": "U_C_Poloshirt_salmon",
+				"name": "Commoner Clothes (Salmon)"
+			},
+			"poloshirt_redwhite": {
+				"className": "U_C_Poloshirt_redwhite",
+				"name": "Commoner Clothes (Red-White)"
+			},
+			"poloshirt_redwhite_sick": {
+				"className": "U_C_Poloshirt_redwhite_sick",
+				"name": "Commoner Clothes (Red-White)"
+			},
+			"poloshirt_burgundy": {
+				"className": "U_C_Poloshirt_burgundy",
+				"name": "Commoner Clothes (Burgundy)"
+			},
+			"poloshirt_burgundy_sick": {
+				"className": "U_C_Poloshirt_burgundy_sick",
+				"name": "Commoner Clothes (Burgundy)"
+			},
+			"poloshirt_blue": {
+				"className": "U_C_Poloshirt_blue",
+				"name": "Commoner Clothes (Blue)"
+			},
+			"poloshirt_blue_sick": {
+				"className": "U_C_Poloshirt_blue_sick",
+				"name": "Commoner Clothes (Blue)"
+			},
+			"priestbody": {
+				"className": "U_C_PriestBody",
+				"name": "Clerical Robes"
+			},
+			"cbrn_suit_01_white": {
+				"className": "U_C_CBRN_Suit_01_White_F",
+				"name": "CBRN Suit (White)"
+			},
+			"cbrn_suit_01_blue": {
+				"className": "U_C_CBRN_Suit_01_Blue_F",
+				"name": "CBRN Suit (Blue)"
+			},
+			"arttshirt_01_v3": {
+				"className": "U_C_ArtTShirt_01_v3_F",
+				"name": "Casual Clothes (Waltham Robotics)"
+			},
+			"arttshirt_01_v5": {
+				"className": "U_C_ArtTShirt_01_v5_F",
+				"name": "Casual Clothes (Robogeddon)"
+			},
+			"man_casual_1": {
+				"className": "U_C_Man_casual_1_F",
+				"name": "Casual Clothes (Navy)"
+			},
+			"man_casual_1_sick": {
+				"className": "U_C_Man_casual_1_sick_F",
+				"name": "Casual Clothes (Navy)"
+			},
+			"man_casual_3": {
+				"className": "U_C_Man_casual_3_F",
+				"name": "Casual Clothes (Green)"
+			},
+			"man_casual_3_sick": {
+				"className": "U_C_Man_casual_3_sick_F",
+				"name": "Casual Clothes (Green)"
+			},
+			"arttshirt_01_v4": {
+				"className": "U_C_ArtTShirt_01_v4_F",
+				"name": "Casual Clothes (Exhibition)"
+			},
+			"arttshirt_01_v2": {
+				"className": "U_C_ArtTShirt_01_v2_F",
+				"name": "Casual Clothes (Drones)"
+			},
+			"man_casual_2": {
+				"className": "U_C_Man_casual_2_F",
+				"name": "Casual Clothes (Blue)"
+			},
+			"man_casual_2_sick": {
+				"className": "U_C_Man_casual_2_sick_F",
+				"name": "Casual Clothes (Blue)"
+			},
+			"arttshirt_01_v1": {
+				"className": "U_C_ArtTShirt_01_v1_F",
+				"name": "Casual Clothes (Art of War)"
+			},
+			"arttshirt_01_v6": {
+				"className": "U_C_ArtTShirt_01_v6_F",
+				"name": "Casual Clothes (Abstract)"
+			},
+			"idap_man_tee": {
+				"className": "U_C_IDAP_Man_Tee_F",
+				"name": "Aid Worker Clothes (Tee) [IDAP]"
+			},
+			"idap_man_teeshorts": {
+				"className": "U_C_IDAP_Man_TeeShorts_F",
+				"name": "Aid Worker Clothes (Tee, Shorts) [IDAP]"
+			},
+			"idap_man_casual": {
+				"className": "U_C_IDAP_Man_casual_F",
+				"name": "Aid Worker Clothes (Polo) [IDAP]"
+			},
+			"idap_man_shorts": {
+				"className": "U_C_IDAP_Man_shorts_F",
+				"name": "Aid Worker Clothes (Polo, Shorts) [IDAP]"
+			},
+			"idap_man_jeans": {
+				"className": "U_C_IDAP_Man_Jeans_F",
+				"name": "Aid Worker Clothes (Jeans) [IDAP]"
+			},
+			"idap_man_cargo": {
+				"className": "U_C_IDAP_Man_cargo_F",
+				"name": "Aid Worker Clothes (Cargo) [IDAP]"
+			}
+		},
+		"b": {
+			"combatuniform_mcam_worn": {
+				"className": "U_B_CombatUniform_mcam_worn",
+				"name": "Worn Combat Fatigues (MTP)"
+			},
+			"wetsuit": {
+				"className": "U_B_Wetsuit",
+				"name": "Wetsuit [NATO]"
+			},
+			"protagonist_vr": {
+				"className": "U_B_Protagonist_VR",
+				"name": "VR Suit [NATO]"
+			},
+			"soldier_vr": {
+				"className": "U_B_Soldier_VR",
+				"name": "VR Entity Suit"
+			},
+			"survival_uniform": {
+				"className": "U_B_survival_uniform",
+				"name": "Survival Fatigues"
+			},
+			"specopsuniform_sgg": {
+				"className": "U_B_SpecopsUniform_sgg",
+				"name": "Specop Fatigues (Sage)"
+			},
+			"combatuniform_vest_mcam_wdl": {
+				"className": "U_B_CombatUniform_vest_mcam_wdl_f",
+				"name": "Recon Fatigues (Woodland)"
+			},
+			"t_soldier_sl": {
+				"className": "U_B_T_Soldier_SL_F",
+				"name": "Recon Fatigues (Tropic)"
+			},
+			"combatuniform_mcam_vest": {
+				"className": "U_B_CombatUniform_mcam_vest",
+				"name": "Recon Fatigues (MTP)"
+			},
+			"combatuniform_sgg_vest": {
+				"className": "U_B_CombatUniform_sgg_vest",
+				"name": "Recon Fatigues (MTP)"
+			},
+			"combatuniform_wdl_vest": {
+				"className": "U_B_CombatUniform_wdl_vest",
+				"name": "Recon Fatigues (MTP)"
+			},
+			"pilotcoveralls": {
+				"className": "U_B_PilotCoveralls",
+				"name": "Pilot Coveralls [NATO]"
+			},
+			"g_captain_ivan": {
+				"className": "U_B_G_Captain_Ivan_F",
+				"name": "Paramilitary Garb (Jacket)"
+			},
+			"paradeuniform_01_us": {
+				"className": "U_B_ParadeUniform_01_US_F",
+				"name": "Parade Uniform [US]"
+			},
+			"paradeuniform_01_us_decorated": {
+				"className": "U_B_ParadeUniform_01_US_decorated_F",
+				"name": "Parade Uniform (Decorated) [US]"
+			},
+			"helipilotcoveralls": {
+				"className": "U_B_HeliPilotCoveralls",
+				"name": "Heli Pilot Coveralls [NATO]"
+			},
+			"ghilliesuit": {
+				"className": "U_B_GhillieSuit",
+				"name": "Ghillie Suit [NATO]"
+			},
+			"t_sniper": {
+				"className": "U_B_T_Sniper_F",
+				"name": "Ghillie Suit (Tropic) [NATO]"
+			},
+			"gen_soldier": {
+				"className": "U_B_GEN_Soldier_F",
+				"name": "Gendarmerie Uniform"
+			},
+			"gen_commander": {
+				"className": "U_B_GEN_Commander_F",
+				"name": "Gendarmerie Commander Uniform"
+			},
+			"fullghillie_sard": {
+				"className": "U_B_FullGhillie_sard",
+				"name": "Full Ghillie (Semi-Arid) [NATO]"
+			},
+			"fullghillie_lsh": {
+				"className": "U_B_FullGhillie_lsh",
+				"name": "Full Ghillie (Lush) [NATO]"
+			},
+			"t_fullghillie_tna": {
+				"className": "U_B_T_FullGhillie_tna_F",
+				"name": "Full Ghillie (Jungle) [NATO]"
+			},
+			"fullghillie_ard": {
+				"className": "U_B_FullGhillie_ard",
+				"name": "Full Ghillie (Arid) [NATO]"
+			},
+			"ctrg_soldier_urb_2": {
+				"className": "U_B_CTRG_Soldier_urb_2_F",
+				"name": "CTRG Urban Uniform (Tee)"
+			},
+			"ctrg_soldier_urb_3": {
+				"className": "U_B_CTRG_Soldier_urb_3_F",
+				"name": "CTRG Urban Uniform (Rolled-up)"
+			},
+			"ctrg_soldier_urb_1": {
+				"className": "U_B_CTRG_Soldier_urb_1_F",
+				"name": "CTRG Urban Uniform"
+			},
+			"ctrg_soldier_2": {
+				"className": "U_B_CTRG_Soldier_2_F",
+				"name": "CTRG Stealth Uniform (Tee)"
+			},
+			"ctrg_soldier_2_arid": {
+				"className": "U_B_CTRG_Soldier_2_Arid_F",
+				"name": "CTRG Stealth Uniform (Tee, Arid)"
+			},
+			"ctrg_soldier_3": {
+				"className": "U_B_CTRG_Soldier_3_F",
+				"name": "CTRG Stealth Uniform (Rolled-up)"
+			},
+			"ctrg_soldier_3_arid": {
+				"className": "U_B_CTRG_Soldier_3_Arid_F",
+				"name": "CTRG Stealth Uniform (Rolled-up, Arid)"
+			},
+			"ctrg_soldier_arid": {
+				"className": "U_B_CTRG_Soldier_Arid_F",
+				"name": "CTRG Stealth Uniform (Arid)"
+			},
+			"ctrg_soldier": {
+				"className": "U_B_CTRG_Soldier_F",
+				"name": "CTRG Stealth Uniform"
+			},
+			"ctrg_2": {
+				"className": "U_B_CTRG_2",
+				"name": "CTRG Combat Uniform (Tee)"
+			},
+			"ctrg_3": {
+				"className": "U_B_CTRG_3",
+				"name": "CTRG Combat Uniform (Rolled-up)"
+			},
+			"ctrg_1": {
+				"className": "U_B_CTRG_1",
+				"name": "CTRG Combat Uniform"
+			},
+			"combatuniform_mcam_wdl": {
+				"className": "U_B_CombatUniform_mcam_wdl_f",
+				"name": "Combat Fatigues (Woodland)"
+			},
+			"combatuniform_tshirt_mcam_wdl": {
+				"className": "U_B_CombatUniform_tshirt_mcam_wdL_f",
+				"name": "Combat Fatigues (Woodland, Tee)"
+			},
+			"t_soldier": {
+				"className": "U_B_T_Soldier_F",
+				"name": "Combat Fatigues (Tropic)"
+			},
+			"t_soldier_ar": {
+				"className": "U_B_T_Soldier_AR_F",
+				"name": "Combat Fatigues (Tropic, Tee)"
+			},
+			"combatuniform_mcam_tshirt": {
+				"className": "U_B_CombatUniform_mcam_tshirt",
+				"name": "Combat Fatigues (MTP) (Tee)"
+			},
+			"combatuniform_sgg_tshirt": {
+				"className": "U_B_CombatUniform_sgg_tshirt",
+				"name": "Combat Fatigues (MTP) (Tee)"
+			},
+			"combatuniform_wdl_tshirt": {
+				"className": "U_B_CombatUniform_wdl_tshirt",
+				"name": "Combat Fatigues (MTP) (Tee)"
+			},
+			"combatuniform_mcam": {
+				"className": "U_B_CombatUniform_mcam",
+				"name": "Combat Fatigues (MTP)"
+			},
+			"combatuniform_sgg": {
+				"className": "U_B_CombatUniform_sgg",
+				"name": "Combat Fatigues (MTP)"
+			},
+			"combatuniform_wdl": {
+				"className": "U_B_CombatUniform_wdl",
+				"name": "Combat Fatigues (MTP)"
+			},
+			"cbrn_suit_01_wdl": {
+				"className": "U_B_CBRN_Suit_01_Wdl_F",
+				"name": "CBRN Suit (Woodland) [NATO]"
+			},
+			"cbrn_suit_01_tropic": {
+				"className": "U_B_CBRN_Suit_01_Tropic_F",
+				"name": "CBRN Suit (Tropic) [NATO]"
+			},
+			"cbrn_suit_01_mtp": {
+				"className": "U_B_CBRN_Suit_01_MTP_F",
+				"name": "CBRN Suit (MTP) [NATO]"
+			}
+		},
+		"i": {
+			"g_story_protagonist": {
+				"className": "U_I_G_Story_Protagonist_F",
+				"name": "Worn Combat Fatigues (Kerry)"
+			},
+			"wetsuit": {
+				"className": "U_I_Wetsuit",
+				"name": "Wetsuit [AAF]"
+			},
+			"protagonist_vr": {
+				"className": "U_I_Protagonist_VR",
+				"name": "VR Suit [AAF]"
+			},
+			"soldier_vr": {
+				"className": "U_I_Soldier_VR",
+				"name": "VR Entity Suit"
+			},
+			"c_soldier_camo": {
+				"className": "U_I_C_Soldier_Camo_F",
+				"name": "Syndikat Uniform"
+			},
+			"pilotcoveralls": {
+				"className": "U_I_pilotCoveralls",
+				"name": "Pilot Coveralls [AAF]"
+			},
+			"c_soldier_para_1": {
+				"className": "U_I_C_Soldier_Para_1_F",
+				"name": "Paramilitary Garb (Tee)"
+			},
+			"c_soldier_para_4": {
+				"className": "U_I_C_Soldier_Para_4_F",
+				"name": "Paramilitary Garb (Tank Top)"
+			},
+			"c_soldier_para_5": {
+				"className": "U_I_C_Soldier_Para_5_F",
+				"name": "Paramilitary Garb (Shorts)"
+			},
+			"c_soldier_para_3": {
+				"className": "U_I_C_Soldier_Para_3_F",
+				"name": "Paramilitary Garb (Shirt)"
+			},
+			"c_soldier_para_2": {
+				"className": "U_I_C_Soldier_Para_2_F",
+				"name": "Paramilitary Garb (Jacket)"
+			},
+			"e_paradeuniform_01_ldf": {
+				"className": "U_I_E_ParadeUniform_01_LDF_F",
+				"name": "Parade Uniform [LDF]"
+			},
+			"paradeuniform_01_aaf": {
+				"className": "U_I_ParadeUniform_01_AAF_F",
+				"name": "Parade Uniform [AAF]"
+			},
+			"e_paradeuniform_01_ldf_decorated": {
+				"className": "U_I_E_ParadeUniform_01_LDF_decorated_F",
+				"name": "Parade Uniform (Decorated) [LDF]"
+			},
+			"paradeuniform_01_aaf_decorated": {
+				"className": "U_I_ParadeUniform_01_AAF_decorated_F",
+				"name": "Parade Uniform (Decorated) [AAF]"
+			},
+			"l_uniform_01_tshirt_sport": {
+				"className": "U_I_L_Uniform_01_tshirt_sport_F",
+				"name": "Looter Clothes (T-Shirt, Sport)"
+			},
+			"l_uniform_01_tshirt_skull": {
+				"className": "U_I_L_Uniform_01_tshirt_skull_F",
+				"name": "Looter Clothes (T-Shirt, Skull)"
+			},
+			"l_uniform_01_tshirt_olive": {
+				"className": "U_I_L_Uniform_01_tshirt_olive_F",
+				"name": "Looter Clothes (T-Shirt, Olive)"
+			},
+			"l_uniform_01_tshirt_black": {
+				"className": "U_I_L_Uniform_01_tshirt_black_F",
+				"name": "Looter Clothes (T-Shirt, Black)"
+			},
+			"e_uniform_01_coveralls": {
+				"className": "U_I_E_Uniform_01_coveralls_F",
+				"name": "Heli Pilot Coveralls [LDF]"
+			},
+			"helipilotcoveralls": {
+				"className": "U_I_HeliPilotCoveralls",
+				"name": "Heli Pilot Coveralls [AAF]"
+			},
+			"ghilliesuit": {
+				"className": "U_I_GhillieSuit",
+				"name": "Ghillie Suit [AAF]"
+			},
+			"fullghillie_sard": {
+				"className": "U_I_FullGhillie_sard",
+				"name": "Full Ghillie (Semi-Arid) [AAF]"
+			},
+			"fullghillie_lsh": {
+				"className": "U_I_FullGhillie_lsh",
+				"name": "Full Ghillie (Lush) [AAF]"
+			},
+			"fullghillie_ard": {
+				"className": "U_I_FullGhillie_ard",
+				"name": "Full Ghillie (Arid) [AAF]"
+			},
+			"l_uniform_01_deserter": {
+				"className": "U_I_L_Uniform_01_deserter_F",
+				"name": "Deserter Clothes (T-Shirt)"
+			},
+			"l_uniform_01_camo": {
+				"className": "U_I_L_Uniform_01_camo_F",
+				"name": "Deserter Clothes (Jacket)"
+			},
+			"e_uniform_01": {
+				"className": "U_I_E_Uniform_01_F",
+				"name": "Combat Fatigues [LDF]"
+			},
+			"combatuniform_shortsleeve": {
+				"className": "U_I_CombatUniform_shortsleeve",
+				"name": "Combat Fatigues [AAF] (Rolled-up)"
+			},
+			"combatuniform_tshirt": {
+				"className": "U_I_CombatUniform_tshirt",
+				"name": "Combat Fatigues [AAF] (Officer)"
+			},
+			"officeruniform": {
+				"className": "U_I_OfficerUniform",
+				"name": "Combat Fatigues [AAF] (Officer)"
+			},
+			"combatuniform": {
+				"className": "U_I_CombatUniform",
+				"name": "Combat Fatigues [AAF]"
+			},
+			"e_uniform_01_tanktop": {
+				"className": "U_I_E_Uniform_01_tanktop_F",
+				"name": "Combat Fatigues (Tank Top) [LDF]"
+			},
+			"e_uniform_01_sweater": {
+				"className": "U_I_E_Uniform_01_sweater_F",
+				"name": "Combat Fatigues (Sweater) [LDF]"
+			},
+			"g_resistanceleader": {
+				"className": "U_I_G_resistanceLeader_F",
+				"name": "Combat Fatigues (Stavrou)"
+			},
+			"e_uniform_01_shortsleeve": {
+				"className": "U_I_E_Uniform_01_shortsleeve_F",
+				"name": "Combat Fatigues (Rolled-up) [LDF]"
+			},
+			"e_uniform_01_officer": {
+				"className": "U_I_E_Uniform_01_officer_F",
+				"name": "Combat Fatigues (Officer) [LDF]"
+			},
+			"e_cbrn_suit_01_eaf": {
+				"className": "U_I_E_CBRN_Suit_01_EAF_F",
+				"name": "CBRN Suit [LDF]"
+			},
+			"cbrn_suit_01_aaf": {
+				"className": "U_I_CBRN_Suit_01_AAF_F",
+				"name": "CBRN Suit [AAF]"
+			},
+			"c_soldier_bandit_3": {
+				"className": "U_I_C_Soldier_Bandit_3_F",
+				"name": "Bandit Clothes (Tee)"
+			},
+			"c_soldier_bandit_5": {
+				"className": "U_I_C_Soldier_Bandit_5_F",
+				"name": "Bandit Clothes (Tank Top)"
+			},
+			"c_soldier_bandit_2": {
+				"className": "U_I_C_Soldier_Bandit_2_F",
+				"name": "Bandit Clothes (Skull)"
+			},
+			"c_soldier_bandit_1": {
+				"className": "U_I_C_Soldier_Bandit_1_F",
+				"name": "Bandit Clothes (Polo Shirt)"
+			},
+			"c_soldier_bandit_4": {
+				"className": "U_I_C_Soldier_Bandit_4_F",
+				"name": "Bandit Clothes (Checkered)"
+			}
+		},
+		"o": {
+			"wetsuit": {
+				"className": "U_O_Wetsuit",
+				"name": "Wetsuit [CSAT]"
+			},
+			"protagonist_vr": {
+				"className": "U_O_Protagonist_VR",
+				"name": "VR Suit [CSAT]"
+			},
+			"soldier_vr": {
+				"className": "U_O_Soldier_VR",
+				"name": "VR Entity Suit"
+			},
+			"r_gorka_01_black": {
+				"className": "U_O_R_Gorka_01_black_F",
+				"name": "Tracksuit (Black)"
+			},
+			"v_soldier_viper_hex": {
+				"className": "U_O_V_Soldier_Viper_hex_F",
+				"name": "Special Purpose Suit (Hex)"
+			},
+			"v_soldier_viper": {
+				"className": "U_O_V_Soldier_Viper_F",
+				"name": "Special Purpose Suit (Green Hex)"
+			},
+			"specopsuniform_ocamo": {
+				"className": "U_O_SpecopsUniform_ocamo",
+				"name": "Recon Fatigues (Hex)"
+			},
+			"specopsuniform_blk": {
+				"className": "U_O_SpecopsUniform_blk",
+				"name": "Recon Fatigues (Black)"
+			},
+			"pilotcoveralls": {
+				"className": "U_O_PilotCoveralls",
+				"name": "Pilot Coveralls [CSAT]"
+			},
+			"paradeuniform_01_csat": {
+				"className": "U_O_ParadeUniform_01_CSAT_F",
+				"name": "Parade Uniform [CSAT]"
+			},
+			"paradeuniform_01_csat_decorated": {
+				"className": "U_O_ParadeUniform_01_CSAT_decorated_F",
+				"name": "Parade Uniform (Decorated) [CSAT]"
+			},
+			"officeruniform_ocamo": {
+				"className": "U_O_OfficerUniform_ocamo",
+				"name": "Officer Fatigues (Hex)"
+			},
+			"t_officer": {
+				"className": "U_O_T_Officer_F",
+				"name": "Officer Fatigues (Green Hex) [CSAT]"
+			},
+			"officer_noinsignia_hex": {
+				"className": "U_O_officer_noInsignia_hex_F",
+				"name": "Light Fatigues (Hex)"
+			},
+			"r_gorka_01_camo": {
+				"className": "U_O_R_Gorka_01_camo_F",
+				"name": "Granit-T Suit"
+			},
+			"r_gorka_01_brown": {
+				"className": "U_O_R_Gorka_01_brown_F",
+				"name": "Granit-B Suit (Weathered)"
+			},
+			"r_gorka_01": {
+				"className": "U_O_R_Gorka_01_F",
+				"name": "Granit-B Suit"
+			},
+			"ghilliesuit": {
+				"className": "U_O_GhillieSuit",
+				"name": "Ghillie Suit [CSAT]"
+			},
+			"t_sniper": {
+				"className": "U_O_T_Sniper_F",
+				"name": "Ghillie Suit (Green Hex) [CSAT]"
+			},
+			"gen_soldier": {
+				"className": "U_O_GEN_Soldier_F",
+				"name": "Gendarmerie Uniform"
+			},
+			"gen_commander": {
+				"className": "U_O_GEN_Commander_F",
+				"name": "Gendarmerie Commander Uniform"
+			},
+			"fullghillie_sard": {
+				"className": "U_O_FullGhillie_sard",
+				"name": "Full Ghillie (Semi-Arid) [CSAT]"
+			},
+			"fullghillie_lsh": {
+				"className": "U_O_FullGhillie_lsh",
+				"name": "Full Ghillie (Lush) [CSAT]"
+			},
+			"t_fullghillie_tna": {
+				"className": "U_O_T_FullGhillie_tna_F",
+				"name": "Full Ghillie (Jungle) [CSAT]"
+			},
+			"fullghillie_ard": {
+				"className": "U_O_FullGhillie_ard",
+				"name": "Full Ghillie (Arid) [CSAT]"
+			},
+			"combatuniform_oucamo": {
+				"className": "U_O_CombatUniform_oucamo",
+				"name": "Fatigues (Urban) [CSAT]"
+			},
+			"combatuniform_ocamo": {
+				"className": "U_O_CombatUniform_ocamo",
+				"name": "Fatigues (Hex) [CSAT]"
+			},
+			"t_soldier": {
+				"className": "U_O_T_Soldier_F",
+				"name": "Fatigues (Green Hex) [CSAT]"
+			}
+		},
+		"antigonabody": {
+			"base": {
+				"className": "U_AntigonaBody",
+				"name": "Underwear 5"
+			}
+		},
+		"attisbody": {
+			"base": {
+				"className": "U_AttisBody",
+				"name": "Underwear 4"
+			}
+		},
+		"nikosagedbody": {
+			"base": {
+				"className": "U_NikosAgedBody",
+				"name": "Underwear 1"
+			}
+		},
+		"basicbody": {
+			"base": {
+				"className": "U_BasicBody",
+				"name": "Underwear"
+			}
+		},
+		"tank": {
+			"green": {
+				"className": "U_Tank_green_F",
+				"name": "Tanker Coveralls [AAF]"
+			}
+		},
+		"oi": {
+			"scientist": {
+				"className": "U_OI_Scientist",
+				"name": "Scientist Suit"
+			}
+		},
+		"rangemaster": {
+			"base": {
+				"className": "U_Rangemaster",
+				"name": "Rangemaster Suit"
+			}
+		},
+		"nikosbody": {
+			"base": {
+				"className": "U_NikosBody",
+				"name": "Nikos Clothes"
+			}
+		},
+		"marshal": {
+			"base": {
+				"className": "U_Marshal",
+				"name": "Marshal Clothes"
+			}
+		},
+		"ig": {
+			"menelaos": {
+				"className": "U_IG_Menelaos",
+				"name": "Kabeiroi Leader's Outfit"
+			},
+			"leader": {
+				"className": "U_IG_leader",
+				"name": "Guerilla Uniform"
+			},
+			"guerilla3_2": {
+				"className": "U_IG_Guerilla3_2",
+				"name": "Guerilla Smocks 1"
+			},
+			"guerilla3_1": {
+				"className": "U_IG_Guerilla3_1",
+				"name": "Guerilla Smocks"
+			},
+			"guerilla2_3": {
+				"className": "U_IG_Guerilla2_3",
+				"name": "Guerilla Outfit (Plain, Light)"
+			},
+			"guerilla2_1": {
+				"className": "U_IG_Guerilla2_1",
+				"name": "Guerilla Outfit (Plain, Dark)"
+			},
+			"guerilla2_2": {
+				"className": "U_IG_Guerilla2_2",
+				"name": "Guerilla Outfit (Pattern)"
+			},
+			"guerilla1_1": {
+				"className": "U_IG_Guerilla1_1",
+				"name": "Guerilla Garment"
+			},
+			"guerrilla_6_1": {
+				"className": "U_IG_Guerrilla_6_1",
+				"name": "Guerilla Apparel"
+			}
+		},
+		"orestesbody": {
+			"base": {
+				"className": "U_OrestesBody",
+				"name": "Jacket and Shorts"
+			}
+		},
+		"virtualman": {
+			"base": {
+				"className": "U_VirtualMan_F",
+				"name": "Invisible Uniform"
+			}
+		},
+		"bg": {
+			"leader": {
+				"className": "U_BG_leader",
+				"name": "Guerilla Uniform"
+			},
+			"guerilla3_2": {
+				"className": "U_BG_Guerilla3_2",
+				"name": "Guerilla Smocks 1"
+			},
+			"guerilla3_1": {
+				"className": "U_BG_Guerilla3_1",
+				"name": "Guerilla Smocks"
+			},
+			"guerilla2_3": {
+				"className": "U_BG_Guerilla2_3",
+				"name": "Guerilla Outfit (Plain, Light)"
+			},
+			"guerilla2_1": {
+				"className": "U_BG_Guerilla2_1",
+				"name": "Guerilla Outfit (Plain, Dark)"
+			},
+			"guerilla2_2": {
+				"className": "U_BG_Guerilla2_2",
+				"name": "Guerilla Outfit (Pattern)"
+			},
+			"guerilla1_2": {
+				"className": "U_BG_Guerilla1_2_F",
+				"name": "Guerilla Garment (Olive)"
+			},
+			"guerilla1_1": {
+				"className": "U_BG_Guerilla1_1",
+				"name": "Guerilla Garment"
+			},
+			"guerrilla_6_1": {
+				"className": "U_BG_Guerrilla_6_1",
+				"name": "Guerilla Apparel"
+			}
+		},
+		"og": {
+			"leader": {
+				"className": "U_OG_leader",
+				"name": "Guerilla Uniform"
+			},
+			"guerilla3_2": {
+				"className": "U_OG_Guerilla3_2",
+				"name": "Guerilla Smocks 1"
+			},
+			"guerilla3_1": {
+				"className": "U_OG_Guerilla3_1",
+				"name": "Guerilla Smocks"
+			},
+			"guerilla2_3": {
+				"className": "U_OG_Guerilla2_3",
+				"name": "Guerilla Outfit (Plain, Light)"
+			},
+			"guerilla2_1": {
+				"className": "U_OG_Guerilla2_1",
+				"name": "Guerilla Outfit (Plain, Dark)"
+			},
+			"guerilla2_2": {
+				"className": "U_OG_Guerilla2_2",
+				"name": "Guerilla Outfit (Pattern)"
+			},
+			"guerilla1_1": {
+				"className": "U_OG_Guerilla1_1",
+				"name": "Guerilla Garment"
+			},
+			"guerrilla_6_1": {
+				"className": "U_OG_Guerrilla_6_1",
+				"name": "Guerilla Apparel"
+			}
+		},
+		"competitor": {
+			"base": {
+				"className": "U_Competitor",
+				"name": "Competitor Suit"
+			}
+		},
+		"millerbody": {
+			"base": {
+				"className": "U_MillerBody",
+				"name": "Combat Fatigues (Miller)"
+			}
+		},
+		"kerrybody": {
+			"base": {
+				"className": "U_KerryBody",
+				"name": "Combat Fatigues (Kerry)"
+			}
+		}
+	},
+	"h": {
+		"wirelessearpiece": {
+			"base": {
+				"className": "H_WirelessEarpiece_F",
+				"name": "Wireless Earpiece"
+			}
+		},
+		"hat": {
+			"tinfoil": {
+				"className": "H_Hat_Tinfoil_F",
+				"name": "Tin Foil Hat"
+			},
+			"safari_sand": {
+				"className": "H_Hat_Safari_sand_F",
+				"name": "Safari Hat (Sand)"
+			},
+			"safari_olive": {
+				"className": "H_Hat_Safari_olive_F",
+				"name": "Safari Hat (Olive)"
+			},
+			"tan": {
+				"className": "H_Hat_tan",
+				"name": "Hat (Tan)"
+			},
+			"grey": {
+				"className": "H_Hat_grey",
+				"name": "Hat (Grey)"
+			},
+			"checker": {
+				"className": "H_Hat_checker",
+				"name": "Hat (Checker)"
+			},
+			"camo": {
+				"className": "H_Hat_camo",
+				"name": "Hat (Camo)"
+			},
+			"brown": {
+				"className": "H_Hat_brown",
+				"name": "Hat (Brown)"
+			},
+			"blue": {
+				"className": "H_Hat_blue",
+				"name": "Hat (Blue)"
+			}
+		},
+		"strawhat": {
+			"dark": {
+				"className": "H_StrawHat_dark",
+				"name": "Straw Hat (Dark)"
+			},
+			"base": {
+				"className": "H_StrawHat",
+				"name": "Straw Hat"
+			}
+		},
+		"helmetb": {
+			"ti_arid": {
+				"className": "H_HelmetB_TI_arid_F",
+				"name": "Stealth Combat Helmet (Arid)"
+			},
+			"ti_tna": {
+				"className": "H_HelmetB_TI_tna_F",
+				"name": "Stealth Combat Helmet"
+			},
+			"light_wdl": {
+				"className": "H_HelmetB_light_wdl",
+				"name": "Light Combat Helmet (Woodland)"
+			},
+			"light_tna": {
+				"className": "H_HelmetB_Light_tna_F",
+				"name": "Light Combat Helmet (Tropic)"
+			},
+			"light_snakeskin": {
+				"className": "H_HelmetB_light_snakeskin",
+				"name": "Light Combat Helmet (Snakeskin)"
+			},
+			"light_sand": {
+				"className": "H_HelmetB_light_sand",
+				"name": "Light Combat Helmet (Sand)"
+			},
+			"light_grass": {
+				"className": "H_HelmetB_light_grass",
+				"name": "Light Combat Helmet (Grass)"
+			},
+			"light_desert": {
+				"className": "H_HelmetB_light_desert",
+				"name": "Light Combat Helmet (Desert)"
+			},
+			"light_black": {
+				"className": "H_HelmetB_light_black",
+				"name": "Light Combat Helmet (Black)"
+			},
+			"light": {
+				"className": "H_HelmetB_light",
+				"name": "Light Combat Helmet"
+			},
+			"enh_tna": {
+				"className": "H_HelmetB_Enh_tna_F",
+				"name": "Enhanced Combat Helmet (Tropic)"
+			},
+			"plain_wdl": {
+				"className": "H_HelmetB_plain_wdl",
+				"name": "Combat Helmet (Woodland)"
+			},
+			"tna": {
+				"className": "H_HelmetB_tna_F",
+				"name": "Combat Helmet (Tropic)"
+			},
+			"paint": {
+				"className": "H_HelmetB_paint",
+				"name": "Combat Helmet (Spraypaint)"
+			},
+			"snakeskin": {
+				"className": "H_HelmetB_snakeskin",
+				"name": "Combat Helmet (Snakeskin)"
+			},
+			"sand": {
+				"className": "H_HelmetB_sand",
+				"name": "Combat Helmet (Sand)"
+			},
+			"grass": {
+				"className": "H_HelmetB_grass",
+				"name": "Combat Helmet (Grass)"
+			},
+			"desert": {
+				"className": "H_HelmetB_desert",
+				"name": "Combat Helmet (Desert)"
+			},
+			"camo": {
+				"className": "H_HelmetB_camo",
+				"name": "Combat Helmet (Camo)"
+			},
+			"plain_mcamo": {
+				"className": "H_HelmetB_plain_mcamo",
+				"name": "Combat Helmet (Camo)"
+			},
+			"black": {
+				"className": "H_HelmetB_black",
+				"name": "Combat Helmet (Black)"
+			},
+			"plain_blk": {
+				"className": "H_HelmetB_plain_blk",
+				"name": "Combat Helmet (Black)"
+			},
+			"base": {
+				"className": "H_HelmetB",
+				"name": "Combat Helmet"
+			}
+		},
+		"helmeto": {
+			"vipersp_hex": {
+				"className": "H_HelmetO_ViperSP_hex_F",
+				"name": "Special Purpose Helmet (Hex)"
+			},
+			"vipersp_ghex": {
+				"className": "H_HelmetO_ViperSP_ghex_F",
+				"name": "Special Purpose Helmet (Green Hex)"
+			},
+			"oucamo": {
+				"className": "H_HelmetO_oucamo",
+				"name": "Protector Helmet (Urban)"
+			},
+			"ocamo": {
+				"className": "H_HelmetO_ocamo",
+				"name": "Protector Helmet (Hex)"
+			},
+			"ghex": {
+				"className": "H_HelmetO_ghex_F",
+				"name": "Protector Helmet (Green Hex)"
+			}
+		},
+		"helmet": {
+			"skate": {
+				"className": "H_Helmet_Skate",
+				"name": "Skate Helmet"
+			},
+			"kerry": {
+				"className": "H_Helmet_Kerry",
+				"name": "Combat Helmet (Kerry)"
+			}
+		},
+		"shemag": {
+			"tan": {
+				"className": "H_Shemag_tan",
+				"name": "Shemag mask (Tan)"
+			},
+			"khk": {
+				"className": "H_Shemag_khk",
+				"name": "Shemag mask (Khaki)"
+			},
+			"olive": {
+				"className": "H_Shemag_olive",
+				"name": "Shemag (Olive)"
+			},
+			"olive_hs": {
+				"className": "H_Shemag_olive_hs",
+				"name": "Shemag (Olive, Headset)"
+			}
+		},
+		"shemagopen": {
+			"khk": {
+				"className": "H_ShemagOpen_khk",
+				"name": "Shemag (White)"
+			},
+			"tan": {
+				"className": "H_ShemagOpen_tan",
+				"name": "Shemag (Tan)"
+			}
+		},
+		"cap": {
+			"headphones": {
+				"className": "H_Cap_headphones",
+				"name": "Rangemaster Cap"
+			},
+			"marshal": {
+				"className": "H_Cap_marshal",
+				"name": "Marshal Cap"
+			},
+			"brn_specops": {
+				"className": "H_Cap_brn_SPECOPS",
+				"name": "Cap [OPFOR]"
+			},
+			"blk_raven": {
+				"className": "H_Cap_blk_Raven",
+				"name": "Cap [AAF]"
+			},
+			"white_idap": {
+				"className": "H_Cap_White_IDAP_F",
+				"name": "Cap (White) [IDAP]"
+			},
+			"tan_specops_us": {
+				"className": "H_Cap_tan_specops_US",
+				"name": "Cap (US MTP)"
+			},
+			"usblack": {
+				"className": "H_Cap_usblack",
+				"name": "Cap (US Black)"
+			},
+			"khaki_specops_uk": {
+				"className": "H_Cap_khaki_specops_UK",
+				"name": "Cap (UK)"
+			},
+			"tan": {
+				"className": "H_Cap_tan",
+				"name": "Cap (Tan)"
+			},
+			"tan_syndikat": {
+				"className": "H_Cap_tan_Syndikat_F",
+				"name": "Cap (Tan)"
+			},
+			"surfer": {
+				"className": "H_Cap_surfer",
+				"name": "Cap (Surfer)"
+			},
+			"red": {
+				"className": "H_Cap_red",
+				"name": "Cap (Red)"
+			},
+			"press": {
+				"className": "H_Cap_press",
+				"name": "Cap (Press)"
+			},
+			"police": {
+				"className": "H_Cap_police",
+				"name": "Cap (Police)"
+			},
+			"orange_idap": {
+				"className": "H_Cap_Orange_IDAP_F",
+				"name": "Cap (Orange) [IDAP]"
+			},
+			"oli": {
+				"className": "H_Cap_oli",
+				"name": "Cap (Olive)"
+			},
+			"oli_syndikat": {
+				"className": "H_Cap_oli_Syndikat_F",
+				"name": "Cap (Olive)"
+			},
+			"oli_hs": {
+				"className": "H_Cap_oli_hs",
+				"name": "Cap (Olive, Headset)"
+			},
+			"maldentours": {
+				"className": "H_Cap_MaldenTours",
+				"name": "Cap (Malden Tours)"
+			},
+			"lyfe": {
+				"className": "H_Cap_Lyfe",
+				"name": "Cap (Lyfe)"
+			},
+			"blk_ion": {
+				"className": "H_Cap_blk_ION",
+				"name": "Cap (ION)"
+			},
+			"grn": {
+				"className": "H_Cap_grn",
+				"name": "Cap (Green)"
+			},
+			"grn_syndikat": {
+				"className": "H_Cap_grn_Syndikat_F",
+				"name": "Cap (Green)"
+			},
+			"blk_cmmg": {
+				"className": "H_Cap_blk_CMMG",
+				"name": "Cap (CMMG)"
+			},
+			"blu": {
+				"className": "H_Cap_blu",
+				"name": "Cap (Blue)"
+			},
+			"black_idap": {
+				"className": "H_Cap_Black_IDAP_F",
+				"name": "Cap (Black) [IDAP]"
+			},
+			"blk": {
+				"className": "H_Cap_blk",
+				"name": "Cap (Black)"
+			},
+			"blk_syndikat": {
+				"className": "H_Cap_blk_Syndikat_F",
+				"name": "Cap (Black)"
+			},
+			"grn_bi": {
+				"className": "H_Cap_grn_BI",
+				"name": "Cap (BI)"
+			}
+		},
+		"racinghelmet": {
+			"1": {
+				"className": "H_RacingHelmet_1_F",
+				"name": "Racing Helmet (Fuel)"
+			},
+			"2": {
+				"className": "H_RacingHelmet_2_F",
+				"name": "Racing Helmet (Bluking)"
+			},
+			"3": {
+				"className": "H_RacingHelmet_3_F",
+				"name": "Racing Helmet (Redstone)"
+			},
+			"4": {
+				"className": "H_RacingHelmet_4_F",
+				"name": "Racing Helmet (Vrana)"
+			},
+			"1_yellow": {
+				"className": "H_RacingHelmet_1_yellow_F",
+				"name": "Racing Helmet (Yellow)"
+			},
+			"1_white": {
+				"className": "H_RacingHelmet_1_white_F",
+				"name": "Racing Helmet (White)"
+			},
+			"1_red": {
+				"className": "H_RacingHelmet_1_red_F",
+				"name": "Racing Helmet (Red)"
+			},
+			"1_orange": {
+				"className": "H_RacingHelmet_1_orange_F",
+				"name": "Racing Helmet (Orange)"
+			},
+			"1_green": {
+				"className": "H_RacingHelmet_1_green_F",
+				"name": "Racing Helmet (Green)"
+			},
+			"1_blue": {
+				"className": "H_RacingHelmet_1_blue_F",
+				"name": "Racing Helmet (Blue)"
+			},
+			"1_black": {
+				"className": "H_RacingHelmet_1_black_F",
+				"name": "Racing Helmet (Black)"
+			}
+		},
+		"pasgt": {
+			"neckprot_blue_press": {
+				"className": "H_PASGT_neckprot_blue_press_F",
+				"name": "Press Helmet (Neck Protection)"
+			},
+			"basic_blue_press": {
+				"className": "H_PASGT_basic_blue_press_F",
+				"name": "Press Helmet"
+			},
+			"basic_white": {
+				"className": "H_PASGT_basic_white_F",
+				"name": "Basic Helmet (White)"
+			},
+			"basic_olive": {
+				"className": "H_PASGT_basic_olive_F",
+				"name": "Basic Helmet (Olive)"
+			},
+			"basic_blue": {
+				"className": "H_PASGT_basic_blue_F",
+				"name": "Basic Helmet (Blue)"
+			},
+			"basic_black": {
+				"className": "H_PASGT_basic_black_F",
+				"name": "Basic Helmet (Black)"
+			}
+		},
+		"pilothelmetfighter": {
+			"b": {
+				"className": "H_PilotHelmetFighter_B",
+				"name": "Pilot Helmet [NATO]"
+			},
+			"i_e": {
+				"className": "H_PilotHelmetFighter_I_E",
+				"name": "Pilot Helmet [LDF]"
+			},
+			"o": {
+				"className": "H_PilotHelmetFighter_O",
+				"name": "Pilot Helmet [CSAT]"
+			},
+			"i": {
+				"className": "H_PilotHelmetFighter_I",
+				"name": "Pilot Helmet [AAF]"
+			}
+		},
+		"paradedresscap": {
+			"01_us": {
+				"className": "H_ParadeDressCap_01_US_F",
+				"name": "Parade Cap [US]"
+			},
+			"01_ldf": {
+				"className": "H_ParadeDressCap_01_LDF_F",
+				"name": "Parade Cap [LDF]"
+			},
+			"01_csat": {
+				"className": "H_ParadeDressCap_01_CSAT_F",
+				"name": "Parade Cap [CSAT]"
+			},
+			"01_aaf": {
+				"className": "H_ParadeDressCap_01_AAF_F",
+				"name": "Parade Cap [AAF]"
+			}
+		},
+		"helmetia": {
+			"base": {
+				"className": "H_HelmetIA",
+				"name": "Modular Helmet"
+			},
+			"camo": {
+				"className": "H_HelmetIA_camo",
+				"name": "MICH2 (Camo)"
+			},
+			"net": {
+				"className": "H_HelmetIA_net",
+				"name": "MICH (Camo)"
+			}
+		},
+		"milcap": {
+			"eaf": {
+				"className": "H_MilCap_eaf",
+				"name": "Military Cap [LDF]"
+			},
+			"dgtl": {
+				"className": "H_MilCap_dgtl",
+				"name": "Military Cap [AAF]"
+			},
+			"wdl": {
+				"className": "H_MilCap_wdl",
+				"name": "Military Cap (Woodland)"
+			},
+			"oucamo": {
+				"className": "H_MilCap_oucamo",
+				"name": "Military Cap (Urban)"
+			},
+			"tna": {
+				"className": "H_MilCap_tna_F",
+				"name": "Military Cap (Tropic)"
+			},
+			"taiga": {
+				"className": "H_MilCap_taiga",
+				"name": "Military Cap (Taiga)"
+			},
+			"rucamo": {
+				"className": "H_MilCap_rucamo",
+				"name": "Military Cap (Russia)"
+			},
+			"mcamo": {
+				"className": "H_MilCap_mcamo",
+				"name": "Military Cap (MTP)"
+			},
+			"ocamo": {
+				"className": "H_MilCap_ocamo",
+				"name": "Military Cap (Hex)"
+			},
+			"gry": {
+				"className": "H_MilCap_gry",
+				"name": "Military Cap (Grey)"
+			},
+			"grn": {
+				"className": "H_MilCap_grn",
+				"name": "Military Cap (Green)"
+			},
+			"ghex": {
+				"className": "H_MilCap_ghex_F",
+				"name": "Military Cap (Green Hex)"
+			},
+			"gen": {
+				"className": "H_MilCap_gen_F",
+				"name": "Military Cap (Gendarmerie)"
+			},
+			"blue": {
+				"className": "H_MilCap_blue",
+				"name": "Military Cap (Blue)"
+			}
+		},
+		"pilothelmetheli": {
+			"b": {
+				"className": "H_PilotHelmetHeli_B",
+				"name": "Heli Pilot Helmet [NATO]"
+			},
+			"i_e": {
+				"className": "H_PilotHelmetHeli_I_E",
+				"name": "Heli Pilot Helmet [LDF]"
+			},
+			"o": {
+				"className": "H_PilotHelmetHeli_O",
+				"name": "Heli Pilot Helmet [CSAT]"
+			},
+			"i": {
+				"className": "H_PilotHelmetHeli_I",
+				"name": "Heli Pilot Helmet [AAF]"
+			}
+		},
+		"crewhelmetheli": {
+			"b": {
+				"className": "H_CrewHelmetHeli_B",
+				"name": "Heli Crew Helmet [NATO]"
+			},
+			"i_e": {
+				"className": "H_CrewHelmetHeli_I_E",
+				"name": "Heli Crew Helmet [LDF]"
+			},
+			"o": {
+				"className": "H_CrewHelmetHeli_O",
+				"name": "Heli Crew Helmet [CSAT]"
+			},
+			"i": {
+				"className": "H_CrewHelmetHeli_I",
+				"name": "Heli Crew Helmet [AAF]"
+			}
+		},
+		"headset": {
+			"yellow": {
+				"className": "H_HeadSet_yellow_F",
+				"name": "Headset (Yellow)"
+			},
+			"white": {
+				"className": "H_HeadSet_white_F",
+				"name": "Headset (White)"
+			},
+			"red": {
+				"className": "H_HeadSet_red_F",
+				"name": "Headset (Red)"
+			},
+			"orange": {
+				"className": "H_HeadSet_orange_F",
+				"name": "Headset (Orange)"
+			},
+			"black": {
+				"className": "H_HeadSet_black_F",
+				"name": "Headset (Black)"
+			}
+		},
+		"headbandage": {
+			"bloody": {
+				"className": "H_HeadBandage_bloody_F",
+				"name": "Head Bandage (Severe)"
+			},
+			"stained": {
+				"className": "H_HeadBandage_stained_F",
+				"name": "Head Bandage (Moderate)"
+			},
+			"clean": {
+				"className": "H_HeadBandage_clean_F",
+				"name": "Head Bandage (Clean)"
+			}
+		},
+		"construction": {
+			"basic_yellow": {
+				"className": "H_Construction_basic_yellow_F",
+				"name": "Hard Hat (Yellow)"
+			},
+			"headset_yellow": {
+				"className": "H_Construction_headset_yellow_F",
+				"name": "Hard Hat (Yellow, Headset)"
+			},
+			"earprot_yellow": {
+				"className": "H_Construction_earprot_yellow_F",
+				"name": "Hard Hat (Yellow, Ear Protectors)"
+			},
+			"basic_white": {
+				"className": "H_Construction_basic_white_F",
+				"name": "Hard Hat (White)"
+			},
+			"headset_white": {
+				"className": "H_Construction_headset_white_F",
+				"name": "Hard Hat (White, Headset)"
+			},
+			"earprot_white": {
+				"className": "H_Construction_earprot_white_F",
+				"name": "Hard Hat (White, Ear Protectors)"
+			},
+			"basic_vrana": {
+				"className": "H_Construction_basic_vrana_F",
+				"name": "Hard Hat (Vrana)"
+			},
+			"headset_vrana": {
+				"className": "H_Construction_headset_vrana_F",
+				"name": "Hard Hat (Vrana, Headset)"
+			},
+			"earprot_vrana": {
+				"className": "H_Construction_earprot_vrana_F",
+				"name": "Hard Hat (Vrana, Ear Protectors)"
+			},
+			"basic_red": {
+				"className": "H_Construction_basic_red_F",
+				"name": "Hard Hat (Red)"
+			},
+			"headset_red": {
+				"className": "H_Construction_headset_red_F",
+				"name": "Hard Hat (Red, Headset)"
+			},
+			"earprot_red": {
+				"className": "H_Construction_earprot_red_F",
+				"name": "Hard Hat (Red, Ear Protectors)"
+			},
+			"basic_orange": {
+				"className": "H_Construction_basic_orange_F",
+				"name": "Hard Hat (Orange)"
+			},
+			"headset_orange": {
+				"className": "H_Construction_headset_orange_F",
+				"name": "Hard Hat (Orange, Headset)"
+			},
+			"earprot_orange": {
+				"className": "H_Construction_earprot_orange_F",
+				"name": "Hard Hat (Orange, Ear Protectors)"
+			},
+			"basic_black": {
+				"className": "H_Construction_basic_black_F",
+				"name": "Hard Hat (Black)"
+			},
+			"headset_black": {
+				"className": "H_Construction_headset_black_F",
+				"name": "Hard Hat (Black, Headset)"
+			},
+			"earprot_black": {
+				"className": "H_Construction_earprot_black_F",
+				"name": "Hard Hat (Black, Ear Protectors)"
+			}
+		},
+		"helmetspecb": {
+			"wdl": {
+				"className": "H_HelmetSpecB_wdl",
+				"name": "Enhanced Combat Helmet (Woodland)"
+			},
+			"snakeskin": {
+				"className": "H_HelmetSpecB_snakeskin",
+				"name": "Enhanced Combat Helmet (Snakeskin)"
+			},
+			"sand": {
+				"className": "H_HelmetSpecB_sand",
+				"name": "Enhanced Combat Helmet (Sand)"
+			},
+			"paint1": {
+				"className": "H_HelmetSpecB_paint1",
+				"name": "Enhanced Combat Helmet (Grass)"
+			},
+			"paint2": {
+				"className": "H_HelmetSpecB_paint2",
+				"name": "Enhanced Combat Helmet (Desert)"
+			},
+			"blk": {
+				"className": "H_HelmetSpecB_blk",
+				"name": "Enhanced Combat Helmet (Black)"
+			},
+			"base": {
+				"className": "H_HelmetSpecB",
+				"name": "Enhanced Combat Helmet"
+			}
+		},
+		"earprotectors": {
+			"yellow": {
+				"className": "H_EarProtectors_yellow_F",
+				"name": "Ear Protectors (Yellow)"
+			},
+			"white": {
+				"className": "H_EarProtectors_white_F",
+				"name": "Ear Protectors (White)"
+			},
+			"red": {
+				"className": "H_EarProtectors_red_F",
+				"name": "Ear Protectors (Red)"
+			},
+			"orange": {
+				"className": "H_EarProtectors_orange_F",
+				"name": "Ear Protectors (Orange)"
+			},
+			"black": {
+				"className": "H_EarProtectors_black_F",
+				"name": "Ear Protectors (Black)"
+			}
+		},
+		"helmetleadero": {
+			"oucamo": {
+				"className": "H_HelmetLeaderO_oucamo",
+				"name": "Defender Helmet (Urban)"
+			},
+			"ocamo": {
+				"className": "H_HelmetLeaderO_ocamo",
+				"name": "Defender Helmet (Hex)"
+			},
+			"ghex": {
+				"className": "H_HelmetLeaderO_ghex_F",
+				"name": "Defender Helmet (Green Hex)"
+			}
+		},
+		"helmetcrew": {
+			"b": {
+				"className": "H_HelmetCrew_B",
+				"name": "Crew Helmet [NATO]"
+			},
+			"i_e": {
+				"className": "H_HelmetCrew_I_E",
+				"name": "Crew Helmet [LDF]"
+			},
+			"o": {
+				"className": "H_HelmetCrew_O",
+				"name": "Crew Helmet [CSAT]"
+			},
+			"i": {
+				"className": "H_HelmetCrew_I",
+				"name": "Crew Helmet [AAF]"
+			},
+			"o_ghex": {
+				"className": "H_HelmetCrew_O_ghex_F",
+				"name": "Crew Helmet (Green Hex) [CSAT]"
+			}
+		},
+		"tank": {
+			"eaf": {
+				"className": "H_Tank_eaf_F",
+				"name": "Crew Helmet (Soft) [LDF]"
+			},
+			"black": {
+				"className": "H_Tank_black_F",
+				"name": "Crew Helmet (Soft) [CSAT]"
+			}
+		},
+		"booniehat": {
+			"eaf": {
+				"className": "H_Booniehat_eaf",
+				"name": "Booniehat [LDF]"
+			},
+			"dgtl": {
+				"className": "H_Booniehat_dgtl",
+				"name": "Booniehat [AAF]"
+			},
+			"wdl": {
+				"className": "H_Booniehat_wdl",
+				"name": "Booniehat (Woodland)"
+			},
+			"tna": {
+				"className": "H_Booniehat_tna_F",
+				"name": "Booniehat (Tropic)"
+			},
+			"taiga": {
+				"className": "H_Booniehat_taiga",
+				"name": "Booniehat (Taiga)"
+			},
+			"tan": {
+				"className": "H_Booniehat_tan",
+				"name": "Booniehat (Sand)"
+			},
+			"oli": {
+				"className": "H_Booniehat_oli",
+				"name": "Booniehat (Olive)"
+			},
+			"mcamo": {
+				"className": "H_Booniehat_mcamo",
+				"name": "Booniehat (MTP)"
+			},
+			"indp": {
+				"className": "H_Booniehat_indp",
+				"name": "Booniehat (Khaki)"
+			},
+			"khk": {
+				"className": "H_Booniehat_khk",
+				"name": "Booniehat (Khaki)"
+			},
+			"khk_hs": {
+				"className": "H_Booniehat_khk_hs",
+				"name": "Booniehat (Headset)"
+			},
+			"grn": {
+				"className": "H_Booniehat_grn",
+				"name": "Booniehat (Green)"
+			},
+			"mgrn": {
+				"className": "H_Booniehat_mgrn",
+				"name": "Booniehat (Green)"
+			},
+			"dirty": {
+				"className": "H_Booniehat_dirty",
+				"name": "Booniehat (Dirty)"
+			}
+		},
+		"turbano": {
+			"blk": {
+				"className": "H_TurbanO_blk",
+				"name": "Black Turban"
+			}
+		},
+		"beret": {
+			"colonel": {
+				"className": "H_Beret_Colonel",
+				"name": "Beret [NATO] (Colonel)"
+			},
+			"02": {
+				"className": "H_Beret_02",
+				"name": "Beret [NATO]"
+			},
+			"eaf_01": {
+				"className": "H_Beret_EAF_01_F",
+				"name": "Beret [LDF]"
+			},
+			"ocamo": {
+				"className": "H_Beret_ocamo",
+				"name": "Beret [CSAT]"
+			},
+			"grn_sf": {
+				"className": "H_Beret_grn_SF",
+				"name": "Beret (SF)"
+			},
+			"brn_sf": {
+				"className": "H_Beret_brn_SF",
+				"name": "Beret (SAS)"
+			},
+			"csat_01": {
+				"className": "H_Beret_CSAT_01_F",
+				"name": "Beret (Red) [CSAT]"
+			},
+			"red": {
+				"className": "H_Beret_red",
+				"name": "Beret (Red)"
+			},
+			"blk_police": {
+				"className": "H_Beret_blk_POLICE",
+				"name": "Beret (Police)"
+			},
+			"grn": {
+				"className": "H_Beret_grn",
+				"name": "Beret (Green)"
+			},
+			"gen": {
+				"className": "H_Beret_gen_F",
+				"name": "Beret (Gendarmerie)"
+			},
+			"blk": {
+				"className": "H_Beret_blk",
+				"name": "Beret (Black)"
+			}
+		},
+		"watchcap": {
+			"sgg": {
+				"className": "H_Watchcap_sgg",
+				"name": "Beanie (Sage)"
+			},
+			"khk": {
+				"className": "H_Watchcap_khk",
+				"name": "Beanie (Khaki)"
+			},
+			"camo": {
+				"className": "H_Watchcap_camo",
+				"name": "Beanie (Green)"
+			},
+			"cbr": {
+				"className": "H_Watchcap_cbr",
+				"name": "Beanie (Coyote)"
+			},
+			"blk": {
+				"className": "H_Watchcap_blk",
+				"name": "Beanie"
+			}
+		},
+		"bandmask": {
+			"reaper": {
+				"className": "H_BandMask_reaper",
+				"name": "Bandana Mask (Reaper)"
+			},
+			"khk": {
+				"className": "H_BandMask_khk",
+				"name": "Bandana Mask (Khaki)"
+			},
+			"demon": {
+				"className": "H_BandMask_demon",
+				"name": "Bandana Mask (Demon)"
+			},
+			"blk": {
+				"className": "H_BandMask_blk",
+				"name": "Bandana Mask (Black)"
+			}
+		},
+		"bandanna": {
+			"camo": {
+				"className": "H_Bandanna_camo",
+				"name": "Bandana (Woodland)"
+			},
+			"surfer": {
+				"className": "H_Bandanna_surfer",
+				"name": "Bandana (Surfer)"
+			},
+			"surfer_grn": {
+				"className": "H_Bandanna_surfer_grn",
+				"name": "Bandana (Surfer, Green)"
+			},
+			"surfer_blk": {
+				"className": "H_Bandanna_surfer_blk",
+				"name": "Bandana (Surfer, Black)"
+			},
+			"sand": {
+				"className": "H_Bandanna_sand",
+				"name": "Bandana (Sand)"
+			},
+			"sgg": {
+				"className": "H_Bandanna_sgg",
+				"name": "Bandana (Sage)"
+			},
+			"mcamo": {
+				"className": "H_Bandanna_mcamo",
+				"name": "Bandana (MTP)"
+			},
+			"khk": {
+				"className": "H_Bandanna_khk",
+				"name": "Bandana (Khaki)"
+			},
+			"khk_hs": {
+				"className": "H_Bandanna_khk_hs",
+				"name": "Bandana (Headset)"
+			},
+			"cbr": {
+				"className": "H_Bandanna_cbr",
+				"name": "Bandana (Coyote)"
+			},
+			"blu": {
+				"className": "H_Bandanna_blu",
+				"name": "Bandana (Blue)"
+			},
+			"gry": {
+				"className": "H_Bandanna_gry",
+				"name": "Bandana (Black)"
+			}
+		},
+		"helmetaggressor": {
+			"cover_taiga": {
+				"className": "H_HelmetAggressor_cover_taiga_F",
+				"name": "Avenger Helmet (Cover T)"
+			},
+			"cover": {
+				"className": "H_HelmetAggressor_cover_F",
+				"name": "Avenger Helmet (Cover B)"
+			},
+			"base": {
+				"className": "H_HelmetAggressor_F",
+				"name": "Avenger Helmet"
+			}
+		},
+		"helmetspeco": {
+			"ocamo": {
+				"className": "H_HelmetSpecO_ocamo",
+				"name": "Assassin Helmet (Hex)"
+			},
+			"ghex": {
+				"className": "H_HelmetSpecO_ghex_F",
+				"name": "Assassin Helmet (Green Hex)"
+			},
+			"blk": {
+				"className": "H_HelmetSpecO_blk",
+				"name": "Assassin Helmet (Black)"
+			}
+		},
+		"helmethbk": {
+			"base": {
+				"className": "H_HelmetHBK_F",
+				"name": "Advanced Modular Helmet (Olive)"
+			},
+			"ear": {
+				"className": "H_HelmetHBK_ear_F",
+				"name": "Advanced Modular Helmet (Ear Protectors)"
+			},
+			"chops": {
+				"className": "H_HelmetHBK_chops_F",
+				"name": "Advanced Modular Helmet (Chops)"
+			},
+			"headset": {
+				"className": "H_HelmetHBK_headset_F",
+				"name": "Advanced Modular Helmet"
+			}
+		}
+	},
+	"v": {
+		"press": {
+			"base": {
+				"className": "V_Press_F",
+				"name": "Vest (Press)"
+			}
+		},
+		"platecarrier": {
+			"kerry": {
+				"className": "V_PlateCarrier_Kerry",
+				"name": "US Plate Carrier Rig (Kerry)"
+			}
+		},
+		"i": {
+			"g_resistanceleader": {
+				"className": "V_I_G_resistanceLeader_F",
+				"name": "Tactical Vest (Stavrou)"
+			}
+		},
+		"tacvest": {
+			"blk_police": {
+				"className": "V_TacVest_blk_POLICE",
+				"name": "Tactical Vest (Police)"
+			},
+			"oli": {
+				"className": "V_TacVest_oli",
+				"name": "Tactical Vest (Olive)"
+			},
+			"khk": {
+				"className": "V_TacVest_khk",
+				"name": "Tactical Vest (Khaki)"
+			},
+			"camo": {
+				"className": "V_TacVest_camo",
+				"name": "Tactical Vest (Camo)"
+			},
+			"brn": {
+				"className": "V_TacVest_brn",
+				"name": "Tactical Vest (Brown)"
+			},
+			"blk": {
+				"className": "V_TacVest_blk",
+				"name": "Tactical Vest (Black)"
+			},
+			"gen": {
+				"className": "V_TacVest_gen_F",
+				"name": "Gendarmerie Vest"
+			}
+		},
+		"tacchestrig": {
+			"oli": {
+				"className": "V_TacChestrig_oli_F",
+				"name": "Tactical Chest Rig (Olive)"
+			},
+			"grn": {
+				"className": "V_TacChestrig_grn_F",
+				"name": "Tactical Chest Rig (Green)"
+			},
+			"cbr": {
+				"className": "V_TacChestrig_cbr_F",
+				"name": "Tactical Chest Rig (Coyote)"
+			}
+		},
+		"bandollierb": {
+			"oli": {
+				"className": "V_BandollierB_oli",
+				"name": "Slash Bandolier (Olive)"
+			},
+			"khk": {
+				"className": "V_BandollierB_khk",
+				"name": "Slash Bandolier (Khaki)"
+			},
+			"rgr": {
+				"className": "V_BandollierB_rgr",
+				"name": "Slash Bandolier (Green)"
+			},
+			"ghex": {
+				"className": "V_BandollierB_ghex_F",
+				"name": "Slash Bandolier (Green Hex)"
+			},
+			"cbr": {
+				"className": "V_BandollierB_cbr",
+				"name": "Slash Bandolier (Coyote)"
+			},
+			"blk": {
+				"className": "V_BandollierB_blk",
+				"name": "Slash Bandolier (Black)"
+			}
+		},
+		"safety": {
+			"yellow": {
+				"className": "V_Safety_yellow_F",
+				"name": "Safety Vest (Yellow)"
+			},
+			"orange": {
+				"className": "V_Safety_orange_F",
+				"name": "Safety Vest (Orange)"
+			},
+			"blue": {
+				"className": "V_Safety_blue_F",
+				"name": "Safety Vest (Blue)"
+			}
+		},
+		"rebreatherb": {
+			"base": {
+				"className": "V_RebreatherB",
+				"name": "Rebreather [NATO]"
+			}
+		},
+		"rebreatherir": {
+			"base": {
+				"className": "V_RebreatherIR",
+				"name": "Rebreather [CSAT]"
+			}
+		},
+		"rebreatheria": {
+			"base": {
+				"className": "V_RebreatherIA",
+				"name": "Rebreather [AAF]"
+			}
+		},
+		"tacvestir": {
+			"blk": {
+				"className": "V_TacVestIR_blk",
+				"name": "Raven Vest"
+			}
+		},
+		"rangemaster": {
+			"belt": {
+				"className": "V_Rangemaster_belt",
+				"name": "Rangemaster Belt"
+			}
+		},
+		"pocketed": {
+			"olive": {
+				"className": "V_Pocketed_olive_F",
+				"name": "Multi-Pocket Vest (Olive)"
+			},
+			"coyote": {
+				"className": "V_Pocketed_coyote_F",
+				"name": "Multi-Pocket Vest (Coyote)"
+			},
+			"black": {
+				"className": "V_Pocketed_black_F",
+				"name": "Multi-Pocket Vest (Black)"
+			}
+		},
+		"carrierrigkbt": {
+			"01_olive": {
+				"className": "V_CarrierRigKBT_01_Olive_F",
+				"name": "Modular Carrier Vest (Olive)"
+			},
+			"01_eaf": {
+				"className": "V_CarrierRigKBT_01_EAF_F",
+				"name": "Modular Carrier Vest (Geometric)"
+			},
+			"01_light_olive": {
+				"className": "V_CarrierRigKBT_01_light_Olive_F",
+				"name": "Modular Carrier Lite (Olive)"
+			},
+			"01_light_eaf": {
+				"className": "V_CarrierRigKBT_01_light_EAF_F",
+				"name": "Modular Carrier Lite (Geometric)"
+			},
+			"01_heavy_olive": {
+				"className": "V_CarrierRigKBT_01_heavy_Olive_F",
+				"name": "Modular Carrier GL Rig (Olive)"
+			},
+			"01_heavy_eaf": {
+				"className": "V_CarrierRigKBT_01_heavy_EAF_F",
+				"name": "Modular Carrier GL Rig (Geometric)"
+			}
+		},
+		"legstrapbag": {
+			"olive": {
+				"className": "V_LegStrapBag_olive_F",
+				"name": "Leg Strap Bag (Olive)"
+			},
+			"coyote": {
+				"className": "V_LegStrapBag_coyote_F",
+				"name": "Leg Strap Bag (Coyote)"
+			},
+			"black": {
+				"className": "V_LegStrapBag_black_F",
+				"name": "Leg Strap Bag (Black)"
+			}
+		},
+		"harnesso": {
+			"gry": {
+				"className": "V_HarnessO_gry",
+				"name": "LBV Harness (Grey)"
+			},
+			"ghex": {
+				"className": "V_HarnessO_ghex_F",
+				"name": "LBV Harness (Green Hex)"
+			},
+			"brn": {
+				"className": "V_HarnessO_brn",
+				"name": "LBV Harness"
+			}
+		},
+		"harnessogl": {
+			"gry": {
+				"className": "V_HarnessOGL_gry",
+				"name": "LBV Grenadier Harness (Grey)"
+			},
+			"ghex": {
+				"className": "V_HarnessOGL_ghex_F",
+				"name": "LBV Grenadier Harness (Green Hex)"
+			},
+			"brn": {
+				"className": "V_HarnessOGL_brn",
+				"name": "LBV Grenadier Harness"
+			}
+		},
+		"smershvest": {
+			"01_radio": {
+				"className": "V_SmershVest_01_radio_F",
+				"name": "Kipchak Vest (Tactical Radio)"
+			},
+			"01": {
+				"className": "V_SmershVest_01_F",
+				"name": "Kipchak Vest"
+			}
+		},
+		"plain": {
+			"medical": {
+				"className": "V_Plain_medical_F",
+				"name": "Identification Vest [IDAP]"
+			},
+			"crystal": {
+				"className": "V_Plain_crystal_F",
+				"name": "Identification Vest (Red Crystal)"
+			}
+		},
+		"platecarrieria2": {
+			"dgtl": {
+				"className": "V_PlateCarrierIA2_dgtl",
+				"name": "GA Carrier Rig (Digital)"
+			}
+		},
+		"platecarrieria1": {
+			"dgtl": {
+				"className": "V_PlateCarrierIA1_dgtl",
+				"name": "GA Carrier Lite (Digital)"
+			}
+		},
+		"platecarrieriagl": {
+			"oli": {
+				"className": "V_PlateCarrierIAGL_oli",
+				"name": "GA Carrier GL Rig (Olive)"
+			},
+			"dgtl": {
+				"className": "V_PlateCarrierIAGL_dgtl",
+				"name": "GA Carrier GL Rig (Digital)"
+			}
+		},
+		"eod": {
+			"olive": {
+				"className": "V_EOD_olive_F",
+				"name": "EOD Vest (Olive)"
+			},
+			"coyote": {
+				"className": "V_EOD_coyote_F",
+				"name": "EOD Vest (Coyote)"
+			},
+			"idap_blue": {
+				"className": "V_EOD_IDAP_blue_F",
+				"name": "EOD Vest (Blue) [IDAP]"
+			},
+			"blue": {
+				"className": "V_EOD_blue_F",
+				"name": "EOD Vest (Blue)"
+			}
+		},
+		"harnessospec": {
+			"gry": {
+				"className": "V_HarnessOSpec_gry",
+				"name": "ELBV Harness (Grey)"
+			},
+			"brn": {
+				"className": "V_HarnessOSpec_brn",
+				"name": "ELBV Harness"
+			}
+		},
+		"deckcrew": {
+			"yellow": {
+				"className": "V_DeckCrew_yellow_F",
+				"name": "Deck Crew Vest (Yellow)"
+			},
+			"white": {
+				"className": "V_DeckCrew_white_F",
+				"name": "Deck Crew Vest (White)"
+			},
+			"violet": {
+				"className": "V_DeckCrew_violet_F",
+				"name": "Deck Crew Vest (Violet)"
+			},
+			"red": {
+				"className": "V_DeckCrew_red_F",
+				"name": "Deck Crew Vest (Red)"
+			},
+			"green": {
+				"className": "V_DeckCrew_green_F",
+				"name": "Deck Crew Vest (Green)"
+			},
+			"brown": {
+				"className": "V_DeckCrew_brown_F",
+				"name": "Deck Crew Vest (Brown)"
+			},
+			"blue": {
+				"className": "V_DeckCrew_blue_F",
+				"name": "Deck Crew Vest (Blue)"
+			}
+		},
+		"platecarrierh": {
+			"ctrg": {
+				"className": "V_PlateCarrierH_CTRG",
+				"name": "CTRG Plate Carrier Rig Mk.2 (Heavy)"
+			}
+		},
+		"platecarrierl": {
+			"ctrg": {
+				"className": "V_PlateCarrierL_CTRG",
+				"name": "CTRG Plate Carrier Rig Mk.1 (Light)"
+			}
+		},
+		"chestrig": {
+			"oli": {
+				"className": "V_Chestrig_oli",
+				"name": "Chest Rig (Olive)"
+			},
+			"khk": {
+				"className": "V_Chestrig_khk",
+				"name": "Chest Rig (Khaki)"
+			},
+			"rgr": {
+				"className": "V_Chestrig_rgr",
+				"name": "Chest Rig (Green)"
+			},
+			"blk": {
+				"className": "V_Chestrig_blk",
+				"name": "Chest Rig (Black)"
+			}
+		},
+		"platecarrierspec": {
+			"wdl": {
+				"className": "V_PlateCarrierSpec_wdl",
+				"name": "Carrier Special Rig (Woodland)"
+			},
+			"tna": {
+				"className": "V_PlateCarrierSpec_tna_F",
+				"name": "Carrier Special Rig (Tropic)"
+			},
+			"mtp": {
+				"className": "V_PlateCarrierSpec_mtp",
+				"name": "Carrier Special Rig (MTP)"
+			},
+			"rgr": {
+				"className": "V_PlateCarrierSpec_rgr",
+				"name": "Carrier Special Rig (Green)"
+			},
+			"blk": {
+				"className": "V_PlateCarrierSpec_blk",
+				"name": "Carrier Special Rig (Black)"
+			}
+		},
+		"platecarrier2": {
+			"wdl": {
+				"className": "V_PlateCarrier2_wdl",
+				"name": "Carrier Rig (Woodland)"
+			},
+			"tna": {
+				"className": "V_PlateCarrier2_tna_F",
+				"name": "Carrier Rig (Tropic)"
+			},
+			"rgr": {
+				"className": "V_PlateCarrier2_rgr",
+				"name": "Carrier Rig (Green)"
+			},
+			"rgr_noflag": {
+				"className": "V_PlateCarrier2_rgr_noflag_F",
+				"name": "Carrier Rig (Green, No Flag)"
+			},
+			"blk": {
+				"className": "V_PlateCarrier2_blk",
+				"name": "Carrier Rig (Black)"
+			}
+		},
+		"platecarrier3": {
+			"rgr": {
+				"className": "V_PlateCarrier3_rgr",
+				"name": "Carrier Rig (Green)"
+			}
+		},
+		"platecarrier1": {
+			"wdl": {
+				"className": "V_PlateCarrier1_wdl",
+				"name": "Carrier Lite (Woodland)"
+			},
+			"tna": {
+				"className": "V_PlateCarrier1_tna_F",
+				"name": "Carrier Lite (Tropic)"
+			},
+			"rgr": {
+				"className": "V_PlateCarrier1_rgr",
+				"name": "Carrier Lite (Green)"
+			},
+			"rgr_noflag": {
+				"className": "V_PlateCarrier1_rgr_noflag_F",
+				"name": "Carrier Lite (Green, No Flag)"
+			},
+			"blk": {
+				"className": "V_PlateCarrier1_blk",
+				"name": "Carrier Lite (Black)"
+			}
+		},
+		"platecarriergl": {
+			"wdl": {
+				"className": "V_PlateCarrierGL_wdl",
+				"name": "Carrier GL Rig (Woodland)"
+			},
+			"tna": {
+				"className": "V_PlateCarrierGL_tna_F",
+				"name": "Carrier GL Rig (Tropic)"
+			},
+			"mtp": {
+				"className": "V_PlateCarrierGL_mtp",
+				"name": "Carrier GL Rig (MTP)"
+			},
+			"rgr": {
+				"className": "V_PlateCarrierGL_rgr",
+				"name": "Carrier GL Rig (Green)"
+			},
+			"blk": {
+				"className": "V_PlateCarrierGL_blk",
+				"name": "Carrier GL Rig (Black)"
+			}
+		},
+		"tacvestcamo": {
+			"khk": {
+				"className": "V_TacVestCamo_khk",
+				"name": "Camouflaged Vest"
+			}
+		}
+	}
 }

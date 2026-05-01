@@ -4,29 +4,32 @@ import { defaultRegistry, readManifest, writeLockfile } from "../lib/manifest";
 import { registryFetch } from "../lib/registry-client";
 
 interface PackageInfoResponse {
-  name: string;
-  versions: string[];
+	name: string;
+	versions: string[];
 }
 
 export default class Update extends Command {
-  static override id = "update";
-  static override description = "Update lockfile to latest compatible versions";
+	static override id = "update";
+	static override description = "Update lockfile to latest compatible versions";
 
-  async run(): Promise<void> {
-    const cwd = process.cwd();
-    const manifest = await readManifest(cwd);
-    const deps = manifest.dependencies ?? {};
-    const registry = defaultRegistry(manifest);
-    const resolved: Record<string, { version: string }> = {};
+	async run(): Promise<void> {
+		const cwd = process.cwd();
+		const manifest = await readManifest(cwd);
+		const deps = manifest.dependencies ?? {};
+		const registry = defaultRegistry(manifest);
+		const resolved: Record<string, { version: string }> = {};
 
-    for (const [name, range] of Object.entries(deps)) {
-      const info = await registryFetch<PackageInfoResponse>(registry, `/packages/${encodeURIComponent(name)}`);
-      const v = info.versions.filter((x) => semver.satisfies(x, range)).at(-1);
-      if (!v) this.error(`Could not resolve ${name} with range ${range}`);
-      resolved[name] = { version: v };
-      this.log(`${name}@${v}`);
-    }
+		for (const [name, range] of Object.entries(deps)) {
+			const info = await registryFetch<PackageInfoResponse>(
+				registry,
+				`/packages/${encodeURIComponent(name)}`,
+			);
+			const v = info.versions.filter((x) => semver.satisfies(x, range)).at(-1);
+			if (!v) this.error(`Could not resolve ${name} with range ${range}`);
+			resolved[name] = { version: v };
+			this.log(`${name}@${v}`);
+		}
 
-    await writeLockfile(cwd, { lockfileVersion: 1, dependencies: resolved });
-  }
+		await writeLockfile(cwd, { lockfileVersion: 1, dependencies: resolved });
+	}
 }

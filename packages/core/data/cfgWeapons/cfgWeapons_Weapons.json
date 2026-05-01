@@ -1,1917 +1,1917 @@
 {
-  "arifle": {
-    "ak12": {
-      "arid": {
-        "className": "arifle_AK12_arid_F",
-        "name": "AK-12 7.62 mm (Arid)"
-      },
-      "base": {
-        "className": "arifle_AK12_F",
-        "name": "AK-12 7.62 mm"
-      },
-      "gl_arid": {
-        "className": "arifle_AK12_GL_arid_F",
-        "name": "AK-12 GL 7.62 mm (Arid)"
-      },
-      "gl": {
-        "className": "arifle_AK12_GL_F",
-        "name": "AK-12 GL 7.62 mm"
-      },
-      "gl_lush_arco_pointer": {
-        "className": "arifle_AK12_GL_lush_arco_pointer_F",
-        "name": "AK-12 GL 7.62 mm (Lush)"
-      },
-      "gl_lush_arco_snds_pointer": {
-        "className": "arifle_AK12_GL_lush_arco_snds_pointer_F",
-        "name": "AK-12 GL 7.62 mm (Lush)"
-      },
-      "gl_lush": {
-        "className": "arifle_AK12_GL_lush_F",
-        "name": "AK-12 GL 7.62 mm (Lush)"
-      },
-      "gl_lush_holo_pointer": {
-        "className": "arifle_AK12_GL_lush_holo_pointer_F",
-        "name": "AK-12 GL 7.62 mm (Lush)"
-      },
-      "gl_lush_holo_snds_pointer": {
-        "className": "arifle_AK12_GL_lush_holo_snds_pointer_F",
-        "name": "AK-12 GL 7.62 mm (Lush)"
-      },
-      "lush_arco_pointer": {
-        "className": "arifle_AK12_lush_arco_pointer_F",
-        "name": "AK-12 7.62 mm (Lush)"
-      },
-      "lush_arco_snds_pointer_bipod": {
-        "className": "arifle_AK12_lush_arco_snds_pointer_bipod_F",
-        "name": "AK-12 7.62 mm (Lush)"
-      },
-      "lush_arco_snds_pointer": {
-        "className": "arifle_AK12_lush_arco_snds_pointer_F",
-        "name": "AK-12 7.62 mm (Lush)"
-      },
-      "lush": {
-        "className": "arifle_AK12_lush_F",
-        "name": "AK-12 7.62 mm (Lush)"
-      },
-      "lush_snds_pointer": {
-        "className": "arifle_AK12_lush_snds_pointer_F",
-        "name": "AK-12 7.62 mm (Lush)"
-      }
-    },
-    "ak12u": {
-      "arid": {
-        "className": "arifle_AK12U_arid_F",
-        "name": "AKU-12 7.62 mm (Arid)"
-      },
-      "base": {
-        "className": "arifle_AK12U_F",
-        "name": "AKU-12 7.62 mm"
-      },
-      "lush": {
-        "className": "arifle_AK12U_lush_F",
-        "name": "AKU-12 7.62 mm (Lush)"
-      },
-      "lush_holo": {
-        "className": "arifle_AK12U_lush_holo_F",
-        "name": "AKU-12 7.62 mm (Lush)"
-      },
-      "lush_holo_fl": {
-        "className": "arifle_AK12U_lush_holo_fl_F",
-        "name": "AKU-12 7.62 mm (Lush)"
-      },
-      "lush_holo_pointer": {
-        "className": "arifle_AK12U_lush_holo_pointer_F",
-        "name": "AKU-12 7.62 mm (Lush)"
-      },
-      "lush_holo_snds_pointer": {
-        "className": "arifle_AK12U_lush_holo_snds_pointer_F",
-        "name": "AKU-12 7.62 mm (Lush)"
-      },
-      "lush_snds_pointer": {
-        "className": "arifle_AK12U_lush_snds_pointer_F",
-        "name": "AKU-12 7.62 mm (Lush)"
-      }
-    },
-    "akm": {
-      "base": {
-        "className": "arifle_AKM_F",
-        "name": "AKM 7.62 mm"
-      },
-      "fl": {
-        "className": "arifle_AKM_FL_F",
-        "name": "AKM 7.62 mm"
-      }
-    },
-    "aks": {
-      "base": {
-        "className": "arifle_AKS_F",
-        "name": "AKS-74U 5.45 mm"
-      }
-    },
-    "arx": {
-      "blk": {
-        "className": "arifle_ARX_blk_F",
-        "name": "Type 115 6.5 mm (Black)"
-      },
-      "ghex_aco_pointer_snds": {
-        "className": "arifle_ARX_ghex_ACO_Pointer_Snds_F",
-        "name": "Type 115 6.5 mm (Green Hex)"
-      },
-      "ghex_arco_pointer_snds": {
-        "className": "arifle_ARX_ghex_ARCO_Pointer_Snds_F",
-        "name": "Type 115 6.5 mm (Green Hex)"
-      },
-      "ghex_dms_pointer_snds_bipod": {
-        "className": "arifle_ARX_ghex_DMS_Pointer_Snds_Bipod_F",
-        "name": "Type 115 6.5 mm (Green Hex)"
-      },
-      "ghex": {
-        "className": "arifle_ARX_ghex_F",
-        "name": "Type 115 6.5 mm (Green Hex)"
-      },
-      "hex_aco_pointer_snds": {
-        "className": "arifle_ARX_hex_ACO_Pointer_Snds_F",
-        "name": "Type 115 6.5 mm (Hex)"
-      },
-      "hex_arco_pointer_snds": {
-        "className": "arifle_ARX_hex_ARCO_Pointer_Snds_F",
-        "name": "Type 115 6.5 mm (Hex)"
-      },
-      "hex_dms_pointer_snds_bipod": {
-        "className": "arifle_ARX_hex_DMS_Pointer_Snds_Bipod_F",
-        "name": "Type 115 6.5 mm (Hex)"
-      },
-      "hex": {
-        "className": "arifle_ARX_hex_F",
-        "name": "Type 115 6.5 mm (Hex)"
-      },
-      "viper": {
-        "className": "arifle_ARX_Viper_F",
-        "name": "Type 115 6.5 mm (Green Hex)"
-      },
-      "viper_hex": {
-        "className": "arifle_ARX_Viper_hex_F",
-        "name": "Type 115 6.5 mm (Hex)"
-      }
-    },
-    "ctar": {
-      "blk_aco": {
-        "className": "arifle_CTAR_blk_ACO_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk_aco_flash": {
-        "className": "arifle_CTAR_blk_aco_flash_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk_aco_pointer": {
-        "className": "arifle_CTAR_blk_ACO_Pointer_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk_aco_pointer_snds": {
-        "className": "arifle_CTAR_blk_ACO_Pointer_Snds_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk_arco": {
-        "className": "arifle_CTAR_blk_ARCO_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk_arco_flash": {
-        "className": "arifle_CTAR_blk_arco_flash_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk_arco_pointer": {
-        "className": "arifle_CTAR_blk_ARCO_Pointer_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk_arco_pointer_snds": {
-        "className": "arifle_CTAR_blk_ARCO_Pointer_Snds_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk": {
-        "className": "arifle_CTAR_blk_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk_flash": {
-        "className": "arifle_CTAR_blk_flash_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "blk_pointer": {
-        "className": "arifle_CTAR_blk_Pointer_F",
-        "name": "CAR-95 5.8 mm (Black)"
-      },
-      "ghex": {
-        "className": "arifle_CTAR_ghex_F",
-        "name": "CAR-95 5.8 mm (Green Hex)"
-      },
-      "gl_blk_aco": {
-        "className": "arifle_CTAR_GL_blk_ACO_F",
-        "name": "CAR-95 GL 5.8 mm (Black)"
-      },
-      "gl_blk_aco_flash": {
-        "className": "arifle_CTAR_GL_blk_aco_flash_F",
-        "name": "CAR-95 GL 5.8 mm (Black)"
-      },
-      "gl_blk_aco_pointer_snds": {
-        "className": "arifle_CTAR_GL_blk_ACO_Pointer_Snds_F",
-        "name": "CAR-95 GL 5.8 mm (Black)"
-      },
-      "gl_blk_arco_flash": {
-        "className": "arifle_CTAR_GL_blk_arco_flash_F",
-        "name": "CAR-95 GL 5.8 mm (Black)"
-      },
-      "gl_blk_arco_pointer": {
-        "className": "arifle_CTAR_GL_blk_ARCO_Pointer_F",
-        "name": "CAR-95 GL 5.8 mm (Black)"
-      },
-      "gl_blk": {
-        "className": "arifle_CTAR_GL_blk_F",
-        "name": "CAR-95 GL 5.8 mm (Black)"
-      },
-      "gl_ghex": {
-        "className": "arifle_CTAR_GL_ghex_F",
-        "name": "CAR-95 GL 5.8 mm (Green Hex)"
-      },
-      "gl_hex": {
-        "className": "arifle_CTAR_GL_hex_F",
-        "name": "CAR-95 GL 5.8 mm (Hex)"
-      },
-      "hex": {
-        "className": "arifle_CTAR_hex_F",
-        "name": "CAR-95 5.8 mm (Hex)"
-      }
-    },
-    "ctars": {
-      "blk": {
-        "className": "arifle_CTARS_blk_F",
-        "name": "CAR-95-1 5.8mm (Black)"
-      },
-      "blk_flash": {
-        "className": "arifle_CTARS_blk_flash_F",
-        "name": "CAR-95-1 5.8mm (Black)"
-      },
-      "blk_pointer": {
-        "className": "arifle_CTARS_blk_Pointer_F",
-        "name": "CAR-95-1 5.8mm (Black)"
-      },
-      "ghex": {
-        "className": "arifle_CTARS_ghex_F",
-        "name": "CAR-95-1 5.8mm (Green Hex)"
-      },
-      "hex": {
-        "className": "arifle_CTARS_hex_F",
-        "name": "CAR-95-1 5.8mm (Hex)"
-      }
-    },
-    "katiba": {
-      "aco": {
-        "className": "arifle_Katiba_ACO_F",
-        "name": "Katiba 6.5 mm"
-      },
-      "aco_pointer": {
-        "className": "arifle_Katiba_ACO_pointer_F",
-        "name": "Katiba 6.5 mm"
-      },
-      "aco_pointer_snds": {
-        "className": "arifle_Katiba_ACO_pointer_snds_F",
-        "name": "Katiba 6.5 mm"
-      },
-      "arco": {
-        "className": "arifle_Katiba_ARCO_F",
-        "name": "Katiba 6.5 mm"
-      },
-      "arco_pointer": {
-        "className": "arifle_Katiba_ARCO_pointer_F",
-        "name": "Katiba 6.5 mm"
-      },
-      "arco_pointer_snds": {
-        "className": "arifle_Katiba_ARCO_pointer_snds_F",
-        "name": "Katiba 6.5 mm"
-      },
-      "c_aco": {
-        "className": "arifle_Katiba_C_ACO_F",
-        "name": "Katiba Carbine 6.5 mm"
-      },
-      "c_aco_pointer": {
-        "className": "arifle_Katiba_C_ACO_pointer_F",
-        "name": "Katiba Carbine 6.5 mm"
-      },
-      "c_aco_pointer_snds": {
-        "className": "arifle_Katiba_C_ACO_pointer_snds_F",
-        "name": "Katiba Carbine 6.5 mm"
-      },
-      "c": {
-        "className": "arifle_Katiba_C_F",
-        "name": "Katiba Carbine 6.5 mm"
-      },
-      "base": {
-        "className": "arifle_Katiba_F",
-        "name": "Katiba 6.5 mm"
-      },
-      "gl_aco": {
-        "className": "arifle_Katiba_GL_ACO_F",
-        "name": "Katiba GL 6.5 mm"
-      },
-      "gl_aco_pointer": {
-        "className": "arifle_Katiba_GL_ACO_pointer_F",
-        "name": "Katiba GL 6.5 mm"
-      },
-      "gl_aco_pointer_snds": {
-        "className": "arifle_Katiba_GL_ACO_pointer_snds_F",
-        "name": "Katiba GL 6.5 mm"
-      },
-      "gl_arco_pointer": {
-        "className": "arifle_Katiba_GL_ARCO_pointer_F",
-        "name": "Katiba GL 6.5 mm"
-      },
-      "gl": {
-        "className": "arifle_Katiba_GL_F",
-        "name": "Katiba GL 6.5 mm"
-      },
-      "gl_nstalker_pointer": {
-        "className": "arifle_Katiba_GL_Nstalker_pointer_F",
-        "name": "Katiba GL 6.5 mm"
-      },
-      "pointer": {
-        "className": "arifle_Katiba_pointer_F",
-        "name": "Katiba 6.5 mm"
-      }
-    },
-    "mk20": {
-      "aco": {
-        "className": "arifle_Mk20_ACO_F",
-        "name": "Mk20 5.56 mm (Camo)"
-      },
-      "aco_pointer": {
-        "className": "arifle_Mk20_ACO_pointer_F",
-        "name": "Mk20 5.56 mm (Camo)"
-      },
-      "base": {
-        "className": "arifle_Mk20_F",
-        "name": "Mk20 5.56 mm (Camo)"
-      },
-      "gl_aco": {
-        "className": "arifle_Mk20_GL_ACO_F",
-        "name": "Mk20 EGLM 5.56 mm (Camo)"
-      },
-      "gl": {
-        "className": "arifle_Mk20_GL_F",
-        "name": "Mk20 EGLM 5.56 mm (Camo)"
-      },
-      "gl_mrco_pointer": {
-        "className": "arifle_Mk20_GL_MRCO_pointer_F",
-        "name": "Mk20 EGLM 5.56 mm (Camo)"
-      },
-      "gl_plain": {
-        "className": "arifle_Mk20_GL_plain_F",
-        "name": "Mk20 EGLM 5.56 mm"
-      },
-      "holo": {
-        "className": "arifle_Mk20_Holo_F",
-        "name": "Mk20 5.56 mm (Camo)"
-      },
-      "mrco": {
-        "className": "arifle_Mk20_MRCO_F",
-        "name": "Mk20 5.56 mm (Camo)"
-      },
-      "mrco_plain": {
-        "className": "arifle_Mk20_MRCO_plain_F",
-        "name": "Mk20 5.56 mm"
-      },
-      "mrco_pointer": {
-        "className": "arifle_Mk20_MRCO_pointer_F",
-        "name": "Mk20 5.56 mm (Camo)"
-      },
-      "plain": {
-        "className": "arifle_Mk20_plain_F",
-        "name": "Mk20 5.56 mm"
-      },
-      "pointer": {
-        "className": "arifle_Mk20_pointer_F",
-        "name": "Mk20 5.56 mm (Camo)"
-      }
-    },
-    "mk20c": {
-      "aco": {
-        "className": "arifle_Mk20C_ACO_F",
-        "name": "Mk20C 5.56 mm (Camo)"
-      },
-      "aco_pointer": {
-        "className": "arifle_Mk20C_ACO_pointer_F",
-        "name": "Mk20C 5.56 mm (Camo)"
-      },
-      "base": {
-        "className": "arifle_Mk20C_F",
-        "name": "Mk20C 5.56 mm (Camo)"
-      },
-      "plain": {
-        "className": "arifle_Mk20C_plain_F",
-        "name": "Mk20C 5.56 mm"
-      }
-    },
-    "msbs65": {
-      "aco": {
-        "className": "arifle_MSBS65_aco_F",
-        "name": "Promet 6.5 mm"
-      },
-      "black_aco": {
-        "className": "arifle_MSBS65_black_aco_F",
-        "name": "Promet 6.5 mm (Black)"
-      },
-      "black_aco_fl": {
-        "className": "arifle_MSBS65_black_aco_FL_F",
-        "name": "Promet 6.5 mm (Black)"
-      },
-      "black": {
-        "className": "arifle_MSBS65_black_F",
-        "name": "Promet 6.5 mm (Black)"
-      },
-      "black_ico": {
-        "className": "arifle_MSBS65_black_ico_F",
-        "name": "Promet 6.5 mm (Black)"
-      },
-      "black_ico_pointer": {
-        "className": "arifle_MSBS65_black_ico_pointer_f",
-        "name": "Promet 6.5 mm (Black)"
-      },
-      "camo": {
-        "className": "arifle_MSBS65_camo_F",
-        "name": "Promet 6.5 mm (Camo)"
-      },
-      "base": {
-        "className": "arifle_MSBS65_F",
-        "name": "Promet 6.5 mm"
-      },
-      "gl_black": {
-        "className": "arifle_MSBS65_GL_black_F",
-        "name": "Promet GL 6.5 mm (Black)"
-      },
-      "gl_black_ico": {
-        "className": "arifle_MSBS65_GL_black_ico_F",
-        "name": "Promet GL 6.5 mm (Black)"
-      },
-      "gl_black_ico_pointer": {
-        "className": "arifle_MSBS65_GL_black_ico_pointer_f",
-        "name": "Promet GL 6.5 mm (Black)"
-      },
-      "gl_camo": {
-        "className": "arifle_MSBS65_GL_camo_F",
-        "name": "Promet GL 6.5 mm (Camo)"
-      },
-      "gl": {
-        "className": "arifle_MSBS65_GL_F",
-        "name": "Promet GL 6.5 mm"
-      },
-      "gl_ico": {
-        "className": "arifle_MSBS65_GL_ico_F",
-        "name": "Promet GL 6.5 mm"
-      },
-      "gl_ico_pointer": {
-        "className": "arifle_MSBS65_GL_ico_pointer_f",
-        "name": "Promet GL 6.5 mm"
-      },
-      "gl_sand": {
-        "className": "arifle_MSBS65_GL_sand_F",
-        "name": "Promet GL 6.5 mm (Sand)"
-      },
-      "ico": {
-        "className": "arifle_MSBS65_ico_F",
-        "name": "Promet 6.5 mm"
-      },
-      "ico_pointer": {
-        "className": "arifle_MSBS65_ico_pointer_f",
-        "name": "Promet 6.5 mm"
-      },
-      "mark_black": {
-        "className": "arifle_MSBS65_Mark_black_F",
-        "name": "Promet MR 6.5 mm (Black)"
-      },
-      "mark_camo": {
-        "className": "arifle_MSBS65_Mark_camo_F",
-        "name": "Promet MR 6.5 mm (Camo)"
-      },
-      "mark": {
-        "className": "arifle_MSBS65_Mark_F",
-        "name": "Promet MR 6.5 mm"
-      },
-      "mark_sand": {
-        "className": "arifle_MSBS65_Mark_sand_F",
-        "name": "Promet MR 6.5 mm (Sand)"
-      },
-      "mark_sos_lp_bi": {
-        "className": "arifle_MSBS65_Mark_SOS_LP_BI_F",
-        "name": "Promet MR 6.5 mm"
-      },
-      "sand": {
-        "className": "arifle_MSBS65_sand_F",
-        "name": "Promet 6.5 mm (Sand)"
-      },
-      "ubs_black": {
-        "className": "arifle_MSBS65_UBS_black_F",
-        "name": "Promet SG 6.5 mm (Black)"
-      },
-      "ubs_black_ico": {
-        "className": "arifle_MSBS65_UBS_black_ico_F",
-        "name": "Promet SG 6.5 mm (Black)"
-      },
-      "ubs_black_ico_pointer": {
-        "className": "arifle_MSBS65_UBS_black_ico_pointer_f",
-        "name": "Promet SG 6.5 mm (Black)"
-      },
-      "ubs_camo": {
-        "className": "arifle_MSBS65_UBS_camo_F",
-        "name": "Promet SG 6.5 mm (Camo)"
-      },
-      "ubs": {
-        "className": "arifle_MSBS65_UBS_F",
-        "name": "Promet SG 6.5 mm"
-      },
-      "ubs_ico": {
-        "className": "arifle_MSBS65_UBS_ico_F",
-        "name": "Promet SG 6.5 mm"
-      },
-      "ubs_ico_pointer": {
-        "className": "arifle_MSBS65_UBS_ico_pointer_f",
-        "name": "Promet SG 6.5 mm"
-      },
-      "ubs_sand": {
-        "className": "arifle_MSBS65_UBS_sand_F",
-        "name": "Promet SG 6.5 mm (Sand)"
-      },
-      "ubs_snds_ico_pointer": {
-        "className": "arifle_MSBS65_UBS_snds_ico_pointer_F",
-        "name": "Promet SG 6.5 mm"
-      }
-    },
-    "mx": {
-      "aco": {
-        "className": "arifle_MX_ACO_F",
-        "name": "MX 6.5 mm"
-      },
-      "aco_pointer": {
-        "className": "arifle_MX_ACO_pointer_F",
-        "name": "MX 6.5 mm"
-      },
-      "aco_pointer_snds": {
-        "className": "arifle_MX_ACO_pointer_snds_F",
-        "name": "MX 6.5 mm"
-      },
-      "black_aco_fl": {
-        "className": "arifle_MX_Black_ACO_FL_F",
-        "name": "MX 6.5 mm (Black)"
-      },
-      "black_aco_pointer": {
-        "className": "arifle_MX_Black_ACO_Pointer_F",
-        "name": "MX 6.5 mm (Black)"
-      },
-      "black_aco_pointer_snds": {
-        "className": "arifle_MX_Black_ACO_Pointer_Snds_F",
-        "name": "MX 6.5 mm (Black)"
-      },
-      "black": {
-        "className": "arifle_MX_Black_F",
-        "name": "MX 6.5 mm (Black)"
-      },
-      "black_hamr_pointer": {
-        "className": "arifle_MX_Black_Hamr_pointer_F",
-        "name": "MX 6.5 mm (Black)"
-      },
-      "black_hamr_pointer_snds": {
-        "className": "arifle_MX_Black_Hamr_Pointer_Snds_F",
-        "name": "MX 6.5 mm (Black)"
-      },
-      "black_holo_pointer": {
-        "className": "arifle_MX_Black_Holo_Pointer_F",
-        "name": "MX 6.5 mm (Black)"
-      },
-      "black_pointer": {
-        "className": "arifle_MX_Black_Pointer_F",
-        "name": "MX 6.5 mm (Black)"
-      },
-      "base": {
-        "className": "arifle_MX_F",
-        "name": "MX 6.5 mm"
-      },
-      "gl_aco": {
-        "className": "arifle_MX_GL_ACO_F",
-        "name": "MX 3GL 6.5 mm"
-      },
-      "gl_aco_pointer": {
-        "className": "arifle_MX_GL_ACO_pointer_F",
-        "name": "MX 3GL 6.5 mm"
-      },
-      "gl_black_aco": {
-        "className": "arifle_MX_GL_Black_ACO_F",
-        "name": "MX 3GL 6.5 mm (Black)"
-      },
-      "gl_black": {
-        "className": "arifle_MX_GL_Black_F",
-        "name": "MX 3GL 6.5 mm (Black)"
-      },
-      "gl_black_hamr_pointer": {
-        "className": "arifle_MX_GL_Black_Hamr_pointer_F",
-        "name": "MX 3GL 6.5 mm (Black)"
-      },
-      "gl_black_holo_pointer_snds": {
-        "className": "arifle_MX_GL_Black_Holo_Pointer_Snds_F",
-        "name": "MX 3GL 6.5 mm (Black)"
-      },
-      "gl": {
-        "className": "arifle_MX_GL_F",
-        "name": "MX 3GL 6.5 mm"
-      },
-      "gl_hamr_pointer": {
-        "className": "arifle_MX_GL_Hamr_pointer_F",
-        "name": "MX 3GL 6.5 mm"
-      },
-      "gl_holo_pointer_snds": {
-        "className": "arifle_MX_GL_Holo_pointer_snds_F",
-        "name": "MX 3GL 6.5 mm"
-      },
-      "gl_khk_aco": {
-        "className": "arifle_MX_GL_khk_ACO_F",
-        "name": "MX 3GL 6.5 mm (Khaki)"
-      },
-      "gl_khk": {
-        "className": "arifle_MX_GL_khk_F",
-        "name": "MX 3GL 6.5 mm (Khaki)"
-      },
-      "gl_khk_hamr_pointer": {
-        "className": "arifle_MX_GL_khk_Hamr_Pointer_F",
-        "name": "MX 3GL 6.5 mm (Khaki)"
-      },
-      "gl_khk_holo_pointer_snds": {
-        "className": "arifle_MX_GL_khk_Holo_Pointer_Snds_F",
-        "name": "MX 3GL 6.5 mm (Khaki)"
-      },
-      "hamr_pointer": {
-        "className": "arifle_MX_Hamr_pointer_F",
-        "name": "MX 6.5 mm"
-      },
-      "holo_pointer": {
-        "className": "arifle_MX_Holo_pointer_F",
-        "name": "MX 6.5 mm"
-      },
-      "khk_aco_pointer": {
-        "className": "arifle_MX_khk_ACO_Pointer_F",
-        "name": "MX 6.5 mm (Khaki)"
-      },
-      "khk_aco_pointer_snds": {
-        "className": "arifle_MX_khk_ACO_Pointer_Snds_F",
-        "name": "MX 6.5 mm (Khaki)"
-      },
-      "khk": {
-        "className": "arifle_MX_khk_F",
-        "name": "MX 6.5 mm (Khaki)"
-      },
-      "khk_hamr_pointer": {
-        "className": "arifle_MX_khk_Hamr_Pointer_F",
-        "name": "MX 6.5 mm (Khaki)"
-      },
-      "khk_hamr_pointer_snds": {
-        "className": "arifle_MX_khk_Hamr_Pointer_Snds_F",
-        "name": "MX 6.5 mm (Khaki)"
-      },
-      "khk_holo_pointer": {
-        "className": "arifle_MX_khk_Holo_Pointer_F",
-        "name": "MX 6.5 mm (Khaki)"
-      },
-      "khk_pointer": {
-        "className": "arifle_MX_khk_Pointer_F",
-        "name": "MX 6.5 mm (Khaki)"
-      },
-      "pointer": {
-        "className": "arifle_MX_pointer_F",
-        "name": "MX 6.5 mm"
-      },
-      "rco_pointer_snds": {
-        "className": "arifle_MX_RCO_pointer_snds_F",
-        "name": "MX 6.5 mm"
-      },
-      "sw_black": {
-        "className": "arifle_MX_SW_Black_F",
-        "name": "MX SW 6.5 mm (Black)"
-      },
-      "sw_black_hamr_pointer": {
-        "className": "arifle_MX_SW_Black_Hamr_pointer_F",
-        "name": "MX SW 6.5 mm (Black)"
-      },
-      "sw_black_pointer": {
-        "className": "arifle_MX_SW_Black_Pointer_F",
-        "name": "MX SW 6.5 mm (Black)"
-      },
-      "sw": {
-        "className": "arifle_MX_SW_F",
-        "name": "MX SW 6.5 mm"
-      },
-      "sw_hamr_pointer": {
-        "className": "arifle_MX_SW_Hamr_pointer_F",
-        "name": "MX SW 6.5 mm"
-      },
-      "sw_khk": {
-        "className": "arifle_MX_SW_khk_F",
-        "name": "MX SW 6.5 mm (Khaki)"
-      },
-      "sw_khk_pointer": {
-        "className": "arifle_MX_SW_khk_Pointer_F",
-        "name": "MX SW 6.5 mm (Khaki)"
-      },
-      "sw_pointer": {
-        "className": "arifle_MX_SW_pointer_F",
-        "name": "MX SW 6.5 mm"
-      }
-    },
-    "mxc": {
-      "aco": {
-        "className": "arifle_MXC_ACO_F",
-        "name": "MXC 6.5 mm"
-      },
-      "aco_pointer": {
-        "className": "arifle_MXC_ACO_pointer_F",
-        "name": "MXC 6.5 mm"
-      },
-      "aco_pointer_snds": {
-        "className": "arifle_MXC_ACO_pointer_snds_F",
-        "name": "MXC 6.5 mm"
-      },
-      "black_aco": {
-        "className": "arifle_MXC_Black_ACO_F",
-        "name": "MXC 6.5 mm (Black)"
-      },
-      "black_aco_pointer_snds": {
-        "className": "arifle_MXC_Black_ACO_Pointer_Snds_F",
-        "name": "MXC 6.5 mm (Black)"
-      },
-      "black": {
-        "className": "arifle_MXC_Black_F",
-        "name": "MXC 6.5 mm (Black)"
-      },
-      "black_holo_fl": {
-        "className": "arifle_MXC_Black_Holo_FL_F",
-        "name": "MXC 6.5 mm (Black)"
-      },
-      "black_holo_pointer": {
-        "className": "arifle_MXC_Black_Holo_Pointer_F",
-        "name": "MXC 6.5 mm (Black)"
-      },
-      "base": {
-        "className": "arifle_MXC_F",
-        "name": "MXC 6.5 mm"
-      },
-      "holo": {
-        "className": "arifle_MXC_Holo_F",
-        "name": "MXC 6.5 mm"
-      },
-      "holo_pointer": {
-        "className": "arifle_MXC_Holo_pointer_F",
-        "name": "MXC 6.5 mm"
-      },
-      "holo_pointer_snds": {
-        "className": "arifle_MXC_Holo_pointer_snds_F",
-        "name": "MXC 6.5 mm"
-      },
-      "khk_aco": {
-        "className": "arifle_MXC_khk_ACO_F",
-        "name": "MXC 6.5 mm (Khaki)"
-      },
-      "khk_aco_pointer_snds": {
-        "className": "arifle_MXC_khk_ACO_Pointer_Snds_F",
-        "name": "MXC 6.5 mm (Khaki)"
-      },
-      "khk": {
-        "className": "arifle_MXC_khk_F",
-        "name": "MXC 6.5 mm (Khaki)"
-      },
-      "khk_holo_pointer": {
-        "className": "arifle_MXC_khk_Holo_Pointer_F",
-        "name": "MXC 6.5 mm (Khaki)"
-      },
-      "sos_point_snds": {
-        "className": "arifle_MXC_SOS_point_snds_F",
-        "name": "MXC 6.5 mm"
-      }
-    },
-    "mxm": {
-      "black": {
-        "className": "arifle_MXM_Black_F",
-        "name": "MXM 6.5 mm (Black)"
-      },
-      "black_mos_pointer_bipod": {
-        "className": "arifle_MXM_Black_MOS_Pointer_Bipod_F",
-        "name": "MXM 6.5 mm (Black)"
-      },
-      "black_mos_pointer_bipod_snds": {
-        "className": "arifle_MXM_Black_MOS_Pointer_Bipod_Snds_F",
-        "name": "MXM 6.5 mm (Black)"
-      },
-      "dms": {
-        "className": "arifle_MXM_DMS_F",
-        "name": "MXM 6.5 mm"
-      },
-      "dms_lp_bi_snds": {
-        "className": "arifle_MXM_DMS_LP_BI_snds_F",
-        "name": "MXM 6.5 mm"
-      },
-      "base": {
-        "className": "arifle_MXM_F",
-        "name": "MXM 6.5 mm"
-      },
-      "hamr_lp_bi": {
-        "className": "arifle_MXM_Hamr_LP_BI_F",
-        "name": "MXM 6.5 mm"
-      },
-      "hamr_pointer": {
-        "className": "arifle_MXM_Hamr_pointer_F",
-        "name": "MXM 6.5 mm"
-      },
-      "khk": {
-        "className": "arifle_MXM_khk_F",
-        "name": "MXM 6.5 mm (Khaki)"
-      },
-      "khk_mos_pointer_bipod": {
-        "className": "arifle_MXM_khk_MOS_Pointer_Bipod_F",
-        "name": "MXM 6.5 mm (Khaki)"
-      },
-      "khk_mos_pointer_bipod_snds": {
-        "className": "arifle_MXM_khk_MOS_Pointer_Bipod_Snds_F",
-        "name": "MXM 6.5 mm (Khaki)"
-      },
-      "rco_pointer_snds": {
-        "className": "arifle_MXM_RCO_pointer_snds_F",
-        "name": "MXM 6.5 mm"
-      },
-      "sos_pointer": {
-        "className": "arifle_MXM_SOS_pointer_F",
-        "name": "MXM 6.5 mm"
-      }
-    },
-    "rpk12": {
-      "arid": {
-        "className": "arifle_RPK12_arid_F",
-        "name": "RPK-12 7.62 mm (Arid)"
-      },
-      "base": {
-        "className": "arifle_RPK12_F",
-        "name": "RPK-12 7.62 mm"
-      },
-      "lush_arco_pointer": {
-        "className": "arifle_RPK12_lush_arco_pointer_F",
-        "name": "RPK-12 7.62 mm (Lush)"
-      },
-      "lush_arco_snds_pointer": {
-        "className": "arifle_RPK12_lush_arco_snds_pointer_F",
-        "name": "RPK-12 7.62 mm (Lush)"
-      },
-      "lush": {
-        "className": "arifle_RPK12_lush_F",
-        "name": "RPK-12 7.62 mm (Lush)"
-      },
-      "lush_holo_snds_pointer": {
-        "className": "arifle_RPK12_lush_holo_snds_pointer_F",
-        "name": "RPK-12 7.62 mm (Lush)"
-      }
-    },
-    "sdar": {
-      "base": {
-        "className": "arifle_SDAR_F",
-        "name": "SDAR 5.56 mm"
-      }
-    },
-    "spar": {
-      "01_blk_aco_pointer": {
-        "className": "arifle_SPAR_01_blk_ACO_Pointer_F",
-        "name": "SPAR-16 5.56 mm (Black)"
-      },
-      "01_blk_erco_pointer": {
-        "className": "arifle_SPAR_01_blk_ERCO_Pointer_F",
-        "name": "SPAR-16 5.56 mm (Black)"
-      },
-      "01_blk": {
-        "className": "arifle_SPAR_01_blk_F",
-        "name": "SPAR-16 5.56 mm (Black)"
-      },
-      "01_gl_blk_aco_pointer": {
-        "className": "arifle_SPAR_01_GL_blk_ACO_Pointer_F",
-        "name": "SPAR-16 GL 5.56 mm (Black)"
-      },
-      "01_gl_blk_erco_pointer": {
-        "className": "arifle_SPAR_01_GL_blk_ERCO_Pointer_F",
-        "name": "SPAR-16 GL 5.56 mm (Black)"
-      },
-      "01_gl_blk": {
-        "className": "arifle_SPAR_01_GL_blk_F",
-        "name": "SPAR-16 GL 5.56 mm (Black)"
-      },
-      "01_gl_khk": {
-        "className": "arifle_SPAR_01_GL_khk_F",
-        "name": "SPAR-16 GL 5.56 mm (Khaki)"
-      },
-      "01_gl_snd": {
-        "className": "arifle_SPAR_01_GL_snd_F",
-        "name": "SPAR-16 GL 5.56 mm (Sand)"
-      },
-      "01_khk": {
-        "className": "arifle_SPAR_01_khk_F",
-        "name": "SPAR-16 5.56 mm (Khaki)"
-      },
-      "01_snd": {
-        "className": "arifle_SPAR_01_snd_F",
-        "name": "SPAR-16 5.56 mm (Sand)"
-      },
-      "02_blk_erco_pointer": {
-        "className": "arifle_SPAR_02_blk_ERCO_Pointer_F",
-        "name": "SPAR-16S 5.56 mm (Black)"
-      },
-      "02_blk": {
-        "className": "arifle_SPAR_02_blk_F",
-        "name": "SPAR-16S 5.56 mm (Black)"
-      },
-      "02_blk_pointer": {
-        "className": "arifle_SPAR_02_blk_Pointer_F",
-        "name": "SPAR-16S 5.56 mm (Black)"
-      },
-      "02_khk": {
-        "className": "arifle_SPAR_02_khk_F",
-        "name": "SPAR-16S 5.56 mm (Khaki)"
-      },
-      "02_snd": {
-        "className": "arifle_SPAR_02_snd_F",
-        "name": "SPAR-16S 5.56 mm (Sand)"
-      },
-      "03_blk": {
-        "className": "arifle_SPAR_03_blk_F",
-        "name": "SPAR-17 7.62 mm (Black)"
-      },
-      "03_blk_mos_pointer_bipod": {
-        "className": "arifle_SPAR_03_blk_MOS_Pointer_Bipod_F",
-        "name": "SPAR-17 7.62 mm (Black)"
-      },
-      "03_khk": {
-        "className": "arifle_SPAR_03_khk_F",
-        "name": "SPAR-17 7.62 mm (Khaki)"
-      },
-      "03_snd": {
-        "className": "arifle_SPAR_03_snd_F",
-        "name": "SPAR-17 7.62 mm (Sand)"
-      }
-    },
-    "trg20": {
-      "aco": {
-        "className": "arifle_TRG20_ACO_F",
-        "name": "TRG-20 5.56 mm"
-      },
-      "aco_flash": {
-        "className": "arifle_TRG20_ACO_Flash_F",
-        "name": "TRG-20 5.56 mm"
-      },
-      "aco_pointer": {
-        "className": "arifle_TRG20_ACO_pointer_F",
-        "name": "TRG-20 5.56 mm"
-      },
-      "base": {
-        "className": "arifle_TRG20_F",
-        "name": "TRG-20 5.56 mm"
-      },
-      "holo": {
-        "className": "arifle_TRG20_Holo_F",
-        "name": "TRG-20 5.56 mm"
-      }
-    },
-    "trg21": {
-      "aco_pointer": {
-        "className": "arifle_TRG21_ACO_pointer_F",
-        "name": "TRG-21 5.56 mm"
-      },
-      "arco_pointer": {
-        "className": "arifle_TRG21_ARCO_pointer_F",
-        "name": "TRG-21 5.56 mm"
-      },
-      "base": {
-        "className": "arifle_TRG21_F",
-        "name": "TRG-21 5.56 mm"
-      },
-      "gl_aco_pointer": {
-        "className": "arifle_TRG21_GL_ACO_pointer_F",
-        "name": "TRG-21 EGLM 5.56 mm"
-      },
-      "gl": {
-        "className": "arifle_TRG21_GL_F",
-        "name": "TRG-21 EGLM 5.56 mm"
-      },
-      "gl_mrco": {
-        "className": "arifle_TRG21_GL_MRCO_F",
-        "name": "TRG-21 EGLM 5.56 mm"
-      },
-      "mrco": {
-        "className": "arifle_TRG21_MRCO_F",
-        "name": "TRG-21 5.56 mm"
-      }
-    }
-  },
-  "b": {
-    "patrol": {
-      "soldier_autorifleman_weapon": {
-        "className": "B_Patrol_Soldier_Autorifleman_weapon_F",
-        "name": "MX SW 6.5 mm"
-      },
-      "soldier_carrier_weapon": {
-        "className": "B_Patrol_Soldier_Carrier_weapon_F",
-        "name": "MX 6.5 mm"
-      },
-      "soldier_heavygunner_weapon": {
-        "className": "B_Patrol_Soldier_HeavyGunner_weapon_F",
-        "name": "Zafir 7.62 mm"
-      },
-      "soldier_leader_weapon": {
-        "className": "B_Patrol_Soldier_Leader_weapon_F",
-        "name": "MX 3GL 6.5 mm"
-      },
-      "soldier_machinegunner_weapon": {
-        "className": "B_Patrol_Soldier_MachineGunner_weapon_F",
-        "name": "Mk200 6.5 mm"
-      },
-      "soldier_marksman_weapon": {
-        "className": "B_Patrol_Soldier_Marksman_weapon_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "soldier_medic_weapon": {
-        "className": "B_Patrol_Soldier_Medic_weapon_F",
-        "name": "MX 6.5 mm"
-      },
-      "soldier_operator_weapon": {
-        "className": "B_Patrol_Soldier_Operator_weapon_F",
-        "name": "MXC 6.5 mm"
-      },
-      "soldier_pistol": {
-        "className": "B_Patrol_Soldier_Pistol_F",
-        "name": "4-five .45 ACP"
-      },
-      "soldier_specialist_weapon": {
-        "className": "B_Patrol_Soldier_Specialist_weapon_F",
-        "name": "MX 6.5 mm"
-      }
-    }
-  },
-  "fakeweapon": {
-    "moduletracers": {
-      "base": {
-        "className": "FakeWeapon_moduleTracers_F",
-        "name": "Mk200 6.5 mm"
-      }
-    }
-  },
-  "hgun": {
-    "acpc2": {
-      "base": {
-        "className": "hgun_ACPC2_F",
-        "name": "ACP-C2 .45 ACP"
-      },
-      "snds": {
-        "className": "hgun_ACPC2_snds_F",
-        "name": "ACP-C2 .45 ACP"
-      }
-    },
-    "esd": {
-      "01_antenna_01": {
-        "className": "hgun_esd_01_antenna_01_F",
-        "name": "Spectrum Device"
-      },
-      "01_antenna_02": {
-        "className": "hgun_esd_01_antenna_02_F",
-        "name": "Spectrum Device"
-      },
-      "01_antenna_03": {
-        "className": "hgun_esd_01_antenna_03_F",
-        "name": "Spectrum Device"
-      },
-      "01_base": {
-        "className": "hgun_esd_01_base_F"
-      },
-      "01_dummy": {
-        "className": "hgun_esd_01_dummy_F",
-        "name": "Spectrum Device"
-      },
-      "01": {
-        "className": "hgun_esd_01_F",
-        "name": "Spectrum Device"
-      }
-    },
-    "p07": {
-      "blk": {
-        "className": "hgun_P07_blk_F",
-        "name": "P07 9 mm (Black)"
-      },
-      "blk_snds": {
-        "className": "hgun_P07_blk_Snds_F",
-        "name": "P07 9 mm (Black)"
-      },
-      "base": {
-        "className": "hgun_P07_F",
-        "name": "P07 9 mm"
-      },
-      "khk": {
-        "className": "hgun_P07_khk_F",
-        "name": "P07 9 mm (Khaki)"
-      },
-      "khk_snds": {
-        "className": "hgun_P07_khk_Snds_F",
-        "name": "P07 9 mm (Khaki)"
-      },
-      "snds": {
-        "className": "hgun_P07_snds_F",
-        "name": "P07 9 mm"
-      }
-    },
-    "pdw2000": {
-      "base": {
-        "className": "hgun_PDW2000_F",
-        "name": "PDW2000 9 mm"
-      },
-      "holo": {
-        "className": "hgun_PDW2000_Holo_F",
-        "name": "PDW2000 9 mm"
-      },
-      "holo_snds": {
-        "className": "hgun_PDW2000_Holo_snds_F",
-        "name": "PDW2000 9 mm"
-      },
-      "snds": {
-        "className": "hgun_PDW2000_snds_F",
-        "name": "PDW2000 9 mm"
-      }
-    },
-    "pistol": {
-      "01": {
-        "className": "hgun_Pistol_01_F",
-        "name": "PM 9 mm"
-      },
-      "heavy_01": {
-        "className": "hgun_Pistol_heavy_01_F",
-        "name": "4-five .45 ACP"
-      },
-      "heavy_01_green": {
-        "className": "hgun_Pistol_heavy_01_green_F",
-        "name": "4-five .45 ACP (Green)"
-      },
-      "heavy_01_green_snds": {
-        "className": "hgun_Pistol_heavy_01_green_snds_F",
-        "name": "4-five .45 ACP (Green)"
-      },
-      "heavy_01_mrd": {
-        "className": "hgun_Pistol_heavy_01_MRD_F",
-        "name": "4-five .45 ACP"
-      },
-      "heavy_01_snds": {
-        "className": "hgun_Pistol_heavy_01_snds_F",
-        "name": "4-five .45 ACP"
-      },
-      "heavy_02": {
-        "className": "hgun_Pistol_heavy_02_F",
-        "name": "Zubr .45 ACP"
-      },
-      "heavy_02_yorris": {
-        "className": "hgun_Pistol_heavy_02_Yorris_F",
-        "name": "Zubr .45 ACP"
-      },
-      "signal": {
-        "className": "hgun_Pistol_Signal_F",
-        "name": "Starter Pistol"
-      }
-    },
-    "rook40": {
-      "base": {
-        "className": "hgun_Rook40_F",
-        "name": "Rook-40 9 mm"
-      },
-      "snds": {
-        "className": "hgun_Rook40_snds_F",
-        "name": "Rook-40 9 mm"
-      }
-    }
-  },
-  "hmg": {
-    "m2": {
-      "mounted": {
-        "className": "HMG_M2_Mounted",
-        "name": "M2 HMG .50"
-      }
-    }
-  },
-  "launch": {
-    "b": {
-      "titan": {
-        "className": "launch_B_Titan_F",
-        "name": "Titan MPRL (Sand)"
-      },
-      "titan_olive": {
-        "className": "launch_B_Titan_olive_F",
-        "name": "Titan MPRL (Olive)"
-      },
-      "titan_short": {
-        "className": "launch_B_Titan_short_F",
-        "name": "Titan MPRL Compact (Sand)"
-      },
-      "titan_short_tna": {
-        "className": "launch_B_Titan_short_tna_F",
-        "name": "Titan MPRL Compact (Tropic)"
-      },
-      "titan_tna": {
-        "className": "launch_B_Titan_tna_F",
-        "name": "Titan MPRL (Tropic)"
-      }
-    },
-    "i": {
-      "titan_eaf": {
-        "className": "launch_I_Titan_eaf_F",
-        "name": "Titan MPRL (Geometric)"
-      },
-      "titan": {
-        "className": "launch_I_Titan_F",
-        "name": "Titan MPRL (Digital)"
-      },
-      "titan_short": {
-        "className": "launch_I_Titan_short_F",
-        "name": "Titan MPRL Compact (Olive)"
-      }
-    },
-    "mraws": {
-      "green": {
-        "className": "launch_MRAWS_green_F",
-        "name": "MAAWS Mk4 Mod 1 (Green)"
-      },
-      "green_rail": {
-        "className": "launch_MRAWS_green_rail_F",
-        "name": "MAAWS Mk4 Mod 0 (Green)"
-      },
-      "olive": {
-        "className": "launch_MRAWS_olive_F",
-        "name": "MAAWS Mk4 Mod 1 (Olive)"
-      },
-      "olive_rail": {
-        "className": "launch_MRAWS_olive_rail_F",
-        "name": "MAAWS Mk4 Mod 0 (Olive)"
-      },
-      "sand": {
-        "className": "launch_MRAWS_sand_F",
-        "name": "MAAWS Mk4 Mod 1 (Sand)"
-      },
-      "sand_rail": {
-        "className": "launch_MRAWS_sand_rail_F",
-        "name": "MAAWS Mk4 Mod 0 (Sand)"
-      }
-    },
-    "nlaw": {
-      "base": {
-        "className": "launch_NLAW_F",
-        "name": "PCML"
-      }
-    },
-    "o": {
-      "titan": {
-        "className": "launch_O_Titan_F",
-        "name": "Titan MPRL (Hex)"
-      },
-      "titan_ghex": {
-        "className": "launch_O_Titan_ghex_F",
-        "name": "Titan MPRL (Green Hex)"
-      },
-      "titan_short": {
-        "className": "launch_O_Titan_short_F",
-        "name": "Titan MPRL Compact (Coyote)"
-      },
-      "titan_short_ghex": {
-        "className": "launch_O_Titan_short_ghex_F",
-        "name": "Titan MPRL Compact (Green Hex)"
-      },
-      "vorona_brown": {
-        "className": "launch_O_Vorona_brown_F",
-        "name": "9M135 Vorona (Brown)"
-      },
-      "vorona_green": {
-        "className": "launch_O_Vorona_green_F",
-        "name": "9M135 Vorona (Green)"
-      }
-    },
-    "rpg32": {
-      "camo": {
-        "className": "launch_RPG32_camo_F",
-        "name": "RPG-42 (Camo)"
-      },
-      "base": {
-        "className": "launch_RPG32_F",
-        "name": "RPG-42 Alamut"
-      },
-      "ghex": {
-        "className": "launch_RPG32_ghex_F",
-        "name": "RPG-42 Alamut (Green Hex)"
-      },
-      "green": {
-        "className": "launch_RPG32_green_F",
-        "name": "RPG-42 (Green)"
-      }
-    },
-    "rpg7": {
-      "base": {
-        "className": "launch_RPG7_F",
-        "name": "RPG-7"
-      }
-    },
-    "titan": {
-      "base": {
-        "className": "launch_Titan_F",
-        "name": "Titan MPRL"
-      },
-      "short": {
-        "className": "launch_Titan_short_F",
-        "name": "Titan MPRL Compact"
-      }
-    }
-  },
-  "lmg": {
-    "03": {
-      "base": {
-        "className": "LMG_03_F",
-        "name": "LIM-85 5.56 mm"
-      },
-      "vehicle": {
-        "className": "LMG_03_Vehicle_F",
-        "name": "LIM-85 5.56 mm"
-      }
-    },
-    "mk200": {
-      "bi": {
-        "className": "LMG_Mk200_BI_F",
-        "name": "Mk200 6.5 mm"
-      },
-      "black_aco_pointer": {
-        "className": "LMG_Mk200_black_ACO_pointer_F",
-        "name": "Mk200 6.5 mm (Black)"
-      },
-      "black_bi": {
-        "className": "LMG_Mk200_black_BI_F",
-        "name": "Mk200 6.5 mm (Black)"
-      },
-      "black": {
-        "className": "LMG_Mk200_black_F",
-        "name": "Mk200 6.5 mm (Black)"
-      },
-      "black_lp_bi": {
-        "className": "LMG_Mk200_black_LP_BI_F",
-        "name": "Mk200 6.5 mm (Black)"
-      },
-      "base": {
-        "className": "LMG_Mk200_F",
-        "name": "Mk200 6.5 mm"
-      },
-      "lp_bi": {
-        "className": "LMG_Mk200_LP_BI_F",
-        "name": "Mk200 6.5 mm"
-      },
-      "mrco": {
-        "className": "LMG_Mk200_MRCO_F",
-        "name": "Mk200 6.5 mm"
-      },
-      "pointer": {
-        "className": "LMG_Mk200_pointer_F",
-        "name": "Mk200 6.5 mm"
-      }
-    },
-    "zafir": {
-      "arco": {
-        "className": "LMG_Zafir_ARCO_F",
-        "name": "Zafir 7.62 mm"
-      },
-      "base": {
-        "className": "LMG_Zafir_F",
-        "name": "Zafir 7.62 mm"
-      },
-      "pointer": {
-        "className": "LMG_Zafir_pointer_F",
-        "name": "Zafir 7.62 mm"
-      }
-    }
-  },
-  "mmg": {
-    "01": {
-      "hex_arco_lp": {
-        "className": "MMG_01_hex_ARCO_LP_F",
-        "name": "Navid 9.3 mm (Hex)"
-      },
-      "hex": {
-        "className": "MMG_01_hex_F",
-        "name": "Navid 9.3 mm (Hex)"
-      },
-      "tan": {
-        "className": "MMG_01_tan_F",
-        "name": "Navid 9.3 mm (Tan)"
-      }
-    },
-    "02": {
-      "black": {
-        "className": "MMG_02_black_F",
-        "name": "SPMG .338 (Black)"
-      },
-      "black_rco_bi": {
-        "className": "MMG_02_black_RCO_BI_F",
-        "name": "SPMG .338 (Black)"
-      },
-      "camo": {
-        "className": "MMG_02_camo_F",
-        "name": "SPMG .338 (MTP)"
-      },
-      "sand": {
-        "className": "MMG_02_sand_F",
-        "name": "SPMG .338 (Sand)"
-      },
-      "sand_rco_lp": {
-        "className": "MMG_02_sand_RCO_LP_F",
-        "name": "SPMG .338 (Sand)"
-      }
-    }
-  },
-  "sgun": {
-    "huntershotgun": {
-      "01": {
-        "className": "sgun_HunterShotgun_01_F",
-        "name": "Kozlice 12G"
-      },
-      "01_sawedoff": {
-        "className": "sgun_HunterShotgun_01_sawedoff_F",
-        "name": "Kozlice 12G (Sawed-Off)"
-      }
-    }
-  },
-  "smg": {
-    "01": {
-      "aco": {
-        "className": "SMG_01_ACO_F",
-        "name": "Vermin SMG .45 ACP"
-      },
-      "base": {
-        "className": "SMG_01_F",
-        "name": "Vermin SMG .45 ACP"
-      },
-      "holo": {
-        "className": "SMG_01_Holo_F",
-        "name": "Vermin SMG .45 ACP"
-      },
-      "holo_pointer_snds": {
-        "className": "SMG_01_Holo_pointer_snds_F",
-        "name": "Vermin SMG .45 ACP"
-      }
-    },
-    "02": {
-      "aco": {
-        "className": "SMG_02_ACO_F",
-        "name": "Sting 9 mm"
-      },
-      "arco_pointg": {
-        "className": "SMG_02_ARCO_pointg_F",
-        "name": "Sting 9 mm"
-      },
-      "base": {
-        "className": "SMG_02_F",
-        "name": "Sting 9 mm"
-      },
-      "flash": {
-        "className": "SMG_02_flash_F",
-        "name": "Sting 9 mm"
-      }
-    },
-    "03": {
-      "black": {
-        "className": "SMG_03_black",
-        "name": "ADR-97 5.7 mm (Black)"
-      },
-      "camo": {
-        "className": "SMG_03_camo",
-        "name": "ADR-97 5.7 mm (Camo)"
-      },
-      "hex": {
-        "className": "SMG_03_hex",
-        "name": "ADR-97 5.7 mm (Hex)"
-      },
-      "khaki": {
-        "className": "SMG_03_khaki",
-        "name": "ADR-97 5.7 mm (Khaki)"
-      },
-      "tr_black": {
-        "className": "SMG_03_TR_black",
-        "name": "ADR-97 TR 5.7 mm (Black)"
-      },
-      "tr_camo": {
-        "className": "SMG_03_TR_camo",
-        "name": "ADR-97 TR 5.7 mm (Camo)"
-      },
-      "tr_hex": {
-        "className": "SMG_03_TR_hex",
-        "name": "ADR-97 TR 5.7 mm (Hex)"
-      },
-      "tr_khaki": {
-        "className": "SMG_03_TR_khaki",
-        "name": "ADR-97 TR 5.7 mm (Khaki)"
-      }
-    },
-    "03c": {
-      "black": {
-        "className": "SMG_03C_black",
-        "name": "ADR-97C 5.7 mm (Black)"
-      },
-      "camo": {
-        "className": "SMG_03C_camo",
-        "name": "ADR-97C 5.7 mm (Camo)"
-      },
-      "hex": {
-        "className": "SMG_03C_hex",
-        "name": "ADR-97C 5.7 mm (Hex)"
-      },
-      "khaki": {
-        "className": "SMG_03C_khaki",
-        "name": "ADR-97C 5.7 mm (Khaki)"
-      },
-      "tr_black": {
-        "className": "SMG_03C_TR_black",
-        "name": "ADR-97C TR 5.7 mm (Black)"
-      },
-      "tr_camo": {
-        "className": "SMG_03C_TR_camo",
-        "name": "ADR-97C TR 5.7 mm (Camo)"
-      },
-      "tr_hex": {
-        "className": "SMG_03C_TR_hex",
-        "name": "ADR-97C TR 5.7 mm (Hex)"
-      },
-      "tr_khaki": {
-        "className": "SMG_03C_TR_khaki",
-        "name": "ADR-97C TR 5.7 mm (Khaki)"
-      }
-    },
-    "05": {
-      "base": {
-        "className": "SMG_05_F",
-        "name": "Protector 9 mm"
-      }
-    }
-  },
-  "srifle": {
-    "dmr": {
-      "01_aco": {
-        "className": "srifle_DMR_01_ACO_F",
-        "name": "Rahim 7.62 mm"
-      },
-      "01_arco": {
-        "className": "srifle_DMR_01_ARCO_F",
-        "name": "Rahim 7.62 mm"
-      },
-      "01_dms_bi": {
-        "className": "srifle_DMR_01_DMS_BI_F",
-        "name": "Rahim 7.62 mm"
-      },
-      "01_dms": {
-        "className": "srifle_DMR_01_DMS_F",
-        "name": "Rahim 7.62 mm"
-      },
-      "01_dms_snds_bi": {
-        "className": "srifle_DMR_01_DMS_snds_BI_F",
-        "name": "Rahim 7.62 mm"
-      },
-      "01_dms_snds": {
-        "className": "srifle_DMR_01_DMS_snds_F",
-        "name": "Rahim 7.62 mm"
-      },
-      "01": {
-        "className": "srifle_DMR_01_F",
-        "name": "Rahim 7.62 mm"
-      },
-      "01_mrco": {
-        "className": "srifle_DMR_01_MRCO_F",
-        "name": "Rahim 7.62 mm"
-      },
-      "01_sos": {
-        "className": "srifle_DMR_01_SOS_F",
-        "name": "Rahim 7.62 mm"
-      },
-      "02_aco": {
-        "className": "srifle_DMR_02_ACO_F",
-        "name": "MAR-10 .338 (Black)"
-      },
-      "02_arco": {
-        "className": "srifle_DMR_02_ARCO_F",
-        "name": "MAR-10 .338 (Black)"
-      },
-      "02_camo_ams_lp": {
-        "className": "srifle_DMR_02_camo_AMS_LP_F",
-        "name": "MAR-10 .338 (Camo)"
-      },
-      "02_camo": {
-        "className": "srifle_DMR_02_camo_F",
-        "name": "MAR-10 .338 (Camo)"
-      },
-      "02_dms": {
-        "className": "srifle_DMR_02_DMS_F",
-        "name": "MAR-10 .338 (Black)"
-      },
-      "02": {
-        "className": "srifle_DMR_02_F",
-        "name": "MAR-10 .338 (Black)"
-      },
-      "02_mrco": {
-        "className": "srifle_DMR_02_MRCO_F",
-        "name": "MAR-10 .338 (Black)"
-      },
-      "02_sniper_ams_lp_s": {
-        "className": "srifle_DMR_02_sniper_AMS_LP_S_F",
-        "name": "MAR-10 .338 (Sand)"
-      },
-      "02_sniper": {
-        "className": "srifle_DMR_02_sniper_F",
-        "name": "MAR-10 .338 (Sand)"
-      },
-      "02_sos": {
-        "className": "srifle_DMR_02_SOS_F",
-        "name": "MAR-10 .338 (Black)"
-      },
-      "03_aco": {
-        "className": "srifle_DMR_03_ACO_F",
-        "name": "Mk-I EMR 7.62 mm (Black)"
-      },
-      "03_ams": {
-        "className": "srifle_DMR_03_AMS_F",
-        "name": "Mk-I EMR 7.62 mm (Black)"
-      },
-      "03_arco": {
-        "className": "srifle_DMR_03_ARCO_F",
-        "name": "Mk-I EMR 7.62 mm (Black)"
-      },
-      "03_dms": {
-        "className": "srifle_DMR_03_DMS_F",
-        "name": "Mk-I EMR 7.62 mm (Black)"
-      },
-      "03_dms_snds": {
-        "className": "srifle_DMR_03_DMS_snds_F",
-        "name": "Mk-I EMR 7.62 mm (Black)"
-      },
-      "03": {
-        "className": "srifle_DMR_03_F",
-        "name": "Mk-I EMR 7.62 mm (Black)"
-      },
-      "03_khaki": {
-        "className": "srifle_DMR_03_khaki_F",
-        "name": "Mk-I EMR 7.62 mm (Khaki)"
-      },
-      "03_mrco": {
-        "className": "srifle_DMR_03_MRCO_F",
-        "name": "Mk-I EMR 7.62 mm (Black)"
-      },
-      "03_multicam": {
-        "className": "srifle_DMR_03_multicam_F",
-        "name": "Mk-I EMR 7.62 mm (Camo)"
-      },
-      "03_sos": {
-        "className": "srifle_DMR_03_SOS_F",
-        "name": "Mk-I EMR 7.62 mm (Black)"
-      },
-      "03_tan_ams_lp": {
-        "className": "srifle_DMR_03_tan_AMS_LP_F",
-        "name": "Mk-I EMR 7.62 mm (Sand)"
-      },
-      "03_tan": {
-        "className": "srifle_DMR_03_tan_F",
-        "name": "Mk-I EMR 7.62 mm (Sand)"
-      },
-      "03_woodland": {
-        "className": "srifle_DMR_03_woodland_F",
-        "name": "Mk-I EMR 7.62 mm (Woodland)"
-      },
-      "04_aco": {
-        "className": "srifle_DMR_04_ACO_F",
-        "name": "ASP-1 Kir 12.7 mm (Black)"
-      },
-      "04_arco": {
-        "className": "srifle_DMR_04_ARCO_F",
-        "name": "ASP-1 Kir 12.7 mm (Black)"
-      },
-      "04_dms": {
-        "className": "srifle_DMR_04_DMS_F",
-        "name": "ASP-1 Kir 12.7 mm (Black)"
-      },
-      "04_dms_weathered_kir_f": {
-        "className": "srifle_DMR_04_DMS_weathered_Kir_F_F",
-        "name": "ASP-1 Kir 12.7 mm (Black)"
-      },
-      "04": {
-        "className": "srifle_DMR_04_F",
-        "name": "ASP-1 Kir 12.7 mm (Black)"
-      },
-      "04_mrco": {
-        "className": "srifle_DMR_04_MRCO_F",
-        "name": "ASP-1 Kir 12.7 mm (Black)"
-      },
-      "04_ns_lp": {
-        "className": "srifle_DMR_04_NS_LP_F",
-        "name": "ASP-1 Kir 12.7 mm (Black)"
-      },
-      "04_sos": {
-        "className": "srifle_DMR_04_SOS_F",
-        "name": "ASP-1 Kir 12.7 mm (Black)"
-      },
-      "04_tan": {
-        "className": "srifle_DMR_04_Tan_F",
-        "name": "ASP-1 Kir 12.7 mm (Tan)"
-      },
-      "05_aco": {
-        "className": "srifle_DMR_05_ACO_F",
-        "name": "Cyrus 9.3 mm (Black)"
-      },
-      "05_arco": {
-        "className": "srifle_DMR_05_ARCO_F",
-        "name": "Cyrus 9.3 mm (Black)"
-      },
-      "05_blk": {
-        "className": "srifle_DMR_05_blk_F",
-        "name": "Cyrus 9.3 mm (Black)"
-      },
-      "05_dms": {
-        "className": "srifle_DMR_05_DMS_F",
-        "name": "Cyrus 9.3 mm (Black)"
-      },
-      "05_dms_snds": {
-        "className": "srifle_DMR_05_DMS_snds_F",
-        "name": "Cyrus 9.3 mm (Black)"
-      },
-      "05_hex": {
-        "className": "srifle_DMR_05_hex_F",
-        "name": "Cyrus 9.3 mm (Hex)"
-      },
-      "05_khs_lp": {
-        "className": "srifle_DMR_05_KHS_LP_F",
-        "name": "Cyrus 9.3 mm (Black)"
-      },
-      "05_mrco": {
-        "className": "srifle_DMR_05_MRCO_F",
-        "name": "Cyrus 9.3 mm (Black)"
-      },
-      "05_sos": {
-        "className": "srifle_DMR_05_SOS_F",
-        "name": "Cyrus 9.3 mm (Black)"
-      },
-      "05_tan": {
-        "className": "srifle_DMR_05_tan_f",
-        "name": "Cyrus 9.3 mm (Tan)"
-      },
-      "06_camo": {
-        "className": "srifle_DMR_06_camo_F",
-        "name": "Mk14 7.62 mm (Camo)"
-      },
-      "06_camo_khs": {
-        "className": "srifle_DMR_06_camo_khs_F",
-        "name": "Mk14 7.62 mm (Camo)"
-      },
-      "06_hunter": {
-        "className": "srifle_DMR_06_hunter_F",
-        "name": "Mk14 7.62 mm (Classic)"
-      },
-      "06_hunter_khs": {
-        "className": "srifle_DMR_06_hunter_khs_F",
-        "name": "Mk14 7.62 mm (Classic)"
-      },
-      "06_olive": {
-        "className": "srifle_DMR_06_olive_F",
-        "name": "Mk14 7.62 mm (Olive)"
-      },
-      "07_blk_dms": {
-        "className": "srifle_DMR_07_blk_DMS_F",
-        "name": "CMR-76 6.5 mm (Black)"
-      },
-      "07_blk_dms_snds": {
-        "className": "srifle_DMR_07_blk_DMS_Snds_F",
-        "name": "CMR-76 6.5 mm (Black)"
-      },
-      "07_blk": {
-        "className": "srifle_DMR_07_blk_F",
-        "name": "CMR-76 6.5 mm (Black)"
-      },
-      "07_blk_f_arco_flash": {
-        "className": "srifle_DMR_07_blk_F_arco_flash_F",
-        "name": "CMR-76 6.5 mm (Black)"
-      },
-      "07_ghex": {
-        "className": "srifle_DMR_07_ghex_F",
-        "name": "CMR-76 6.5 mm (Green Hex)"
-      },
-      "07_hex": {
-        "className": "srifle_DMR_07_hex_F",
-        "name": "CMR-76 6.5 mm (Hex)"
-      }
-    },
-    "ebr": {
-      "aco": {
-        "className": "srifle_EBR_ACO_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "arco_pointer": {
-        "className": "srifle_EBR_ARCO_pointer_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "arco_pointer_snds": {
-        "className": "srifle_EBR_ARCO_pointer_snds_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "dms": {
-        "className": "srifle_EBR_DMS_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "dms_pointer_snds": {
-        "className": "srifle_EBR_DMS_pointer_snds_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "base": {
-        "className": "srifle_EBR_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "hamr_pointer": {
-        "className": "srifle_EBR_Hamr_pointer_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "mrco_lp_bi": {
-        "className": "srifle_EBR_MRCO_LP_BI_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "mrco_pointer": {
-        "className": "srifle_EBR_MRCO_pointer_F",
-        "name": "Mk18 ABR 7.62 mm"
-      },
-      "sos": {
-        "className": "srifle_EBR_SOS_F",
-        "name": "Mk18 ABR 7.62 mm"
-      }
-    },
-    "gm6": {
-      "camo": {
-        "className": "srifle_GM6_camo_F",
-        "name": "GM6 Lynx 12.7 mm (Camo)"
-      },
-      "camo_lrps": {
-        "className": "srifle_GM6_camo_LRPS_F",
-        "name": "GM6 Lynx 12.7 mm (Camo)"
-      },
-      "camo_sos": {
-        "className": "srifle_GM6_camo_SOS_F",
-        "name": "GM6 Lynx 12.7 mm (Camo)"
-      },
-      "base": {
-        "className": "srifle_GM6_F",
-        "name": "GM6 Lynx 12.7 mm"
-      },
-      "ghex": {
-        "className": "srifle_GM6_ghex_F",
-        "name": "GM6 Lynx 12.7 mm (Green Hex)"
-      },
-      "ghex_lrps": {
-        "className": "srifle_GM6_ghex_LRPS_F",
-        "name": "GM6 Lynx 12.7 mm (Green Hex)"
-      },
-      "lrps": {
-        "className": "srifle_GM6_LRPS_F",
-        "name": "GM6 Lynx 12.7 mm"
-      },
-      "sos": {
-        "className": "srifle_GM6_SOS_F",
-        "name": "GM6 Lynx 12.7 mm"
-      }
-    },
-    "lrr": {
-      "camo": {
-        "className": "srifle_LRR_camo_F",
-        "name": "M320 LRR .408 (Camo)"
-      },
-      "camo_lrps": {
-        "className": "srifle_LRR_camo_LRPS_F",
-        "name": "M320 LRR .408 (Camo)"
-      },
-      "camo_sos": {
-        "className": "srifle_LRR_camo_SOS_F",
-        "name": "M320 LRR .408 (Camo)"
-      },
-      "base": {
-        "className": "srifle_LRR_F",
-        "name": "M320 LRR .408"
-      },
-      "lrps": {
-        "className": "srifle_LRR_LRPS_F",
-        "name": "M320 LRR .408"
-      },
-      "sos": {
-        "className": "srifle_LRR_SOS_F",
-        "name": "M320 LRR .408"
-      },
-      "tna": {
-        "className": "srifle_LRR_tna_F",
-        "name": "M320 LRR .408 (Tropic)"
-      },
-      "tna_lrps": {
-        "className": "srifle_LRR_tna_LRPS_F",
-        "name": "M320 LRR .408 (Tropic)"
-      }
-    }
-  }
+	"arifle": {
+		"ak12": {
+			"arid": {
+				"className": "arifle_AK12_arid_F",
+				"name": "AK-12 7.62 mm (Arid)"
+			},
+			"base": {
+				"className": "arifle_AK12_F",
+				"name": "AK-12 7.62 mm"
+			},
+			"gl_arid": {
+				"className": "arifle_AK12_GL_arid_F",
+				"name": "AK-12 GL 7.62 mm (Arid)"
+			},
+			"gl": {
+				"className": "arifle_AK12_GL_F",
+				"name": "AK-12 GL 7.62 mm"
+			},
+			"gl_lush_arco_pointer": {
+				"className": "arifle_AK12_GL_lush_arco_pointer_F",
+				"name": "AK-12 GL 7.62 mm (Lush)"
+			},
+			"gl_lush_arco_snds_pointer": {
+				"className": "arifle_AK12_GL_lush_arco_snds_pointer_F",
+				"name": "AK-12 GL 7.62 mm (Lush)"
+			},
+			"gl_lush": {
+				"className": "arifle_AK12_GL_lush_F",
+				"name": "AK-12 GL 7.62 mm (Lush)"
+			},
+			"gl_lush_holo_pointer": {
+				"className": "arifle_AK12_GL_lush_holo_pointer_F",
+				"name": "AK-12 GL 7.62 mm (Lush)"
+			},
+			"gl_lush_holo_snds_pointer": {
+				"className": "arifle_AK12_GL_lush_holo_snds_pointer_F",
+				"name": "AK-12 GL 7.62 mm (Lush)"
+			},
+			"lush_arco_pointer": {
+				"className": "arifle_AK12_lush_arco_pointer_F",
+				"name": "AK-12 7.62 mm (Lush)"
+			},
+			"lush_arco_snds_pointer_bipod": {
+				"className": "arifle_AK12_lush_arco_snds_pointer_bipod_F",
+				"name": "AK-12 7.62 mm (Lush)"
+			},
+			"lush_arco_snds_pointer": {
+				"className": "arifle_AK12_lush_arco_snds_pointer_F",
+				"name": "AK-12 7.62 mm (Lush)"
+			},
+			"lush": {
+				"className": "arifle_AK12_lush_F",
+				"name": "AK-12 7.62 mm (Lush)"
+			},
+			"lush_snds_pointer": {
+				"className": "arifle_AK12_lush_snds_pointer_F",
+				"name": "AK-12 7.62 mm (Lush)"
+			}
+		},
+		"ak12u": {
+			"arid": {
+				"className": "arifle_AK12U_arid_F",
+				"name": "AKU-12 7.62 mm (Arid)"
+			},
+			"base": {
+				"className": "arifle_AK12U_F",
+				"name": "AKU-12 7.62 mm"
+			},
+			"lush": {
+				"className": "arifle_AK12U_lush_F",
+				"name": "AKU-12 7.62 mm (Lush)"
+			},
+			"lush_holo": {
+				"className": "arifle_AK12U_lush_holo_F",
+				"name": "AKU-12 7.62 mm (Lush)"
+			},
+			"lush_holo_fl": {
+				"className": "arifle_AK12U_lush_holo_fl_F",
+				"name": "AKU-12 7.62 mm (Lush)"
+			},
+			"lush_holo_pointer": {
+				"className": "arifle_AK12U_lush_holo_pointer_F",
+				"name": "AKU-12 7.62 mm (Lush)"
+			},
+			"lush_holo_snds_pointer": {
+				"className": "arifle_AK12U_lush_holo_snds_pointer_F",
+				"name": "AKU-12 7.62 mm (Lush)"
+			},
+			"lush_snds_pointer": {
+				"className": "arifle_AK12U_lush_snds_pointer_F",
+				"name": "AKU-12 7.62 mm (Lush)"
+			}
+		},
+		"akm": {
+			"base": {
+				"className": "arifle_AKM_F",
+				"name": "AKM 7.62 mm"
+			},
+			"fl": {
+				"className": "arifle_AKM_FL_F",
+				"name": "AKM 7.62 mm"
+			}
+		},
+		"aks": {
+			"base": {
+				"className": "arifle_AKS_F",
+				"name": "AKS-74U 5.45 mm"
+			}
+		},
+		"arx": {
+			"blk": {
+				"className": "arifle_ARX_blk_F",
+				"name": "Type 115 6.5 mm (Black)"
+			},
+			"ghex_aco_pointer_snds": {
+				"className": "arifle_ARX_ghex_ACO_Pointer_Snds_F",
+				"name": "Type 115 6.5 mm (Green Hex)"
+			},
+			"ghex_arco_pointer_snds": {
+				"className": "arifle_ARX_ghex_ARCO_Pointer_Snds_F",
+				"name": "Type 115 6.5 mm (Green Hex)"
+			},
+			"ghex_dms_pointer_snds_bipod": {
+				"className": "arifle_ARX_ghex_DMS_Pointer_Snds_Bipod_F",
+				"name": "Type 115 6.5 mm (Green Hex)"
+			},
+			"ghex": {
+				"className": "arifle_ARX_ghex_F",
+				"name": "Type 115 6.5 mm (Green Hex)"
+			},
+			"hex_aco_pointer_snds": {
+				"className": "arifle_ARX_hex_ACO_Pointer_Snds_F",
+				"name": "Type 115 6.5 mm (Hex)"
+			},
+			"hex_arco_pointer_snds": {
+				"className": "arifle_ARX_hex_ARCO_Pointer_Snds_F",
+				"name": "Type 115 6.5 mm (Hex)"
+			},
+			"hex_dms_pointer_snds_bipod": {
+				"className": "arifle_ARX_hex_DMS_Pointer_Snds_Bipod_F",
+				"name": "Type 115 6.5 mm (Hex)"
+			},
+			"hex": {
+				"className": "arifle_ARX_hex_F",
+				"name": "Type 115 6.5 mm (Hex)"
+			},
+			"viper": {
+				"className": "arifle_ARX_Viper_F",
+				"name": "Type 115 6.5 mm (Green Hex)"
+			},
+			"viper_hex": {
+				"className": "arifle_ARX_Viper_hex_F",
+				"name": "Type 115 6.5 mm (Hex)"
+			}
+		},
+		"ctar": {
+			"blk_aco": {
+				"className": "arifle_CTAR_blk_ACO_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk_aco_flash": {
+				"className": "arifle_CTAR_blk_aco_flash_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk_aco_pointer": {
+				"className": "arifle_CTAR_blk_ACO_Pointer_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk_aco_pointer_snds": {
+				"className": "arifle_CTAR_blk_ACO_Pointer_Snds_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk_arco": {
+				"className": "arifle_CTAR_blk_ARCO_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk_arco_flash": {
+				"className": "arifle_CTAR_blk_arco_flash_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk_arco_pointer": {
+				"className": "arifle_CTAR_blk_ARCO_Pointer_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk_arco_pointer_snds": {
+				"className": "arifle_CTAR_blk_ARCO_Pointer_Snds_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk": {
+				"className": "arifle_CTAR_blk_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk_flash": {
+				"className": "arifle_CTAR_blk_flash_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"blk_pointer": {
+				"className": "arifle_CTAR_blk_Pointer_F",
+				"name": "CAR-95 5.8 mm (Black)"
+			},
+			"ghex": {
+				"className": "arifle_CTAR_ghex_F",
+				"name": "CAR-95 5.8 mm (Green Hex)"
+			},
+			"gl_blk_aco": {
+				"className": "arifle_CTAR_GL_blk_ACO_F",
+				"name": "CAR-95 GL 5.8 mm (Black)"
+			},
+			"gl_blk_aco_flash": {
+				"className": "arifle_CTAR_GL_blk_aco_flash_F",
+				"name": "CAR-95 GL 5.8 mm (Black)"
+			},
+			"gl_blk_aco_pointer_snds": {
+				"className": "arifle_CTAR_GL_blk_ACO_Pointer_Snds_F",
+				"name": "CAR-95 GL 5.8 mm (Black)"
+			},
+			"gl_blk_arco_flash": {
+				"className": "arifle_CTAR_GL_blk_arco_flash_F",
+				"name": "CAR-95 GL 5.8 mm (Black)"
+			},
+			"gl_blk_arco_pointer": {
+				"className": "arifle_CTAR_GL_blk_ARCO_Pointer_F",
+				"name": "CAR-95 GL 5.8 mm (Black)"
+			},
+			"gl_blk": {
+				"className": "arifle_CTAR_GL_blk_F",
+				"name": "CAR-95 GL 5.8 mm (Black)"
+			},
+			"gl_ghex": {
+				"className": "arifle_CTAR_GL_ghex_F",
+				"name": "CAR-95 GL 5.8 mm (Green Hex)"
+			},
+			"gl_hex": {
+				"className": "arifle_CTAR_GL_hex_F",
+				"name": "CAR-95 GL 5.8 mm (Hex)"
+			},
+			"hex": {
+				"className": "arifle_CTAR_hex_F",
+				"name": "CAR-95 5.8 mm (Hex)"
+			}
+		},
+		"ctars": {
+			"blk": {
+				"className": "arifle_CTARS_blk_F",
+				"name": "CAR-95-1 5.8mm (Black)"
+			},
+			"blk_flash": {
+				"className": "arifle_CTARS_blk_flash_F",
+				"name": "CAR-95-1 5.8mm (Black)"
+			},
+			"blk_pointer": {
+				"className": "arifle_CTARS_blk_Pointer_F",
+				"name": "CAR-95-1 5.8mm (Black)"
+			},
+			"ghex": {
+				"className": "arifle_CTARS_ghex_F",
+				"name": "CAR-95-1 5.8mm (Green Hex)"
+			},
+			"hex": {
+				"className": "arifle_CTARS_hex_F",
+				"name": "CAR-95-1 5.8mm (Hex)"
+			}
+		},
+		"katiba": {
+			"aco": {
+				"className": "arifle_Katiba_ACO_F",
+				"name": "Katiba 6.5 mm"
+			},
+			"aco_pointer": {
+				"className": "arifle_Katiba_ACO_pointer_F",
+				"name": "Katiba 6.5 mm"
+			},
+			"aco_pointer_snds": {
+				"className": "arifle_Katiba_ACO_pointer_snds_F",
+				"name": "Katiba 6.5 mm"
+			},
+			"arco": {
+				"className": "arifle_Katiba_ARCO_F",
+				"name": "Katiba 6.5 mm"
+			},
+			"arco_pointer": {
+				"className": "arifle_Katiba_ARCO_pointer_F",
+				"name": "Katiba 6.5 mm"
+			},
+			"arco_pointer_snds": {
+				"className": "arifle_Katiba_ARCO_pointer_snds_F",
+				"name": "Katiba 6.5 mm"
+			},
+			"c_aco": {
+				"className": "arifle_Katiba_C_ACO_F",
+				"name": "Katiba Carbine 6.5 mm"
+			},
+			"c_aco_pointer": {
+				"className": "arifle_Katiba_C_ACO_pointer_F",
+				"name": "Katiba Carbine 6.5 mm"
+			},
+			"c_aco_pointer_snds": {
+				"className": "arifle_Katiba_C_ACO_pointer_snds_F",
+				"name": "Katiba Carbine 6.5 mm"
+			},
+			"c": {
+				"className": "arifle_Katiba_C_F",
+				"name": "Katiba Carbine 6.5 mm"
+			},
+			"base": {
+				"className": "arifle_Katiba_F",
+				"name": "Katiba 6.5 mm"
+			},
+			"gl_aco": {
+				"className": "arifle_Katiba_GL_ACO_F",
+				"name": "Katiba GL 6.5 mm"
+			},
+			"gl_aco_pointer": {
+				"className": "arifle_Katiba_GL_ACO_pointer_F",
+				"name": "Katiba GL 6.5 mm"
+			},
+			"gl_aco_pointer_snds": {
+				"className": "arifle_Katiba_GL_ACO_pointer_snds_F",
+				"name": "Katiba GL 6.5 mm"
+			},
+			"gl_arco_pointer": {
+				"className": "arifle_Katiba_GL_ARCO_pointer_F",
+				"name": "Katiba GL 6.5 mm"
+			},
+			"gl": {
+				"className": "arifle_Katiba_GL_F",
+				"name": "Katiba GL 6.5 mm"
+			},
+			"gl_nstalker_pointer": {
+				"className": "arifle_Katiba_GL_Nstalker_pointer_F",
+				"name": "Katiba GL 6.5 mm"
+			},
+			"pointer": {
+				"className": "arifle_Katiba_pointer_F",
+				"name": "Katiba 6.5 mm"
+			}
+		},
+		"mk20": {
+			"aco": {
+				"className": "arifle_Mk20_ACO_F",
+				"name": "Mk20 5.56 mm (Camo)"
+			},
+			"aco_pointer": {
+				"className": "arifle_Mk20_ACO_pointer_F",
+				"name": "Mk20 5.56 mm (Camo)"
+			},
+			"base": {
+				"className": "arifle_Mk20_F",
+				"name": "Mk20 5.56 mm (Camo)"
+			},
+			"gl_aco": {
+				"className": "arifle_Mk20_GL_ACO_F",
+				"name": "Mk20 EGLM 5.56 mm (Camo)"
+			},
+			"gl": {
+				"className": "arifle_Mk20_GL_F",
+				"name": "Mk20 EGLM 5.56 mm (Camo)"
+			},
+			"gl_mrco_pointer": {
+				"className": "arifle_Mk20_GL_MRCO_pointer_F",
+				"name": "Mk20 EGLM 5.56 mm (Camo)"
+			},
+			"gl_plain": {
+				"className": "arifle_Mk20_GL_plain_F",
+				"name": "Mk20 EGLM 5.56 mm"
+			},
+			"holo": {
+				"className": "arifle_Mk20_Holo_F",
+				"name": "Mk20 5.56 mm (Camo)"
+			},
+			"mrco": {
+				"className": "arifle_Mk20_MRCO_F",
+				"name": "Mk20 5.56 mm (Camo)"
+			},
+			"mrco_plain": {
+				"className": "arifle_Mk20_MRCO_plain_F",
+				"name": "Mk20 5.56 mm"
+			},
+			"mrco_pointer": {
+				"className": "arifle_Mk20_MRCO_pointer_F",
+				"name": "Mk20 5.56 mm (Camo)"
+			},
+			"plain": {
+				"className": "arifle_Mk20_plain_F",
+				"name": "Mk20 5.56 mm"
+			},
+			"pointer": {
+				"className": "arifle_Mk20_pointer_F",
+				"name": "Mk20 5.56 mm (Camo)"
+			}
+		},
+		"mk20c": {
+			"aco": {
+				"className": "arifle_Mk20C_ACO_F",
+				"name": "Mk20C 5.56 mm (Camo)"
+			},
+			"aco_pointer": {
+				"className": "arifle_Mk20C_ACO_pointer_F",
+				"name": "Mk20C 5.56 mm (Camo)"
+			},
+			"base": {
+				"className": "arifle_Mk20C_F",
+				"name": "Mk20C 5.56 mm (Camo)"
+			},
+			"plain": {
+				"className": "arifle_Mk20C_plain_F",
+				"name": "Mk20C 5.56 mm"
+			}
+		},
+		"msbs65": {
+			"aco": {
+				"className": "arifle_MSBS65_aco_F",
+				"name": "Promet 6.5 mm"
+			},
+			"black_aco": {
+				"className": "arifle_MSBS65_black_aco_F",
+				"name": "Promet 6.5 mm (Black)"
+			},
+			"black_aco_fl": {
+				"className": "arifle_MSBS65_black_aco_FL_F",
+				"name": "Promet 6.5 mm (Black)"
+			},
+			"black": {
+				"className": "arifle_MSBS65_black_F",
+				"name": "Promet 6.5 mm (Black)"
+			},
+			"black_ico": {
+				"className": "arifle_MSBS65_black_ico_F",
+				"name": "Promet 6.5 mm (Black)"
+			},
+			"black_ico_pointer": {
+				"className": "arifle_MSBS65_black_ico_pointer_f",
+				"name": "Promet 6.5 mm (Black)"
+			},
+			"camo": {
+				"className": "arifle_MSBS65_camo_F",
+				"name": "Promet 6.5 mm (Camo)"
+			},
+			"base": {
+				"className": "arifle_MSBS65_F",
+				"name": "Promet 6.5 mm"
+			},
+			"gl_black": {
+				"className": "arifle_MSBS65_GL_black_F",
+				"name": "Promet GL 6.5 mm (Black)"
+			},
+			"gl_black_ico": {
+				"className": "arifle_MSBS65_GL_black_ico_F",
+				"name": "Promet GL 6.5 mm (Black)"
+			},
+			"gl_black_ico_pointer": {
+				"className": "arifle_MSBS65_GL_black_ico_pointer_f",
+				"name": "Promet GL 6.5 mm (Black)"
+			},
+			"gl_camo": {
+				"className": "arifle_MSBS65_GL_camo_F",
+				"name": "Promet GL 6.5 mm (Camo)"
+			},
+			"gl": {
+				"className": "arifle_MSBS65_GL_F",
+				"name": "Promet GL 6.5 mm"
+			},
+			"gl_ico": {
+				"className": "arifle_MSBS65_GL_ico_F",
+				"name": "Promet GL 6.5 mm"
+			},
+			"gl_ico_pointer": {
+				"className": "arifle_MSBS65_GL_ico_pointer_f",
+				"name": "Promet GL 6.5 mm"
+			},
+			"gl_sand": {
+				"className": "arifle_MSBS65_GL_sand_F",
+				"name": "Promet GL 6.5 mm (Sand)"
+			},
+			"ico": {
+				"className": "arifle_MSBS65_ico_F",
+				"name": "Promet 6.5 mm"
+			},
+			"ico_pointer": {
+				"className": "arifle_MSBS65_ico_pointer_f",
+				"name": "Promet 6.5 mm"
+			},
+			"mark_black": {
+				"className": "arifle_MSBS65_Mark_black_F",
+				"name": "Promet MR 6.5 mm (Black)"
+			},
+			"mark_camo": {
+				"className": "arifle_MSBS65_Mark_camo_F",
+				"name": "Promet MR 6.5 mm (Camo)"
+			},
+			"mark": {
+				"className": "arifle_MSBS65_Mark_F",
+				"name": "Promet MR 6.5 mm"
+			},
+			"mark_sand": {
+				"className": "arifle_MSBS65_Mark_sand_F",
+				"name": "Promet MR 6.5 mm (Sand)"
+			},
+			"mark_sos_lp_bi": {
+				"className": "arifle_MSBS65_Mark_SOS_LP_BI_F",
+				"name": "Promet MR 6.5 mm"
+			},
+			"sand": {
+				"className": "arifle_MSBS65_sand_F",
+				"name": "Promet 6.5 mm (Sand)"
+			},
+			"ubs_black": {
+				"className": "arifle_MSBS65_UBS_black_F",
+				"name": "Promet SG 6.5 mm (Black)"
+			},
+			"ubs_black_ico": {
+				"className": "arifle_MSBS65_UBS_black_ico_F",
+				"name": "Promet SG 6.5 mm (Black)"
+			},
+			"ubs_black_ico_pointer": {
+				"className": "arifle_MSBS65_UBS_black_ico_pointer_f",
+				"name": "Promet SG 6.5 mm (Black)"
+			},
+			"ubs_camo": {
+				"className": "arifle_MSBS65_UBS_camo_F",
+				"name": "Promet SG 6.5 mm (Camo)"
+			},
+			"ubs": {
+				"className": "arifle_MSBS65_UBS_F",
+				"name": "Promet SG 6.5 mm"
+			},
+			"ubs_ico": {
+				"className": "arifle_MSBS65_UBS_ico_F",
+				"name": "Promet SG 6.5 mm"
+			},
+			"ubs_ico_pointer": {
+				"className": "arifle_MSBS65_UBS_ico_pointer_f",
+				"name": "Promet SG 6.5 mm"
+			},
+			"ubs_sand": {
+				"className": "arifle_MSBS65_UBS_sand_F",
+				"name": "Promet SG 6.5 mm (Sand)"
+			},
+			"ubs_snds_ico_pointer": {
+				"className": "arifle_MSBS65_UBS_snds_ico_pointer_F",
+				"name": "Promet SG 6.5 mm"
+			}
+		},
+		"mx": {
+			"aco": {
+				"className": "arifle_MX_ACO_F",
+				"name": "MX 6.5 mm"
+			},
+			"aco_pointer": {
+				"className": "arifle_MX_ACO_pointer_F",
+				"name": "MX 6.5 mm"
+			},
+			"aco_pointer_snds": {
+				"className": "arifle_MX_ACO_pointer_snds_F",
+				"name": "MX 6.5 mm"
+			},
+			"black_aco_fl": {
+				"className": "arifle_MX_Black_ACO_FL_F",
+				"name": "MX 6.5 mm (Black)"
+			},
+			"black_aco_pointer": {
+				"className": "arifle_MX_Black_ACO_Pointer_F",
+				"name": "MX 6.5 mm (Black)"
+			},
+			"black_aco_pointer_snds": {
+				"className": "arifle_MX_Black_ACO_Pointer_Snds_F",
+				"name": "MX 6.5 mm (Black)"
+			},
+			"black": {
+				"className": "arifle_MX_Black_F",
+				"name": "MX 6.5 mm (Black)"
+			},
+			"black_hamr_pointer": {
+				"className": "arifle_MX_Black_Hamr_pointer_F",
+				"name": "MX 6.5 mm (Black)"
+			},
+			"black_hamr_pointer_snds": {
+				"className": "arifle_MX_Black_Hamr_Pointer_Snds_F",
+				"name": "MX 6.5 mm (Black)"
+			},
+			"black_holo_pointer": {
+				"className": "arifle_MX_Black_Holo_Pointer_F",
+				"name": "MX 6.5 mm (Black)"
+			},
+			"black_pointer": {
+				"className": "arifle_MX_Black_Pointer_F",
+				"name": "MX 6.5 mm (Black)"
+			},
+			"base": {
+				"className": "arifle_MX_F",
+				"name": "MX 6.5 mm"
+			},
+			"gl_aco": {
+				"className": "arifle_MX_GL_ACO_F",
+				"name": "MX 3GL 6.5 mm"
+			},
+			"gl_aco_pointer": {
+				"className": "arifle_MX_GL_ACO_pointer_F",
+				"name": "MX 3GL 6.5 mm"
+			},
+			"gl_black_aco": {
+				"className": "arifle_MX_GL_Black_ACO_F",
+				"name": "MX 3GL 6.5 mm (Black)"
+			},
+			"gl_black": {
+				"className": "arifle_MX_GL_Black_F",
+				"name": "MX 3GL 6.5 mm (Black)"
+			},
+			"gl_black_hamr_pointer": {
+				"className": "arifle_MX_GL_Black_Hamr_pointer_F",
+				"name": "MX 3GL 6.5 mm (Black)"
+			},
+			"gl_black_holo_pointer_snds": {
+				"className": "arifle_MX_GL_Black_Holo_Pointer_Snds_F",
+				"name": "MX 3GL 6.5 mm (Black)"
+			},
+			"gl": {
+				"className": "arifle_MX_GL_F",
+				"name": "MX 3GL 6.5 mm"
+			},
+			"gl_hamr_pointer": {
+				"className": "arifle_MX_GL_Hamr_pointer_F",
+				"name": "MX 3GL 6.5 mm"
+			},
+			"gl_holo_pointer_snds": {
+				"className": "arifle_MX_GL_Holo_pointer_snds_F",
+				"name": "MX 3GL 6.5 mm"
+			},
+			"gl_khk_aco": {
+				"className": "arifle_MX_GL_khk_ACO_F",
+				"name": "MX 3GL 6.5 mm (Khaki)"
+			},
+			"gl_khk": {
+				"className": "arifle_MX_GL_khk_F",
+				"name": "MX 3GL 6.5 mm (Khaki)"
+			},
+			"gl_khk_hamr_pointer": {
+				"className": "arifle_MX_GL_khk_Hamr_Pointer_F",
+				"name": "MX 3GL 6.5 mm (Khaki)"
+			},
+			"gl_khk_holo_pointer_snds": {
+				"className": "arifle_MX_GL_khk_Holo_Pointer_Snds_F",
+				"name": "MX 3GL 6.5 mm (Khaki)"
+			},
+			"hamr_pointer": {
+				"className": "arifle_MX_Hamr_pointer_F",
+				"name": "MX 6.5 mm"
+			},
+			"holo_pointer": {
+				"className": "arifle_MX_Holo_pointer_F",
+				"name": "MX 6.5 mm"
+			},
+			"khk_aco_pointer": {
+				"className": "arifle_MX_khk_ACO_Pointer_F",
+				"name": "MX 6.5 mm (Khaki)"
+			},
+			"khk_aco_pointer_snds": {
+				"className": "arifle_MX_khk_ACO_Pointer_Snds_F",
+				"name": "MX 6.5 mm (Khaki)"
+			},
+			"khk": {
+				"className": "arifle_MX_khk_F",
+				"name": "MX 6.5 mm (Khaki)"
+			},
+			"khk_hamr_pointer": {
+				"className": "arifle_MX_khk_Hamr_Pointer_F",
+				"name": "MX 6.5 mm (Khaki)"
+			},
+			"khk_hamr_pointer_snds": {
+				"className": "arifle_MX_khk_Hamr_Pointer_Snds_F",
+				"name": "MX 6.5 mm (Khaki)"
+			},
+			"khk_holo_pointer": {
+				"className": "arifle_MX_khk_Holo_Pointer_F",
+				"name": "MX 6.5 mm (Khaki)"
+			},
+			"khk_pointer": {
+				"className": "arifle_MX_khk_Pointer_F",
+				"name": "MX 6.5 mm (Khaki)"
+			},
+			"pointer": {
+				"className": "arifle_MX_pointer_F",
+				"name": "MX 6.5 mm"
+			},
+			"rco_pointer_snds": {
+				"className": "arifle_MX_RCO_pointer_snds_F",
+				"name": "MX 6.5 mm"
+			},
+			"sw_black": {
+				"className": "arifle_MX_SW_Black_F",
+				"name": "MX SW 6.5 mm (Black)"
+			},
+			"sw_black_hamr_pointer": {
+				"className": "arifle_MX_SW_Black_Hamr_pointer_F",
+				"name": "MX SW 6.5 mm (Black)"
+			},
+			"sw_black_pointer": {
+				"className": "arifle_MX_SW_Black_Pointer_F",
+				"name": "MX SW 6.5 mm (Black)"
+			},
+			"sw": {
+				"className": "arifle_MX_SW_F",
+				"name": "MX SW 6.5 mm"
+			},
+			"sw_hamr_pointer": {
+				"className": "arifle_MX_SW_Hamr_pointer_F",
+				"name": "MX SW 6.5 mm"
+			},
+			"sw_khk": {
+				"className": "arifle_MX_SW_khk_F",
+				"name": "MX SW 6.5 mm (Khaki)"
+			},
+			"sw_khk_pointer": {
+				"className": "arifle_MX_SW_khk_Pointer_F",
+				"name": "MX SW 6.5 mm (Khaki)"
+			},
+			"sw_pointer": {
+				"className": "arifle_MX_SW_pointer_F",
+				"name": "MX SW 6.5 mm"
+			}
+		},
+		"mxc": {
+			"aco": {
+				"className": "arifle_MXC_ACO_F",
+				"name": "MXC 6.5 mm"
+			},
+			"aco_pointer": {
+				"className": "arifle_MXC_ACO_pointer_F",
+				"name": "MXC 6.5 mm"
+			},
+			"aco_pointer_snds": {
+				"className": "arifle_MXC_ACO_pointer_snds_F",
+				"name": "MXC 6.5 mm"
+			},
+			"black_aco": {
+				"className": "arifle_MXC_Black_ACO_F",
+				"name": "MXC 6.5 mm (Black)"
+			},
+			"black_aco_pointer_snds": {
+				"className": "arifle_MXC_Black_ACO_Pointer_Snds_F",
+				"name": "MXC 6.5 mm (Black)"
+			},
+			"black": {
+				"className": "arifle_MXC_Black_F",
+				"name": "MXC 6.5 mm (Black)"
+			},
+			"black_holo_fl": {
+				"className": "arifle_MXC_Black_Holo_FL_F",
+				"name": "MXC 6.5 mm (Black)"
+			},
+			"black_holo_pointer": {
+				"className": "arifle_MXC_Black_Holo_Pointer_F",
+				"name": "MXC 6.5 mm (Black)"
+			},
+			"base": {
+				"className": "arifle_MXC_F",
+				"name": "MXC 6.5 mm"
+			},
+			"holo": {
+				"className": "arifle_MXC_Holo_F",
+				"name": "MXC 6.5 mm"
+			},
+			"holo_pointer": {
+				"className": "arifle_MXC_Holo_pointer_F",
+				"name": "MXC 6.5 mm"
+			},
+			"holo_pointer_snds": {
+				"className": "arifle_MXC_Holo_pointer_snds_F",
+				"name": "MXC 6.5 mm"
+			},
+			"khk_aco": {
+				"className": "arifle_MXC_khk_ACO_F",
+				"name": "MXC 6.5 mm (Khaki)"
+			},
+			"khk_aco_pointer_snds": {
+				"className": "arifle_MXC_khk_ACO_Pointer_Snds_F",
+				"name": "MXC 6.5 mm (Khaki)"
+			},
+			"khk": {
+				"className": "arifle_MXC_khk_F",
+				"name": "MXC 6.5 mm (Khaki)"
+			},
+			"khk_holo_pointer": {
+				"className": "arifle_MXC_khk_Holo_Pointer_F",
+				"name": "MXC 6.5 mm (Khaki)"
+			},
+			"sos_point_snds": {
+				"className": "arifle_MXC_SOS_point_snds_F",
+				"name": "MXC 6.5 mm"
+			}
+		},
+		"mxm": {
+			"black": {
+				"className": "arifle_MXM_Black_F",
+				"name": "MXM 6.5 mm (Black)"
+			},
+			"black_mos_pointer_bipod": {
+				"className": "arifle_MXM_Black_MOS_Pointer_Bipod_F",
+				"name": "MXM 6.5 mm (Black)"
+			},
+			"black_mos_pointer_bipod_snds": {
+				"className": "arifle_MXM_Black_MOS_Pointer_Bipod_Snds_F",
+				"name": "MXM 6.5 mm (Black)"
+			},
+			"dms": {
+				"className": "arifle_MXM_DMS_F",
+				"name": "MXM 6.5 mm"
+			},
+			"dms_lp_bi_snds": {
+				"className": "arifle_MXM_DMS_LP_BI_snds_F",
+				"name": "MXM 6.5 mm"
+			},
+			"base": {
+				"className": "arifle_MXM_F",
+				"name": "MXM 6.5 mm"
+			},
+			"hamr_lp_bi": {
+				"className": "arifle_MXM_Hamr_LP_BI_F",
+				"name": "MXM 6.5 mm"
+			},
+			"hamr_pointer": {
+				"className": "arifle_MXM_Hamr_pointer_F",
+				"name": "MXM 6.5 mm"
+			},
+			"khk": {
+				"className": "arifle_MXM_khk_F",
+				"name": "MXM 6.5 mm (Khaki)"
+			},
+			"khk_mos_pointer_bipod": {
+				"className": "arifle_MXM_khk_MOS_Pointer_Bipod_F",
+				"name": "MXM 6.5 mm (Khaki)"
+			},
+			"khk_mos_pointer_bipod_snds": {
+				"className": "arifle_MXM_khk_MOS_Pointer_Bipod_Snds_F",
+				"name": "MXM 6.5 mm (Khaki)"
+			},
+			"rco_pointer_snds": {
+				"className": "arifle_MXM_RCO_pointer_snds_F",
+				"name": "MXM 6.5 mm"
+			},
+			"sos_pointer": {
+				"className": "arifle_MXM_SOS_pointer_F",
+				"name": "MXM 6.5 mm"
+			}
+		},
+		"rpk12": {
+			"arid": {
+				"className": "arifle_RPK12_arid_F",
+				"name": "RPK-12 7.62 mm (Arid)"
+			},
+			"base": {
+				"className": "arifle_RPK12_F",
+				"name": "RPK-12 7.62 mm"
+			},
+			"lush_arco_pointer": {
+				"className": "arifle_RPK12_lush_arco_pointer_F",
+				"name": "RPK-12 7.62 mm (Lush)"
+			},
+			"lush_arco_snds_pointer": {
+				"className": "arifle_RPK12_lush_arco_snds_pointer_F",
+				"name": "RPK-12 7.62 mm (Lush)"
+			},
+			"lush": {
+				"className": "arifle_RPK12_lush_F",
+				"name": "RPK-12 7.62 mm (Lush)"
+			},
+			"lush_holo_snds_pointer": {
+				"className": "arifle_RPK12_lush_holo_snds_pointer_F",
+				"name": "RPK-12 7.62 mm (Lush)"
+			}
+		},
+		"sdar": {
+			"base": {
+				"className": "arifle_SDAR_F",
+				"name": "SDAR 5.56 mm"
+			}
+		},
+		"spar": {
+			"01_blk_aco_pointer": {
+				"className": "arifle_SPAR_01_blk_ACO_Pointer_F",
+				"name": "SPAR-16 5.56 mm (Black)"
+			},
+			"01_blk_erco_pointer": {
+				"className": "arifle_SPAR_01_blk_ERCO_Pointer_F",
+				"name": "SPAR-16 5.56 mm (Black)"
+			},
+			"01_blk": {
+				"className": "arifle_SPAR_01_blk_F",
+				"name": "SPAR-16 5.56 mm (Black)"
+			},
+			"01_gl_blk_aco_pointer": {
+				"className": "arifle_SPAR_01_GL_blk_ACO_Pointer_F",
+				"name": "SPAR-16 GL 5.56 mm (Black)"
+			},
+			"01_gl_blk_erco_pointer": {
+				"className": "arifle_SPAR_01_GL_blk_ERCO_Pointer_F",
+				"name": "SPAR-16 GL 5.56 mm (Black)"
+			},
+			"01_gl_blk": {
+				"className": "arifle_SPAR_01_GL_blk_F",
+				"name": "SPAR-16 GL 5.56 mm (Black)"
+			},
+			"01_gl_khk": {
+				"className": "arifle_SPAR_01_GL_khk_F",
+				"name": "SPAR-16 GL 5.56 mm (Khaki)"
+			},
+			"01_gl_snd": {
+				"className": "arifle_SPAR_01_GL_snd_F",
+				"name": "SPAR-16 GL 5.56 mm (Sand)"
+			},
+			"01_khk": {
+				"className": "arifle_SPAR_01_khk_F",
+				"name": "SPAR-16 5.56 mm (Khaki)"
+			},
+			"01_snd": {
+				"className": "arifle_SPAR_01_snd_F",
+				"name": "SPAR-16 5.56 mm (Sand)"
+			},
+			"02_blk_erco_pointer": {
+				"className": "arifle_SPAR_02_blk_ERCO_Pointer_F",
+				"name": "SPAR-16S 5.56 mm (Black)"
+			},
+			"02_blk": {
+				"className": "arifle_SPAR_02_blk_F",
+				"name": "SPAR-16S 5.56 mm (Black)"
+			},
+			"02_blk_pointer": {
+				"className": "arifle_SPAR_02_blk_Pointer_F",
+				"name": "SPAR-16S 5.56 mm (Black)"
+			},
+			"02_khk": {
+				"className": "arifle_SPAR_02_khk_F",
+				"name": "SPAR-16S 5.56 mm (Khaki)"
+			},
+			"02_snd": {
+				"className": "arifle_SPAR_02_snd_F",
+				"name": "SPAR-16S 5.56 mm (Sand)"
+			},
+			"03_blk": {
+				"className": "arifle_SPAR_03_blk_F",
+				"name": "SPAR-17 7.62 mm (Black)"
+			},
+			"03_blk_mos_pointer_bipod": {
+				"className": "arifle_SPAR_03_blk_MOS_Pointer_Bipod_F",
+				"name": "SPAR-17 7.62 mm (Black)"
+			},
+			"03_khk": {
+				"className": "arifle_SPAR_03_khk_F",
+				"name": "SPAR-17 7.62 mm (Khaki)"
+			},
+			"03_snd": {
+				"className": "arifle_SPAR_03_snd_F",
+				"name": "SPAR-17 7.62 mm (Sand)"
+			}
+		},
+		"trg20": {
+			"aco": {
+				"className": "arifle_TRG20_ACO_F",
+				"name": "TRG-20 5.56 mm"
+			},
+			"aco_flash": {
+				"className": "arifle_TRG20_ACO_Flash_F",
+				"name": "TRG-20 5.56 mm"
+			},
+			"aco_pointer": {
+				"className": "arifle_TRG20_ACO_pointer_F",
+				"name": "TRG-20 5.56 mm"
+			},
+			"base": {
+				"className": "arifle_TRG20_F",
+				"name": "TRG-20 5.56 mm"
+			},
+			"holo": {
+				"className": "arifle_TRG20_Holo_F",
+				"name": "TRG-20 5.56 mm"
+			}
+		},
+		"trg21": {
+			"aco_pointer": {
+				"className": "arifle_TRG21_ACO_pointer_F",
+				"name": "TRG-21 5.56 mm"
+			},
+			"arco_pointer": {
+				"className": "arifle_TRG21_ARCO_pointer_F",
+				"name": "TRG-21 5.56 mm"
+			},
+			"base": {
+				"className": "arifle_TRG21_F",
+				"name": "TRG-21 5.56 mm"
+			},
+			"gl_aco_pointer": {
+				"className": "arifle_TRG21_GL_ACO_pointer_F",
+				"name": "TRG-21 EGLM 5.56 mm"
+			},
+			"gl": {
+				"className": "arifle_TRG21_GL_F",
+				"name": "TRG-21 EGLM 5.56 mm"
+			},
+			"gl_mrco": {
+				"className": "arifle_TRG21_GL_MRCO_F",
+				"name": "TRG-21 EGLM 5.56 mm"
+			},
+			"mrco": {
+				"className": "arifle_TRG21_MRCO_F",
+				"name": "TRG-21 5.56 mm"
+			}
+		}
+	},
+	"b": {
+		"patrol": {
+			"soldier_autorifleman_weapon": {
+				"className": "B_Patrol_Soldier_Autorifleman_weapon_F",
+				"name": "MX SW 6.5 mm"
+			},
+			"soldier_carrier_weapon": {
+				"className": "B_Patrol_Soldier_Carrier_weapon_F",
+				"name": "MX 6.5 mm"
+			},
+			"soldier_heavygunner_weapon": {
+				"className": "B_Patrol_Soldier_HeavyGunner_weapon_F",
+				"name": "Zafir 7.62 mm"
+			},
+			"soldier_leader_weapon": {
+				"className": "B_Patrol_Soldier_Leader_weapon_F",
+				"name": "MX 3GL 6.5 mm"
+			},
+			"soldier_machinegunner_weapon": {
+				"className": "B_Patrol_Soldier_MachineGunner_weapon_F",
+				"name": "Mk200 6.5 mm"
+			},
+			"soldier_marksman_weapon": {
+				"className": "B_Patrol_Soldier_Marksman_weapon_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"soldier_medic_weapon": {
+				"className": "B_Patrol_Soldier_Medic_weapon_F",
+				"name": "MX 6.5 mm"
+			},
+			"soldier_operator_weapon": {
+				"className": "B_Patrol_Soldier_Operator_weapon_F",
+				"name": "MXC 6.5 mm"
+			},
+			"soldier_pistol": {
+				"className": "B_Patrol_Soldier_Pistol_F",
+				"name": "4-five .45 ACP"
+			},
+			"soldier_specialist_weapon": {
+				"className": "B_Patrol_Soldier_Specialist_weapon_F",
+				"name": "MX 6.5 mm"
+			}
+		}
+	},
+	"fakeweapon": {
+		"moduletracers": {
+			"base": {
+				"className": "FakeWeapon_moduleTracers_F",
+				"name": "Mk200 6.5 mm"
+			}
+		}
+	},
+	"hgun": {
+		"acpc2": {
+			"base": {
+				"className": "hgun_ACPC2_F",
+				"name": "ACP-C2 .45 ACP"
+			},
+			"snds": {
+				"className": "hgun_ACPC2_snds_F",
+				"name": "ACP-C2 .45 ACP"
+			}
+		},
+		"esd": {
+			"01_antenna_01": {
+				"className": "hgun_esd_01_antenna_01_F",
+				"name": "Spectrum Device"
+			},
+			"01_antenna_02": {
+				"className": "hgun_esd_01_antenna_02_F",
+				"name": "Spectrum Device"
+			},
+			"01_antenna_03": {
+				"className": "hgun_esd_01_antenna_03_F",
+				"name": "Spectrum Device"
+			},
+			"01_base": {
+				"className": "hgun_esd_01_base_F"
+			},
+			"01_dummy": {
+				"className": "hgun_esd_01_dummy_F",
+				"name": "Spectrum Device"
+			},
+			"01": {
+				"className": "hgun_esd_01_F",
+				"name": "Spectrum Device"
+			}
+		},
+		"p07": {
+			"blk": {
+				"className": "hgun_P07_blk_F",
+				"name": "P07 9 mm (Black)"
+			},
+			"blk_snds": {
+				"className": "hgun_P07_blk_Snds_F",
+				"name": "P07 9 mm (Black)"
+			},
+			"base": {
+				"className": "hgun_P07_F",
+				"name": "P07 9 mm"
+			},
+			"khk": {
+				"className": "hgun_P07_khk_F",
+				"name": "P07 9 mm (Khaki)"
+			},
+			"khk_snds": {
+				"className": "hgun_P07_khk_Snds_F",
+				"name": "P07 9 mm (Khaki)"
+			},
+			"snds": {
+				"className": "hgun_P07_snds_F",
+				"name": "P07 9 mm"
+			}
+		},
+		"pdw2000": {
+			"base": {
+				"className": "hgun_PDW2000_F",
+				"name": "PDW2000 9 mm"
+			},
+			"holo": {
+				"className": "hgun_PDW2000_Holo_F",
+				"name": "PDW2000 9 mm"
+			},
+			"holo_snds": {
+				"className": "hgun_PDW2000_Holo_snds_F",
+				"name": "PDW2000 9 mm"
+			},
+			"snds": {
+				"className": "hgun_PDW2000_snds_F",
+				"name": "PDW2000 9 mm"
+			}
+		},
+		"pistol": {
+			"01": {
+				"className": "hgun_Pistol_01_F",
+				"name": "PM 9 mm"
+			},
+			"heavy_01": {
+				"className": "hgun_Pistol_heavy_01_F",
+				"name": "4-five .45 ACP"
+			},
+			"heavy_01_green": {
+				"className": "hgun_Pistol_heavy_01_green_F",
+				"name": "4-five .45 ACP (Green)"
+			},
+			"heavy_01_green_snds": {
+				"className": "hgun_Pistol_heavy_01_green_snds_F",
+				"name": "4-five .45 ACP (Green)"
+			},
+			"heavy_01_mrd": {
+				"className": "hgun_Pistol_heavy_01_MRD_F",
+				"name": "4-five .45 ACP"
+			},
+			"heavy_01_snds": {
+				"className": "hgun_Pistol_heavy_01_snds_F",
+				"name": "4-five .45 ACP"
+			},
+			"heavy_02": {
+				"className": "hgun_Pistol_heavy_02_F",
+				"name": "Zubr .45 ACP"
+			},
+			"heavy_02_yorris": {
+				"className": "hgun_Pistol_heavy_02_Yorris_F",
+				"name": "Zubr .45 ACP"
+			},
+			"signal": {
+				"className": "hgun_Pistol_Signal_F",
+				"name": "Starter Pistol"
+			}
+		},
+		"rook40": {
+			"base": {
+				"className": "hgun_Rook40_F",
+				"name": "Rook-40 9 mm"
+			},
+			"snds": {
+				"className": "hgun_Rook40_snds_F",
+				"name": "Rook-40 9 mm"
+			}
+		}
+	},
+	"hmg": {
+		"m2": {
+			"mounted": {
+				"className": "HMG_M2_Mounted",
+				"name": "M2 HMG .50"
+			}
+		}
+	},
+	"launch": {
+		"b": {
+			"titan": {
+				"className": "launch_B_Titan_F",
+				"name": "Titan MPRL (Sand)"
+			},
+			"titan_olive": {
+				"className": "launch_B_Titan_olive_F",
+				"name": "Titan MPRL (Olive)"
+			},
+			"titan_short": {
+				"className": "launch_B_Titan_short_F",
+				"name": "Titan MPRL Compact (Sand)"
+			},
+			"titan_short_tna": {
+				"className": "launch_B_Titan_short_tna_F",
+				"name": "Titan MPRL Compact (Tropic)"
+			},
+			"titan_tna": {
+				"className": "launch_B_Titan_tna_F",
+				"name": "Titan MPRL (Tropic)"
+			}
+		},
+		"i": {
+			"titan_eaf": {
+				"className": "launch_I_Titan_eaf_F",
+				"name": "Titan MPRL (Geometric)"
+			},
+			"titan": {
+				"className": "launch_I_Titan_F",
+				"name": "Titan MPRL (Digital)"
+			},
+			"titan_short": {
+				"className": "launch_I_Titan_short_F",
+				"name": "Titan MPRL Compact (Olive)"
+			}
+		},
+		"mraws": {
+			"green": {
+				"className": "launch_MRAWS_green_F",
+				"name": "MAAWS Mk4 Mod 1 (Green)"
+			},
+			"green_rail": {
+				"className": "launch_MRAWS_green_rail_F",
+				"name": "MAAWS Mk4 Mod 0 (Green)"
+			},
+			"olive": {
+				"className": "launch_MRAWS_olive_F",
+				"name": "MAAWS Mk4 Mod 1 (Olive)"
+			},
+			"olive_rail": {
+				"className": "launch_MRAWS_olive_rail_F",
+				"name": "MAAWS Mk4 Mod 0 (Olive)"
+			},
+			"sand": {
+				"className": "launch_MRAWS_sand_F",
+				"name": "MAAWS Mk4 Mod 1 (Sand)"
+			},
+			"sand_rail": {
+				"className": "launch_MRAWS_sand_rail_F",
+				"name": "MAAWS Mk4 Mod 0 (Sand)"
+			}
+		},
+		"nlaw": {
+			"base": {
+				"className": "launch_NLAW_F",
+				"name": "PCML"
+			}
+		},
+		"o": {
+			"titan": {
+				"className": "launch_O_Titan_F",
+				"name": "Titan MPRL (Hex)"
+			},
+			"titan_ghex": {
+				"className": "launch_O_Titan_ghex_F",
+				"name": "Titan MPRL (Green Hex)"
+			},
+			"titan_short": {
+				"className": "launch_O_Titan_short_F",
+				"name": "Titan MPRL Compact (Coyote)"
+			},
+			"titan_short_ghex": {
+				"className": "launch_O_Titan_short_ghex_F",
+				"name": "Titan MPRL Compact (Green Hex)"
+			},
+			"vorona_brown": {
+				"className": "launch_O_Vorona_brown_F",
+				"name": "9M135 Vorona (Brown)"
+			},
+			"vorona_green": {
+				"className": "launch_O_Vorona_green_F",
+				"name": "9M135 Vorona (Green)"
+			}
+		},
+		"rpg32": {
+			"camo": {
+				"className": "launch_RPG32_camo_F",
+				"name": "RPG-42 (Camo)"
+			},
+			"base": {
+				"className": "launch_RPG32_F",
+				"name": "RPG-42 Alamut"
+			},
+			"ghex": {
+				"className": "launch_RPG32_ghex_F",
+				"name": "RPG-42 Alamut (Green Hex)"
+			},
+			"green": {
+				"className": "launch_RPG32_green_F",
+				"name": "RPG-42 (Green)"
+			}
+		},
+		"rpg7": {
+			"base": {
+				"className": "launch_RPG7_F",
+				"name": "RPG-7"
+			}
+		},
+		"titan": {
+			"base": {
+				"className": "launch_Titan_F",
+				"name": "Titan MPRL"
+			},
+			"short": {
+				"className": "launch_Titan_short_F",
+				"name": "Titan MPRL Compact"
+			}
+		}
+	},
+	"lmg": {
+		"03": {
+			"base": {
+				"className": "LMG_03_F",
+				"name": "LIM-85 5.56 mm"
+			},
+			"vehicle": {
+				"className": "LMG_03_Vehicle_F",
+				"name": "LIM-85 5.56 mm"
+			}
+		},
+		"mk200": {
+			"bi": {
+				"className": "LMG_Mk200_BI_F",
+				"name": "Mk200 6.5 mm"
+			},
+			"black_aco_pointer": {
+				"className": "LMG_Mk200_black_ACO_pointer_F",
+				"name": "Mk200 6.5 mm (Black)"
+			},
+			"black_bi": {
+				"className": "LMG_Mk200_black_BI_F",
+				"name": "Mk200 6.5 mm (Black)"
+			},
+			"black": {
+				"className": "LMG_Mk200_black_F",
+				"name": "Mk200 6.5 mm (Black)"
+			},
+			"black_lp_bi": {
+				"className": "LMG_Mk200_black_LP_BI_F",
+				"name": "Mk200 6.5 mm (Black)"
+			},
+			"base": {
+				"className": "LMG_Mk200_F",
+				"name": "Mk200 6.5 mm"
+			},
+			"lp_bi": {
+				"className": "LMG_Mk200_LP_BI_F",
+				"name": "Mk200 6.5 mm"
+			},
+			"mrco": {
+				"className": "LMG_Mk200_MRCO_F",
+				"name": "Mk200 6.5 mm"
+			},
+			"pointer": {
+				"className": "LMG_Mk200_pointer_F",
+				"name": "Mk200 6.5 mm"
+			}
+		},
+		"zafir": {
+			"arco": {
+				"className": "LMG_Zafir_ARCO_F",
+				"name": "Zafir 7.62 mm"
+			},
+			"base": {
+				"className": "LMG_Zafir_F",
+				"name": "Zafir 7.62 mm"
+			},
+			"pointer": {
+				"className": "LMG_Zafir_pointer_F",
+				"name": "Zafir 7.62 mm"
+			}
+		}
+	},
+	"mmg": {
+		"01": {
+			"hex_arco_lp": {
+				"className": "MMG_01_hex_ARCO_LP_F",
+				"name": "Navid 9.3 mm (Hex)"
+			},
+			"hex": {
+				"className": "MMG_01_hex_F",
+				"name": "Navid 9.3 mm (Hex)"
+			},
+			"tan": {
+				"className": "MMG_01_tan_F",
+				"name": "Navid 9.3 mm (Tan)"
+			}
+		},
+		"02": {
+			"black": {
+				"className": "MMG_02_black_F",
+				"name": "SPMG .338 (Black)"
+			},
+			"black_rco_bi": {
+				"className": "MMG_02_black_RCO_BI_F",
+				"name": "SPMG .338 (Black)"
+			},
+			"camo": {
+				"className": "MMG_02_camo_F",
+				"name": "SPMG .338 (MTP)"
+			},
+			"sand": {
+				"className": "MMG_02_sand_F",
+				"name": "SPMG .338 (Sand)"
+			},
+			"sand_rco_lp": {
+				"className": "MMG_02_sand_RCO_LP_F",
+				"name": "SPMG .338 (Sand)"
+			}
+		}
+	},
+	"sgun": {
+		"huntershotgun": {
+			"01": {
+				"className": "sgun_HunterShotgun_01_F",
+				"name": "Kozlice 12G"
+			},
+			"01_sawedoff": {
+				"className": "sgun_HunterShotgun_01_sawedoff_F",
+				"name": "Kozlice 12G (Sawed-Off)"
+			}
+		}
+	},
+	"smg": {
+		"01": {
+			"aco": {
+				"className": "SMG_01_ACO_F",
+				"name": "Vermin SMG .45 ACP"
+			},
+			"base": {
+				"className": "SMG_01_F",
+				"name": "Vermin SMG .45 ACP"
+			},
+			"holo": {
+				"className": "SMG_01_Holo_F",
+				"name": "Vermin SMG .45 ACP"
+			},
+			"holo_pointer_snds": {
+				"className": "SMG_01_Holo_pointer_snds_F",
+				"name": "Vermin SMG .45 ACP"
+			}
+		},
+		"02": {
+			"aco": {
+				"className": "SMG_02_ACO_F",
+				"name": "Sting 9 mm"
+			},
+			"arco_pointg": {
+				"className": "SMG_02_ARCO_pointg_F",
+				"name": "Sting 9 mm"
+			},
+			"base": {
+				"className": "SMG_02_F",
+				"name": "Sting 9 mm"
+			},
+			"flash": {
+				"className": "SMG_02_flash_F",
+				"name": "Sting 9 mm"
+			}
+		},
+		"03": {
+			"black": {
+				"className": "SMG_03_black",
+				"name": "ADR-97 5.7 mm (Black)"
+			},
+			"camo": {
+				"className": "SMG_03_camo",
+				"name": "ADR-97 5.7 mm (Camo)"
+			},
+			"hex": {
+				"className": "SMG_03_hex",
+				"name": "ADR-97 5.7 mm (Hex)"
+			},
+			"khaki": {
+				"className": "SMG_03_khaki",
+				"name": "ADR-97 5.7 mm (Khaki)"
+			},
+			"tr_black": {
+				"className": "SMG_03_TR_black",
+				"name": "ADR-97 TR 5.7 mm (Black)"
+			},
+			"tr_camo": {
+				"className": "SMG_03_TR_camo",
+				"name": "ADR-97 TR 5.7 mm (Camo)"
+			},
+			"tr_hex": {
+				"className": "SMG_03_TR_hex",
+				"name": "ADR-97 TR 5.7 mm (Hex)"
+			},
+			"tr_khaki": {
+				"className": "SMG_03_TR_khaki",
+				"name": "ADR-97 TR 5.7 mm (Khaki)"
+			}
+		},
+		"03c": {
+			"black": {
+				"className": "SMG_03C_black",
+				"name": "ADR-97C 5.7 mm (Black)"
+			},
+			"camo": {
+				"className": "SMG_03C_camo",
+				"name": "ADR-97C 5.7 mm (Camo)"
+			},
+			"hex": {
+				"className": "SMG_03C_hex",
+				"name": "ADR-97C 5.7 mm (Hex)"
+			},
+			"khaki": {
+				"className": "SMG_03C_khaki",
+				"name": "ADR-97C 5.7 mm (Khaki)"
+			},
+			"tr_black": {
+				"className": "SMG_03C_TR_black",
+				"name": "ADR-97C TR 5.7 mm (Black)"
+			},
+			"tr_camo": {
+				"className": "SMG_03C_TR_camo",
+				"name": "ADR-97C TR 5.7 mm (Camo)"
+			},
+			"tr_hex": {
+				"className": "SMG_03C_TR_hex",
+				"name": "ADR-97C TR 5.7 mm (Hex)"
+			},
+			"tr_khaki": {
+				"className": "SMG_03C_TR_khaki",
+				"name": "ADR-97C TR 5.7 mm (Khaki)"
+			}
+		},
+		"05": {
+			"base": {
+				"className": "SMG_05_F",
+				"name": "Protector 9 mm"
+			}
+		}
+	},
+	"srifle": {
+		"dmr": {
+			"01_aco": {
+				"className": "srifle_DMR_01_ACO_F",
+				"name": "Rahim 7.62 mm"
+			},
+			"01_arco": {
+				"className": "srifle_DMR_01_ARCO_F",
+				"name": "Rahim 7.62 mm"
+			},
+			"01_dms_bi": {
+				"className": "srifle_DMR_01_DMS_BI_F",
+				"name": "Rahim 7.62 mm"
+			},
+			"01_dms": {
+				"className": "srifle_DMR_01_DMS_F",
+				"name": "Rahim 7.62 mm"
+			},
+			"01_dms_snds_bi": {
+				"className": "srifle_DMR_01_DMS_snds_BI_F",
+				"name": "Rahim 7.62 mm"
+			},
+			"01_dms_snds": {
+				"className": "srifle_DMR_01_DMS_snds_F",
+				"name": "Rahim 7.62 mm"
+			},
+			"01": {
+				"className": "srifle_DMR_01_F",
+				"name": "Rahim 7.62 mm"
+			},
+			"01_mrco": {
+				"className": "srifle_DMR_01_MRCO_F",
+				"name": "Rahim 7.62 mm"
+			},
+			"01_sos": {
+				"className": "srifle_DMR_01_SOS_F",
+				"name": "Rahim 7.62 mm"
+			},
+			"02_aco": {
+				"className": "srifle_DMR_02_ACO_F",
+				"name": "MAR-10 .338 (Black)"
+			},
+			"02_arco": {
+				"className": "srifle_DMR_02_ARCO_F",
+				"name": "MAR-10 .338 (Black)"
+			},
+			"02_camo_ams_lp": {
+				"className": "srifle_DMR_02_camo_AMS_LP_F",
+				"name": "MAR-10 .338 (Camo)"
+			},
+			"02_camo": {
+				"className": "srifle_DMR_02_camo_F",
+				"name": "MAR-10 .338 (Camo)"
+			},
+			"02_dms": {
+				"className": "srifle_DMR_02_DMS_F",
+				"name": "MAR-10 .338 (Black)"
+			},
+			"02": {
+				"className": "srifle_DMR_02_F",
+				"name": "MAR-10 .338 (Black)"
+			},
+			"02_mrco": {
+				"className": "srifle_DMR_02_MRCO_F",
+				"name": "MAR-10 .338 (Black)"
+			},
+			"02_sniper_ams_lp_s": {
+				"className": "srifle_DMR_02_sniper_AMS_LP_S_F",
+				"name": "MAR-10 .338 (Sand)"
+			},
+			"02_sniper": {
+				"className": "srifle_DMR_02_sniper_F",
+				"name": "MAR-10 .338 (Sand)"
+			},
+			"02_sos": {
+				"className": "srifle_DMR_02_SOS_F",
+				"name": "MAR-10 .338 (Black)"
+			},
+			"03_aco": {
+				"className": "srifle_DMR_03_ACO_F",
+				"name": "Mk-I EMR 7.62 mm (Black)"
+			},
+			"03_ams": {
+				"className": "srifle_DMR_03_AMS_F",
+				"name": "Mk-I EMR 7.62 mm (Black)"
+			},
+			"03_arco": {
+				"className": "srifle_DMR_03_ARCO_F",
+				"name": "Mk-I EMR 7.62 mm (Black)"
+			},
+			"03_dms": {
+				"className": "srifle_DMR_03_DMS_F",
+				"name": "Mk-I EMR 7.62 mm (Black)"
+			},
+			"03_dms_snds": {
+				"className": "srifle_DMR_03_DMS_snds_F",
+				"name": "Mk-I EMR 7.62 mm (Black)"
+			},
+			"03": {
+				"className": "srifle_DMR_03_F",
+				"name": "Mk-I EMR 7.62 mm (Black)"
+			},
+			"03_khaki": {
+				"className": "srifle_DMR_03_khaki_F",
+				"name": "Mk-I EMR 7.62 mm (Khaki)"
+			},
+			"03_mrco": {
+				"className": "srifle_DMR_03_MRCO_F",
+				"name": "Mk-I EMR 7.62 mm (Black)"
+			},
+			"03_multicam": {
+				"className": "srifle_DMR_03_multicam_F",
+				"name": "Mk-I EMR 7.62 mm (Camo)"
+			},
+			"03_sos": {
+				"className": "srifle_DMR_03_SOS_F",
+				"name": "Mk-I EMR 7.62 mm (Black)"
+			},
+			"03_tan_ams_lp": {
+				"className": "srifle_DMR_03_tan_AMS_LP_F",
+				"name": "Mk-I EMR 7.62 mm (Sand)"
+			},
+			"03_tan": {
+				"className": "srifle_DMR_03_tan_F",
+				"name": "Mk-I EMR 7.62 mm (Sand)"
+			},
+			"03_woodland": {
+				"className": "srifle_DMR_03_woodland_F",
+				"name": "Mk-I EMR 7.62 mm (Woodland)"
+			},
+			"04_aco": {
+				"className": "srifle_DMR_04_ACO_F",
+				"name": "ASP-1 Kir 12.7 mm (Black)"
+			},
+			"04_arco": {
+				"className": "srifle_DMR_04_ARCO_F",
+				"name": "ASP-1 Kir 12.7 mm (Black)"
+			},
+			"04_dms": {
+				"className": "srifle_DMR_04_DMS_F",
+				"name": "ASP-1 Kir 12.7 mm (Black)"
+			},
+			"04_dms_weathered_kir_f": {
+				"className": "srifle_DMR_04_DMS_weathered_Kir_F_F",
+				"name": "ASP-1 Kir 12.7 mm (Black)"
+			},
+			"04": {
+				"className": "srifle_DMR_04_F",
+				"name": "ASP-1 Kir 12.7 mm (Black)"
+			},
+			"04_mrco": {
+				"className": "srifle_DMR_04_MRCO_F",
+				"name": "ASP-1 Kir 12.7 mm (Black)"
+			},
+			"04_ns_lp": {
+				"className": "srifle_DMR_04_NS_LP_F",
+				"name": "ASP-1 Kir 12.7 mm (Black)"
+			},
+			"04_sos": {
+				"className": "srifle_DMR_04_SOS_F",
+				"name": "ASP-1 Kir 12.7 mm (Black)"
+			},
+			"04_tan": {
+				"className": "srifle_DMR_04_Tan_F",
+				"name": "ASP-1 Kir 12.7 mm (Tan)"
+			},
+			"05_aco": {
+				"className": "srifle_DMR_05_ACO_F",
+				"name": "Cyrus 9.3 mm (Black)"
+			},
+			"05_arco": {
+				"className": "srifle_DMR_05_ARCO_F",
+				"name": "Cyrus 9.3 mm (Black)"
+			},
+			"05_blk": {
+				"className": "srifle_DMR_05_blk_F",
+				"name": "Cyrus 9.3 mm (Black)"
+			},
+			"05_dms": {
+				"className": "srifle_DMR_05_DMS_F",
+				"name": "Cyrus 9.3 mm (Black)"
+			},
+			"05_dms_snds": {
+				"className": "srifle_DMR_05_DMS_snds_F",
+				"name": "Cyrus 9.3 mm (Black)"
+			},
+			"05_hex": {
+				"className": "srifle_DMR_05_hex_F",
+				"name": "Cyrus 9.3 mm (Hex)"
+			},
+			"05_khs_lp": {
+				"className": "srifle_DMR_05_KHS_LP_F",
+				"name": "Cyrus 9.3 mm (Black)"
+			},
+			"05_mrco": {
+				"className": "srifle_DMR_05_MRCO_F",
+				"name": "Cyrus 9.3 mm (Black)"
+			},
+			"05_sos": {
+				"className": "srifle_DMR_05_SOS_F",
+				"name": "Cyrus 9.3 mm (Black)"
+			},
+			"05_tan": {
+				"className": "srifle_DMR_05_tan_f",
+				"name": "Cyrus 9.3 mm (Tan)"
+			},
+			"06_camo": {
+				"className": "srifle_DMR_06_camo_F",
+				"name": "Mk14 7.62 mm (Camo)"
+			},
+			"06_camo_khs": {
+				"className": "srifle_DMR_06_camo_khs_F",
+				"name": "Mk14 7.62 mm (Camo)"
+			},
+			"06_hunter": {
+				"className": "srifle_DMR_06_hunter_F",
+				"name": "Mk14 7.62 mm (Classic)"
+			},
+			"06_hunter_khs": {
+				"className": "srifle_DMR_06_hunter_khs_F",
+				"name": "Mk14 7.62 mm (Classic)"
+			},
+			"06_olive": {
+				"className": "srifle_DMR_06_olive_F",
+				"name": "Mk14 7.62 mm (Olive)"
+			},
+			"07_blk_dms": {
+				"className": "srifle_DMR_07_blk_DMS_F",
+				"name": "CMR-76 6.5 mm (Black)"
+			},
+			"07_blk_dms_snds": {
+				"className": "srifle_DMR_07_blk_DMS_Snds_F",
+				"name": "CMR-76 6.5 mm (Black)"
+			},
+			"07_blk": {
+				"className": "srifle_DMR_07_blk_F",
+				"name": "CMR-76 6.5 mm (Black)"
+			},
+			"07_blk_f_arco_flash": {
+				"className": "srifle_DMR_07_blk_F_arco_flash_F",
+				"name": "CMR-76 6.5 mm (Black)"
+			},
+			"07_ghex": {
+				"className": "srifle_DMR_07_ghex_F",
+				"name": "CMR-76 6.5 mm (Green Hex)"
+			},
+			"07_hex": {
+				"className": "srifle_DMR_07_hex_F",
+				"name": "CMR-76 6.5 mm (Hex)"
+			}
+		},
+		"ebr": {
+			"aco": {
+				"className": "srifle_EBR_ACO_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"arco_pointer": {
+				"className": "srifle_EBR_ARCO_pointer_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"arco_pointer_snds": {
+				"className": "srifle_EBR_ARCO_pointer_snds_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"dms": {
+				"className": "srifle_EBR_DMS_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"dms_pointer_snds": {
+				"className": "srifle_EBR_DMS_pointer_snds_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"base": {
+				"className": "srifle_EBR_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"hamr_pointer": {
+				"className": "srifle_EBR_Hamr_pointer_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"mrco_lp_bi": {
+				"className": "srifle_EBR_MRCO_LP_BI_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"mrco_pointer": {
+				"className": "srifle_EBR_MRCO_pointer_F",
+				"name": "Mk18 ABR 7.62 mm"
+			},
+			"sos": {
+				"className": "srifle_EBR_SOS_F",
+				"name": "Mk18 ABR 7.62 mm"
+			}
+		},
+		"gm6": {
+			"camo": {
+				"className": "srifle_GM6_camo_F",
+				"name": "GM6 Lynx 12.7 mm (Camo)"
+			},
+			"camo_lrps": {
+				"className": "srifle_GM6_camo_LRPS_F",
+				"name": "GM6 Lynx 12.7 mm (Camo)"
+			},
+			"camo_sos": {
+				"className": "srifle_GM6_camo_SOS_F",
+				"name": "GM6 Lynx 12.7 mm (Camo)"
+			},
+			"base": {
+				"className": "srifle_GM6_F",
+				"name": "GM6 Lynx 12.7 mm"
+			},
+			"ghex": {
+				"className": "srifle_GM6_ghex_F",
+				"name": "GM6 Lynx 12.7 mm (Green Hex)"
+			},
+			"ghex_lrps": {
+				"className": "srifle_GM6_ghex_LRPS_F",
+				"name": "GM6 Lynx 12.7 mm (Green Hex)"
+			},
+			"lrps": {
+				"className": "srifle_GM6_LRPS_F",
+				"name": "GM6 Lynx 12.7 mm"
+			},
+			"sos": {
+				"className": "srifle_GM6_SOS_F",
+				"name": "GM6 Lynx 12.7 mm"
+			}
+		},
+		"lrr": {
+			"camo": {
+				"className": "srifle_LRR_camo_F",
+				"name": "M320 LRR .408 (Camo)"
+			},
+			"camo_lrps": {
+				"className": "srifle_LRR_camo_LRPS_F",
+				"name": "M320 LRR .408 (Camo)"
+			},
+			"camo_sos": {
+				"className": "srifle_LRR_camo_SOS_F",
+				"name": "M320 LRR .408 (Camo)"
+			},
+			"base": {
+				"className": "srifle_LRR_F",
+				"name": "M320 LRR .408"
+			},
+			"lrps": {
+				"className": "srifle_LRR_LRPS_F",
+				"name": "M320 LRR .408"
+			},
+			"sos": {
+				"className": "srifle_LRR_SOS_F",
+				"name": "M320 LRR .408"
+			},
+			"tna": {
+				"className": "srifle_LRR_tna_F",
+				"name": "M320 LRR .408 (Tropic)"
+			},
+			"tna_lrps": {
+				"className": "srifle_LRR_tna_LRPS_F",
+				"name": "M320 LRR .408 (Tropic)"
+			}
+		}
+	}
 }

@@ -1,14 +1,14 @@
 {
-  "compilerOptions": {
-    "strict": true,
-    "noLib": true,
-    "skipLibCheck": true,
-    "types": [],
-    "target": "ESNext",
-    "module": "Preserve",
-    "moduleResolution": "bundler",
-    "verbatimModuleSyntax": true
-  },
-  "files": ["./globals.d.ts"],
-  "include": ["**/*.ts"],
+	"compilerOptions": {
+		"strict": true,
+		"noLib": true,
+		"skipLibCheck": true,
+		"types": [],
+		"target": "ESNext",
+		"module": "Preserve",
+		"moduleResolution": "bundler",
+		"verbatimModuleSyntax": true
+	},
+	"files": ["./globals.d.ts"],
+	"include": ["**/*.ts"]
 }

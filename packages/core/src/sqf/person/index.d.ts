@@ -1,2 +1,2 @@
-export * from './backpack';
-export * from './inventory';
+export * from "./backpack";
+export * from "./inventory";

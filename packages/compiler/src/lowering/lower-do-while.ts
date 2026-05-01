@@ -15,41 +15,41 @@
 
 import type { DoStatement, Expression, Statement } from "ts-morph";
 import type {
-  SqfExpression,
-  SqfIfStatement,
-  SqfStatement,
-  SqfUnaryExpression,
-  SqfWhileStatement,
+	SqfExpression,
+	SqfIfStatement,
+	SqfStatement,
+	SqfUnaryExpression,
+	SqfWhileStatement,
 } from "../ir/nodes";
 
 export interface DoWhileLoweringContext {
-  readonly lowerExpression: (expr: Expression) => SqfExpression;
-  readonly lowerStatementBlock: (stmt: Statement) => readonly SqfStatement[];
+	readonly lowerExpression: (expr: Expression) => SqfExpression;
+	readonly lowerStatementBlock: (stmt: Statement) => readonly SqfStatement[];
 }
 
 export function lowerDoWhileStatement(
-  statement: DoStatement,
-  ctx: DoWhileLoweringContext,
+	statement: DoStatement,
+	ctx: DoWhileLoweringContext,
 ): SqfStatement {
-  const body = ctx.lowerStatementBlock(statement.getStatement());
-  const condition = ctx.lowerExpression(statement.getExpression());
+	const body = ctx.lowerStatementBlock(statement.getStatement());
+	const condition = ctx.lowerExpression(statement.getExpression());
 
-  const negatedCondition: SqfUnaryExpression = {
-    kind: "UnaryExpression",
-    operator: "!",
-    operand: condition,
-  };
+	const negatedCondition: SqfUnaryExpression = {
+		kind: "UnaryExpression",
+		operator: "!",
+		operand: condition,
+	};
 
-  const exitGuard: SqfIfStatement = {
-    kind: "IfStatement",
-    condition: negatedCondition,
-    thenStatements: [{ kind: "BreakStatement" }],
-    elseStatements: [],
-  };
+	const exitGuard: SqfIfStatement = {
+		kind: "IfStatement",
+		condition: negatedCondition,
+		thenStatements: [{ kind: "BreakStatement" }],
+		elseStatements: [],
+	};
 
-  return {
-    kind: "WhileStatement",
-    condition: { kind: "Literal", text: "true" },
-    body: [...body, exitGuard],
-  } satisfies SqfWhileStatement;
+	return {
+		kind: "WhileStatement",
+		condition: { kind: "Literal", text: "true" },
+		body: [...body, exitGuard],
+	} satisfies SqfWhileStatement;
 }

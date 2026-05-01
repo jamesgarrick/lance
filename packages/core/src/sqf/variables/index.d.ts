@@ -1,1 +1,1 @@
-export * from './namespaces';
+export * from "./namespaces";

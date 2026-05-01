@@ -14,7 +14,11 @@ import type { WeaponClassName } from "../../cfg/cfg-weapons-weapons";
  *
  * @see {@link https://community.bistudio.com/wiki/addBackpackCargo addBackpackCargo}
  */
-export function addBackpackCargo(object: SqfObject, backpackClass: BackpackClassName, count: number): SqfCommand;
+export function addBackpackCargo(
+	object: SqfObject,
+	backpackClass: BackpackClassName,
+	count: number,
+): SqfCommand;
 
 /**
  * Add backpack(s) to the cargo space of vehicle.
@@ -29,9 +33,9 @@ export function addBackpackCargo(object: SqfObject, backpackClass: BackpackClass
  * @see {@link https://community.bistudio.com/wiki/addBackpackCargoGlobal addBackpackCargoGlobal}
  */
 export function addBackpackCargoGlobal(
-  object: SqfObject,
-  backpackClass: BackpackClassName,
-  count: number
+	object: SqfObject,
+	backpackClass: BackpackClassName,
+	count: number,
 ): SqfCommand;
 
 /**
@@ -46,8 +50,11 @@ export function addBackpackCargoGlobal(
  *
  * @see {@link https://community.bistudio.com/wiki/addMagazineCargo addMagazineCargo}
  */
-export function addMagazineCargo(object: SqfObject, magazineClass: MagazineClassName, count: SqfString): SqfCommand;
-
+export function addMagazineCargo(
+	object: SqfObject,
+	magazineClass: MagazineClassName,
+	count: SqfString,
+): SqfCommand;
 
 /**
  * Add magazines to the cargo space of vehicles, which can be taken out by infantry units.
@@ -62,9 +69,9 @@ export function addMagazineCargo(object: SqfObject, magazineClass: MagazineClass
  * @see {@link https://community.bistudio.com/wiki/addMagazineCargoGlobal addMagazineCargoGlobal}
  */
 export function addMagazineCargoGlobal(
-  object: SqfObject,
-  magazineClass: MagazineClassName,
-  count: SqfString
+	object: SqfObject,
+	magazineClass: MagazineClassName,
+	count: SqfString,
 ): SqfCommand;
 
 /**
@@ -88,7 +95,11 @@ export function weaponCargo(object: Object): Array<WeaponClassName>;
  *
  * @see {@link https://community.bistudio.com/wiki/addWeaponCargo addWeaponCargo}
  */
-export function addWeaponCargo(unit: Unit, weaponClass: WeaponClassName, count: SqfString): SqfCommand;
+export function addWeaponCargo(
+	unit: Unit,
+	weaponClass: WeaponClassName,
+	count: SqfString,
+): SqfCommand;
 
 /**
  * Add weapons to the cargo space of vehicles, which can be taken out by infantry units.
@@ -102,7 +113,11 @@ export function addWeaponCargo(unit: Unit, weaponClass: WeaponClassName, count: 
  *
  * @see {@link https://community.bistudio.com/wiki/addWeaponCargoGlobal addWeaponCargoGlobal}
  */
-export function addWeaponCargoGlobal(unit: Unit, weaponClass: WeaponClassName, count: SqfString): SqfCommand;
+export function addWeaponCargoGlobal(
+	unit: Unit,
+	weaponClass: WeaponClassName,
+	count: SqfString,
+): SqfCommand;
 
 /**
  * Get array with backpacks from a container.

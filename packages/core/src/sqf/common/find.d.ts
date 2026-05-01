@@ -7,7 +7,11 @@
  * @returns The zero-based index of the found match, or -1 if not found.
  * * @see {@link https://community.bistudio.com/wiki/find find}
  */
-export function find(source: string, search: string, startOffset?: number): number;
+export function find(
+	source: string,
+	search: string,
+	startOffset?: number,
+): number;
 
 /**
  * Searches for the first occurrence of a specific element within an array.

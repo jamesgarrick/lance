@@ -1,4 +1,3 @@
-
 // !TODO - needs fixing to new primitive types
 /**
  * Arma Side Types
@@ -21,10 +20,10 @@
  * @see {@link https://community.bistudio.com/wiki/Category:Command_Group:_Sides Command Group: Sides}
  */
 export declare class Side<TName extends SideName = SideName>
-  implements SqfValue<"Side">
+	implements SqfValue<"Side">
 {
-  readonly __sqfKind?: "Side";
-  readonly name?: TName;
+	readonly __sqfKind?: "Side";
+	readonly name?: TName;
 }
 
 /**

@@ -1,224 +1,224 @@
 {
-  "salema": {
-    "f": {
-      "base": {
-        "className": "Salema_F",
-        "name": "Salema",
-        "category": "Animals",
-        "subCategory": "Aquatic"
-      }
-    }
-  },
-  "ornate": {
-    "random": {
-      "base": {
-        "className": "Ornate_random_F",
-        "name": "Ornate",
-        "category": "Animals",
-        "subCategory": "Aquatic"
-      }
-    }
-  },
-  "mackerel": {
-    "f": {
-      "base": {
-        "className": "Mackerel_F",
-        "name": "Mackerel",
-        "category": "Animals",
-        "subCategory": "Aquatic"
-      }
-    }
-  },
-  "tuna": {
-    "f": {
-      "base": {
-        "className": "Tuna_F",
-        "name": "Tuna",
-        "category": "Animals",
-        "subCategory": "Aquatic"
-      }
-    }
-  },
-  "mullet": {
-    "f": {
-      "base": {
-        "className": "Mullet_F",
-        "name": "Mullet",
-        "category": "Animals",
-        "subCategory": "Aquatic"
-      }
-    }
-  },
-  "catshark": {
-    "f": {
-      "base": {
-        "className": "CatShark_F",
-        "name": "Catshark",
-        "category": "Animals",
-        "subCategory": "Aquatic"
-      }
-    }
-  },
-  "rabbit": {
-    "f": {
-      "base": {
-        "className": "Rabbit_F",
-        "name": "Rabbit",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    }
-  },
-  "snake": {
-    "random": {
-      "base": {
-        "className": "Snake_random_F",
-        "name": "Snake",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    },
-    "vipera": {
-      "random": {
-        "className": "Snake_vipera_random_F",
-        "name": "Snake",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    }
-  },
-  "turtle": {
-    "f": {
-      "base": {
-        "className": "Turtle_F",
-        "name": "Turtle",
-        "category": "Animals",
-        "subCategory": "Aquatic"
-      }
-    }
-  },
-  "hen": {
-    "random": {
-      "base": {
-        "className": "Hen_random_F",
-        "name": "Hen",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    }
-  },
-  "cock": {
-    "random": {
-      "base": {
-        "className": "Cock_random_F",
-        "name": "Cock",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    },
-    "white": {
-      "base": {
-        "className": "Cock_white_F",
-        "name": "Cock",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    }
-  },
-  "fin": {
-    "sand": {
-      "base": {
-        "className": "Fin_sand_F",
-        "name": "Dog (Sand)",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    },
-    "blackwhite": {
-      "base": {
-        "className": "Fin_blackwhite_F",
-        "name": "Dog (Blackwhite)",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    },
-    "ocherwhite": {
-      "base": {
-        "className": "Fin_ocherwhite_F",
-        "name": "Dog (Ocherwhite)",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    },
-    "tricolour": {
-      "base": {
-        "className": "Fin_tricolour_F",
-        "name": "Dog (Tricolour)",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    },
-    "random": {
-      "base": {
-        "className": "Fin_random_F",
-        "name": "Dog",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    }
-  },
-  "alsatian": {
-    "sand": {
-      "base": {
-        "className": "Alsatian_Sand_F",
-        "name": "Alsatian (Sand)",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    },
-    "black": {
-      "base": {
-        "className": "Alsatian_Black_F",
-        "name": "Alsatian (Black)",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    },
-    "sandblack": {
-      "base": {
-        "className": "Alsatian_Sandblack_F",
-        "name": "Alsatian (Sandblack)",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    },
-    "random": {
-      "base": {
-        "className": "Alsatian_Random_F",
-        "name": "Alsatian",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    }
-  },
-  "goat": {
-    "random": {
-      "base": {
-        "className": "Goat_random_F",
-        "name": "Goat",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    }
-  },
-  "sheep": {
-    "random": {
-      "base": {
-        "className": "Sheep_random_F",
-        "name": "Sheep",
-        "category": "Animals",
-        "subCategory": "Terrestrial"
-      }
-    }
-  }
+	"salema": {
+		"f": {
+			"base": {
+				"className": "Salema_F",
+				"name": "Salema",
+				"category": "Animals",
+				"subCategory": "Aquatic"
+			}
+		}
+	},
+	"ornate": {
+		"random": {
+			"base": {
+				"className": "Ornate_random_F",
+				"name": "Ornate",
+				"category": "Animals",
+				"subCategory": "Aquatic"
+			}
+		}
+	},
+	"mackerel": {
+		"f": {
+			"base": {
+				"className": "Mackerel_F",
+				"name": "Mackerel",
+				"category": "Animals",
+				"subCategory": "Aquatic"
+			}
+		}
+	},
+	"tuna": {
+		"f": {
+			"base": {
+				"className": "Tuna_F",
+				"name": "Tuna",
+				"category": "Animals",
+				"subCategory": "Aquatic"
+			}
+		}
+	},
+	"mullet": {
+		"f": {
+			"base": {
+				"className": "Mullet_F",
+				"name": "Mullet",
+				"category": "Animals",
+				"subCategory": "Aquatic"
+			}
+		}
+	},
+	"catshark": {
+		"f": {
+			"base": {
+				"className": "CatShark_F",
+				"name": "Catshark",
+				"category": "Animals",
+				"subCategory": "Aquatic"
+			}
+		}
+	},
+	"rabbit": {
+		"f": {
+			"base": {
+				"className": "Rabbit_F",
+				"name": "Rabbit",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		}
+	},
+	"snake": {
+		"random": {
+			"base": {
+				"className": "Snake_random_F",
+				"name": "Snake",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		},
+		"vipera": {
+			"random": {
+				"className": "Snake_vipera_random_F",
+				"name": "Snake",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		}
+	},
+	"turtle": {
+		"f": {
+			"base": {
+				"className": "Turtle_F",
+				"name": "Turtle",
+				"category": "Animals",
+				"subCategory": "Aquatic"
+			}
+		}
+	},
+	"hen": {
+		"random": {
+			"base": {
+				"className": "Hen_random_F",
+				"name": "Hen",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		}
+	},
+	"cock": {
+		"random": {
+			"base": {
+				"className": "Cock_random_F",
+				"name": "Cock",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		},
+		"white": {
+			"base": {
+				"className": "Cock_white_F",
+				"name": "Cock",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		}
+	},
+	"fin": {
+		"sand": {
+			"base": {
+				"className": "Fin_sand_F",
+				"name": "Dog (Sand)",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		},
+		"blackwhite": {
+			"base": {
+				"className": "Fin_blackwhite_F",
+				"name": "Dog (Blackwhite)",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		},
+		"ocherwhite": {
+			"base": {
+				"className": "Fin_ocherwhite_F",
+				"name": "Dog (Ocherwhite)",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		},
+		"tricolour": {
+			"base": {
+				"className": "Fin_tricolour_F",
+				"name": "Dog (Tricolour)",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		},
+		"random": {
+			"base": {
+				"className": "Fin_random_F",
+				"name": "Dog",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		}
+	},
+	"alsatian": {
+		"sand": {
+			"base": {
+				"className": "Alsatian_Sand_F",
+				"name": "Alsatian (Sand)",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		},
+		"black": {
+			"base": {
+				"className": "Alsatian_Black_F",
+				"name": "Alsatian (Black)",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		},
+		"sandblack": {
+			"base": {
+				"className": "Alsatian_Sandblack_F",
+				"name": "Alsatian (Sandblack)",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		},
+		"random": {
+			"base": {
+				"className": "Alsatian_Random_F",
+				"name": "Alsatian",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		}
+	},
+	"goat": {
+		"random": {
+			"base": {
+				"className": "Goat_random_F",
+				"name": "Goat",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		}
+	},
+	"sheep": {
+		"random": {
+			"base": {
+				"className": "Sheep_random_F",
+				"name": "Sheep",
+				"category": "Animals",
+				"subCategory": "Terrestrial"
+			}
+		}
+	}
 }

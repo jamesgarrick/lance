@@ -10,16 +10,16 @@
  */
 
 export const ERROR_CLASS_HIERARCHIES = {
-  Error: ["Error"],
-  TypeError: ["TypeError", "Error"],
-  RangeError: ["RangeError", "Error"],
-  NotImplementedError: ["NotImplementedError", "Error"],
-  AssertionError: ["AssertionError", "Error"],
-  NetworkError: ["NetworkError", "Error"],
+	Error: ["Error"],
+	TypeError: ["TypeError", "Error"],
+	RangeError: ["RangeError", "Error"],
+	NotImplementedError: ["NotImplementedError", "Error"],
+	AssertionError: ["AssertionError", "Error"],
+	NetworkError: ["NetworkError", "Error"],
 } as const satisfies Record<string, readonly string[]>;
 
 export type ErrorClassName = keyof typeof ERROR_CLASS_HIERARCHIES;
 
 export function isKnownErrorClass(name: string): name is ErrorClassName {
-  return Object.prototype.hasOwnProperty.call(ERROR_CLASS_HIERARCHIES, name);
+	return Object.prototype.hasOwnProperty.call(ERROR_CLASS_HIERARCHIES, name);
 }

@@ -25,8 +25,8 @@ export function append<T>(array1: Array<T>, array2: Array<T>): Array<T>;
  * @see {@link https://community.bistudio.com/wiki/apply apply}
  */
 export function apply(
-  array: Array<any>,
-  code: (item: any, index: number, array: any[]) => any,
+	array: Array<any>,
+	code: (item: any, index: number, array: any[]) => any,
 ): Array<any>;
 
 // type enriched
@@ -39,10 +39,9 @@ export function apply(
  * @see {@link https://community.bistudio.com/wiki/apply apply}
  */
 export function apply<T, U>(
-  array: T[],
-  code: (item: T, index: number, array: T[]) => U,
+	array: T[],
+	code: (item: T, index: number, array: T[]) => U,
 ): Array<U>;
-
 
 // syntax 1
 /**
@@ -94,7 +93,7 @@ export function isIn(person: Person, vehicle: Vehicle): boolean;
  *
  * @see {@link https://community.bistudio.com/wiki/in in}
  */
-export function isIn(position: (Pos2D | Pos3D), location: Location): boolean;
+export function isIn(position: Pos2D | Pos3D, location: Location): boolean;
 
 // syntax 3
 /**
@@ -123,7 +122,11 @@ export function deleteAt(array: any[], indexes: number[]): any[];
 export function deleteAt<T>(array: Array<T>, indexes: number[]): Array<T>;
 
 export function deleteRange(array: any[], start: number, count: number): any[];
-export function deleteRange<T>(array: Array<T>, start: number, count: number): Array<T>;
+export function deleteRange<T>(
+	array: Array<T>,
+	start: number,
+	count: number,
+): Array<T>;
 
 /**
  * Insert an element to the back of the given array.
@@ -139,8 +142,18 @@ export function pushBack(array: any[], item: any): number;
 export function pushBack<T>(array: Array<T>, item: T): number;
 
 /** Inserts multiple values into Array/String/HashMap. */
-export function insert(array: any[], index: number, item: any, onlyIfUnique?: boolean): number;
-export function insert<T>(array: Array<T>, index: number, item: T, onlyIfUnique?: boolean): number;
+export function insert(
+	array: any[],
+	index: number,
+	item: any,
+	onlyIfUnique?: boolean,
+): number;
+export function insert<T>(
+	array: Array<T>,
+	index: number,
+	item: T,
+	onlyIfUnique?: boolean,
+): number;
 
 export function joinString(array: any[], separator: string): string;
 
@@ -174,16 +187,15 @@ export function sort(array: any[], ascending?: boolean): any[];
  */
 export function sort<T>(array: T[], ascending?: boolean): T[];
 
-
 export function apply(
-  array: any[],
-  func: (item: any, index: number, array: any[]) => any,
+	array: any[],
+	func: (item: any, index: number, array: any[]) => any,
 ): any[];
 
 // type enriched
 export function apply<T, U>(
-  array: T[],
-  func: (item: T, index: number, array: T[]) => U,
+	array: T[],
+	func: (item: T, index: number, array: T[]) => U,
 ): U[];
 
 /**
@@ -213,8 +225,8 @@ export function flatten<T>(array: T[]): T[];
  * @param array
  */
 export function forEach(
-  code: (item: any, index: number, array: any[]) => void,
-  array: any[],
+	code: (item: any, index: number, array: any[]) => void,
+	array: any[],
 ): any;
 
 // type enriched
@@ -227,12 +239,11 @@ export function forEach(
  * @param array
  */
 export function forEach<T>(
-  code: (item: T, index: number, array: T[]) => void,
-  array: T[],
+	code: (item: T, index: number, array: T[]) => void,
+	array: T[],
 ): void;
 
 export function resize(array: any[], length: number, fill?: any): any[];
-
 
 /**
  * Resizes an array to the specified length

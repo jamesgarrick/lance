@@ -1,5 +1,5 @@
 {
-  "name": "@lance/core",
-  "version": "0.0.1",
-  "exports": "./index.ts"
+	"name": "@lance/core",
+	"version": "0.0.1",
+	"exports": "./index.ts"
 }

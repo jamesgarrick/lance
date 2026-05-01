@@ -2,12 +2,15 @@ import type { GlobalArgument, Effect } from "../locality";
 import type { Unit } from "../../primitives";
 import type { GlassesClassName } from "../../cfg/cfg-glasses";
 import type { MagazineClassName } from "../../cfg/cfg-magazines";
-import type { UniformClassName, VestClassName } from "../../cfg/cfg-weapons-equipment";
 import type {
-  BipodClassName,
-  MuzzleClassName,
-  OpticClassName,
-  RailItemClassName,
+	UniformClassName,
+	VestClassName,
+} from "../../cfg/cfg-weapons-equipment";
+import type {
+	BipodClassName,
+	MuzzleClassName,
+	OpticClassName,
+	RailItemClassName,
 } from "../../cfg/cfg-weapons-items";
 import type { WeaponClassName } from "../../cfg/cfg-weapons-weapons";
 
@@ -21,7 +24,9 @@ import type { WeaponClassName } from "../../cfg/cfg-weapons-weapons";
  *
  * @see {@link https://community.bistudio.com/wiki/goggles goggles}
  */
-export function goggles(unit: GlobalArgument<Unit>): Effect<GlassesClassName | "", "anywhere", "pure">;
+export function goggles(
+	unit: GlobalArgument<Unit>,
+): Effect<GlassesClassName | "", "anywhere", "pure">;
 
 /**
  * Create a new item and try to link it into goggles (glasses) slot.
@@ -35,7 +40,10 @@ export function goggles(unit: GlobalArgument<Unit>): Effect<GlassesClassName | "
  *
  * @see {@link https://community.bistudio.com/wiki/addGoggles addGoggles}
  */
-export function addGoggles(unit: Unit, gogglesClass: GlassesClassName): SqfCommand;
+export function addGoggles(
+	unit: Unit,
+	gogglesClass: GlassesClassName,
+): SqfCommand;
 
 /**
  * Removes goggles from unit (diver goggles for example).
@@ -55,7 +63,9 @@ export function removeGoggles(unit: Unit): GlassesClassName | "";
  *
  * @see {@link https://community.bistudio.com/wiki/vest vest}
  */
-export function vest(unit: GlobalArgument<Unit>): Effect<VestClassName | "", "anywhere", "pure">;
+export function vest(
+	unit: GlobalArgument<Unit>,
+): Effect<VestClassName | "", "anywhere", "pure">;
 
 /**
  * Create a new vest and try to link it into vest slot.
@@ -67,7 +77,10 @@ export function vest(unit: GlobalArgument<Unit>): Effect<VestClassName | "", "an
  *
  * @see {@link https://community.bistudio.com/wiki/addVest addVest}
  */
-export function addVest(unit: GlobalArgument<Unit>, vestClass: VestClassName): Effect<void, "anywhere", "global">;
+export function addVest(
+	unit: GlobalArgument<Unit>,
+	vestClass: VestClassName,
+): Effect<void, "anywhere", "global">;
 
 /**
  * Removes vest from person.
@@ -92,7 +105,6 @@ export function removeVest(unit: Unit): string;
  * @see {@link https://community.bistudio.com/wiki/handgunWeapon handgunWeapon}
  */
 export function handgunWeapon(unit: Unit): WeaponClassName | "";
-
 
 /**
  * Returns name of person's primary weapon.
@@ -131,7 +143,9 @@ export function secondaryWeapon(unit: Unit): WeaponClassName | "";
  *
  * @see {@link https://community.bistudio.com/wiki/secondaryWeaponItems secondaryWeaponItems}
  */
-export function secondaryWeaponItems(person: Person): [string, string, string, string];
+export function secondaryWeaponItems(
+	person: Person,
+): [string, string, string, string];
 
 /**
  * Adds weapon item, including magazine, directly to the secondaryWeapon.
@@ -153,7 +167,6 @@ export function addSecondaryWeaponItem(unit: Unit, item: string): void;
  */
 export function secondaryWeaponMagazine(unit: Unit): Array<MagazineClassName>;
 
-
 /**
  * Create and assign item to the correct slot. If there is an item in the targeted slot, it gets replaced.
  * See also assignItem.
@@ -169,7 +182,6 @@ export function secondaryWeaponMagazine(unit: Unit): Array<MagazineClassName>;
  */
 export function linkItem(unit: Unit, item: string): void;
 
-
 /**
  * Create a new uniform and hard link it into slot (without any restrictions).
  *
@@ -181,8 +193,8 @@ export function linkItem(unit: Unit, item: string): void;
  * @see {@link https://community.bistudio.com/wiki/forceAddUniform forceAddUniform}
  */
 export function forceAddUniform(
-  unit: GlobalArgument<Unit>,
-  uniform: UniformClassName
+	unit: GlobalArgument<Unit>,
+	uniform: UniformClassName,
 ): Effect<void, "anywhere", "global">;
 
 /**
@@ -195,7 +207,9 @@ export function forceAddUniform(
  *
  * @see {@link https://community.bistudio.com/wiki/uniform uniform}
  */
-export function uniform(unit: GlobalArgument<Unit>): Effect<UniformClassName | "", "anywhere", "pure">;
+export function uniform(
+	unit: GlobalArgument<Unit>,
+): Effect<UniformClassName | "", "anywhere", "pure">;
 
 /**
  * Create a new uniform and try to link it into uniform slot
@@ -211,8 +225,8 @@ export function uniform(unit: GlobalArgument<Unit>): Effect<UniformClassName | "
  * @see {@link https://community.bistudio.com/wiki/addUniform addUniform}
  */
 export function addUniform(
-  unit: GlobalArgument<Unit>,
-  uniform: UniformClassName
+	unit: GlobalArgument<Unit>,
+	uniform: UniformClassName,
 ): Effect<void, "anywhere", "global">;
 
 /**
@@ -226,8 +240,8 @@ export function addUniform(
  * @see {@link https://community.bistudio.com/wiki/isUniformAllowed isUniformAllowed}
  */
 export function isUniformAllowed(
-  unit: GlobalArgument<Unit>,
-  uniform: UniformClassName
+	unit: GlobalArgument<Unit>,
+	uniform: UniformClassName,
 ): Effect<boolean, "anywhere", "pure">;
 
 /**
@@ -240,7 +254,9 @@ export function isUniformAllowed(
  *
  * @see {@link https://community.bistudio.com/wiki/removeUniform removeUniform}
  */
-export function removeUniform(unit: GlobalArgument<Unit>): Effect<void, "anywhere", "global">;
+export function removeUniform(
+	unit: GlobalArgument<Unit>,
+): Effect<void, "anywhere", "global">;
 
 /**
  * Returns an array of names of all unit's stored items,
@@ -253,7 +269,9 @@ export function removeUniform(unit: GlobalArgument<Unit>): Effect<void, "anywher
  *
  * @see {@link https://community.bistudio.com/wiki/items items}
  */
-export function items(unit: GlobalArgument<Unit>): Effect<readonly string[], "anywhere", "pure">;
+export function items(
+	unit: GlobalArgument<Unit>,
+): Effect<readonly string[], "anywhere", "pure">;
 
 /**
  * Returns array with all items assigned to the primaryWeapon except magazines.
@@ -267,16 +285,16 @@ export function items(unit: GlobalArgument<Unit>): Effect<readonly string[], "an
  * @see {@link https://community.bistudio.com/wiki/primaryWeaponItems primaryWeaponItems}
  */
 export function primaryWeaponItems(
-  unit: GlobalArgument<Unit>
+	unit: GlobalArgument<Unit>,
 ): Effect<
-  readonly [
-    muzzle: MuzzleClassName | "",
-    rail: RailItemClassName | "",
-    optic: OpticClassName | "",
-    bipod: BipodClassName | "",
-  ],
-  "anywhere",
-  "pure"
+	readonly [
+		muzzle: MuzzleClassName | "",
+		rail: RailItemClassName | "",
+		optic: OpticClassName | "",
+		bipod: BipodClassName | "",
+	],
+	"anywhere",
+	"pure"
 >;
 
 /**
@@ -294,7 +312,7 @@ export function primaryWeaponItems(
  *
  * @see {@link https://community.bistudio.com/wiki/addPrimaryWeaponItem addPrimaryWeaponItem}
  */
-export function addPrimaryWeaponItem(unit: Unit, item: string): (void | boolean);
+export function addPrimaryWeaponItem(unit: Unit, item: string): void | boolean;
 
 /**
  * Returns array of names of all unit's weapons.

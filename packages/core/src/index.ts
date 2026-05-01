@@ -1,4 +1,4 @@
-export * from "./sqf/index"
+export * from "./sqf/index";
 
 export * from "./cfg/cfg-runtime";
 export * from "./cfg/config-file";

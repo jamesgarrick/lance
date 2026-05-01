@@ -1,3206 +1,3206 @@
 {
-  "ca": {
-    "magazine": {
-      "base": {
-        "className": "CA_Magazine"
-      }
-    },
-    "launchermagazine": {
-      "base": {
-        "className": "CA_LauncherMagazine"
-      }
-    }
-  },
-  "30rnd": {
-    "556x45": {
-      "stanag": {
-        "className": "30Rnd_556x45_Stanag",
-        "name": "5.56 mm 30rnd Reload Tracer (Yellow) Mag"
-      },
-      "stanag_green": {
-        "className": "30Rnd_556x45_Stanag_green",
-        "name": "5.56 mm 30rnd Reload Tracer (Green) Mag"
-      },
-      "stanag_red": {
-        "className": "30Rnd_556x45_Stanag_red",
-        "name": "5.56 mm 30rnd Reload Tracer (Red) Mag"
-      },
-      "stanag_tracer_red": {
-        "className": "30Rnd_556x45_Stanag_Tracer_Red",
-        "name": "5.56 mm 30rnd Tracer (Red) Mag"
-      },
-      "stanag_tracer_green": {
-        "className": "30Rnd_556x45_Stanag_Tracer_Green",
-        "name": "5.56 mm 30rnd Tracer (Green) Mag"
-      },
-      "stanag_tracer_yellow": {
-        "className": "30Rnd_556x45_Stanag_Tracer_Yellow",
-        "name": "5.56 mm 30rnd Tracer (Yellow) Mag"
-      },
-      "stanag_sand": {
-        "className": "30Rnd_556x45_Stanag_Sand",
-        "name": "5.56 mm 30rnd Reload Tracer (Yellow) Sand Mag"
-      },
-      "stanag_sand_green": {
-        "className": "30Rnd_556x45_Stanag_Sand_green",
-        "name": "5.56 mm 30rnd Reload Tracer (Green) Sand Mag"
-      },
-      "stanag_sand_red": {
-        "className": "30Rnd_556x45_Stanag_Sand_red",
-        "name": "5.56 mm 30rnd Reload Tracer (Red) Sand Mag"
-      },
-      "stanag_sand_tracer_red": {
-        "className": "30Rnd_556x45_Stanag_Sand_Tracer_Red",
-        "name": "5.56 mm 30rnd Tracer (Red) Sand Mag"
-      },
-      "stanag_sand_tracer_green": {
-        "className": "30Rnd_556x45_Stanag_Sand_Tracer_Green",
-        "name": "5.56 mm 30rnd Tracer (Green) Sand Mag"
-      },
-      "stanag_sand_tracer_yellow": {
-        "className": "30Rnd_556x45_Stanag_Sand_Tracer_Yellow",
-        "name": "5.56 mm 30rnd Tracer (Yellow) Sand Mag"
-      }
-    },
-    "65x39": {
-      "caseless_mag": {
-        "className": "30Rnd_65x39_caseless_mag",
-        "name": "6.5 mm 30Rnd Sand Mag"
-      },
-      "caseless_khaki_mag": {
-        "className": "30Rnd_65x39_caseless_khaki_mag",
-        "name": "6.5 mm 30Rnd Khaki Mag"
-      },
-      "caseless_black_mag": {
-        "className": "30Rnd_65x39_caseless_black_mag",
-        "name": "6.5 mm 30Rnd Black Mag"
-      },
-      "caseless_green": {
-        "className": "30Rnd_65x39_caseless_green",
-        "name": "6.5 mm 30Rnd Caseless Mag"
-      },
-      "caseless_mag_tracer": {
-        "className": "30Rnd_65x39_caseless_mag_Tracer",
-        "name": "6.5 mm 30Rnd Tracer Sand Mag"
-      },
-      "caseless_khaki_mag_tracer": {
-        "className": "30Rnd_65x39_caseless_khaki_mag_Tracer",
-        "name": "6.5 mm 30Rnd Tracer Khaki Mag"
-      },
-      "caseless_black_mag_tracer": {
-        "className": "30Rnd_65x39_caseless_black_mag_Tracer",
-        "name": "6.5 mm 30Rnd Tracer Black Mag"
-      },
-      "caseless_green_mag_tracer": {
-        "className": "30Rnd_65x39_caseless_green_mag_Tracer",
-        "name": "6.5 mm 30Rnd Tracer (Green) Caseless Mag"
-      },
-      "caseless_msbs_mag": {
-        "className": "30Rnd_65x39_caseless_msbs_mag",
-        "name": "6.5 mm 30Rnd Promet Mag"
-      },
-      "caseless_msbs_mag_tracer": {
-        "className": "30Rnd_65x39_caseless_msbs_mag_Tracer",
-        "name": "6.5 mm 30Rnd Promet Tracer Mag"
-      }
-    },
-    "9x21": {
-      "mag": {
-        "className": "30Rnd_9x21_Mag",
-        "name": "9 mm 30Rnd Mag"
-      },
-      "red_mag": {
-        "className": "30Rnd_9x21_Red_Mag",
-        "name": "9 mm 30Rnd Reload Tracer (Red) Mag"
-      },
-      "yellow_mag": {
-        "className": "30Rnd_9x21_Yellow_Mag",
-        "name": "9 mm 30Rnd Reload Tracer (Yellow) Mag"
-      },
-      "green_mag": {
-        "className": "30Rnd_9x21_Green_Mag",
-        "name": "9 mm 30Rnd Reload Tracer (Green) Mag"
-      },
-      "mag_smg_02": {
-        "className": "30Rnd_9x21_Mag_SMG_02",
-        "name": "9 mm 30Rnd Mag"
-      },
-      "mag_smg_02_tracer_red": {
-        "className": "30Rnd_9x21_Mag_SMG_02_Tracer_Red",
-        "name": "9 mm 30Rnd Reload Tracer (Red) Mag"
-      },
-      "mag_smg_02_tracer_yellow": {
-        "className": "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow",
-        "name": "9 mm 30Rnd Reload Tracer (Yellow) Mag"
-      },
-      "mag_smg_02_tracer_green": {
-        "className": "30Rnd_9x21_Mag_SMG_02_Tracer_Green",
-        "name": "9 mm 30Rnd Reload Tracer (Green) Mag"
-      }
-    },
-    "45acp": {
-      "mag_smg_01": {
-        "className": "30Rnd_45ACP_Mag_SMG_01",
-        "name": ".45 ACP 30Rnd Vermin Mag"
-      },
-      "mag_smg_01_tracer_green": {
-        "className": "30Rnd_45ACP_Mag_SMG_01_Tracer_Green",
-        "name": ".45 ACP 30Rnd Vermin Tracers (Green) Mag"
-      },
-      "mag_smg_01_tracer_red": {
-        "className": "30Rnd_45ACP_Mag_SMG_01_Tracer_Red",
-        "name": ".45 ACP 30Rnd Vermin Tracers (Red) Mag"
-      },
-      "mag_smg_01_tracer_yellow": {
-        "className": "30Rnd_45ACP_Mag_SMG_01_Tracer_Yellow",
-        "name": ".45 ACP 30Rnd Vermin Tracers (Yellow) Mag"
-      }
-    },
-    "120mm": {
-      "he_shells": {
-        "className": "30Rnd_120mm_HE_shells",
-        "name": "HE Shells"
-      },
-      "he_shells_tracer_red": {
-        "className": "30Rnd_120mm_HE_shells_Tracer_Red",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_green": {
-        "className": "30Rnd_120mm_HE_shells_Tracer_Green",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_yellow": {
-        "className": "30Rnd_120mm_HE_shells_Tracer_Yellow",
-        "name": "120mm HE-T"
-      },
-      "apfsds_shells": {
-        "className": "30Rnd_120mm_APFSDS_shells",
-        "name": "120mm APFSDS"
-      },
-      "apfsds_shells_tracer_red": {
-        "className": "30Rnd_120mm_APFSDS_shells_Tracer_Red",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_green": {
-        "className": "30Rnd_120mm_APFSDS_shells_Tracer_Green",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_yellow": {
-        "className": "30Rnd_120mm_APFSDS_shells_Tracer_Yellow",
-        "name": "120mm APFSDS-T"
-      }
-    },
-    "580x42": {
-      "mag": {
-        "className": "30Rnd_580x42_Mag_F",
-        "name": "5.8 mm 30Rnd Mag"
-      },
-      "mag_tracer": {
-        "className": "30Rnd_580x42_Mag_Tracer_F",
-        "name": "5.8 mm 30Rnd Tracer (Green) Mag"
-      }
-    },
-    "762x39": {
-      "mag": {
-        "className": "30Rnd_762x39_Mag_F",
-        "name": "7.62 mm 30Rnd AKM Reload Tracer (Yellow) Mag"
-      },
-      "mag_green": {
-        "className": "30Rnd_762x39_Mag_Green_F",
-        "name": "7.62 mm 30Rnd AKM Reload Tracer (Green) Mag"
-      },
-      "mag_tracer": {
-        "className": "30Rnd_762x39_Mag_Tracer_F",
-        "name": "7.62 mm 30Rnd AKM Tracer (Yellow) Mag"
-      },
-      "mag_tracer_green": {
-        "className": "30Rnd_762x39_Mag_Tracer_Green_F",
-        "name": "7.62 mm 30Rnd AKM Tracer (Green) Mag"
-      },
-      "ak12_mag": {
-        "className": "30Rnd_762x39_AK12_Mag_F",
-        "name": "7.62 mm 30rnd AK12 Mag"
-      },
-      "ak12_mag_tracer": {
-        "className": "30Rnd_762x39_AK12_Mag_Tracer_F",
-        "name": "7.62 mm 30rnd AK12 Tracer Mag"
-      },
-      "ak12_mag_green": {
-        "className": "30Rnd_762x39_AK12_Mag_Green_F"
-      },
-      "ak12_mag_tracer_green": {
-        "className": "30Rnd_762x39_AK12_Mag_Tracer_Green_F"
-      },
-      "ak12_lush_mag": {
-        "className": "30rnd_762x39_AK12_Lush_Mag_F",
-        "name": "7.62 mm 30rnd AK12 Khaki Mag"
-      },
-      "ak12_lush_mag_tracer": {
-        "className": "30rnd_762x39_AK12_Lush_Mag_Tracer_F",
-        "name": "7.62 mm 30rnd AK12 Tracer Khaki Mag"
-      },
-      "ak12_arid_mag": {
-        "className": "30rnd_762x39_AK12_Arid_Mag_F",
-        "name": "7.62 mm 30rnd AK12 Sand Mag"
-      },
-      "ak12_arid_mag_tracer": {
-        "className": "30rnd_762x39_AK12_Arid_Mag_Tracer_F",
-        "name": "7.62 mm 30rnd AK12 Tracer Sand Mag"
-      }
-    },
-    "545x39": {
-      "mag": {
-        "className": "30Rnd_545x39_Mag_F",
-        "name": "5.45 mm 30Rnd Reload Tracer (Yellow) Mag"
-      },
-      "mag_green": {
-        "className": "30Rnd_545x39_Mag_Green_F",
-        "name": "5.45 mm 30Rnd Reload Tracer (Green) Mag"
-      },
-      "mag_tracer": {
-        "className": "30Rnd_545x39_Mag_Tracer_F",
-        "name": "5.45 mm 30Rnd Tracer (Yellow) Mag"
-      },
-      "mag_tracer_green": {
-        "className": "30Rnd_545x39_Mag_Tracer_Green_F",
-        "name": "5.45 mm 30Rnd Tracer (Green) Mag"
-      }
-    }
-  },
-  "20rnd": {
-    "556x45": {
-      "uw_mag": {
-        "className": "20Rnd_556x45_UW_mag",
-        "name": "5.56 mm 20Rnd Dual Purpose Mag"
-      }
-    },
-    "762x51": {
-      "mag": {
-        "className": "20Rnd_762x51_Mag",
-        "name": "7.62 mm 20Rnd Mag"
-      }
-    },
-    "120mm": {
-      "apfsds_shells": {
-        "className": "20Rnd_120mm_APFSDS_shells",
-        "name": "120mm APFSDS"
-      },
-      "apfsds_shells_tracer_red": {
-        "className": "20Rnd_120mm_APFSDS_shells_Tracer_Red",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_green": {
-        "className": "20Rnd_120mm_APFSDS_shells_Tracer_Green",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_yellow": {
-        "className": "20Rnd_120mm_APFSDS_shells_Tracer_Yellow",
-        "name": "120mm APFSDS-T"
-      },
-      "heat_mp": {
-        "className": "20Rnd_120mm_HEAT_MP",
-        "name": "120mm HEAT-MP-T"
-      },
-      "heat_mp_t_red": {
-        "className": "20Rnd_120mm_HEAT_MP_T_Red",
-        "name": "120mm HEAT-MP-T"
-      },
-      "heat_mp_t_green": {
-        "className": "20Rnd_120mm_HEAT_MP_T_Green",
-        "name": "120mm HEAT-MP-T"
-      },
-      "heat_mp_t_yellow": {
-        "className": "20Rnd_120mm_HEAT_MP_T_Yellow",
-        "name": "120mm HEAT-MP-T"
-      }
-    },
-    "125mm": {
-      "apfsds": {
-        "className": "20Rnd_125mm_APFSDS",
-        "name": "125mm APFSDS-T"
-      },
-      "apfsds_t_red": {
-        "className": "20Rnd_125mm_APFSDS_T_Red",
-        "name": "125mm APFSDS-T"
-      },
-      "apfsds_t_green": {
-        "className": "20Rnd_125mm_APFSDS_T_Green",
-        "name": "125mm APFSDS-T"
-      },
-      "apfsds_t_yellow": {
-        "className": "20Rnd_125mm_APFSDS_T_Yellow",
-        "name": "125mm APFSDS-T"
-      }
-    },
-    "105mm": {
-      "heat_mp": {
-        "className": "20Rnd_105mm_HEAT_MP",
-        "name": "105mm HEAT-MP"
-      },
-      "heat_mp_t_red": {
-        "className": "20Rnd_105mm_HEAT_MP_T_Red",
-        "name": "105mm HEAT-MP-T"
-      },
-      "heat_mp_t_green": {
-        "className": "20Rnd_105mm_HEAT_MP_T_Green",
-        "name": "105mm HEAT-MP-T"
-      },
-      "heat_mp_t_yellow": {
-        "className": "20Rnd_105mm_HEAT_MP_T_Yellow",
-        "name": "105mm HEAT-MP-T"
-      }
-    },
-    "rocket": {
-      "03_he": {
-        "className": "20Rnd_Rocket_03_HE_F"
-      },
-      "03_ap": {
-        "className": "20Rnd_Rocket_03_AP_F"
-      }
-    },
-    "650x39": {
-      "cased_mag": {
-        "className": "20Rnd_650x39_Cased_Mag_F",
-        "name": "6.5 mm 20Rnd Mag"
-      }
-    }
-  },
-  "7rnd": {
-    "408": {
-      "mag": {
-        "className": "7Rnd_408_Mag",
-        "name": ".408 7Rnd LRR Mag"
-      }
-    },
-    "rocket": {
-      "04_he": {
-        "className": "7Rnd_Rocket_04_HE_F"
-      },
-      "04_ap": {
-        "className": "7Rnd_Rocket_04_AP_F"
-      }
-    }
-  },
-  "5rnd": {
-    "127x108": {
-      "mag": {
-        "className": "5Rnd_127x108_Mag",
-        "name": "12.7 mm 5Rnd Mag"
-      },
-      "apds_mag": {
-        "className": "5Rnd_127x108_APDS_Mag",
-        "name": "12.7 mm 5Rnd APDS Mag"
-      }
-    },
-    "gat": {
-      "missiles": {
-        "className": "5Rnd_GAT_missiles",
-        "name": "Titan Missile"
-      }
-    }
-  },
-  "100rnd": {
-    "65x39": {
-      "caseless_mag": {
-        "className": "100Rnd_65x39_caseless_mag",
-        "name": "6.5 mm 100Rnd Sand Mag"
-      },
-      "caseless_khaki_mag": {
-        "className": "100Rnd_65x39_caseless_khaki_mag",
-        "name": "6.5 mm 100Rnd Khaki Mag"
-      },
-      "caseless_black_mag": {
-        "className": "100Rnd_65x39_caseless_black_mag",
-        "name": "6.5 mm 100Rnd Black Mag"
-      },
-      "caseless_mag_tracer": {
-        "className": "100Rnd_65x39_caseless_mag_Tracer",
-        "name": "6.5 mm 100Rnd Tracer Sand Mag"
-      },
-      "caseless_khaki_mag_tracer": {
-        "className": "100Rnd_65x39_caseless_khaki_mag_tracer",
-        "name": "6.5 mm 100Rnd Tracer Khaki Mag"
-      },
-      "caseless_black_mag_tracer": {
-        "className": "100Rnd_65x39_caseless_black_mag_tracer",
-        "name": "6.5 mm 100Rnd Tracer Black Mag"
-      }
-    },
-    "127x99": {
-      "mag": {
-        "className": "100Rnd_127x99_mag",
-        "name": "12.7 mm M2 HMG Belt"
-      },
-      "mag_tracer_red": {
-        "className": "100Rnd_127x99_mag_Tracer_Red",
-        "name": "12.7 mm M2 HMG Tracer (Red) Belt"
-      },
-      "mag_tracer_green": {
-        "className": "100Rnd_127x99_mag_Tracer_Green",
-        "name": "12.7 mm M2 HMG Tracer (Green) Belt"
-      },
-      "mag_tracer_yellow": {
-        "className": "100Rnd_127x99_mag_Tracer_Yellow",
-        "name": "12.7 mm M2 HMG Tracer (Yellow) Belt"
-      }
-    },
-    "580x42": {
-      "mag": {
-        "className": "100Rnd_580x42_Mag_F",
-        "name": "5.8 mm 100Rnd Mag"
-      },
-      "mag_tracer": {
-        "className": "100Rnd_580x42_Mag_Tracer_F",
-        "name": "5.8 mm 100Rnd Tracer (Green) Mag"
-      },
-      "hex_mag": {
-        "className": "100Rnd_580x42_hex_Mag_F",
-        "name": "5.8 mm 100Rnd Hex Mag"
-      },
-      "hex_mag_tracer": {
-        "className": "100Rnd_580x42_hex_Mag_Tracer_F",
-        "name": "5.8 mm 100Rnd Tracer (Green) Hex Mag"
-      },
-      "ghex_mag": {
-        "className": "100Rnd_580x42_ghex_Mag_F",
-        "name": "5.8 mm 100Rnd Green Hex Mag"
-      },
-      "ghex_mag_tracer": {
-        "className": "100Rnd_580x42_ghex_Mag_Tracer_F",
-        "name": "5.8 mm 100Rnd Tracer (Green) Green Hex Mag"
-      }
-    },
-    "105mm": {
-      "heat_mp": {
-        "className": "100Rnd_105mm_HEAT_MP",
-        "name": "105mm HEAT-MP"
-      }
-    }
-  },
-  "200rnd": {
-    "338": {
-      "mag": {
-        "className": "200Rnd_338_Mag",
-        "name": ".338 NM 130Rnd Belt"
-      }
-    },
-    "65x39": {
-      "cased_box": {
-        "className": "200Rnd_65x39_cased_Box",
-        "name": "6.5 mm 200Rnd Belt"
-      },
-      "cased_box_tracer": {
-        "className": "200Rnd_65x39_cased_Box_Tracer",
-        "name": "6.5 mm 200Rnd Belt Tracer (Yellow)"
-      },
-      "cased_box_red": {
-        "className": "200Rnd_65x39_cased_Box_Red",
-        "name": "6.5 mm 200Rnd Reload Tracer (Red) Belt"
-      },
-      "cased_box_tracer_red": {
-        "className": "200Rnd_65x39_cased_Box_Tracer_Red",
-        "name": "6.5mm 200Rnd Belt Tracer (Red)"
-      },
-      "belt": {
-        "className": "200Rnd_65x39_Belt",
-        "name": "6.5 mm 200Rnd Belt Case"
-      },
-      "belt_tracer_red": {
-        "className": "200Rnd_65x39_Belt_Tracer_Red",
-        "name": "6.5 mm 200Rnd Belt Case Tracer (Red)"
-      },
-      "belt_tracer_green": {
-        "className": "200Rnd_65x39_Belt_Tracer_Green",
-        "name": "6.5 mm 200Rnd Belt Case Tracer (Green)"
-      },
-      "belt_tracer_yellow": {
-        "className": "200Rnd_65x39_Belt_Tracer_Yellow",
-        "name": "6.5 mm 200Rnd Belt Tracer (Yellow)"
-      }
-    },
-    "127x99": {
-      "mag": {
-        "className": "200Rnd_127x99_mag",
-        "name": "12.7 mm RCWS HMG"
-      },
-      "mag_tracer_red": {
-        "className": "200Rnd_127x99_mag_Tracer_Red",
-        "name": "12.7 mm RCWS HMG Tracer (Red)"
-      },
-      "mag_tracer_green": {
-        "className": "200Rnd_127x99_mag_Tracer_Green",
-        "name": "12.7 mm RCWS HMG Tracer (Green)"
-      },
-      "mag_tracer_yellow": {
-        "className": "200Rnd_127x99_mag_Tracer_Yellow",
-        "name": "12.7 mm RCWS HMG Tracer (Yellow)"
-      }
-    },
-    "40mm": {
-      "g_belt": {
-        "className": "200Rnd_40mm_G_belt",
-        "name": "40 mm HE Grenade Mag"
-      }
-    },
-    "20mm": {
-      "g_belt": {
-        "className": "200Rnd_20mm_G_belt",
-        "name": "20 mm Grenade Mag"
-      }
-    },
-    "762x51": {
-      "belt": {
-        "className": "200Rnd_762x51_Belt",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_red": {
-        "className": "200Rnd_762x51_Belt_Red",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_t_red": {
-        "className": "200Rnd_762x51_Belt_T_Red",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_green": {
-        "className": "200Rnd_762x51_Belt_Green",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_t_green": {
-        "className": "200Rnd_762x51_Belt_T_Green",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_yellow": {
-        "className": "200Rnd_762x51_Belt_Yellow",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_t_yellow": {
-        "className": "200Rnd_762x51_Belt_T_Yellow",
-        "name": "7.62 mm Minigun Belt"
-      }
-    },
-    "556x45": {
-      "box": {
-        "className": "200Rnd_556x45_Box_F",
-        "name": "5.56 mm 200Rnd Reload Tracer (Yellow) Box"
-      },
-      "box_red": {
-        "className": "200Rnd_556x45_Box_Red_F",
-        "name": "5.56 mm 200Rnd Reload Tracer (Red) Box"
-      },
-      "box_tracer": {
-        "className": "200Rnd_556x45_Box_Tracer_F",
-        "name": "5.56 mm 200Rnd Tracer (Yellow) Box"
-      },
-      "box_tracer_red": {
-        "className": "200Rnd_556x45_Box_Tracer_Red_F",
-        "name": "5.56 mm 200Rnd Tracer (Red) Box"
-      }
-    }
-  },
-  "16rnd": {
-    "9x21": {
-      "mag": {
-        "className": "16Rnd_9x21_Mag",
-        "name": "9 mm 16Rnd Mag"
-      },
-      "red_mag": {
-        "className": "16Rnd_9x21_red_Mag",
-        "name": "9 mm 16Rnd Reload Tracer (Red) Mag"
-      },
-      "green_mag": {
-        "className": "16Rnd_9x21_green_Mag",
-        "name": "9 mm 16Rnd Reload Tracer (Green) Mag"
-      },
-      "yellow_mag": {
-        "className": "16Rnd_9x21_yellow_Mag",
-        "name": "9 mm 16Rnd Reload Tracer (Yellow) Mag"
-      }
-    },
-    "120mm": {
-      "he_shells": {
-        "className": "16Rnd_120mm_HE_shells",
-        "name": "HE Shells"
-      },
-      "he_shells_tracer_red": {
-        "className": "16Rnd_120mm_HE_shells_Tracer_Red",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_green": {
-        "className": "16Rnd_120mm_HE_shells_Tracer_Green",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_yellow": {
-        "className": "16Rnd_120mm_HE_shells_Tracer_Yellow",
-        "name": "120mm HE-T"
-      }
-    },
-    "125mm": {
-      "apfsds": {
-        "className": "16Rnd_125mm_APFSDS",
-        "name": "125mm APFSDS-T"
-      },
-      "apfsds_t_red": {
-        "className": "16Rnd_125mm_APFSDS_T_Red",
-        "name": "125mm APFSDS-T"
-      },
-      "apfsds_t_green": {
-        "className": "16Rnd_125mm_APFSDS_T_Green",
-        "name": "125mm APFSDS-T"
-      },
-      "apfsds_t_yellow": {
-        "className": "16Rnd_125mm_APFSDS_T_Yellow",
-        "name": "125mm APFSDS-T"
-      }
-    }
-  },
-  "rpg32": {
-    "f": {
-      "base": {
-        "className": "RPG32_F",
-        "name": "RPG-42 Rocket"
-      }
-    },
-    "he": {
-      "base": {
-        "className": "RPG32_HE_F",
-        "name": "RPG-42 HE Rocket"
-      }
-    }
-  },
-  "nlaw": {
-    "f": {
-      "base": {
-        "className": "NLAW_F",
-        "name": "PCML Missile"
-      }
-    }
-  },
-  "1rnd": {
-    "he": {
-      "grenade_shell": {
-        "className": "1Rnd_HE_Grenade_shell",
-        "name": "40 mm HE Grenade Round"
-      }
-    },
-    "smoke": {
-      "grenade_shell": {
-        "className": "1Rnd_Smoke_Grenade_shell",
-        "name": "Smoke Round (White)"
-      }
-    },
-    "smokered": {
-      "grenade_shell": {
-        "className": "1Rnd_SmokeRed_Grenade_shell",
-        "name": "Smoke Round (Red)"
-      }
-    },
-    "smokegreen": {
-      "grenade_shell": {
-        "className": "1Rnd_SmokeGreen_Grenade_shell",
-        "name": "Smoke Round (Green)"
-      }
-    },
-    "smokeyellow": {
-      "grenade_shell": {
-        "className": "1Rnd_SmokeYellow_Grenade_shell",
-        "name": "Smoke Round (Yellow)"
-      }
-    },
-    "smokepurple": {
-      "grenade_shell": {
-        "className": "1Rnd_SmokePurple_Grenade_shell",
-        "name": "Smoke Round (Purple)"
-      }
-    },
-    "smokeblue": {
-      "grenade_shell": {
-        "className": "1Rnd_SmokeBlue_Grenade_shell",
-        "name": "Smoke Round (Blue)"
-      }
-    },
-    "smokeorange": {
-      "grenade_shell": {
-        "className": "1Rnd_SmokeOrange_Grenade_shell",
-        "name": "Smoke Round (Orange)"
-      }
-    },
-    "gaa": {
-      "missiles": {
-        "className": "1Rnd_GAA_missiles",
-        "name": "Zephyr"
-      }
-    },
-    "gat": {
-      "missiles": {
-        "className": "1Rnd_GAT_missiles",
-        "name": "Titan Missile"
-      }
-    },
-    "leaflets": {
-      "west": {
-        "className": "1Rnd_Leaflets_West_F",
-        "name": "Leaflets"
-      },
-      "east": {
-        "className": "1Rnd_Leaflets_East_F",
-        "name": "Leaflets"
-      },
-      "guer": {
-        "className": "1Rnd_Leaflets_Guer_F",
-        "name": "Leaflets"
-      },
-      "civ": {
-        "className": "1Rnd_Leaflets_Civ_F",
-        "name": "Leaflets"
-      },
-      "custom_01": {
-        "className": "1Rnd_Leaflets_Custom_01_F",
-        "name": "Leaflets"
-      },
-      "custom_02": {
-        "className": "1Rnd_Leaflets_Custom_02_F",
-        "name": "Leaflets"
-      },
-      "custom_03": {
-        "className": "1Rnd_Leaflets_Custom_03_F",
-        "name": "Leaflets"
-      },
-      "custom_04": {
-        "className": "1Rnd_Leaflets_Custom_04_F",
-        "name": "Leaflets"
-      },
-      "custom_05": {
-        "className": "1Rnd_Leaflets_Custom_05_F",
-        "name": "Leaflets"
-      },
-      "custom_06": {
-        "className": "1Rnd_Leaflets_Custom_06_F",
-        "name": "Leaflets"
-      },
-      "custom_07": {
-        "className": "1Rnd_Leaflets_Custom_07_F",
-        "name": "Leaflets"
-      },
-      "custom_08": {
-        "className": "1Rnd_Leaflets_Custom_08_F",
-        "name": "Leaflets"
-      },
-      "custom_09": {
-        "className": "1Rnd_Leaflets_Custom_09_F",
-        "name": "Leaflets"
-      },
-      "custom_10": {
-        "className": "1Rnd_Leaflets_Custom_10_F",
-        "name": "Leaflets"
-      }
-    }
-  },
-  "3rnd": {
-    "he": {
-      "grenade_shell": {
-        "className": "3Rnd_HE_Grenade_shell",
-        "name": "40 mm 3Rnd HE Grenade"
-      }
-    },
-    "smoke": {
-      "grenade_shell": {
-        "className": "3Rnd_Smoke_Grenade_shell",
-        "name": "3Rnd 3GL Smoke Rounds (White)"
-      }
-    },
-    "smokered": {
-      "grenade_shell": {
-        "className": "3Rnd_SmokeRed_Grenade_shell",
-        "name": "3Rnd 3GL Smoke Rounds (Red)"
-      }
-    },
-    "smokegreen": {
-      "grenade_shell": {
-        "className": "3Rnd_SmokeGreen_Grenade_shell",
-        "name": "3Rnd 3GL Smoke Rounds (Green)"
-      }
-    },
-    "smokeyellow": {
-      "grenade_shell": {
-        "className": "3Rnd_SmokeYellow_Grenade_shell",
-        "name": "3Rnd 3GL Smoke Rounds (Yellow)"
-      }
-    },
-    "smokepurple": {
-      "grenade_shell": {
-        "className": "3Rnd_SmokePurple_Grenade_shell",
-        "name": "3Rnd 3GL Smoke Rounds (Purple)"
-      }
-    },
-    "smokeblue": {
-      "grenade_shell": {
-        "className": "3Rnd_SmokeBlue_Grenade_shell",
-        "name": "3Rnd 3GL Smoke Rounds (Blue)"
-      }
-    },
-    "smokeorange": {
-      "grenade_shell": {
-        "className": "3Rnd_SmokeOrange_Grenade_shell",
-        "name": "3Rnd 3GL Smoke Rounds (Orange)"
-      }
-    },
-    "ugl": {
-      "flarewhite": {
-        "className": "3Rnd_UGL_FlareWhite_F",
-        "name": "3Rnd 3GL Flares (White)"
-      },
-      "flaregreen": {
-        "className": "3Rnd_UGL_FlareGreen_F",
-        "name": "3Rnd 3GL Flares (Green)"
-      },
-      "flarered": {
-        "className": "3Rnd_UGL_FlareRed_F",
-        "name": "3Rnd 3GL Flares (Red)"
-      },
-      "flareyellow": {
-        "className": "3Rnd_UGL_FlareYellow_F",
-        "name": "3Rnd 3GL Flares (Yellow)"
-      },
-      "flarecir": {
-        "className": "3Rnd_UGL_FlareCIR_F",
-        "name": "3Rnd 3GL Flares (IR)"
-      }
-    }
-  },
-  "handgrenade": {
-    "stone": {
-      "base": {
-        "className": "HandGrenade_Stone",
-        "name": "Stone"
-      }
-    }
-  },
-  "chemlight": {
-    "green": {
-      "base": {
-        "className": "Chemlight_green",
-        "name": "Chemlight (Green)"
-      }
-    },
-    "red": {
-      "base": {
-        "className": "Chemlight_red",
-        "name": "Chemlight (Red)"
-      }
-    },
-    "yellow": {
-      "base": {
-        "className": "Chemlight_yellow",
-        "name": "Chemlight (Yellow)"
-      }
-    },
-    "blue": {
-      "base": {
-        "className": "Chemlight_blue",
-        "name": "Chemlight (Blue)"
-      }
-    }
-  },
-  "60rnd": {
-    "cmflaremagazine": {
-      "base": {
-        "className": "60Rnd_CMFlareMagazine"
-      }
-    },
-    "cmflare": {
-      "chaff_magazine": {
-        "className": "60Rnd_CMFlare_Chaff_Magazine"
-      }
-    },
-    "30mm": {
-      "apfsds_shells": {
-        "className": "60Rnd_30mm_APFSDS_shells",
-        "name": "30 mm APFSDS"
-      },
-      "apfsds_shells_tracer_red": {
-        "className": "60Rnd_30mm_APFSDS_shells_Tracer_Red",
-        "name": "30 mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_green": {
-        "className": "60Rnd_30mm_APFSDS_shells_Tracer_Green",
-        "name": "30 mm APFSDS"
-      },
-      "apfsds_shells_tracer_yellow": {
-        "className": "60Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-        "name": "30 mm APFSDS-T"
-      },
-      "mp_shells_tracer_green": {
-        "className": "60Rnd_30mm_MP_shells_Tracer_Green",
-        "name": "30 mm MP-T"
-      }
-    },
-    "40mm": {
-      "gpr_shells": {
-        "className": "60Rnd_40mm_GPR_shells",
-        "name": "40 mm GPR"
-      },
-      "gpr_tracer_red_shells": {
-        "className": "60Rnd_40mm_GPR_Tracer_Red_shells",
-        "name": "40 mm GPR-T"
-      },
-      "gpr_tracer_green_shells": {
-        "className": "60Rnd_40mm_GPR_Tracer_Green_shells",
-        "name": "40 mm GPR-T"
-      },
-      "gpr_tracer_yellow_shells": {
-        "className": "60Rnd_40mm_GPR_Tracer_Yellow_shells",
-        "name": "40 mm GPR-T"
-      }
-    },
-    "20mm": {
-      "he_shells": {
-        "className": "60Rnd_20mm_HE_shells",
-        "name": "20 mm Shells"
-      },
-      "ap_shells": {
-        "className": "60Rnd_20mm_AP_shells",
-        "name": "20 mm Shells"
-      }
-    },
-    "75mm": {
-      "railgun_apfsds_mag": {
-        "className": "60Rnd_75mm_RailGun_APFSDS_mag",
-        "name": "APFSDS-KE"
-      }
-    }
-  },
-  "120rnd": {
-    "cmflaremagazine": {
-      "base": {
-        "className": "120Rnd_CMFlareMagazine"
-      }
-    },
-    "cmflare": {
-      "chaff_magazine": {
-        "className": "120Rnd_CMFlare_Chaff_Magazine"
-      }
-    }
-  },
-  "240rnd": {
-    "cmflaremagazine": {
-      "base": {
-        "className": "240Rnd_CMFlareMagazine"
-      }
-    },
-    "cmflare": {
-      "chaff_magazine": {
-        "className": "240Rnd_CMFlare_Chaff_Magazine"
-      }
-    },
-    "40mm": {
-      "gpr_tracer_red_shells": {
-        "className": "240Rnd_40mm_GPR_Tracer_Red_shells",
-        "name": "40 mm GPR-T"
-      }
-    }
-  },
-  "192rnd": {
-    "cmflare": {
-      "chaff_magazine": {
-        "className": "192Rnd_CMFlare_Chaff_Magazine"
-      }
-    }
-  },
-  "168rnd": {
-    "cmflare": {
-      "chaff_magazine": {
-        "className": "168Rnd_CMFlare_Chaff_Magazine"
-      }
-    }
-  },
-  "300rnd": {
-    "cmflare": {
-      "chaff_magazine": {
-        "className": "300Rnd_CMFlare_Chaff_Magazine"
-      }
-    },
-    "20mm": {
-      "shells": {
-        "className": "300Rnd_20mm_shells",
-        "name": "20 mm Shells"
-      }
-    },
-    "25mm": {
-      "shells": {
-        "className": "300Rnd_25mm_shells",
-        "name": "25 mm Shells"
-      }
-    }
-  },
-  "smokelaunchermag": {
-    "single": {
-      "base": {
-        "className": "SmokeLauncherMag_Single"
-      }
-    },
-    "boat": {
-      "base": {
-        "className": "SmokeLauncherMag_boat"
-      }
-    }
-  },
-  "1000rnd": {
-    "65x39": {
-      "belt": {
-        "className": "1000Rnd_65x39_Belt",
-        "name": "6.5 mm 1000Rnd LMG Belt"
-      },
-      "belt_tracer_red": {
-        "className": "1000Rnd_65x39_Belt_Tracer_Red",
-        "name": "6.5 mm 1000Rnd LMG Tracer (Red) Belt"
-      },
-      "belt_green": {
-        "className": "1000Rnd_65x39_Belt_Green",
-        "name": "6.5 mm 1000Rnd LMG Belt"
-      },
-      "belt_tracer_green": {
-        "className": "1000Rnd_65x39_Belt_Tracer_Green",
-        "name": "6.5 mm 1000Rnd LMG Tracer (Green) Belt"
-      },
-      "belt_yellow": {
-        "className": "1000Rnd_65x39_Belt_Yellow",
-        "name": "6.5 mm 1000Rnd LMG Belt"
-      },
-      "belt_tracer_yellow": {
-        "className": "1000Rnd_65x39_Belt_Tracer_Yellow",
-        "name": "6.5 mm 1000Rnd LMG Tracer (Yellow) Belt"
-      }
-    },
-    "20mm": {
-      "shells": {
-        "className": "1000Rnd_20mm_shells",
-        "name": "20 mm Shells"
-      }
-    },
-    "25mm": {
-      "shells": {
-        "className": "1000Rnd_25mm_shells",
-        "name": "25 mm Shells"
-      }
-    },
-    "762x51": {
-      "belt": {
-        "className": "1000Rnd_762x51_Belt",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_red": {
-        "className": "1000Rnd_762x51_Belt_Red",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_t_red": {
-        "className": "1000Rnd_762x51_Belt_T_Red",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_green": {
-        "className": "1000Rnd_762x51_Belt_Green",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_t_green": {
-        "className": "1000Rnd_762x51_Belt_T_Green",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_yellow": {
-        "className": "1000Rnd_762x51_Belt_Yellow",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_t_yellow": {
-        "className": "1000Rnd_762x51_Belt_T_Yellow",
-        "name": "7.62 mm Minigun Belt"
-      }
-    },
-    "gatling": {
-      "30mm_plane_cas_01": {
-        "className": "1000Rnd_Gatling_30mm_Plane_CAS_01_F"
-      }
-    }
-  },
-  "2000rnd": {
-    "65x39": {
-      "belt": {
-        "className": "2000Rnd_65x39_Belt",
-        "name": "6.5 mm 2000Rnd LMG Belt"
-      },
-      "belt_tracer_red": {
-        "className": "2000Rnd_65x39_Belt_Tracer_Red",
-        "name": "6.5 mm 2000Rnd LMG Tracer (Red) Belt"
-      },
-      "belt_green": {
-        "className": "2000Rnd_65x39_Belt_Green",
-        "name": "6.5 mm 2000Rnd LMG Belt"
-      },
-      "belt_tracer_green": {
-        "className": "2000Rnd_65x39_Belt_Tracer_Green",
-        "name": "6.5 mm 2000Rnd LMG Tracer (Green) Belt"
-      },
-      "belt_tracer_green_splash": {
-        "className": "2000Rnd_65x39_Belt_Tracer_Green_Splash",
-        "name": "6.5 mm 2000Rnd LMG Tracer (Green) Belt"
-      },
-      "belt_yellow": {
-        "className": "2000Rnd_65x39_Belt_Yellow",
-        "name": "6.5 mm 2000Rnd LMG Belt"
-      },
-      "belt_tracer_yellow": {
-        "className": "2000Rnd_65x39_Belt_Tracer_Yellow",
-        "name": "6.5 mm 2000Rnd LMG Tracer (Yellow) Belt"
-      },
-      "belt_tracer_yellow_splash": {
-        "className": "2000Rnd_65x39_Belt_Tracer_Yellow_Splash",
-        "name": "6.5 mm 2000Rnd LMG Tracer (Yellow) Belt"
-      }
-    },
-    "20mm": {
-      "shells": {
-        "className": "2000Rnd_20mm_shells",
-        "name": "20 mm Shells"
-      }
-    },
-    "762x51": {
-      "belt": {
-        "className": "2000Rnd_762x51_Belt",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_red": {
-        "className": "2000Rnd_762x51_Belt_Red",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_t_red": {
-        "className": "2000Rnd_762x51_Belt_T_Red",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_green": {
-        "className": "2000Rnd_762x51_Belt_Green",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_t_green": {
-        "className": "2000Rnd_762x51_Belt_T_Green",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_yellow": {
-        "className": "2000Rnd_762x51_Belt_Yellow",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "belt_t_yellow": {
-        "className": "2000Rnd_762x51_Belt_T_Yellow",
-        "name": "7.62 mm Minigun Belt"
-      }
-    }
-  },
-  "5000rnd": {
-    "762x51": {
-      "belt": {
-        "className": "5000Rnd_762x51_Belt",
-        "name": "7.62 mm Minigun Belt"
-      },
-      "yellow_belt": {
-        "className": "5000Rnd_762x51_Yellow_Belt",
-        "name": "7.62 mm Minigun Belt"
-      }
-    }
-  },
-  "500rnd": {
-    "127x99": {
-      "mag": {
-        "className": "500Rnd_127x99_mag",
-        "name": "12.7 mm AA MG Mag"
-      },
-      "mag_tracer_red": {
-        "className": "500Rnd_127x99_mag_Tracer_Red",
-        "name": "12.7 mm AA MG Tracer (Red) Mag"
-      },
-      "mag_tracer_green": {
-        "className": "500Rnd_127x99_mag_Tracer_Green",
-        "name": "12.7 mm AA MG Tracer (Green) Mag"
-      },
-      "mag_tracer_yellow": {
-        "className": "500Rnd_127x99_mag_Tracer_Yellow",
-        "name": "12.7 mm AA MG Tracer (Yellow) Mag"
-      }
-    },
-    "cannon": {
-      "30mm_plane_cas_02": {
-        "className": "500Rnd_Cannon_30mm_Plane_CAS_02_F"
-      }
-    },
-    "65x39": {
-      "belt": {
-        "className": "500Rnd_65x39_Belt",
-        "name": "6.5 mm 500Rnd Belt Case"
-      },
-      "belt_tracer_red_splash": {
-        "className": "500Rnd_65x39_Belt_Tracer_Red_Splash",
-        "name": "6.5 mm 500Rnd Belt Case Tracer (Red)"
-      },
-      "belt_tracer_green_splash": {
-        "className": "500Rnd_65x39_Belt_Tracer_Green_Splash",
-        "name": "6.5 mm 500Rnd Belt Case Tracer (Green)"
-      },
-      "belt_tracer_yellow_splash": {
-        "className": "500Rnd_65x39_Belt_Tracer_Yellow_Splash",
-        "name": "6.5 mm 500Rnd Belt Case Tracer (Yellow)"
-      }
-    }
-  },
-  "450rnd": {
-    "127x108": {
-      "ball": {
-        "className": "450Rnd_127x108_Ball",
-        "name": "NSVT-M"
-      }
-    }
-  },
-  "150rnd": {
-    "127x108": {
-      "ball": {
-        "className": "150Rnd_127x108_Ball",
-        "name": "NSVT-M"
-      }
-    },
-    "762x51": {
-      "box": {
-        "className": "150Rnd_762x51_Box",
-        "name": "7.62 mm 150Rnd Box"
-      },
-      "box_tracer": {
-        "className": "150Rnd_762x51_Box_Tracer",
-        "name": "7.62 mm 150Rnd Tracer (Green) Box"
-      }
-    },
-    "762x54": {
-      "box": {
-        "className": "150Rnd_762x54_Box",
-        "name": "7.62 mm 150Rnd Box"
-      },
-      "box_tracer": {
-        "className": "150Rnd_762x54_Box_Tracer",
-        "name": "7.62 mm 150Rnd Tracer (Green) Box"
-      }
-    },
-    "93x64": {
-      "mag": {
-        "className": "150Rnd_93x64_Mag",
-        "name": "9.3mm 150Rnd Belt"
-      }
-    },
-    "556x45": {
-      "drum_mag": {
-        "className": "150Rnd_556x45_Drum_Mag_F",
-        "name": "5.56 mm 150Rnd Mag"
-      },
-      "drum_sand_mag": {
-        "className": "150Rnd_556x45_Drum_Sand_Mag_F",
-        "name": "5.56 mm 150Rnd Sand Mag"
-      },
-      "drum_sand_mag_tracer": {
-        "className": "150Rnd_556x45_Drum_Sand_Mag_Tracer_F",
-        "name": "5.56 mm 150Rnd Tracer (Red) Sand Mag"
-      },
-      "drum_green_mag": {
-        "className": "150Rnd_556x45_Drum_Green_Mag_F",
-        "name": "5.56 mm 150Rnd Green Mag"
-      },
-      "drum_green_mag_tracer": {
-        "className": "150Rnd_556x45_Drum_Green_Mag_Tracer_F",
-        "name": "5.56 mm 150Rnd Tracer (Red) Green Mag"
-      },
-      "drum_mag_tracer": {
-        "className": "150Rnd_556x45_Drum_Mag_Tracer_F",
-        "name": "5.56 mm 150Rnd Tracer (Red) Mag"
-      }
-    }
-  },
-  "50rnd": {
-    "127x108": {
-      "ball": {
-        "className": "50Rnd_127x108_Ball",
-        "name": "NSVT-M"
-      }
-    },
-    "570x28": {
-      "smg_03": {
-        "className": "50Rnd_570x28_SMG_03",
-        "name": "5.7 mm 50Rnd ADR-97 Mag"
-      }
-    }
-  },
-  "96rnd": {
-    "40mm": {
-      "g_belt": {
-        "className": "96Rnd_40mm_G_belt",
-        "name": "40 mm HE Grenade Mag"
-      }
-    }
-  },
-  "64rnd": {
-    "40mm": {
-      "g_belt": {
-        "className": "64Rnd_40mm_G_belt",
-        "name": "40 mm HE Grenade Mag"
-      }
-    }
-  },
-  "32rnd": {
-    "40mm": {
-      "g_belt": {
-        "className": "32Rnd_40mm_G_belt",
-        "name": "40 mm HE Grenade Mag"
-      }
-    },
-    "155mm": {
-      "mo_shells": {
-        "className": "32Rnd_155mm_Mo_shells",
-        "name": "155 mm HE Shells"
-      },
-      "mo_shells_o": {
-        "className": "32Rnd_155mm_Mo_shells_O",
-        "name": "155 mm HE Shells"
-      }
-    },
-    "120mm": {
-      "apfsds_shells": {
-        "className": "32Rnd_120mm_APFSDS_shells",
-        "name": "120mm APFSDS"
-      },
-      "apfsds_shells_tracer_red": {
-        "className": "32Rnd_120mm_APFSDS_shells_Tracer_Red",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_green": {
-        "className": "32Rnd_120mm_APFSDS_shells_Tracer_Green",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_yellow": {
-        "className": "32Rnd_120mm_APFSDS_shells_Tracer_Yellow",
-        "name": "120mm APFSDS-T"
-      }
-    }
-  },
-  "40rnd": {
-    "20mm": {
-      "g_belt": {
-        "className": "40Rnd_20mm_G_belt",
-        "name": "20 mm HE Grenade Mag"
-      }
-    },
-    "40mm": {
-      "apfsds_shells": {
-        "className": "40Rnd_40mm_APFSDS_shells",
-        "name": "40 mm APFSDS"
-      },
-      "apfsds_tracer_red_shells": {
-        "className": "40Rnd_40mm_APFSDS_Tracer_Red_shells",
-        "name": "40 mm APFSDS-T"
-      },
-      "apfsds_tracer_green_shells": {
-        "className": "40Rnd_40mm_APFSDS_Tracer_Green_shells",
-        "name": "40 mm APFSDS-T"
-      },
-      "apfsds_tracer_yellow_shells": {
-        "className": "40Rnd_40mm_APFSDS_Tracer_Yellow_shells",
-        "name": "40 mm APFSDS-T"
-      }
-    },
-    "105mm": {
-      "apfsds": {
-        "className": "40Rnd_105mm_APFSDS",
-        "name": "105mm APFSDS"
-      },
-      "apfsds_t_red": {
-        "className": "40Rnd_105mm_APFSDS_T_Red",
-        "name": "105mm APFSDS-T"
-      },
-      "apfsds_t_green": {
-        "className": "40Rnd_105mm_APFSDS_T_Green",
-        "name": "105mm APFSDS-T"
-      },
-      "apfsds_t_yellow": {
-        "className": "40Rnd_105mm_APFSDS_T_Yellow",
-        "name": "105mm APFSDS-T"
-      }
-    }
-  },
-  "24rnd": {
-    "pg": {
-      "missiles": {
-        "className": "24Rnd_PG_missiles",
-        "name": "DAGR"
-      }
-    },
-    "missiles": {
-      "base": {
-        "className": "24Rnd_missiles",
-        "name": "DAR"
-      }
-    },
-    "120mm": {
-      "apfsds_shells": {
-        "className": "24Rnd_120mm_APFSDS_shells",
-        "name": "120mm APFSDS"
-      },
-      "apfsds_shells_tracer_red": {
-        "className": "24Rnd_120mm_APFSDS_shells_Tracer_Red",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_green": {
-        "className": "24Rnd_120mm_APFSDS_shells_Tracer_Green",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_yellow": {
-        "className": "24Rnd_120mm_APFSDS_shells_Tracer_Yellow",
-        "name": "120mm APFSDS-T"
-      }
-    },
-    "125mm": {
-      "apfsds": {
-        "className": "24Rnd_125mm_APFSDS",
-        "name": "125mm APFSDS-T"
-      },
-      "apfsds_t_red": {
-        "className": "24Rnd_125mm_APFSDS_T_Red",
-        "name": "125mm APFSDS-T"
-      },
-      "apfsds_t_green": {
-        "className": "24Rnd_125mm_APFSDS_T_Green",
-        "name": "125mm APFSDS-T"
-      },
-      "apfsds_t_yellow": {
-        "className": "24Rnd_125mm_APFSDS_T_Yellow",
-        "name": "125mm APFSDS-T"
-      }
-    }
-  },
-  "12rnd": {
-    "pg": {
-      "missiles": {
-        "className": "12Rnd_PG_missiles",
-        "name": "DAGR"
-      }
-    },
-    "missiles": {
-      "base": {
-        "className": "12Rnd_missiles",
-        "name": "DAR"
-      }
-    },
-    "230mm": {
-      "rockets": {
-        "className": "12Rnd_230mm_rockets",
-        "name": "230 mm Rocket"
-      },
-      "rockets_cluster": {
-        "className": "12Rnd_230mm_rockets_cluster",
-        "name": "230 mm Cluster Rocket"
-      }
-    },
-    "120mm": {
-      "he_shells": {
-        "className": "12Rnd_120mm_HE_shells",
-        "name": "HE Shells"
-      },
-      "he_shells_tracer_red": {
-        "className": "12Rnd_120mm_HE_shells_Tracer_Red",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_green": {
-        "className": "12Rnd_120mm_HE_shells_Tracer_Green",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_yellow": {
-        "className": "12Rnd_120mm_HE_shells_Tracer_Yellow",
-        "name": "120mm HE-T"
-      },
-      "apfsds_shells": {
-        "className": "12Rnd_120mm_APFSDS_shells",
-        "name": "120mm APFSDS"
-      },
-      "apfsds_shells_tracer_red": {
-        "className": "12Rnd_120mm_APFSDS_shells_Tracer_Red",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_green": {
-        "className": "12Rnd_120mm_APFSDS_shells_Tracer_Green",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_yellow": {
-        "className": "12Rnd_120mm_APFSDS_shells_Tracer_Yellow",
-        "name": "120mm APFSDS-T"
-      },
-      "heat_mp": {
-        "className": "12Rnd_120mm_HEAT_MP",
-        "name": "120mm HEAT-MP-T"
-      },
-      "heat_mp_t_red": {
-        "className": "12Rnd_120mm_HEAT_MP_T_Red",
-        "name": "120mm HEAT-MP-T"
-      },
-      "heat_mp_t_green": {
-        "className": "12Rnd_120mm_HEAT_MP_T_Green",
-        "name": "120mm HEAT-MP-T"
-      },
-      "heat_mp_t_yellow": {
-        "className": "12Rnd_120mm_HEAT_MP_T_Yellow",
-        "name": "120mm HEAT-MP-T"
-      }
-    },
-    "125mm": {
-      "he": {
-        "className": "12Rnd_125mm_HE",
-        "name": "125mm HE"
-      },
-      "he_t_red": {
-        "className": "12Rnd_125mm_HE_T_Red",
-        "name": "125mm HE-T"
-      },
-      "he_t_green": {
-        "className": "12Rnd_125mm_HE_T_Green",
-        "name": "125mm HE-T"
-      },
-      "he_t_yellow": {
-        "className": "12Rnd_125mm_HE_T_Yellow",
-        "name": "125mm HE-T"
-      },
-      "heat": {
-        "className": "12Rnd_125mm_HEAT",
-        "name": "125mm HEAT"
-      },
-      "heat_t_red": {
-        "className": "12Rnd_125mm_HEAT_T_Red",
-        "name": "125mm HEAT-T"
-      },
-      "heat_t_green": {
-        "className": "12Rnd_125mm_HEAT_T_Green",
-        "name": "125mm HEAT-T"
-      },
-      "heat_t_yellow": {
-        "className": "12Rnd_125mm_HEAT_T_Yellow",
-        "name": "125mm HEAT-T"
-      }
-    },
-    "spg9": {
-      "heat": {
-        "className": "12rnd_SPG9_HEAT",
-        "name": "PG-9N Round"
-      }
-    }
-  },
-  "8rnd": {
-    "82mm": {
-      "mo_shells": {
-        "className": "8Rnd_82mm_Mo_shells",
-        "name": "HE Mortar Shells"
-      },
-      "mo_flare_white": {
-        "className": "8Rnd_82mm_Mo_Flare_white",
-        "name": "Flare (White)"
-      },
-      "mo_smoke_white": {
-        "className": "8Rnd_82mm_Mo_Smoke_white",
-        "name": "Smoke Shell (White)"
-      },
-      "mo_guided": {
-        "className": "8Rnd_82mm_Mo_guided",
-        "name": "Guided"
-      },
-      "mo_lg": {
-        "className": "8Rnd_82mm_Mo_LG",
-        "name": "Laser Guided"
-      }
-    },
-    "lg": {
-      "scalpel": {
-        "className": "8Rnd_LG_scalpel",
-        "name": "Scalpel E2"
-      }
-    },
-    "120mm": {
-      "he_shells": {
-        "className": "8Rnd_120mm_HE_shells",
-        "name": "HE Shells"
-      },
-      "he_shells_tracer_red": {
-        "className": "8Rnd_120mm_HE_shells_Tracer_Red",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_green": {
-        "className": "8Rnd_120mm_HE_shells_Tracer_Green",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_yellow": {
-        "className": "8Rnd_120mm_HE_shells_Tracer_Yellow",
-        "name": "120mm HE-T"
-      },
-      "heat_mp": {
-        "className": "8Rnd_120mm_HEAT_MP",
-        "name": "120mm HEAT-MP-T"
-      },
-      "heat_mp_t_red": {
-        "className": "8Rnd_120mm_HEAT_MP_T_Red",
-        "name": "120mm HEAT-MP-T"
-      },
-      "heat_mp_t_green": {
-        "className": "8Rnd_120mm_HEAT_MP_T_Green",
-        "name": "120mm HEAT-MP-T"
-      },
-      "heat_mp_t_yellow": {
-        "className": "8Rnd_120mm_HEAT_MP_T_Yellow",
-        "name": "120mm HEAT-MP-T"
-      }
-    },
-    "125mm": {
-      "he": {
-        "className": "8Rnd_125mm_HE",
-        "name": "125mm HE"
-      },
-      "he_t_red": {
-        "className": "8Rnd_125mm_HE_T_Red",
-        "name": "125mm HE-T"
-      },
-      "he_t_green": {
-        "className": "8Rnd_125mm_HE_T_Green",
-        "name": "125mm HE-T"
-      },
-      "he_t_yellow": {
-        "className": "8Rnd_125mm_HE_T_Yellow",
-        "name": "125mm HE-T"
-      }
-    },
-    "spg9": {
-      "he": {
-        "className": "8rnd_SPG9_HE",
-        "name": "OG-9VM Round"
-      }
-    }
-  },
-  "6rnd": {
-    "155mm": {
-      "mo_smoke": {
-        "className": "6Rnd_155mm_Mo_smoke",
-        "name": "Smoke (White)"
-      },
-      "mo_smoke_o": {
-        "className": "6Rnd_155mm_Mo_smoke_O",
-        "name": "Smoke (White)"
-      },
-      "mo_mine": {
-        "className": "6Rnd_155mm_Mo_mine",
-        "name": "Mine Cluster"
-      },
-      "mo_mine_o": {
-        "className": "6Rnd_155mm_Mo_mine_O",
-        "name": "Mine Cluster"
-      },
-      "mo_at_mine": {
-        "className": "6Rnd_155mm_Mo_AT_mine",
-        "name": "AT Mine Cluster"
-      },
-      "mo_at_mine_o": {
-        "className": "6Rnd_155mm_Mo_AT_mine_O",
-        "name": "AT Mine Cluster"
-      }
-    },
-    "lg": {
-      "scalpel": {
-        "className": "6Rnd_LG_scalpel",
-        "name": "Scalpel E2"
-      }
-    },
-    "aat": {
-      "missiles": {
-        "className": "6Rnd_AAT_missiles",
-        "name": "AG Missiles"
-      }
-    },
-    "45acp": {
-      "cylinder": {
-        "className": "6Rnd_45ACP_Cylinder",
-        "name": ".45 ACP 6Rnd Cylinder"
-      }
-    },
-    "missile": {
-      "agm_02": {
-        "className": "6Rnd_Missile_AGM_02_F"
-      }
-    },
-    "greensignal": {
-      "base": {
-        "className": "6Rnd_GreenSignal_F",
-        "name": "6Rnd Signal Cylinder (Green)"
-      }
-    },
-    "redsignal": {
-      "base": {
-        "className": "6Rnd_RedSignal_F",
-        "name": "6Rnd Signal Cylinder (Red)"
-      }
-    },
-    "12gauge": {
-      "pellets": {
-        "className": "6Rnd_12Gauge_Pellets",
-        "name": "12 Gauge 6Rnd Pellets"
-      },
-      "slug": {
-        "className": "6Rnd_12Gauge_Slug",
-        "name": "12 Gauge 6Rnd Slug"
-      }
-    }
-  },
-  "2rnd": {
-    "155mm": {
-      "mo_guided": {
-        "className": "2Rnd_155mm_Mo_guided",
-        "name": "Guided"
-      },
-      "mo_guided_o": {
-        "className": "2Rnd_155mm_Mo_guided_O",
-        "name": "Guided"
-      },
-      "mo_lg": {
-        "className": "2Rnd_155mm_Mo_LG",
-        "name": "Laser Guided"
-      },
-      "mo_cluster": {
-        "className": "2Rnd_155mm_Mo_Cluster",
-        "name": "Cluster Shells"
-      },
-      "mo_cluster_o": {
-        "className": "2Rnd_155mm_Mo_Cluster_O",
-        "name": "Cluster Shells"
-      }
-    },
-    "lg": {
-      "scalpel": {
-        "className": "2Rnd_LG_scalpel",
-        "name": "Scalpel E2"
-      },
-      "scalpel_hidden": {
-        "className": "2Rnd_LG_scalpel_hidden",
-        "name": "Scalpel E2"
-      }
-    },
-    "aaa": {
-      "missiles": {
-        "className": "2Rnd_AAA_missiles",
-        "name": "ASRAAM"
-      },
-      "missiles_mi02": {
-        "className": "2Rnd_AAA_missiles_MI02",
-        "name": "ASRAAM"
-      },
-      "missiles_mi06": {
-        "className": "2Rnd_AAA_missiles_MI06",
-        "name": "ASRAAM"
-      }
-    },
-    "gat": {
-      "missiles": {
-        "className": "2Rnd_GAT_missiles",
-        "name": "Titan Missile"
-      },
-      "missiles_o": {
-        "className": "2Rnd_GAT_missiles_O",
-        "name": "Titan Missile"
-      }
-    },
-    "gbu12": {
-      "lgb": {
-        "className": "2Rnd_GBU12_LGB",
-        "name": "GBU-12"
-      },
-      "lgb_mi10": {
-        "className": "2Rnd_GBU12_LGB_MI10",
-        "name": "GBU-12"
-      }
-    },
-    "mk82": {
-      "base": {
-        "className": "2Rnd_Mk82",
-        "name": "Mk82"
-      },
-      "mi08": {
-        "className": "2Rnd_Mk82_MI08",
-        "name": "Mk82"
-      }
-    },
-    "missile": {
-      "aa_04": {
-        "className": "2Rnd_Missile_AA_04_F"
-      },
-      "aa_03": {
-        "className": "2Rnd_Missile_AA_03_F"
-      }
-    },
-    "bomb": {
-      "03": {
-        "className": "2Rnd_Bomb_03_F"
-      }
-    },
-    "127mm": {
-      "firefist_missiles": {
-        "className": "2Rnd_127mm_Firefist_missiles",
-        "name": "FireFIST ATGM Missile"
-      }
-    },
-    "12gauge": {
-      "pellets": {
-        "className": "2Rnd_12Gauge_Pellets",
-        "name": "12 Gauge 2Rnd Pellets"
-      },
-      "slug": {
-        "className": "2Rnd_12Gauge_Slug",
-        "name": "12 Gauge 2Rnd Slug"
-      }
-    }
-  },
-  "4rnd": {
-    "155mm": {
-      "mo_guided": {
-        "className": "4Rnd_155mm_Mo_guided",
-        "name": "Guided"
-      },
-      "mo_guided_o": {
-        "className": "4Rnd_155mm_Mo_guided_O",
-        "name": "Guided"
-      },
-      "mo_lg": {
-        "className": "4Rnd_155mm_Mo_LG",
-        "name": "Laser Guided"
-      },
-      "mo_lg_o": {
-        "className": "4Rnd_155mm_Mo_LG_O",
-        "name": "Laser Guided"
-      }
-    },
-    "aaa": {
-      "missiles": {
-        "className": "4Rnd_AAA_missiles",
-        "name": "ASRAAM"
-      },
-      "missiles_mi02": {
-        "className": "4Rnd_AAA_missiles_MI02",
-        "name": "ASRAAM"
-      }
-    },
-    "gaa": {
-      "missiles": {
-        "className": "4Rnd_GAA_missiles",
-        "name": "Zephyr"
-      }
-    },
-    "titan": {
-      "long_missiles": {
-        "className": "4Rnd_Titan_long_missiles",
-        "name": "Titan Missile"
-      },
-      "long_missiles_o": {
-        "className": "4Rnd_Titan_long_missiles_O",
-        "name": "Titan Missile"
-      }
-    },
-    "aat": {
-      "missiles": {
-        "className": "4Rnd_AAT_missiles",
-        "name": "AG Missiles"
-      }
-    },
-    "bomb": {
-      "04": {
-        "className": "4Rnd_Bomb_04_F"
-      }
-    },
-    "missile": {
-      "agm_01": {
-        "className": "4Rnd_Missile_AGM_01_F"
-      }
-    },
-    "lg": {
-      "jian": {
-        "className": "4Rnd_LG_Jian",
-        "name": "Jian"
-      }
-    },
-    "bombcluster": {
-      "01": {
-        "className": "4Rnd_BombCluster_01_F",
-        "name": "CBU-85"
-      },
-      "02": {
-        "className": "4Rnd_BombCluster_02_F",
-        "name": "RBK-500F"
-      },
-      "03": {
-        "className": "4Rnd_BombCluster_03_F",
-        "name": "BL778"
-      }
-    },
-    "120mm": {
-      "cannon_missiles": {
-        "className": "4Rnd_120mm_cannon_missiles",
-        "name": "120mm ATGM"
-      },
-      "lg_cannon_missiles": {
-        "className": "4Rnd_120mm_LG_cannon_missiles",
-        "name": "120mm ATGM LG"
-      }
-    },
-    "125mm": {
-      "cannon_missiles": {
-        "className": "4Rnd_125mm_cannon_missiles",
-        "name": "125mm ATGM"
-      }
-    },
-    "70mm": {
-      "saami_missiles": {
-        "className": "4Rnd_70mm_SAAMI_missiles",
-        "name": "SAAMI Missile"
-      }
-    }
-  },
-  "ugl": {
-    "flarewhite": {
-      "base": {
-        "className": "UGL_FlareWhite_F",
-        "name": "Flare Round (White)"
-      }
-    },
-    "flaregreen": {
-      "base": {
-        "className": "UGL_FlareGreen_F",
-        "name": "Flare Round (Green)"
-      }
-    },
-    "flarered": {
-      "base": {
-        "className": "UGL_FlareRed_F",
-        "name": "Flare Round (Red)"
-      }
-    },
-    "flareyellow": {
-      "base": {
-        "className": "UGL_FlareYellow_F",
-        "name": "Flare Round (Yellow)"
-      }
-    },
-    "flarecir": {
-      "base": {
-        "className": "UGL_FlareCIR_F",
-        "name": "Flare Round (IR)"
-      }
-    }
-  },
-  "flarewhite": {
-    "f": {
-      "base": {
-        "className": "FlareWhite_F",
-        "name": "Flare (White)"
-      }
-    }
-  },
-  "flaregreen": {
-    "f": {
-      "base": {
-        "className": "FlareGreen_F",
-        "name": "Flare (Green)"
-      }
-    }
-  },
-  "flarered": {
-    "f": {
-      "base": {
-        "className": "FlareRed_F",
-        "name": "Flare (Red)"
-      }
-    }
-  },
-  "flareyellow": {
-    "f": {
-      "base": {
-        "className": "FlareYellow_F",
-        "name": "Flare (Yellow)"
-      }
-    }
-  },
-  "9rnd": {
-    "45acp": {
-      "mag": {
-        "className": "9Rnd_45ACP_Mag",
-        "name": ".45 ACP 9Rnd Mag"
-      }
-    }
-  },
-  "titan": {
-    "aa": {
-      "base": {
-        "className": "Titan_AA",
-        "name": "Titan AA Missile"
-      }
-    },
-    "ap": {
-      "base": {
-        "className": "Titan_AP",
-        "name": "Titan AP Missile"
-      }
-    },
-    "at": {
-      "base": {
-        "className": "Titan_AT",
-        "name": "Titan AT Missile"
-      }
-    }
-  },
-  "250rnd": {
-    "30mm": {
-      "he_shells": {
-        "className": "250Rnd_30mm_HE_shells",
-        "name": "30 mm HE Shells"
-      },
-      "he_shells_tracer_red": {
-        "className": "250Rnd_30mm_HE_shells_Tracer_Red",
-        "name": "30 mm HE Tracer (Red) Shells"
-      },
-      "he_shells_tracer_green": {
-        "className": "250Rnd_30mm_HE_shells_Tracer_Green",
-        "name": "30 mm HE Tracer (Green) Shells"
-      },
-      "apds_shells": {
-        "className": "250Rnd_30mm_APDS_shells",
-        "name": "30 mm APDS shells"
-      },
-      "apds_shells_tracer_red": {
-        "className": "250Rnd_30mm_APDS_shells_Tracer_Red",
-        "name": "30 mm APDS Tracer (Red) Shells"
-      },
-      "apds_shells_tracer_green": {
-        "className": "250Rnd_30mm_APDS_shells_Tracer_Green",
-        "name": "30 mm APDS Tracer (Green) Shells"
-      },
-      "apds_shells_tracer_yellow": {
-        "className": "250Rnd_30mm_APDS_shells_Tracer_Yellow",
-        "name": "30 mm APDS Tracer (Yellow) Shells"
-      }
-    }
-  },
-  "140rnd": {
-    "30mm": {
-      "mp_shells": {
-        "className": "140Rnd_30mm_MP_shells",
-        "name": "30 mm Multi-purpose"
-      },
-      "mp_shells_tracer_red": {
-        "className": "140Rnd_30mm_MP_shells_Tracer_Red",
-        "name": "30 mm MP-T"
-      },
-      "mp_shells_tracer_green": {
-        "className": "140Rnd_30mm_MP_shells_Tracer_Green",
-        "name": "30 mm MP-T"
-      },
-      "mp_shells_tracer_yellow": {
-        "className": "140Rnd_30mm_MP_shells_Tracer_Yellow",
-        "name": "30 mm MP-T"
-      }
-    }
-  },
-  "14rnd": {
-    "80mm": {
-      "rockets": {
-        "className": "14Rnd_80mm_rockets",
-        "name": "Skyfire"
-      }
-    },
-    "120mm": {
-      "he_shells": {
-        "className": "14Rnd_120mm_HE_shells",
-        "name": "HE Shells"
-      },
-      "he_shells_tracer_red": {
-        "className": "14Rnd_120mm_HE_shells_Tracer_Red",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_green": {
-        "className": "14Rnd_120mm_HE_shells_Tracer_Green",
-        "name": "120mm HE-T"
-      },
-      "he_shells_tracer_yellow": {
-        "className": "14Rnd_120mm_HE_shells_Tracer_Yellow",
-        "name": "120mm HE-T"
-      }
-    }
-  },
-  "38rnd": {
-    "80mm": {
-      "rockets": {
-        "className": "38Rnd_80mm_rockets",
-        "name": "Skyfire"
-      }
-    }
-  },
-  "28rnd": {
-    "120mm": {
-      "apfsds_shells": {
-        "className": "28Rnd_120mm_APFSDS_shells",
-        "name": "120mm APFSDS"
-      },
-      "apfsds_shells_tracer_red": {
-        "className": "28Rnd_120mm_APFSDS_shells_Tracer_Red",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_green": {
-        "className": "28Rnd_120mm_APFSDS_shells_Tracer_Green",
-        "name": "120mm APFSDS-T"
-      },
-      "apfsds_shells_tracer_yellow": {
-        "className": "28Rnd_120mm_APFSDS_shells_Tracer_Yellow",
-        "name": "120mm APFSDS-T"
-      }
-    }
-  },
-  "680rnd": {
-    "35mm": {
-      "aa_shells": {
-        "className": "680Rnd_35mm_AA_shells",
-        "name": "35 mm AA Shells"
-      },
-      "aa_shells_tracer_red": {
-        "className": "680Rnd_35mm_AA_shells_Tracer_Red",
-        "name": "35 mm AA Shells"
-      },
-      "aa_shells_tracer_green": {
-        "className": "680Rnd_35mm_AA_shells_Tracer_Green",
-        "name": "35 mm AA Shells"
-      },
-      "aa_shells_tracer_yellow": {
-        "className": "680Rnd_35mm_AA_shells_Tracer_Yellow",
-        "name": "35 mm AA Shells"
-      }
-    }
-  },
-  "11rnd": {
-    "45acp": {
-      "mag": {
-        "className": "11Rnd_45ACP_Mag",
-        "name": ".45 ACP 11Rnd Mag"
-      }
-    }
-  },
-  "10rnd": {
-    "338": {
-      "mag": {
-        "className": "10Rnd_338_Mag",
-        "name": ".338 LM 10Rnd Mag"
-      }
-    },
-    "762x51": {
-      "mag": {
-        "className": "10Rnd_762x51_Mag",
-        "name": "7.62 mm 10Rnd Mag"
-      }
-    },
-    "762x54": {
-      "mag": {
-        "className": "10Rnd_762x54_Mag",
-        "name": "7.62 mm 10Rnd Mag"
-      }
-    },
-    "127x54": {
-      "mag": {
-        "className": "10Rnd_127x54_Mag",
-        "name": "12.7 mm 10Rnd Mag"
-      }
-    },
-    "93x64": {
-      "dmr_05_mag": {
-        "className": "10Rnd_93x64_DMR_05_Mag",
-        "name": "9.3 mm 10Rnd Mag"
-      }
-    },
-    "9x21": {
-      "mag": {
-        "className": "10Rnd_9x21_Mag",
-        "name": "9 mm 10Rnd Mag"
-      }
-    },
-    "50bw": {
-      "mag": {
-        "className": "10Rnd_50BW_Mag_F",
-        "name": ".50 BW 10Rnd Caseless Mag"
-      }
-    },
-    "mk14": {
-      "762x51_mag": {
-        "className": "10Rnd_Mk14_762x51_Mag",
-        "name": "7.62 mm 10rnd Mk14 Mag"
-      }
-    }
-  },
-  "b": {
-    "ir": {
-      "grenade": {
-        "className": "B_IR_Grenade",
-        "name": "IR Grenade [NATO]"
-      }
-    }
-  },
-  "o": {
-    "ir": {
-      "grenade": {
-        "className": "O_IR_Grenade",
-        "name": "IR Grenade [CSAT]"
-      }
-    },
-    "r": {
-      "ir_grenade": {
-        "className": "O_R_IR_Grenade",
-        "name": "IR Grenade [Spetsnaz]"
-      }
-    }
-  },
-  "i": {
-    "ir": {
-      "grenade": {
-        "className": "I_IR_Grenade",
-        "name": "IR Grenade [AAF]"
-      }
-    },
-    "e": {
-      "ir_grenade": {
-        "className": "I_E_IR_Grenade",
-        "name": "IR Grenade [LDF]"
-      }
-    }
-  },
-  "pylonrack": {
-    "1rnd": {
-      "missile_aa_04": {
-        "className": "PylonRack_1Rnd_Missile_AA_04_F",
-        "name": "Falchion-22"
-      },
-      "aaa_missiles": {
-        "className": "PylonRack_1Rnd_AAA_missiles",
-        "name": "ASRAAM"
-      },
-      "gaa_missiles": {
-        "className": "PylonRack_1Rnd_GAA_missiles",
-        "name": "Zephyr"
-      },
-      "missile_agm_02": {
-        "className": "PylonRack_1Rnd_Missile_AGM_02_F",
-        "name": "Macer"
-      },
-      "lg_scalpel": {
-        "className": "PylonRack_1Rnd_LG_scalpel",
-        "name": "Scalpel"
-      },
-      "missile_aa_03": {
-        "className": "PylonRack_1Rnd_Missile_AA_03_F",
-        "name": "Sahr-3"
-      },
-      "missile_agm_01": {
-        "className": "PylonRack_1Rnd_Missile_AGM_01_F",
-        "name": "Sharur"
-      }
-    },
-    "3rnd": {
-      "missile_agm_02": {
-        "className": "PylonRack_3Rnd_Missile_AGM_02_F",
-        "name": "Macer 3x"
-      },
-      "lg_scalpel": {
-        "className": "PylonRack_3Rnd_LG_scalpel",
-        "name": "Scalpel 3x"
-      }
-    },
-    "4rnd": {
-      "lg_scalpel": {
-        "className": "PylonRack_4Rnd_LG_scalpel",
-        "name": "Scalpel 4x"
-      },
-      "bombdemine_01": {
-        "className": "PylonRack_4Rnd_BombDemine_01_F",
-        "name": "Demining Charge"
-      },
-      "bombdemine_01_dummy": {
-        "className": "PylonRack_4Rnd_BombDemine_01_Dummy_F",
-        "name": "Demining Charge (Dummy)"
-      }
-    },
-    "7rnd": {
-      "rocket_04_he": {
-        "className": "PylonRack_7Rnd_Rocket_04_HE_F",
-        "name": "Shrieker 7x HE"
-      },
-      "rocket_04_ap": {
-        "className": "PylonRack_7Rnd_Rocket_04_AP_F",
-        "name": "Shrieker 7x AP"
-      }
-    },
-    "12rnd": {
-      "pg_missiles": {
-        "className": "PylonRack_12Rnd_PG_missiles",
-        "name": "DAGR"
-      },
-      "missiles": {
-        "className": "PylonRack_12Rnd_missiles",
-        "name": "DAR"
-      }
-    },
-    "20rnd": {
-      "rocket_03_he": {
-        "className": "PylonRack_20Rnd_Rocket_03_HE_F",
-        "name": "Tratnyr 20x HE"
-      },
-      "rocket_03_ap": {
-        "className": "PylonRack_20Rnd_Rocket_03_AP_F",
-        "name": "Tratnyr 20x AP"
-      }
-    },
-    "19rnd": {
-      "rocket_skyfire": {
-        "className": "PylonRack_19Rnd_Rocket_Skyfire",
-        "name": "Skyfire 19x"
-      }
-    },
-    "missile": {
-      "amraam_c_x1": {
-        "className": "PylonRack_Missile_AMRAAM_C_x1",
-        "name": "AMRAAM C AA x1"
-      },
-      "amraam_c_x2": {
-        "className": "PylonRack_Missile_AMRAAM_C_x2",
-        "name": "AMRAAM C AA x2"
-      },
-      "amraam_d_x1": {
-        "className": "PylonRack_Missile_AMRAAM_D_x1",
-        "name": "AMRAAM D AA x1"
-      },
-      "amraam_d_x2": {
-        "className": "PylonRack_Missile_AMRAAM_D_x2",
-        "name": "AMRAAM D AA x2"
-      },
-      "bim9x_x1": {
-        "className": "PylonRack_Missile_BIM9X_x1",
-        "name": "BIM 9X AA x1"
-      },
-      "bim9x_x2": {
-        "className": "PylonRack_Missile_BIM9X_x2",
-        "name": "BIM 9X AA x2"
-      },
-      "agm_02_x1": {
-        "className": "PylonRack_Missile_AGM_02_x1",
-        "name": "Macer II AGM x1"
-      },
-      "agm_02_x2": {
-        "className": "PylonRack_Missile_AGM_02_x2",
-        "name": "Macer II AGM x2"
-      },
-      "harm_x1": {
-        "className": "PylonRack_Missile_HARM_x1",
-        "name": "AGM-88C HARM x1"
-      }
-    },
-    "bomb": {
-      "gbu12_x2": {
-        "className": "PylonRack_Bomb_GBU12_x2",
-        "name": "GBU 12 LGB x2"
-      },
-      "sdb_x4": {
-        "className": "PylonRack_Bomb_SDB_x4",
-        "name": "GBU SDB x4"
-      }
-    },
-    "2rnd": {
-      "bombcluster_01": {
-        "className": "PylonRack_2Rnd_BombCluster_01_F",
-        "name": "CBU-85 Cluster x2"
-      },
-      "bombcluster_03": {
-        "className": "PylonRack_2Rnd_BombCluster_03_F",
-        "name": "BL778 Cluster x2"
-      }
-    }
-  },
-  "pylonmissile": {
-    "1rnd": {
-      "missile_aa_04": {
-        "className": "PylonMissile_1Rnd_Missile_AA_04_F",
-        "name": "Falchion-22"
-      },
-      "aaa_missiles": {
-        "className": "PylonMissile_1Rnd_AAA_missiles",
-        "name": "ASRAAM"
-      },
-      "gaa_missiles": {
-        "className": "PylonMissile_1Rnd_GAA_missiles",
-        "name": "Zephyr"
-      },
-      "lg_scalpel": {
-        "className": "PylonMissile_1Rnd_LG_scalpel",
-        "name": "Scalpel"
-      },
-      "bomb_04": {
-        "className": "PylonMissile_1Rnd_Bomb_04_F",
-        "name": "GBU-12"
-      },
-      "mk82": {
-        "className": "PylonMissile_1Rnd_Mk82_F",
-        "name": "Mk82"
-      },
-      "missile_aa_03": {
-        "className": "PylonMissile_1Rnd_Missile_AA_03_F",
-        "name": "Sahr-3"
-      },
-      "bomb_03": {
-        "className": "PylonMissile_1Rnd_Bomb_03_F",
-        "name": "LOM-250G"
-      },
-      "bombcluster_01": {
-        "className": "PylonMissile_1Rnd_BombCluster_01_F",
-        "name": "CBU-85 Cluster x1"
-      },
-      "bombcluster_02": {
-        "className": "PylonMissile_1Rnd_BombCluster_02_F",
-        "name": "RBK-500F Cluster x1"
-      },
-      "bombcluster_02_cap": {
-        "className": "PylonMissile_1Rnd_BombCluster_02_cap_F",
-        "name": "RBK-500F Cluster x1"
-      },
-      "bombcluster_03": {
-        "className": "PylonMissile_1Rnd_BombCluster_03_F",
-        "name": "BL778 Cluster x1"
-      }
-    },
-    "missile": {
-      "amraam_c_x1": {
-        "className": "PylonMissile_Missile_AMRAAM_C_x1",
-        "name": "AMRAAM C AA x1"
-      },
-      "amraam_d_x1": {
-        "className": "PylonMissile_Missile_AMRAAM_D_x1",
-        "name": "AMRAAM D AA x1"
-      },
-      "amraam_d_int_x1": {
-        "className": "PylonMissile_Missile_AMRAAM_D_INT_x1",
-        "name": "AMRAAM D AA x1"
-      },
-      "bim9x_x1": {
-        "className": "PylonMissile_Missile_BIM9X_x1",
-        "name": "BIM 9X AA x1"
-      },
-      "agm_02_x1": {
-        "className": "PylonMissile_Missile_AGM_02_x1",
-        "name": "Macer II AGM x1"
-      },
-      "agm_02_x2": {
-        "className": "PylonMissile_Missile_AGM_02_x2",
-        "name": "Macer II AGM x2"
-      },
-      "aa_r73_x1": {
-        "className": "PylonMissile_Missile_AA_R73_x1",
-        "name": "R73 SR AA x1"
-      },
-      "aa_r77_x1": {
-        "className": "PylonMissile_Missile_AA_R77_x1",
-        "name": "R77 MR AA x1"
-      },
-      "aa_r77_int_x1": {
-        "className": "PylonMissile_Missile_AA_R77_INT_x1",
-        "name": "R77 MR AA x1"
-      },
-      "agm_kh25_x1": {
-        "className": "PylonMissile_Missile_AGM_KH25_x1",
-        "name": "KH25 AGM x1"
-      },
-      "agm_kh25_int_x1": {
-        "className": "PylonMissile_Missile_AGM_KH25_INT_x1",
-        "name": "KH25 AGM x1"
-      },
-      "harm_x1": {
-        "className": "PylonMissile_Missile_HARM_x1",
-        "name": "AGM-88C HARM x1"
-      },
-      "harm_int_x1": {
-        "className": "PylonMissile_Missile_HARM_INT_x1",
-        "name": "AGM-88C HARM x1"
-      },
-      "kh58_x1": {
-        "className": "PylonMissile_Missile_KH58_x1",
-        "name": "KH58 ARM x1"
-      },
-      "kh58_int_x1": {
-        "className": "PylonMissile_Missile_KH58_INT_x1",
-        "name": "KH58 ARM x1"
-      }
-    },
-    "bomb": {
-      "gbu12_x1": {
-        "className": "PylonMissile_Bomb_GBU12_x1",
-        "name": "GBU 12 LGB x1"
-      },
-      "kab250_x1": {
-        "className": "PylonMissile_Bomb_KAB250_x1",
-        "name": "KAB 250 LGB x1"
-      }
-    }
-  },
-  "pylonweapon": {
-    "300rnd": {
-      "20mm_shells": {
-        "className": "PylonWeapon_300Rnd_20mm_shells",
-        "name": "Twin Cannon 20mm"
-      }
-    },
-    "2000rnd": {
-      "65x39_belt": {
-        "className": "PylonWeapon_2000Rnd_65x39_belt",
-        "name": "Minigun 6.5 mm"
-      }
-    }
-  },
-  "atmine": {
-    "range": {
-      "mag": {
-        "className": "ATMine_Range_Mag",
-        "name": "AT Mine"
-      }
-    }
-  },
-  "apersmine": {
-    "range": {
-      "mag": {
-        "className": "APERSMine_Range_Mag",
-        "name": "APERS Mine"
-      }
-    }
-  },
-  "apersboundingmine": {
-    "range": {
-      "mag": {
-        "className": "APERSBoundingMine_Range_Mag",
-        "name": "APERS Bounding Mine"
-      }
-    }
-  },
-  "slamdirectionalmine": {
-    "wire": {
-      "mag": {
-        "className": "SLAMDirectionalMine_Wire_Mag",
-        "name": "M6 SLAM Mine"
-      }
-    }
-  },
-  "aperstripmine": {
-    "wire": {
-      "mag": {
-        "className": "APERSTripMine_Wire_Mag",
-        "name": "APERS Tripwire Mine"
-      }
-    }
-  },
-  "claymoredirectionalmine": {
-    "remote": {
-      "mag": {
-        "className": "ClaymoreDirectionalMine_Remote_Mag",
-        "name": "Claymore Charge"
-      }
-    }
-  },
-  "satchelcharge": {
-    "remote": {
-      "mag": {
-        "className": "SatchelCharge_Remote_Mag",
-        "name": "Explosive Satchel"
-      }
-    }
-  },
-  "democharge": {
-    "remote": {
-      "mag": {
-        "className": "DemoCharge_Remote_Mag",
-        "name": "Explosive Charge"
-      }
-    }
-  },
-  "iedurbanbig": {
-    "remote": {
-      "mag": {
-        "className": "IEDUrbanBig_Remote_Mag",
-        "name": "Large IED (Urban)"
-      }
-    }
-  },
-  "iedlandbig": {
-    "remote": {
-      "mag": {
-        "className": "IEDLandBig_Remote_Mag",
-        "name": "Large IED (Dug-in)"
-      }
-    }
-  },
-  "iedurbansmall": {
-    "remote": {
-      "mag": {
-        "className": "IEDUrbanSmall_Remote_Mag",
-        "name": "Small IED (Urban)"
-      }
-    }
-  },
-  "iedlandsmall": {
-    "remote": {
-      "mag": {
-        "className": "IEDLandSmall_Remote_Mag",
-        "name": "Small IED (Dug-in)"
-      }
-    }
-  },
-  "130rnd": {
-    "338": {
-      "mag": {
-        "className": "130Rnd_338_Mag",
-        "name": ".338 NM 130Rnd Belt"
-      }
-    }
-  },
-  "rpg7": {
-    "f": {
-      "base": {
-        "className": "RPG7_F",
-        "name": "PG-7VM HEAT Grenade"
-      }
-    }
-  },
-  "4000rnd": {
-    "20mm": {
-      "tracer_red_shells": {
-        "className": "4000Rnd_20mm_Tracer_Red_shells",
-        "name": "20 mm Shells"
-      }
-    }
-  },
-  "160rnd": {
-    "40mm": {
-      "apfsds_tracer_red_shells": {
-        "className": "160Rnd_40mm_APFSDS_Tracer_Red_shells",
-        "name": "40 mm APFSDS-T"
-      }
-    }
-  },
-  "magazine": {
-    "missile": {
-      "rim116_x21": {
-        "className": "magazine_Missile_rim116_x21",
-        "name": "Spartan AA"
-      },
-      "rim162_x8": {
-        "className": "magazine_Missile_rim162_x8",
-        "name": "Centurion AA"
-      },
-      "amraam_c_x1": {
-        "className": "magazine_Missile_AMRAAM_C_x1",
-        "name": "AMRAAM C AA x1"
-      },
-      "amraam_d_x1": {
-        "className": "magazine_Missile_AMRAAM_D_x1",
-        "name": "AMRAAM D AA x1"
-      },
-      "bim9x_x1": {
-        "className": "magazine_Missile_BIM9X_x1",
-        "name": "BIM 9X AA x1"
-      },
-      "agm_02_x1": {
-        "className": "magazine_Missile_AGM_02_x1",
-        "name": "Macer II AGM x1"
-      },
-      "aa_r73_x1": {
-        "className": "magazine_Missile_AA_R73_x1",
-        "name": "R73 SR AA x1"
-      },
-      "aa_r77_x1": {
-        "className": "magazine_Missile_AA_R77_x1",
-        "name": "R77 MR AA x1"
-      },
-      "agm_kh25_x1": {
-        "className": "magazine_Missile_AGM_KH25_x1",
-        "name": "KH25 AGM x1"
-      },
-      "mim145_x4": {
-        "className": "magazine_Missile_mim145_x4",
-        "name": "Defender AA"
-      },
-      "s750_x4": {
-        "className": "magazine_Missile_s750_x4",
-        "name": "Rhea AA"
-      },
-      "harm_x1": {
-        "className": "magazine_Missile_HARM_x1",
-        "name": "AGM-88C HARM x1"
-      },
-      "kh58_x1": {
-        "className": "magazine_Missile_KH58_x1",
-        "name": "KH58 ARM x1"
-      }
-    },
-    "cannon": {
-      "phalanx_x1550": {
-        "className": "magazine_Cannon_Phalanx_x1550",
-        "name": "Praetorian 20mm"
-      }
-    },
-    "fighter01": {
-      "gun20mm_aa_x450": {
-        "className": "magazine_Fighter01_Gun20mm_AA_x450",
-        "name": "M61 20mm 450 rnd"
-      }
-    },
-    "fighter04": {
-      "gun20mm_aa_x150": {
-        "className": "magazine_Fighter04_Gun20mm_AA_x150",
-        "name": "M61 20mm 150 rbd"
-      },
-      "gun20mm_aa_x250": {
-        "className": "magazine_Fighter04_Gun20mm_AA_x250",
-        "name": "M61 20mm 150 rbd"
-      }
-    },
-    "bomb": {
-      "gbu12_x1": {
-        "className": "magazine_Bomb_GBU12_x1",
-        "name": "GBU 12 LGB x1"
-      },
-      "kab250_x1": {
-        "className": "magazine_Bomb_KAB250_x1",
-        "name": "KAB 250 LGB x1"
-      },
-      "sdb_x1": {
-        "className": "magazine_Bomb_SDB_x1",
-        "name": "GBU SDB x1"
-      }
-    },
-    "fighter02": {
-      "gun30mm_aa_x180": {
-        "className": "magazine_Fighter02_Gun30mm_AA_x180",
-        "name": "Gsh 30mm 180 rnd"
-      }
-    },
-    "missiles": {
-      "cruise_01_x18": {
-        "className": "magazine_Missiles_Cruise_01_x18",
-        "name": "Cruise Missile HE"
-      },
-      "cruise_01_cluster_x18": {
-        "className": "magazine_Missiles_Cruise_01_Cluster_x18",
-        "name": "Cruise Missile Cluster"
-      }
-    },
-    "shipcannon": {
-      "120mm_he_shells_x32": {
-        "className": "magazine_ShipCannon_120mm_HE_shells_x32",
-        "name": "HE Shells"
-      },
-      "120mm_smoke_shells_x6": {
-        "className": "magazine_ShipCannon_120mm_smoke_shells_x6",
-        "name": "Smoke (White)"
-      },
-      "120mm_he_guided_shells_x2": {
-        "className": "magazine_ShipCannon_120mm_HE_guided_shells_x2",
-        "name": "Guided"
-      },
-      "120mm_he_lg_shells_x2": {
-        "className": "magazine_ShipCannon_120mm_HE_LG_shells_x2",
-        "name": "Laser Guided"
-      },
-      "120mm_mine_shells_x6": {
-        "className": "magazine_ShipCannon_120mm_mine_shells_x6",
-        "name": "Mine Cluster"
-      },
-      "120mm_he_cluster_shells_x2": {
-        "className": "magazine_ShipCannon_120mm_HE_cluster_shells_x2",
-        "name": "Cluster Shells"
-      },
-      "120mm_at_mine_shells_x6": {
-        "className": "magazine_ShipCannon_120mm_AT_mine_shells_x6",
-        "name": "AT Mine Cluster"
-      }
-    }
-  },
-  "pylon": {
-    "1rnd": {
-      "leaflets_west": {
-        "className": "Pylon_1Rnd_Leaflets_West_F",
-        "name": "Leaflets (NATO)"
-      },
-      "leaflets_east": {
-        "className": "Pylon_1Rnd_Leaflets_East_F",
-        "name": "Leaflets (CSAT)"
-      },
-      "leaflets_guer": {
-        "className": "Pylon_1Rnd_Leaflets_Guer_F",
-        "name": "Leaflets (AAF)"
-      },
-      "leaflets_civ": {
-        "className": "Pylon_1Rnd_Leaflets_Civ_F",
-        "name": "Leaflets (IDAP)"
-      },
-      "leaflets_custom_01": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_01_F",
-        "name": "Leaflets (Custom 01)"
-      },
-      "leaflets_custom_02": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_02_F",
-        "name": "Leaflets (Custom 02)"
-      },
-      "leaflets_custom_03": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_03_F",
-        "name": "Leaflets (Custom 03)"
-      },
-      "leaflets_custom_04": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_04_F",
-        "name": "Leaflets (Custom 04)"
-      },
-      "leaflets_custom_05": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_05_F",
-        "name": "Leaflets (Custom 05)"
-      },
-      "leaflets_custom_06": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_06_F",
-        "name": "Leaflets (Custom 06)"
-      },
-      "leaflets_custom_07": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_07_F",
-        "name": "Leaflets (Custom 07)"
-      },
-      "leaflets_custom_08": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_08_F",
-        "name": "Leaflets (Custom 08)"
-      },
-      "leaflets_custom_09": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_09_F",
-        "name": "Leaflets (Custom 09)"
-      },
-      "leaflets_custom_10": {
-        "className": "Pylon_1Rnd_Leaflets_Custom_10_F",
-        "name": "Leaflets (Custom 10)"
-      }
-    }
-  },
-  "apersminedispenser": {
-    "mag": {
-      "base": {
-        "className": "APERSMineDispenser_Mag",
-        "name": "APERS Mine Dispenser"
-      }
-    }
-  },
-  "trainingmine": {
-    "mag": {
-      "base": {
-        "className": "TrainingMine_Mag",
-        "name": "Training Mine"
-      }
-    }
-  },
-  "vorona": {
-    "heat": {
-      "base": {
-        "className": "Vorona_HEAT",
-        "name": "9M135 HEAT Missile"
-      }
-    },
-    "he": {
-      "base": {
-        "className": "Vorona_HE",
-        "name": "9M135 HE Missile"
-      }
-    }
-  },
-  "spg9": {
-    "heat": {
-      "base": {
-        "className": "SPG9_HEAT",
-        "name": "PG-9N Round"
-      }
-    },
-    "he": {
-      "base": {
-        "className": "SPG9_HE",
-        "name": "OG-9VM Round"
-      }
-    }
-  },
-  "mraws": {
-    "heat": {
-      "base": {
-        "className": "MRAWS_HEAT_F",
-        "name": "MAAWS HEAT 75 Round"
-      }
-    },
-    "he": {
-      "base": {
-        "className": "MRAWS_HE_F",
-        "name": "MAAWS HE 44 Round"
-      }
-    },
-    "heat55": {
-      "base": {
-        "className": "MRAWS_HEAT55_F",
-        "name": "MAAWS HEAT 55 Round"
-      }
-    }
-  },
-  "75rnd": {
-    "762x39": {
-      "mag": {
-        "className": "75Rnd_762x39_Mag_F",
-        "name": "7.62 mm 75Rnd AKM Mag"
-      },
-      "mag_tracer": {
-        "className": "75Rnd_762x39_Mag_Tracer_F",
-        "name": "7.62 mm 75Rnd AKM Tracer Mag"
-      },
-      "ak12_mag": {
-        "className": "75rnd_762x39_AK12_Mag_F",
-        "name": "7.62 mm 75rnd AK12 Mag"
-      },
-      "ak12_mag_tracer": {
-        "className": "75rnd_762x39_AK12_Mag_Tracer_F",
-        "name": "7.62 mm 75rnd AK12 Tracer Mag"
-      },
-      "ak12_lush_mag": {
-        "className": "75rnd_762x39_AK12_Lush_Mag_F",
-        "name": "7.62 mm 75rnd AK12 Lush Mag"
-      },
-      "ak12_lush_mag_tracer": {
-        "className": "75rnd_762x39_AK12_Lush_Mag_Tracer_F",
-        "name": "7.62 mm 75rnd AK12 Tracer Lush Mag"
-      },
-      "ak12_arid_mag": {
-        "className": "75rnd_762x39_AK12_Arid_Mag_F",
-        "name": "7.62 mm 75rnd AK12 Arid Mag"
-      },
-      "ak12_arid_mag_tracer": {
-        "className": "75rnd_762x39_AK12_Arid_Mag_Tracer_F",
-        "name": "7.62 mm 75rnd AK12 Tracer Arid Mag"
-      }
-    }
-  },
-  "15rnd": {
-    "12gauge": {
-      "pellets": {
-        "className": "15Rnd_12Gauge_Pellets",
-        "name": "12 Gauge 15Rnd Pellets"
-      },
-      "slug": {
-        "className": "15Rnd_12Gauge_Slug",
-        "name": "12 Gauge 15Rnd Slug"
-      }
-    }
-  },
-  "probingweapon": {
-    "01": {
-      "magazine": {
-        "className": "ProbingWeapon_01_magazine"
-      }
-    },
-    "02": {
-      "magazine": {
-        "className": "ProbingWeapon_02_magazine"
-      }
-    }
-  },
-  "dummy": {
-    "magazine": {
-      "base": {
-        "className": "Dummy_Magazine_Base"
-      }
-    }
-  },
-  "esd": {
-    "01": {
-      "dummymagazine_base": {
-        "className": "ESD_01_DummyMagazine_base"
-      },
-      "dummymagazine_1": {
-        "className": "ESD_01_DummyMagazine_1"
-      },
-      "dummymagazine_2": {
-        "className": "ESD_01_DummyMagazine_2"
-      },
-      "dummymagazine_3": {
-        "className": "ESD_01_DummyMagazine_3"
-      },
-      "dummymagazine_4": {
-        "className": "ESD_01_DummyMagazine_4"
-      },
-      "dummymagazine_5": {
-        "className": "ESD_01_DummyMagazine_5"
-      },
-      "dummymagazine_6": {
-        "className": "ESD_01_DummyMagazine_6"
-      },
-      "dummymagazine_7": {
-        "className": "ESD_01_DummyMagazine_7"
-      },
-      "dummymagazine_8": {
-        "className": "ESD_01_DummyMagazine_8"
-      },
-      "dummymagazine_9": {
-        "className": "ESD_01_DummyMagazine_9"
-      },
-      "dummymagazine_10": {
-        "className": "ESD_01_DummyMagazine_10"
-      },
-      "dummymagazine_11": {
-        "className": "ESD_01_DummyMagazine_11"
-      },
-      "dummymagazine_12": {
-        "className": "ESD_01_DummyMagazine_12"
-      },
-      "dummymagazine_13": {
-        "className": "ESD_01_DummyMagazine_13"
-      },
-      "dummymagazine_14": {
-        "className": "ESD_01_DummyMagazine_14"
-      },
-      "dummymagazine_15": {
-        "className": "ESD_01_DummyMagazine_15"
-      },
-      "dummymagazine_16": {
-        "className": "ESD_01_DummyMagazine_16"
-      },
-      "dummymagazine_17": {
-        "className": "ESD_01_DummyMagazine_17"
-      },
-      "dummymagazine_18": {
-        "className": "ESD_01_DummyMagazine_18"
-      },
-      "dummymagazine_19": {
-        "className": "ESD_01_DummyMagazine_19"
-      },
-      "dummymagazine_20": {
-        "className": "ESD_01_DummyMagazine_20"
-      }
-    }
-  },
-  "om": {
-    "magazine": {
-      "base": {
-        "className": "OM_Magazine"
-      }
-    }
-  },
-  "files": {
-    "diary": {
-      "base": {
-        "className": "Files_diary",
-        "name": "Journal"
-      }
-    },
-    "researchnotes": {
-      "base": {
-        "className": "Files_researchNotes",
-        "name": "Research Notes"
-      }
-    }
-  },
-  "wallet": {
-    "id": {
-      "base": {
-        "className": "Wallet_ID",
-        "name": "Wallet (ID)"
-      }
-    }
-  },
-  "csat": {
-    "id": {
-      "01": {
-        "className": "Csat_Id_01",
-        "name": "Access Card (v1) [CSAT]"
-      },
-      "02": {
-        "className": "Csat_Id_02",
-        "name": "Access Card (v2) [CSAT]"
-      },
-      "03": {
-        "className": "Csat_Id_03",
-        "name": "Access Card (v3) [CSAT]"
-      },
-      "04": {
-        "className": "Csat_Id_04",
-        "name": "Access Card (v4) [CSAT]"
-      },
-      "05": {
-        "className": "Csat_Id_05",
-        "name": "Access Card (v5) [CSAT]"
-      }
-    }
-  },
-  "laptop": {
-    "unfolded": {
-      "base": {
-        "className": "Laptop_Unfolded",
-        "name": "Laptop (Open)"
-      }
-    },
-    "closed": {
-      "base": {
-        "className": "Laptop_Closed",
-        "name": "Laptop (Closed)"
-      }
-    }
-  },
-  "money": {
-    "bunch": {
-      "base": {
-        "className": "Money_bunch",
-        "name": "Money (Notes)"
-      }
-    },
-    "roll": {
-      "base": {
-        "className": "Money_roll",
-        "name": "Money (Roll)"
-      }
-    },
-    "stack": {
-      "base": {
-        "className": "Money_stack",
-        "name": "Money (Stack)"
-      },
-      "quest": {
-        "className": "Money_stack_quest",
-        "name": "Money (Large Stack)"
-      }
-    }
-  },
-  "sleeping": {
-    "bag": {
-      "folded_01": {
-        "className": "Sleeping_bag_folded_01",
-        "name": "Sleeping Bag (Folded)"
-      }
-    }
-  },
-  "drone": {
-    "range": {
-      "mag": {
-        "className": "Drone_Range_Mag",
-        "name": "AT Mine"
-      },
-      "mag_dummy": {
-        "className": "Drone_Range_Mag_dummy",
-        "name": "AT Mine"
-      }
-    }
-  },
-  "railgun": {
-    "01": {
-      "dummymagazine": {
-        "className": "RailGun_01_DummyMagazine",
-        "name": "APFSDS-KE"
-      }
-    }
-  }
+	"ca": {
+		"magazine": {
+			"base": {
+				"className": "CA_Magazine"
+			}
+		},
+		"launchermagazine": {
+			"base": {
+				"className": "CA_LauncherMagazine"
+			}
+		}
+	},
+	"30rnd": {
+		"556x45": {
+			"stanag": {
+				"className": "30Rnd_556x45_Stanag",
+				"name": "5.56 mm 30rnd Reload Tracer (Yellow) Mag"
+			},
+			"stanag_green": {
+				"className": "30Rnd_556x45_Stanag_green",
+				"name": "5.56 mm 30rnd Reload Tracer (Green) Mag"
+			},
+			"stanag_red": {
+				"className": "30Rnd_556x45_Stanag_red",
+				"name": "5.56 mm 30rnd Reload Tracer (Red) Mag"
+			},
+			"stanag_tracer_red": {
+				"className": "30Rnd_556x45_Stanag_Tracer_Red",
+				"name": "5.56 mm 30rnd Tracer (Red) Mag"
+			},
+			"stanag_tracer_green": {
+				"className": "30Rnd_556x45_Stanag_Tracer_Green",
+				"name": "5.56 mm 30rnd Tracer (Green) Mag"
+			},
+			"stanag_tracer_yellow": {
+				"className": "30Rnd_556x45_Stanag_Tracer_Yellow",
+				"name": "5.56 mm 30rnd Tracer (Yellow) Mag"
+			},
+			"stanag_sand": {
+				"className": "30Rnd_556x45_Stanag_Sand",
+				"name": "5.56 mm 30rnd Reload Tracer (Yellow) Sand Mag"
+			},
+			"stanag_sand_green": {
+				"className": "30Rnd_556x45_Stanag_Sand_green",
+				"name": "5.56 mm 30rnd Reload Tracer (Green) Sand Mag"
+			},
+			"stanag_sand_red": {
+				"className": "30Rnd_556x45_Stanag_Sand_red",
+				"name": "5.56 mm 30rnd Reload Tracer (Red) Sand Mag"
+			},
+			"stanag_sand_tracer_red": {
+				"className": "30Rnd_556x45_Stanag_Sand_Tracer_Red",
+				"name": "5.56 mm 30rnd Tracer (Red) Sand Mag"
+			},
+			"stanag_sand_tracer_green": {
+				"className": "30Rnd_556x45_Stanag_Sand_Tracer_Green",
+				"name": "5.56 mm 30rnd Tracer (Green) Sand Mag"
+			},
+			"stanag_sand_tracer_yellow": {
+				"className": "30Rnd_556x45_Stanag_Sand_Tracer_Yellow",
+				"name": "5.56 mm 30rnd Tracer (Yellow) Sand Mag"
+			}
+		},
+		"65x39": {
+			"caseless_mag": {
+				"className": "30Rnd_65x39_caseless_mag",
+				"name": "6.5 mm 30Rnd Sand Mag"
+			},
+			"caseless_khaki_mag": {
+				"className": "30Rnd_65x39_caseless_khaki_mag",
+				"name": "6.5 mm 30Rnd Khaki Mag"
+			},
+			"caseless_black_mag": {
+				"className": "30Rnd_65x39_caseless_black_mag",
+				"name": "6.5 mm 30Rnd Black Mag"
+			},
+			"caseless_green": {
+				"className": "30Rnd_65x39_caseless_green",
+				"name": "6.5 mm 30Rnd Caseless Mag"
+			},
+			"caseless_mag_tracer": {
+				"className": "30Rnd_65x39_caseless_mag_Tracer",
+				"name": "6.5 mm 30Rnd Tracer Sand Mag"
+			},
+			"caseless_khaki_mag_tracer": {
+				"className": "30Rnd_65x39_caseless_khaki_mag_Tracer",
+				"name": "6.5 mm 30Rnd Tracer Khaki Mag"
+			},
+			"caseless_black_mag_tracer": {
+				"className": "30Rnd_65x39_caseless_black_mag_Tracer",
+				"name": "6.5 mm 30Rnd Tracer Black Mag"
+			},
+			"caseless_green_mag_tracer": {
+				"className": "30Rnd_65x39_caseless_green_mag_Tracer",
+				"name": "6.5 mm 30Rnd Tracer (Green) Caseless Mag"
+			},
+			"caseless_msbs_mag": {
+				"className": "30Rnd_65x39_caseless_msbs_mag",
+				"name": "6.5 mm 30Rnd Promet Mag"
+			},
+			"caseless_msbs_mag_tracer": {
+				"className": "30Rnd_65x39_caseless_msbs_mag_Tracer",
+				"name": "6.5 mm 30Rnd Promet Tracer Mag"
+			}
+		},
+		"9x21": {
+			"mag": {
+				"className": "30Rnd_9x21_Mag",
+				"name": "9 mm 30Rnd Mag"
+			},
+			"red_mag": {
+				"className": "30Rnd_9x21_Red_Mag",
+				"name": "9 mm 30Rnd Reload Tracer (Red) Mag"
+			},
+			"yellow_mag": {
+				"className": "30Rnd_9x21_Yellow_Mag",
+				"name": "9 mm 30Rnd Reload Tracer (Yellow) Mag"
+			},
+			"green_mag": {
+				"className": "30Rnd_9x21_Green_Mag",
+				"name": "9 mm 30Rnd Reload Tracer (Green) Mag"
+			},
+			"mag_smg_02": {
+				"className": "30Rnd_9x21_Mag_SMG_02",
+				"name": "9 mm 30Rnd Mag"
+			},
+			"mag_smg_02_tracer_red": {
+				"className": "30Rnd_9x21_Mag_SMG_02_Tracer_Red",
+				"name": "9 mm 30Rnd Reload Tracer (Red) Mag"
+			},
+			"mag_smg_02_tracer_yellow": {
+				"className": "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow",
+				"name": "9 mm 30Rnd Reload Tracer (Yellow) Mag"
+			},
+			"mag_smg_02_tracer_green": {
+				"className": "30Rnd_9x21_Mag_SMG_02_Tracer_Green",
+				"name": "9 mm 30Rnd Reload Tracer (Green) Mag"
+			}
+		},
+		"45acp": {
+			"mag_smg_01": {
+				"className": "30Rnd_45ACP_Mag_SMG_01",
+				"name": ".45 ACP 30Rnd Vermin Mag"
+			},
+			"mag_smg_01_tracer_green": {
+				"className": "30Rnd_45ACP_Mag_SMG_01_Tracer_Green",
+				"name": ".45 ACP 30Rnd Vermin Tracers (Green) Mag"
+			},
+			"mag_smg_01_tracer_red": {
+				"className": "30Rnd_45ACP_Mag_SMG_01_Tracer_Red",
+				"name": ".45 ACP 30Rnd Vermin Tracers (Red) Mag"
+			},
+			"mag_smg_01_tracer_yellow": {
+				"className": "30Rnd_45ACP_Mag_SMG_01_Tracer_Yellow",
+				"name": ".45 ACP 30Rnd Vermin Tracers (Yellow) Mag"
+			}
+		},
+		"120mm": {
+			"he_shells": {
+				"className": "30Rnd_120mm_HE_shells",
+				"name": "HE Shells"
+			},
+			"he_shells_tracer_red": {
+				"className": "30Rnd_120mm_HE_shells_Tracer_Red",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_green": {
+				"className": "30Rnd_120mm_HE_shells_Tracer_Green",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_yellow": {
+				"className": "30Rnd_120mm_HE_shells_Tracer_Yellow",
+				"name": "120mm HE-T"
+			},
+			"apfsds_shells": {
+				"className": "30Rnd_120mm_APFSDS_shells",
+				"name": "120mm APFSDS"
+			},
+			"apfsds_shells_tracer_red": {
+				"className": "30Rnd_120mm_APFSDS_shells_Tracer_Red",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_green": {
+				"className": "30Rnd_120mm_APFSDS_shells_Tracer_Green",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_yellow": {
+				"className": "30Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+				"name": "120mm APFSDS-T"
+			}
+		},
+		"580x42": {
+			"mag": {
+				"className": "30Rnd_580x42_Mag_F",
+				"name": "5.8 mm 30Rnd Mag"
+			},
+			"mag_tracer": {
+				"className": "30Rnd_580x42_Mag_Tracer_F",
+				"name": "5.8 mm 30Rnd Tracer (Green) Mag"
+			}
+		},
+		"762x39": {
+			"mag": {
+				"className": "30Rnd_762x39_Mag_F",
+				"name": "7.62 mm 30Rnd AKM Reload Tracer (Yellow) Mag"
+			},
+			"mag_green": {
+				"className": "30Rnd_762x39_Mag_Green_F",
+				"name": "7.62 mm 30Rnd AKM Reload Tracer (Green) Mag"
+			},
+			"mag_tracer": {
+				"className": "30Rnd_762x39_Mag_Tracer_F",
+				"name": "7.62 mm 30Rnd AKM Tracer (Yellow) Mag"
+			},
+			"mag_tracer_green": {
+				"className": "30Rnd_762x39_Mag_Tracer_Green_F",
+				"name": "7.62 mm 30Rnd AKM Tracer (Green) Mag"
+			},
+			"ak12_mag": {
+				"className": "30Rnd_762x39_AK12_Mag_F",
+				"name": "7.62 mm 30rnd AK12 Mag"
+			},
+			"ak12_mag_tracer": {
+				"className": "30Rnd_762x39_AK12_Mag_Tracer_F",
+				"name": "7.62 mm 30rnd AK12 Tracer Mag"
+			},
+			"ak12_mag_green": {
+				"className": "30Rnd_762x39_AK12_Mag_Green_F"
+			},
+			"ak12_mag_tracer_green": {
+				"className": "30Rnd_762x39_AK12_Mag_Tracer_Green_F"
+			},
+			"ak12_lush_mag": {
+				"className": "30rnd_762x39_AK12_Lush_Mag_F",
+				"name": "7.62 mm 30rnd AK12 Khaki Mag"
+			},
+			"ak12_lush_mag_tracer": {
+				"className": "30rnd_762x39_AK12_Lush_Mag_Tracer_F",
+				"name": "7.62 mm 30rnd AK12 Tracer Khaki Mag"
+			},
+			"ak12_arid_mag": {
+				"className": "30rnd_762x39_AK12_Arid_Mag_F",
+				"name": "7.62 mm 30rnd AK12 Sand Mag"
+			},
+			"ak12_arid_mag_tracer": {
+				"className": "30rnd_762x39_AK12_Arid_Mag_Tracer_F",
+				"name": "7.62 mm 30rnd AK12 Tracer Sand Mag"
+			}
+		},
+		"545x39": {
+			"mag": {
+				"className": "30Rnd_545x39_Mag_F",
+				"name": "5.45 mm 30Rnd Reload Tracer (Yellow) Mag"
+			},
+			"mag_green": {
+				"className": "30Rnd_545x39_Mag_Green_F",
+				"name": "5.45 mm 30Rnd Reload Tracer (Green) Mag"
+			},
+			"mag_tracer": {
+				"className": "30Rnd_545x39_Mag_Tracer_F",
+				"name": "5.45 mm 30Rnd Tracer (Yellow) Mag"
+			},
+			"mag_tracer_green": {
+				"className": "30Rnd_545x39_Mag_Tracer_Green_F",
+				"name": "5.45 mm 30Rnd Tracer (Green) Mag"
+			}
+		}
+	},
+	"20rnd": {
+		"556x45": {
+			"uw_mag": {
+				"className": "20Rnd_556x45_UW_mag",
+				"name": "5.56 mm 20Rnd Dual Purpose Mag"
+			}
+		},
+		"762x51": {
+			"mag": {
+				"className": "20Rnd_762x51_Mag",
+				"name": "7.62 mm 20Rnd Mag"
+			}
+		},
+		"120mm": {
+			"apfsds_shells": {
+				"className": "20Rnd_120mm_APFSDS_shells",
+				"name": "120mm APFSDS"
+			},
+			"apfsds_shells_tracer_red": {
+				"className": "20Rnd_120mm_APFSDS_shells_Tracer_Red",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_green": {
+				"className": "20Rnd_120mm_APFSDS_shells_Tracer_Green",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_yellow": {
+				"className": "20Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+				"name": "120mm APFSDS-T"
+			},
+			"heat_mp": {
+				"className": "20Rnd_120mm_HEAT_MP",
+				"name": "120mm HEAT-MP-T"
+			},
+			"heat_mp_t_red": {
+				"className": "20Rnd_120mm_HEAT_MP_T_Red",
+				"name": "120mm HEAT-MP-T"
+			},
+			"heat_mp_t_green": {
+				"className": "20Rnd_120mm_HEAT_MP_T_Green",
+				"name": "120mm HEAT-MP-T"
+			},
+			"heat_mp_t_yellow": {
+				"className": "20Rnd_120mm_HEAT_MP_T_Yellow",
+				"name": "120mm HEAT-MP-T"
+			}
+		},
+		"125mm": {
+			"apfsds": {
+				"className": "20Rnd_125mm_APFSDS",
+				"name": "125mm APFSDS-T"
+			},
+			"apfsds_t_red": {
+				"className": "20Rnd_125mm_APFSDS_T_Red",
+				"name": "125mm APFSDS-T"
+			},
+			"apfsds_t_green": {
+				"className": "20Rnd_125mm_APFSDS_T_Green",
+				"name": "125mm APFSDS-T"
+			},
+			"apfsds_t_yellow": {
+				"className": "20Rnd_125mm_APFSDS_T_Yellow",
+				"name": "125mm APFSDS-T"
+			}
+		},
+		"105mm": {
+			"heat_mp": {
+				"className": "20Rnd_105mm_HEAT_MP",
+				"name": "105mm HEAT-MP"
+			},
+			"heat_mp_t_red": {
+				"className": "20Rnd_105mm_HEAT_MP_T_Red",
+				"name": "105mm HEAT-MP-T"
+			},
+			"heat_mp_t_green": {
+				"className": "20Rnd_105mm_HEAT_MP_T_Green",
+				"name": "105mm HEAT-MP-T"
+			},
+			"heat_mp_t_yellow": {
+				"className": "20Rnd_105mm_HEAT_MP_T_Yellow",
+				"name": "105mm HEAT-MP-T"
+			}
+		},
+		"rocket": {
+			"03_he": {
+				"className": "20Rnd_Rocket_03_HE_F"
+			},
+			"03_ap": {
+				"className": "20Rnd_Rocket_03_AP_F"
+			}
+		},
+		"650x39": {
+			"cased_mag": {
+				"className": "20Rnd_650x39_Cased_Mag_F",
+				"name": "6.5 mm 20Rnd Mag"
+			}
+		}
+	},
+	"7rnd": {
+		"408": {
+			"mag": {
+				"className": "7Rnd_408_Mag",
+				"name": ".408 7Rnd LRR Mag"
+			}
+		},
+		"rocket": {
+			"04_he": {
+				"className": "7Rnd_Rocket_04_HE_F"
+			},
+			"04_ap": {
+				"className": "7Rnd_Rocket_04_AP_F"
+			}
+		}
+	},
+	"5rnd": {
+		"127x108": {
+			"mag": {
+				"className": "5Rnd_127x108_Mag",
+				"name": "12.7 mm 5Rnd Mag"
+			},
+			"apds_mag": {
+				"className": "5Rnd_127x108_APDS_Mag",
+				"name": "12.7 mm 5Rnd APDS Mag"
+			}
+		},
+		"gat": {
+			"missiles": {
+				"className": "5Rnd_GAT_missiles",
+				"name": "Titan Missile"
+			}
+		}
+	},
+	"100rnd": {
+		"65x39": {
+			"caseless_mag": {
+				"className": "100Rnd_65x39_caseless_mag",
+				"name": "6.5 mm 100Rnd Sand Mag"
+			},
+			"caseless_khaki_mag": {
+				"className": "100Rnd_65x39_caseless_khaki_mag",
+				"name": "6.5 mm 100Rnd Khaki Mag"
+			},
+			"caseless_black_mag": {
+				"className": "100Rnd_65x39_caseless_black_mag",
+				"name": "6.5 mm 100Rnd Black Mag"
+			},
+			"caseless_mag_tracer": {
+				"className": "100Rnd_65x39_caseless_mag_Tracer",
+				"name": "6.5 mm 100Rnd Tracer Sand Mag"
+			},
+			"caseless_khaki_mag_tracer": {
+				"className": "100Rnd_65x39_caseless_khaki_mag_tracer",
+				"name": "6.5 mm 100Rnd Tracer Khaki Mag"
+			},
+			"caseless_black_mag_tracer": {
+				"className": "100Rnd_65x39_caseless_black_mag_tracer",
+				"name": "6.5 mm 100Rnd Tracer Black Mag"
+			}
+		},
+		"127x99": {
+			"mag": {
+				"className": "100Rnd_127x99_mag",
+				"name": "12.7 mm M2 HMG Belt"
+			},
+			"mag_tracer_red": {
+				"className": "100Rnd_127x99_mag_Tracer_Red",
+				"name": "12.7 mm M2 HMG Tracer (Red) Belt"
+			},
+			"mag_tracer_green": {
+				"className": "100Rnd_127x99_mag_Tracer_Green",
+				"name": "12.7 mm M2 HMG Tracer (Green) Belt"
+			},
+			"mag_tracer_yellow": {
+				"className": "100Rnd_127x99_mag_Tracer_Yellow",
+				"name": "12.7 mm M2 HMG Tracer (Yellow) Belt"
+			}
+		},
+		"580x42": {
+			"mag": {
+				"className": "100Rnd_580x42_Mag_F",
+				"name": "5.8 mm 100Rnd Mag"
+			},
+			"mag_tracer": {
+				"className": "100Rnd_580x42_Mag_Tracer_F",
+				"name": "5.8 mm 100Rnd Tracer (Green) Mag"
+			},
+			"hex_mag": {
+				"className": "100Rnd_580x42_hex_Mag_F",
+				"name": "5.8 mm 100Rnd Hex Mag"
+			},
+			"hex_mag_tracer": {
+				"className": "100Rnd_580x42_hex_Mag_Tracer_F",
+				"name": "5.8 mm 100Rnd Tracer (Green) Hex Mag"
+			},
+			"ghex_mag": {
+				"className": "100Rnd_580x42_ghex_Mag_F",
+				"name": "5.8 mm 100Rnd Green Hex Mag"
+			},
+			"ghex_mag_tracer": {
+				"className": "100Rnd_580x42_ghex_Mag_Tracer_F",
+				"name": "5.8 mm 100Rnd Tracer (Green) Green Hex Mag"
+			}
+		},
+		"105mm": {
+			"heat_mp": {
+				"className": "100Rnd_105mm_HEAT_MP",
+				"name": "105mm HEAT-MP"
+			}
+		}
+	},
+	"200rnd": {
+		"338": {
+			"mag": {
+				"className": "200Rnd_338_Mag",
+				"name": ".338 NM 130Rnd Belt"
+			}
+		},
+		"65x39": {
+			"cased_box": {
+				"className": "200Rnd_65x39_cased_Box",
+				"name": "6.5 mm 200Rnd Belt"
+			},
+			"cased_box_tracer": {
+				"className": "200Rnd_65x39_cased_Box_Tracer",
+				"name": "6.5 mm 200Rnd Belt Tracer (Yellow)"
+			},
+			"cased_box_red": {
+				"className": "200Rnd_65x39_cased_Box_Red",
+				"name": "6.5 mm 200Rnd Reload Tracer (Red) Belt"
+			},
+			"cased_box_tracer_red": {
+				"className": "200Rnd_65x39_cased_Box_Tracer_Red",
+				"name": "6.5mm 200Rnd Belt Tracer (Red)"
+			},
+			"belt": {
+				"className": "200Rnd_65x39_Belt",
+				"name": "6.5 mm 200Rnd Belt Case"
+			},
+			"belt_tracer_red": {
+				"className": "200Rnd_65x39_Belt_Tracer_Red",
+				"name": "6.5 mm 200Rnd Belt Case Tracer (Red)"
+			},
+			"belt_tracer_green": {
+				"className": "200Rnd_65x39_Belt_Tracer_Green",
+				"name": "6.5 mm 200Rnd Belt Case Tracer (Green)"
+			},
+			"belt_tracer_yellow": {
+				"className": "200Rnd_65x39_Belt_Tracer_Yellow",
+				"name": "6.5 mm 200Rnd Belt Tracer (Yellow)"
+			}
+		},
+		"127x99": {
+			"mag": {
+				"className": "200Rnd_127x99_mag",
+				"name": "12.7 mm RCWS HMG"
+			},
+			"mag_tracer_red": {
+				"className": "200Rnd_127x99_mag_Tracer_Red",
+				"name": "12.7 mm RCWS HMG Tracer (Red)"
+			},
+			"mag_tracer_green": {
+				"className": "200Rnd_127x99_mag_Tracer_Green",
+				"name": "12.7 mm RCWS HMG Tracer (Green)"
+			},
+			"mag_tracer_yellow": {
+				"className": "200Rnd_127x99_mag_Tracer_Yellow",
+				"name": "12.7 mm RCWS HMG Tracer (Yellow)"
+			}
+		},
+		"40mm": {
+			"g_belt": {
+				"className": "200Rnd_40mm_G_belt",
+				"name": "40 mm HE Grenade Mag"
+			}
+		},
+		"20mm": {
+			"g_belt": {
+				"className": "200Rnd_20mm_G_belt",
+				"name": "20 mm Grenade Mag"
+			}
+		},
+		"762x51": {
+			"belt": {
+				"className": "200Rnd_762x51_Belt",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_red": {
+				"className": "200Rnd_762x51_Belt_Red",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_t_red": {
+				"className": "200Rnd_762x51_Belt_T_Red",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_green": {
+				"className": "200Rnd_762x51_Belt_Green",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_t_green": {
+				"className": "200Rnd_762x51_Belt_T_Green",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_yellow": {
+				"className": "200Rnd_762x51_Belt_Yellow",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_t_yellow": {
+				"className": "200Rnd_762x51_Belt_T_Yellow",
+				"name": "7.62 mm Minigun Belt"
+			}
+		},
+		"556x45": {
+			"box": {
+				"className": "200Rnd_556x45_Box_F",
+				"name": "5.56 mm 200Rnd Reload Tracer (Yellow) Box"
+			},
+			"box_red": {
+				"className": "200Rnd_556x45_Box_Red_F",
+				"name": "5.56 mm 200Rnd Reload Tracer (Red) Box"
+			},
+			"box_tracer": {
+				"className": "200Rnd_556x45_Box_Tracer_F",
+				"name": "5.56 mm 200Rnd Tracer (Yellow) Box"
+			},
+			"box_tracer_red": {
+				"className": "200Rnd_556x45_Box_Tracer_Red_F",
+				"name": "5.56 mm 200Rnd Tracer (Red) Box"
+			}
+		}
+	},
+	"16rnd": {
+		"9x21": {
+			"mag": {
+				"className": "16Rnd_9x21_Mag",
+				"name": "9 mm 16Rnd Mag"
+			},
+			"red_mag": {
+				"className": "16Rnd_9x21_red_Mag",
+				"name": "9 mm 16Rnd Reload Tracer (Red) Mag"
+			},
+			"green_mag": {
+				"className": "16Rnd_9x21_green_Mag",
+				"name": "9 mm 16Rnd Reload Tracer (Green) Mag"
+			},
+			"yellow_mag": {
+				"className": "16Rnd_9x21_yellow_Mag",
+				"name": "9 mm 16Rnd Reload Tracer (Yellow) Mag"
+			}
+		},
+		"120mm": {
+			"he_shells": {
+				"className": "16Rnd_120mm_HE_shells",
+				"name": "HE Shells"
+			},
+			"he_shells_tracer_red": {
+				"className": "16Rnd_120mm_HE_shells_Tracer_Red",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_green": {
+				"className": "16Rnd_120mm_HE_shells_Tracer_Green",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_yellow": {
+				"className": "16Rnd_120mm_HE_shells_Tracer_Yellow",
+				"name": "120mm HE-T"
+			}
+		},
+		"125mm": {
+			"apfsds": {
+				"className": "16Rnd_125mm_APFSDS",
+				"name": "125mm APFSDS-T"
+			},
+			"apfsds_t_red": {
+				"className": "16Rnd_125mm_APFSDS_T_Red",
+				"name": "125mm APFSDS-T"
+			},
+			"apfsds_t_green": {
+				"className": "16Rnd_125mm_APFSDS_T_Green",
+				"name": "125mm APFSDS-T"
+			},
+			"apfsds_t_yellow": {
+				"className": "16Rnd_125mm_APFSDS_T_Yellow",
+				"name": "125mm APFSDS-T"
+			}
+		}
+	},
+	"rpg32": {
+		"f": {
+			"base": {
+				"className": "RPG32_F",
+				"name": "RPG-42 Rocket"
+			}
+		},
+		"he": {
+			"base": {
+				"className": "RPG32_HE_F",
+				"name": "RPG-42 HE Rocket"
+			}
+		}
+	},
+	"nlaw": {
+		"f": {
+			"base": {
+				"className": "NLAW_F",
+				"name": "PCML Missile"
+			}
+		}
+	},
+	"1rnd": {
+		"he": {
+			"grenade_shell": {
+				"className": "1Rnd_HE_Grenade_shell",
+				"name": "40 mm HE Grenade Round"
+			}
+		},
+		"smoke": {
+			"grenade_shell": {
+				"className": "1Rnd_Smoke_Grenade_shell",
+				"name": "Smoke Round (White)"
+			}
+		},
+		"smokered": {
+			"grenade_shell": {
+				"className": "1Rnd_SmokeRed_Grenade_shell",
+				"name": "Smoke Round (Red)"
+			}
+		},
+		"smokegreen": {
+			"grenade_shell": {
+				"className": "1Rnd_SmokeGreen_Grenade_shell",
+				"name": "Smoke Round (Green)"
+			}
+		},
+		"smokeyellow": {
+			"grenade_shell": {
+				"className": "1Rnd_SmokeYellow_Grenade_shell",
+				"name": "Smoke Round (Yellow)"
+			}
+		},
+		"smokepurple": {
+			"grenade_shell": {
+				"className": "1Rnd_SmokePurple_Grenade_shell",
+				"name": "Smoke Round (Purple)"
+			}
+		},
+		"smokeblue": {
+			"grenade_shell": {
+				"className": "1Rnd_SmokeBlue_Grenade_shell",
+				"name": "Smoke Round (Blue)"
+			}
+		},
+		"smokeorange": {
+			"grenade_shell": {
+				"className": "1Rnd_SmokeOrange_Grenade_shell",
+				"name": "Smoke Round (Orange)"
+			}
+		},
+		"gaa": {
+			"missiles": {
+				"className": "1Rnd_GAA_missiles",
+				"name": "Zephyr"
+			}
+		},
+		"gat": {
+			"missiles": {
+				"className": "1Rnd_GAT_missiles",
+				"name": "Titan Missile"
+			}
+		},
+		"leaflets": {
+			"west": {
+				"className": "1Rnd_Leaflets_West_F",
+				"name": "Leaflets"
+			},
+			"east": {
+				"className": "1Rnd_Leaflets_East_F",
+				"name": "Leaflets"
+			},
+			"guer": {
+				"className": "1Rnd_Leaflets_Guer_F",
+				"name": "Leaflets"
+			},
+			"civ": {
+				"className": "1Rnd_Leaflets_Civ_F",
+				"name": "Leaflets"
+			},
+			"custom_01": {
+				"className": "1Rnd_Leaflets_Custom_01_F",
+				"name": "Leaflets"
+			},
+			"custom_02": {
+				"className": "1Rnd_Leaflets_Custom_02_F",
+				"name": "Leaflets"
+			},
+			"custom_03": {
+				"className": "1Rnd_Leaflets_Custom_03_F",
+				"name": "Leaflets"
+			},
+			"custom_04": {
+				"className": "1Rnd_Leaflets_Custom_04_F",
+				"name": "Leaflets"
+			},
+			"custom_05": {
+				"className": "1Rnd_Leaflets_Custom_05_F",
+				"name": "Leaflets"
+			},
+			"custom_06": {
+				"className": "1Rnd_Leaflets_Custom_06_F",
+				"name": "Leaflets"
+			},
+			"custom_07": {
+				"className": "1Rnd_Leaflets_Custom_07_F",
+				"name": "Leaflets"
+			},
+			"custom_08": {
+				"className": "1Rnd_Leaflets_Custom_08_F",
+				"name": "Leaflets"
+			},
+			"custom_09": {
+				"className": "1Rnd_Leaflets_Custom_09_F",
+				"name": "Leaflets"
+			},
+			"custom_10": {
+				"className": "1Rnd_Leaflets_Custom_10_F",
+				"name": "Leaflets"
+			}
+		}
+	},
+	"3rnd": {
+		"he": {
+			"grenade_shell": {
+				"className": "3Rnd_HE_Grenade_shell",
+				"name": "40 mm 3Rnd HE Grenade"
+			}
+		},
+		"smoke": {
+			"grenade_shell": {
+				"className": "3Rnd_Smoke_Grenade_shell",
+				"name": "3Rnd 3GL Smoke Rounds (White)"
+			}
+		},
+		"smokered": {
+			"grenade_shell": {
+				"className": "3Rnd_SmokeRed_Grenade_shell",
+				"name": "3Rnd 3GL Smoke Rounds (Red)"
+			}
+		},
+		"smokegreen": {
+			"grenade_shell": {
+				"className": "3Rnd_SmokeGreen_Grenade_shell",
+				"name": "3Rnd 3GL Smoke Rounds (Green)"
+			}
+		},
+		"smokeyellow": {
+			"grenade_shell": {
+				"className": "3Rnd_SmokeYellow_Grenade_shell",
+				"name": "3Rnd 3GL Smoke Rounds (Yellow)"
+			}
+		},
+		"smokepurple": {
+			"grenade_shell": {
+				"className": "3Rnd_SmokePurple_Grenade_shell",
+				"name": "3Rnd 3GL Smoke Rounds (Purple)"
+			}
+		},
+		"smokeblue": {
+			"grenade_shell": {
+				"className": "3Rnd_SmokeBlue_Grenade_shell",
+				"name": "3Rnd 3GL Smoke Rounds (Blue)"
+			}
+		},
+		"smokeorange": {
+			"grenade_shell": {
+				"className": "3Rnd_SmokeOrange_Grenade_shell",
+				"name": "3Rnd 3GL Smoke Rounds (Orange)"
+			}
+		},
+		"ugl": {
+			"flarewhite": {
+				"className": "3Rnd_UGL_FlareWhite_F",
+				"name": "3Rnd 3GL Flares (White)"
+			},
+			"flaregreen": {
+				"className": "3Rnd_UGL_FlareGreen_F",
+				"name": "3Rnd 3GL Flares (Green)"
+			},
+			"flarered": {
+				"className": "3Rnd_UGL_FlareRed_F",
+				"name": "3Rnd 3GL Flares (Red)"
+			},
+			"flareyellow": {
+				"className": "3Rnd_UGL_FlareYellow_F",
+				"name": "3Rnd 3GL Flares (Yellow)"
+			},
+			"flarecir": {
+				"className": "3Rnd_UGL_FlareCIR_F",
+				"name": "3Rnd 3GL Flares (IR)"
+			}
+		}
+	},
+	"handgrenade": {
+		"stone": {
+			"base": {
+				"className": "HandGrenade_Stone",
+				"name": "Stone"
+			}
+		}
+	},
+	"chemlight": {
+		"green": {
+			"base": {
+				"className": "Chemlight_green",
+				"name": "Chemlight (Green)"
+			}
+		},
+		"red": {
+			"base": {
+				"className": "Chemlight_red",
+				"name": "Chemlight (Red)"
+			}
+		},
+		"yellow": {
+			"base": {
+				"className": "Chemlight_yellow",
+				"name": "Chemlight (Yellow)"
+			}
+		},
+		"blue": {
+			"base": {
+				"className": "Chemlight_blue",
+				"name": "Chemlight (Blue)"
+			}
+		}
+	},
+	"60rnd": {
+		"cmflaremagazine": {
+			"base": {
+				"className": "60Rnd_CMFlareMagazine"
+			}
+		},
+		"cmflare": {
+			"chaff_magazine": {
+				"className": "60Rnd_CMFlare_Chaff_Magazine"
+			}
+		},
+		"30mm": {
+			"apfsds_shells": {
+				"className": "60Rnd_30mm_APFSDS_shells",
+				"name": "30 mm APFSDS"
+			},
+			"apfsds_shells_tracer_red": {
+				"className": "60Rnd_30mm_APFSDS_shells_Tracer_Red",
+				"name": "30 mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_green": {
+				"className": "60Rnd_30mm_APFSDS_shells_Tracer_Green",
+				"name": "30 mm APFSDS"
+			},
+			"apfsds_shells_tracer_yellow": {
+				"className": "60Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+				"name": "30 mm APFSDS-T"
+			},
+			"mp_shells_tracer_green": {
+				"className": "60Rnd_30mm_MP_shells_Tracer_Green",
+				"name": "30 mm MP-T"
+			}
+		},
+		"40mm": {
+			"gpr_shells": {
+				"className": "60Rnd_40mm_GPR_shells",
+				"name": "40 mm GPR"
+			},
+			"gpr_tracer_red_shells": {
+				"className": "60Rnd_40mm_GPR_Tracer_Red_shells",
+				"name": "40 mm GPR-T"
+			},
+			"gpr_tracer_green_shells": {
+				"className": "60Rnd_40mm_GPR_Tracer_Green_shells",
+				"name": "40 mm GPR-T"
+			},
+			"gpr_tracer_yellow_shells": {
+				"className": "60Rnd_40mm_GPR_Tracer_Yellow_shells",
+				"name": "40 mm GPR-T"
+			}
+		},
+		"20mm": {
+			"he_shells": {
+				"className": "60Rnd_20mm_HE_shells",
+				"name": "20 mm Shells"
+			},
+			"ap_shells": {
+				"className": "60Rnd_20mm_AP_shells",
+				"name": "20 mm Shells"
+			}
+		},
+		"75mm": {
+			"railgun_apfsds_mag": {
+				"className": "60Rnd_75mm_RailGun_APFSDS_mag",
+				"name": "APFSDS-KE"
+			}
+		}
+	},
+	"120rnd": {
+		"cmflaremagazine": {
+			"base": {
+				"className": "120Rnd_CMFlareMagazine"
+			}
+		},
+		"cmflare": {
+			"chaff_magazine": {
+				"className": "120Rnd_CMFlare_Chaff_Magazine"
+			}
+		}
+	},
+	"240rnd": {
+		"cmflaremagazine": {
+			"base": {
+				"className": "240Rnd_CMFlareMagazine"
+			}
+		},
+		"cmflare": {
+			"chaff_magazine": {
+				"className": "240Rnd_CMFlare_Chaff_Magazine"
+			}
+		},
+		"40mm": {
+			"gpr_tracer_red_shells": {
+				"className": "240Rnd_40mm_GPR_Tracer_Red_shells",
+				"name": "40 mm GPR-T"
+			}
+		}
+	},
+	"192rnd": {
+		"cmflare": {
+			"chaff_magazine": {
+				"className": "192Rnd_CMFlare_Chaff_Magazine"
+			}
+		}
+	},
+	"168rnd": {
+		"cmflare": {
+			"chaff_magazine": {
+				"className": "168Rnd_CMFlare_Chaff_Magazine"
+			}
+		}
+	},
+	"300rnd": {
+		"cmflare": {
+			"chaff_magazine": {
+				"className": "300Rnd_CMFlare_Chaff_Magazine"
+			}
+		},
+		"20mm": {
+			"shells": {
+				"className": "300Rnd_20mm_shells",
+				"name": "20 mm Shells"
+			}
+		},
+		"25mm": {
+			"shells": {
+				"className": "300Rnd_25mm_shells",
+				"name": "25 mm Shells"
+			}
+		}
+	},
+	"smokelaunchermag": {
+		"single": {
+			"base": {
+				"className": "SmokeLauncherMag_Single"
+			}
+		},
+		"boat": {
+			"base": {
+				"className": "SmokeLauncherMag_boat"
+			}
+		}
+	},
+	"1000rnd": {
+		"65x39": {
+			"belt": {
+				"className": "1000Rnd_65x39_Belt",
+				"name": "6.5 mm 1000Rnd LMG Belt"
+			},
+			"belt_tracer_red": {
+				"className": "1000Rnd_65x39_Belt_Tracer_Red",
+				"name": "6.5 mm 1000Rnd LMG Tracer (Red) Belt"
+			},
+			"belt_green": {
+				"className": "1000Rnd_65x39_Belt_Green",
+				"name": "6.5 mm 1000Rnd LMG Belt"
+			},
+			"belt_tracer_green": {
+				"className": "1000Rnd_65x39_Belt_Tracer_Green",
+				"name": "6.5 mm 1000Rnd LMG Tracer (Green) Belt"
+			},
+			"belt_yellow": {
+				"className": "1000Rnd_65x39_Belt_Yellow",
+				"name": "6.5 mm 1000Rnd LMG Belt"
+			},
+			"belt_tracer_yellow": {
+				"className": "1000Rnd_65x39_Belt_Tracer_Yellow",
+				"name": "6.5 mm 1000Rnd LMG Tracer (Yellow) Belt"
+			}
+		},
+		"20mm": {
+			"shells": {
+				"className": "1000Rnd_20mm_shells",
+				"name": "20 mm Shells"
+			}
+		},
+		"25mm": {
+			"shells": {
+				"className": "1000Rnd_25mm_shells",
+				"name": "25 mm Shells"
+			}
+		},
+		"762x51": {
+			"belt": {
+				"className": "1000Rnd_762x51_Belt",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_red": {
+				"className": "1000Rnd_762x51_Belt_Red",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_t_red": {
+				"className": "1000Rnd_762x51_Belt_T_Red",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_green": {
+				"className": "1000Rnd_762x51_Belt_Green",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_t_green": {
+				"className": "1000Rnd_762x51_Belt_T_Green",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_yellow": {
+				"className": "1000Rnd_762x51_Belt_Yellow",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_t_yellow": {
+				"className": "1000Rnd_762x51_Belt_T_Yellow",
+				"name": "7.62 mm Minigun Belt"
+			}
+		},
+		"gatling": {
+			"30mm_plane_cas_01": {
+				"className": "1000Rnd_Gatling_30mm_Plane_CAS_01_F"
+			}
+		}
+	},
+	"2000rnd": {
+		"65x39": {
+			"belt": {
+				"className": "2000Rnd_65x39_Belt",
+				"name": "6.5 mm 2000Rnd LMG Belt"
+			},
+			"belt_tracer_red": {
+				"className": "2000Rnd_65x39_Belt_Tracer_Red",
+				"name": "6.5 mm 2000Rnd LMG Tracer (Red) Belt"
+			},
+			"belt_green": {
+				"className": "2000Rnd_65x39_Belt_Green",
+				"name": "6.5 mm 2000Rnd LMG Belt"
+			},
+			"belt_tracer_green": {
+				"className": "2000Rnd_65x39_Belt_Tracer_Green",
+				"name": "6.5 mm 2000Rnd LMG Tracer (Green) Belt"
+			},
+			"belt_tracer_green_splash": {
+				"className": "2000Rnd_65x39_Belt_Tracer_Green_Splash",
+				"name": "6.5 mm 2000Rnd LMG Tracer (Green) Belt"
+			},
+			"belt_yellow": {
+				"className": "2000Rnd_65x39_Belt_Yellow",
+				"name": "6.5 mm 2000Rnd LMG Belt"
+			},
+			"belt_tracer_yellow": {
+				"className": "2000Rnd_65x39_Belt_Tracer_Yellow",
+				"name": "6.5 mm 2000Rnd LMG Tracer (Yellow) Belt"
+			},
+			"belt_tracer_yellow_splash": {
+				"className": "2000Rnd_65x39_Belt_Tracer_Yellow_Splash",
+				"name": "6.5 mm 2000Rnd LMG Tracer (Yellow) Belt"
+			}
+		},
+		"20mm": {
+			"shells": {
+				"className": "2000Rnd_20mm_shells",
+				"name": "20 mm Shells"
+			}
+		},
+		"762x51": {
+			"belt": {
+				"className": "2000Rnd_762x51_Belt",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_red": {
+				"className": "2000Rnd_762x51_Belt_Red",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_t_red": {
+				"className": "2000Rnd_762x51_Belt_T_Red",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_green": {
+				"className": "2000Rnd_762x51_Belt_Green",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_t_green": {
+				"className": "2000Rnd_762x51_Belt_T_Green",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_yellow": {
+				"className": "2000Rnd_762x51_Belt_Yellow",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"belt_t_yellow": {
+				"className": "2000Rnd_762x51_Belt_T_Yellow",
+				"name": "7.62 mm Minigun Belt"
+			}
+		}
+	},
+	"5000rnd": {
+		"762x51": {
+			"belt": {
+				"className": "5000Rnd_762x51_Belt",
+				"name": "7.62 mm Minigun Belt"
+			},
+			"yellow_belt": {
+				"className": "5000Rnd_762x51_Yellow_Belt",
+				"name": "7.62 mm Minigun Belt"
+			}
+		}
+	},
+	"500rnd": {
+		"127x99": {
+			"mag": {
+				"className": "500Rnd_127x99_mag",
+				"name": "12.7 mm AA MG Mag"
+			},
+			"mag_tracer_red": {
+				"className": "500Rnd_127x99_mag_Tracer_Red",
+				"name": "12.7 mm AA MG Tracer (Red) Mag"
+			},
+			"mag_tracer_green": {
+				"className": "500Rnd_127x99_mag_Tracer_Green",
+				"name": "12.7 mm AA MG Tracer (Green) Mag"
+			},
+			"mag_tracer_yellow": {
+				"className": "500Rnd_127x99_mag_Tracer_Yellow",
+				"name": "12.7 mm AA MG Tracer (Yellow) Mag"
+			}
+		},
+		"cannon": {
+			"30mm_plane_cas_02": {
+				"className": "500Rnd_Cannon_30mm_Plane_CAS_02_F"
+			}
+		},
+		"65x39": {
+			"belt": {
+				"className": "500Rnd_65x39_Belt",
+				"name": "6.5 mm 500Rnd Belt Case"
+			},
+			"belt_tracer_red_splash": {
+				"className": "500Rnd_65x39_Belt_Tracer_Red_Splash",
+				"name": "6.5 mm 500Rnd Belt Case Tracer (Red)"
+			},
+			"belt_tracer_green_splash": {
+				"className": "500Rnd_65x39_Belt_Tracer_Green_Splash",
+				"name": "6.5 mm 500Rnd Belt Case Tracer (Green)"
+			},
+			"belt_tracer_yellow_splash": {
+				"className": "500Rnd_65x39_Belt_Tracer_Yellow_Splash",
+				"name": "6.5 mm 500Rnd Belt Case Tracer (Yellow)"
+			}
+		}
+	},
+	"450rnd": {
+		"127x108": {
+			"ball": {
+				"className": "450Rnd_127x108_Ball",
+				"name": "NSVT-M"
+			}
+		}
+	},
+	"150rnd": {
+		"127x108": {
+			"ball": {
+				"className": "150Rnd_127x108_Ball",
+				"name": "NSVT-M"
+			}
+		},
+		"762x51": {
+			"box": {
+				"className": "150Rnd_762x51_Box",
+				"name": "7.62 mm 150Rnd Box"
+			},
+			"box_tracer": {
+				"className": "150Rnd_762x51_Box_Tracer",
+				"name": "7.62 mm 150Rnd Tracer (Green) Box"
+			}
+		},
+		"762x54": {
+			"box": {
+				"className": "150Rnd_762x54_Box",
+				"name": "7.62 mm 150Rnd Box"
+			},
+			"box_tracer": {
+				"className": "150Rnd_762x54_Box_Tracer",
+				"name": "7.62 mm 150Rnd Tracer (Green) Box"
+			}
+		},
+		"93x64": {
+			"mag": {
+				"className": "150Rnd_93x64_Mag",
+				"name": "9.3mm 150Rnd Belt"
+			}
+		},
+		"556x45": {
+			"drum_mag": {
+				"className": "150Rnd_556x45_Drum_Mag_F",
+				"name": "5.56 mm 150Rnd Mag"
+			},
+			"drum_sand_mag": {
+				"className": "150Rnd_556x45_Drum_Sand_Mag_F",
+				"name": "5.56 mm 150Rnd Sand Mag"
+			},
+			"drum_sand_mag_tracer": {
+				"className": "150Rnd_556x45_Drum_Sand_Mag_Tracer_F",
+				"name": "5.56 mm 150Rnd Tracer (Red) Sand Mag"
+			},
+			"drum_green_mag": {
+				"className": "150Rnd_556x45_Drum_Green_Mag_F",
+				"name": "5.56 mm 150Rnd Green Mag"
+			},
+			"drum_green_mag_tracer": {
+				"className": "150Rnd_556x45_Drum_Green_Mag_Tracer_F",
+				"name": "5.56 mm 150Rnd Tracer (Red) Green Mag"
+			},
+			"drum_mag_tracer": {
+				"className": "150Rnd_556x45_Drum_Mag_Tracer_F",
+				"name": "5.56 mm 150Rnd Tracer (Red) Mag"
+			}
+		}
+	},
+	"50rnd": {
+		"127x108": {
+			"ball": {
+				"className": "50Rnd_127x108_Ball",
+				"name": "NSVT-M"
+			}
+		},
+		"570x28": {
+			"smg_03": {
+				"className": "50Rnd_570x28_SMG_03",
+				"name": "5.7 mm 50Rnd ADR-97 Mag"
+			}
+		}
+	},
+	"96rnd": {
+		"40mm": {
+			"g_belt": {
+				"className": "96Rnd_40mm_G_belt",
+				"name": "40 mm HE Grenade Mag"
+			}
+		}
+	},
+	"64rnd": {
+		"40mm": {
+			"g_belt": {
+				"className": "64Rnd_40mm_G_belt",
+				"name": "40 mm HE Grenade Mag"
+			}
+		}
+	},
+	"32rnd": {
+		"40mm": {
+			"g_belt": {
+				"className": "32Rnd_40mm_G_belt",
+				"name": "40 mm HE Grenade Mag"
+			}
+		},
+		"155mm": {
+			"mo_shells": {
+				"className": "32Rnd_155mm_Mo_shells",
+				"name": "155 mm HE Shells"
+			},
+			"mo_shells_o": {
+				"className": "32Rnd_155mm_Mo_shells_O",
+				"name": "155 mm HE Shells"
+			}
+		},
+		"120mm": {
+			"apfsds_shells": {
+				"className": "32Rnd_120mm_APFSDS_shells",
+				"name": "120mm APFSDS"
+			},
+			"apfsds_shells_tracer_red": {
+				"className": "32Rnd_120mm_APFSDS_shells_Tracer_Red",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_green": {
+				"className": "32Rnd_120mm_APFSDS_shells_Tracer_Green",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_yellow": {
+				"className": "32Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+				"name": "120mm APFSDS-T"
+			}
+		}
+	},
+	"40rnd": {
+		"20mm": {
+			"g_belt": {
+				"className": "40Rnd_20mm_G_belt",
+				"name": "20 mm HE Grenade Mag"
+			}
+		},
+		"40mm": {
+			"apfsds_shells": {
+				"className": "40Rnd_40mm_APFSDS_shells",
+				"name": "40 mm APFSDS"
+			},
+			"apfsds_tracer_red_shells": {
+				"className": "40Rnd_40mm_APFSDS_Tracer_Red_shells",
+				"name": "40 mm APFSDS-T"
+			},
+			"apfsds_tracer_green_shells": {
+				"className": "40Rnd_40mm_APFSDS_Tracer_Green_shells",
+				"name": "40 mm APFSDS-T"
+			},
+			"apfsds_tracer_yellow_shells": {
+				"className": "40Rnd_40mm_APFSDS_Tracer_Yellow_shells",
+				"name": "40 mm APFSDS-T"
+			}
+		},
+		"105mm": {
+			"apfsds": {
+				"className": "40Rnd_105mm_APFSDS",
+				"name": "105mm APFSDS"
+			},
+			"apfsds_t_red": {
+				"className": "40Rnd_105mm_APFSDS_T_Red",
+				"name": "105mm APFSDS-T"
+			},
+			"apfsds_t_green": {
+				"className": "40Rnd_105mm_APFSDS_T_Green",
+				"name": "105mm APFSDS-T"
+			},
+			"apfsds_t_yellow": {
+				"className": "40Rnd_105mm_APFSDS_T_Yellow",
+				"name": "105mm APFSDS-T"
+			}
+		}
+	},
+	"24rnd": {
+		"pg": {
+			"missiles": {
+				"className": "24Rnd_PG_missiles",
+				"name": "DAGR"
+			}
+		},
+		"missiles": {
+			"base": {
+				"className": "24Rnd_missiles",
+				"name": "DAR"
+			}
+		},
+		"120mm": {
+			"apfsds_shells": {
+				"className": "24Rnd_120mm_APFSDS_shells",
+				"name": "120mm APFSDS"
+			},
+			"apfsds_shells_tracer_red": {
+				"className": "24Rnd_120mm_APFSDS_shells_Tracer_Red",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_green": {
+				"className": "24Rnd_120mm_APFSDS_shells_Tracer_Green",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_yellow": {
+				"className": "24Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+				"name": "120mm APFSDS-T"
+			}
+		},
+		"125mm": {
+			"apfsds": {
+				"className": "24Rnd_125mm_APFSDS",
+				"name": "125mm APFSDS-T"
+			},
+			"apfsds_t_red": {
+				"className": "24Rnd_125mm_APFSDS_T_Red",
+				"name": "125mm APFSDS-T"
+			},
+			"apfsds_t_green": {
+				"className": "24Rnd_125mm_APFSDS_T_Green",
+				"name": "125mm APFSDS-T"
+			},
+			"apfsds_t_yellow": {
+				"className": "24Rnd_125mm_APFSDS_T_Yellow",
+				"name": "125mm APFSDS-T"
+			}
+		}
+	},
+	"12rnd": {
+		"pg": {
+			"missiles": {
+				"className": "12Rnd_PG_missiles",
+				"name": "DAGR"
+			}
+		},
+		"missiles": {
+			"base": {
+				"className": "12Rnd_missiles",
+				"name": "DAR"
+			}
+		},
+		"230mm": {
+			"rockets": {
+				"className": "12Rnd_230mm_rockets",
+				"name": "230 mm Rocket"
+			},
+			"rockets_cluster": {
+				"className": "12Rnd_230mm_rockets_cluster",
+				"name": "230 mm Cluster Rocket"
+			}
+		},
+		"120mm": {
+			"he_shells": {
+				"className": "12Rnd_120mm_HE_shells",
+				"name": "HE Shells"
+			},
+			"he_shells_tracer_red": {
+				"className": "12Rnd_120mm_HE_shells_Tracer_Red",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_green": {
+				"className": "12Rnd_120mm_HE_shells_Tracer_Green",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_yellow": {
+				"className": "12Rnd_120mm_HE_shells_Tracer_Yellow",
+				"name": "120mm HE-T"
+			},
+			"apfsds_shells": {
+				"className": "12Rnd_120mm_APFSDS_shells",
+				"name": "120mm APFSDS"
+			},
+			"apfsds_shells_tracer_red": {
+				"className": "12Rnd_120mm_APFSDS_shells_Tracer_Red",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_green": {
+				"className": "12Rnd_120mm_APFSDS_shells_Tracer_Green",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_yellow": {
+				"className": "12Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+				"name": "120mm APFSDS-T"
+			},
+			"heat_mp": {
+				"className": "12Rnd_120mm_HEAT_MP",
+				"name": "120mm HEAT-MP-T"
+			},
+			"heat_mp_t_red": {
+				"className": "12Rnd_120mm_HEAT_MP_T_Red",
+				"name": "120mm HEAT-MP-T"
+			},
+			"heat_mp_t_green": {
+				"className": "12Rnd_120mm_HEAT_MP_T_Green",
+				"name": "120mm HEAT-MP-T"
+			},
+			"heat_mp_t_yellow": {
+				"className": "12Rnd_120mm_HEAT_MP_T_Yellow",
+				"name": "120mm HEAT-MP-T"
+			}
+		},
+		"125mm": {
+			"he": {
+				"className": "12Rnd_125mm_HE",
+				"name": "125mm HE"
+			},
+			"he_t_red": {
+				"className": "12Rnd_125mm_HE_T_Red",
+				"name": "125mm HE-T"
+			},
+			"he_t_green": {
+				"className": "12Rnd_125mm_HE_T_Green",
+				"name": "125mm HE-T"
+			},
+			"he_t_yellow": {
+				"className": "12Rnd_125mm_HE_T_Yellow",
+				"name": "125mm HE-T"
+			},
+			"heat": {
+				"className": "12Rnd_125mm_HEAT",
+				"name": "125mm HEAT"
+			},
+			"heat_t_red": {
+				"className": "12Rnd_125mm_HEAT_T_Red",
+				"name": "125mm HEAT-T"
+			},
+			"heat_t_green": {
+				"className": "12Rnd_125mm_HEAT_T_Green",
+				"name": "125mm HEAT-T"
+			},
+			"heat_t_yellow": {
+				"className": "12Rnd_125mm_HEAT_T_Yellow",
+				"name": "125mm HEAT-T"
+			}
+		},
+		"spg9": {
+			"heat": {
+				"className": "12rnd_SPG9_HEAT",
+				"name": "PG-9N Round"
+			}
+		}
+	},
+	"8rnd": {
+		"82mm": {
+			"mo_shells": {
+				"className": "8Rnd_82mm_Mo_shells",
+				"name": "HE Mortar Shells"
+			},
+			"mo_flare_white": {
+				"className": "8Rnd_82mm_Mo_Flare_white",
+				"name": "Flare (White)"
+			},
+			"mo_smoke_white": {
+				"className": "8Rnd_82mm_Mo_Smoke_white",
+				"name": "Smoke Shell (White)"
+			},
+			"mo_guided": {
+				"className": "8Rnd_82mm_Mo_guided",
+				"name": "Guided"
+			},
+			"mo_lg": {
+				"className": "8Rnd_82mm_Mo_LG",
+				"name": "Laser Guided"
+			}
+		},
+		"lg": {
+			"scalpel": {
+				"className": "8Rnd_LG_scalpel",
+				"name": "Scalpel E2"
+			}
+		},
+		"120mm": {
+			"he_shells": {
+				"className": "8Rnd_120mm_HE_shells",
+				"name": "HE Shells"
+			},
+			"he_shells_tracer_red": {
+				"className": "8Rnd_120mm_HE_shells_Tracer_Red",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_green": {
+				"className": "8Rnd_120mm_HE_shells_Tracer_Green",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_yellow": {
+				"className": "8Rnd_120mm_HE_shells_Tracer_Yellow",
+				"name": "120mm HE-T"
+			},
+			"heat_mp": {
+				"className": "8Rnd_120mm_HEAT_MP",
+				"name": "120mm HEAT-MP-T"
+			},
+			"heat_mp_t_red": {
+				"className": "8Rnd_120mm_HEAT_MP_T_Red",
+				"name": "120mm HEAT-MP-T"
+			},
+			"heat_mp_t_green": {
+				"className": "8Rnd_120mm_HEAT_MP_T_Green",
+				"name": "120mm HEAT-MP-T"
+			},
+			"heat_mp_t_yellow": {
+				"className": "8Rnd_120mm_HEAT_MP_T_Yellow",
+				"name": "120mm HEAT-MP-T"
+			}
+		},
+		"125mm": {
+			"he": {
+				"className": "8Rnd_125mm_HE",
+				"name": "125mm HE"
+			},
+			"he_t_red": {
+				"className": "8Rnd_125mm_HE_T_Red",
+				"name": "125mm HE-T"
+			},
+			"he_t_green": {
+				"className": "8Rnd_125mm_HE_T_Green",
+				"name": "125mm HE-T"
+			},
+			"he_t_yellow": {
+				"className": "8Rnd_125mm_HE_T_Yellow",
+				"name": "125mm HE-T"
+			}
+		},
+		"spg9": {
+			"he": {
+				"className": "8rnd_SPG9_HE",
+				"name": "OG-9VM Round"
+			}
+		}
+	},
+	"6rnd": {
+		"155mm": {
+			"mo_smoke": {
+				"className": "6Rnd_155mm_Mo_smoke",
+				"name": "Smoke (White)"
+			},
+			"mo_smoke_o": {
+				"className": "6Rnd_155mm_Mo_smoke_O",
+				"name": "Smoke (White)"
+			},
+			"mo_mine": {
+				"className": "6Rnd_155mm_Mo_mine",
+				"name": "Mine Cluster"
+			},
+			"mo_mine_o": {
+				"className": "6Rnd_155mm_Mo_mine_O",
+				"name": "Mine Cluster"
+			},
+			"mo_at_mine": {
+				"className": "6Rnd_155mm_Mo_AT_mine",
+				"name": "AT Mine Cluster"
+			},
+			"mo_at_mine_o": {
+				"className": "6Rnd_155mm_Mo_AT_mine_O",
+				"name": "AT Mine Cluster"
+			}
+		},
+		"lg": {
+			"scalpel": {
+				"className": "6Rnd_LG_scalpel",
+				"name": "Scalpel E2"
+			}
+		},
+		"aat": {
+			"missiles": {
+				"className": "6Rnd_AAT_missiles",
+				"name": "AG Missiles"
+			}
+		},
+		"45acp": {
+			"cylinder": {
+				"className": "6Rnd_45ACP_Cylinder",
+				"name": ".45 ACP 6Rnd Cylinder"
+			}
+		},
+		"missile": {
+			"agm_02": {
+				"className": "6Rnd_Missile_AGM_02_F"
+			}
+		},
+		"greensignal": {
+			"base": {
+				"className": "6Rnd_GreenSignal_F",
+				"name": "6Rnd Signal Cylinder (Green)"
+			}
+		},
+		"redsignal": {
+			"base": {
+				"className": "6Rnd_RedSignal_F",
+				"name": "6Rnd Signal Cylinder (Red)"
+			}
+		},
+		"12gauge": {
+			"pellets": {
+				"className": "6Rnd_12Gauge_Pellets",
+				"name": "12 Gauge 6Rnd Pellets"
+			},
+			"slug": {
+				"className": "6Rnd_12Gauge_Slug",
+				"name": "12 Gauge 6Rnd Slug"
+			}
+		}
+	},
+	"2rnd": {
+		"155mm": {
+			"mo_guided": {
+				"className": "2Rnd_155mm_Mo_guided",
+				"name": "Guided"
+			},
+			"mo_guided_o": {
+				"className": "2Rnd_155mm_Mo_guided_O",
+				"name": "Guided"
+			},
+			"mo_lg": {
+				"className": "2Rnd_155mm_Mo_LG",
+				"name": "Laser Guided"
+			},
+			"mo_cluster": {
+				"className": "2Rnd_155mm_Mo_Cluster",
+				"name": "Cluster Shells"
+			},
+			"mo_cluster_o": {
+				"className": "2Rnd_155mm_Mo_Cluster_O",
+				"name": "Cluster Shells"
+			}
+		},
+		"lg": {
+			"scalpel": {
+				"className": "2Rnd_LG_scalpel",
+				"name": "Scalpel E2"
+			},
+			"scalpel_hidden": {
+				"className": "2Rnd_LG_scalpel_hidden",
+				"name": "Scalpel E2"
+			}
+		},
+		"aaa": {
+			"missiles": {
+				"className": "2Rnd_AAA_missiles",
+				"name": "ASRAAM"
+			},
+			"missiles_mi02": {
+				"className": "2Rnd_AAA_missiles_MI02",
+				"name": "ASRAAM"
+			},
+			"missiles_mi06": {
+				"className": "2Rnd_AAA_missiles_MI06",
+				"name": "ASRAAM"
+			}
+		},
+		"gat": {
+			"missiles": {
+				"className": "2Rnd_GAT_missiles",
+				"name": "Titan Missile"
+			},
+			"missiles_o": {
+				"className": "2Rnd_GAT_missiles_O",
+				"name": "Titan Missile"
+			}
+		},
+		"gbu12": {
+			"lgb": {
+				"className": "2Rnd_GBU12_LGB",
+				"name": "GBU-12"
+			},
+			"lgb_mi10": {
+				"className": "2Rnd_GBU12_LGB_MI10",
+				"name": "GBU-12"
+			}
+		},
+		"mk82": {
+			"base": {
+				"className": "2Rnd_Mk82",
+				"name": "Mk82"
+			},
+			"mi08": {
+				"className": "2Rnd_Mk82_MI08",
+				"name": "Mk82"
+			}
+		},
+		"missile": {
+			"aa_04": {
+				"className": "2Rnd_Missile_AA_04_F"
+			},
+			"aa_03": {
+				"className": "2Rnd_Missile_AA_03_F"
+			}
+		},
+		"bomb": {
+			"03": {
+				"className": "2Rnd_Bomb_03_F"
+			}
+		},
+		"127mm": {
+			"firefist_missiles": {
+				"className": "2Rnd_127mm_Firefist_missiles",
+				"name": "FireFIST ATGM Missile"
+			}
+		},
+		"12gauge": {
+			"pellets": {
+				"className": "2Rnd_12Gauge_Pellets",
+				"name": "12 Gauge 2Rnd Pellets"
+			},
+			"slug": {
+				"className": "2Rnd_12Gauge_Slug",
+				"name": "12 Gauge 2Rnd Slug"
+			}
+		}
+	},
+	"4rnd": {
+		"155mm": {
+			"mo_guided": {
+				"className": "4Rnd_155mm_Mo_guided",
+				"name": "Guided"
+			},
+			"mo_guided_o": {
+				"className": "4Rnd_155mm_Mo_guided_O",
+				"name": "Guided"
+			},
+			"mo_lg": {
+				"className": "4Rnd_155mm_Mo_LG",
+				"name": "Laser Guided"
+			},
+			"mo_lg_o": {
+				"className": "4Rnd_155mm_Mo_LG_O",
+				"name": "Laser Guided"
+			}
+		},
+		"aaa": {
+			"missiles": {
+				"className": "4Rnd_AAA_missiles",
+				"name": "ASRAAM"
+			},
+			"missiles_mi02": {
+				"className": "4Rnd_AAA_missiles_MI02",
+				"name": "ASRAAM"
+			}
+		},
+		"gaa": {
+			"missiles": {
+				"className": "4Rnd_GAA_missiles",
+				"name": "Zephyr"
+			}
+		},
+		"titan": {
+			"long_missiles": {
+				"className": "4Rnd_Titan_long_missiles",
+				"name": "Titan Missile"
+			},
+			"long_missiles_o": {
+				"className": "4Rnd_Titan_long_missiles_O",
+				"name": "Titan Missile"
+			}
+		},
+		"aat": {
+			"missiles": {
+				"className": "4Rnd_AAT_missiles",
+				"name": "AG Missiles"
+			}
+		},
+		"bomb": {
+			"04": {
+				"className": "4Rnd_Bomb_04_F"
+			}
+		},
+		"missile": {
+			"agm_01": {
+				"className": "4Rnd_Missile_AGM_01_F"
+			}
+		},
+		"lg": {
+			"jian": {
+				"className": "4Rnd_LG_Jian",
+				"name": "Jian"
+			}
+		},
+		"bombcluster": {
+			"01": {
+				"className": "4Rnd_BombCluster_01_F",
+				"name": "CBU-85"
+			},
+			"02": {
+				"className": "4Rnd_BombCluster_02_F",
+				"name": "RBK-500F"
+			},
+			"03": {
+				"className": "4Rnd_BombCluster_03_F",
+				"name": "BL778"
+			}
+		},
+		"120mm": {
+			"cannon_missiles": {
+				"className": "4Rnd_120mm_cannon_missiles",
+				"name": "120mm ATGM"
+			},
+			"lg_cannon_missiles": {
+				"className": "4Rnd_120mm_LG_cannon_missiles",
+				"name": "120mm ATGM LG"
+			}
+		},
+		"125mm": {
+			"cannon_missiles": {
+				"className": "4Rnd_125mm_cannon_missiles",
+				"name": "125mm ATGM"
+			}
+		},
+		"70mm": {
+			"saami_missiles": {
+				"className": "4Rnd_70mm_SAAMI_missiles",
+				"name": "SAAMI Missile"
+			}
+		}
+	},
+	"ugl": {
+		"flarewhite": {
+			"base": {
+				"className": "UGL_FlareWhite_F",
+				"name": "Flare Round (White)"
+			}
+		},
+		"flaregreen": {
+			"base": {
+				"className": "UGL_FlareGreen_F",
+				"name": "Flare Round (Green)"
+			}
+		},
+		"flarered": {
+			"base": {
+				"className": "UGL_FlareRed_F",
+				"name": "Flare Round (Red)"
+			}
+		},
+		"flareyellow": {
+			"base": {
+				"className": "UGL_FlareYellow_F",
+				"name": "Flare Round (Yellow)"
+			}
+		},
+		"flarecir": {
+			"base": {
+				"className": "UGL_FlareCIR_F",
+				"name": "Flare Round (IR)"
+			}
+		}
+	},
+	"flarewhite": {
+		"f": {
+			"base": {
+				"className": "FlareWhite_F",
+				"name": "Flare (White)"
+			}
+		}
+	},
+	"flaregreen": {
+		"f": {
+			"base": {
+				"className": "FlareGreen_F",
+				"name": "Flare (Green)"
+			}
+		}
+	},
+	"flarered": {
+		"f": {
+			"base": {
+				"className": "FlareRed_F",
+				"name": "Flare (Red)"
+			}
+		}
+	},
+	"flareyellow": {
+		"f": {
+			"base": {
+				"className": "FlareYellow_F",
+				"name": "Flare (Yellow)"
+			}
+		}
+	},
+	"9rnd": {
+		"45acp": {
+			"mag": {
+				"className": "9Rnd_45ACP_Mag",
+				"name": ".45 ACP 9Rnd Mag"
+			}
+		}
+	},
+	"titan": {
+		"aa": {
+			"base": {
+				"className": "Titan_AA",
+				"name": "Titan AA Missile"
+			}
+		},
+		"ap": {
+			"base": {
+				"className": "Titan_AP",
+				"name": "Titan AP Missile"
+			}
+		},
+		"at": {
+			"base": {
+				"className": "Titan_AT",
+				"name": "Titan AT Missile"
+			}
+		}
+	},
+	"250rnd": {
+		"30mm": {
+			"he_shells": {
+				"className": "250Rnd_30mm_HE_shells",
+				"name": "30 mm HE Shells"
+			},
+			"he_shells_tracer_red": {
+				"className": "250Rnd_30mm_HE_shells_Tracer_Red",
+				"name": "30 mm HE Tracer (Red) Shells"
+			},
+			"he_shells_tracer_green": {
+				"className": "250Rnd_30mm_HE_shells_Tracer_Green",
+				"name": "30 mm HE Tracer (Green) Shells"
+			},
+			"apds_shells": {
+				"className": "250Rnd_30mm_APDS_shells",
+				"name": "30 mm APDS shells"
+			},
+			"apds_shells_tracer_red": {
+				"className": "250Rnd_30mm_APDS_shells_Tracer_Red",
+				"name": "30 mm APDS Tracer (Red) Shells"
+			},
+			"apds_shells_tracer_green": {
+				"className": "250Rnd_30mm_APDS_shells_Tracer_Green",
+				"name": "30 mm APDS Tracer (Green) Shells"
+			},
+			"apds_shells_tracer_yellow": {
+				"className": "250Rnd_30mm_APDS_shells_Tracer_Yellow",
+				"name": "30 mm APDS Tracer (Yellow) Shells"
+			}
+		}
+	},
+	"140rnd": {
+		"30mm": {
+			"mp_shells": {
+				"className": "140Rnd_30mm_MP_shells",
+				"name": "30 mm Multi-purpose"
+			},
+			"mp_shells_tracer_red": {
+				"className": "140Rnd_30mm_MP_shells_Tracer_Red",
+				"name": "30 mm MP-T"
+			},
+			"mp_shells_tracer_green": {
+				"className": "140Rnd_30mm_MP_shells_Tracer_Green",
+				"name": "30 mm MP-T"
+			},
+			"mp_shells_tracer_yellow": {
+				"className": "140Rnd_30mm_MP_shells_Tracer_Yellow",
+				"name": "30 mm MP-T"
+			}
+		}
+	},
+	"14rnd": {
+		"80mm": {
+			"rockets": {
+				"className": "14Rnd_80mm_rockets",
+				"name": "Skyfire"
+			}
+		},
+		"120mm": {
+			"he_shells": {
+				"className": "14Rnd_120mm_HE_shells",
+				"name": "HE Shells"
+			},
+			"he_shells_tracer_red": {
+				"className": "14Rnd_120mm_HE_shells_Tracer_Red",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_green": {
+				"className": "14Rnd_120mm_HE_shells_Tracer_Green",
+				"name": "120mm HE-T"
+			},
+			"he_shells_tracer_yellow": {
+				"className": "14Rnd_120mm_HE_shells_Tracer_Yellow",
+				"name": "120mm HE-T"
+			}
+		}
+	},
+	"38rnd": {
+		"80mm": {
+			"rockets": {
+				"className": "38Rnd_80mm_rockets",
+				"name": "Skyfire"
+			}
+		}
+	},
+	"28rnd": {
+		"120mm": {
+			"apfsds_shells": {
+				"className": "28Rnd_120mm_APFSDS_shells",
+				"name": "120mm APFSDS"
+			},
+			"apfsds_shells_tracer_red": {
+				"className": "28Rnd_120mm_APFSDS_shells_Tracer_Red",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_green": {
+				"className": "28Rnd_120mm_APFSDS_shells_Tracer_Green",
+				"name": "120mm APFSDS-T"
+			},
+			"apfsds_shells_tracer_yellow": {
+				"className": "28Rnd_120mm_APFSDS_shells_Tracer_Yellow",
+				"name": "120mm APFSDS-T"
+			}
+		}
+	},
+	"680rnd": {
+		"35mm": {
+			"aa_shells": {
+				"className": "680Rnd_35mm_AA_shells",
+				"name": "35 mm AA Shells"
+			},
+			"aa_shells_tracer_red": {
+				"className": "680Rnd_35mm_AA_shells_Tracer_Red",
+				"name": "35 mm AA Shells"
+			},
+			"aa_shells_tracer_green": {
+				"className": "680Rnd_35mm_AA_shells_Tracer_Green",
+				"name": "35 mm AA Shells"
+			},
+			"aa_shells_tracer_yellow": {
+				"className": "680Rnd_35mm_AA_shells_Tracer_Yellow",
+				"name": "35 mm AA Shells"
+			}
+		}
+	},
+	"11rnd": {
+		"45acp": {
+			"mag": {
+				"className": "11Rnd_45ACP_Mag",
+				"name": ".45 ACP 11Rnd Mag"
+			}
+		}
+	},
+	"10rnd": {
+		"338": {
+			"mag": {
+				"className": "10Rnd_338_Mag",
+				"name": ".338 LM 10Rnd Mag"
+			}
+		},
+		"762x51": {
+			"mag": {
+				"className": "10Rnd_762x51_Mag",
+				"name": "7.62 mm 10Rnd Mag"
+			}
+		},
+		"762x54": {
+			"mag": {
+				"className": "10Rnd_762x54_Mag",
+				"name": "7.62 mm 10Rnd Mag"
+			}
+		},
+		"127x54": {
+			"mag": {
+				"className": "10Rnd_127x54_Mag",
+				"name": "12.7 mm 10Rnd Mag"
+			}
+		},
+		"93x64": {
+			"dmr_05_mag": {
+				"className": "10Rnd_93x64_DMR_05_Mag",
+				"name": "9.3 mm 10Rnd Mag"
+			}
+		},
+		"9x21": {
+			"mag": {
+				"className": "10Rnd_9x21_Mag",
+				"name": "9 mm 10Rnd Mag"
+			}
+		},
+		"50bw": {
+			"mag": {
+				"className": "10Rnd_50BW_Mag_F",
+				"name": ".50 BW 10Rnd Caseless Mag"
+			}
+		},
+		"mk14": {
+			"762x51_mag": {
+				"className": "10Rnd_Mk14_762x51_Mag",
+				"name": "7.62 mm 10rnd Mk14 Mag"
+			}
+		}
+	},
+	"b": {
+		"ir": {
+			"grenade": {
+				"className": "B_IR_Grenade",
+				"name": "IR Grenade [NATO]"
+			}
+		}
+	},
+	"o": {
+		"ir": {
+			"grenade": {
+				"className": "O_IR_Grenade",
+				"name": "IR Grenade [CSAT]"
+			}
+		},
+		"r": {
+			"ir_grenade": {
+				"className": "O_R_IR_Grenade",
+				"name": "IR Grenade [Spetsnaz]"
+			}
+		}
+	},
+	"i": {
+		"ir": {
+			"grenade": {
+				"className": "I_IR_Grenade",
+				"name": "IR Grenade [AAF]"
+			}
+		},
+		"e": {
+			"ir_grenade": {
+				"className": "I_E_IR_Grenade",
+				"name": "IR Grenade [LDF]"
+			}
+		}
+	},
+	"pylonrack": {
+		"1rnd": {
+			"missile_aa_04": {
+				"className": "PylonRack_1Rnd_Missile_AA_04_F",
+				"name": "Falchion-22"
+			},
+			"aaa_missiles": {
+				"className": "PylonRack_1Rnd_AAA_missiles",
+				"name": "ASRAAM"
+			},
+			"gaa_missiles": {
+				"className": "PylonRack_1Rnd_GAA_missiles",
+				"name": "Zephyr"
+			},
+			"missile_agm_02": {
+				"className": "PylonRack_1Rnd_Missile_AGM_02_F",
+				"name": "Macer"
+			},
+			"lg_scalpel": {
+				"className": "PylonRack_1Rnd_LG_scalpel",
+				"name": "Scalpel"
+			},
+			"missile_aa_03": {
+				"className": "PylonRack_1Rnd_Missile_AA_03_F",
+				"name": "Sahr-3"
+			},
+			"missile_agm_01": {
+				"className": "PylonRack_1Rnd_Missile_AGM_01_F",
+				"name": "Sharur"
+			}
+		},
+		"3rnd": {
+			"missile_agm_02": {
+				"className": "PylonRack_3Rnd_Missile_AGM_02_F",
+				"name": "Macer 3x"
+			},
+			"lg_scalpel": {
+				"className": "PylonRack_3Rnd_LG_scalpel",
+				"name": "Scalpel 3x"
+			}
+		},
+		"4rnd": {
+			"lg_scalpel": {
+				"className": "PylonRack_4Rnd_LG_scalpel",
+				"name": "Scalpel 4x"
+			},
+			"bombdemine_01": {
+				"className": "PylonRack_4Rnd_BombDemine_01_F",
+				"name": "Demining Charge"
+			},
+			"bombdemine_01_dummy": {
+				"className": "PylonRack_4Rnd_BombDemine_01_Dummy_F",
+				"name": "Demining Charge (Dummy)"
+			}
+		},
+		"7rnd": {
+			"rocket_04_he": {
+				"className": "PylonRack_7Rnd_Rocket_04_HE_F",
+				"name": "Shrieker 7x HE"
+			},
+			"rocket_04_ap": {
+				"className": "PylonRack_7Rnd_Rocket_04_AP_F",
+				"name": "Shrieker 7x AP"
+			}
+		},
+		"12rnd": {
+			"pg_missiles": {
+				"className": "PylonRack_12Rnd_PG_missiles",
+				"name": "DAGR"
+			},
+			"missiles": {
+				"className": "PylonRack_12Rnd_missiles",
+				"name": "DAR"
+			}
+		},
+		"20rnd": {
+			"rocket_03_he": {
+				"className": "PylonRack_20Rnd_Rocket_03_HE_F",
+				"name": "Tratnyr 20x HE"
+			},
+			"rocket_03_ap": {
+				"className": "PylonRack_20Rnd_Rocket_03_AP_F",
+				"name": "Tratnyr 20x AP"
+			}
+		},
+		"19rnd": {
+			"rocket_skyfire": {
+				"className": "PylonRack_19Rnd_Rocket_Skyfire",
+				"name": "Skyfire 19x"
+			}
+		},
+		"missile": {
+			"amraam_c_x1": {
+				"className": "PylonRack_Missile_AMRAAM_C_x1",
+				"name": "AMRAAM C AA x1"
+			},
+			"amraam_c_x2": {
+				"className": "PylonRack_Missile_AMRAAM_C_x2",
+				"name": "AMRAAM C AA x2"
+			},
+			"amraam_d_x1": {
+				"className": "PylonRack_Missile_AMRAAM_D_x1",
+				"name": "AMRAAM D AA x1"
+			},
+			"amraam_d_x2": {
+				"className": "PylonRack_Missile_AMRAAM_D_x2",
+				"name": "AMRAAM D AA x2"
+			},
+			"bim9x_x1": {
+				"className": "PylonRack_Missile_BIM9X_x1",
+				"name": "BIM 9X AA x1"
+			},
+			"bim9x_x2": {
+				"className": "PylonRack_Missile_BIM9X_x2",
+				"name": "BIM 9X AA x2"
+			},
+			"agm_02_x1": {
+				"className": "PylonRack_Missile_AGM_02_x1",
+				"name": "Macer II AGM x1"
+			},
+			"agm_02_x2": {
+				"className": "PylonRack_Missile_AGM_02_x2",
+				"name": "Macer II AGM x2"
+			},
+			"harm_x1": {
+				"className": "PylonRack_Missile_HARM_x1",
+				"name": "AGM-88C HARM x1"
+			}
+		},
+		"bomb": {
+			"gbu12_x2": {
+				"className": "PylonRack_Bomb_GBU12_x2",
+				"name": "GBU 12 LGB x2"
+			},
+			"sdb_x4": {
+				"className": "PylonRack_Bomb_SDB_x4",
+				"name": "GBU SDB x4"
+			}
+		},
+		"2rnd": {
+			"bombcluster_01": {
+				"className": "PylonRack_2Rnd_BombCluster_01_F",
+				"name": "CBU-85 Cluster x2"
+			},
+			"bombcluster_03": {
+				"className": "PylonRack_2Rnd_BombCluster_03_F",
+				"name": "BL778 Cluster x2"
+			}
+		}
+	},
+	"pylonmissile": {
+		"1rnd": {
+			"missile_aa_04": {
+				"className": "PylonMissile_1Rnd_Missile_AA_04_F",
+				"name": "Falchion-22"
+			},
+			"aaa_missiles": {
+				"className": "PylonMissile_1Rnd_AAA_missiles",
+				"name": "ASRAAM"
+			},
+			"gaa_missiles": {
+				"className": "PylonMissile_1Rnd_GAA_missiles",
+				"name": "Zephyr"
+			},
+			"lg_scalpel": {
+				"className": "PylonMissile_1Rnd_LG_scalpel",
+				"name": "Scalpel"
+			},
+			"bomb_04": {
+				"className": "PylonMissile_1Rnd_Bomb_04_F",
+				"name": "GBU-12"
+			},
+			"mk82": {
+				"className": "PylonMissile_1Rnd_Mk82_F",
+				"name": "Mk82"
+			},
+			"missile_aa_03": {
+				"className": "PylonMissile_1Rnd_Missile_AA_03_F",
+				"name": "Sahr-3"
+			},
+			"bomb_03": {
+				"className": "PylonMissile_1Rnd_Bomb_03_F",
+				"name": "LOM-250G"
+			},
+			"bombcluster_01": {
+				"className": "PylonMissile_1Rnd_BombCluster_01_F",
+				"name": "CBU-85 Cluster x1"
+			},
+			"bombcluster_02": {
+				"className": "PylonMissile_1Rnd_BombCluster_02_F",
+				"name": "RBK-500F Cluster x1"
+			},
+			"bombcluster_02_cap": {
+				"className": "PylonMissile_1Rnd_BombCluster_02_cap_F",
+				"name": "RBK-500F Cluster x1"
+			},
+			"bombcluster_03": {
+				"className": "PylonMissile_1Rnd_BombCluster_03_F",
+				"name": "BL778 Cluster x1"
+			}
+		},
+		"missile": {
+			"amraam_c_x1": {
+				"className": "PylonMissile_Missile_AMRAAM_C_x1",
+				"name": "AMRAAM C AA x1"
+			},
+			"amraam_d_x1": {
+				"className": "PylonMissile_Missile_AMRAAM_D_x1",
+				"name": "AMRAAM D AA x1"
+			},
+			"amraam_d_int_x1": {
+				"className": "PylonMissile_Missile_AMRAAM_D_INT_x1",
+				"name": "AMRAAM D AA x1"
+			},
+			"bim9x_x1": {
+				"className": "PylonMissile_Missile_BIM9X_x1",
+				"name": "BIM 9X AA x1"
+			},
+			"agm_02_x1": {
+				"className": "PylonMissile_Missile_AGM_02_x1",
+				"name": "Macer II AGM x1"
+			},
+			"agm_02_x2": {
+				"className": "PylonMissile_Missile_AGM_02_x2",
+				"name": "Macer II AGM x2"
+			},
+			"aa_r73_x1": {
+				"className": "PylonMissile_Missile_AA_R73_x1",
+				"name": "R73 SR AA x1"
+			},
+			"aa_r77_x1": {
+				"className": "PylonMissile_Missile_AA_R77_x1",
+				"name": "R77 MR AA x1"
+			},
+			"aa_r77_int_x1": {
+				"className": "PylonMissile_Missile_AA_R77_INT_x1",
+				"name": "R77 MR AA x1"
+			},
+			"agm_kh25_x1": {
+				"className": "PylonMissile_Missile_AGM_KH25_x1",
+				"name": "KH25 AGM x1"
+			},
+			"agm_kh25_int_x1": {
+				"className": "PylonMissile_Missile_AGM_KH25_INT_x1",
+				"name": "KH25 AGM x1"
+			},
+			"harm_x1": {
+				"className": "PylonMissile_Missile_HARM_x1",
+				"name": "AGM-88C HARM x1"
+			},
+			"harm_int_x1": {
+				"className": "PylonMissile_Missile_HARM_INT_x1",
+				"name": "AGM-88C HARM x1"
+			},
+			"kh58_x1": {
+				"className": "PylonMissile_Missile_KH58_x1",
+				"name": "KH58 ARM x1"
+			},
+			"kh58_int_x1": {
+				"className": "PylonMissile_Missile_KH58_INT_x1",
+				"name": "KH58 ARM x1"
+			}
+		},
+		"bomb": {
+			"gbu12_x1": {
+				"className": "PylonMissile_Bomb_GBU12_x1",
+				"name": "GBU 12 LGB x1"
+			},
+			"kab250_x1": {
+				"className": "PylonMissile_Bomb_KAB250_x1",
+				"name": "KAB 250 LGB x1"
+			}
+		}
+	},
+	"pylonweapon": {
+		"300rnd": {
+			"20mm_shells": {
+				"className": "PylonWeapon_300Rnd_20mm_shells",
+				"name": "Twin Cannon 20mm"
+			}
+		},
+		"2000rnd": {
+			"65x39_belt": {
+				"className": "PylonWeapon_2000Rnd_65x39_belt",
+				"name": "Minigun 6.5 mm"
+			}
+		}
+	},
+	"atmine": {
+		"range": {
+			"mag": {
+				"className": "ATMine_Range_Mag",
+				"name": "AT Mine"
+			}
+		}
+	},
+	"apersmine": {
+		"range": {
+			"mag": {
+				"className": "APERSMine_Range_Mag",
+				"name": "APERS Mine"
+			}
+		}
+	},
+	"apersboundingmine": {
+		"range": {
+			"mag": {
+				"className": "APERSBoundingMine_Range_Mag",
+				"name": "APERS Bounding Mine"
+			}
+		}
+	},
+	"slamdirectionalmine": {
+		"wire": {
+			"mag": {
+				"className": "SLAMDirectionalMine_Wire_Mag",
+				"name": "M6 SLAM Mine"
+			}
+		}
+	},
+	"aperstripmine": {
+		"wire": {
+			"mag": {
+				"className": "APERSTripMine_Wire_Mag",
+				"name": "APERS Tripwire Mine"
+			}
+		}
+	},
+	"claymoredirectionalmine": {
+		"remote": {
+			"mag": {
+				"className": "ClaymoreDirectionalMine_Remote_Mag",
+				"name": "Claymore Charge"
+			}
+		}
+	},
+	"satchelcharge": {
+		"remote": {
+			"mag": {
+				"className": "SatchelCharge_Remote_Mag",
+				"name": "Explosive Satchel"
+			}
+		}
+	},
+	"democharge": {
+		"remote": {
+			"mag": {
+				"className": "DemoCharge_Remote_Mag",
+				"name": "Explosive Charge"
+			}
+		}
+	},
+	"iedurbanbig": {
+		"remote": {
+			"mag": {
+				"className": "IEDUrbanBig_Remote_Mag",
+				"name": "Large IED (Urban)"
+			}
+		}
+	},
+	"iedlandbig": {
+		"remote": {
+			"mag": {
+				"className": "IEDLandBig_Remote_Mag",
+				"name": "Large IED (Dug-in)"
+			}
+		}
+	},
+	"iedurbansmall": {
+		"remote": {
+			"mag": {
+				"className": "IEDUrbanSmall_Remote_Mag",
+				"name": "Small IED (Urban)"
+			}
+		}
+	},
+	"iedlandsmall": {
+		"remote": {
+			"mag": {
+				"className": "IEDLandSmall_Remote_Mag",
+				"name": "Small IED (Dug-in)"
+			}
+		}
+	},
+	"130rnd": {
+		"338": {
+			"mag": {
+				"className": "130Rnd_338_Mag",
+				"name": ".338 NM 130Rnd Belt"
+			}
+		}
+	},
+	"rpg7": {
+		"f": {
+			"base": {
+				"className": "RPG7_F",
+				"name": "PG-7VM HEAT Grenade"
+			}
+		}
+	},
+	"4000rnd": {
+		"20mm": {
+			"tracer_red_shells": {
+				"className": "4000Rnd_20mm_Tracer_Red_shells",
+				"name": "20 mm Shells"
+			}
+		}
+	},
+	"160rnd": {
+		"40mm": {
+			"apfsds_tracer_red_shells": {
+				"className": "160Rnd_40mm_APFSDS_Tracer_Red_shells",
+				"name": "40 mm APFSDS-T"
+			}
+		}
+	},
+	"magazine": {
+		"missile": {
+			"rim116_x21": {
+				"className": "magazine_Missile_rim116_x21",
+				"name": "Spartan AA"
+			},
+			"rim162_x8": {
+				"className": "magazine_Missile_rim162_x8",
+				"name": "Centurion AA"
+			},
+			"amraam_c_x1": {
+				"className": "magazine_Missile_AMRAAM_C_x1",
+				"name": "AMRAAM C AA x1"
+			},
+			"amraam_d_x1": {
+				"className": "magazine_Missile_AMRAAM_D_x1",
+				"name": "AMRAAM D AA x1"
+			},
+			"bim9x_x1": {
+				"className": "magazine_Missile_BIM9X_x1",
+				"name": "BIM 9X AA x1"
+			},
+			"agm_02_x1": {
+				"className": "magazine_Missile_AGM_02_x1",
+				"name": "Macer II AGM x1"
+			},
+			"aa_r73_x1": {
+				"className": "magazine_Missile_AA_R73_x1",
+				"name": "R73 SR AA x1"
+			},
+			"aa_r77_x1": {
+				"className": "magazine_Missile_AA_R77_x1",
+				"name": "R77 MR AA x1"
+			},
+			"agm_kh25_x1": {
+				"className": "magazine_Missile_AGM_KH25_x1",
+				"name": "KH25 AGM x1"
+			},
+			"mim145_x4": {
+				"className": "magazine_Missile_mim145_x4",
+				"name": "Defender AA"
+			},
+			"s750_x4": {
+				"className": "magazine_Missile_s750_x4",
+				"name": "Rhea AA"
+			},
+			"harm_x1": {
+				"className": "magazine_Missile_HARM_x1",
+				"name": "AGM-88C HARM x1"
+			},
+			"kh58_x1": {
+				"className": "magazine_Missile_KH58_x1",
+				"name": "KH58 ARM x1"
+			}
+		},
+		"cannon": {
+			"phalanx_x1550": {
+				"className": "magazine_Cannon_Phalanx_x1550",
+				"name": "Praetorian 20mm"
+			}
+		},
+		"fighter01": {
+			"gun20mm_aa_x450": {
+				"className": "magazine_Fighter01_Gun20mm_AA_x450",
+				"name": "M61 20mm 450 rnd"
+			}
+		},
+		"fighter04": {
+			"gun20mm_aa_x150": {
+				"className": "magazine_Fighter04_Gun20mm_AA_x150",
+				"name": "M61 20mm 150 rbd"
+			},
+			"gun20mm_aa_x250": {
+				"className": "magazine_Fighter04_Gun20mm_AA_x250",
+				"name": "M61 20mm 150 rbd"
+			}
+		},
+		"bomb": {
+			"gbu12_x1": {
+				"className": "magazine_Bomb_GBU12_x1",
+				"name": "GBU 12 LGB x1"
+			},
+			"kab250_x1": {
+				"className": "magazine_Bomb_KAB250_x1",
+				"name": "KAB 250 LGB x1"
+			},
+			"sdb_x1": {
+				"className": "magazine_Bomb_SDB_x1",
+				"name": "GBU SDB x1"
+			}
+		},
+		"fighter02": {
+			"gun30mm_aa_x180": {
+				"className": "magazine_Fighter02_Gun30mm_AA_x180",
+				"name": "Gsh 30mm 180 rnd"
+			}
+		},
+		"missiles": {
+			"cruise_01_x18": {
+				"className": "magazine_Missiles_Cruise_01_x18",
+				"name": "Cruise Missile HE"
+			},
+			"cruise_01_cluster_x18": {
+				"className": "magazine_Missiles_Cruise_01_Cluster_x18",
+				"name": "Cruise Missile Cluster"
+			}
+		},
+		"shipcannon": {
+			"120mm_he_shells_x32": {
+				"className": "magazine_ShipCannon_120mm_HE_shells_x32",
+				"name": "HE Shells"
+			},
+			"120mm_smoke_shells_x6": {
+				"className": "magazine_ShipCannon_120mm_smoke_shells_x6",
+				"name": "Smoke (White)"
+			},
+			"120mm_he_guided_shells_x2": {
+				"className": "magazine_ShipCannon_120mm_HE_guided_shells_x2",
+				"name": "Guided"
+			},
+			"120mm_he_lg_shells_x2": {
+				"className": "magazine_ShipCannon_120mm_HE_LG_shells_x2",
+				"name": "Laser Guided"
+			},
+			"120mm_mine_shells_x6": {
+				"className": "magazine_ShipCannon_120mm_mine_shells_x6",
+				"name": "Mine Cluster"
+			},
+			"120mm_he_cluster_shells_x2": {
+				"className": "magazine_ShipCannon_120mm_HE_cluster_shells_x2",
+				"name": "Cluster Shells"
+			},
+			"120mm_at_mine_shells_x6": {
+				"className": "magazine_ShipCannon_120mm_AT_mine_shells_x6",
+				"name": "AT Mine Cluster"
+			}
+		}
+	},
+	"pylon": {
+		"1rnd": {
+			"leaflets_west": {
+				"className": "Pylon_1Rnd_Leaflets_West_F",
+				"name": "Leaflets (NATO)"
+			},
+			"leaflets_east": {
+				"className": "Pylon_1Rnd_Leaflets_East_F",
+				"name": "Leaflets (CSAT)"
+			},
+			"leaflets_guer": {
+				"className": "Pylon_1Rnd_Leaflets_Guer_F",
+				"name": "Leaflets (AAF)"
+			},
+			"leaflets_civ": {
+				"className": "Pylon_1Rnd_Leaflets_Civ_F",
+				"name": "Leaflets (IDAP)"
+			},
+			"leaflets_custom_01": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_01_F",
+				"name": "Leaflets (Custom 01)"
+			},
+			"leaflets_custom_02": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_02_F",
+				"name": "Leaflets (Custom 02)"
+			},
+			"leaflets_custom_03": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_03_F",
+				"name": "Leaflets (Custom 03)"
+			},
+			"leaflets_custom_04": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_04_F",
+				"name": "Leaflets (Custom 04)"
+			},
+			"leaflets_custom_05": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_05_F",
+				"name": "Leaflets (Custom 05)"
+			},
+			"leaflets_custom_06": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_06_F",
+				"name": "Leaflets (Custom 06)"
+			},
+			"leaflets_custom_07": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_07_F",
+				"name": "Leaflets (Custom 07)"
+			},
+			"leaflets_custom_08": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_08_F",
+				"name": "Leaflets (Custom 08)"
+			},
+			"leaflets_custom_09": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_09_F",
+				"name": "Leaflets (Custom 09)"
+			},
+			"leaflets_custom_10": {
+				"className": "Pylon_1Rnd_Leaflets_Custom_10_F",
+				"name": "Leaflets (Custom 10)"
+			}
+		}
+	},
+	"apersminedispenser": {
+		"mag": {
+			"base": {
+				"className": "APERSMineDispenser_Mag",
+				"name": "APERS Mine Dispenser"
+			}
+		}
+	},
+	"trainingmine": {
+		"mag": {
+			"base": {
+				"className": "TrainingMine_Mag",
+				"name": "Training Mine"
+			}
+		}
+	},
+	"vorona": {
+		"heat": {
+			"base": {
+				"className": "Vorona_HEAT",
+				"name": "9M135 HEAT Missile"
+			}
+		},
+		"he": {
+			"base": {
+				"className": "Vorona_HE",
+				"name": "9M135 HE Missile"
+			}
+		}
+	},
+	"spg9": {
+		"heat": {
+			"base": {
+				"className": "SPG9_HEAT",
+				"name": "PG-9N Round"
+			}
+		},
+		"he": {
+			"base": {
+				"className": "SPG9_HE",
+				"name": "OG-9VM Round"
+			}
+		}
+	},
+	"mraws": {
+		"heat": {
+			"base": {
+				"className": "MRAWS_HEAT_F",
+				"name": "MAAWS HEAT 75 Round"
+			}
+		},
+		"he": {
+			"base": {
+				"className": "MRAWS_HE_F",
+				"name": "MAAWS HE 44 Round"
+			}
+		},
+		"heat55": {
+			"base": {
+				"className": "MRAWS_HEAT55_F",
+				"name": "MAAWS HEAT 55 Round"
+			}
+		}
+	},
+	"75rnd": {
+		"762x39": {
+			"mag": {
+				"className": "75Rnd_762x39_Mag_F",
+				"name": "7.62 mm 75Rnd AKM Mag"
+			},
+			"mag_tracer": {
+				"className": "75Rnd_762x39_Mag_Tracer_F",
+				"name": "7.62 mm 75Rnd AKM Tracer Mag"
+			},
+			"ak12_mag": {
+				"className": "75rnd_762x39_AK12_Mag_F",
+				"name": "7.62 mm 75rnd AK12 Mag"
+			},
+			"ak12_mag_tracer": {
+				"className": "75rnd_762x39_AK12_Mag_Tracer_F",
+				"name": "7.62 mm 75rnd AK12 Tracer Mag"
+			},
+			"ak12_lush_mag": {
+				"className": "75rnd_762x39_AK12_Lush_Mag_F",
+				"name": "7.62 mm 75rnd AK12 Lush Mag"
+			},
+			"ak12_lush_mag_tracer": {
+				"className": "75rnd_762x39_AK12_Lush_Mag_Tracer_F",
+				"name": "7.62 mm 75rnd AK12 Tracer Lush Mag"
+			},
+			"ak12_arid_mag": {
+				"className": "75rnd_762x39_AK12_Arid_Mag_F",
+				"name": "7.62 mm 75rnd AK12 Arid Mag"
+			},
+			"ak12_arid_mag_tracer": {
+				"className": "75rnd_762x39_AK12_Arid_Mag_Tracer_F",
+				"name": "7.62 mm 75rnd AK12 Tracer Arid Mag"
+			}
+		}
+	},
+	"15rnd": {
+		"12gauge": {
+			"pellets": {
+				"className": "15Rnd_12Gauge_Pellets",
+				"name": "12 Gauge 15Rnd Pellets"
+			},
+			"slug": {
+				"className": "15Rnd_12Gauge_Slug",
+				"name": "12 Gauge 15Rnd Slug"
+			}
+		}
+	},
+	"probingweapon": {
+		"01": {
+			"magazine": {
+				"className": "ProbingWeapon_01_magazine"
+			}
+		},
+		"02": {
+			"magazine": {
+				"className": "ProbingWeapon_02_magazine"
+			}
+		}
+	},
+	"dummy": {
+		"magazine": {
+			"base": {
+				"className": "Dummy_Magazine_Base"
+			}
+		}
+	},
+	"esd": {
+		"01": {
+			"dummymagazine_base": {
+				"className": "ESD_01_DummyMagazine_base"
+			},
+			"dummymagazine_1": {
+				"className": "ESD_01_DummyMagazine_1"
+			},
+			"dummymagazine_2": {
+				"className": "ESD_01_DummyMagazine_2"
+			},
+			"dummymagazine_3": {
+				"className": "ESD_01_DummyMagazine_3"
+			},
+			"dummymagazine_4": {
+				"className": "ESD_01_DummyMagazine_4"
+			},
+			"dummymagazine_5": {
+				"className": "ESD_01_DummyMagazine_5"
+			},
+			"dummymagazine_6": {
+				"className": "ESD_01_DummyMagazine_6"
+			},
+			"dummymagazine_7": {
+				"className": "ESD_01_DummyMagazine_7"
+			},
+			"dummymagazine_8": {
+				"className": "ESD_01_DummyMagazine_8"
+			},
+			"dummymagazine_9": {
+				"className": "ESD_01_DummyMagazine_9"
+			},
+			"dummymagazine_10": {
+				"className": "ESD_01_DummyMagazine_10"
+			},
+			"dummymagazine_11": {
+				"className": "ESD_01_DummyMagazine_11"
+			},
+			"dummymagazine_12": {
+				"className": "ESD_01_DummyMagazine_12"
+			},
+			"dummymagazine_13": {
+				"className": "ESD_01_DummyMagazine_13"
+			},
+			"dummymagazine_14": {
+				"className": "ESD_01_DummyMagazine_14"
+			},
+			"dummymagazine_15": {
+				"className": "ESD_01_DummyMagazine_15"
+			},
+			"dummymagazine_16": {
+				"className": "ESD_01_DummyMagazine_16"
+			},
+			"dummymagazine_17": {
+				"className": "ESD_01_DummyMagazine_17"
+			},
+			"dummymagazine_18": {
+				"className": "ESD_01_DummyMagazine_18"
+			},
+			"dummymagazine_19": {
+				"className": "ESD_01_DummyMagazine_19"
+			},
+			"dummymagazine_20": {
+				"className": "ESD_01_DummyMagazine_20"
+			}
+		}
+	},
+	"om": {
+		"magazine": {
+			"base": {
+				"className": "OM_Magazine"
+			}
+		}
+	},
+	"files": {
+		"diary": {
+			"base": {
+				"className": "Files_diary",
+				"name": "Journal"
+			}
+		},
+		"researchnotes": {
+			"base": {
+				"className": "Files_researchNotes",
+				"name": "Research Notes"
+			}
+		}
+	},
+	"wallet": {
+		"id": {
+			"base": {
+				"className": "Wallet_ID",
+				"name": "Wallet (ID)"
+			}
+		}
+	},
+	"csat": {
+		"id": {
+			"01": {
+				"className": "Csat_Id_01",
+				"name": "Access Card (v1) [CSAT]"
+			},
+			"02": {
+				"className": "Csat_Id_02",
+				"name": "Access Card (v2) [CSAT]"
+			},
+			"03": {
+				"className": "Csat_Id_03",
+				"name": "Access Card (v3) [CSAT]"
+			},
+			"04": {
+				"className": "Csat_Id_04",
+				"name": "Access Card (v4) [CSAT]"
+			},
+			"05": {
+				"className": "Csat_Id_05",
+				"name": "Access Card (v5) [CSAT]"
+			}
+		}
+	},
+	"laptop": {
+		"unfolded": {
+			"base": {
+				"className": "Laptop_Unfolded",
+				"name": "Laptop (Open)"
+			}
+		},
+		"closed": {
+			"base": {
+				"className": "Laptop_Closed",
+				"name": "Laptop (Closed)"
+			}
+		}
+	},
+	"money": {
+		"bunch": {
+			"base": {
+				"className": "Money_bunch",
+				"name": "Money (Notes)"
+			}
+		},
+		"roll": {
+			"base": {
+				"className": "Money_roll",
+				"name": "Money (Roll)"
+			}
+		},
+		"stack": {
+			"base": {
+				"className": "Money_stack",
+				"name": "Money (Stack)"
+			},
+			"quest": {
+				"className": "Money_stack_quest",
+				"name": "Money (Large Stack)"
+			}
+		}
+	},
+	"sleeping": {
+		"bag": {
+			"folded_01": {
+				"className": "Sleeping_bag_folded_01",
+				"name": "Sleeping Bag (Folded)"
+			}
+		}
+	},
+	"drone": {
+		"range": {
+			"mag": {
+				"className": "Drone_Range_Mag",
+				"name": "AT Mine"
+			},
+			"mag_dummy": {
+				"className": "Drone_Range_Mag_dummy",
+				"name": "AT Mine"
+			}
+		}
+	},
+	"railgun": {
+		"01": {
+			"dummymagazine": {
+				"className": "RailGun_01_DummyMagazine",
+				"name": "APFSDS-KE"
+			}
+		}
+	}
 }

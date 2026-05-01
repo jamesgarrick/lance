@@ -15,8 +15,8 @@ import type { BackpackClassName } from "../../cfg/cfg-vehicles-backpacks";
  * @see {@link https://community.bistudio.com/wiki/addBackpack addBackpack}
  */
 export function addBackpack(
-  unit: GlobalArgument<Unit>,
-  backpackClass: BackpackClassName
+	unit: GlobalArgument<Unit>,
+	backpackClass: BackpackClassName,
 ): Effect<void, "anywhere", "global">;
 
 /**
@@ -30,7 +30,7 @@ export function addBackpack(
  * @see {@link https://community.bistudio.com/wiki/removeBackpack removeBackpack}
  */
 export function removeBackpack(
-  unit: LocalArgument<Unit>
+	unit: LocalArgument<Unit>,
 ): Effect<string, "anywhere", "global">;
 
 /**
@@ -44,9 +44,9 @@ export function removeBackpack(
  * @see {@link https://community.bistudio.com/wiki/addItemToBackpack addItemToBackpack}
  */
 export function addItemToBackpack(
-  unit: GlobalArgument<Unit>,
-  backpackClass: BackpackClassName,
-  itemClass: string
+	unit: GlobalArgument<Unit>,
+	backpackClass: BackpackClassName,
+	itemClass: string,
 ): Effect<void, "anywhere", "global">;
 
 /**
@@ -59,7 +59,7 @@ export function addItemToBackpack(
  * @see {@link https://community.bistudio.com/wiki/backpack backpack}
  */
 export function backpack(
-  unit: GlobalArgument<Unit>
+	unit: GlobalArgument<Unit>,
 ): Effect<BackpackClassName | "", "anywhere", "pure">;
 
 /**
@@ -73,7 +73,7 @@ export function backpack(
  * @see {@link https://community.bistudio.com/wiki/backpackContainer backpackContainer}
  */
 export function backpackContainer(
-  unit: GlobalArgument<Unit>
+	unit: GlobalArgument<Unit>,
 ): Effect<SQFObject | null, "anywhere", "pure">;
 
 /**
@@ -86,7 +86,7 @@ export function backpackContainer(
  * @see {@link https://community.bistudio.com/wiki/backpackItems backpackItems}
  */
 export function backpackItems(
-  unit: GlobalArgument<Unit>
+	unit: GlobalArgument<Unit>,
 ): Effect<readonly string[], "anywhere", "pure">;
 
 /**
@@ -99,5 +99,5 @@ export function backpackItems(
  * @see {@link https://community.bistudio.com/wiki/backpackItems backpackItems}
  */
 export function backpackMagazines(
-  unit: GlobalArgument<Unit>
+	unit: GlobalArgument<Unit>,
 ): Effect<readonly string[], "anywhere", "pure">;

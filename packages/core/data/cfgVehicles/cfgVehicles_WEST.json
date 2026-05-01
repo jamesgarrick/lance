@@ -1,2572 +1,2572 @@
 {
-  "b": {
-    "targetsoldier": {
-      "base": {
-        "className": "B_TargetSoldier",
-        "name": "Invisible Target Soldier",
-        "category": "NATO",
-        "subCategory": "Targets"
-      }
-    },
-    "soldier": {
-      "base": {
-        "className": "B_Soldier_F",
-        "name": "Rifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "lite": {
-        "className": "B_Soldier_lite_F",
-        "name": "Rifleman (Light)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "gl": {
-        "className": "B_Soldier_GL_F",
-        "name": "Grenadier",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "ar": {
-        "className": "B_soldier_AR_F",
-        "name": "Autorifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "sl": {
-        "className": "B_Soldier_SL_F",
-        "name": "Squad Leader",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "tl": {
-        "className": "B_Soldier_TL_F",
-        "name": "Team Leader",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "m": {
-        "className": "B_soldier_M_F",
-        "name": "Marksman",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "lat": {
-        "className": "B_soldier_LAT_F",
-        "name": "Rifleman (AT)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "repair": {
-        "className": "B_soldier_repair_F",
-        "name": "Repair Specialist",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "exp": {
-        "className": "B_soldier_exp_F",
-        "name": "Explosive Specialist",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "a": {
-        "className": "B_Soldier_A_F",
-        "name": "Ammo Bearer",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "at": {
-        "className": "B_soldier_AT_F",
-        "name": "Missile Specialist (AT)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "aa": {
-        "className": "B_soldier_AA_F",
-        "name": "Missile Specialist (AA)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "pg": {
-        "className": "B_soldier_PG_F",
-        "name": "Para Trooper",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "uav": {
-        "className": "B_soldier_UAV_F",
-        "name": "UAV Operator",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "universal": {
-        "className": "B_Soldier_universal_F",
-        "name": "Soldier",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "unarmed": {
-        "className": "B_Soldier_unarmed_F",
-        "name": "Rifleman (Unarmed)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "survival": {
-        "className": "b_soldier_survival_F",
-        "name": "Survival Fatigues",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "aar": {
-        "className": "B_soldier_AAR_F",
-        "name": "Asst. Autorifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "aat": {
-        "className": "B_soldier_AAT_F",
-        "name": "Asst. Missile Specialist (AT)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "aaa": {
-        "className": "B_soldier_AAA_F",
-        "name": "Asst. Missile Specialist (AA)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "vr": {
-        "className": "B_Soldier_VR_F",
-        "name": "VR Entity",
-        "category": "NATO",
-        "subCategory": "Men (Virtual Reality)"
-      },
-      "uav_06": {
-        "className": "B_soldier_UAV_06_F",
-        "name": "UAV Operator (AL-6)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "uav_06_medical": {
-        "className": "B_soldier_UAV_06_medical_F",
-        "name": "UAV Operator (AL-6, Medical)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "mine": {
-        "className": "B_soldier_mine_F",
-        "name": "Mine Specialist",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "lat2": {
-        "className": "B_soldier_LAT2_F",
-        "name": "Rifleman (Light AT)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "ugv_02_science": {
-        "className": "B_soldier_UGV_02_Science_F",
-        "name": "UGV Operator (ED-1E)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "ugv_02_demining": {
-        "className": "B_soldier_UGV_02_Demining_F",
-        "name": "UGV Operator (ED-1D)",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "rangemaster": {
-      "base": {
-        "className": "B_RangeMaster_F",
-        "name": "Range Master",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "medic": {
-      "base": {
-        "className": "B_medic_F",
-        "name": "Combat Life Saver",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "helipilot": {
-      "base": {
-        "className": "B_Helipilot_F",
-        "name": "Helicopter Pilot",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "engineer": {
-      "base": {
-        "className": "B_engineer_F",
-        "name": "Engineer",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "crew": {
-      "base": {
-        "className": "B_crew_F",
-        "name": "Crewman",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "officer": {
-      "base": {
-        "className": "B_officer_F",
-        "name": "Officer",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "parade": {
-        "className": "B_Officer_Parade_F",
-        "name": "Officer (Parade Dress)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "parade_veteran": {
-        "className": "B_Officer_Parade_Veteran_F",
-        "name": "Officer (Veteran, Parade Dress)",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "competitor": {
-      "base": {
-        "className": "B_Competitor_F",
-        "name": "Competitor",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "pilot": {
-      "base": {
-        "className": "B_Pilot_F",
-        "name": "Pilot",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "helicrew": {
-      "base": {
-        "className": "B_helicrew_F",
-        "name": "Helicopter Crew",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "survivor": {
-      "base": {
-        "className": "B_Survivor_F",
-        "name": "Survivor",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "diver": {
-      "base": {
-        "className": "B_diver_F",
-        "name": "Assault Diver",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "tl": {
-        "className": "B_diver_TL_F",
-        "name": "Diver Team Leader",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "exp": {
-        "className": "B_diver_exp_F",
-        "name": "Diver Explosive Specialist",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      }
-    },
-    "recon": {
-      "base": {
-        "className": "B_recon_F",
-        "name": "Recon Scout",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "lat": {
-        "className": "B_recon_LAT_F",
-        "name": "Recon Scout (AT)",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "exp": {
-        "className": "B_recon_exp_F",
-        "name": "Recon Demo Specialist",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "medic": {
-        "className": "B_recon_medic_F",
-        "name": "Recon Paramedic",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "tl": {
-        "className": "B_recon_TL_F",
-        "name": "Recon Team Leader",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "m": {
-        "className": "B_recon_M_F",
-        "name": "Recon Marksman",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "jtac": {
-        "className": "B_recon_JTAC_F",
-        "name": "Recon JTAC",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "sharpshooter": {
-        "className": "B_Recon_Sharpshooter_F",
-        "name": "Recon Sharpshooter",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      }
-    },
-    "spotter": {
-      "base": {
-        "className": "B_spotter_F",
-        "name": "Spotter",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      }
-    },
-    "sniper": {
-      "base": {
-        "className": "B_sniper_F",
-        "name": "Sniper",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      }
-    },
-    "story": {
-      "sf_captain": {
-        "className": "B_Story_SF_Captain_F",
-        "name": "Miller",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "protagonist": {
-        "className": "B_Story_Protagonist_F",
-        "name": "Kerry",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "engineer": {
-        "className": "B_Story_Engineer_F",
-        "name": "Novak",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "colonel": {
-        "className": "B_Story_Colonel_F",
-        "name": "Grover",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "pilot": {
-        "className": "B_Story_Pilot_F",
-        "name": "Larkin",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "tank_commander": {
-        "className": "B_Story_Tank_Commander_F",
-        "name": "Hutchison",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      }
-    },
-    "ctrg": {
-      "soldier_gl_lat": {
-        "className": "B_CTRG_soldier_GL_LAT_F",
-        "name": "Northgate",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "soldier_engineer_exp": {
-        "className": "B_CTRG_soldier_engineer_exp_F",
-        "name": "Hardy",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "soldier_m_medic": {
-        "className": "B_CTRG_soldier_M_medic_F",
-        "name": "James",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "soldier_ar_a": {
-        "className": "B_CTRG_soldier_AR_A_F",
-        "name": "McKay",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "sharphooter": {
-        "className": "B_CTRG_Sharphooter_F",
-        "name": "O'Connor",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "lsv_01_light": {
-        "className": "B_CTRG_LSV_01_light_F",
-        "name": "Prowler (Light)",
-        "category": "CTRG",
-        "subCategory": "Cars"
-      },
-      "heli_transport_01_sand": {
-        "className": "B_CTRG_Heli_Transport_01_sand_F",
-        "name": "UH-80 Ghost Hawk (Sand)",
-        "category": "CTRG",
-        "subCategory": "Helicopters"
-      },
-      "heli_transport_01_tropic": {
-        "className": "B_CTRG_Heli_Transport_01_tropic_F",
-        "name": "UH-80 Ghost Hawk (Tropic)",
-        "category": "CTRG",
-        "subCategory": "Helicopters"
-      },
-      "soldier": {
-        "className": "B_CTRG_Soldier_F",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_arid": {
-        "className": "B_CTRG_Soldier_arid_F",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_2": {
-        "className": "B_CTRG_Soldier_2_F",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_2_arid": {
-        "className": "B_CTRG_Soldier_2_arid_F",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_3": {
-        "className": "B_CTRG_Soldier_3_F",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_3_arid": {
-        "className": "B_CTRG_Soldier_3_arid_F",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_tl_tna": {
-        "className": "B_CTRG_Soldier_TL_tna_F",
-        "name": "Team Leader",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_exp_tna": {
-        "className": "B_CTRG_Soldier_Exp_tna_F",
-        "name": "Demo Specialist",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_medic_tna": {
-        "className": "B_CTRG_Soldier_Medic_tna_F",
-        "name": "Paramedic",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_m_tna": {
-        "className": "B_CTRG_Soldier_M_tna_F",
-        "name": "Marksman",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_tna": {
-        "className": "B_CTRG_Soldier_tna_F",
-        "name": "Scout",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_lat_tna": {
-        "className": "B_CTRG_Soldier_LAT_tna_F",
-        "name": "Scout (AT)",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_ar_tna": {
-        "className": "B_CTRG_Soldier_AR_tna_F",
-        "name": "Autorifleman",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_jtac_tna": {
-        "className": "B_CTRG_Soldier_JTAC_tna_F",
-        "name": "JTAC",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "miller": {
-        "className": "B_CTRG_Miller_F",
-        "name": "Miller",
-        "category": "CTRG",
-        "subCategory": "Men (Story)"
-      },
-      "soldier_urb_1": {
-        "className": "B_CTRG_Soldier_urb_1_F",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_urb_2": {
-        "className": "B_CTRG_Soldier_urb_2_F",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_urb_3": {
-        "className": "B_CTRG_Soldier_urb_3_F",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_universal": {
-        "className": "B_CTRG_Soldier_universal_F",
-        "name": "Soldier",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      },
-      "soldier_lat2_tna": {
-        "className": "B_CTRG_Soldier_LAT2_tna_F",
-        "name": "Rifleman (Light AT)",
-        "category": "CTRG",
-        "subCategory": "Men (Pacific)"
-      }
-    },
-    "support": {
-      "mg": {
-        "className": "B_support_MG_F",
-        "name": "Gunner (HMG)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "gmg": {
-        "className": "B_support_GMG_F",
-        "name": "Gunner (GMG)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "mort": {
-        "className": "B_support_Mort_F",
-        "name": "Gunner (Mk6)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "amg": {
-        "className": "B_support_AMG_F",
-        "name": "Asst. Gunner (HMG/GMG)",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "amort": {
-        "className": "B_support_AMort_F",
-        "name": "Asst. Gunner (Mk6)",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "g": {
-      "soldier": {
-        "className": "B_G_Soldier_F",
-        "name": "Rifleman",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_lite": {
-        "className": "B_G_Soldier_lite_F",
-        "name": "Rifleman (Light)",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_sl": {
-        "className": "B_G_Soldier_SL_F",
-        "name": "Squad Leader",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_tl": {
-        "className": "B_G_Soldier_TL_F",
-        "name": "Team Leader",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_ar": {
-        "className": "B_G_Soldier_AR_F",
-        "name": "Autorifleman",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "medic": {
-        "className": "B_G_medic_F",
-        "name": "Combat Life Saver",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "engineer": {
-        "className": "B_G_engineer_F",
-        "name": "Engineer",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_exp": {
-        "className": "B_G_Soldier_exp_F",
-        "name": "Explosive Specialist",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_gl": {
-        "className": "B_G_Soldier_GL_F",
-        "name": "Grenadier",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_m": {
-        "className": "B_G_Soldier_M_F",
-        "name": "Marksman",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_lat": {
-        "className": "B_G_Soldier_LAT_F",
-        "name": "Rifleman (AT)",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_a": {
-        "className": "B_G_Soldier_A_F",
-        "name": "Ammo Bearer",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "officer": {
-        "className": "B_G_officer_F",
-        "name": "Officer",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_unarmed": {
-        "className": "B_G_Soldier_unarmed_F",
-        "name": "Rifleman (Unarmed)",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "survivor": {
-        "className": "B_G_Survivor_F",
-        "name": "Survivor",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "soldier_universal": {
-        "className": "B_G_Soldier_universal_F",
-        "name": "Soldier",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "sharpshooter": {
-        "className": "B_G_Sharpshooter_F",
-        "name": "Sharpshooter",
-        "category": "FIA",
-        "subCategory": "Men"
-      },
-      "hmg_02": {
-        "className": "B_G_HMG_02_F",
-        "name": "M2 HMG .50",
-        "category": "FIA",
-        "subCategory": "Turrets"
-      },
-      "hmg_02_high": {
-        "className": "B_G_HMG_02_high_F",
-        "name": "M2 HMG .50 (Raised)",
-        "category": "FIA",
-        "subCategory": "Turrets"
-      },
-      "mortar_01": {
-        "className": "B_G_Mortar_01_F",
-        "name": "Mk6 Mortar",
-        "category": "FIA",
-        "subCategory": "Turrets"
-      },
-      "boat_transport_01": {
-        "className": "B_G_Boat_Transport_01_F",
-        "name": "Assault Boat",
-        "category": "FIA",
-        "subCategory": "Boats"
-      },
-      "offroad_01_repair": {
-        "className": "B_G_Offroad_01_repair_F",
-        "name": "Offroad (Repair)",
-        "category": "FIA",
-        "subCategory": "Cars"
-      },
-      "offroad_01": {
-        "className": "B_G_Offroad_01_F",
-        "name": "Offroad",
-        "category": "FIA",
-        "subCategory": "Cars"
-      },
-      "offroad_01_armed": {
-        "className": "B_G_Offroad_01_armed_F",
-        "name": "Offroad (HMG)",
-        "category": "FIA",
-        "subCategory": "Cars"
-      },
-      "offroad_01_at": {
-        "className": "B_G_Offroad_01_AT_F",
-        "name": "Offroad (AT)",
-        "category": "FIA",
-        "subCategory": "Cars"
-      },
-      "quadbike_01": {
-        "className": "B_G_Quadbike_01_F",
-        "name": "Quad Bike",
-        "category": "FIA",
-        "subCategory": "Cars"
-      },
-      "van_01_transport": {
-        "className": "B_G_Van_01_transport_F",
-        "name": "Truck",
-        "category": "FIA",
-        "subCategory": "Cars"
-      },
-      "van_01_fuel": {
-        "className": "B_G_Van_01_fuel_F",
-        "name": "Fuel Truck",
-        "category": "FIA",
-        "subCategory": "Cars"
-      },
-      "boat_transport_02": {
-        "className": "B_G_Boat_Transport_02_F",
-        "name": "RHIB",
-        "category": "FIA",
-        "subCategory": "Boats"
-      },
-      "captain_ivan": {
-        "className": "B_G_Captain_Ivan_F",
-        "name": "Ivan",
-        "category": "FIA",
-        "subCategory": "Men (Story)"
-      },
-      "van_02_transport": {
-        "className": "B_G_Van_02_transport_F",
-        "name": "Van Transport",
-        "category": "FIA",
-        "subCategory": "Cars"
-      },
-      "van_02_vehicle": {
-        "className": "B_G_Van_02_vehicle_F",
-        "name": "Van (Cargo)",
-        "category": "FIA",
-        "subCategory": "Cars"
-      },
-      "story_guerilla_01": {
-        "className": "B_G_Story_Guerilla_01_F",
-        "name": "Alexis Kouris",
-        "category": "FIA",
-        "subCategory": "Men (Story)"
-      },
-      "soldier_lat2": {
-        "className": "B_G_Soldier_LAT2_F",
-        "name": "Rifleman (Light AT)",
-        "category": "FIA",
-        "subCategory": "Men"
-      }
-    },
-    "protagonist": {
-      "vr": {
-        "className": "B_Protagonist_VR_F",
-        "name": "VR Soldier",
-        "category": "NATO",
-        "subCategory": "Men (Virtual Reality)"
-      }
-    },
-    "ghillie": {
-      "lsh": {
-        "className": "B_ghillie_lsh_F",
-        "name": "Sniper (Lush)",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "sard": {
-        "className": "B_ghillie_sard_F",
-        "name": "Sniper (Semi-Arid)",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      },
-      "ard": {
-        "className": "B_ghillie_ard_F",
-        "name": "Sniper (Arid)",
-        "category": "NATO",
-        "subCategory": "Men (Special Forces)"
-      }
-    },
-    "sharpshooter": {
-      "base": {
-        "className": "B_Sharpshooter_F",
-        "name": "Sharpshooter",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "heavygunner": {
-      "base": {
-        "className": "B_HeavyGunner_F",
-        "name": "Heavy Gunner",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "captain": {
-      "pettka": {
-        "className": "B_Captain_Pettka_F",
-        "name": "Pettka",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "jay": {
-        "className": "B_Captain_Jay_F",
-        "name": "Jay",
-        "category": "NATO",
-        "subCategory": "Men (Story)"
-      },
-      "dwarden": {
-        "className": "B_Captain_Dwarden_F",
-        "name": "Dwarden",
-        "category": "Gendarmerie",
-        "subCategory": "Men (Story)"
-      }
-    },
-    "hmg": {
-      "01": {
-        "className": "B_HMG_01_F",
-        "name": "Mk30 HMG .50",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "01_high": {
-        "className": "B_HMG_01_high_F",
-        "name": "Mk30 HMG .50 (Raised)",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "01_a": {
-        "className": "B_HMG_01_A_F",
-        "name": "Mk30A HMG .50",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "02": {
-        "className": "B_HMG_02_F",
-        "name": "M2 HMG .50",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "02_high": {
-        "className": "B_HMG_02_high_F",
-        "name": "M2 HMG .50 (Raised)",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      }
-    },
-    "gmg": {
-      "01": {
-        "className": "B_GMG_01_F",
-        "name": "Mk32 GMG 20 mm",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "01_high": {
-        "className": "B_GMG_01_high_F",
-        "name": "Mk32 GMG 20 mm (Raised)",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "01_a": {
-        "className": "B_GMG_01_A_F",
-        "name": "Mk32A GMG 20 mm",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      }
-    },
-    "mortar": {
-      "01": {
-        "className": "B_Mortar_01_F",
-        "name": "Mk6 Mortar",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      }
-    },
-    "heli": {
-      "light_01": {
-        "className": "B_Heli_Light_01_F",
-        "name": "MH-9 Hummingbird",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "light_01_armed": {
-        "className": "B_Heli_Light_01_armed_F",
-        "name": "AH-9 Pawnee",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "light_01_dynamicloadout": {
-        "className": "B_Heli_Light_01_dynamicLoadout_F",
-        "name": "AH-9 Pawnee",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "light_01_stripped": {
-        "className": "B_Heli_Light_01_stripped_F",
-        "name": "MH-9 Hummingbird (Stripped)",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "attack_01": {
-        "className": "B_Heli_Attack_01_F",
-        "name": "AH-99 Blackfoot",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "attack_01_dynamicloadout": {
-        "className": "B_Heli_Attack_01_dynamicLoadout_F",
-        "name": "AH-99 Blackfoot",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "transport_01": {
-        "className": "B_Heli_Transport_01_F",
-        "name": "UH-80 Ghost Hawk",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "transport_01_camo": {
-        "className": "B_Heli_Transport_01_camo_F",
-        "name": "UH-80 Ghost Hawk (Camo)",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "transport_03": {
-        "className": "B_Heli_Transport_03_F",
-        "name": "CH-67 Huron",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "transport_03_unarmed": {
-        "className": "B_Heli_Transport_03_unarmed_F",
-        "name": "CH-67 Huron (Unarmed)",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "transport_03_black": {
-        "className": "B_Heli_Transport_03_black_F",
-        "name": "CH-67 Huron (Black)",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      },
-      "transport_03_unarmed_green": {
-        "className": "B_Heli_Transport_03_unarmed_green_F",
-        "name": "CH-67 Huron Unarmed (Green)",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      }
-    },
-    "parachute": {
-      "02": {
-        "className": "B_Parachute_02_F",
-        "name": "Cargo Parachute",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      }
-    },
-    "apc": {
-      "tracked_01_rcws": {
-        "className": "B_APC_Tracked_01_rcws_F",
-        "name": "IFV-6c Panther",
-        "category": "NATO",
-        "subCategory": "APCs"
-      },
-      "tracked_01_crv": {
-        "className": "B_APC_Tracked_01_CRV_F",
-        "name": "CRV-6e Bobcat",
-        "category": "NATO",
-        "subCategory": "APCs"
-      },
-      "tracked_01_aa": {
-        "className": "B_APC_Tracked_01_AA_F",
-        "name": "IFV-6a Cheetah",
-        "category": "NATO",
-        "subCategory": "Anti-Air"
-      },
-      "wheeled_01_cannon": {
-        "className": "B_APC_Wheeled_01_cannon_F",
-        "name": "AMV-7 Marshall",
-        "category": "NATO",
-        "subCategory": "APCs"
-      },
-      "wheeled_03_cannon": {
-        "className": "B_APC_Wheeled_03_cannon_F",
-        "name": "AFV-4 Gorgon",
-        "category": "NATO",
-        "subCategory": "APCs"
-      }
-    },
-    "mbt": {
-      "01_cannon": {
-        "className": "B_MBT_01_cannon_F",
-        "name": "M2A1 Slammer",
-        "category": "NATO",
-        "subCategory": "Tanks"
-      },
-      "01_arty": {
-        "className": "B_MBT_01_arty_F",
-        "name": "M4 Scorcher",
-        "category": "NATO",
-        "subCategory": "Artillery"
-      },
-      "01_mlrs": {
-        "className": "B_MBT_01_mlrs_F",
-        "name": "M5 Sandstorm MLRS",
-        "category": "NATO",
-        "subCategory": "Artillery"
-      },
-      "01_tusk": {
-        "className": "B_MBT_01_TUSK_F",
-        "name": "M2A4 Slammer UP",
-        "category": "NATO",
-        "subCategory": "Tanks"
-      }
-    },
-    "boat": {
-      "armed_01_minigun": {
-        "className": "B_Boat_Armed_01_minigun_F",
-        "name": "Speedboat Minigun",
-        "category": "NATO",
-        "subCategory": "Boats"
-      },
-      "transport_01": {
-        "className": "B_Boat_Transport_01_F",
-        "name": "Assault Boat",
-        "category": "NATO",
-        "subCategory": "Boats"
-      }
-    },
-    "lifeboat": {
-      "base": {
-        "className": "B_Lifeboat",
-        "name": "Rescue Boat",
-        "category": "NATO",
-        "subCategory": "Boats"
-      }
-    },
-    "sdv": {
-      "01": {
-        "className": "B_SDV_01_F",
-        "name": "SDV",
-        "category": "NATO",
-        "subCategory": "Submersibles"
-      }
-    },
-    "uav": {
-      "ai": {
-        "className": "B_UAV_AI_F",
-        "name": "AI",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "01": {
-        "className": "B_UAV_01_F",
-        "name": "AR-2 Darter",
-        "category": "NATO",
-        "subCategory": "Drones"
-      },
-      "02": {
-        "className": "B_UAV_02_F",
-        "name": "MQ-4A Greyhawk",
-        "category": "NATO",
-        "subCategory": "Drones"
-      },
-      "02_cas": {
-        "className": "B_UAV_02_CAS_F",
-        "name": "MQ-4A Greyhawk (CAS)",
-        "category": "NATO",
-        "subCategory": "Drones"
-      },
-      "02_dynamicloadout": {
-        "className": "B_UAV_02_dynamicLoadout_F",
-        "name": "MQ-4A Greyhawk",
-        "category": "NATO",
-        "subCategory": "Drones"
-      },
-      "05": {
-        "className": "B_UAV_05_F",
-        "name": "UCAV Sentinel",
-        "category": "NATO",
-        "subCategory": "Drones"
-      },
-      "06": {
-        "className": "B_UAV_06_F",
-        "name": "AL-6 Pelican",
-        "category": "NATO",
-        "subCategory": "Drones"
-      },
-      "06_medical": {
-        "className": "B_UAV_06_medical_F",
-        "name": "AL-6 Pelican (Medical)",
-        "category": "NATO",
-        "subCategory": "Drones"
-      }
-    },
-    "mrap": {
-      "01": {
-        "className": "B_MRAP_01_F",
-        "name": "Hunter",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_gmg": {
-        "className": "B_MRAP_01_gmg_F",
-        "name": "Hunter GMG",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_hmg": {
-        "className": "B_MRAP_01_hmg_F",
-        "name": "Hunter HMG",
-        "category": "NATO",
-        "subCategory": "Cars"
-      }
-    },
-    "quadbike": {
-      "01": {
-        "className": "B_Quadbike_01_F",
-        "name": "Quad Bike",
-        "category": "NATO",
-        "subCategory": "Cars"
-      }
-    },
-    "truck": {
-      "01_transport": {
-        "className": "B_Truck_01_transport_F",
-        "name": "HEMTT Transport",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_covered": {
-        "className": "B_Truck_01_covered_F",
-        "name": "HEMTT Transport (Covered)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_mover": {
-        "className": "B_Truck_01_mover_F",
-        "name": "HEMTT",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_box": {
-        "className": "B_Truck_01_box_F",
-        "name": "HEMTT Box",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_repair": {
-        "className": "B_Truck_01_Repair_F",
-        "name": "HEMTT Repair",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_ammo": {
-        "className": "B_Truck_01_ammo_F",
-        "name": "HEMTT Ammo",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_fuel": {
-        "className": "B_Truck_01_fuel_F",
-        "name": "HEMTT Fuel",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_medical": {
-        "className": "B_Truck_01_medical_F",
-        "name": "HEMTT Medical",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_flatbed": {
-        "className": "B_Truck_01_flatbed_F",
-        "name": "HEMTT Flatbed",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_cargo": {
-        "className": "B_Truck_01_cargo_F",
-        "name": "HEMTT Cargo",
-        "category": "NATO",
-        "subCategory": "Cars"
-      }
-    },
-    "static": {
-      "aa": {
-        "className": "B_static_AA_F",
-        "name": "Static Titan Launcher (AA) [NATO]",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "at": {
-        "className": "B_static_AT_F",
-        "name": "Static Titan Launcher (AT) [NATO]",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "designator_01": {
-        "className": "B_Static_Designator_01_F",
-        "name": "Remote Designator [NATO]",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      }
-    },
-    "plane": {
-      "cas_01": {
-        "className": "B_Plane_CAS_01_F",
-        "name": "A-164 Wipeout (CAS)",
-        "category": "NATO",
-        "subCategory": "Planes"
-      },
-      "cas_01_dynamicloadout": {
-        "className": "B_Plane_CAS_01_dynamicLoadout_F",
-        "name": "A-164 Wipeout (CAS)",
-        "category": "NATO",
-        "subCategory": "Planes"
-      },
-      "fighter_01": {
-        "className": "B_Plane_Fighter_01_F",
-        "name": "F/A-181 Black Wasp II",
-        "category": "NATO",
-        "subCategory": "Planes"
-      },
-      "fighter_01_stealth": {
-        "className": "B_Plane_Fighter_01_Stealth_F",
-        "name": "F/A-181 Black Wasp II (Stealth)",
-        "category": "NATO",
-        "subCategory": "Planes"
-      },
-      "cas_01_cluster": {
-        "className": "B_Plane_CAS_01_Cluster_F",
-        "name": "A-164 Wipeout (Cluster)",
-        "category": "NATO",
-        "subCategory": "Planes"
-      },
-      "fighter_01_cluster": {
-        "className": "B_Plane_Fighter_01_Cluster_F",
-        "name": "F/A-181 Black Wasp II (Cluster)",
-        "category": "NATO",
-        "subCategory": "Planes"
-      }
-    },
-    "ugv": {
-      "01": {
-        "className": "B_UGV_01_F",
-        "name": "UGV Stomper",
-        "category": "NATO",
-        "subCategory": "Drones"
-      },
-      "01_rcws": {
-        "className": "B_UGV_01_rcws_F",
-        "name": "UGV Stomper RCWS",
-        "category": "NATO",
-        "subCategory": "Drones"
-      },
-      "02_science": {
-        "className": "B_UGV_02_Science_F",
-        "name": "ED-1E Roller",
-        "category": "NATO",
-        "subCategory": "Drones"
-      },
-      "02_demining": {
-        "className": "B_UGV_02_Demining_F",
-        "name": "ED-1D Pelter",
-        "category": "NATO",
-        "subCategory": "Drones"
-      }
-    },
-    "t": {
-      "lsv_01_armed": {
-        "className": "B_T_LSV_01_armed_F",
-        "name": "Prowler (HMG)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_at": {
-        "className": "B_T_LSV_01_AT_F",
-        "name": "Prowler (AT)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_armed_ctrg": {
-        "className": "B_T_LSV_01_armed_CTRG_F",
-        "name": "Prowler (HMG)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_unarmed": {
-        "className": "B_T_LSV_01_unarmed_F",
-        "name": "Prowler (Unarmed)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_unarmed_ctrg": {
-        "className": "B_T_LSV_01_unarmed_CTRG_F",
-        "name": "Prowler (Unarmed)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_armed_black": {
-        "className": "B_T_LSV_01_armed_black_F",
-        "name": "Prowler (HMG)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_armed_olive": {
-        "className": "B_T_LSV_01_armed_olive_F",
-        "name": "Prowler (HMG)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_armed_sand": {
-        "className": "B_T_LSV_01_armed_sand_F",
-        "name": "Prowler (HMG)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_unarmed_black": {
-        "className": "B_T_LSV_01_unarmed_black_F",
-        "name": "Prowler (Unarmed)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_unarmed_olive": {
-        "className": "B_T_LSV_01_unarmed_olive_F",
-        "name": "Prowler (Unarmed)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "lsv_01_unarmed_sand": {
-        "className": "B_T_LSV_01_unarmed_sand_F",
-        "name": "Prowler (Unarmed)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "mrap_01": {
-        "className": "B_T_MRAP_01_F",
-        "name": "Hunter",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "mrap_01_gmg": {
-        "className": "B_T_MRAP_01_gmg_F",
-        "name": "Hunter GMG",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "mrap_01_hmg": {
-        "className": "B_T_MRAP_01_hmg_F",
-        "name": "Hunter HMG",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "quadbike_01": {
-        "className": "B_T_Quadbike_01_F",
-        "name": "Quad Bike",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "truck_01_transport": {
-        "className": "B_T_Truck_01_transport_F",
-        "name": "HEMTT Transport",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "truck_01_covered": {
-        "className": "B_T_Truck_01_covered_F",
-        "name": "HEMTT Transport (Covered)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "truck_01_mover": {
-        "className": "B_T_Truck_01_mover_F",
-        "name": "HEMTT",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "truck_01_box": {
-        "className": "B_T_Truck_01_box_F",
-        "name": "HEMTT Box",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "truck_01_repair": {
-        "className": "B_T_Truck_01_Repair_F",
-        "name": "HEMTT Repair",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "truck_01_ammo": {
-        "className": "B_T_Truck_01_ammo_F",
-        "name": "HEMTT Ammo",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "truck_01_fuel": {
-        "className": "B_T_Truck_01_fuel_F",
-        "name": "HEMTT Fuel",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "truck_01_medical": {
-        "className": "B_T_Truck_01_medical_F",
-        "name": "HEMTT Medical",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "ugv_01_olive": {
-        "className": "B_T_UGV_01_olive_F",
-        "name": "UGV Stomper",
-        "category": "NATO (Pacific)",
-        "subCategory": "Drones"
-      },
-      "ugv_01_rcws_olive": {
-        "className": "B_T_UGV_01_rcws_olive_F",
-        "name": "UGV Stomper RCWS",
-        "category": "NATO (Pacific)",
-        "subCategory": "Drones"
-      },
-      "static_aa": {
-        "className": "B_T_Static_AA_F",
-        "name": "Static Titan Launcher (AA) [NATO]",
-        "category": "NATO (Pacific)",
-        "subCategory": "Turrets"
-      },
-      "static_at": {
-        "className": "B_T_Static_AT_F",
-        "name": "Static Titan Launcher (AT) [NATO]",
-        "category": "NATO (Pacific)",
-        "subCategory": "Turrets"
-      },
-      "gmg_01": {
-        "className": "B_T_GMG_01_F",
-        "name": "Mk32 GMG 20 mm",
-        "category": "NATO (Pacific)",
-        "subCategory": "Turrets"
-      },
-      "hmg_01": {
-        "className": "B_T_HMG_01_F",
-        "name": "Mk30 HMG .50",
-        "category": "NATO (Pacific)",
-        "subCategory": "Turrets"
-      },
-      "mortar_01": {
-        "className": "B_T_Mortar_01_F",
-        "name": "Mk6 Mortar",
-        "category": "NATO (Pacific)",
-        "subCategory": "Turrets"
-      },
-      "uav_03": {
-        "className": "B_T_UAV_03_F",
-        "name": "MQ-12 Falcon",
-        "category": "NATO (Pacific)",
-        "subCategory": "Drones"
-      },
-      "uav_03_dynamicloadout": {
-        "className": "B_T_UAV_03_dynamicLoadout_F",
-        "name": "MQ-12 Falcon",
-        "category": "NATO (Pacific)",
-        "subCategory": "Drones"
-      },
-      "vtol_01_infantry": {
-        "className": "B_T_VTOL_01_infantry_F",
-        "name": "V-44 X Blackfish (Infantry Transport)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Planes"
-      },
-      "vtol_01_vehicle": {
-        "className": "B_T_VTOL_01_vehicle_F",
-        "name": "V-44 X Blackfish (Vehicle Transport)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Planes"
-      },
-      "vtol_01_armed": {
-        "className": "B_T_VTOL_01_armed_F",
-        "name": "V-44 X Blackfish (Armed)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Planes"
-      },
-      "vtol_01_infantry_blue": {
-        "className": "B_T_VTOL_01_infantry_blue_F",
-        "name": "V-44 X Blackfish (Infantry Transport)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Planes"
-      },
-      "vtol_01_infantry_olive": {
-        "className": "B_T_VTOL_01_infantry_olive_F",
-        "name": "V-44 X Blackfish (Infantry Transport)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Planes"
-      },
-      "vtol_01_vehicle_blue": {
-        "className": "B_T_VTOL_01_vehicle_blue_F",
-        "name": "V-44 X Blackfish (Vehicle Transport)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Planes"
-      },
-      "vtol_01_vehicle_olive": {
-        "className": "B_T_VTOL_01_vehicle_olive_F",
-        "name": "V-44 X Blackfish (Vehicle Transport)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Planes"
-      },
-      "vtol_01_armed_blue": {
-        "className": "B_T_VTOL_01_armed_blue_F",
-        "name": "V-44 X Blackfish (Armed)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Planes"
-      },
-      "vtol_01_armed_olive": {
-        "className": "B_T_VTOL_01_armed_olive_F",
-        "name": "V-44 X Blackfish (Armed)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Planes"
-      },
-      "apc_tracked_01_aa": {
-        "className": "B_T_APC_Tracked_01_AA_F",
-        "name": "IFV-6a Cheetah",
-        "category": "NATO (Pacific)",
-        "subCategory": "Anti-Air"
-      },
-      "apc_tracked_01_crv": {
-        "className": "B_T_APC_Tracked_01_CRV_F",
-        "name": "CRV-6e Bobcat",
-        "category": "NATO (Pacific)",
-        "subCategory": "APCs"
-      },
-      "apc_tracked_01_rcws": {
-        "className": "B_T_APC_Tracked_01_rcws_F",
-        "name": "IFV-6c Panther",
-        "category": "NATO (Pacific)",
-        "subCategory": "APCs"
-      },
-      "apc_wheeled_01_cannon": {
-        "className": "B_T_APC_Wheeled_01_cannon_F",
-        "name": "AMV-7 Marshall",
-        "category": "NATO (Pacific)",
-        "subCategory": "APCs"
-      },
-      "mbt_01_arty": {
-        "className": "B_T_MBT_01_arty_F",
-        "name": "M4 Scorcher",
-        "category": "NATO (Pacific)",
-        "subCategory": "Artillery"
-      },
-      "mbt_01_mlrs": {
-        "className": "B_T_MBT_01_mlrs_F",
-        "name": "M5 Sandstorm MLRS",
-        "category": "NATO (Pacific)",
-        "subCategory": "Artillery"
-      },
-      "mbt_01_cannon": {
-        "className": "B_T_MBT_01_cannon_F",
-        "name": "M2A1 Slammer",
-        "category": "NATO (Pacific)",
-        "subCategory": "Tanks"
-      },
-      "mbt_01_tusk": {
-        "className": "B_T_MBT_01_TUSK_F",
-        "name": "M2A4 Slammer UP",
-        "category": "NATO (Pacific)",
-        "subCategory": "Tanks"
-      },
-      "boat_armed_01_minigun": {
-        "className": "B_T_Boat_Armed_01_minigun_F",
-        "name": "Speedboat Minigun",
-        "category": "NATO (Pacific)",
-        "subCategory": "Boats"
-      },
-      "boat_transport_01": {
-        "className": "B_T_Boat_Transport_01_F",
-        "name": "Assault Boat",
-        "category": "NATO (Pacific)",
-        "subCategory": "Boats"
-      },
-      "lifeboat": {
-        "className": "B_T_Lifeboat",
-        "name": "Rescue Boat",
-        "category": "NATO (Pacific)",
-        "subCategory": "Boats"
-      },
-      "soldier_a": {
-        "className": "B_T_Soldier_A_F",
-        "name": "Ammo Bearer",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_aar": {
-        "className": "B_T_Soldier_AAR_F",
-        "name": "Asst. Autorifleman",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "support_amg": {
-        "className": "B_T_Support_AMG_F",
-        "name": "Asst. Gunner (HMG/GMG)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "support_amort": {
-        "className": "B_T_Support_AMort_F",
-        "name": "Asst. Gunner (Mk6)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_aaa": {
-        "className": "B_T_Soldier_AAA_F",
-        "name": "Asst. Missile Specialist (AA)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_aat": {
-        "className": "B_T_Soldier_AAT_F",
-        "name": "Asst. Missile Specialist (AT)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_ar": {
-        "className": "B_T_Soldier_AR_F",
-        "name": "Autorifleman",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "medic": {
-        "className": "B_T_Medic_F",
-        "name": "Combat Life Saver",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "crew": {
-        "className": "B_T_Crew_F",
-        "name": "Crewman",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "engineer": {
-        "className": "B_T_Engineer_F",
-        "name": "Engineer",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_exp": {
-        "className": "B_T_Soldier_Exp_F",
-        "name": "Explosive Specialist",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_gl": {
-        "className": "B_T_Soldier_GL_F",
-        "name": "Grenadier",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "support_gmg": {
-        "className": "B_T_Support_GMG_F",
-        "name": "Gunner (GMG)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "support_mg": {
-        "className": "B_T_Support_MG_F",
-        "name": "Gunner (HMG)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "support_mort": {
-        "className": "B_T_Support_Mort_F",
-        "name": "Gunner (Mk6)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "helicrew": {
-        "className": "B_T_Helicrew_F",
-        "name": "Helicopter Crew",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "helipilot": {
-        "className": "B_T_Helipilot_F",
-        "name": "Helicopter Pilot",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_m": {
-        "className": "B_T_soldier_M_F",
-        "name": "Marksman",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_aa": {
-        "className": "B_T_Soldier_AA_F",
-        "name": "Missile Specialist (AA)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_at": {
-        "className": "B_T_Soldier_AT_F",
-        "name": "Missile Specialist (AT)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "officer": {
-        "className": "B_T_Officer_F",
-        "name": "Officer",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_pg": {
-        "className": "B_T_Soldier_PG_F",
-        "name": "Para Trooper",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "pilot": {
-        "className": "B_T_Pilot_F",
-        "name": "Pilot",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_repair": {
-        "className": "B_T_Soldier_Repair_F",
-        "name": "Repair Specialist",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier": {
-        "className": "B_T_Soldier_F",
-        "name": "Rifleman",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_lat": {
-        "className": "B_T_Soldier_LAT_F",
-        "name": "Rifleman (AT)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_sl": {
-        "className": "B_T_Soldier_SL_F",
-        "name": "Squad Leader",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_tl": {
-        "className": "B_T_Soldier_TL_F",
-        "name": "Team Leader",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_uav": {
-        "className": "B_T_Soldier_UAV_F",
-        "name": "UAV Operator",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "diver": {
-        "className": "B_T_Diver_F",
-        "name": "Assault Diver",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "diver_exp": {
-        "className": "B_T_Diver_Exp_F",
-        "name": "Diver Explosive Specialist",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "diver_tl": {
-        "className": "B_T_Diver_TL_F",
-        "name": "Diver Team Leader",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "recon_exp": {
-        "className": "B_T_Recon_Exp_F",
-        "name": "Recon Demo Specialist",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "recon_jtac": {
-        "className": "B_T_Recon_JTAC_F",
-        "name": "Recon JTAC",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "recon_m": {
-        "className": "B_T_Recon_M_F",
-        "name": "Recon Marksman",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "recon_medic": {
-        "className": "B_T_Recon_Medic_F",
-        "name": "Recon Paramedic",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "recon": {
-        "className": "B_T_Recon_F",
-        "name": "Recon Scout",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "recon_lat": {
-        "className": "B_T_Recon_LAT_F",
-        "name": "Recon Scout (AT)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "recon_tl": {
-        "className": "B_T_Recon_TL_F",
-        "name": "Recon Team Leader",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "sniper": {
-        "className": "B_T_Sniper_F",
-        "name": "Sniper",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "spotter": {
-        "className": "B_T_Spotter_F",
-        "name": "Spotter",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "ghillie_tna": {
-        "className": "B_T_ghillie_tna_F",
-        "name": "Sniper (Jungle)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men (Special Forces)"
-      },
-      "soldier_universal": {
-        "className": "B_T_Soldier_universal_F",
-        "name": "Soldier",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_unarmed": {
-        "className": "B_T_Soldier_unarmed_F",
-        "name": "Rifleman (Unarmed)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_uav_06": {
-        "className": "B_T_soldier_UAV_06_F",
-        "name": "UAV Operator (AL-6)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_uav_06_medical": {
-        "className": "B_T_soldier_UAV_06_medical_F",
-        "name": "UAV Operator (AL-6, Medical)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "soldier_mine": {
-        "className": "B_T_soldier_mine_F",
-        "name": "Mine Specialist",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "afv_wheeled_01_cannon": {
-        "className": "B_T_AFV_Wheeled_01_cannon_F",
-        "name": "Rhino MGS",
-        "category": "NATO (Pacific)",
-        "subCategory": "APCs"
-      },
-      "afv_wheeled_01_up_cannon": {
-        "className": "B_T_AFV_Wheeled_01_up_cannon_F",
-        "name": "Rhino MGS UP",
-        "category": "NATO (Pacific)",
-        "subCategory": "APCs"
-      },
-      "soldier_lat2": {
-        "className": "B_T_Soldier_LAT2_F",
-        "name": "Rifleman (Light AT)",
-        "category": "NATO (Pacific)",
-        "subCategory": "Men"
-      },
-      "truck_01_flatbed": {
-        "className": "B_T_Truck_01_flatbed_F",
-        "name": "HEMTT Flatbed",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      },
-      "truck_01_cargo": {
-        "className": "B_T_Truck_01_cargo_F",
-        "name": "HEMTT Cargo",
-        "category": "NATO (Pacific)",
-        "subCategory": "Cars"
-      }
-    },
-    "lsv": {
-      "01_armed": {
-        "className": "B_LSV_01_armed_F",
-        "name": "Prowler (HMG)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_at": {
-        "className": "B_LSV_01_AT_F",
-        "name": "Prowler (AT)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_unarmed": {
-        "className": "B_LSV_01_unarmed_F",
-        "name": "Prowler (Unarmed)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_armed_black": {
-        "className": "B_LSV_01_armed_black_F",
-        "name": "Prowler (HMG)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_armed_olive": {
-        "className": "B_LSV_01_armed_olive_F",
-        "name": "Prowler (HMG)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_armed_sand": {
-        "className": "B_LSV_01_armed_sand_F",
-        "name": "Prowler (HMG)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_unarmed_black": {
-        "className": "B_LSV_01_unarmed_black_F",
-        "name": "Prowler (Unarmed)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_unarmed_olive": {
-        "className": "B_LSV_01_unarmed_olive_F",
-        "name": "Prowler (Unarmed)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      },
-      "01_unarmed_sand": {
-        "className": "B_LSV_01_unarmed_sand_F",
-        "name": "Prowler (Unarmed)",
-        "category": "NATO",
-        "subCategory": "Cars"
-      }
-    },
-    "gen": {
-      "offroad_01_gen": {
-        "className": "B_GEN_Offroad_01_gen_F",
-        "name": "Offroad",
-        "category": "Gendarmerie",
-        "subCategory": "Cars"
-      },
-      "soldier": {
-        "className": "B_GEN_Soldier_F",
-        "name": "Gendarme",
-        "category": "Gendarmerie",
-        "subCategory": "Men"
-      },
-      "commander": {
-        "className": "B_GEN_Commander_F",
-        "name": "Gendarmerie Commander",
-        "category": "Gendarmerie",
-        "subCategory": "Men"
-      },
-      "soldier_universal": {
-        "className": "B_GEN_Soldier_universal_F",
-        "name": "Soldier",
-        "category": "Gendarmerie",
-        "subCategory": "Men"
-      },
-      "van_02_transport": {
-        "className": "B_GEN_Van_02_transport_F",
-        "name": "Van Transport",
-        "category": "Gendarmerie",
-        "subCategory": "Cars"
-      },
-      "van_02_vehicle": {
-        "className": "B_GEN_Van_02_vehicle_F",
-        "name": "Van (Cargo)",
-        "category": "Gendarmerie",
-        "subCategory": "Cars"
-      },
-      "offroad_01_covered": {
-        "className": "B_GEN_Offroad_01_covered_F",
-        "name": "Offroad (Covered)",
-        "category": "Gendarmerie",
-        "subCategory": "Cars"
-      },
-      "offroad_01_comms": {
-        "className": "B_GEN_Offroad_01_comms_F",
-        "name": "Offroad (Comms)",
-        "category": "Gendarmerie",
-        "subCategory": "Cars"
-      }
-    },
-    "aaa": {
-      "system_01": {
-        "className": "B_AAA_System_01_F",
-        "name": "Praetorian 1C",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      }
-    },
-    "sam": {
-      "system_01": {
-        "className": "B_SAM_System_01_F",
-        "name": "Mk49 Spartan",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "system_02": {
-        "className": "B_SAM_System_02_F",
-        "name": "Mk21 Centurion",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "system_03": {
-        "className": "B_SAM_System_03_F",
-        "name": "MIM-145 Defender",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      }
-    },
-    "ejection": {
-      "seat_plane_fighter_01": {
-        "className": "B_Ejection_Seat_Plane_Fighter_01_F",
-        "name": "Ejection Seat",
-        "category": "NATO",
-        "subCategory": "Objects"
-      }
-    },
-    "deck": {
-      "crew": {
-        "className": "B_Deck_Crew_F",
-        "name": "Deck Crew",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "fighter": {
-      "pilot": {
-        "className": "B_Fighter_Pilot_F",
-        "name": "Fighter Pilot",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "patrol": {
-      "soldier_tl": {
-        "className": "B_Patrol_Soldier_TL_F",
-        "name": "Team Leader",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      },
-      "soldier_uav": {
-        "className": "B_Patrol_Soldier_UAV_F",
-        "name": "UAV Operator",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      },
-      "soldier_m": {
-        "className": "B_Patrol_Soldier_M_F",
-        "name": "Marksman",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      },
-      "medic": {
-        "className": "B_Patrol_Medic_F",
-        "name": "Combat Life Saver",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      },
-      "soldier_ar": {
-        "className": "B_Patrol_Soldier_AR_F",
-        "name": "Autorifleman",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      },
-      "soldier_mg": {
-        "className": "B_Patrol_Soldier_MG_F",
-        "name": "Machine Gunner",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      },
-      "heavygunner": {
-        "className": "B_Patrol_HeavyGunner_F",
-        "name": "Heavy Gunner",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      },
-      "soldier_a": {
-        "className": "B_Patrol_Soldier_A_F",
-        "name": "Ammo Bearer",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      },
-      "soldier_at": {
-        "className": "B_Patrol_Soldier_AT_F",
-        "name": "Missile Specialist (AT)",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      },
-      "engineer": {
-        "className": "B_Patrol_Engineer_F",
-        "name": "Engineer",
-        "category": "NATO",
-        "subCategory": "Men (Combat Patrol)"
-      }
-    },
-    "afv": {
-      "wheeled_01_cannon": {
-        "className": "B_AFV_Wheeled_01_cannon_F",
-        "name": "Rhino MGS",
-        "category": "NATO",
-        "subCategory": "APCs"
-      },
-      "wheeled_01_up_cannon": {
-        "className": "B_AFV_Wheeled_01_up_cannon_F",
-        "name": "Rhino MGS UP",
-        "category": "NATO",
-        "subCategory": "APCs"
-      }
-    },
-    "ship": {
-      "gun_01": {
-        "className": "B_Ship_Gun_01_F",
-        "name": "Mk45 Hammer",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      },
-      "mrls_01": {
-        "className": "B_Ship_MRLS_01_F",
-        "name": "Mk41 VLS",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      }
-    },
-    "radar": {
-      "system_01": {
-        "className": "B_Radar_System_01_F",
-        "name": "AN/MPQ-105 Radar",
-        "category": "NATO",
-        "subCategory": "Turrets"
-      }
-    },
-    "w": {
-      "static_designator_01": {
-        "className": "B_W_Static_Designator_01_F",
-        "name": "Remote Designator [NATO]",
-        "category": "NATO (Woodland)",
-        "subCategory": "Turrets"
-      },
-      "soldier_a": {
-        "className": "B_W_Soldier_A_F",
-        "name": "Ammo Bearer",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_aar": {
-        "className": "B_W_Soldier_AAR_F",
-        "name": "Asst. Autorifleman",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "support_amg": {
-        "className": "B_W_Support_AMG_F",
-        "name": "Asst. Gunner (HMG/GMG)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "support_amort": {
-        "className": "B_W_Support_AMort_F",
-        "name": "Asst. Gunner (Mk6)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_aaa": {
-        "className": "B_W_Soldier_AAA_F",
-        "name": "Asst. Missile Specialist (AA)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_aat": {
-        "className": "B_W_Soldier_AAT_F",
-        "name": "Asst. Missile Specialist (AT)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_ar": {
-        "className": "B_W_Soldier_AR_F",
-        "name": "Autorifleman",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "medic": {
-        "className": "B_W_Medic_F",
-        "name": "Combat Life Saver",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "crew": {
-        "className": "B_W_Crew_F",
-        "name": "Crewman",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "engineer": {
-        "className": "B_W_Engineer_F",
-        "name": "Engineer",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_exp": {
-        "className": "B_W_Soldier_Exp_F",
-        "name": "Explosive Specialist",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_mine": {
-        "className": "B_W_soldier_mine_F",
-        "name": "Mine Specialist",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_gl": {
-        "className": "B_W_Soldier_GL_F",
-        "name": "Grenadier",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "support_gmg": {
-        "className": "B_W_Support_GMG_F",
-        "name": "Gunner (GMG)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "support_mg": {
-        "className": "B_W_Support_MG_F",
-        "name": "Gunner (HMG)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "support_mort": {
-        "className": "B_W_Support_Mort_F",
-        "name": "Gunner (Mk6)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "helicrew": {
-        "className": "B_W_Helicrew_F",
-        "name": "Helicopter Crew",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "helipilot": {
-        "className": "B_W_Helipilot_F",
-        "name": "Helicopter Pilot",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_m": {
-        "className": "B_W_soldier_M_F",
-        "name": "Marksman",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_aa": {
-        "className": "B_W_Soldier_AA_F",
-        "name": "Missile Specialist (AA)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_at": {
-        "className": "B_W_Soldier_AT_F",
-        "name": "Missile Specialist (AT)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "officer": {
-        "className": "B_W_Officer_F",
-        "name": "Officer",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_repair": {
-        "className": "B_W_Soldier_Repair_F",
-        "name": "Repair Specialist",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier": {
-        "className": "B_W_Soldier_F",
-        "name": "Rifleman",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_lat": {
-        "className": "B_W_Soldier_LAT_F",
-        "name": "Rifleman (AT)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_lat2": {
-        "className": "B_W_Soldier_LAT2_F",
-        "name": "Rifleman (Light AT)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_sl": {
-        "className": "B_W_Soldier_SL_F",
-        "name": "Squad Leader",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_tl": {
-        "className": "B_W_Soldier_TL_F",
-        "name": "Team Leader",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_cbrn": {
-        "className": "B_W_Soldier_CBRN_F",
-        "name": "CBRN Specialist",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "radiooperator": {
-        "className": "B_W_RadioOperator_F",
-        "name": "Radio Operator",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "survivor": {
-        "className": "B_W_Survivor_F",
-        "name": "Survivor",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_uav": {
-        "className": "B_W_Soldier_UAV_F",
-        "name": "UAV Operator",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_ugv_02_science": {
-        "className": "B_W_soldier_UGV_02_Science_F",
-        "name": "UGV Operator (ED-1E)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_ugv_02_demining": {
-        "className": "B_W_soldier_UGV_02_Demining_F",
-        "name": "UGV Operator (ED-1D)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_universal": {
-        "className": "B_W_Soldier_universal_F",
-        "name": "Soldier",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      },
-      "soldier_unarmed": {
-        "className": "B_W_Soldier_unarmed_F",
-        "name": "Rifleman (Unarmed)",
-        "category": "NATO (Woodland)",
-        "subCategory": "Men"
-      }
-    },
-    "reconfatigues": {
-      "01_wdl": {
-        "className": "B_ReconFatigues_01_wdl_F",
-        "name": "Squad Leader",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "combatfatigues": {
-      "01_wdl": {
-        "className": "B_CombatFatigues_01_wdl_F",
-        "name": "Rifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "01_tshirt_wdl": {
-        "className": "B_CombatFatigues_01_Tshirt_wdl_F",
-        "name": "Autorifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "cbrn": {
-      "man_oversuit_01_mtp": {
-        "className": "B_CBRN_Man_Oversuit_01_MTP_F",
-        "name": "Rifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "man_oversuit_01_tropic": {
-        "className": "B_CBRN_Man_Oversuit_01_Tropic_F",
-        "name": "Rifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "man_oversuit_01_wdl": {
-        "className": "B_CBRN_Man_Oversuit_01_Wdl_F",
-        "name": "Rifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    }
-  },
-  "nvg": {
-    "targete": {
-      "base": {
-        "className": "NVG_TargetE",
-        "name": "NVG target",
-        "category": "Other"
-      }
-    }
-  },
-  "i": {
-    "g": {
-      "story_protagonist": {
-        "className": "I_G_Story_Protagonist_F",
-        "name": "Kerry",
-        "category": "FIA",
-        "subCategory": "Men (Story)"
-      },
-      "story_sf_captain": {
-        "className": "I_G_Story_SF_Captain_F",
-        "name": "Miller",
-        "category": "FIA",
-        "subCategory": "Men (Story)"
-      },
-      "resistanceleader": {
-        "className": "I_G_resistanceLeader_F",
-        "name": "Stavrou",
-        "category": "FIA",
-        "subCategory": "Men (Story)"
-      },
-      "resistancecommander": {
-        "className": "I_G_resistanceCommander_F",
-        "name": "Resistance Commander placeholder",
-        "category": "FIA",
-        "subCategory": "Men (Story)"
-      }
-    },
-    "cbrn": {
-      "man_oversuit_01_aaf": {
-        "className": "I_CBRN_Man_Oversuit_01_AAF_F",
-        "name": "Rifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    },
-    "e": {
-      "cbrn_man_oversuit_01_eaf": {
-        "className": "I_E_CBRN_Man_Oversuit_01_EAF_F",
-        "name": "Rifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    }
-  },
-  "nonsteerable": {
-    "parachute": {
-      "base": {
-        "className": "NonSteerable_Parachute_F",
-        "name": "Nonsteerable Parachute",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      }
-    }
-  },
-  "steerable": {
-    "parachute": {
-      "base": {
-        "className": "Steerable_Parachute_F",
-        "name": "Steerable Parachute",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      }
-    }
-  },
-  "underwear": {
-    "f": {
-      "base": {
-        "className": "Underwear_F",
-        "name": "TEST: Underwear",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    }
-  },
-  "c": {
-    "cbrn": {
-      "man_oversuit_01_blue": {
-        "className": "C_CBRN_Man_Oversuit_01_Blue_F",
-        "name": "Rifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      },
-      "man_oversuit_01_white": {
-        "className": "C_CBRN_Man_Oversuit_01_White_F",
-        "name": "Rifleman",
-        "category": "NATO",
-        "subCategory": "Men"
-      }
-    }
-  },
-  "spaceshipcapsule": {
-    "01": {
-      "parachute": {
-        "className": "SpaceshipCapsule_01_parachute_F",
-        "name": "Space Capsule Parachutes",
-        "category": "NATO",
-        "subCategory": "Helicopters"
-      }
-    }
-  }
+	"b": {
+		"targetsoldier": {
+			"base": {
+				"className": "B_TargetSoldier",
+				"name": "Invisible Target Soldier",
+				"category": "NATO",
+				"subCategory": "Targets"
+			}
+		},
+		"soldier": {
+			"base": {
+				"className": "B_Soldier_F",
+				"name": "Rifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"lite": {
+				"className": "B_Soldier_lite_F",
+				"name": "Rifleman (Light)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"gl": {
+				"className": "B_Soldier_GL_F",
+				"name": "Grenadier",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"ar": {
+				"className": "B_soldier_AR_F",
+				"name": "Autorifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"sl": {
+				"className": "B_Soldier_SL_F",
+				"name": "Squad Leader",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"tl": {
+				"className": "B_Soldier_TL_F",
+				"name": "Team Leader",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"m": {
+				"className": "B_soldier_M_F",
+				"name": "Marksman",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"lat": {
+				"className": "B_soldier_LAT_F",
+				"name": "Rifleman (AT)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"repair": {
+				"className": "B_soldier_repair_F",
+				"name": "Repair Specialist",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"exp": {
+				"className": "B_soldier_exp_F",
+				"name": "Explosive Specialist",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"a": {
+				"className": "B_Soldier_A_F",
+				"name": "Ammo Bearer",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"at": {
+				"className": "B_soldier_AT_F",
+				"name": "Missile Specialist (AT)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"aa": {
+				"className": "B_soldier_AA_F",
+				"name": "Missile Specialist (AA)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"pg": {
+				"className": "B_soldier_PG_F",
+				"name": "Para Trooper",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"uav": {
+				"className": "B_soldier_UAV_F",
+				"name": "UAV Operator",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"universal": {
+				"className": "B_Soldier_universal_F",
+				"name": "Soldier",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"unarmed": {
+				"className": "B_Soldier_unarmed_F",
+				"name": "Rifleman (Unarmed)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"survival": {
+				"className": "b_soldier_survival_F",
+				"name": "Survival Fatigues",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"aar": {
+				"className": "B_soldier_AAR_F",
+				"name": "Asst. Autorifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"aat": {
+				"className": "B_soldier_AAT_F",
+				"name": "Asst. Missile Specialist (AT)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"aaa": {
+				"className": "B_soldier_AAA_F",
+				"name": "Asst. Missile Specialist (AA)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"vr": {
+				"className": "B_Soldier_VR_F",
+				"name": "VR Entity",
+				"category": "NATO",
+				"subCategory": "Men (Virtual Reality)"
+			},
+			"uav_06": {
+				"className": "B_soldier_UAV_06_F",
+				"name": "UAV Operator (AL-6)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"uav_06_medical": {
+				"className": "B_soldier_UAV_06_medical_F",
+				"name": "UAV Operator (AL-6, Medical)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"mine": {
+				"className": "B_soldier_mine_F",
+				"name": "Mine Specialist",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"lat2": {
+				"className": "B_soldier_LAT2_F",
+				"name": "Rifleman (Light AT)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"ugv_02_science": {
+				"className": "B_soldier_UGV_02_Science_F",
+				"name": "UGV Operator (ED-1E)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"ugv_02_demining": {
+				"className": "B_soldier_UGV_02_Demining_F",
+				"name": "UGV Operator (ED-1D)",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"rangemaster": {
+			"base": {
+				"className": "B_RangeMaster_F",
+				"name": "Range Master",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"medic": {
+			"base": {
+				"className": "B_medic_F",
+				"name": "Combat Life Saver",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"helipilot": {
+			"base": {
+				"className": "B_Helipilot_F",
+				"name": "Helicopter Pilot",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"engineer": {
+			"base": {
+				"className": "B_engineer_F",
+				"name": "Engineer",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"crew": {
+			"base": {
+				"className": "B_crew_F",
+				"name": "Crewman",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"officer": {
+			"base": {
+				"className": "B_officer_F",
+				"name": "Officer",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"parade": {
+				"className": "B_Officer_Parade_F",
+				"name": "Officer (Parade Dress)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"parade_veteran": {
+				"className": "B_Officer_Parade_Veteran_F",
+				"name": "Officer (Veteran, Parade Dress)",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"competitor": {
+			"base": {
+				"className": "B_Competitor_F",
+				"name": "Competitor",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"pilot": {
+			"base": {
+				"className": "B_Pilot_F",
+				"name": "Pilot",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"helicrew": {
+			"base": {
+				"className": "B_helicrew_F",
+				"name": "Helicopter Crew",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"survivor": {
+			"base": {
+				"className": "B_Survivor_F",
+				"name": "Survivor",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"diver": {
+			"base": {
+				"className": "B_diver_F",
+				"name": "Assault Diver",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"tl": {
+				"className": "B_diver_TL_F",
+				"name": "Diver Team Leader",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"exp": {
+				"className": "B_diver_exp_F",
+				"name": "Diver Explosive Specialist",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			}
+		},
+		"recon": {
+			"base": {
+				"className": "B_recon_F",
+				"name": "Recon Scout",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"lat": {
+				"className": "B_recon_LAT_F",
+				"name": "Recon Scout (AT)",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"exp": {
+				"className": "B_recon_exp_F",
+				"name": "Recon Demo Specialist",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"medic": {
+				"className": "B_recon_medic_F",
+				"name": "Recon Paramedic",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"tl": {
+				"className": "B_recon_TL_F",
+				"name": "Recon Team Leader",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"m": {
+				"className": "B_recon_M_F",
+				"name": "Recon Marksman",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"jtac": {
+				"className": "B_recon_JTAC_F",
+				"name": "Recon JTAC",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"sharpshooter": {
+				"className": "B_Recon_Sharpshooter_F",
+				"name": "Recon Sharpshooter",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			}
+		},
+		"spotter": {
+			"base": {
+				"className": "B_spotter_F",
+				"name": "Spotter",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			}
+		},
+		"sniper": {
+			"base": {
+				"className": "B_sniper_F",
+				"name": "Sniper",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			}
+		},
+		"story": {
+			"sf_captain": {
+				"className": "B_Story_SF_Captain_F",
+				"name": "Miller",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"protagonist": {
+				"className": "B_Story_Protagonist_F",
+				"name": "Kerry",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"engineer": {
+				"className": "B_Story_Engineer_F",
+				"name": "Novak",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"colonel": {
+				"className": "B_Story_Colonel_F",
+				"name": "Grover",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"pilot": {
+				"className": "B_Story_Pilot_F",
+				"name": "Larkin",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"tank_commander": {
+				"className": "B_Story_Tank_Commander_F",
+				"name": "Hutchison",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			}
+		},
+		"ctrg": {
+			"soldier_gl_lat": {
+				"className": "B_CTRG_soldier_GL_LAT_F",
+				"name": "Northgate",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"soldier_engineer_exp": {
+				"className": "B_CTRG_soldier_engineer_exp_F",
+				"name": "Hardy",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"soldier_m_medic": {
+				"className": "B_CTRG_soldier_M_medic_F",
+				"name": "James",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"soldier_ar_a": {
+				"className": "B_CTRG_soldier_AR_A_F",
+				"name": "McKay",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"sharphooter": {
+				"className": "B_CTRG_Sharphooter_F",
+				"name": "O'Connor",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"lsv_01_light": {
+				"className": "B_CTRG_LSV_01_light_F",
+				"name": "Prowler (Light)",
+				"category": "CTRG",
+				"subCategory": "Cars"
+			},
+			"heli_transport_01_sand": {
+				"className": "B_CTRG_Heli_Transport_01_sand_F",
+				"name": "UH-80 Ghost Hawk (Sand)",
+				"category": "CTRG",
+				"subCategory": "Helicopters"
+			},
+			"heli_transport_01_tropic": {
+				"className": "B_CTRG_Heli_Transport_01_tropic_F",
+				"name": "UH-80 Ghost Hawk (Tropic)",
+				"category": "CTRG",
+				"subCategory": "Helicopters"
+			},
+			"soldier": {
+				"className": "B_CTRG_Soldier_F",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_arid": {
+				"className": "B_CTRG_Soldier_arid_F",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_2": {
+				"className": "B_CTRG_Soldier_2_F",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_2_arid": {
+				"className": "B_CTRG_Soldier_2_arid_F",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_3": {
+				"className": "B_CTRG_Soldier_3_F",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_3_arid": {
+				"className": "B_CTRG_Soldier_3_arid_F",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_tl_tna": {
+				"className": "B_CTRG_Soldier_TL_tna_F",
+				"name": "Team Leader",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_exp_tna": {
+				"className": "B_CTRG_Soldier_Exp_tna_F",
+				"name": "Demo Specialist",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_medic_tna": {
+				"className": "B_CTRG_Soldier_Medic_tna_F",
+				"name": "Paramedic",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_m_tna": {
+				"className": "B_CTRG_Soldier_M_tna_F",
+				"name": "Marksman",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_tna": {
+				"className": "B_CTRG_Soldier_tna_F",
+				"name": "Scout",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_lat_tna": {
+				"className": "B_CTRG_Soldier_LAT_tna_F",
+				"name": "Scout (AT)",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_ar_tna": {
+				"className": "B_CTRG_Soldier_AR_tna_F",
+				"name": "Autorifleman",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_jtac_tna": {
+				"className": "B_CTRG_Soldier_JTAC_tna_F",
+				"name": "JTAC",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"miller": {
+				"className": "B_CTRG_Miller_F",
+				"name": "Miller",
+				"category": "CTRG",
+				"subCategory": "Men (Story)"
+			},
+			"soldier_urb_1": {
+				"className": "B_CTRG_Soldier_urb_1_F",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_urb_2": {
+				"className": "B_CTRG_Soldier_urb_2_F",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_urb_3": {
+				"className": "B_CTRG_Soldier_urb_3_F",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_universal": {
+				"className": "B_CTRG_Soldier_universal_F",
+				"name": "Soldier",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			},
+			"soldier_lat2_tna": {
+				"className": "B_CTRG_Soldier_LAT2_tna_F",
+				"name": "Rifleman (Light AT)",
+				"category": "CTRG",
+				"subCategory": "Men (Pacific)"
+			}
+		},
+		"support": {
+			"mg": {
+				"className": "B_support_MG_F",
+				"name": "Gunner (HMG)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"gmg": {
+				"className": "B_support_GMG_F",
+				"name": "Gunner (GMG)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"mort": {
+				"className": "B_support_Mort_F",
+				"name": "Gunner (Mk6)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"amg": {
+				"className": "B_support_AMG_F",
+				"name": "Asst. Gunner (HMG/GMG)",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"amort": {
+				"className": "B_support_AMort_F",
+				"name": "Asst. Gunner (Mk6)",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"g": {
+			"soldier": {
+				"className": "B_G_Soldier_F",
+				"name": "Rifleman",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_lite": {
+				"className": "B_G_Soldier_lite_F",
+				"name": "Rifleman (Light)",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_sl": {
+				"className": "B_G_Soldier_SL_F",
+				"name": "Squad Leader",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_tl": {
+				"className": "B_G_Soldier_TL_F",
+				"name": "Team Leader",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_ar": {
+				"className": "B_G_Soldier_AR_F",
+				"name": "Autorifleman",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"medic": {
+				"className": "B_G_medic_F",
+				"name": "Combat Life Saver",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"engineer": {
+				"className": "B_G_engineer_F",
+				"name": "Engineer",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_exp": {
+				"className": "B_G_Soldier_exp_F",
+				"name": "Explosive Specialist",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_gl": {
+				"className": "B_G_Soldier_GL_F",
+				"name": "Grenadier",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_m": {
+				"className": "B_G_Soldier_M_F",
+				"name": "Marksman",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_lat": {
+				"className": "B_G_Soldier_LAT_F",
+				"name": "Rifleman (AT)",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_a": {
+				"className": "B_G_Soldier_A_F",
+				"name": "Ammo Bearer",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"officer": {
+				"className": "B_G_officer_F",
+				"name": "Officer",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_unarmed": {
+				"className": "B_G_Soldier_unarmed_F",
+				"name": "Rifleman (Unarmed)",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"survivor": {
+				"className": "B_G_Survivor_F",
+				"name": "Survivor",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"soldier_universal": {
+				"className": "B_G_Soldier_universal_F",
+				"name": "Soldier",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"sharpshooter": {
+				"className": "B_G_Sharpshooter_F",
+				"name": "Sharpshooter",
+				"category": "FIA",
+				"subCategory": "Men"
+			},
+			"hmg_02": {
+				"className": "B_G_HMG_02_F",
+				"name": "M2 HMG .50",
+				"category": "FIA",
+				"subCategory": "Turrets"
+			},
+			"hmg_02_high": {
+				"className": "B_G_HMG_02_high_F",
+				"name": "M2 HMG .50 (Raised)",
+				"category": "FIA",
+				"subCategory": "Turrets"
+			},
+			"mortar_01": {
+				"className": "B_G_Mortar_01_F",
+				"name": "Mk6 Mortar",
+				"category": "FIA",
+				"subCategory": "Turrets"
+			},
+			"boat_transport_01": {
+				"className": "B_G_Boat_Transport_01_F",
+				"name": "Assault Boat",
+				"category": "FIA",
+				"subCategory": "Boats"
+			},
+			"offroad_01_repair": {
+				"className": "B_G_Offroad_01_repair_F",
+				"name": "Offroad (Repair)",
+				"category": "FIA",
+				"subCategory": "Cars"
+			},
+			"offroad_01": {
+				"className": "B_G_Offroad_01_F",
+				"name": "Offroad",
+				"category": "FIA",
+				"subCategory": "Cars"
+			},
+			"offroad_01_armed": {
+				"className": "B_G_Offroad_01_armed_F",
+				"name": "Offroad (HMG)",
+				"category": "FIA",
+				"subCategory": "Cars"
+			},
+			"offroad_01_at": {
+				"className": "B_G_Offroad_01_AT_F",
+				"name": "Offroad (AT)",
+				"category": "FIA",
+				"subCategory": "Cars"
+			},
+			"quadbike_01": {
+				"className": "B_G_Quadbike_01_F",
+				"name": "Quad Bike",
+				"category": "FIA",
+				"subCategory": "Cars"
+			},
+			"van_01_transport": {
+				"className": "B_G_Van_01_transport_F",
+				"name": "Truck",
+				"category": "FIA",
+				"subCategory": "Cars"
+			},
+			"van_01_fuel": {
+				"className": "B_G_Van_01_fuel_F",
+				"name": "Fuel Truck",
+				"category": "FIA",
+				"subCategory": "Cars"
+			},
+			"boat_transport_02": {
+				"className": "B_G_Boat_Transport_02_F",
+				"name": "RHIB",
+				"category": "FIA",
+				"subCategory": "Boats"
+			},
+			"captain_ivan": {
+				"className": "B_G_Captain_Ivan_F",
+				"name": "Ivan",
+				"category": "FIA",
+				"subCategory": "Men (Story)"
+			},
+			"van_02_transport": {
+				"className": "B_G_Van_02_transport_F",
+				"name": "Van Transport",
+				"category": "FIA",
+				"subCategory": "Cars"
+			},
+			"van_02_vehicle": {
+				"className": "B_G_Van_02_vehicle_F",
+				"name": "Van (Cargo)",
+				"category": "FIA",
+				"subCategory": "Cars"
+			},
+			"story_guerilla_01": {
+				"className": "B_G_Story_Guerilla_01_F",
+				"name": "Alexis Kouris",
+				"category": "FIA",
+				"subCategory": "Men (Story)"
+			},
+			"soldier_lat2": {
+				"className": "B_G_Soldier_LAT2_F",
+				"name": "Rifleman (Light AT)",
+				"category": "FIA",
+				"subCategory": "Men"
+			}
+		},
+		"protagonist": {
+			"vr": {
+				"className": "B_Protagonist_VR_F",
+				"name": "VR Soldier",
+				"category": "NATO",
+				"subCategory": "Men (Virtual Reality)"
+			}
+		},
+		"ghillie": {
+			"lsh": {
+				"className": "B_ghillie_lsh_F",
+				"name": "Sniper (Lush)",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"sard": {
+				"className": "B_ghillie_sard_F",
+				"name": "Sniper (Semi-Arid)",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			},
+			"ard": {
+				"className": "B_ghillie_ard_F",
+				"name": "Sniper (Arid)",
+				"category": "NATO",
+				"subCategory": "Men (Special Forces)"
+			}
+		},
+		"sharpshooter": {
+			"base": {
+				"className": "B_Sharpshooter_F",
+				"name": "Sharpshooter",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"heavygunner": {
+			"base": {
+				"className": "B_HeavyGunner_F",
+				"name": "Heavy Gunner",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"captain": {
+			"pettka": {
+				"className": "B_Captain_Pettka_F",
+				"name": "Pettka",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"jay": {
+				"className": "B_Captain_Jay_F",
+				"name": "Jay",
+				"category": "NATO",
+				"subCategory": "Men (Story)"
+			},
+			"dwarden": {
+				"className": "B_Captain_Dwarden_F",
+				"name": "Dwarden",
+				"category": "Gendarmerie",
+				"subCategory": "Men (Story)"
+			}
+		},
+		"hmg": {
+			"01": {
+				"className": "B_HMG_01_F",
+				"name": "Mk30 HMG .50",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"01_high": {
+				"className": "B_HMG_01_high_F",
+				"name": "Mk30 HMG .50 (Raised)",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"01_a": {
+				"className": "B_HMG_01_A_F",
+				"name": "Mk30A HMG .50",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"02": {
+				"className": "B_HMG_02_F",
+				"name": "M2 HMG .50",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"02_high": {
+				"className": "B_HMG_02_high_F",
+				"name": "M2 HMG .50 (Raised)",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			}
+		},
+		"gmg": {
+			"01": {
+				"className": "B_GMG_01_F",
+				"name": "Mk32 GMG 20 mm",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"01_high": {
+				"className": "B_GMG_01_high_F",
+				"name": "Mk32 GMG 20 mm (Raised)",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"01_a": {
+				"className": "B_GMG_01_A_F",
+				"name": "Mk32A GMG 20 mm",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			}
+		},
+		"mortar": {
+			"01": {
+				"className": "B_Mortar_01_F",
+				"name": "Mk6 Mortar",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			}
+		},
+		"heli": {
+			"light_01": {
+				"className": "B_Heli_Light_01_F",
+				"name": "MH-9 Hummingbird",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"light_01_armed": {
+				"className": "B_Heli_Light_01_armed_F",
+				"name": "AH-9 Pawnee",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"light_01_dynamicloadout": {
+				"className": "B_Heli_Light_01_dynamicLoadout_F",
+				"name": "AH-9 Pawnee",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"light_01_stripped": {
+				"className": "B_Heli_Light_01_stripped_F",
+				"name": "MH-9 Hummingbird (Stripped)",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"attack_01": {
+				"className": "B_Heli_Attack_01_F",
+				"name": "AH-99 Blackfoot",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"attack_01_dynamicloadout": {
+				"className": "B_Heli_Attack_01_dynamicLoadout_F",
+				"name": "AH-99 Blackfoot",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"transport_01": {
+				"className": "B_Heli_Transport_01_F",
+				"name": "UH-80 Ghost Hawk",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"transport_01_camo": {
+				"className": "B_Heli_Transport_01_camo_F",
+				"name": "UH-80 Ghost Hawk (Camo)",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"transport_03": {
+				"className": "B_Heli_Transport_03_F",
+				"name": "CH-67 Huron",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"transport_03_unarmed": {
+				"className": "B_Heli_Transport_03_unarmed_F",
+				"name": "CH-67 Huron (Unarmed)",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"transport_03_black": {
+				"className": "B_Heli_Transport_03_black_F",
+				"name": "CH-67 Huron (Black)",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			},
+			"transport_03_unarmed_green": {
+				"className": "B_Heli_Transport_03_unarmed_green_F",
+				"name": "CH-67 Huron Unarmed (Green)",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			}
+		},
+		"parachute": {
+			"02": {
+				"className": "B_Parachute_02_F",
+				"name": "Cargo Parachute",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			}
+		},
+		"apc": {
+			"tracked_01_rcws": {
+				"className": "B_APC_Tracked_01_rcws_F",
+				"name": "IFV-6c Panther",
+				"category": "NATO",
+				"subCategory": "APCs"
+			},
+			"tracked_01_crv": {
+				"className": "B_APC_Tracked_01_CRV_F",
+				"name": "CRV-6e Bobcat",
+				"category": "NATO",
+				"subCategory": "APCs"
+			},
+			"tracked_01_aa": {
+				"className": "B_APC_Tracked_01_AA_F",
+				"name": "IFV-6a Cheetah",
+				"category": "NATO",
+				"subCategory": "Anti-Air"
+			},
+			"wheeled_01_cannon": {
+				"className": "B_APC_Wheeled_01_cannon_F",
+				"name": "AMV-7 Marshall",
+				"category": "NATO",
+				"subCategory": "APCs"
+			},
+			"wheeled_03_cannon": {
+				"className": "B_APC_Wheeled_03_cannon_F",
+				"name": "AFV-4 Gorgon",
+				"category": "NATO",
+				"subCategory": "APCs"
+			}
+		},
+		"mbt": {
+			"01_cannon": {
+				"className": "B_MBT_01_cannon_F",
+				"name": "M2A1 Slammer",
+				"category": "NATO",
+				"subCategory": "Tanks"
+			},
+			"01_arty": {
+				"className": "B_MBT_01_arty_F",
+				"name": "M4 Scorcher",
+				"category": "NATO",
+				"subCategory": "Artillery"
+			},
+			"01_mlrs": {
+				"className": "B_MBT_01_mlrs_F",
+				"name": "M5 Sandstorm MLRS",
+				"category": "NATO",
+				"subCategory": "Artillery"
+			},
+			"01_tusk": {
+				"className": "B_MBT_01_TUSK_F",
+				"name": "M2A4 Slammer UP",
+				"category": "NATO",
+				"subCategory": "Tanks"
+			}
+		},
+		"boat": {
+			"armed_01_minigun": {
+				"className": "B_Boat_Armed_01_minigun_F",
+				"name": "Speedboat Minigun",
+				"category": "NATO",
+				"subCategory": "Boats"
+			},
+			"transport_01": {
+				"className": "B_Boat_Transport_01_F",
+				"name": "Assault Boat",
+				"category": "NATO",
+				"subCategory": "Boats"
+			}
+		},
+		"lifeboat": {
+			"base": {
+				"className": "B_Lifeboat",
+				"name": "Rescue Boat",
+				"category": "NATO",
+				"subCategory": "Boats"
+			}
+		},
+		"sdv": {
+			"01": {
+				"className": "B_SDV_01_F",
+				"name": "SDV",
+				"category": "NATO",
+				"subCategory": "Submersibles"
+			}
+		},
+		"uav": {
+			"ai": {
+				"className": "B_UAV_AI_F",
+				"name": "AI",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"01": {
+				"className": "B_UAV_01_F",
+				"name": "AR-2 Darter",
+				"category": "NATO",
+				"subCategory": "Drones"
+			},
+			"02": {
+				"className": "B_UAV_02_F",
+				"name": "MQ-4A Greyhawk",
+				"category": "NATO",
+				"subCategory": "Drones"
+			},
+			"02_cas": {
+				"className": "B_UAV_02_CAS_F",
+				"name": "MQ-4A Greyhawk (CAS)",
+				"category": "NATO",
+				"subCategory": "Drones"
+			},
+			"02_dynamicloadout": {
+				"className": "B_UAV_02_dynamicLoadout_F",
+				"name": "MQ-4A Greyhawk",
+				"category": "NATO",
+				"subCategory": "Drones"
+			},
+			"05": {
+				"className": "B_UAV_05_F",
+				"name": "UCAV Sentinel",
+				"category": "NATO",
+				"subCategory": "Drones"
+			},
+			"06": {
+				"className": "B_UAV_06_F",
+				"name": "AL-6 Pelican",
+				"category": "NATO",
+				"subCategory": "Drones"
+			},
+			"06_medical": {
+				"className": "B_UAV_06_medical_F",
+				"name": "AL-6 Pelican (Medical)",
+				"category": "NATO",
+				"subCategory": "Drones"
+			}
+		},
+		"mrap": {
+			"01": {
+				"className": "B_MRAP_01_F",
+				"name": "Hunter",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_gmg": {
+				"className": "B_MRAP_01_gmg_F",
+				"name": "Hunter GMG",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_hmg": {
+				"className": "B_MRAP_01_hmg_F",
+				"name": "Hunter HMG",
+				"category": "NATO",
+				"subCategory": "Cars"
+			}
+		},
+		"quadbike": {
+			"01": {
+				"className": "B_Quadbike_01_F",
+				"name": "Quad Bike",
+				"category": "NATO",
+				"subCategory": "Cars"
+			}
+		},
+		"truck": {
+			"01_transport": {
+				"className": "B_Truck_01_transport_F",
+				"name": "HEMTT Transport",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_covered": {
+				"className": "B_Truck_01_covered_F",
+				"name": "HEMTT Transport (Covered)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_mover": {
+				"className": "B_Truck_01_mover_F",
+				"name": "HEMTT",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_box": {
+				"className": "B_Truck_01_box_F",
+				"name": "HEMTT Box",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_repair": {
+				"className": "B_Truck_01_Repair_F",
+				"name": "HEMTT Repair",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_ammo": {
+				"className": "B_Truck_01_ammo_F",
+				"name": "HEMTT Ammo",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_fuel": {
+				"className": "B_Truck_01_fuel_F",
+				"name": "HEMTT Fuel",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_medical": {
+				"className": "B_Truck_01_medical_F",
+				"name": "HEMTT Medical",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_flatbed": {
+				"className": "B_Truck_01_flatbed_F",
+				"name": "HEMTT Flatbed",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_cargo": {
+				"className": "B_Truck_01_cargo_F",
+				"name": "HEMTT Cargo",
+				"category": "NATO",
+				"subCategory": "Cars"
+			}
+		},
+		"static": {
+			"aa": {
+				"className": "B_static_AA_F",
+				"name": "Static Titan Launcher (AA) [NATO]",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"at": {
+				"className": "B_static_AT_F",
+				"name": "Static Titan Launcher (AT) [NATO]",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"designator_01": {
+				"className": "B_Static_Designator_01_F",
+				"name": "Remote Designator [NATO]",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			}
+		},
+		"plane": {
+			"cas_01": {
+				"className": "B_Plane_CAS_01_F",
+				"name": "A-164 Wipeout (CAS)",
+				"category": "NATO",
+				"subCategory": "Planes"
+			},
+			"cas_01_dynamicloadout": {
+				"className": "B_Plane_CAS_01_dynamicLoadout_F",
+				"name": "A-164 Wipeout (CAS)",
+				"category": "NATO",
+				"subCategory": "Planes"
+			},
+			"fighter_01": {
+				"className": "B_Plane_Fighter_01_F",
+				"name": "F/A-181 Black Wasp II",
+				"category": "NATO",
+				"subCategory": "Planes"
+			},
+			"fighter_01_stealth": {
+				"className": "B_Plane_Fighter_01_Stealth_F",
+				"name": "F/A-181 Black Wasp II (Stealth)",
+				"category": "NATO",
+				"subCategory": "Planes"
+			},
+			"cas_01_cluster": {
+				"className": "B_Plane_CAS_01_Cluster_F",
+				"name": "A-164 Wipeout (Cluster)",
+				"category": "NATO",
+				"subCategory": "Planes"
+			},
+			"fighter_01_cluster": {
+				"className": "B_Plane_Fighter_01_Cluster_F",
+				"name": "F/A-181 Black Wasp II (Cluster)",
+				"category": "NATO",
+				"subCategory": "Planes"
+			}
+		},
+		"ugv": {
+			"01": {
+				"className": "B_UGV_01_F",
+				"name": "UGV Stomper",
+				"category": "NATO",
+				"subCategory": "Drones"
+			},
+			"01_rcws": {
+				"className": "B_UGV_01_rcws_F",
+				"name": "UGV Stomper RCWS",
+				"category": "NATO",
+				"subCategory": "Drones"
+			},
+			"02_science": {
+				"className": "B_UGV_02_Science_F",
+				"name": "ED-1E Roller",
+				"category": "NATO",
+				"subCategory": "Drones"
+			},
+			"02_demining": {
+				"className": "B_UGV_02_Demining_F",
+				"name": "ED-1D Pelter",
+				"category": "NATO",
+				"subCategory": "Drones"
+			}
+		},
+		"t": {
+			"lsv_01_armed": {
+				"className": "B_T_LSV_01_armed_F",
+				"name": "Prowler (HMG)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_at": {
+				"className": "B_T_LSV_01_AT_F",
+				"name": "Prowler (AT)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_armed_ctrg": {
+				"className": "B_T_LSV_01_armed_CTRG_F",
+				"name": "Prowler (HMG)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_unarmed": {
+				"className": "B_T_LSV_01_unarmed_F",
+				"name": "Prowler (Unarmed)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_unarmed_ctrg": {
+				"className": "B_T_LSV_01_unarmed_CTRG_F",
+				"name": "Prowler (Unarmed)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_armed_black": {
+				"className": "B_T_LSV_01_armed_black_F",
+				"name": "Prowler (HMG)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_armed_olive": {
+				"className": "B_T_LSV_01_armed_olive_F",
+				"name": "Prowler (HMG)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_armed_sand": {
+				"className": "B_T_LSV_01_armed_sand_F",
+				"name": "Prowler (HMG)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_unarmed_black": {
+				"className": "B_T_LSV_01_unarmed_black_F",
+				"name": "Prowler (Unarmed)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_unarmed_olive": {
+				"className": "B_T_LSV_01_unarmed_olive_F",
+				"name": "Prowler (Unarmed)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"lsv_01_unarmed_sand": {
+				"className": "B_T_LSV_01_unarmed_sand_F",
+				"name": "Prowler (Unarmed)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"mrap_01": {
+				"className": "B_T_MRAP_01_F",
+				"name": "Hunter",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"mrap_01_gmg": {
+				"className": "B_T_MRAP_01_gmg_F",
+				"name": "Hunter GMG",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"mrap_01_hmg": {
+				"className": "B_T_MRAP_01_hmg_F",
+				"name": "Hunter HMG",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"quadbike_01": {
+				"className": "B_T_Quadbike_01_F",
+				"name": "Quad Bike",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"truck_01_transport": {
+				"className": "B_T_Truck_01_transport_F",
+				"name": "HEMTT Transport",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"truck_01_covered": {
+				"className": "B_T_Truck_01_covered_F",
+				"name": "HEMTT Transport (Covered)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"truck_01_mover": {
+				"className": "B_T_Truck_01_mover_F",
+				"name": "HEMTT",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"truck_01_box": {
+				"className": "B_T_Truck_01_box_F",
+				"name": "HEMTT Box",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"truck_01_repair": {
+				"className": "B_T_Truck_01_Repair_F",
+				"name": "HEMTT Repair",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"truck_01_ammo": {
+				"className": "B_T_Truck_01_ammo_F",
+				"name": "HEMTT Ammo",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"truck_01_fuel": {
+				"className": "B_T_Truck_01_fuel_F",
+				"name": "HEMTT Fuel",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"truck_01_medical": {
+				"className": "B_T_Truck_01_medical_F",
+				"name": "HEMTT Medical",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"ugv_01_olive": {
+				"className": "B_T_UGV_01_olive_F",
+				"name": "UGV Stomper",
+				"category": "NATO (Pacific)",
+				"subCategory": "Drones"
+			},
+			"ugv_01_rcws_olive": {
+				"className": "B_T_UGV_01_rcws_olive_F",
+				"name": "UGV Stomper RCWS",
+				"category": "NATO (Pacific)",
+				"subCategory": "Drones"
+			},
+			"static_aa": {
+				"className": "B_T_Static_AA_F",
+				"name": "Static Titan Launcher (AA) [NATO]",
+				"category": "NATO (Pacific)",
+				"subCategory": "Turrets"
+			},
+			"static_at": {
+				"className": "B_T_Static_AT_F",
+				"name": "Static Titan Launcher (AT) [NATO]",
+				"category": "NATO (Pacific)",
+				"subCategory": "Turrets"
+			},
+			"gmg_01": {
+				"className": "B_T_GMG_01_F",
+				"name": "Mk32 GMG 20 mm",
+				"category": "NATO (Pacific)",
+				"subCategory": "Turrets"
+			},
+			"hmg_01": {
+				"className": "B_T_HMG_01_F",
+				"name": "Mk30 HMG .50",
+				"category": "NATO (Pacific)",
+				"subCategory": "Turrets"
+			},
+			"mortar_01": {
+				"className": "B_T_Mortar_01_F",
+				"name": "Mk6 Mortar",
+				"category": "NATO (Pacific)",
+				"subCategory": "Turrets"
+			},
+			"uav_03": {
+				"className": "B_T_UAV_03_F",
+				"name": "MQ-12 Falcon",
+				"category": "NATO (Pacific)",
+				"subCategory": "Drones"
+			},
+			"uav_03_dynamicloadout": {
+				"className": "B_T_UAV_03_dynamicLoadout_F",
+				"name": "MQ-12 Falcon",
+				"category": "NATO (Pacific)",
+				"subCategory": "Drones"
+			},
+			"vtol_01_infantry": {
+				"className": "B_T_VTOL_01_infantry_F",
+				"name": "V-44 X Blackfish (Infantry Transport)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Planes"
+			},
+			"vtol_01_vehicle": {
+				"className": "B_T_VTOL_01_vehicle_F",
+				"name": "V-44 X Blackfish (Vehicle Transport)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Planes"
+			},
+			"vtol_01_armed": {
+				"className": "B_T_VTOL_01_armed_F",
+				"name": "V-44 X Blackfish (Armed)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Planes"
+			},
+			"vtol_01_infantry_blue": {
+				"className": "B_T_VTOL_01_infantry_blue_F",
+				"name": "V-44 X Blackfish (Infantry Transport)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Planes"
+			},
+			"vtol_01_infantry_olive": {
+				"className": "B_T_VTOL_01_infantry_olive_F",
+				"name": "V-44 X Blackfish (Infantry Transport)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Planes"
+			},
+			"vtol_01_vehicle_blue": {
+				"className": "B_T_VTOL_01_vehicle_blue_F",
+				"name": "V-44 X Blackfish (Vehicle Transport)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Planes"
+			},
+			"vtol_01_vehicle_olive": {
+				"className": "B_T_VTOL_01_vehicle_olive_F",
+				"name": "V-44 X Blackfish (Vehicle Transport)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Planes"
+			},
+			"vtol_01_armed_blue": {
+				"className": "B_T_VTOL_01_armed_blue_F",
+				"name": "V-44 X Blackfish (Armed)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Planes"
+			},
+			"vtol_01_armed_olive": {
+				"className": "B_T_VTOL_01_armed_olive_F",
+				"name": "V-44 X Blackfish (Armed)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Planes"
+			},
+			"apc_tracked_01_aa": {
+				"className": "B_T_APC_Tracked_01_AA_F",
+				"name": "IFV-6a Cheetah",
+				"category": "NATO (Pacific)",
+				"subCategory": "Anti-Air"
+			},
+			"apc_tracked_01_crv": {
+				"className": "B_T_APC_Tracked_01_CRV_F",
+				"name": "CRV-6e Bobcat",
+				"category": "NATO (Pacific)",
+				"subCategory": "APCs"
+			},
+			"apc_tracked_01_rcws": {
+				"className": "B_T_APC_Tracked_01_rcws_F",
+				"name": "IFV-6c Panther",
+				"category": "NATO (Pacific)",
+				"subCategory": "APCs"
+			},
+			"apc_wheeled_01_cannon": {
+				"className": "B_T_APC_Wheeled_01_cannon_F",
+				"name": "AMV-7 Marshall",
+				"category": "NATO (Pacific)",
+				"subCategory": "APCs"
+			},
+			"mbt_01_arty": {
+				"className": "B_T_MBT_01_arty_F",
+				"name": "M4 Scorcher",
+				"category": "NATO (Pacific)",
+				"subCategory": "Artillery"
+			},
+			"mbt_01_mlrs": {
+				"className": "B_T_MBT_01_mlrs_F",
+				"name": "M5 Sandstorm MLRS",
+				"category": "NATO (Pacific)",
+				"subCategory": "Artillery"
+			},
+			"mbt_01_cannon": {
+				"className": "B_T_MBT_01_cannon_F",
+				"name": "M2A1 Slammer",
+				"category": "NATO (Pacific)",
+				"subCategory": "Tanks"
+			},
+			"mbt_01_tusk": {
+				"className": "B_T_MBT_01_TUSK_F",
+				"name": "M2A4 Slammer UP",
+				"category": "NATO (Pacific)",
+				"subCategory": "Tanks"
+			},
+			"boat_armed_01_minigun": {
+				"className": "B_T_Boat_Armed_01_minigun_F",
+				"name": "Speedboat Minigun",
+				"category": "NATO (Pacific)",
+				"subCategory": "Boats"
+			},
+			"boat_transport_01": {
+				"className": "B_T_Boat_Transport_01_F",
+				"name": "Assault Boat",
+				"category": "NATO (Pacific)",
+				"subCategory": "Boats"
+			},
+			"lifeboat": {
+				"className": "B_T_Lifeboat",
+				"name": "Rescue Boat",
+				"category": "NATO (Pacific)",
+				"subCategory": "Boats"
+			},
+			"soldier_a": {
+				"className": "B_T_Soldier_A_F",
+				"name": "Ammo Bearer",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_aar": {
+				"className": "B_T_Soldier_AAR_F",
+				"name": "Asst. Autorifleman",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"support_amg": {
+				"className": "B_T_Support_AMG_F",
+				"name": "Asst. Gunner (HMG/GMG)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"support_amort": {
+				"className": "B_T_Support_AMort_F",
+				"name": "Asst. Gunner (Mk6)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_aaa": {
+				"className": "B_T_Soldier_AAA_F",
+				"name": "Asst. Missile Specialist (AA)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_aat": {
+				"className": "B_T_Soldier_AAT_F",
+				"name": "Asst. Missile Specialist (AT)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_ar": {
+				"className": "B_T_Soldier_AR_F",
+				"name": "Autorifleman",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"medic": {
+				"className": "B_T_Medic_F",
+				"name": "Combat Life Saver",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"crew": {
+				"className": "B_T_Crew_F",
+				"name": "Crewman",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"engineer": {
+				"className": "B_T_Engineer_F",
+				"name": "Engineer",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_exp": {
+				"className": "B_T_Soldier_Exp_F",
+				"name": "Explosive Specialist",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_gl": {
+				"className": "B_T_Soldier_GL_F",
+				"name": "Grenadier",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"support_gmg": {
+				"className": "B_T_Support_GMG_F",
+				"name": "Gunner (GMG)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"support_mg": {
+				"className": "B_T_Support_MG_F",
+				"name": "Gunner (HMG)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"support_mort": {
+				"className": "B_T_Support_Mort_F",
+				"name": "Gunner (Mk6)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"helicrew": {
+				"className": "B_T_Helicrew_F",
+				"name": "Helicopter Crew",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"helipilot": {
+				"className": "B_T_Helipilot_F",
+				"name": "Helicopter Pilot",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_m": {
+				"className": "B_T_soldier_M_F",
+				"name": "Marksman",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_aa": {
+				"className": "B_T_Soldier_AA_F",
+				"name": "Missile Specialist (AA)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_at": {
+				"className": "B_T_Soldier_AT_F",
+				"name": "Missile Specialist (AT)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"officer": {
+				"className": "B_T_Officer_F",
+				"name": "Officer",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_pg": {
+				"className": "B_T_Soldier_PG_F",
+				"name": "Para Trooper",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"pilot": {
+				"className": "B_T_Pilot_F",
+				"name": "Pilot",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_repair": {
+				"className": "B_T_Soldier_Repair_F",
+				"name": "Repair Specialist",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier": {
+				"className": "B_T_Soldier_F",
+				"name": "Rifleman",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_lat": {
+				"className": "B_T_Soldier_LAT_F",
+				"name": "Rifleman (AT)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_sl": {
+				"className": "B_T_Soldier_SL_F",
+				"name": "Squad Leader",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_tl": {
+				"className": "B_T_Soldier_TL_F",
+				"name": "Team Leader",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_uav": {
+				"className": "B_T_Soldier_UAV_F",
+				"name": "UAV Operator",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"diver": {
+				"className": "B_T_Diver_F",
+				"name": "Assault Diver",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"diver_exp": {
+				"className": "B_T_Diver_Exp_F",
+				"name": "Diver Explosive Specialist",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"diver_tl": {
+				"className": "B_T_Diver_TL_F",
+				"name": "Diver Team Leader",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"recon_exp": {
+				"className": "B_T_Recon_Exp_F",
+				"name": "Recon Demo Specialist",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"recon_jtac": {
+				"className": "B_T_Recon_JTAC_F",
+				"name": "Recon JTAC",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"recon_m": {
+				"className": "B_T_Recon_M_F",
+				"name": "Recon Marksman",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"recon_medic": {
+				"className": "B_T_Recon_Medic_F",
+				"name": "Recon Paramedic",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"recon": {
+				"className": "B_T_Recon_F",
+				"name": "Recon Scout",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"recon_lat": {
+				"className": "B_T_Recon_LAT_F",
+				"name": "Recon Scout (AT)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"recon_tl": {
+				"className": "B_T_Recon_TL_F",
+				"name": "Recon Team Leader",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"sniper": {
+				"className": "B_T_Sniper_F",
+				"name": "Sniper",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"spotter": {
+				"className": "B_T_Spotter_F",
+				"name": "Spotter",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"ghillie_tna": {
+				"className": "B_T_ghillie_tna_F",
+				"name": "Sniper (Jungle)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men (Special Forces)"
+			},
+			"soldier_universal": {
+				"className": "B_T_Soldier_universal_F",
+				"name": "Soldier",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_unarmed": {
+				"className": "B_T_Soldier_unarmed_F",
+				"name": "Rifleman (Unarmed)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_uav_06": {
+				"className": "B_T_soldier_UAV_06_F",
+				"name": "UAV Operator (AL-6)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_uav_06_medical": {
+				"className": "B_T_soldier_UAV_06_medical_F",
+				"name": "UAV Operator (AL-6, Medical)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"soldier_mine": {
+				"className": "B_T_soldier_mine_F",
+				"name": "Mine Specialist",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"afv_wheeled_01_cannon": {
+				"className": "B_T_AFV_Wheeled_01_cannon_F",
+				"name": "Rhino MGS",
+				"category": "NATO (Pacific)",
+				"subCategory": "APCs"
+			},
+			"afv_wheeled_01_up_cannon": {
+				"className": "B_T_AFV_Wheeled_01_up_cannon_F",
+				"name": "Rhino MGS UP",
+				"category": "NATO (Pacific)",
+				"subCategory": "APCs"
+			},
+			"soldier_lat2": {
+				"className": "B_T_Soldier_LAT2_F",
+				"name": "Rifleman (Light AT)",
+				"category": "NATO (Pacific)",
+				"subCategory": "Men"
+			},
+			"truck_01_flatbed": {
+				"className": "B_T_Truck_01_flatbed_F",
+				"name": "HEMTT Flatbed",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			},
+			"truck_01_cargo": {
+				"className": "B_T_Truck_01_cargo_F",
+				"name": "HEMTT Cargo",
+				"category": "NATO (Pacific)",
+				"subCategory": "Cars"
+			}
+		},
+		"lsv": {
+			"01_armed": {
+				"className": "B_LSV_01_armed_F",
+				"name": "Prowler (HMG)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_at": {
+				"className": "B_LSV_01_AT_F",
+				"name": "Prowler (AT)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_unarmed": {
+				"className": "B_LSV_01_unarmed_F",
+				"name": "Prowler (Unarmed)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_armed_black": {
+				"className": "B_LSV_01_armed_black_F",
+				"name": "Prowler (HMG)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_armed_olive": {
+				"className": "B_LSV_01_armed_olive_F",
+				"name": "Prowler (HMG)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_armed_sand": {
+				"className": "B_LSV_01_armed_sand_F",
+				"name": "Prowler (HMG)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_unarmed_black": {
+				"className": "B_LSV_01_unarmed_black_F",
+				"name": "Prowler (Unarmed)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_unarmed_olive": {
+				"className": "B_LSV_01_unarmed_olive_F",
+				"name": "Prowler (Unarmed)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			},
+			"01_unarmed_sand": {
+				"className": "B_LSV_01_unarmed_sand_F",
+				"name": "Prowler (Unarmed)",
+				"category": "NATO",
+				"subCategory": "Cars"
+			}
+		},
+		"gen": {
+			"offroad_01_gen": {
+				"className": "B_GEN_Offroad_01_gen_F",
+				"name": "Offroad",
+				"category": "Gendarmerie",
+				"subCategory": "Cars"
+			},
+			"soldier": {
+				"className": "B_GEN_Soldier_F",
+				"name": "Gendarme",
+				"category": "Gendarmerie",
+				"subCategory": "Men"
+			},
+			"commander": {
+				"className": "B_GEN_Commander_F",
+				"name": "Gendarmerie Commander",
+				"category": "Gendarmerie",
+				"subCategory": "Men"
+			},
+			"soldier_universal": {
+				"className": "B_GEN_Soldier_universal_F",
+				"name": "Soldier",
+				"category": "Gendarmerie",
+				"subCategory": "Men"
+			},
+			"van_02_transport": {
+				"className": "B_GEN_Van_02_transport_F",
+				"name": "Van Transport",
+				"category": "Gendarmerie",
+				"subCategory": "Cars"
+			},
+			"van_02_vehicle": {
+				"className": "B_GEN_Van_02_vehicle_F",
+				"name": "Van (Cargo)",
+				"category": "Gendarmerie",
+				"subCategory": "Cars"
+			},
+			"offroad_01_covered": {
+				"className": "B_GEN_Offroad_01_covered_F",
+				"name": "Offroad (Covered)",
+				"category": "Gendarmerie",
+				"subCategory": "Cars"
+			},
+			"offroad_01_comms": {
+				"className": "B_GEN_Offroad_01_comms_F",
+				"name": "Offroad (Comms)",
+				"category": "Gendarmerie",
+				"subCategory": "Cars"
+			}
+		},
+		"aaa": {
+			"system_01": {
+				"className": "B_AAA_System_01_F",
+				"name": "Praetorian 1C",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			}
+		},
+		"sam": {
+			"system_01": {
+				"className": "B_SAM_System_01_F",
+				"name": "Mk49 Spartan",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"system_02": {
+				"className": "B_SAM_System_02_F",
+				"name": "Mk21 Centurion",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"system_03": {
+				"className": "B_SAM_System_03_F",
+				"name": "MIM-145 Defender",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			}
+		},
+		"ejection": {
+			"seat_plane_fighter_01": {
+				"className": "B_Ejection_Seat_Plane_Fighter_01_F",
+				"name": "Ejection Seat",
+				"category": "NATO",
+				"subCategory": "Objects"
+			}
+		},
+		"deck": {
+			"crew": {
+				"className": "B_Deck_Crew_F",
+				"name": "Deck Crew",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"fighter": {
+			"pilot": {
+				"className": "B_Fighter_Pilot_F",
+				"name": "Fighter Pilot",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"patrol": {
+			"soldier_tl": {
+				"className": "B_Patrol_Soldier_TL_F",
+				"name": "Team Leader",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			},
+			"soldier_uav": {
+				"className": "B_Patrol_Soldier_UAV_F",
+				"name": "UAV Operator",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			},
+			"soldier_m": {
+				"className": "B_Patrol_Soldier_M_F",
+				"name": "Marksman",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			},
+			"medic": {
+				"className": "B_Patrol_Medic_F",
+				"name": "Combat Life Saver",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			},
+			"soldier_ar": {
+				"className": "B_Patrol_Soldier_AR_F",
+				"name": "Autorifleman",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			},
+			"soldier_mg": {
+				"className": "B_Patrol_Soldier_MG_F",
+				"name": "Machine Gunner",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			},
+			"heavygunner": {
+				"className": "B_Patrol_HeavyGunner_F",
+				"name": "Heavy Gunner",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			},
+			"soldier_a": {
+				"className": "B_Patrol_Soldier_A_F",
+				"name": "Ammo Bearer",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			},
+			"soldier_at": {
+				"className": "B_Patrol_Soldier_AT_F",
+				"name": "Missile Specialist (AT)",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			},
+			"engineer": {
+				"className": "B_Patrol_Engineer_F",
+				"name": "Engineer",
+				"category": "NATO",
+				"subCategory": "Men (Combat Patrol)"
+			}
+		},
+		"afv": {
+			"wheeled_01_cannon": {
+				"className": "B_AFV_Wheeled_01_cannon_F",
+				"name": "Rhino MGS",
+				"category": "NATO",
+				"subCategory": "APCs"
+			},
+			"wheeled_01_up_cannon": {
+				"className": "B_AFV_Wheeled_01_up_cannon_F",
+				"name": "Rhino MGS UP",
+				"category": "NATO",
+				"subCategory": "APCs"
+			}
+		},
+		"ship": {
+			"gun_01": {
+				"className": "B_Ship_Gun_01_F",
+				"name": "Mk45 Hammer",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			},
+			"mrls_01": {
+				"className": "B_Ship_MRLS_01_F",
+				"name": "Mk41 VLS",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			}
+		},
+		"radar": {
+			"system_01": {
+				"className": "B_Radar_System_01_F",
+				"name": "AN/MPQ-105 Radar",
+				"category": "NATO",
+				"subCategory": "Turrets"
+			}
+		},
+		"w": {
+			"static_designator_01": {
+				"className": "B_W_Static_Designator_01_F",
+				"name": "Remote Designator [NATO]",
+				"category": "NATO (Woodland)",
+				"subCategory": "Turrets"
+			},
+			"soldier_a": {
+				"className": "B_W_Soldier_A_F",
+				"name": "Ammo Bearer",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_aar": {
+				"className": "B_W_Soldier_AAR_F",
+				"name": "Asst. Autorifleman",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"support_amg": {
+				"className": "B_W_Support_AMG_F",
+				"name": "Asst. Gunner (HMG/GMG)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"support_amort": {
+				"className": "B_W_Support_AMort_F",
+				"name": "Asst. Gunner (Mk6)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_aaa": {
+				"className": "B_W_Soldier_AAA_F",
+				"name": "Asst. Missile Specialist (AA)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_aat": {
+				"className": "B_W_Soldier_AAT_F",
+				"name": "Asst. Missile Specialist (AT)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_ar": {
+				"className": "B_W_Soldier_AR_F",
+				"name": "Autorifleman",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"medic": {
+				"className": "B_W_Medic_F",
+				"name": "Combat Life Saver",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"crew": {
+				"className": "B_W_Crew_F",
+				"name": "Crewman",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"engineer": {
+				"className": "B_W_Engineer_F",
+				"name": "Engineer",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_exp": {
+				"className": "B_W_Soldier_Exp_F",
+				"name": "Explosive Specialist",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_mine": {
+				"className": "B_W_soldier_mine_F",
+				"name": "Mine Specialist",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_gl": {
+				"className": "B_W_Soldier_GL_F",
+				"name": "Grenadier",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"support_gmg": {
+				"className": "B_W_Support_GMG_F",
+				"name": "Gunner (GMG)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"support_mg": {
+				"className": "B_W_Support_MG_F",
+				"name": "Gunner (HMG)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"support_mort": {
+				"className": "B_W_Support_Mort_F",
+				"name": "Gunner (Mk6)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"helicrew": {
+				"className": "B_W_Helicrew_F",
+				"name": "Helicopter Crew",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"helipilot": {
+				"className": "B_W_Helipilot_F",
+				"name": "Helicopter Pilot",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_m": {
+				"className": "B_W_soldier_M_F",
+				"name": "Marksman",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_aa": {
+				"className": "B_W_Soldier_AA_F",
+				"name": "Missile Specialist (AA)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_at": {
+				"className": "B_W_Soldier_AT_F",
+				"name": "Missile Specialist (AT)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"officer": {
+				"className": "B_W_Officer_F",
+				"name": "Officer",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_repair": {
+				"className": "B_W_Soldier_Repair_F",
+				"name": "Repair Specialist",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier": {
+				"className": "B_W_Soldier_F",
+				"name": "Rifleman",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_lat": {
+				"className": "B_W_Soldier_LAT_F",
+				"name": "Rifleman (AT)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_lat2": {
+				"className": "B_W_Soldier_LAT2_F",
+				"name": "Rifleman (Light AT)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_sl": {
+				"className": "B_W_Soldier_SL_F",
+				"name": "Squad Leader",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_tl": {
+				"className": "B_W_Soldier_TL_F",
+				"name": "Team Leader",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_cbrn": {
+				"className": "B_W_Soldier_CBRN_F",
+				"name": "CBRN Specialist",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"radiooperator": {
+				"className": "B_W_RadioOperator_F",
+				"name": "Radio Operator",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"survivor": {
+				"className": "B_W_Survivor_F",
+				"name": "Survivor",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_uav": {
+				"className": "B_W_Soldier_UAV_F",
+				"name": "UAV Operator",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_ugv_02_science": {
+				"className": "B_W_soldier_UGV_02_Science_F",
+				"name": "UGV Operator (ED-1E)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_ugv_02_demining": {
+				"className": "B_W_soldier_UGV_02_Demining_F",
+				"name": "UGV Operator (ED-1D)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_universal": {
+				"className": "B_W_Soldier_universal_F",
+				"name": "Soldier",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			},
+			"soldier_unarmed": {
+				"className": "B_W_Soldier_unarmed_F",
+				"name": "Rifleman (Unarmed)",
+				"category": "NATO (Woodland)",
+				"subCategory": "Men"
+			}
+		},
+		"reconfatigues": {
+			"01_wdl": {
+				"className": "B_ReconFatigues_01_wdl_F",
+				"name": "Squad Leader",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"combatfatigues": {
+			"01_wdl": {
+				"className": "B_CombatFatigues_01_wdl_F",
+				"name": "Rifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"01_tshirt_wdl": {
+				"className": "B_CombatFatigues_01_Tshirt_wdl_F",
+				"name": "Autorifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"cbrn": {
+			"man_oversuit_01_mtp": {
+				"className": "B_CBRN_Man_Oversuit_01_MTP_F",
+				"name": "Rifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"man_oversuit_01_tropic": {
+				"className": "B_CBRN_Man_Oversuit_01_Tropic_F",
+				"name": "Rifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"man_oversuit_01_wdl": {
+				"className": "B_CBRN_Man_Oversuit_01_Wdl_F",
+				"name": "Rifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		}
+	},
+	"nvg": {
+		"targete": {
+			"base": {
+				"className": "NVG_TargetE",
+				"name": "NVG target",
+				"category": "Other"
+			}
+		}
+	},
+	"i": {
+		"g": {
+			"story_protagonist": {
+				"className": "I_G_Story_Protagonist_F",
+				"name": "Kerry",
+				"category": "FIA",
+				"subCategory": "Men (Story)"
+			},
+			"story_sf_captain": {
+				"className": "I_G_Story_SF_Captain_F",
+				"name": "Miller",
+				"category": "FIA",
+				"subCategory": "Men (Story)"
+			},
+			"resistanceleader": {
+				"className": "I_G_resistanceLeader_F",
+				"name": "Stavrou",
+				"category": "FIA",
+				"subCategory": "Men (Story)"
+			},
+			"resistancecommander": {
+				"className": "I_G_resistanceCommander_F",
+				"name": "Resistance Commander placeholder",
+				"category": "FIA",
+				"subCategory": "Men (Story)"
+			}
+		},
+		"cbrn": {
+			"man_oversuit_01_aaf": {
+				"className": "I_CBRN_Man_Oversuit_01_AAF_F",
+				"name": "Rifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		},
+		"e": {
+			"cbrn_man_oversuit_01_eaf": {
+				"className": "I_E_CBRN_Man_Oversuit_01_EAF_F",
+				"name": "Rifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		}
+	},
+	"nonsteerable": {
+		"parachute": {
+			"base": {
+				"className": "NonSteerable_Parachute_F",
+				"name": "Nonsteerable Parachute",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			}
+		}
+	},
+	"steerable": {
+		"parachute": {
+			"base": {
+				"className": "Steerable_Parachute_F",
+				"name": "Steerable Parachute",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			}
+		}
+	},
+	"underwear": {
+		"f": {
+			"base": {
+				"className": "Underwear_F",
+				"name": "TEST: Underwear",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		}
+	},
+	"c": {
+		"cbrn": {
+			"man_oversuit_01_blue": {
+				"className": "C_CBRN_Man_Oversuit_01_Blue_F",
+				"name": "Rifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			},
+			"man_oversuit_01_white": {
+				"className": "C_CBRN_Man_Oversuit_01_White_F",
+				"name": "Rifleman",
+				"category": "NATO",
+				"subCategory": "Men"
+			}
+		}
+	},
+	"spaceshipcapsule": {
+		"01": {
+			"parachute": {
+				"className": "SpaceshipCapsule_01_parachute_F",
+				"name": "Space Capsule Parachutes",
+				"category": "NATO",
+				"subCategory": "Helicopters"
+			}
+		}
+	}
 }

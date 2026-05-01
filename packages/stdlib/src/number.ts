@@ -1,40 +1,57 @@
+import { str, toFixed } from "@lance/core";
+
 export class Number {
-    /**
-     * Returns a string representation of an object.
-     * @param radix Specifies a radix for converting numeric values to strings. This value is only used for numbers.
-     */
-  toString(radix?: number): string {
+	private _number!: number;
 
-    return ""
-  }
+	toString(radix?: number): string {
+		if (radix === undefined || radix === 10) {
+			return str(this._number);
+		}
+		if (radix < 2 || radix > 36) {
+			throw new RangeError(
+				"toString() radix argument must be between 2 and 36",
+			);
+		}
+		// Non-decimal radix conversion is not implemented in stdlib yet
+		throw new RangeError(
+			"toString() radix conversion is not implemented for stdlib",
+		);
+	}
 
-    /**
-     * Returns a string representing a number in fixed-point notation.
-     * @param fractionDigits Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.
-     */
-    toFixed(fractionDigits?: number): string
-    {
-      return ""
- }
-    /**
-     * Returns a string containing a number represented in exponential notation.
-     * @param fractionDigits Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.
-     */
-  toExponential(fractionDigits?: number): string {
-      return ""
-    }
+	toFixed(fractionDigits?: number): string {
+		const digits = fractionDigits ?? 0;
+		if (digits < 0 || digits > 20) {
+			throw new RangeError(
+				"toFixed() digits argument must be between 0 and 20",
+			);
+		}
+		return toFixed(this._number, digits);
+	}
 
-    /**
-     * Returns a string containing a number represented either in exponential or fixed-point notation with a specified number of digits.
-     * @param precision Number of significant digits. Must be in the range 1 - 21, inclusive.
-     */
-  toPrecision(precision?: number): string {
-      return ""
-    }
+	toExponential(fractionDigits?: number): string {
+		// TODO: add dedicated SQF exponential formatter.
+		if (
+			fractionDigits !== undefined &&
+			(fractionDigits < 0 || fractionDigits > 20)
+		) {
+			throw new RangeError(
+				"toExponential() digits argument must be between 0 and 20",
+			);
+		}
+		return str(this._number);
+	}
 
-  // return self
-    /** Returns the value of the specified object. */
-  valueOf(): number {
-    return 0
-  }
+	toPrecision(precision?: number): string {
+		// TODO: add dedicated SQF precision formatter.
+		if (precision !== undefined && (precision < 1 || precision > 21)) {
+			throw new RangeError(
+				"toPrecision() precision argument must be between 1 and 21",
+			);
+		}
+		return str(this._number);
+	}
+
+	valueOf(): number {
+		return this._number;
+	}
 }

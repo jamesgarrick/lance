@@ -1,4 +1,9 @@
-import { addBackpack, removeBackpack, type LocalArgument, addVest } from "@lance/core";
+import {
+	addBackpack,
+	removeBackpack,
+	type LocalArgument,
+	addVest,
+} from "@lance/core";
 import type { Unit } from "../packages/core/src/primitives";
 import { vests, headgear } from "@lance/core";
 import { backpacks } from "@lance/core";

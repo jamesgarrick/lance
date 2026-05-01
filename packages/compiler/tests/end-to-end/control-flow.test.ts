@@ -18,129 +18,133 @@ import type { FunctionRegistry } from "../../src/compiler/project";
 import type { SemanticContext } from "../../src/semantic/context";
 
 interface CompileOptions {
-  source: string;
-  asEntry?: boolean;
+	source: string;
+	asEntry?: boolean;
 }
 
 function compile({ source, asEntry = true }: CompileOptions): {
-  sqf: string;
-  diagnostics: DiagnosticBag;
+	sqf: string;
+	diagnostics: DiagnosticBag;
 } {
-  const project = new Project({ useInMemoryFileSystem: true });
-  const sourceFile = project.createSourceFile("/test.ts", source);
+	const project = new Project({ useInMemoryFileSystem: true });
+	const sourceFile = project.createSourceFile("/test.ts", source);
 
-  const diagnostics = new DiagnosticBag();
-  const registry: FunctionRegistry = new Map();
-  const semanticContext: SemanticContext = {
-    cfgRoots: { cfgWeapons: {}, cfgWeaponsItems: {}, cfgMagazines: {} },
-  };
+	const diagnostics = new DiagnosticBag();
+	const registry: FunctionRegistry = new Map();
+	const semanticContext: SemanticContext = {
+		cfgRoots: { cfgWeapons: {}, cfgWeaponsItems: {}, cfgMagazines: {} },
+	};
 
-  const result = lowerSourceFile(
-    sourceFile,
-    asEntry,
-    diagnostics,
-    { ...defaultCompilerOptions, entryFilePaths: ["/test.ts"], tsConfigFilePath: "tsconfig.json" },
-    semanticContext,
-    registry,
-  );
+	const result = lowerSourceFile(
+		sourceFile,
+		asEntry,
+		diagnostics,
+		{
+			...defaultCompilerOptions,
+			entryFilePaths: ["/test.ts"],
+			tsConfigFilePath: "tsconfig.json",
+		},
+		semanticContext,
+		registry,
+	);
 
-  const program: SqfProgram = {
-    kind: "Program",
-    entryFilePath: "/test.ts",
-    entryStatements: result.entryStatements,
-    functionFiles: result.functionFiles,
-  };
+	const program: SqfProgram = {
+		kind: "Program",
+		entryFilePath: "/test.ts",
+		entryStatements: result.entryStatements,
+		functionFiles: result.functionFiles,
+	};
 
-  const normalized = normalizeSqfProgram(program, diagnostics);
-  const outputs = emitSqfProgram(normalized, diagnostics);
-  const entry = outputs.find((f) => f.path.endsWith("test.sqf"));
+	const normalized = normalizeSqfProgram(program, diagnostics);
+	const outputs = emitSqfProgram(normalized, diagnostics);
+	const entry = outputs.find((f) => f.path.endsWith("test.sqf"));
 
-  return { sqf: entry?.content ?? "", diagnostics };
+	return { sqf: entry?.content ?? "", diagnostics };
 }
 
 describe("end-to-end: ternary (§3.1.4)", () => {
-  test("simple ternary lowers to if-then-else value form", () => {
-    const { sqf, diagnostics } = compile({
-      source: `const x = (1 < 2) ? "a" : "b";`,
-    });
-    expect(sqf).toContain(`if (1 < 2) then { "a" } else { "b" }`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+	test("simple ternary lowers to if-then-else value form", () => {
+		const { sqf, diagnostics } = compile({
+			source: `const x = (1 < 2) ? "a" : "b";`,
+		});
+		expect(sqf).toContain(`if (1 < 2) then { "a" } else { "b" }`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 });
 
 describe("end-to-end: numeric for (§3.3.1–§3.3.3)", () => {
-  test("`for (let i = 0; i < 10; i++)` lowers to from/to with -1 adjustment", () => {
-    const { sqf, diagnostics } = compile({
-      source: `for (let i = 0; i < 10; i++) {}`,
-    });
-    expect(sqf).toContain(`for "_i" from 0 to 10 - 1 do {`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+	test("`for (let i = 0; i < 10; i++)` lowers to from/to with -1 adjustment", () => {
+		const { sqf, diagnostics } = compile({
+			source: `for (let i = 0; i < 10; i++) {}`,
+		});
+		expect(sqf).toContain(`for "_i" from 0 to 10 - 1 do {`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("`for (let i = 0; i <= 10; i++)` keeps the upper bound", () => {
-    const { sqf, diagnostics } = compile({
-      source: `for (let i = 0; i <= 10; i++) {}`,
-    });
-    expect(sqf).toContain(`for "_i" from 0 to 10 do {`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+	test("`for (let i = 0; i <= 10; i++)` keeps the upper bound", () => {
+		const { sqf, diagnostics } = compile({
+			source: `for (let i = 0; i <= 10; i++) {}`,
+		});
+		expect(sqf).toContain(`for "_i" from 0 to 10 do {`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("downward `for (let i = 9; i >= 0; i--)` lowers with step -1", () => {
-    const { sqf, diagnostics } = compile({
-      source: `for (let i = 9; i >= 0; i--) {}`,
-    });
-    expect(sqf).toContain(`for "_i" from 9 to 0 step -1 do {`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+	test("downward `for (let i = 9; i >= 0; i--)` lowers with step -1", () => {
+		const { sqf, diagnostics } = compile({
+			source: `for (let i = 9; i >= 0; i--) {}`,
+		});
+		expect(sqf).toContain(`for "_i" from 9 to 0 step -1 do {`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("non-canonical for surfaces a diagnostic", () => {
-    const { diagnostics } = compile({
-      source: `for (let p = 0; p !== 5; p = p + 2) {}`,
-    });
-    const codes = diagnostics.toArray().map((d) => d.code);
-    expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
-  });
+	test("non-canonical for surfaces a diagnostic", () => {
+		const { diagnostics } = compile({
+			source: `for (let p = 0; p !== 5; p = p + 2) {}`,
+		});
+		const codes = diagnostics.toArray().map((d) => d.code);
+		expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
+	});
 });
 
 describe("end-to-end: for-of (§3.3.5)", () => {
-  test("for-of over an iterable emits forEach with rebind", () => {
-    const { sqf } = compile({
-      source: `for (const u of units) { /* body */ }`,
-    });
-    expect(sqf).toContain(`} forEach units;`);
-    expect(sqf).toContain(`private _u = _x;`);
-  });
+	test("for-of over an iterable emits forEach with rebind", () => {
+		const { sqf } = compile({
+			source: `for (const u of units) { /* body */ }`,
+		});
+		expect(sqf).toContain(`} forEach units;`);
+		expect(sqf).toContain(`private _u = _x;`);
+	});
 
-  test("destructuring in for-of surfaces a diagnostic", () => {
-    const { diagnostics } = compile({
-      source: `for (const [i, x] of arr.entries()) {}`,
-    });
-    const codes = diagnostics.toArray().map((d) => d.code);
-    expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
-  });
+	test("destructuring in for-of surfaces a diagnostic", () => {
+		const { diagnostics } = compile({
+			source: `for (const [i, x] of arr.entries()) {}`,
+		});
+		const codes = diagnostics.toArray().map((d) => d.code);
+		expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
+	});
 });
 
 describe("end-to-end: switch (§3.4)", () => {
-  test("basic switch with break per case", () => {
-    const { sqf, diagnostics } = compile({
-      source: `
+	test("basic switch with break per case", () => {
+		const { sqf, diagnostics } = compile({
+			source: `
         switch (state) {
           case "a": doA(); break;
           case "b": doB(); break;
           default: doDefault();
         }
       `,
-    });
-    expect(sqf).toContain(`switch (state) do {`);
-    expect(sqf).toContain(`case "a": {`);
-    expect(sqf).toContain(`case "b": {`);
-    expect(sqf).toContain(`default {`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+		});
+		expect(sqf).toContain(`switch (state) do {`);
+		expect(sqf).toContain(`case "a": {`);
+		expect(sqf).toContain(`case "b": {`);
+		expect(sqf).toContain(`default {`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("shared empty cases (fallthrough via empty body) collapse to multi-label form", () => {
-    const { sqf, diagnostics } = compile({
-      source: `
+	test("shared empty cases (fallthrough via empty body) collapse to multi-label form", () => {
+		const { sqf, diagnostics } = compile({
+			source: `
         switch (rank) {
           case "PRIVATE":
           case "CORPORAL":
@@ -148,170 +152,170 @@ describe("end-to-end: switch (§3.4)", () => {
             break;
         }
       `,
-    });
-    // Expect the two labels in `case A; case B: { … }` form.
-    expect(sqf).toContain(`case "PRIVATE";`);
-    expect(sqf).toContain(`case "CORPORAL": {`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+		});
+		// Expect the two labels in `case A; case B: { … }` form.
+		expect(sqf).toContain(`case "PRIVATE";`);
+		expect(sqf).toContain(`case "CORPORAL": {`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("executable fallthrough surfaces a diagnostic", () => {
-    const { diagnostics } = compile({
-      source: `
+	test("executable fallthrough surfaces a diagnostic", () => {
+		const { diagnostics } = compile({
+			source: `
         switch (s) {
           case "a": doA();
           case "b": doB(); break;
         }
       `,
-    });
-    const codes = diagnostics.toArray().map((d) => d.code);
-    expect(codes).toContain("LANCE_FALLTHROUGH_UNSUPPORTED");
-  });
+		});
+		const codes = diagnostics.toArray().map((d) => d.code);
+		expect(codes).toContain("LANCE_FALLTHROUGH_UNSUPPORTED");
+	});
 });
 
 describe("end-to-end: throw (§3.5.2 / §14.4)", () => {
-  test("`throw new NotImplementedError(...)` lowers to structured HashMap", () => {
-    const { sqf, diagnostics } = compile({
-      source: `throw new NotImplementedError("WIP");`,
-    });
-    expect(sqf).toContain(`throw createHashMapFromArray`);
-    expect(sqf).toContain(`"__class", "NotImplementedError"`);
-    expect(sqf).toContain(`"__hierarchy", ["NotImplementedError", "Error"]`);
-    expect(sqf).toContain(`"message", "WIP"`);
-    expect(sqf).toContain(`"source", _fnc_scriptName`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+	test("`throw new NotImplementedError(...)` lowers to structured HashMap", () => {
+		const { sqf, diagnostics } = compile({
+			source: `throw new NotImplementedError("WIP");`,
+		});
+		expect(sqf).toContain(`throw createHashMapFromArray`);
+		expect(sqf).toContain(`"__class", "NotImplementedError"`);
+		expect(sqf).toContain(`"__hierarchy", ["NotImplementedError", "Error"]`);
+		expect(sqf).toContain(`"message", "WIP"`);
+		expect(sqf).toContain(`"source", _fnc_scriptName`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("re-throw of caught identifier passes through", () => {
-    const { sqf, diagnostics } = compile({
-      source: `throw e;`,
-    });
-    expect(sqf).toContain(`throw e;`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+	test("re-throw of caught identifier passes through", () => {
+		const { sqf, diagnostics } = compile({
+			source: `throw e;`,
+		});
+		expect(sqf).toContain(`throw e;`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("`throw \"bare string\"` is rejected with LANCE_NON_ERROR_THROW", () => {
-    const { diagnostics } = compile({
-      source: `throw "oops";`,
-    });
-    const codes = diagnostics.toArray().map((d) => d.code);
-    expect(codes).toContain("LANCE_NON_ERROR_THROW");
-  });
+	test('`throw "bare string"` is rejected with LANCE_NON_ERROR_THROW', () => {
+		const { diagnostics } = compile({
+			source: `throw "oops";`,
+		});
+		const codes = diagnostics.toArray().map((d) => d.code);
+		expect(codes).toContain("LANCE_NON_ERROR_THROW");
+	});
 
-  test("unknown error class is rejected", () => {
-    const { diagnostics } = compile({
-      source: `throw new MyCustomError("oops");`,
-    });
-    const codes = diagnostics.toArray().map((d) => d.code);
-    expect(codes).toContain("LANCE_NON_ERROR_THROW");
-  });
+	test("unknown error class is rejected", () => {
+		const { diagnostics } = compile({
+			source: `throw new MyCustomError("oops");`,
+		});
+		const codes = diagnostics.toArray().map((d) => d.code);
+		expect(codes).toContain("LANCE_NON_ERROR_THROW");
+	});
 });
 
 describe("end-to-end: break / continue (§3.6)", () => {
-  test("`break` inside while emits SQF break", () => {
-    const { sqf, diagnostics } = compile({
-      source: `while (active) { if (done) break; }`,
-    });
-    expect(sqf).toContain(`break;`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+	test("`break` inside while emits SQF break", () => {
+		const { sqf, diagnostics } = compile({
+			source: `while (active) { if (done) break; }`,
+		});
+		expect(sqf).toContain(`break;`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("for-of loop without continue emits unwrapped forEach", () => {
-    const { sqf } = compile({
-      source: `for (const u of units) { doStuff(u); }`,
-    });
-    // Should NOT contain a `call { … }` wrapper since there's no continue.
-    expect(sqf).not.toContain(`[] call`);
-    expect(sqf).toContain(`} forEach units;`);
-  });
+	test("for-of loop without continue emits unwrapped forEach", () => {
+		const { sqf } = compile({
+			source: `for (const u of units) { doStuff(u); }`,
+		});
+		// Should NOT contain a `call { … }` wrapper since there's no continue.
+		expect(sqf).not.toContain(`[] call`);
+		expect(sqf).toContain(`} forEach units;`);
+	});
 
-  test("for-of loop with continue gets the call-wrapper trick", () => {
-    const { sqf, diagnostics } = compile({
-      source: `
+	test("for-of loop with continue gets the call-wrapper trick", () => {
+		const { sqf, diagnostics } = compile({
+			source: `
         for (const u of units) {
           if (skip) continue;
           doStuff(u);
         }
       `,
-    });
-    // continue → exitWith {}, body wrapped in `[] call { … }`.
-    expect(sqf).toContain(`exitWith {};`);
-    expect(sqf).toContain(`[] call {`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+		});
+		// continue → exitWith {}, body wrapped in `[] call { … }`.
+		expect(sqf).toContain(`exitWith {};`);
+		expect(sqf).toContain(`[] call {`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("for-of where the continue is in a nested loop does NOT wrap the outer", () => {
-    const { sqf } = compile({
-      source: `
+	test("for-of where the continue is in a nested loop does NOT wrap the outer", () => {
+		const { sqf } = compile({
+			source: `
         for (const a of as) {
           for (const b of bs) {
             if (cond) continue;
           }
         }
       `,
-    });
-    // Only the inner forEach (the one containing the `continue`) gets wrapped.
-    const wrapperCount = (sqf.match(/\[\] call \{/g) ?? []).length;
-    expect(wrapperCount).toBe(1);
-  });
+		});
+		// Only the inner forEach (the one containing the `continue`) gets wrapped.
+		const wrapperCount = (sqf.match(/\[\] call \{/g) ?? []).length;
+		expect(wrapperCount).toBe(1);
+	});
 });
 
 describe("end-to-end: do/while (§3.2.1)", () => {
-  test("do { body } while (cond) lowers to while-true with bottom guard", () => {
-    const { sqf, diagnostics } = compile({
-      source: `do { tick(); } while (running);`,
-    });
-    expect(sqf).toContain(`while {true} do {`);
-    expect(sqf).toContain(`if (!(running))`);
-    expect(sqf).toContain(`break;`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+	test("do { body } while (cond) lowers to while-true with bottom guard", () => {
+		const { sqf, diagnostics } = compile({
+			source: `do { tick(); } while (running);`,
+		});
+		expect(sqf).toContain(`while {true} do {`);
+		expect(sqf).toContain(`if (!(running))`);
+		expect(sqf).toContain(`break;`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 });
 
 describe("end-to-end: try/catch (§3.5)", () => {
-  test("basic try/catch rebinds _exception to the catch parameter", () => {
-    const { sqf, diagnostics } = compile({
-      source: `
+	test("basic try/catch rebinds _exception to the catch parameter", () => {
+		const { sqf, diagnostics } = compile({
+			source: `
         try {
           riskyCall();
         } catch (err) {
           log(err);
         }
       `,
-    });
-    expect(sqf).toContain(`try {`);
-    expect(sqf).toContain(`} catch {`);
-    expect(sqf).toContain(`private _err = _exception;`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+		});
+		expect(sqf).toContain(`try {`);
+		expect(sqf).toContain(`} catch {`);
+		expect(sqf).toContain(`private _err = _exception;`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("catch with no parameter omits the rebind", () => {
-    const { sqf, diagnostics } = compile({
-      source: `
+	test("catch with no parameter omits the rebind", () => {
+		const { sqf, diagnostics } = compile({
+			source: `
         try {
           riskyCall();
         } catch {
           log("oops");
         }
       `,
-    });
-    expect(sqf).toContain(`try {`);
-    expect(sqf).toContain(`} catch {`);
-    expect(sqf).not.toContain(`= _exception`);
-    expect(diagnostics.toArray()).toEqual([]);
-  });
+		});
+		expect(sqf).toContain(`try {`);
+		expect(sqf).toContain(`} catch {`);
+		expect(sqf).not.toContain(`= _exception`);
+		expect(diagnostics.toArray()).toEqual([]);
+	});
 
-  test("try/finally without catch surfaces a diagnostic", () => {
-    const { diagnostics } = compile({
-      source: `try { riskyCall(); } finally { cleanup(); }`,
-    });
-    const codes = diagnostics.toArray().map((d) => d.code);
-    expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
-  });
+	test("try/finally without catch surfaces a diagnostic", () => {
+		const { diagnostics } = compile({
+			source: `try { riskyCall(); } finally { cleanup(); }`,
+		});
+		const codes = diagnostics.toArray().map((d) => d.code);
+		expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
+	});
 
-  test("try with throw inside + finally surfaces a diagnostic (open question)", () => {
-    const { diagnostics } = compile({
-      source: `
+	test("try with throw inside + finally surfaces a diagnostic (open question)", () => {
+		const { diagnostics } = compile({
+			source: `
         try {
           throw new Error("boom");
         } catch (e) {
@@ -320,24 +324,24 @@ describe("end-to-end: try/catch (§3.5)", () => {
           cleanup();
         }
       `,
-    });
-    const codes = diagnostics.toArray().map((d) => d.code);
-    expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
-  });
+		});
+		const codes = diagnostics.toArray().map((d) => d.code);
+		expect(codes).toContain("LANCE_UNSUPPORTED_STATEMENT");
+	});
 });
 
 describe("end-to-end: prefix unary (§5.3.3)", () => {
-  test("`!cond` lowers to !(cond)", () => {
-    const { sqf } = compile({
-      source: `const x = !ready;`,
-    });
-    expect(sqf).toContain(`!(ready)`);
-  });
+	test("`!cond` lowers to !(cond)", () => {
+		const { sqf } = compile({
+			source: `const x = !ready;`,
+		});
+		expect(sqf).toContain(`!(ready)`);
+	});
 
-  test("`-x` lowers to -(x)", () => {
-    const { sqf } = compile({
-      source: `const y = -value;`,
-    });
-    expect(sqf).toContain(`-(value)`);
-  });
+	test("`-x` lowers to -(x)", () => {
+		const { sqf } = compile({
+			source: `const y = -value;`,
+		});
+		expect(sqf).toContain(`-(value)`);
+	});
 });

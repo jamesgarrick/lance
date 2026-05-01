@@ -1,55 +1,55 @@
 export interface SqfProgram {
-  readonly kind: "Program";
-  /** Absolute path of the entry TypeScript file. */
-  readonly entryFilePath: string;
-  /** Top-level non-function statements from the entry file → emitted into the entry .sqf */
-  readonly entryStatements: readonly SqfStatement[];
-  /** Every function declaration from all reachable files → each gets its own .sqf */
-  readonly functionFiles: readonly SqfFunctionFile[];
+	readonly kind: "Program";
+	/** Absolute path of the entry TypeScript file. */
+	readonly entryFilePath: string;
+	/** Top-level non-function statements from the entry file → emitted into the entry .sqf */
+	readonly entryStatements: readonly SqfStatement[];
+	/** Every function declaration from all reachable files → each gets its own .sqf */
+	readonly functionFiles: readonly SqfFunctionFile[];
 }
 
 export interface SqfFunctionFile {
-  readonly kind: "FunctionFile";
-  readonly sqfName: string;       // e.g. "LNC_medical_fnc_healSquad"
-  readonly outputPath: string;    // e.g. "functions/medical/fn_healSquad.sqf"
-  readonly category: string | null;
-  readonly functionName: string;
-  readonly tag: string;
-  readonly parameters: readonly string[];
-  readonly body: readonly SqfStatement[];
+	readonly kind: "FunctionFile";
+	readonly sqfName: string; // e.g. "LNC_medical_fnc_healSquad"
+	readonly outputPath: string; // e.g. "functions/medical/fn_healSquad.sqf"
+	readonly category: string | null;
+	readonly functionName: string;
+	readonly tag: string;
+	readonly parameters: readonly string[];
+	readonly body: readonly SqfStatement[];
 }
 
 export type SqfStatement =
-  | SqfRawTsStatement
-  | SqfVariableStatement
-  | SqfExpressionStatement
-  | SqfTrailingExpressionStatement
-  | SqfReturnStatement
-  | SqfIfStatement
-  | SqfIfExitWithStatement
-  | SqfWhileStatement
-  | SqfForFromToStatement
-  | SqfForEachStatement
-  | SqfThrowStatement
-  | SqfSwitchStatement
-  | SqfBreakStatement
-  | SqfContinueStatement
-  | SqfTryCatchStatement;
+	| SqfRawTsStatement
+	| SqfVariableStatement
+	| SqfExpressionStatement
+	| SqfTrailingExpressionStatement
+	| SqfReturnStatement
+	| SqfIfStatement
+	| SqfIfExitWithStatement
+	| SqfWhileStatement
+	| SqfForFromToStatement
+	| SqfForEachStatement
+	| SqfThrowStatement
+	| SqfSwitchStatement
+	| SqfBreakStatement
+	| SqfContinueStatement
+	| SqfTryCatchStatement;
 
 export interface SqfRawTsStatement {
-  readonly kind: "RawTsStatement";
-  readonly text: string;
+	readonly kind: "RawTsStatement";
+	readonly text: string;
 }
 
 export interface SqfVariableStatement {
-  readonly kind: "VariableStatement";
-  readonly name: string;
-  readonly initializer?: SqfExpression;
+	readonly kind: "VariableStatement";
+	readonly name: string;
+	readonly initializer?: SqfExpression;
 }
 
 export interface SqfExpressionStatement {
-  readonly kind: "ExpressionStatement";
-  readonly expression: SqfExpression;
+	readonly kind: "ExpressionStatement";
+	readonly expression: SqfExpression;
 }
 
 /**
@@ -61,8 +61,8 @@ export interface SqfExpressionStatement {
  * position Lance can't yet lower (see docs/spec/control-flow.md §3.7.3).
  */
 export interface SqfReturnStatement {
-  readonly kind: "ReturnStatement";
-  readonly expression?: SqfExpression;
+	readonly kind: "ReturnStatement";
+	readonly expression?: SqfExpression;
 }
 
 /**
@@ -70,8 +70,8 @@ export interface SqfReturnStatement {
  * semicolon so SQF treats it as the block's return value. See spec §2.7 / §3.7.1.
  */
 export interface SqfTrailingExpressionStatement {
-  readonly kind: "TrailingExpressionStatement";
-  readonly expression: SqfExpression;
+	readonly kind: "TrailingExpressionStatement";
+	readonly expression: SqfExpression;
 }
 
 /**
@@ -80,22 +80,22 @@ export interface SqfTrailingExpressionStatement {
  * See spec §3.7.2.
  */
 export interface SqfIfExitWithStatement {
-  readonly kind: "IfExitWithStatement";
-  readonly condition: SqfExpression;
-  readonly value?: SqfExpression;
+	readonly kind: "IfExitWithStatement";
+	readonly condition: SqfExpression;
+	readonly value?: SqfExpression;
 }
 
 export interface SqfIfStatement {
-  readonly kind: "IfStatement";
-  readonly condition: SqfExpression;
-  readonly thenStatements: readonly SqfStatement[];
-  readonly elseStatements: readonly SqfStatement[];
+	readonly kind: "IfStatement";
+	readonly condition: SqfExpression;
+	readonly thenStatements: readonly SqfStatement[];
+	readonly elseStatements: readonly SqfStatement[];
 }
 
 export interface SqfWhileStatement {
-  readonly kind: "WhileStatement";
-  readonly condition: SqfExpression;
-  readonly body: readonly SqfStatement[];
+	readonly kind: "WhileStatement";
+	readonly condition: SqfExpression;
+	readonly body: readonly SqfStatement[];
 }
 
 /**
@@ -104,12 +104,12 @@ export interface SqfWhileStatement {
  * `variable` is the unmangled TS identifier (e.g. `"i"`); emit produces `"_i"`.
  */
 export interface SqfForFromToStatement {
-  readonly kind: "ForFromToStatement";
-  readonly variable: string;
-  readonly from: SqfExpression;
-  readonly to: SqfExpression;
-  readonly step?: SqfExpression;
-  readonly body: readonly SqfStatement[];
+	readonly kind: "ForFromToStatement";
+	readonly variable: string;
+	readonly from: SqfExpression;
+	readonly to: SqfExpression;
+	readonly step?: SqfExpression;
+	readonly body: readonly SqfStatement[];
 }
 
 /**
@@ -119,10 +119,10 @@ export interface SqfForFromToStatement {
  * If it's already `"_x"`, the rebinding is elided.
  */
 export interface SqfForEachStatement {
-  readonly kind: "ForEachStatement";
-  readonly variable: string;
-  readonly iterable: SqfExpression;
-  readonly body: readonly SqfStatement[];
+	readonly kind: "ForEachStatement";
+	readonly variable: string;
+	readonly iterable: SqfExpression;
+	readonly body: readonly SqfStatement[];
 }
 
 /**
@@ -131,8 +131,8 @@ export interface SqfForEachStatement {
  * just carries an expression; the lowering layer is responsible for the shape.
  */
 export interface SqfThrowStatement {
-  readonly kind: "ThrowStatement";
-  readonly expression: SqfExpression;
+	readonly kind: "ThrowStatement";
+	readonly expression: SqfExpression;
 }
 
 /**
@@ -144,20 +144,20 @@ export interface SqfThrowStatement {
  * lowering time and never reaches the IR.
  */
 export interface SqfSwitchStatement {
-  readonly kind: "SwitchStatement";
-  readonly discriminant: SqfExpression;
-  readonly cases: readonly SqfSwitchCase[];
-  readonly defaultCase?: readonly SqfStatement[];
+	readonly kind: "SwitchStatement";
+	readonly discriminant: SqfExpression;
+	readonly cases: readonly SqfSwitchCase[];
+	readonly defaultCase?: readonly SqfStatement[];
 }
 
 export interface SqfSwitchCase {
-  readonly labels: readonly SqfExpression[];
-  readonly body: readonly SqfStatement[];
+	readonly labels: readonly SqfExpression[];
+	readonly body: readonly SqfStatement[];
 }
 
 /** `break;` — exits the innermost loop. Spec §3.6.1. */
 export interface SqfBreakStatement {
-  readonly kind: "BreakStatement";
+	readonly kind: "BreakStatement";
 }
 
 /**
@@ -166,7 +166,7 @@ export interface SqfBreakStatement {
  * `exitWith {}` so the inner block exits but the outer loop continues.
  */
 export interface SqfContinueStatement {
-  readonly kind: "ContinueStatement";
+	readonly kind: "ContinueStatement";
 }
 
 /**
@@ -180,39 +180,39 @@ export interface SqfContinueStatement {
  * diagnostic since the cleanup ordering is an open question.
  */
 export interface SqfTryCatchStatement {
-  readonly kind: "TryCatchStatement";
-  readonly tryBody: readonly SqfStatement[];
-  readonly catchParameterName?: string;
-  readonly catchBody: readonly SqfStatement[];
-  readonly finallyBody?: readonly SqfStatement[];
+	readonly kind: "TryCatchStatement";
+	readonly tryBody: readonly SqfStatement[];
+	readonly catchParameterName?: string;
+	readonly catchBody: readonly SqfStatement[];
+	readonly finallyBody?: readonly SqfStatement[];
 }
 
 export type SqfExpression =
-  | SqfIdentifier
-  | SqfLiteral
-  | SqfCallExpression
-  | SqfCommandExpression
-  | SqfPropertyAccessExpression
-  | SqfArrayExpression
-  | SqfBinaryExpression
-  | SqfCodeBlock
-  | SqfConditionalExpression
-  | SqfUnaryExpression;
+	| SqfIdentifier
+	| SqfLiteral
+	| SqfCallExpression
+	| SqfCommandExpression
+	| SqfPropertyAccessExpression
+	| SqfArrayExpression
+	| SqfBinaryExpression
+	| SqfCodeBlock
+	| SqfConditionalExpression
+	| SqfUnaryExpression;
 
 export interface SqfIdentifier {
-  readonly kind: "Identifier";
-  readonly text: string;
+	readonly kind: "Identifier";
+	readonly text: string;
 }
 
 export interface SqfLiteral {
-  readonly kind: "Literal";
-  readonly text: string;
+	readonly kind: "Literal";
+	readonly text: string;
 }
 
 export interface SqfCallExpression {
-  readonly kind: "CallExpression";
-  readonly callee: SqfExpression;
-  readonly args: readonly SqfExpression[];
+	readonly kind: "CallExpression";
+	readonly callee: SqfExpression;
+	readonly args: readonly SqfExpression[];
 }
 
 /**
@@ -221,47 +221,47 @@ export interface SqfCallExpression {
  * unary — used for built-ins like `createHashMapFromArray`, `count`, `alive`.
  */
 export interface SqfCommandExpression {
-  readonly kind: "CommandExpression";
-  readonly receiver?: SqfExpression;
-  readonly command: string;
-  readonly args: readonly SqfExpression[];
+	readonly kind: "CommandExpression";
+	readonly receiver?: SqfExpression;
+	readonly command: string;
+	readonly args: readonly SqfExpression[];
 }
 
 export interface SqfPropertyAccessExpression {
-  readonly kind: "PropertyAccessExpression";
-  readonly target: SqfExpression;
-  readonly property: string;
+	readonly kind: "PropertyAccessExpression";
+	readonly target: SqfExpression;
+	readonly property: string;
 }
 
 export interface SqfArrayExpression {
-  readonly kind: "ArrayExpression";
-  readonly elements: readonly SqfExpression[];
+	readonly kind: "ArrayExpression";
+	readonly elements: readonly SqfExpression[];
 }
 
 export interface SqfBinaryExpression {
-  readonly kind: "BinaryExpression";
-  readonly operator: string;
-  readonly left: SqfExpression;
-  readonly right: SqfExpression;
+	readonly kind: "BinaryExpression";
+	readonly operator: string;
+	readonly left: SqfExpression;
+	readonly right: SqfExpression;
 }
 
 /** An inline SQF code block: { stmt; stmt; }. Used for async CPS callbacks. */
 export interface SqfCodeBlock {
-  readonly kind: "CodeBlock";
-  readonly body: readonly SqfStatement[];
+	readonly kind: "CodeBlock";
+	readonly body: readonly SqfStatement[];
 }
 
 /** TypeScript ternary `cond ? a : b` → `if (cond) then { a } else { b }`. Spec §3.1.4. */
 export interface SqfConditionalExpression {
-  readonly kind: "ConditionalExpression";
-  readonly condition: SqfExpression;
-  readonly whenTrue: SqfExpression;
-  readonly whenFalse: SqfExpression;
+	readonly kind: "ConditionalExpression";
+	readonly condition: SqfExpression;
+	readonly whenTrue: SqfExpression;
+	readonly whenFalse: SqfExpression;
 }
 
 /** Prefix unary: `!x`, `-x`. Postfix `x++` is rewritten at lowering, never reaches the IR. */
 export interface SqfUnaryExpression {
-  readonly kind: "UnaryExpression";
-  readonly operator: "!" | "-";
-  readonly operand: SqfExpression;
+	readonly kind: "UnaryExpression";
+	readonly operator: "!" | "-";
+	readonly operand: SqfExpression;
 }

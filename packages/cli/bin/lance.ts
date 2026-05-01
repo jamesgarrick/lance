@@ -19,59 +19,61 @@ import WhoAmI from "../src/commands/whoami.ts";
 const [command, ...rest] = process.argv.slice(2);
 
 try {
-  const commands: Record<string, any> = {
-    init: Init,
-    compile: Compile,
-    add: Add,
-    remove: Remove,
-    install: Install,
-    i: Install,
-    search: Search,
-    info: Info,
-    login: Login,
-    logout: Logout,
-    whoami: WhoAmI,
-    publish: Publish,
-    unpublish: Unpublish,
-    outdated: Outdated,
-    update: Update,
-    list: List,
-  };
-  const cmd = command ? commands[command] : undefined;
-  if (cmd) {
-    await cmd.run(rest);
-  } else if (!command || command === "--help" || command === "-h") {
-    console.log(
-      [
-        "Lance — TypeScript to SQF transpiler",
-        "",
-        "Usage:",
-        "  lance <command> [options]",
-        "",
-        "Commands:",
-        "  init      Initialize a new Lance project",
-        "  compile   Compile a Lance project to SQF",
-        "  add       Add a dependency",
-        "  remove    Remove a dependency",
-        "  install   Install dependencies from lockfile",
-        "  search    Search registry packages",
-        "  info      Show package metadata",
-        "  login     Save auth token (~/.lancerc)",
-        "  logout    Clear auth token",
-        "  whoami    Show current authenticated user",
-        "  publish   Publish current package",
-        "  unpublish Unpublish package version (<72h)",
-        "  outdated  Show newer versions",
-        "  update    Refresh lockfile to latest compatible",
-        "  list      Show resolved deps",
-        "",
-        "Run `lance <command> --help` for command-specific help.",
-      ].join("\n"),
-    );
-  } else {
-    console.error(`Unknown command: ${command}\nRun \`lance --help\` for available commands.`);
-    process.exit(1);
-  }
+	const commands: Record<string, any> = {
+		init: Init,
+		compile: Compile,
+		add: Add,
+		remove: Remove,
+		install: Install,
+		i: Install,
+		search: Search,
+		info: Info,
+		login: Login,
+		logout: Logout,
+		whoami: WhoAmI,
+		publish: Publish,
+		unpublish: Unpublish,
+		outdated: Outdated,
+		update: Update,
+		list: List,
+	};
+	const cmd = command ? commands[command] : undefined;
+	if (cmd) {
+		await cmd.run(rest);
+	} else if (!command || command === "--help" || command === "-h") {
+		console.log(
+			[
+				"Lance — TypeScript to SQF transpiler",
+				"",
+				"Usage:",
+				"  lance <command> [options]",
+				"",
+				"Commands:",
+				"  init      Initialize a new Lance project",
+				"  compile   Compile a Lance project to SQF",
+				"  add       Add a dependency",
+				"  remove    Remove a dependency",
+				"  install   Install dependencies from lockfile",
+				"  search    Search registry packages",
+				"  info      Show package metadata",
+				"  login     Save auth token (~/.lancerc)",
+				"  logout    Clear auth token",
+				"  whoami    Show current authenticated user",
+				"  publish   Publish current package",
+				"  unpublish Unpublish package version (<72h)",
+				"  outdated  Show newer versions",
+				"  update    Refresh lockfile to latest compatible",
+				"  list      Show resolved deps",
+				"",
+				"Run `lance <command> --help` for command-specific help.",
+			].join("\n"),
+		);
+	} else {
+		console.error(
+			`Unknown command: ${command}\nRun \`lance --help\` for available commands.`,
+		);
+		process.exit(1);
+	}
 } catch (err) {
-  await handle(err as Error);
+	await handle(err as Error);
 }

@@ -1,25 +1,25 @@
 {
-  "name": "@lance/core",
-  "version": "0.0.1",
-  "lance": true,
-  "module": "index.ts",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "default": "./index.ts"
-    },
-    "./types/*": "./types/*.d.ts",
-    "./globals": "./globals.d.ts"
-  },
-  "types": "./index.d.ts",
-  "type": "module",
-  "scripts": {
-      "build": "bunx tsc -p tsconfig.json && rsync -a --include='*/' --include='*.d.ts' --exclude='*' src/ dist/src/",
-      "typecheck": "bunx tsc --noEmit -p tsconfig.json",
-      "generate:cfg": "node scripts/generate-cfg-all.mjs"
-    },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "typescript": "^6.0.3"
-  }
+	"name": "@lance/core",
+	"version": "0.0.1",
+	"lance": true,
+	"module": "index.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.ts"
+		},
+		"./types/*": "./types/*.d.ts",
+		"./globals": "./globals.d.ts"
+	},
+	"types": "./index.d.ts",
+	"type": "module",
+	"scripts": {
+		"build": "bunx tsc -p tsconfig.json && rsync -a --include='*/' --include='*.d.ts' --exclude='*' src/ dist/src/",
+		"typecheck": "bunx tsc --noEmit -p tsconfig.json",
+		"generate:cfg": "node scripts/generate-cfg-all.mjs"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"typescript": "^6.0.3"
+	}
 }

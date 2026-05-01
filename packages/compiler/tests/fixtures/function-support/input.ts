@@ -1,16 +1,16 @@
 import { cfgMagazines, cfgWeapons, player } from "@lance/core";
 
 function equipRifle() {
-  player.addWeapon(cfgWeapons.arifle.ak12);
+	player.addWeapon(cfgWeapons.arifle.ak12);
 }
 
 function setMode(mode: string) {
-  player.setBehaviour(mode);
+	player.setBehaviour(mode);
 }
 
 function equipWeaponPair(weapon: string, magazine: string) {
-  player.addWeapon(weapon);
-  player.addMagazine(magazine);
+	player.addWeapon(weapon);
+	player.addMagazine(magazine);
 }
 
 equipRifle();

@@ -11,38 +11,41 @@
  */
 
 import type {
-  SqfCallExpression,
-  SqfExpressionStatement,
-  SqfLiteral,
-  SqfStatement,
-  SqfTryCatchStatement,
+	SqfCallExpression,
+	SqfExpressionStatement,
+	SqfLiteral,
+	SqfStatement,
+	SqfTryCatchStatement,
 } from "../ir/nodes";
 
 const ENTRY_SOURCE_LABEL = "<mission init>";
 
 export function wrapEntryStatements(
-  statements: readonly SqfStatement[],
+	statements: readonly SqfStatement[],
 ): readonly SqfStatement[] {
-  if (statements.length === 0) return statements;
+	if (statements.length === 0) return statements;
 
-  // Two-arg call form emits as `[arg1, arg2] call <callee>`.
-  const handleErrorCall: SqfExpressionStatement = {
-    kind: "ExpressionStatement",
-    expression: {
-      kind: "CallExpression",
-      callee: { kind: "Identifier", text: "LANCE_fnc_handleError" },
-      args: [
-        { kind: "Identifier", text: "_exception" },
-        { kind: "Literal", text: JSON.stringify(ENTRY_SOURCE_LABEL) } satisfies SqfLiteral,
-      ],
-    } satisfies SqfCallExpression,
-  };
+	// Two-arg call form emits as `[arg1, arg2] call <callee>`.
+	const handleErrorCall: SqfExpressionStatement = {
+		kind: "ExpressionStatement",
+		expression: {
+			kind: "CallExpression",
+			callee: { kind: "Identifier", text: "LANCE_fnc_handleError" },
+			args: [
+				{ kind: "Identifier", text: "_exception" },
+				{
+					kind: "Literal",
+					text: JSON.stringify(ENTRY_SOURCE_LABEL),
+				} satisfies SqfLiteral,
+			],
+		} satisfies SqfCallExpression,
+	};
 
-  const tryCatch: SqfTryCatchStatement = {
-    kind: "TryCatchStatement",
-    tryBody: statements,
-    catchBody: [handleErrorCall],
-  };
+	const tryCatch: SqfTryCatchStatement = {
+		kind: "TryCatchStatement",
+		tryBody: statements,
+		catchBody: [handleErrorCall],
+	};
 
-  return [tryCatch];
+	return [tryCatch];
 }

@@ -27,7 +27,15 @@ import type { Position2D, Position3D } from "../../primitives";
  *
  * @see {@link https://community.bistudio.com/wiki/findEmptyPosition findEmptyPositionReady}
  */
-export function findEmptyPosition(center: Position2D | Position3D, areaRadius: number, maxDistance: number, vehicleType: string): Position3D;
+export function findEmptyPosition(
+	center: Position2D | Position3D,
+	areaRadius: number,
+	maxDistance: number,
+	vehicleType: string,
+): Position3D;
 
-
-export function findEmptyPositionReady(center: Position2D | Position3D, radius: number, maxDistance: number): Boolean;
+export function findEmptyPositionReady(
+	center: Position2D | Position3D,
+	radius: number,
+	maxDistance: number,
+): Boolean;

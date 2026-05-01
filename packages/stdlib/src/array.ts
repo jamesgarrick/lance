@@ -1,234 +1,391 @@
 import {
-  count,
-  str,
-  deleteAt,
-  pushBack,
-  joinString,
-  reverse,
-  select,
-  apply,
-  sort as sortArray,
-  resize,
-  forEach
+	count,
+	str,
+	deleteAt,
+	deleteRange,
+	pushBack,
+	insert,
+	joinString,
+	reverse,
+	select,
+	apply,
+	sort as sortArray,
+	forEach,
 } from "@lance/core";
 
-
 export class Array<T> {
-  [Symbol.iterator](): Iterator<T> {
-      let index = 0;
-      const array = this._array;
+	[Symbol.iterator](): Iterator<T> {
+		let index = 0;
+		const array = this._array;
 
-      return {
-          next(): IteratorResult<T> {
-              if (index >= array.length) {
-                  return { value: undefined as T, done: true };
-              }
+		return {
+			next(): IteratorResult<T> {
+				if (index >= array.length) {
+					return { value: undefined as T, done: true };
+				}
 
-              const value = select(array, index);
-              index += 1;
-              return { value, done: false };
-          },
-      };
-  }
-  private _array!: T[];
+				const value = select(array, index);
+				index += 1;
+				return { value, done: false };
+			},
+		};
+	}
+	private _array!: T[];
 
-  get length(): number {
-      return count(this._array);
-    }
+	get length(): number {
+		return count(this._array);
+	}
 
-  toString(): string {
-    return str(this._array);
-    }
+	toString(): string {
+		return str(this._array);
+	}
 
-     pop(): T | undefined {
-         if (this._array.length === 0) return undefined;
-         const removed = deleteAt<T>(this._array, this._array.length - 1);
-         return removed ?? undefined;
-     }
-    /**
-     * Appends new elements to the end of an array, and returns the new length of the array.
-     * @param items New elements to add to the array.
-     */
-  push(...items: T[]): number {
-    let length = this._array.length;
+	pop(): T | undefined {
+		if (this._array.length === 0) return undefined;
+		const removed = deleteAt<T>(this._array, this._array.length - 1);
+		return removed ?? undefined;
+	}
 
-    for (const item of items) {
-        length = pushBack(this._array, item);
-    }
+	push(...items: T[]): number {
+		let length = this._array.length;
 
-    return length;
-    }
+		for (const item of items) {
+			length = pushBack(this._array, item);
+		}
 
-    concat(...items: ConcatArray<T>[]): T[];
-    concat(...items: (T | ConcatArray<T>)[]): T[] {
-        const result = select(this._array, 0, this._array.length) as T[];
+		return length;
+	}
 
-        for (const item of items) {
-            if (typeof item === "object" && item !== null && "length" in item) {
-                for (const element of item as ConcatArray<T>) {
-                    pushBack(result, element);
-                }
-            } else {
-                pushBack(result, item);
-            }
-        }
+	concat(...items: ConcatArray<T>[]): T[];
+	concat(...items: (T | ConcatArray<T>)[]): T[] {
+		const result = select(this._array, 0, this._array.length) as T[];
 
-        return result;
-    }
+		for (const item of items) {
+			if (typeof item === "object" && item !== null && "length" in item) {
+				for (const element of item as ConcatArray<T>) {
+					pushBack(result, element);
+				}
+			} else {
+				pushBack(result, item);
+			}
+		}
 
-  join(separator?: string): string {
-    return joinString(this._array, separator ?? ",");
-    }
+		return result;
+	}
 
-  reverse(): T[] {
-      this._array = reverse(this._array);
-      return this._array;
-    }
+	join(separator?: string): string {
+		return joinString(this._array, separator ?? ",");
+	}
 
-  shift(): T | undefined {
-      if (this._array.length === 0) return undefined;
-      const result = this._array[0];
-      this._array = this._array.slice(1);
-      return result;
-    }
+	reverse(): T[] {
+		this._array = reverse(this._array);
+		return this._array;
+	}
 
-  slice(start?: number, end?: number): T[] {
-      // must calculate count from end
-    if (end === undefined) end = this._array.length;
-    if (start === undefined) start = 0;
-      return select(this._array, start, end - start)
-    }
+	shift(): T | undefined {
+		if (this._array.length === 0) return undefined;
+		const removed = deleteAt<T>(this._array, 0);
+		return removed ?? undefined;
+	}
 
-  sort(compareFn?: (a: T, b: T) => number): this {
-      if (this._array.length < 2) {
-          return this;
-      }
+	slice(start?: number, end?: number): T[] {
+		// must calculate count from end
+		if (end === undefined) end = this._array.length;
+		if (start === undefined) start = 0;
+		return select(this._array, start, end - start);
+	}
 
-      if (compareFn === undefined) {
-          this._array = sortArray(this._array, true);
-          return this;
-      }
+	sort(compareFn?: (a: T, b: T) => number): this {
+		if (this._array.length < 2) {
+			return this;
+		}
 
-      const decorated = apply(this._array, (item) => {
-          const rank = count((other: T) => compareFn(item, other) > 0, this._array);
-          return [rank, item] as [number, T];
-      });
+		if (compareFn === undefined) {
+			this._array = sortArray(this._array, true);
+			return this;
+		}
 
-      const sortedDecorated = sortArray(decorated, true);
-      this._array = apply(sortedDecorated, (entry) => select(entry, 1));
-      return this;
-    }
-    /**
-     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
-     * @param start The zero-based location in the array from which to start removing elements.
-     * @param deleteCount The number of elements to remove. Omitting this argument will remove all elements from the start
-     * paramater location to end of the array. If value of this argument is either a negative number, zero, undefined, or a type
-     * that cannot be converted to an integer, the function will evaluate the argument as zero and not remove any elements.
-     * @returns An array containing the elements that were deleted.
-     */
-    splice(start: number, deleteCount?: number): T[];
-    /**
-     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
-     * @param start The zero-based location in the array from which to start removing elements.
-     * @param deleteCount The number of elements to remove. If value of this argument is either a negative number, zero,
-     * undefined, or a type that cannot be converted to an integer, the function will evaluate the argument as zero and
-     * not remove any elements.
-     * @param items Elements to insert into the array in place of the deleted elements.
-     * @returns An array containing the elements that were deleted.
-     */
-    splice(start: number, deleteCount: number, ...items: T[]): T[];
-    /**
-     * Inserts new elements at the start of an array, and returns the new length of the array.
-     * @param items Elements to insert at the start of the array.
-     */
-    unshift(...items: T[]): number;
-    /**
-     * Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
-     * @param searchElement The value to locate in the array.
-     * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
-     */
-    indexOf(searchElement: T, fromIndex?: number): number;
-    /**
-     * Returns the index of the last occurrence of a specified value in an array, or -1 if it is not present.
-     * @param searchElement The value to locate in the array.
-     * @param fromIndex The array index at which to begin searching backward. If fromIndex is omitted, the search starts at the last index in the array.
-     */
-    lastIndexOf(searchElement: T, fromIndex?: number): number;
-    /**
-     * Determines whether all the members of an array satisfy the specified test.
-     * @param predicate A function that accepts up to three arguments. The every method calls
-     * the predicate function for each element in the array until the predicate returns a value
-     * which is coercible to the Boolean value false, or until the end of the array.
-     * @param thisArg An object to which the this keyword can refer in the predicate function.
-     * If thisArg is omitted, undefined is used as the this value.
-     */
-    every<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): this is S[];
-    /**
-     * Determines whether all the members of an array satisfy the specified test.
-     * @param predicate A function that accepts up to three arguments. The every method calls
-     * the predicate function for each element in the array until the predicate returns a value
-     * which is coercible to the Boolean value false, or until the end of the array.
-     * @param thisArg An object to which the this keyword can refer in the predicate function.
-     * If thisArg is omitted, undefined is used as the this value.
-     */
-    every(predicate: (value: T, index: number, array: T[]) => unknown, thisArg?: any): boolean;
-    /**
-     * Determines whether the specified callback function returns true for any element of an array.
-     * @param predicate A function that accepts up to three arguments. The some method calls
-     * the predicate function for each element in the array until the predicate returns a value
-     * which is coercible to the Boolean value true, or until the end of the array.
-     * @param thisArg An object to which the this keyword can refer in the predicate function.
-     * If thisArg is omitted, undefined is used as the this value.
-     */
-    some(predicate: (value: T, index: number, array: T[]) => unknown, thisArg?: any): boolean;
+		const decorated = apply(this._array, (item) => {
+			const rank = count((other: T) => compareFn(item, other) > 0, this._array);
+			return [rank, item] as [number, T];
+		});
 
-  forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void {
-    // TODO! not sure about thisArg yet
-    forEach(callbackfn, this._array);
-    return;
-  }
+		const sortedDecorated = sortArray(decorated, true);
+		this._array = apply(sortedDecorated, (entry) => select(entry, 1));
+		return this;
+	}
 
-  map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[] {
-      return apply(this._array, callbackfn)
-    }
-    /**
-     * Returns the elements of an array that meet the condition specified in a callback function.
-     * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
-     * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
-     */
-    filter<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): S[];
-    /**
-     * Returns the elements of an array that meet the condition specified in a callback function.
-     * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
-     * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
-     */
-    filter(predicate: (value: T, index: number, array: T[]) => unknown, thisArg?: any): T[];
-    /**
-     * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-     * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-     * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-     */
-    reduce(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T): T;
-    reduce(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue: T): T;
-    /**
-     * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-     * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-     * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-     */
-    reduce<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
-    /**
-     * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-     * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-     * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-     */
-    reduceRight(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T): T;
-    reduceRight(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue: T): T;
-    /**
-     * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-     * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-     * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-     */
-    reduceRight<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
+	splice(start: number, deleteCount?: number): T[];
 
-    [n: number]: T;
+	splice(start: number, deleteCount: number, ...items: T[]): T[];
+	splice(start: number, deleteCount?: number, ...items: T[]): T[] {
+		const length = this._array.length;
+
+		let actualStart = start;
+		if (actualStart < 0) actualStart = length + actualStart;
+		if (actualStart < 0) actualStart = 0;
+		if (actualStart > length) actualStart = length;
+
+		let actualDeleteCount: number;
+		if (deleteCount === undefined) {
+			actualDeleteCount = length - actualStart;
+		} else if (deleteCount <= 0) {
+			actualDeleteCount = 0;
+		} else {
+			const remaining = length - actualStart;
+			actualDeleteCount = deleteCount > remaining ? remaining : deleteCount;
+		}
+
+		const deleted = select(this._array, actualStart, actualDeleteCount) as T[];
+		if (actualDeleteCount > 0) {
+			deleteRange(this._array, actualStart, actualDeleteCount);
+		}
+
+		if (items.length > 0) {
+			for (let i = 0; i < items.length; i += 1) {
+				insert(this._array, actualStart + i, items[i]!);
+			}
+		}
+
+		return deleted;
+	}
+
+	unshift(...items: T[]): number {
+		for (let i = items.length - 1; i >= 0; i -= 1) {
+			insert(this._array, 0, items[i]!);
+		}
+		return this._array.length;
+	}
+
+	indexOf(searchElement: T, fromIndex?: number): number {
+		const length = this._array.length;
+		let start = fromIndex ?? 0;
+
+		if (start < 0) start = length + start;
+		if (start < 0) start = 0;
+		if (start >= length) return -1;
+
+		for (let i = start; i < length; i += 1) {
+			if (select(this._array, i) === searchElement) return i;
+		}
+		return -1;
+	}
+
+	lastIndexOf(searchElement: T, fromIndex?: number): number {
+		const length = this._array.length;
+		if (length === 0) return -1;
+
+		let start = fromIndex ?? length - 1;
+		if (start < 0) start = length + start;
+		if (start >= length) start = length - 1;
+		if (start < 0) return -1;
+
+		for (let i = start; i >= 0; i -= 1) {
+			if (select(this._array, i) === searchElement) return i;
+		}
+		return -1;
+	}
+
+	every<S extends T>(
+		predicate: (value: T, index: number, array: T[]) => value is S,
+		thisArg?: any,
+	): this is S[];
+
+	every(
+		predicate: (value: T, index: number, array: T[]) => unknown,
+		thisArg?: any,
+	): boolean;
+	every(
+		predicate: (value: T, index: number, array: T[]) => unknown,
+		thisArg?: any,
+	): boolean {
+		void thisArg;
+		const length = this._array.length;
+		for (let i = 0; i < length; i += 1) {
+			if (!predicate(select(this._array, i), i, this._array)) return false;
+		}
+		return true;
+	}
+
+	some(
+		predicate: (value: T, index: number, array: T[]) => unknown,
+		thisArg?: any,
+	): boolean {
+		void thisArg;
+		const length = this._array.length;
+		for (let i = 0; i < length; i += 1) {
+			if (predicate(select(this._array, i), i, this._array)) return true;
+		}
+		return false;
+	}
+
+	forEach(
+		callbackfn: (value: T, index: number, array: T[]) => void,
+		thisArg?: any,
+	): void {
+		void thisArg;
+		forEach(callbackfn, this._array);
+		return;
+	}
+
+	map<U>(
+		callbackfn: (value: T, index: number, array: T[]) => U,
+		thisArg?: any,
+	): U[] {
+		void thisArg;
+		return apply(this._array, callbackfn);
+	}
+
+	filter<S extends T>(
+		predicate: (value: T, index: number, array: T[]) => value is S,
+		thisArg?: any,
+	): S[];
+
+	filter(
+		predicate: (value: T, index: number, array: T[]) => unknown,
+		thisArg?: any,
+	): T[];
+	filter(
+		predicate: (value: T, index: number, array: T[]) => unknown,
+		thisArg?: any,
+	): T[] {
+		void thisArg;
+		const result: T[] = [];
+		const length = this._array.length;
+		for (let i = 0; i < length; i += 1) {
+			const value = select(this._array, i);
+			if (predicate(value, i, this._array)) {
+				pushBack(result, value);
+			}
+		}
+		return result;
+	}
+
+	reduce(
+		callbackfn: (
+			previousValue: T,
+			currentValue: T,
+			currentIndex: number,
+			array: T[],
+		) => T,
+	): T;
+	reduce(
+		callbackfn: (
+			previousValue: T,
+			currentValue: T,
+			currentIndex: number,
+			array: T[],
+		) => T,
+		initialValue: T,
+	): T;
+
+	reduce<U>(
+		callbackfn: (
+			previousValue: U,
+			currentValue: T,
+			currentIndex: number,
+			array: T[],
+		) => U,
+		initialValue: U,
+	): U;
+	reduce<U>(
+		callbackfn: (
+			previousValue: U,
+			currentValue: T,
+			currentIndex: number,
+			array: T[],
+		) => U,
+		initialValue?: U,
+	): U {
+		const length = this._array.length;
+		if (length === 0 && initialValue === undefined) {
+			throw new TypeError("Reduce of empty array with no initial value");
+		}
+
+		let index = 0;
+		let accumulator: U;
+
+		if (initialValue === undefined) {
+			accumulator = select(this._array, 0) as unknown as U;
+			index = 1;
+		} else {
+			accumulator = initialValue;
+		}
+
+		for (let i = index; i < length; i += 1) {
+			accumulator = callbackfn(
+				accumulator,
+				select(this._array, i),
+				i,
+				this._array,
+			);
+		}
+
+		return accumulator;
+	}
+
+	reduceRight(
+		callbackfn: (
+			previousValue: T,
+			currentValue: T,
+			currentIndex: number,
+			array: T[],
+		) => T,
+	): T;
+	reduceRight(
+		callbackfn: (
+			previousValue: T,
+			currentValue: T,
+			currentIndex: number,
+			array: T[],
+		) => T,
+		initialValue: T,
+	): T;
+
+	reduceRight<U>(
+		callbackfn: (
+			previousValue: U,
+			currentValue: T,
+			currentIndex: number,
+			array: T[],
+		) => U,
+		initialValue: U,
+	): U;
+	reduceRight<U>(
+		callbackfn: (
+			previousValue: U,
+			currentValue: T,
+			currentIndex: number,
+			array: T[],
+		) => U,
+		initialValue?: U,
+	): U {
+		const length = this._array.length;
+		if (length === 0 && initialValue === undefined) {
+			throw new TypeError("Reduce of empty array with no initial value");
+		}
+
+		let index = length - 1;
+		let accumulator: U;
+
+		if (initialValue === undefined) {
+			accumulator = select(this._array, index) as unknown as U;
+			index -= 1;
+		} else {
+			accumulator = initialValue;
+		}
+
+		for (let i = index; i >= 0; i -= 1) {
+			accumulator = callbackfn(
+				accumulator,
+				select(this._array, i),
+				i,
+				this._array,
+			);
+		}
+
+		return accumulator;
+	}
+
+	[n: number]: T;
 }

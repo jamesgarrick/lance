@@ -60,14 +60,38 @@ private _line = format ["[lance] %1 in %2: %3", _class, _origin, _message];
 diag_log _line;
 systemChat _line;`;
 
-export const LANCE_RUNTIME_FILES: ReadonlyArray<{ path: string; content: string }> = [
-  { path: "functions/LANCE/fn_init.sqf", content: LANCE_RUNTIME_INIT_SQF },
-  { path: "functions/LANCE/fn_waitAndExecute.sqf", content: LANCE_FNC_WAIT_AND_EXECUTE_SQF },
-  { path: "functions/LANCE/fn_handleError.sqf", content: LANCE_FNC_HANDLE_ERROR_SQF },
+export const LANCE_RUNTIME_FILES: ReadonlyArray<{
+	path: string;
+	content: string;
+}> = [
+	{ path: "functions/LANCE/fn_init.sqf", content: LANCE_RUNTIME_INIT_SQF },
+	{
+		path: "functions/LANCE/fn_waitAndExecute.sqf",
+		content: LANCE_FNC_WAIT_AND_EXECUTE_SQF,
+	},
+	{
+		path: "functions/LANCE/fn_handleError.sqf",
+		content: LANCE_FNC_HANDLE_ERROR_SQF,
+	},
 ];
 
 export const LANCE_RUNTIME_FUNCTION_FILES = [
-  { functionName: "init", outputPath: "functions/LANCE/fn_init.sqf", category: "LANCE", tag: "LANCE" },
-  { functionName: "waitAndExecute", outputPath: "functions/LANCE/fn_waitAndExecute.sqf", category: "LANCE", tag: "LANCE" },
-  { functionName: "handleError", outputPath: "functions/LANCE/fn_handleError.sqf", category: "LANCE", tag: "LANCE" },
+	{
+		functionName: "init",
+		outputPath: "functions/LANCE/fn_init.sqf",
+		category: "LANCE",
+		tag: "LANCE",
+	},
+	{
+		functionName: "waitAndExecute",
+		outputPath: "functions/LANCE/fn_waitAndExecute.sqf",
+		category: "LANCE",
+		tag: "LANCE",
+	},
+	{
+		functionName: "handleError",
+		outputPath: "functions/LANCE/fn_handleError.sqf",
+		category: "LANCE",
+		tag: "LANCE",
+	},
 ] as const;

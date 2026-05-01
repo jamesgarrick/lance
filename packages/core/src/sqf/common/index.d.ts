@@ -3,7 +3,6 @@ export * from "./count";
 export * from "./select";
 export * from "./array";
 
-
 /**
  * Converts the supplied String into an Array of Numbers.
  * The numbers in the created array are the decimal Unicode representations of characters.
@@ -15,8 +14,6 @@ export * from "./array";
 export function toArray(string: string): Array<number>;
 export function toArray(hash): [keys: Array, values: Array];
 // TODO! - implement syntax 3
-
-
 
 export function joinString(array: Array<any>, separator: string): string;
 export function joinString(array: Array<string>, separator: string): string;

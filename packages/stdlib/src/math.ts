@@ -1,7 +1,5 @@
 import
 {
-  selectMin,
-  selectMax,
   random,
   round,
   sin,

@@ -4,7 +4,7 @@ import { cfgWeaponsItems } from "./cfg-weapons-items";
 import { cfgWeapons } from "./cfg-weapons";
 
 export const configFile = new ConfigFile({
-  cfgWeapons,
-  cfgWeaponsItems,
-  cfgMagazines,
+	cfgWeapons,
+	cfgWeaponsItems,
+	cfgMagazines,
 });

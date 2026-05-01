@@ -15,7 +15,11 @@ type RegexMatch = RegexGroup[];
  *
  * @see {@link https://community.bistudio.com/wiki/regexFind regexFind}
  */
-export function regexFind(source: SqfString, pattern: RegExp, startOffset: sqfNumber): RegexMatch;
+export function regexFind(
+	source: SqfString,
+	pattern: RegExp,
+	startOffset: sqfNumber,
+): RegexMatch;
 
 /**
  * Searches in a string with a regular expression.
@@ -33,6 +37,10 @@ export function regexMatch(source: SqfString, pattern: RegExp): SqfBoolean;
  *
  * @see {@link https://community.bistudio.com/wiki/regexReplace regexReplace}
  */
-export function regexReplace(source: SqfString, pattern: RegExp, replacement: SqfString): SqfString;
+export function regexReplace(
+	source: SqfString,
+	pattern: RegExp,
+	replacement: SqfString,
+): SqfString;
 
 // !TODO compiler must be able to convert RegExp to string literal

@@ -1,1886 +1,1886 @@
 {
-  "b": {
-    "aa": {
-      "01_weapon": {
-        "className": "B_AA_01_weapon_F",
-        "name": "Static Titan Launcher (AA) [NATO]"
-      }
-    },
-    "assault": {
-      "diver": {
-        "className": "B_Assault_Diver",
-        "name": "Assault Pack (Black)"
-      }
-    },
-    "assaultpack": {
-      "base": {
-        "className": "B_AssaultPack_Base",
-        "name": "Bag"
-      },
-      "blk": {
-        "className": "B_AssaultPack_blk",
-        "name": "Assault Pack (Black)"
-      },
-      "blk_diverexp": {
-        "className": "B_AssaultPack_blk_DiverExp",
-        "name": "Assault Pack (Black)"
-      },
-      "cbr": {
-        "className": "B_AssaultPack_cbr",
-        "name": "Assault Pack (Coyote)"
-      },
-      "dgtl": {
-        "className": "B_AssaultPack_dgtl",
-        "name": "Assault Pack (Digital)"
-      },
-      "eaf": {
-        "className": "B_AssaultPack_eaf_F",
-        "name": "Assault Pack (Geometric)"
-      },
-      "eaf_ielat2": {
-        "className": "B_AssaultPack_eaf_IELAT2_F",
-        "name": "Assault Pack (Geometric)"
-      },
-      "eaf_ielat": {
-        "className": "B_AssaultPack_eaf_IELAT_F",
-        "name": "Assault Pack (Geometric)"
-      },
-      "eaf_iepathfinder": {
-        "className": "B_AssaultPack_eaf_IEPathfinder_F",
-        "name": "Assault Pack (Geometric)"
-      },
-      "eaf_repair": {
-        "className": "B_AssaultPack_eaf_Repair_F",
-        "name": "Assault Pack (Geometric)"
-      },
-      "kerry": {
-        "className": "B_AssaultPack_Kerry",
-        "name": "US Assault Pack (Kerry)"
-      },
-      "khk": {
-        "className": "B_AssaultPack_khk",
-        "name": "Assault Pack (Khaki)"
-      },
-      "mcamo": {
-        "className": "B_AssaultPack_mcamo",
-        "name": "Assault Pack (MTP)"
-      },
-      "mcamo_aa": {
-        "className": "B_AssaultPack_mcamo_AA",
-        "name": "Kitbag (Green)"
-      },
-      "mcamo_aar": {
-        "className": "B_AssaultPack_mcamo_AAR",
-        "name": "Tactical Backpack (MTP)"
-      },
-      "mcamo_ammo": {
-        "className": "B_AssaultPack_mcamo_Ammo",
-        "name": "Carryall Backpack (MTP)"
-      },
-      "mcamo_at": {
-        "className": "B_AssaultPack_mcamo_AT",
-        "name": "Kitbag (Green)"
-      },
-      "ocamo": {
-        "className": "B_AssaultPack_ocamo",
-        "name": "Assault Pack (Hex)"
-      },
-      "ocamo_medic": {
-        "className": "B_AssaultPack_ocamo_Medic_F",
-        "name": "Assault Pack (Hex)"
-      },
-      "rgr": {
-        "className": "B_AssaultPack_rgr",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_btlat2": {
-        "className": "B_AssaultPack_rgr_BTLAT2_F",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_btlat": {
-        "className": "B_AssaultPack_rgr_BTLAT_F",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_btreconmedic": {
-        "className": "B_AssaultPack_rgr_BTReconMedic",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_ctrglat2": {
-        "className": "B_AssaultPack_rgr_CTRGLAT2_F",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_ctrglat": {
-        "className": "B_AssaultPack_rgr_CTRGLAT_F",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_ctrgmedic": {
-        "className": "B_AssaultPack_rgr_CTRGMedic_F",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_lat": {
-        "className": "B_AssaultPack_rgr_LAT",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_lat2": {
-        "className": "B_AssaultPack_rgr_LAT2",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_medic": {
-        "className": "B_AssaultPack_rgr_Medic",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_reconexp": {
-        "className": "B_AssaultPack_rgr_ReconExp",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_reconlat": {
-        "className": "B_AssaultPack_rgr_ReconLAT",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_reconmedic": {
-        "className": "B_AssaultPack_rgr_ReconMedic",
-        "name": "Assault Pack (Green)"
-      },
-      "rgr_repair": {
-        "className": "B_AssaultPack_rgr_Repair",
-        "name": "Assault Pack (Green)"
-      },
-      "sgg": {
-        "className": "B_AssaultPack_sgg",
-        "name": "Assault Pack (Sage)"
-      },
-      "tna_btmedic": {
-        "className": "B_AssaultPack_tna_BTMedic_F",
-        "name": "Assault Pack (Tropic)"
-      },
-      "tna_btrepair": {
-        "className": "B_AssaultPack_tna_BTRepair_F",
-        "name": "Assault Pack (Tropic)"
-      },
-      "tna": {
-        "className": "B_AssaultPack_tna_F",
-        "name": "Assault Pack (Tropic)"
-      },
-      "wdl_bwlat2": {
-        "className": "B_AssaultPack_wdl_BWLAT2_F",
-        "name": "Assault Pack (Woodland)"
-      },
-      "wdl_bwlat": {
-        "className": "B_AssaultPack_wdl_BWLAT_F",
-        "name": "Assault Pack (Woodland)"
-      },
-      "wdl_bwmedic": {
-        "className": "B_AssaultPack_wdl_BWMedic_F",
-        "name": "Assault Pack (Woodland)"
-      },
-      "wdl_bwreconmedic": {
-        "className": "B_AssaultPack_wdl_BWReconMedic",
-        "name": "Assault Pack (Woodland)"
-      },
-      "wdl_bwrepair": {
-        "className": "B_AssaultPack_wdl_BWRepair_F",
-        "name": "Assault Pack (Woodland)"
-      },
-      "wdl": {
-        "className": "B_AssaultPack_wdl_F",
-        "name": "Assault Pack (Woodland)"
-      }
-    },
-    "assaultpackg": {
-      "base": {
-        "className": "B_AssaultPackG",
-        "name": "Assault Pack"
-      }
-    },
-    "at": {
-      "01_weapon": {
-        "className": "B_AT_01_weapon_F",
-        "name": "Static Titan Launcher (AT) [NATO]"
-      }
-    },
-    "b": {
-      "parachute_02": {
-        "className": "B_B_Parachute_02_F",
-        "name": "Steerable Parachute"
-      }
-    },
-    "bergen": {
-      "base": {
-        "className": "B_Bergen_Base",
-        "name": "Bag"
-      },
-      "blk": {
-        "className": "B_Bergen_blk",
-        "name": "Bergen (Black)"
-      },
-      "dgtl": {
-        "className": "B_Bergen_dgtl_F",
-        "name": "Bergen Backpack (Digital)"
-      },
-      "hex": {
-        "className": "B_Bergen_hex_F",
-        "name": "Bergen Backpack (Hex)"
-      },
-      "mcamo": {
-        "className": "B_Bergen_mcamo_F",
-        "name": "Bergen Backpack (MTP)"
-      },
-      "rgr": {
-        "className": "B_Bergen_rgr",
-        "name": "Bergen (Green)"
-      },
-      "sgg": {
-        "className": "B_Bergen_sgg",
-        "name": "Bergen (Sage)"
-      },
-      "tna": {
-        "className": "B_Bergen_tna_F",
-        "name": "Bergen Backpack (Tropic)"
-      }
-    },
-    "bergenc": {
-      "base": {
-        "className": "B_BergenC_Base",
-        "name": "Bag"
-      },
-      "blu": {
-        "className": "B_BergenC_blu",
-        "name": "Bergen (Blue)"
-      },
-      "grn": {
-        "className": "B_BergenC_grn",
-        "name": "Bergen (Green)"
-      },
-      "red": {
-        "className": "B_BergenC_red",
-        "name": "Bergen (Red)"
-      }
-    },
-    "bergeng": {
-      "base": {
-        "className": "B_BergenG",
-        "name": "Bergen"
-      },
-      "test_b_soldier_overloaded": {
-        "className": "B_BergenG_TEST_B_Soldier_overloaded",
-        "name": "Carryall Backpack (Olive)"
-      }
-    },
-    "carryall": {
-      "base": {
-        "className": "B_Carryall_Base",
-        "name": "Bag"
-      },
-      "blk": {
-        "className": "B_Carryall_blk",
-        "name": "Carryall Backpack (Black)"
-      },
-      "cbr": {
-        "className": "B_Carryall_cbr",
-        "name": "Carryall Backpack (Coyote)"
-      },
-      "cbr_aat": {
-        "className": "B_Carryall_cbr_AAT",
-        "name": "Carryall Backpack (Coyote)"
-      },
-      "cbr_ahat": {
-        "className": "B_Carryall_cbr_AHAT",
-        "name": "Carryall Backpack (Coyote)"
-      },
-      "eaf_eng": {
-        "className": "B_Carryall_eaf_eng_F",
-        "name": "Carryall Backpack (Geometric)"
-      },
-      "eaf_exp": {
-        "className": "B_Carryall_eaf_exp_F",
-        "name": "Carryall Backpack (Geometric)"
-      },
-      "eaf": {
-        "className": "B_Carryall_eaf_F",
-        "name": "Carryall Backpack (Geometric)"
-      },
-      "eaf_ieaaa": {
-        "className": "B_Carryall_eaf_IEAAA_F",
-        "name": "Carryall Backpack (Geometric)"
-      },
-      "eaf_ieaar": {
-        "className": "B_Carryall_eaf_IEAAR_F",
-        "name": "Carryall Backpack (Geometric)"
-      },
-      "eaf_ieaat": {
-        "className": "B_Carryall_eaf_IEAAT_F",
-        "name": "Carryall Backpack (Geometric)"
-      },
-      "eaf_ieammo": {
-        "className": "B_Carryall_eaf_IEAmmo_F",
-        "name": "Carryall Backpack (Geometric)"
-      },
-      "eaf_mine": {
-        "className": "B_Carryall_eaf_Mine_F",
-        "name": "Carryall Backpack (Geometric)"
-      },
-      "ghex": {
-        "className": "B_Carryall_ghex_F",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "ghex_mine": {
-        "className": "B_Carryall_ghex_Mine",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "ghex_otaaa": {
-        "className": "B_Carryall_ghex_OTAAA_F",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "ghex_otaar_aar": {
-        "className": "B_Carryall_ghex_OTAAR_AAR_F",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "ghex_otaat": {
-        "className": "B_Carryall_ghex_OTAAT_F",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "ghex_otahat": {
-        "className": "B_Carryall_ghex_OTAHAT_F",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "ghex_otammo": {
-        "className": "B_Carryall_ghex_OTAmmo_F",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "ghex_oteng": {
-        "className": "B_Carryall_ghex_OTEng_F",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "ghex_otexp": {
-        "className": "B_Carryall_ghex_OTExp_F",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "ghex_otreconexp": {
-        "className": "B_Carryall_ghex_OTReconExp_F",
-        "name": "Carryall Backpack (Green Hex)"
-      },
-      "green_exp": {
-        "className": "B_Carryall_green_exp_F",
-        "name": "Carryall Backpack (Green)"
-      },
-      "green": {
-        "className": "B_Carryall_green_F",
-        "name": "Carryall Backpack (Green)"
-      },
-      "khk": {
-        "className": "B_Carryall_khk",
-        "name": "Carryall Backpack (Khaki)"
-      },
-      "khk_mine": {
-        "className": "B_Carryall_khk_Mine",
-        "name": "Carryall Backpack (Khaki)"
-      },
-      "mcamo": {
-        "className": "B_Carryall_mcamo",
-        "name": "Carryall Backpack (MTP)"
-      },
-      "mcamo_aaa": {
-        "className": "B_Carryall_mcamo_AAA",
-        "name": "Carryall Backpack (MTP)"
-      },
-      "mcamo_aat": {
-        "className": "B_Carryall_mcamo_AAT",
-        "name": "Carryall Backpack (MTP)"
-      },
-      "ocamo": {
-        "className": "B_Carryall_ocamo",
-        "name": "Carryall Backpack (Hex)"
-      },
-      "ocamo_aaa": {
-        "className": "B_Carryall_ocamo_AAA",
-        "name": "Carryall Backpack (Hex)"
-      },
-      "ocamo_aar": {
-        "className": "B_Carryall_ocamo_AAR",
-        "name": "Carryall Backpack (Hex)"
-      },
-      "ocamo_eng": {
-        "className": "B_Carryall_ocamo_Eng",
-        "name": "Carryall Backpack (Hex)"
-      },
-      "ocamo_exp": {
-        "className": "B_Carryall_ocamo_Exp",
-        "name": "Carryall Backpack (Hex)"
-      },
-      "ocamo_mine": {
-        "className": "B_Carryall_ocamo_Mine",
-        "name": "Carryall Backpack (Hex)"
-      },
-      "oli": {
-        "className": "B_Carryall_oli",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_btaaa": {
-        "className": "B_Carryall_oli_BTAAA_F",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_btaat": {
-        "className": "B_Carryall_oli_BTAAT_F",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_btammo": {
-        "className": "B_Carryall_oli_BTAmmo_F",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_ieaar": {
-        "className": "B_Carryall_oli_IEAAR_F",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_ieammo": {
-        "className": "B_Carryall_oli_IEAmmo_F",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_mine": {
-        "className": "B_Carryall_oli_Mine",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oucamo": {
-        "className": "B_Carryall_oucamo",
-        "name": "Carryall Backpack (Urban)"
-      },
-      "oucamo_aaa": {
-        "className": "B_Carryall_oucamo_AAA",
-        "name": "Carryall Backpack (Urban)"
-      },
-      "oucamo_aar": {
-        "className": "B_Carryall_oucamo_AAR",
-        "name": "Carryall Backpack (Urban)"
-      },
-      "oucamo_aat": {
-        "className": "B_Carryall_oucamo_AAT",
-        "name": "Carryall Backpack (Urban)"
-      },
-      "oucamo_eng": {
-        "className": "B_Carryall_oucamo_Eng",
-        "name": "Carryall Backpack (Urban)"
-      },
-      "oucamo_exp": {
-        "className": "B_Carryall_oucamo_Exp",
-        "name": "Carryall Backpack (Urban)"
-      },
-      "oucamo_repair": {
-        "className": "B_Carryall_oucamo_Repair",
-        "name": "Carryall Backpack (Urban)"
-      },
-      "taiga_exp": {
-        "className": "B_Carryall_taiga_Exp_F",
-        "name": "Carryall Backpack (Taiga)"
-      },
-      "taiga": {
-        "className": "B_Carryall_taiga_F",
-        "name": "Carryall Backpack (Taiga)"
-      },
-      "wdl_bwaaa": {
-        "className": "B_Carryall_wdl_BWAAA_F",
-        "name": "Carryall Backpack (Woodland)"
-      },
-      "wdl_bwaat": {
-        "className": "B_Carryall_wdl_BWAAT_F",
-        "name": "Carryall Backpack (Woodland)"
-      },
-      "wdl_bwammo": {
-        "className": "B_Carryall_wdl_BWAmmo_F",
-        "name": "Carryall Backpack (Woodland)"
-      },
-      "wdl": {
-        "className": "B_Carryall_wdl_F",
-        "name": "Carryall Backpack (Woodland)"
-      },
-      "wdl_mine": {
-        "className": "B_Carryall_wdl_Mine",
-        "name": "Carryall Backpack (Woodland)"
-      }
-    },
-    "civilianbackpack": {
-      "01_everyday_astra": {
-        "className": "B_CivilianBackpack_01_Everyday_Astra_F",
-        "name": "Everyday Backpack (Astra)"
-      },
-      "01_everyday_black": {
-        "className": "B_CivilianBackpack_01_Everyday_Black_F",
-        "name": "Everyday Backpack (Black)"
-      },
-      "01_everyday_idap": {
-        "className": "B_CivilianBackpack_01_Everyday_IDAP_F",
-        "name": "Everyday Backpack [IDAP]"
-      },
-      "01_everyday_vrana": {
-        "className": "B_CivilianBackpack_01_Everyday_Vrana_F",
-        "name": "Everyday Backpack (Vrana)"
-      },
-      "01_sport_blue": {
-        "className": "B_CivilianBackpack_01_Sport_Blue_F",
-        "name": "Sports Backpack (Blue)"
-      },
-      "01_sport_green": {
-        "className": "B_CivilianBackpack_01_Sport_Green_F",
-        "name": "Sports Backpack (Green)"
-      },
-      "01_sport_red": {
-        "className": "B_CivilianBackpack_01_Sport_Red_F",
-        "name": "Sports Backpack (Red)"
-      }
-    },
-    "combinationunitrespirator": {
-      "01": {
-        "className": "B_CombinationUnitRespirator_01_F",
-        "name": "Combination Unit Respirator"
-      }
-    },
-    "fieldpack": {
-      "base": {
-        "className": "B_FieldPack_Base",
-        "name": "Bag"
-      },
-      "blk": {
-        "className": "B_FieldPack_blk",
-        "name": "Field Pack (Black)"
-      },
-      "blk_bandit_8": {
-        "className": "B_FieldPack_blk_Bandit_8_F",
-        "name": "Field Pack (Black)"
-      },
-      "blk_diverexp": {
-        "className": "B_FieldPack_blk_DiverExp",
-        "name": "Field Pack (Black)"
-      },
-      "cb_bandit_3": {
-        "className": "B_FieldPack_cb_Bandit_3_F",
-        "name": "Field Pack (Coyote)"
-      },
-      "cbr": {
-        "className": "B_FieldPack_cbr",
-        "name": "Field Pack (Coyote)"
-      },
-      "cbr_aa": {
-        "className": "B_FieldPack_cbr_AA",
-        "name": "Field Pack (Coyote)"
-      },
-      "cbr_aaa": {
-        "className": "B_FieldPack_cbr_AAA",
-        "name": "Field Pack (Coyote)"
-      },
-      "cbr_aat": {
-        "className": "B_FieldPack_cbr_AAT",
-        "name": "Field Pack (Coyote)"
-      },
-      "cbr_ammo": {
-        "className": "B_FieldPack_cbr_Ammo_F",
-        "name": "Carryall Backpack (Hex)"
-      },
-      "cbr_at": {
-        "className": "B_FieldPack_cbr_AT",
-        "name": "Field Pack (Coyote)"
-      },
-      "cbr_hat": {
-        "className": "B_FieldPack_cbr_HAT",
-        "name": "Field Pack (Hex)"
-      },
-      "cbr_lat": {
-        "className": "B_FieldPack_cbr_LAT",
-        "name": "Field Pack (Hex)"
-      },
-      "cbr_medic": {
-        "className": "B_FieldPack_cbr_Medic",
-        "name": "Field Pack (Coyote)"
-      },
-      "cbr_repair": {
-        "className": "B_FieldPack_cbr_Repair",
-        "name": "Field Pack (Hex)"
-      },
-      "cbr_rpg_at": {
-        "className": "B_FieldPack_cbr_RPG_AT",
-        "name": "Field Pack (Coyote)"
-      },
-      "ghex": {
-        "className": "B_FieldPack_ghex_F",
-        "name": "Field Pack (Green Hex)"
-      },
-      "ghex_otaa": {
-        "className": "B_FieldPack_ghex_OTAA_F",
-        "name": "Field Pack (Green Hex)"
-      },
-      "ghex_otat": {
-        "className": "B_FieldPack_ghex_OTAT_F",
-        "name": "Field Pack (Green Hex)"
-      },
-      "ghex_othat": {
-        "className": "B_FieldPack_ghex_OTHAT_F",
-        "name": "Field Pack (Green Hex)"
-      },
-      "ghex_otlat": {
-        "className": "B_FieldPack_ghex_OTLAT_F",
-        "name": "Field Pack (Green Hex)"
-      },
-      "ghex_otmedic": {
-        "className": "B_FieldPack_ghex_OTMedic_F",
-        "name": "Field Pack (Green Hex)"
-      },
-      "ghex_otreconmedic": {
-        "className": "B_FieldPack_ghex_OTReconMedic_F",
-        "name": "Field Pack (Green Hex)"
-      },
-      "ghex_otrepair": {
-        "className": "B_FieldPack_ghex_OTRepair_F",
-        "name": "Field Pack (Green Hex)"
-      },
-      "ghex_otrpg_at": {
-        "className": "B_FieldPack_ghex_OTRPG_AT_F",
-        "name": "Field Pack (Green Hex)"
-      },
-      "green_exp": {
-        "className": "B_FieldPack_green_Exp_F",
-        "name": "Field Pack (Green)"
-      },
-      "green": {
-        "className": "B_FieldPack_green_F",
-        "name": "Field Pack (Green)"
-      },
-      "green_ieaa": {
-        "className": "B_Fieldpack_green_IEAA_F",
-        "name": "Field Pack (Green)"
-      },
-      "green_ieat": {
-        "className": "B_Fieldpack_green_IEAT_F",
-        "name": "Field Pack (Green)"
-      },
-      "green_ielat2": {
-        "className": "B_Fieldpack_green_IELAT2_F",
-        "name": "Field Pack (Green)"
-      },
-      "green_ielat": {
-        "className": "B_Fieldpack_green_IELAT_F",
-        "name": "Field Pack (Green)"
-      },
-      "green_iemedic": {
-        "className": "B_Fieldpack_green_IEMedic_F",
-        "name": "Field Pack (Green)"
-      },
-      "green_medic": {
-        "className": "B_FieldPack_green_Medic_F",
-        "name": "Field Pack (Green)"
-      },
-      "green_rpg_at": {
-        "className": "B_FieldPack_green_RPG_AT_F",
-        "name": "Field Pack (Green)"
-      },
-      "khk": {
-        "className": "B_FieldPack_khk",
-        "name": "Field Pack (Khaki)"
-      },
-      "khk_bandit_1": {
-        "className": "B_FieldPack_khk_Bandit_1_F",
-        "name": "Field Pack (Khaki)"
-      },
-      "ocamo": {
-        "className": "B_FieldPack_ocamo",
-        "name": "Field Pack (Hex)"
-      },
-      "ocamo_aa": {
-        "className": "B_FieldPack_ocamo_AA",
-        "name": "Field Pack (Hex)"
-      },
-      "ocamo_aar": {
-        "className": "B_FieldPack_ocamo_AAR",
-        "name": "Carryall Backpack (Hex)"
-      },
-      "ocamo_lat": {
-        "className": "B_FieldPack_ocamo_LAT_F",
-        "name": "Field Pack (Hex)"
-      },
-      "ocamo_medic": {
-        "className": "B_FieldPack_ocamo_Medic",
-        "name": "Field Pack (Hex)"
-      },
-      "ocamo_reconexp": {
-        "className": "B_FieldPack_ocamo_ReconExp",
-        "name": "Carryall Backpack (Hex)"
-      },
-      "ocamo_reconmedic": {
-        "className": "B_FieldPack_ocamo_ReconMedic",
-        "name": "Field Pack (Hex)"
-      },
-      "oli": {
-        "className": "B_FieldPack_oli",
-        "name": "Field Pack (Olive)"
-      },
-      "oli_ieaa": {
-        "className": "B_Fieldpack_oli_IEAA_F",
-        "name": "Field Pack (Olive)"
-      },
-      "oli_ieat": {
-        "className": "B_Fieldpack_oli_IEAT_F",
-        "name": "Field Pack (Olive)"
-      },
-      "oli_ielat2": {
-        "className": "B_Fieldpack_oli_IELAT2_F",
-        "name": "Field Pack (Olive)"
-      },
-      "oli_ielat": {
-        "className": "B_Fieldpack_oli_IELAT_F",
-        "name": "Field Pack (Olive)"
-      },
-      "oucamo": {
-        "className": "B_FieldPack_oucamo",
-        "name": "Field Pack (Urban)"
-      },
-      "oucamo_aa": {
-        "className": "B_FieldPack_oucamo_AA",
-        "name": "Field Pack (Urban)"
-      },
-      "oucamo_aar": {
-        "className": "B_FieldPack_oucamo_AAR",
-        "name": "Carryall Backpack (Urban)"
-      },
-      "oucamo_ammo": {
-        "className": "B_FieldPack_oucamo_Ammo",
-        "name": "Carryall Backpack (Urban)"
-      },
-      "oucamo_at": {
-        "className": "B_FieldPack_oucamo_AT",
-        "name": "Field Pack (Urban)"
-      },
-      "oucamo_lat": {
-        "className": "B_FieldPack_oucamo_LAT",
-        "name": "Field Pack (Urban)"
-      },
-      "oucamo_medic": {
-        "className": "B_FieldPack_oucamo_Medic",
-        "name": "Field Pack (Urban)"
-      },
-      "oucamo_repair": {
-        "className": "B_FieldPack_oucamo_Repair",
-        "name": "Field Pack (Urban)"
-      },
-      "taiga": {
-        "className": "B_FieldPack_taiga_F",
-        "name": "Field Pack (Taiga)"
-      },
-      "taiga_medic": {
-        "className": "B_FieldPack_taiga_Medic_F",
-        "name": "Field Pack (Taiga)"
-      },
-      "taiga_rpg_at": {
-        "className": "B_FieldPack_taiga_RPG_AT_F",
-        "name": "Field Pack (Taiga)"
-      }
-    },
-    "g": {
-      "hmg_02_high_weapon": {
-        "className": "B_G_HMG_02_high_weapon_F",
-        "name": "Dismantled M2 HMG .50 (Raised) [FIA]"
-      },
-      "hmg_02_support": {
-        "className": "B_G_HMG_02_support_F",
-        "name": "Folded Tripod M2 HMG .50 [Syndikat]"
-      },
-      "hmg_02_support_high": {
-        "className": "B_G_HMG_02_support_high_F",
-        "name": "Folded Tripod M2 HMG .50 (Raised) [FIA]"
-      },
-      "hmg_02_weapon": {
-        "className": "B_G_HMG_02_weapon_F",
-        "name": "Dismantled M2 HMG .50 [FIA]"
-      }
-    },
-    "gmg": {
-      "01_a_weapon": {
-        "className": "B_GMG_01_A_weapon_F",
-        "name": "Dismantled Autonomous GMG [NATO]"
-      },
-      "01_high_weapon": {
-        "className": "B_GMG_01_high_weapon_F",
-        "name": "Dismantled Mk32 GMG (Raised) [NATO]"
-      },
-      "01_weapon": {
-        "className": "B_GMG_01_weapon_F",
-        "name": "Dismantled Mk32 GMG [NATO]"
-      },
-      "01_weapon_grn": {
-        "className": "B_GMG_01_Weapon_grn_F",
-        "name": "Dismantled Mk32 GMG (Green) [NATO]"
-      }
-    },
-    "hmg": {
-      "01_a_weapon": {
-        "className": "B_HMG_01_A_weapon_F",
-        "name": "Dismantled Autonomous MG [NATO]"
-      },
-      "01_high_weapon": {
-        "className": "B_HMG_01_high_weapon_F",
-        "name": "Dismantled Mk30 HMG (Raised) [NATO]"
-      },
-      "01_support": {
-        "className": "B_HMG_01_support_F",
-        "name": "Folded Tripod [NATO]"
-      },
-      "01_support_grn": {
-        "className": "B_HMG_01_support_grn_F",
-        "name": "Folded Tripod (Green) [NATO]"
-      },
-      "01_support_high": {
-        "className": "B_HMG_01_support_high_F",
-        "name": "Folded Tripod (Raised) [NATO]"
-      },
-      "01_weapon": {
-        "className": "B_HMG_01_weapon_F",
-        "name": "Dismantled Mk30 HMG [NATO]"
-      },
-      "01_weapon_grn": {
-        "className": "B_HMG_01_Weapon_grn_F",
-        "name": "Dismantled Mk30 HMG (Green) [NATO]"
-      },
-      "02_high_weapon": {
-        "className": "B_HMG_02_high_weapon_F",
-        "name": "Dismantled M2 HMG .50 (Raised) [NATO]"
-      },
-      "02_support": {
-        "className": "B_HMG_02_support_F",
-        "name": "Folded Tripod M2 HMG .50 [NATO]"
-      },
-      "02_support_high": {
-        "className": "B_HMG_02_support_high_F",
-        "name": "Folded Tripod M2 HMG .50 (Raised) [NATO]"
-      },
-      "02_weapon": {
-        "className": "B_HMG_02_weapon_F",
-        "name": "Dismantled M2 HMG .50 [NATO]"
-      }
-    },
-    "huntingbackpack": {
-      "base": {
-        "className": "B_HuntingBackpack",
-        "name": "Hunting Backpack"
-      }
-    },
-    "i": {
-      "parachute_02": {
-        "className": "B_I_Parachute_02_F",
-        "name": "Steerable Parachute"
-      }
-    },
-    "kitbag": {
-      "base": {
-        "className": "B_Kitbag_Base",
-        "name": "Bag"
-      },
-      "cbr": {
-        "className": "B_Kitbag_cbr",
-        "name": "Kitbag (Coyote)"
-      },
-      "cbr_bandit_2": {
-        "className": "B_Kitbag_cbr_Bandit_2_F",
-        "name": "Kitbag (Coyote)"
-      },
-      "cbr_para_5": {
-        "className": "B_Kitbag_cbr_Para_5_F",
-        "name": "Kitbag (Coyote)"
-      },
-      "mcamo": {
-        "className": "B_Kitbag_mcamo",
-        "name": "Kitbag (MTP)"
-      },
-      "mcamo_eng": {
-        "className": "B_Kitbag_mcamo_Eng",
-        "name": "Kitbag (MTP)"
-      },
-      "rgr": {
-        "className": "B_Kitbag_rgr",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_aar": {
-        "className": "B_Kitbag_rgr_AAR",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_btaa": {
-        "className": "B_Kitbag_rgr_BTAA_F",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_btat": {
-        "className": "B_Kitbag_rgr_BTAT_F",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_bteng": {
-        "className": "B_Kitbag_rgr_BTEng_F",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_btexp": {
-        "className": "B_Kitbag_rgr_BTExp_F",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_btreconexp": {
-        "className": "B_Kitbag_rgr_BTReconExp_F",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_bwaar": {
-        "className": "B_Kitbag_rgr_BWAAR",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_ctrgexp": {
-        "className": "B_Kitbag_rgr_CTRGExp_F",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_exp": {
-        "className": "B_Kitbag_rgr_Exp",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_mine": {
-        "className": "B_Kitbag_rgr_Mine",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_para_3": {
-        "className": "B_Kitbag_rgr_Para_3_F",
-        "name": "Kitbag (Green)"
-      },
-      "rgr_para_8": {
-        "className": "B_Kitbag_rgr_Para_8_F",
-        "name": "Kitbag (Green)"
-      },
-      "sgg": {
-        "className": "B_Kitbag_sgg",
-        "name": "Kitbag (Sage)"
-      },
-      "tan": {
-        "className": "B_Kitbag_tan",
-        "name": "Kitbag (Tan)"
-      }
-    },
-    "legstrapbag": {
-      "black": {
-        "className": "B_LegStrapBag_black_F",
-        "name": "Leg Strap Bag (Black)"
-      },
-      "black_repair": {
-        "className": "B_LegStrapBag_black_repair_F",
-        "name": "Leg Strap Bag (Black)"
-      },
-      "coyote": {
-        "className": "B_LegStrapBag_coyote_F",
-        "name": "Leg Strap Bag (Coyote)"
-      },
-      "coyote_repair": {
-        "className": "B_LegStrapBag_coyote_repair_F",
-        "name": "Leg Strap Bag (Coyote)"
-      },
-      "olive": {
-        "className": "B_LegStrapBag_olive_F",
-        "name": "Leg Strap Bag (Olive)"
-      },
-      "olive_repair": {
-        "className": "B_LegStrapBag_olive_repair_F",
-        "name": "Leg Strap Bag (Olive)"
-      }
-    },
-    "messenger": {
-      "black": {
-        "className": "B_Messenger_Black_F",
-        "name": "Messenger Bag (Black)"
-      },
-      "coyote": {
-        "className": "B_Messenger_Coyote_F",
-        "name": "Messenger Bag (Coyote)"
-      },
-      "gray": {
-        "className": "B_Messenger_Gray_F",
-        "name": "Messenger Bag (Gray)"
-      },
-      "gray_medical": {
-        "className": "B_Messenger_Gray_Medical_F",
-        "name": "Messenger Bag (Gray)"
-      },
-      "idap": {
-        "className": "B_Messenger_IDAP_F",
-        "name": "Messenger Bag [IDAP]"
-      },
-      "idap_medical": {
-        "className": "B_Messenger_IDAP_Medical_F",
-        "name": "Messenger Bag [IDAP]"
-      },
-      "idap_trainingmines": {
-        "className": "B_Messenger_IDAP_TrainingMines_F",
-        "name": "Messenger Bag [IDAP]"
-      },
-      "olive": {
-        "className": "B_Messenger_Olive_F",
-        "name": "Messenger Bag (Olive)"
-      }
-    },
-    "mortar": {
-      "01_support": {
-        "className": "B_Mortar_01_support_F",
-        "name": "Folded Mk6 Mortar Bipod [NATO]"
-      },
-      "01_support_grn": {
-        "className": "B_Mortar_01_support_grn_F",
-        "name": "Folded Mortar Mk6 Bipod (Green) [NATO]"
-      },
-      "01_weapon": {
-        "className": "B_Mortar_01_weapon_F",
-        "name": "Folded Mk6 Mortar Tube [NATO]"
-      },
-      "01_weapon_grn": {
-        "className": "B_Mortar_01_Weapon_grn_F",
-        "name": "Folded Mk6 Mortar Tube (Green) [NATO]"
-      }
-    },
-    "o": {
-      "parachute_02": {
-        "className": "B_O_Parachute_02_F",
-        "name": "Steerable Parachute"
-      }
-    },
-    "outdoorpack": {
-      "base": {
-        "className": "B_OutdoorPack_Base",
-        "name": "Bag"
-      },
-      "blk": {
-        "className": "B_OutdoorPack_blk",
-        "name": "Outdoor Pack (Black)"
-      },
-      "blu": {
-        "className": "B_OutdoorPack_blu",
-        "name": "Outdoor Pack (Blue)"
-      },
-      "tan": {
-        "className": "B_OutdoorPack_tan",
-        "name": "Outdoor Pack (Tan)"
-      }
-    },
-    "parachute": {
-      "base": {
-        "className": "B_Parachute",
-        "name": "Steerable Parachute"
-      }
-    },
-    "patrol": {
-      "carryall_green_ammo": {
-        "className": "B_Patrol_Carryall_green_Ammo_F",
-        "name": "Carryall Backpack (Green)"
-      },
-      "carryall_taiga_medic": {
-        "className": "B_Patrol_Carryall_taiga_medic_F",
-        "name": "Carryall Backpack (Taiga)"
-      },
-      "fieldpack_green_eng": {
-        "className": "B_Patrol_FieldPack_green_eng_F",
-        "name": "Field Pack (Green)"
-      },
-      "launcher_bag": {
-        "className": "B_Patrol_Launcher_bag_F",
-        "name": "Assault Pack (Green)"
-      },
-      "leader_bag": {
-        "className": "B_Patrol_Leader_bag_F",
-        "name": "Kitbag (Green)"
-      },
-      "medic_bag": {
-        "className": "B_Patrol_Medic_bag_F",
-        "name": "Kitbag (Coyote)"
-      },
-      "respawn_bag": {
-        "className": "B_Patrol_Respawn_bag_F",
-        "name": "Camp (Dome Tent, Combat Patrol)"
-      },
-      "supply_bag": {
-        "className": "B_Patrol_Supply_bag_F",
-        "name": "Kitbag (MTP)"
-      }
-    },
-    "radiobag": {
-      "01_black": {
-        "className": "B_RadioBag_01_black_F",
-        "name": "Radio Pack (Black)"
-      },
-      "01_digi": {
-        "className": "B_RadioBag_01_digi_F",
-        "name": "Radio Pack (Digital) [AAF]"
-      },
-      "01_eaf": {
-        "className": "B_RadioBag_01_eaf_F",
-        "name": "Radio Pack (Geometric) [LDF]"
-      },
-      "01_eaf_fak": {
-        "className": "B_RadioBag_01_eaf_FAK_F",
-        "name": "Radio Pack (Geometric) [LDF]"
-      },
-      "01_ghex": {
-        "className": "B_RadioBag_01_ghex_F",
-        "name": "Radio Pack (Green Hex) [CSAT]"
-      },
-      "01_hex": {
-        "className": "B_RadioBag_01_hex_F",
-        "name": "Radio Pack (Hex) [CSAT]"
-      },
-      "01_mtp": {
-        "className": "B_RadioBag_01_mtp_F",
-        "name": "Radio Pack (MTP) [NATO]"
-      },
-      "01_oucamo": {
-        "className": "B_RadioBag_01_oucamo_F",
-        "name": "Radio Pack (Urban) [CSAT]"
-      },
-      "01_tropic": {
-        "className": "B_RadioBag_01_tropic_F",
-        "name": "Radio Pack (Tropic) [NATO]"
-      },
-      "01_wdl": {
-        "className": "B_RadioBag_01_wdl_F",
-        "name": "Radio Pack (Woodland) [NATO]"
-      },
-      "01_wdl_fak": {
-        "className": "B_RadioBag_01_wdl_FAK_F",
-        "name": "Radio Pack (Woodland) [NATO]"
-      }
-    },
-    "respawn": {
-      "sleeping_bag_blue": {
-        "className": "B_Respawn_Sleeping_bag_blue_F",
-        "name": "Camp (Blue Sleeping Bag)"
-      },
-      "sleeping_bag_brown": {
-        "className": "B_Respawn_Sleeping_bag_brown_F",
-        "name": "Camp (Brown Sleeping Bag)"
-      },
-      "sleeping_bag": {
-        "className": "B_Respawn_Sleeping_bag_F",
-        "name": "Camp (Green Sleeping Bag)"
-      },
-      "tenta": {
-        "className": "B_Respawn_TentA_F",
-        "name": "Camp (Ridge Tent)"
-      },
-      "tentdome": {
-        "className": "B_Respawn_TentDome_F",
-        "name": "Camp (Dome Tent)"
-      }
-    },
-    "scba": {
-      "01": {
-        "className": "B_SCBA_01_F",
-        "name": "Self-Contained Breathing Apparatus"
-      }
-    },
-    "static": {
-      "designator_01_weapon": {
-        "className": "B_Static_Designator_01_weapon_F",
-        "name": "Remote Designator Bag [NATO]"
-      }
-    },
-    "tacticalpack": {
-      "base": {
-        "className": "B_TacticalPack_Base",
-        "name": "Bag"
-      },
-      "blk": {
-        "className": "B_TacticalPack_blk",
-        "name": "Tactical Backpack (Black)"
-      },
-      "mcamo": {
-        "className": "B_TacticalPack_mcamo",
-        "name": "Tactical Backpack (MTP)"
-      },
-      "ocamo": {
-        "className": "B_TacticalPack_ocamo",
-        "name": "Tactical Backpack (Hex)"
-      },
-      "ocamo_aa": {
-        "className": "B_TacticalPack_ocamo_AA_F",
-        "name": "Tactical Backpack (Hex)"
-      },
-      "ocamo_at": {
-        "className": "B_TacticalPack_ocamo_AT_F",
-        "name": "Tactical Backpack (Hex)"
-      },
-      "oli": {
-        "className": "B_TacticalPack_oli",
-        "name": "Tactical Backpack (Olive)"
-      },
-      "oli_aar": {
-        "className": "B_TacticalPack_oli_AAR",
-        "name": "Tactical Backpack (Olive)"
-      },
-      "rgr": {
-        "className": "B_TacticalPack_rgr",
-        "name": "Tactical Backpack (Green)"
-      }
-    },
-    "uav": {
-      "01_backpack": {
-        "className": "B_UAV_01_backpack_F",
-        "name": "UAV Bag (AR-2) [NATO]"
-      },
-      "06_backpack": {
-        "className": "B_UAV_06_backpack_F",
-        "name": "UAV Bag (AL-6) [NATO]"
-      },
-      "06_medical_backpack": {
-        "className": "B_UAV_06_medical_backpack_F",
-        "name": "UAV Bag (AL-6, Medical) [NATO]"
-      }
-    },
-    "ugv": {
-      "02_demining_backpack": {
-        "className": "B_UGV_02_Demining_backpack_F",
-        "name": "UGV Bag (ED-1D) [NATO]"
-      },
-      "02_science_backpack": {
-        "className": "B_UGV_02_Science_backpack_F",
-        "name": "UGV Bag (ED-1E) [NATO]"
-      }
-    },
-    "viperharness": {
-      "blk": {
-        "className": "B_ViperHarness_blk_F",
-        "name": "Viper Harness (Black)"
-      },
-      "ghex_exp": {
-        "className": "B_ViperHarness_ghex_Exp_F",
-        "name": "Viper Harness (Green Hex)"
-      },
-      "ghex": {
-        "className": "B_ViperHarness_ghex_F",
-        "name": "Viper Harness (Green Hex)"
-      },
-      "ghex_jtac": {
-        "className": "B_ViperHarness_ghex_JTAC_F",
-        "name": "Viper Harness (Green Hex)"
-      },
-      "ghex_lat": {
-        "className": "B_ViperHarness_ghex_LAT_F",
-        "name": "Viper Harness (Green Hex)"
-      },
-      "ghex_m": {
-        "className": "B_ViperHarness_ghex_M_F",
-        "name": "Viper Harness (Green Hex)"
-      },
-      "ghex_medic": {
-        "className": "B_ViperHarness_ghex_Medic_F",
-        "name": "Viper Harness (Green Hex)"
-      },
-      "ghex_tl": {
-        "className": "B_ViperHarness_ghex_TL_F",
-        "name": "Viper Harness (Green Hex)"
-      },
-      "hex_exp": {
-        "className": "B_ViperHarness_hex_Exp_F",
-        "name": "Viper Harness (Hex)"
-      },
-      "hex": {
-        "className": "B_ViperHarness_hex_F",
-        "name": "Viper Harness (Hex)"
-      },
-      "hex_jtac": {
-        "className": "B_ViperHarness_hex_JTAC_F",
-        "name": "Viper Harness (Hex)"
-      },
-      "hex_lat": {
-        "className": "B_ViperHarness_hex_LAT_F",
-        "name": "Viper Harness (Hex)"
-      },
-      "hex_m": {
-        "className": "B_ViperHarness_hex_M_F",
-        "name": "Viper Harness (Hex)"
-      },
-      "hex_medic": {
-        "className": "B_ViperHarness_hex_Medic_F",
-        "name": "Viper Harness (Hex)"
-      },
-      "hex_tl": {
-        "className": "B_ViperHarness_hex_TL_F",
-        "name": "Viper Harness (Hex)"
-      },
-      "khk": {
-        "className": "B_ViperHarness_khk_F",
-        "name": "Viper Harness (Khaki)"
-      },
-      "oli": {
-        "className": "B_ViperHarness_oli_F",
-        "name": "Viper Harness (Olive)"
-      }
-    },
-    "viperlightharness": {
-      "blk": {
-        "className": "B_ViperLightHarness_blk_F",
-        "name": "Viper Light Harness (Black)"
-      },
-      "ghex": {
-        "className": "B_ViperLightHarness_ghex_F",
-        "name": "Viper Light Harness (Green Hex)"
-      },
-      "hex": {
-        "className": "B_ViperLightHarness_hex_F",
-        "name": "Viper Light Harness (Hex)"
-      },
-      "khk": {
-        "className": "B_ViperLightHarness_khk_F",
-        "name": "Viper Light Harness (Khaki)"
-      },
-      "oli": {
-        "className": "B_ViperLightHarness_oli_F",
-        "name": "Viper Light Harness (Olive)"
-      }
-    },
-    "w": {
-      "static_designator_01_weapon": {
-        "className": "B_W_Static_Designator_01_weapon_F",
-        "name": "Remote Designator Bag [NATO]"
-      }
-    }
-  },
-  "bag": {
-    "base": {
-      "base": {
-        "className": "Bag_Base",
-        "name": "Bag"
-      }
-    }
-  },
-  "c": {
-    "bergen": {
-      "base": {
-        "className": "C_Bergen_Base",
-        "name": "Bag"
-      },
-      "blu": {
-        "className": "C_Bergen_blu",
-        "name": "Bergen (Blue)"
-      },
-      "grn": {
-        "className": "C_Bergen_grn",
-        "name": "Bergen (Green)"
-      },
-      "red": {
-        "className": "C_Bergen_red",
-        "name": "Bergen (Red)"
-      }
-    },
-    "idap": {
-      "uav_01_backpack": {
-        "className": "C_IDAP_UAV_01_backpack_F",
-        "name": "UAV Bag [IDAP]"
-      },
-      "uav_06_antimine_backpack": {
-        "className": "C_IDAP_UAV_06_antimine_backpack_F",
-        "name": "UAV Bag (Demining) [IDAP]"
-      },
-      "uav_06_backpack": {
-        "className": "C_IDAP_UAV_06_backpack_F",
-        "name": "UAV Bag (Utility) [IDAP]"
-      },
-      "uav_06_medical_backpack": {
-        "className": "C_IDAP_UAV_06_medical_backpack_F",
-        "name": "UAV Bag (AL-6, Medical) [IDAP]"
-      },
-      "ugv_02_demining_backpack": {
-        "className": "C_IDAP_UGV_02_Demining_backpack_F",
-        "name": "UGV Bag (Demining) [IDAP]"
-      }
-    },
-    "uav": {
-      "06_backpack": {
-        "className": "C_UAV_06_backpack_F",
-        "name": "UAV Bag (Utility)"
-      },
-      "06_medical_backpack": {
-        "className": "C_UAV_06_medical_backpack_F",
-        "name": "UAV Bag (Utility, Medical)"
-      }
-    }
-  },
-  "g": {
-    "assaultpack": {
-      "base": {
-        "className": "G_AssaultPack",
-        "name": "Assault Pack"
-      }
-    },
-    "bergen": {
-      "base": {
-        "className": "G_Bergen",
-        "name": "Bergen"
-      }
-    },
-    "carryall": {
-      "ammo": {
-        "className": "G_Carryall_Ammo",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "exp": {
-        "className": "G_Carryall_Exp",
-        "name": "Carryall Backpack (Olive)"
-      }
-    },
-    "fieldpack": {
-      "lat": {
-        "className": "G_FieldPack_LAT",
-        "name": "Tactical Backpack (Black)"
-      },
-      "lat2": {
-        "className": "G_FieldPack_LAT2",
-        "name": "Tactical Backpack (Black)"
-      },
-      "medic": {
-        "className": "G_FieldPack_Medic",
-        "name": "Tactical Backpack (Black)"
-      }
-    },
-    "tacticalpack": {
-      "eng": {
-        "className": "G_TacticalPack_Eng",
-        "name": "Carryall Backpack (Olive)"
-      }
-    }
-  },
-  "i": {
-    "aa": {
-      "01_weapon": {
-        "className": "I_AA_01_weapon_F",
-        "name": "Static Titan Launcher (AA) [AAF]"
-      }
-    },
-    "assault": {
-      "diver": {
-        "className": "I_Assault_Diver",
-        "name": "Field Pack (Black)"
-      }
-    },
-    "at": {
-      "01_weapon": {
-        "className": "I_AT_01_weapon_F",
-        "name": "Static Titan Launcher (AT) [AAF]"
-      }
-    },
-    "c": {
-      "hmg_02_high_weapon": {
-        "className": "I_C_HMG_02_high_weapon_F",
-        "name": "Dismantled M2 HMG .50 (Raised) [Syndikat]"
-      },
-      "hmg_02_support": {
-        "className": "I_C_HMG_02_support_F",
-        "name": "Folded Tripod M2 HMG .50 [FIA]"
-      },
-      "hmg_02_support_high": {
-        "className": "I_C_HMG_02_support_high_F",
-        "name": "Folded Tripod M2 HMG .50 (Raised) [Syndikat]"
-      },
-      "hmg_02_weapon": {
-        "className": "I_C_HMG_02_weapon_F",
-        "name": "Dismantled M2 HMG .50 [Syndikat]"
-      }
-    },
-    "carryall": {
-      "oli_aaa": {
-        "className": "I_Carryall_oli_AAA",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_aat": {
-        "className": "I_Carryall_oli_AAT",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_eng": {
-        "className": "I_Carryall_oli_Eng",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_exp": {
-        "className": "I_Carryall_oli_Exp",
-        "name": "Carryall Backpack (Olive)"
-      }
-    },
-    "e": {
-      "aa_01_weapon": {
-        "className": "I_E_AA_01_weapon_F",
-        "name": "Static Titan Launcher (AA) [LDF]"
-      },
-      "at_01_weapon": {
-        "className": "I_E_AT_01_weapon_F",
-        "name": "Static Titan Launcher (AT) [LDF]"
-      },
-      "gmg_01_a_weapon": {
-        "className": "I_E_GMG_01_A_Weapon_F",
-        "name": "Dismantled Autonomous GMG [LDF]"
-      },
-      "gmg_01_high_weapon": {
-        "className": "I_E_GMG_01_high_Weapon_F",
-        "name": "Dismantled Mk32 GMG (Raised) [LDF]"
-      },
-      "gmg_01_weapon": {
-        "className": "I_E_GMG_01_Weapon_F",
-        "name": "Dismantled Mk32 GMG [LDF]"
-      },
-      "hmg_01_a_weapon": {
-        "className": "I_E_HMG_01_A_Weapon_F",
-        "name": "Dismantled Autonomous MG [LDF]"
-      },
-      "hmg_01_high_weapon": {
-        "className": "I_E_HMG_01_high_Weapon_F",
-        "name": "Dismantled Mk30 HMG (Raised) [LDF]"
-      },
-      "hmg_01_support": {
-        "className": "I_E_HMG_01_support_F",
-        "name": "Folded Tripod [LDF]"
-      },
-      "hmg_01_support_high": {
-        "className": "I_E_HMG_01_support_high_F",
-        "name": "Folded Tripod (Raised) [LDF]"
-      },
-      "hmg_01_weapon": {
-        "className": "I_E_HMG_01_Weapon_F",
-        "name": "Dismantled Mk30 HMG [LDF]"
-      },
-      "hmg_02_high_weapon": {
-        "className": "I_E_HMG_02_high_weapon_F",
-        "name": "Dismantled M2 HMG .50 (Raised) [LDF]"
-      },
-      "hmg_02_support": {
-        "className": "I_E_HMG_02_support_F",
-        "name": "Folded Tripod M2 HMG .50 [LDF]"
-      },
-      "hmg_02_support_high": {
-        "className": "I_E_HMG_02_support_high_F",
-        "name": "Folded Tripod M2 HMG .50 (Raised) [LDF]"
-      },
-      "hmg_02_weapon": {
-        "className": "I_E_HMG_02_weapon_F",
-        "name": "Dismantled M2 HMG .50 [LDF]"
-      },
-      "mortar_01_support": {
-        "className": "I_E_Mortar_01_support_F",
-        "name": "Folded Mk6 Mortar Bipod [LDF]"
-      },
-      "mortar_01_weapon": {
-        "className": "I_E_Mortar_01_Weapon_F",
-        "name": "Folded Mk6 Mortar Tube [LDF]"
-      },
-      "uav_01_backpack": {
-        "className": "I_E_UAV_01_backpack_F",
-        "name": "UAV Bag (AR-2) [LDF]"
-      },
-      "uav_06_backpack": {
-        "className": "I_E_UAV_06_backpack_F",
-        "name": "UAV Bag (AL-6) [LDF]"
-      },
-      "uav_06_medical_backpack": {
-        "className": "I_E_UAV_06_medical_backpack_F",
-        "name": "UAV Bag (AL-6, Medical) [LDF]"
-      },
-      "ugv_02_demining_backpack": {
-        "className": "I_E_UGV_02_Demining_backpack_F",
-        "name": "UGV Bag (ED-1D) [LDF]"
-      },
-      "ugv_02_science_backpack": {
-        "className": "I_E_UGV_02_Science_backpack_F",
-        "name": "UGV Bag (ED-1E) [LDF]"
-      }
-    },
-    "fieldpack": {
-      "oli_aa": {
-        "className": "I_Fieldpack_oli_AA",
-        "name": "Field Pack (Olive)"
-      },
-      "oli_aar": {
-        "className": "I_Fieldpack_oli_AAR",
-        "name": "Tactical Backpack (Olive)"
-      },
-      "oli_ammo": {
-        "className": "I_Fieldpack_oli_Ammo",
-        "name": "Carryall Backpack (Olive)"
-      },
-      "oli_at": {
-        "className": "I_Fieldpack_oli_AT",
-        "name": "Field Pack (Olive)"
-      },
-      "oli_lat": {
-        "className": "I_Fieldpack_oli_LAT",
-        "name": "Assault Pack (Digital)"
-      },
-      "oli_lat2": {
-        "className": "I_Fieldpack_oli_LAT2",
-        "name": "Assault Pack (Digital)"
-      },
-      "oli_medic": {
-        "className": "I_Fieldpack_oli_Medic",
-        "name": "Field Pack (Olive)"
-      },
-      "oli_repair": {
-        "className": "I_Fieldpack_oli_Repair",
-        "name": "Field Pack (Olive)"
-      }
-    },
-    "g": {
-      "hmg_02_high_weapon": {
-        "className": "I_G_HMG_02_high_weapon_F",
-        "name": "Dismantled M2 HMG .50 (Raised) [FIA]"
-      },
-      "hmg_02_support": {
-        "className": "I_G_HMG_02_support_F",
-        "name": "Folded Tripod M2 HMG .50 [Syndikat]"
-      },
-      "hmg_02_support_high": {
-        "className": "I_G_HMG_02_support_high_F",
-        "name": "Folded Tripod M2 HMG .50 (Raised) [FIA]"
-      },
-      "hmg_02_weapon": {
-        "className": "I_G_HMG_02_weapon_F",
-        "name": "Dismantled M2 HMG .50 [FIA]"
-      }
-    },
-    "gmg": {
-      "01_a_weapon": {
-        "className": "I_GMG_01_A_weapon_F",
-        "name": "Dismantled Autonomous GMG [AAF]"
-      },
-      "01_high_weapon": {
-        "className": "I_GMG_01_high_weapon_F",
-        "name": "Dismantled Mk32 GMG (Raised) [AAF]"
-      },
-      "01_weapon": {
-        "className": "I_GMG_01_weapon_F",
-        "name": "Dismantled Mk32 GMG [AAF]"
-      }
-    },
-    "hmg": {
-      "01_a_weapon": {
-        "className": "I_HMG_01_A_weapon_F",
-        "name": "Dismantled Autonomous MG [AAF]"
-      },
-      "01_high_weapon": {
-        "className": "I_HMG_01_high_weapon_F",
-        "name": "Dismantled Mk30 HMG (Raised) [AAF]"
-      },
-      "01_support": {
-        "className": "I_HMG_01_support_F",
-        "name": "Folded Tripod [AAF]"
-      },
-      "01_support_high": {
-        "className": "I_HMG_01_support_high_F",
-        "name": "Folded Tripod (Raised) [AAF]"
-      },
-      "01_weapon": {
-        "className": "I_HMG_01_weapon_F",
-        "name": "Dismantled Mk30 HMG [AAF]"
-      },
-      "02_high_weapon": {
-        "className": "I_HMG_02_high_weapon_F",
-        "name": "Dismantled M2 HMG .50 (Raised) [AAF]"
-      },
-      "02_support": {
-        "className": "I_HMG_02_support_F",
-        "name": "Folded Tripod M2 HMG .50 [AAF]"
-      },
-      "02_support_high": {
-        "className": "I_HMG_02_support_high_F",
-        "name": "Folded Tripod M2 HMG .50 (Raised) [AAF]"
-      },
-      "02_weapon": {
-        "className": "I_HMG_02_weapon_F",
-        "name": "Dismantled M2 HMG .50 [AAF]"
-      }
-    },
-    "mortar": {
-      "01_support": {
-        "className": "I_Mortar_01_support_F",
-        "name": "Folded Mk6 Mortar Bipod [AAF]"
-      },
-      "01_weapon": {
-        "className": "I_Mortar_01_weapon_F",
-        "name": "Folded Mk6 Mortar Tube [AAF]"
-      }
-    },
-    "uav": {
-      "01_backpack": {
-        "className": "I_UAV_01_backpack_F",
-        "name": "UAV Bag (AR-2) [AAF]"
-      },
-      "06_backpack": {
-        "className": "I_UAV_06_backpack_F",
-        "name": "UAV Bag (AL-6) [AAF]"
-      },
-      "06_medical_backpack": {
-        "className": "I_UAV_06_medical_backpack_F",
-        "name": "UAV Bag (AL-6, Medical) [AAF]"
-      }
-    },
-    "ugv": {
-      "02_demining_backpack": {
-        "className": "I_UGV_02_Demining_backpack_F",
-        "name": "UGV Bag (ED-1D) [AAF]"
-      },
-      "02_science_backpack": {
-        "className": "I_UGV_02_Science_backpack_F",
-        "name": "UGV Bag (ED-1E) [AAF]"
-      }
-    }
-  },
-  "o": {
-    "aa": {
-      "01_weapon": {
-        "className": "O_AA_01_weapon_F",
-        "name": "Static Titan Launcher (AA) [CSAT]"
-      }
-    },
-    "assault": {
-      "diver": {
-        "className": "O_Assault_Diver",
-        "name": "Field Pack (Black)"
-      }
-    },
-    "at": {
-      "01_weapon": {
-        "className": "O_AT_01_weapon_F",
-        "name": "Static Titan Launcher (AT) [CSAT]"
-      }
-    },
-    "g": {
-      "hmg_02_high_weapon": {
-        "className": "O_G_HMG_02_high_weapon_F",
-        "name": "Dismantled M2 HMG .50 (Raised) [FIA]"
-      },
-      "hmg_02_support": {
-        "className": "O_G_HMG_02_support_F",
-        "name": "Folded Tripod M2 HMG .50 [Syndikat]"
-      },
-      "hmg_02_support_high": {
-        "className": "O_G_HMG_02_support_high_F",
-        "name": "Folded Tripod M2 HMG .50 (Raised) [FIA]"
-      },
-      "hmg_02_weapon": {
-        "className": "O_G_HMG_02_weapon_F",
-        "name": "Dismantled M2 HMG .50 [FIA]"
-      }
-    },
-    "gmg": {
-      "01_a_weapon": {
-        "className": "O_GMG_01_A_weapon_F",
-        "name": "Dismantled Autonomous GMG [CSAT]"
-      },
-      "01_high_weapon": {
-        "className": "O_GMG_01_high_weapon_F",
-        "name": "Dismantled Mk32 GMG (Raised) [CSAT]"
-      },
-      "01_weapon": {
-        "className": "O_GMG_01_weapon_F",
-        "name": "Dismantled Mk32 GMG [CSAT]"
-      }
-    },
-    "hmg": {
-      "01_a_weapon": {
-        "className": "O_HMG_01_A_weapon_F",
-        "name": "Dismantled Autonomous MG [CSAT]"
-      },
-      "01_high_weapon": {
-        "className": "O_HMG_01_high_weapon_F",
-        "name": "Dismantled Mk30 HMG (Raised) [CSAT]"
-      },
-      "01_support": {
-        "className": "O_HMG_01_support_F",
-        "name": "Folded Tripod [CSAT]"
-      },
-      "01_support_high": {
-        "className": "O_HMG_01_support_high_F",
-        "name": "Folded Tripod (Raised) [CSAT]"
-      },
-      "01_weapon": {
-        "className": "O_HMG_01_weapon_F",
-        "name": "Dismantled Mk30 HMG [CSAT]"
-      },
-      "02_high_weapon": {
-        "className": "O_HMG_02_high_weapon_F",
-        "name": "Dismantled M2 HMG .50 (Raised) [CSAT]"
-      },
-      "02_support": {
-        "className": "O_HMG_02_support_F",
-        "name": "Folded Tripod M2 HMG .50 [CSAT]"
-      },
-      "02_support_high": {
-        "className": "O_HMG_02_support_high_F",
-        "name": "Folded Tripod M2 HMG .50 (Raised) [CSAT]"
-      },
-      "02_weapon": {
-        "className": "O_HMG_02_weapon_F",
-        "name": "Dismantled M2 HMG .50 [CSAT]"
-      }
-    },
-    "mortar": {
-      "01_support": {
-        "className": "O_Mortar_01_support_F",
-        "name": "Folded Mk6 Mortar Bipod [CSAT]"
-      },
-      "01_weapon": {
-        "className": "O_Mortar_01_weapon_F",
-        "name": "Folded Mk6 Mortar Tube [CSAT]"
-      }
-    },
-    "static": {
-      "designator_02_weapon": {
-        "className": "O_Static_Designator_02_weapon_F",
-        "name": "Remote Designator Bag [CSAT]"
-      }
-    },
-    "uav": {
-      "01_backpack": {
-        "className": "O_UAV_01_backpack_F",
-        "name": "UAV Bag (AR-2) [CSAT]"
-      },
-      "06_backpack": {
-        "className": "O_UAV_06_backpack_F",
-        "name": "UAV Bag (AL-6) [CSAT]"
-      },
-      "06_medical_backpack": {
-        "className": "O_UAV_06_medical_backpack_F",
-        "name": "UAV Bag (AL-6, Medical) [CSAT]"
-      }
-    },
-    "ugv": {
-      "02_demining_backpack": {
-        "className": "O_UGV_02_Demining_backpack_F",
-        "name": "UGV Bag (ED-1D) [CSAT]"
-      },
-      "02_science_backpack": {
-        "className": "O_UGV_02_Science_backpack_F",
-        "name": "UGV Bag (ED-1E) [CSAT]"
-      }
-    }
-  },
-  "uav": {
-    "06": {
-      "backpack_base": {
-        "className": "UAV_06_backpack_base_F",
-        "name": "Bag"
-      },
-      "medical_backpack_base": {
-        "className": "UAV_06_medical_backpack_base_F",
-        "name": "Bag"
-      }
-    }
-  },
-  "ugv": {
-    "02": {
-      "backpack_base": {
-        "className": "UGV_02_backpack_base_F",
-        "name": "Bag"
-      },
-      "demining_backpack_base": {
-        "className": "UGV_02_Demining_backpack_base_F",
-        "name": "Bag"
-      },
-      "science_backpack_base": {
-        "className": "UGV_02_Science_backpack_base_F",
-        "name": "Bag"
-      }
-    }
-  },
-  "weapon": {
-    "bag": {
-      "base": {
-        "className": "Weapon_Bag_Base",
-        "name": "Bag"
-      }
-    }
-  }
+	"b": {
+		"aa": {
+			"01_weapon": {
+				"className": "B_AA_01_weapon_F",
+				"name": "Static Titan Launcher (AA) [NATO]"
+			}
+		},
+		"assault": {
+			"diver": {
+				"className": "B_Assault_Diver",
+				"name": "Assault Pack (Black)"
+			}
+		},
+		"assaultpack": {
+			"base": {
+				"className": "B_AssaultPack_Base",
+				"name": "Bag"
+			},
+			"blk": {
+				"className": "B_AssaultPack_blk",
+				"name": "Assault Pack (Black)"
+			},
+			"blk_diverexp": {
+				"className": "B_AssaultPack_blk_DiverExp",
+				"name": "Assault Pack (Black)"
+			},
+			"cbr": {
+				"className": "B_AssaultPack_cbr",
+				"name": "Assault Pack (Coyote)"
+			},
+			"dgtl": {
+				"className": "B_AssaultPack_dgtl",
+				"name": "Assault Pack (Digital)"
+			},
+			"eaf": {
+				"className": "B_AssaultPack_eaf_F",
+				"name": "Assault Pack (Geometric)"
+			},
+			"eaf_ielat2": {
+				"className": "B_AssaultPack_eaf_IELAT2_F",
+				"name": "Assault Pack (Geometric)"
+			},
+			"eaf_ielat": {
+				"className": "B_AssaultPack_eaf_IELAT_F",
+				"name": "Assault Pack (Geometric)"
+			},
+			"eaf_iepathfinder": {
+				"className": "B_AssaultPack_eaf_IEPathfinder_F",
+				"name": "Assault Pack (Geometric)"
+			},
+			"eaf_repair": {
+				"className": "B_AssaultPack_eaf_Repair_F",
+				"name": "Assault Pack (Geometric)"
+			},
+			"kerry": {
+				"className": "B_AssaultPack_Kerry",
+				"name": "US Assault Pack (Kerry)"
+			},
+			"khk": {
+				"className": "B_AssaultPack_khk",
+				"name": "Assault Pack (Khaki)"
+			},
+			"mcamo": {
+				"className": "B_AssaultPack_mcamo",
+				"name": "Assault Pack (MTP)"
+			},
+			"mcamo_aa": {
+				"className": "B_AssaultPack_mcamo_AA",
+				"name": "Kitbag (Green)"
+			},
+			"mcamo_aar": {
+				"className": "B_AssaultPack_mcamo_AAR",
+				"name": "Tactical Backpack (MTP)"
+			},
+			"mcamo_ammo": {
+				"className": "B_AssaultPack_mcamo_Ammo",
+				"name": "Carryall Backpack (MTP)"
+			},
+			"mcamo_at": {
+				"className": "B_AssaultPack_mcamo_AT",
+				"name": "Kitbag (Green)"
+			},
+			"ocamo": {
+				"className": "B_AssaultPack_ocamo",
+				"name": "Assault Pack (Hex)"
+			},
+			"ocamo_medic": {
+				"className": "B_AssaultPack_ocamo_Medic_F",
+				"name": "Assault Pack (Hex)"
+			},
+			"rgr": {
+				"className": "B_AssaultPack_rgr",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_btlat2": {
+				"className": "B_AssaultPack_rgr_BTLAT2_F",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_btlat": {
+				"className": "B_AssaultPack_rgr_BTLAT_F",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_btreconmedic": {
+				"className": "B_AssaultPack_rgr_BTReconMedic",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_ctrglat2": {
+				"className": "B_AssaultPack_rgr_CTRGLAT2_F",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_ctrglat": {
+				"className": "B_AssaultPack_rgr_CTRGLAT_F",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_ctrgmedic": {
+				"className": "B_AssaultPack_rgr_CTRGMedic_F",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_lat": {
+				"className": "B_AssaultPack_rgr_LAT",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_lat2": {
+				"className": "B_AssaultPack_rgr_LAT2",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_medic": {
+				"className": "B_AssaultPack_rgr_Medic",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_reconexp": {
+				"className": "B_AssaultPack_rgr_ReconExp",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_reconlat": {
+				"className": "B_AssaultPack_rgr_ReconLAT",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_reconmedic": {
+				"className": "B_AssaultPack_rgr_ReconMedic",
+				"name": "Assault Pack (Green)"
+			},
+			"rgr_repair": {
+				"className": "B_AssaultPack_rgr_Repair",
+				"name": "Assault Pack (Green)"
+			},
+			"sgg": {
+				"className": "B_AssaultPack_sgg",
+				"name": "Assault Pack (Sage)"
+			},
+			"tna_btmedic": {
+				"className": "B_AssaultPack_tna_BTMedic_F",
+				"name": "Assault Pack (Tropic)"
+			},
+			"tna_btrepair": {
+				"className": "B_AssaultPack_tna_BTRepair_F",
+				"name": "Assault Pack (Tropic)"
+			},
+			"tna": {
+				"className": "B_AssaultPack_tna_F",
+				"name": "Assault Pack (Tropic)"
+			},
+			"wdl_bwlat2": {
+				"className": "B_AssaultPack_wdl_BWLAT2_F",
+				"name": "Assault Pack (Woodland)"
+			},
+			"wdl_bwlat": {
+				"className": "B_AssaultPack_wdl_BWLAT_F",
+				"name": "Assault Pack (Woodland)"
+			},
+			"wdl_bwmedic": {
+				"className": "B_AssaultPack_wdl_BWMedic_F",
+				"name": "Assault Pack (Woodland)"
+			},
+			"wdl_bwreconmedic": {
+				"className": "B_AssaultPack_wdl_BWReconMedic",
+				"name": "Assault Pack (Woodland)"
+			},
+			"wdl_bwrepair": {
+				"className": "B_AssaultPack_wdl_BWRepair_F",
+				"name": "Assault Pack (Woodland)"
+			},
+			"wdl": {
+				"className": "B_AssaultPack_wdl_F",
+				"name": "Assault Pack (Woodland)"
+			}
+		},
+		"assaultpackg": {
+			"base": {
+				"className": "B_AssaultPackG",
+				"name": "Assault Pack"
+			}
+		},
+		"at": {
+			"01_weapon": {
+				"className": "B_AT_01_weapon_F",
+				"name": "Static Titan Launcher (AT) [NATO]"
+			}
+		},
+		"b": {
+			"parachute_02": {
+				"className": "B_B_Parachute_02_F",
+				"name": "Steerable Parachute"
+			}
+		},
+		"bergen": {
+			"base": {
+				"className": "B_Bergen_Base",
+				"name": "Bag"
+			},
+			"blk": {
+				"className": "B_Bergen_blk",
+				"name": "Bergen (Black)"
+			},
+			"dgtl": {
+				"className": "B_Bergen_dgtl_F",
+				"name": "Bergen Backpack (Digital)"
+			},
+			"hex": {
+				"className": "B_Bergen_hex_F",
+				"name": "Bergen Backpack (Hex)"
+			},
+			"mcamo": {
+				"className": "B_Bergen_mcamo_F",
+				"name": "Bergen Backpack (MTP)"
+			},
+			"rgr": {
+				"className": "B_Bergen_rgr",
+				"name": "Bergen (Green)"
+			},
+			"sgg": {
+				"className": "B_Bergen_sgg",
+				"name": "Bergen (Sage)"
+			},
+			"tna": {
+				"className": "B_Bergen_tna_F",
+				"name": "Bergen Backpack (Tropic)"
+			}
+		},
+		"bergenc": {
+			"base": {
+				"className": "B_BergenC_Base",
+				"name": "Bag"
+			},
+			"blu": {
+				"className": "B_BergenC_blu",
+				"name": "Bergen (Blue)"
+			},
+			"grn": {
+				"className": "B_BergenC_grn",
+				"name": "Bergen (Green)"
+			},
+			"red": {
+				"className": "B_BergenC_red",
+				"name": "Bergen (Red)"
+			}
+		},
+		"bergeng": {
+			"base": {
+				"className": "B_BergenG",
+				"name": "Bergen"
+			},
+			"test_b_soldier_overloaded": {
+				"className": "B_BergenG_TEST_B_Soldier_overloaded",
+				"name": "Carryall Backpack (Olive)"
+			}
+		},
+		"carryall": {
+			"base": {
+				"className": "B_Carryall_Base",
+				"name": "Bag"
+			},
+			"blk": {
+				"className": "B_Carryall_blk",
+				"name": "Carryall Backpack (Black)"
+			},
+			"cbr": {
+				"className": "B_Carryall_cbr",
+				"name": "Carryall Backpack (Coyote)"
+			},
+			"cbr_aat": {
+				"className": "B_Carryall_cbr_AAT",
+				"name": "Carryall Backpack (Coyote)"
+			},
+			"cbr_ahat": {
+				"className": "B_Carryall_cbr_AHAT",
+				"name": "Carryall Backpack (Coyote)"
+			},
+			"eaf_eng": {
+				"className": "B_Carryall_eaf_eng_F",
+				"name": "Carryall Backpack (Geometric)"
+			},
+			"eaf_exp": {
+				"className": "B_Carryall_eaf_exp_F",
+				"name": "Carryall Backpack (Geometric)"
+			},
+			"eaf": {
+				"className": "B_Carryall_eaf_F",
+				"name": "Carryall Backpack (Geometric)"
+			},
+			"eaf_ieaaa": {
+				"className": "B_Carryall_eaf_IEAAA_F",
+				"name": "Carryall Backpack (Geometric)"
+			},
+			"eaf_ieaar": {
+				"className": "B_Carryall_eaf_IEAAR_F",
+				"name": "Carryall Backpack (Geometric)"
+			},
+			"eaf_ieaat": {
+				"className": "B_Carryall_eaf_IEAAT_F",
+				"name": "Carryall Backpack (Geometric)"
+			},
+			"eaf_ieammo": {
+				"className": "B_Carryall_eaf_IEAmmo_F",
+				"name": "Carryall Backpack (Geometric)"
+			},
+			"eaf_mine": {
+				"className": "B_Carryall_eaf_Mine_F",
+				"name": "Carryall Backpack (Geometric)"
+			},
+			"ghex": {
+				"className": "B_Carryall_ghex_F",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"ghex_mine": {
+				"className": "B_Carryall_ghex_Mine",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"ghex_otaaa": {
+				"className": "B_Carryall_ghex_OTAAA_F",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"ghex_otaar_aar": {
+				"className": "B_Carryall_ghex_OTAAR_AAR_F",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"ghex_otaat": {
+				"className": "B_Carryall_ghex_OTAAT_F",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"ghex_otahat": {
+				"className": "B_Carryall_ghex_OTAHAT_F",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"ghex_otammo": {
+				"className": "B_Carryall_ghex_OTAmmo_F",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"ghex_oteng": {
+				"className": "B_Carryall_ghex_OTEng_F",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"ghex_otexp": {
+				"className": "B_Carryall_ghex_OTExp_F",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"ghex_otreconexp": {
+				"className": "B_Carryall_ghex_OTReconExp_F",
+				"name": "Carryall Backpack (Green Hex)"
+			},
+			"green_exp": {
+				"className": "B_Carryall_green_exp_F",
+				"name": "Carryall Backpack (Green)"
+			},
+			"green": {
+				"className": "B_Carryall_green_F",
+				"name": "Carryall Backpack (Green)"
+			},
+			"khk": {
+				"className": "B_Carryall_khk",
+				"name": "Carryall Backpack (Khaki)"
+			},
+			"khk_mine": {
+				"className": "B_Carryall_khk_Mine",
+				"name": "Carryall Backpack (Khaki)"
+			},
+			"mcamo": {
+				"className": "B_Carryall_mcamo",
+				"name": "Carryall Backpack (MTP)"
+			},
+			"mcamo_aaa": {
+				"className": "B_Carryall_mcamo_AAA",
+				"name": "Carryall Backpack (MTP)"
+			},
+			"mcamo_aat": {
+				"className": "B_Carryall_mcamo_AAT",
+				"name": "Carryall Backpack (MTP)"
+			},
+			"ocamo": {
+				"className": "B_Carryall_ocamo",
+				"name": "Carryall Backpack (Hex)"
+			},
+			"ocamo_aaa": {
+				"className": "B_Carryall_ocamo_AAA",
+				"name": "Carryall Backpack (Hex)"
+			},
+			"ocamo_aar": {
+				"className": "B_Carryall_ocamo_AAR",
+				"name": "Carryall Backpack (Hex)"
+			},
+			"ocamo_eng": {
+				"className": "B_Carryall_ocamo_Eng",
+				"name": "Carryall Backpack (Hex)"
+			},
+			"ocamo_exp": {
+				"className": "B_Carryall_ocamo_Exp",
+				"name": "Carryall Backpack (Hex)"
+			},
+			"ocamo_mine": {
+				"className": "B_Carryall_ocamo_Mine",
+				"name": "Carryall Backpack (Hex)"
+			},
+			"oli": {
+				"className": "B_Carryall_oli",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_btaaa": {
+				"className": "B_Carryall_oli_BTAAA_F",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_btaat": {
+				"className": "B_Carryall_oli_BTAAT_F",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_btammo": {
+				"className": "B_Carryall_oli_BTAmmo_F",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_ieaar": {
+				"className": "B_Carryall_oli_IEAAR_F",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_ieammo": {
+				"className": "B_Carryall_oli_IEAmmo_F",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_mine": {
+				"className": "B_Carryall_oli_Mine",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oucamo": {
+				"className": "B_Carryall_oucamo",
+				"name": "Carryall Backpack (Urban)"
+			},
+			"oucamo_aaa": {
+				"className": "B_Carryall_oucamo_AAA",
+				"name": "Carryall Backpack (Urban)"
+			},
+			"oucamo_aar": {
+				"className": "B_Carryall_oucamo_AAR",
+				"name": "Carryall Backpack (Urban)"
+			},
+			"oucamo_aat": {
+				"className": "B_Carryall_oucamo_AAT",
+				"name": "Carryall Backpack (Urban)"
+			},
+			"oucamo_eng": {
+				"className": "B_Carryall_oucamo_Eng",
+				"name": "Carryall Backpack (Urban)"
+			},
+			"oucamo_exp": {
+				"className": "B_Carryall_oucamo_Exp",
+				"name": "Carryall Backpack (Urban)"
+			},
+			"oucamo_repair": {
+				"className": "B_Carryall_oucamo_Repair",
+				"name": "Carryall Backpack (Urban)"
+			},
+			"taiga_exp": {
+				"className": "B_Carryall_taiga_Exp_F",
+				"name": "Carryall Backpack (Taiga)"
+			},
+			"taiga": {
+				"className": "B_Carryall_taiga_F",
+				"name": "Carryall Backpack (Taiga)"
+			},
+			"wdl_bwaaa": {
+				"className": "B_Carryall_wdl_BWAAA_F",
+				"name": "Carryall Backpack (Woodland)"
+			},
+			"wdl_bwaat": {
+				"className": "B_Carryall_wdl_BWAAT_F",
+				"name": "Carryall Backpack (Woodland)"
+			},
+			"wdl_bwammo": {
+				"className": "B_Carryall_wdl_BWAmmo_F",
+				"name": "Carryall Backpack (Woodland)"
+			},
+			"wdl": {
+				"className": "B_Carryall_wdl_F",
+				"name": "Carryall Backpack (Woodland)"
+			},
+			"wdl_mine": {
+				"className": "B_Carryall_wdl_Mine",
+				"name": "Carryall Backpack (Woodland)"
+			}
+		},
+		"civilianbackpack": {
+			"01_everyday_astra": {
+				"className": "B_CivilianBackpack_01_Everyday_Astra_F",
+				"name": "Everyday Backpack (Astra)"
+			},
+			"01_everyday_black": {
+				"className": "B_CivilianBackpack_01_Everyday_Black_F",
+				"name": "Everyday Backpack (Black)"
+			},
+			"01_everyday_idap": {
+				"className": "B_CivilianBackpack_01_Everyday_IDAP_F",
+				"name": "Everyday Backpack [IDAP]"
+			},
+			"01_everyday_vrana": {
+				"className": "B_CivilianBackpack_01_Everyday_Vrana_F",
+				"name": "Everyday Backpack (Vrana)"
+			},
+			"01_sport_blue": {
+				"className": "B_CivilianBackpack_01_Sport_Blue_F",
+				"name": "Sports Backpack (Blue)"
+			},
+			"01_sport_green": {
+				"className": "B_CivilianBackpack_01_Sport_Green_F",
+				"name": "Sports Backpack (Green)"
+			},
+			"01_sport_red": {
+				"className": "B_CivilianBackpack_01_Sport_Red_F",
+				"name": "Sports Backpack (Red)"
+			}
+		},
+		"combinationunitrespirator": {
+			"01": {
+				"className": "B_CombinationUnitRespirator_01_F",
+				"name": "Combination Unit Respirator"
+			}
+		},
+		"fieldpack": {
+			"base": {
+				"className": "B_FieldPack_Base",
+				"name": "Bag"
+			},
+			"blk": {
+				"className": "B_FieldPack_blk",
+				"name": "Field Pack (Black)"
+			},
+			"blk_bandit_8": {
+				"className": "B_FieldPack_blk_Bandit_8_F",
+				"name": "Field Pack (Black)"
+			},
+			"blk_diverexp": {
+				"className": "B_FieldPack_blk_DiverExp",
+				"name": "Field Pack (Black)"
+			},
+			"cb_bandit_3": {
+				"className": "B_FieldPack_cb_Bandit_3_F",
+				"name": "Field Pack (Coyote)"
+			},
+			"cbr": {
+				"className": "B_FieldPack_cbr",
+				"name": "Field Pack (Coyote)"
+			},
+			"cbr_aa": {
+				"className": "B_FieldPack_cbr_AA",
+				"name": "Field Pack (Coyote)"
+			},
+			"cbr_aaa": {
+				"className": "B_FieldPack_cbr_AAA",
+				"name": "Field Pack (Coyote)"
+			},
+			"cbr_aat": {
+				"className": "B_FieldPack_cbr_AAT",
+				"name": "Field Pack (Coyote)"
+			},
+			"cbr_ammo": {
+				"className": "B_FieldPack_cbr_Ammo_F",
+				"name": "Carryall Backpack (Hex)"
+			},
+			"cbr_at": {
+				"className": "B_FieldPack_cbr_AT",
+				"name": "Field Pack (Coyote)"
+			},
+			"cbr_hat": {
+				"className": "B_FieldPack_cbr_HAT",
+				"name": "Field Pack (Hex)"
+			},
+			"cbr_lat": {
+				"className": "B_FieldPack_cbr_LAT",
+				"name": "Field Pack (Hex)"
+			},
+			"cbr_medic": {
+				"className": "B_FieldPack_cbr_Medic",
+				"name": "Field Pack (Coyote)"
+			},
+			"cbr_repair": {
+				"className": "B_FieldPack_cbr_Repair",
+				"name": "Field Pack (Hex)"
+			},
+			"cbr_rpg_at": {
+				"className": "B_FieldPack_cbr_RPG_AT",
+				"name": "Field Pack (Coyote)"
+			},
+			"ghex": {
+				"className": "B_FieldPack_ghex_F",
+				"name": "Field Pack (Green Hex)"
+			},
+			"ghex_otaa": {
+				"className": "B_FieldPack_ghex_OTAA_F",
+				"name": "Field Pack (Green Hex)"
+			},
+			"ghex_otat": {
+				"className": "B_FieldPack_ghex_OTAT_F",
+				"name": "Field Pack (Green Hex)"
+			},
+			"ghex_othat": {
+				"className": "B_FieldPack_ghex_OTHAT_F",
+				"name": "Field Pack (Green Hex)"
+			},
+			"ghex_otlat": {
+				"className": "B_FieldPack_ghex_OTLAT_F",
+				"name": "Field Pack (Green Hex)"
+			},
+			"ghex_otmedic": {
+				"className": "B_FieldPack_ghex_OTMedic_F",
+				"name": "Field Pack (Green Hex)"
+			},
+			"ghex_otreconmedic": {
+				"className": "B_FieldPack_ghex_OTReconMedic_F",
+				"name": "Field Pack (Green Hex)"
+			},
+			"ghex_otrepair": {
+				"className": "B_FieldPack_ghex_OTRepair_F",
+				"name": "Field Pack (Green Hex)"
+			},
+			"ghex_otrpg_at": {
+				"className": "B_FieldPack_ghex_OTRPG_AT_F",
+				"name": "Field Pack (Green Hex)"
+			},
+			"green_exp": {
+				"className": "B_FieldPack_green_Exp_F",
+				"name": "Field Pack (Green)"
+			},
+			"green": {
+				"className": "B_FieldPack_green_F",
+				"name": "Field Pack (Green)"
+			},
+			"green_ieaa": {
+				"className": "B_Fieldpack_green_IEAA_F",
+				"name": "Field Pack (Green)"
+			},
+			"green_ieat": {
+				"className": "B_Fieldpack_green_IEAT_F",
+				"name": "Field Pack (Green)"
+			},
+			"green_ielat2": {
+				"className": "B_Fieldpack_green_IELAT2_F",
+				"name": "Field Pack (Green)"
+			},
+			"green_ielat": {
+				"className": "B_Fieldpack_green_IELAT_F",
+				"name": "Field Pack (Green)"
+			},
+			"green_iemedic": {
+				"className": "B_Fieldpack_green_IEMedic_F",
+				"name": "Field Pack (Green)"
+			},
+			"green_medic": {
+				"className": "B_FieldPack_green_Medic_F",
+				"name": "Field Pack (Green)"
+			},
+			"green_rpg_at": {
+				"className": "B_FieldPack_green_RPG_AT_F",
+				"name": "Field Pack (Green)"
+			},
+			"khk": {
+				"className": "B_FieldPack_khk",
+				"name": "Field Pack (Khaki)"
+			},
+			"khk_bandit_1": {
+				"className": "B_FieldPack_khk_Bandit_1_F",
+				"name": "Field Pack (Khaki)"
+			},
+			"ocamo": {
+				"className": "B_FieldPack_ocamo",
+				"name": "Field Pack (Hex)"
+			},
+			"ocamo_aa": {
+				"className": "B_FieldPack_ocamo_AA",
+				"name": "Field Pack (Hex)"
+			},
+			"ocamo_aar": {
+				"className": "B_FieldPack_ocamo_AAR",
+				"name": "Carryall Backpack (Hex)"
+			},
+			"ocamo_lat": {
+				"className": "B_FieldPack_ocamo_LAT_F",
+				"name": "Field Pack (Hex)"
+			},
+			"ocamo_medic": {
+				"className": "B_FieldPack_ocamo_Medic",
+				"name": "Field Pack (Hex)"
+			},
+			"ocamo_reconexp": {
+				"className": "B_FieldPack_ocamo_ReconExp",
+				"name": "Carryall Backpack (Hex)"
+			},
+			"ocamo_reconmedic": {
+				"className": "B_FieldPack_ocamo_ReconMedic",
+				"name": "Field Pack (Hex)"
+			},
+			"oli": {
+				"className": "B_FieldPack_oli",
+				"name": "Field Pack (Olive)"
+			},
+			"oli_ieaa": {
+				"className": "B_Fieldpack_oli_IEAA_F",
+				"name": "Field Pack (Olive)"
+			},
+			"oli_ieat": {
+				"className": "B_Fieldpack_oli_IEAT_F",
+				"name": "Field Pack (Olive)"
+			},
+			"oli_ielat2": {
+				"className": "B_Fieldpack_oli_IELAT2_F",
+				"name": "Field Pack (Olive)"
+			},
+			"oli_ielat": {
+				"className": "B_Fieldpack_oli_IELAT_F",
+				"name": "Field Pack (Olive)"
+			},
+			"oucamo": {
+				"className": "B_FieldPack_oucamo",
+				"name": "Field Pack (Urban)"
+			},
+			"oucamo_aa": {
+				"className": "B_FieldPack_oucamo_AA",
+				"name": "Field Pack (Urban)"
+			},
+			"oucamo_aar": {
+				"className": "B_FieldPack_oucamo_AAR",
+				"name": "Carryall Backpack (Urban)"
+			},
+			"oucamo_ammo": {
+				"className": "B_FieldPack_oucamo_Ammo",
+				"name": "Carryall Backpack (Urban)"
+			},
+			"oucamo_at": {
+				"className": "B_FieldPack_oucamo_AT",
+				"name": "Field Pack (Urban)"
+			},
+			"oucamo_lat": {
+				"className": "B_FieldPack_oucamo_LAT",
+				"name": "Field Pack (Urban)"
+			},
+			"oucamo_medic": {
+				"className": "B_FieldPack_oucamo_Medic",
+				"name": "Field Pack (Urban)"
+			},
+			"oucamo_repair": {
+				"className": "B_FieldPack_oucamo_Repair",
+				"name": "Field Pack (Urban)"
+			},
+			"taiga": {
+				"className": "B_FieldPack_taiga_F",
+				"name": "Field Pack (Taiga)"
+			},
+			"taiga_medic": {
+				"className": "B_FieldPack_taiga_Medic_F",
+				"name": "Field Pack (Taiga)"
+			},
+			"taiga_rpg_at": {
+				"className": "B_FieldPack_taiga_RPG_AT_F",
+				"name": "Field Pack (Taiga)"
+			}
+		},
+		"g": {
+			"hmg_02_high_weapon": {
+				"className": "B_G_HMG_02_high_weapon_F",
+				"name": "Dismantled M2 HMG .50 (Raised) [FIA]"
+			},
+			"hmg_02_support": {
+				"className": "B_G_HMG_02_support_F",
+				"name": "Folded Tripod M2 HMG .50 [Syndikat]"
+			},
+			"hmg_02_support_high": {
+				"className": "B_G_HMG_02_support_high_F",
+				"name": "Folded Tripod M2 HMG .50 (Raised) [FIA]"
+			},
+			"hmg_02_weapon": {
+				"className": "B_G_HMG_02_weapon_F",
+				"name": "Dismantled M2 HMG .50 [FIA]"
+			}
+		},
+		"gmg": {
+			"01_a_weapon": {
+				"className": "B_GMG_01_A_weapon_F",
+				"name": "Dismantled Autonomous GMG [NATO]"
+			},
+			"01_high_weapon": {
+				"className": "B_GMG_01_high_weapon_F",
+				"name": "Dismantled Mk32 GMG (Raised) [NATO]"
+			},
+			"01_weapon": {
+				"className": "B_GMG_01_weapon_F",
+				"name": "Dismantled Mk32 GMG [NATO]"
+			},
+			"01_weapon_grn": {
+				"className": "B_GMG_01_Weapon_grn_F",
+				"name": "Dismantled Mk32 GMG (Green) [NATO]"
+			}
+		},
+		"hmg": {
+			"01_a_weapon": {
+				"className": "B_HMG_01_A_weapon_F",
+				"name": "Dismantled Autonomous MG [NATO]"
+			},
+			"01_high_weapon": {
+				"className": "B_HMG_01_high_weapon_F",
+				"name": "Dismantled Mk30 HMG (Raised) [NATO]"
+			},
+			"01_support": {
+				"className": "B_HMG_01_support_F",
+				"name": "Folded Tripod [NATO]"
+			},
+			"01_support_grn": {
+				"className": "B_HMG_01_support_grn_F",
+				"name": "Folded Tripod (Green) [NATO]"
+			},
+			"01_support_high": {
+				"className": "B_HMG_01_support_high_F",
+				"name": "Folded Tripod (Raised) [NATO]"
+			},
+			"01_weapon": {
+				"className": "B_HMG_01_weapon_F",
+				"name": "Dismantled Mk30 HMG [NATO]"
+			},
+			"01_weapon_grn": {
+				"className": "B_HMG_01_Weapon_grn_F",
+				"name": "Dismantled Mk30 HMG (Green) [NATO]"
+			},
+			"02_high_weapon": {
+				"className": "B_HMG_02_high_weapon_F",
+				"name": "Dismantled M2 HMG .50 (Raised) [NATO]"
+			},
+			"02_support": {
+				"className": "B_HMG_02_support_F",
+				"name": "Folded Tripod M2 HMG .50 [NATO]"
+			},
+			"02_support_high": {
+				"className": "B_HMG_02_support_high_F",
+				"name": "Folded Tripod M2 HMG .50 (Raised) [NATO]"
+			},
+			"02_weapon": {
+				"className": "B_HMG_02_weapon_F",
+				"name": "Dismantled M2 HMG .50 [NATO]"
+			}
+		},
+		"huntingbackpack": {
+			"base": {
+				"className": "B_HuntingBackpack",
+				"name": "Hunting Backpack"
+			}
+		},
+		"i": {
+			"parachute_02": {
+				"className": "B_I_Parachute_02_F",
+				"name": "Steerable Parachute"
+			}
+		},
+		"kitbag": {
+			"base": {
+				"className": "B_Kitbag_Base",
+				"name": "Bag"
+			},
+			"cbr": {
+				"className": "B_Kitbag_cbr",
+				"name": "Kitbag (Coyote)"
+			},
+			"cbr_bandit_2": {
+				"className": "B_Kitbag_cbr_Bandit_2_F",
+				"name": "Kitbag (Coyote)"
+			},
+			"cbr_para_5": {
+				"className": "B_Kitbag_cbr_Para_5_F",
+				"name": "Kitbag (Coyote)"
+			},
+			"mcamo": {
+				"className": "B_Kitbag_mcamo",
+				"name": "Kitbag (MTP)"
+			},
+			"mcamo_eng": {
+				"className": "B_Kitbag_mcamo_Eng",
+				"name": "Kitbag (MTP)"
+			},
+			"rgr": {
+				"className": "B_Kitbag_rgr",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_aar": {
+				"className": "B_Kitbag_rgr_AAR",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_btaa": {
+				"className": "B_Kitbag_rgr_BTAA_F",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_btat": {
+				"className": "B_Kitbag_rgr_BTAT_F",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_bteng": {
+				"className": "B_Kitbag_rgr_BTEng_F",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_btexp": {
+				"className": "B_Kitbag_rgr_BTExp_F",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_btreconexp": {
+				"className": "B_Kitbag_rgr_BTReconExp_F",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_bwaar": {
+				"className": "B_Kitbag_rgr_BWAAR",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_ctrgexp": {
+				"className": "B_Kitbag_rgr_CTRGExp_F",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_exp": {
+				"className": "B_Kitbag_rgr_Exp",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_mine": {
+				"className": "B_Kitbag_rgr_Mine",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_para_3": {
+				"className": "B_Kitbag_rgr_Para_3_F",
+				"name": "Kitbag (Green)"
+			},
+			"rgr_para_8": {
+				"className": "B_Kitbag_rgr_Para_8_F",
+				"name": "Kitbag (Green)"
+			},
+			"sgg": {
+				"className": "B_Kitbag_sgg",
+				"name": "Kitbag (Sage)"
+			},
+			"tan": {
+				"className": "B_Kitbag_tan",
+				"name": "Kitbag (Tan)"
+			}
+		},
+		"legstrapbag": {
+			"black": {
+				"className": "B_LegStrapBag_black_F",
+				"name": "Leg Strap Bag (Black)"
+			},
+			"black_repair": {
+				"className": "B_LegStrapBag_black_repair_F",
+				"name": "Leg Strap Bag (Black)"
+			},
+			"coyote": {
+				"className": "B_LegStrapBag_coyote_F",
+				"name": "Leg Strap Bag (Coyote)"
+			},
+			"coyote_repair": {
+				"className": "B_LegStrapBag_coyote_repair_F",
+				"name": "Leg Strap Bag (Coyote)"
+			},
+			"olive": {
+				"className": "B_LegStrapBag_olive_F",
+				"name": "Leg Strap Bag (Olive)"
+			},
+			"olive_repair": {
+				"className": "B_LegStrapBag_olive_repair_F",
+				"name": "Leg Strap Bag (Olive)"
+			}
+		},
+		"messenger": {
+			"black": {
+				"className": "B_Messenger_Black_F",
+				"name": "Messenger Bag (Black)"
+			},
+			"coyote": {
+				"className": "B_Messenger_Coyote_F",
+				"name": "Messenger Bag (Coyote)"
+			},
+			"gray": {
+				"className": "B_Messenger_Gray_F",
+				"name": "Messenger Bag (Gray)"
+			},
+			"gray_medical": {
+				"className": "B_Messenger_Gray_Medical_F",
+				"name": "Messenger Bag (Gray)"
+			},
+			"idap": {
+				"className": "B_Messenger_IDAP_F",
+				"name": "Messenger Bag [IDAP]"
+			},
+			"idap_medical": {
+				"className": "B_Messenger_IDAP_Medical_F",
+				"name": "Messenger Bag [IDAP]"
+			},
+			"idap_trainingmines": {
+				"className": "B_Messenger_IDAP_TrainingMines_F",
+				"name": "Messenger Bag [IDAP]"
+			},
+			"olive": {
+				"className": "B_Messenger_Olive_F",
+				"name": "Messenger Bag (Olive)"
+			}
+		},
+		"mortar": {
+			"01_support": {
+				"className": "B_Mortar_01_support_F",
+				"name": "Folded Mk6 Mortar Bipod [NATO]"
+			},
+			"01_support_grn": {
+				"className": "B_Mortar_01_support_grn_F",
+				"name": "Folded Mortar Mk6 Bipod (Green) [NATO]"
+			},
+			"01_weapon": {
+				"className": "B_Mortar_01_weapon_F",
+				"name": "Folded Mk6 Mortar Tube [NATO]"
+			},
+			"01_weapon_grn": {
+				"className": "B_Mortar_01_Weapon_grn_F",
+				"name": "Folded Mk6 Mortar Tube (Green) [NATO]"
+			}
+		},
+		"o": {
+			"parachute_02": {
+				"className": "B_O_Parachute_02_F",
+				"name": "Steerable Parachute"
+			}
+		},
+		"outdoorpack": {
+			"base": {
+				"className": "B_OutdoorPack_Base",
+				"name": "Bag"
+			},
+			"blk": {
+				"className": "B_OutdoorPack_blk",
+				"name": "Outdoor Pack (Black)"
+			},
+			"blu": {
+				"className": "B_OutdoorPack_blu",
+				"name": "Outdoor Pack (Blue)"
+			},
+			"tan": {
+				"className": "B_OutdoorPack_tan",
+				"name": "Outdoor Pack (Tan)"
+			}
+		},
+		"parachute": {
+			"base": {
+				"className": "B_Parachute",
+				"name": "Steerable Parachute"
+			}
+		},
+		"patrol": {
+			"carryall_green_ammo": {
+				"className": "B_Patrol_Carryall_green_Ammo_F",
+				"name": "Carryall Backpack (Green)"
+			},
+			"carryall_taiga_medic": {
+				"className": "B_Patrol_Carryall_taiga_medic_F",
+				"name": "Carryall Backpack (Taiga)"
+			},
+			"fieldpack_green_eng": {
+				"className": "B_Patrol_FieldPack_green_eng_F",
+				"name": "Field Pack (Green)"
+			},
+			"launcher_bag": {
+				"className": "B_Patrol_Launcher_bag_F",
+				"name": "Assault Pack (Green)"
+			},
+			"leader_bag": {
+				"className": "B_Patrol_Leader_bag_F",
+				"name": "Kitbag (Green)"
+			},
+			"medic_bag": {
+				"className": "B_Patrol_Medic_bag_F",
+				"name": "Kitbag (Coyote)"
+			},
+			"respawn_bag": {
+				"className": "B_Patrol_Respawn_bag_F",
+				"name": "Camp (Dome Tent, Combat Patrol)"
+			},
+			"supply_bag": {
+				"className": "B_Patrol_Supply_bag_F",
+				"name": "Kitbag (MTP)"
+			}
+		},
+		"radiobag": {
+			"01_black": {
+				"className": "B_RadioBag_01_black_F",
+				"name": "Radio Pack (Black)"
+			},
+			"01_digi": {
+				"className": "B_RadioBag_01_digi_F",
+				"name": "Radio Pack (Digital) [AAF]"
+			},
+			"01_eaf": {
+				"className": "B_RadioBag_01_eaf_F",
+				"name": "Radio Pack (Geometric) [LDF]"
+			},
+			"01_eaf_fak": {
+				"className": "B_RadioBag_01_eaf_FAK_F",
+				"name": "Radio Pack (Geometric) [LDF]"
+			},
+			"01_ghex": {
+				"className": "B_RadioBag_01_ghex_F",
+				"name": "Radio Pack (Green Hex) [CSAT]"
+			},
+			"01_hex": {
+				"className": "B_RadioBag_01_hex_F",
+				"name": "Radio Pack (Hex) [CSAT]"
+			},
+			"01_mtp": {
+				"className": "B_RadioBag_01_mtp_F",
+				"name": "Radio Pack (MTP) [NATO]"
+			},
+			"01_oucamo": {
+				"className": "B_RadioBag_01_oucamo_F",
+				"name": "Radio Pack (Urban) [CSAT]"
+			},
+			"01_tropic": {
+				"className": "B_RadioBag_01_tropic_F",
+				"name": "Radio Pack (Tropic) [NATO]"
+			},
+			"01_wdl": {
+				"className": "B_RadioBag_01_wdl_F",
+				"name": "Radio Pack (Woodland) [NATO]"
+			},
+			"01_wdl_fak": {
+				"className": "B_RadioBag_01_wdl_FAK_F",
+				"name": "Radio Pack (Woodland) [NATO]"
+			}
+		},
+		"respawn": {
+			"sleeping_bag_blue": {
+				"className": "B_Respawn_Sleeping_bag_blue_F",
+				"name": "Camp (Blue Sleeping Bag)"
+			},
+			"sleeping_bag_brown": {
+				"className": "B_Respawn_Sleeping_bag_brown_F",
+				"name": "Camp (Brown Sleeping Bag)"
+			},
+			"sleeping_bag": {
+				"className": "B_Respawn_Sleeping_bag_F",
+				"name": "Camp (Green Sleeping Bag)"
+			},
+			"tenta": {
+				"className": "B_Respawn_TentA_F",
+				"name": "Camp (Ridge Tent)"
+			},
+			"tentdome": {
+				"className": "B_Respawn_TentDome_F",
+				"name": "Camp (Dome Tent)"
+			}
+		},
+		"scba": {
+			"01": {
+				"className": "B_SCBA_01_F",
+				"name": "Self-Contained Breathing Apparatus"
+			}
+		},
+		"static": {
+			"designator_01_weapon": {
+				"className": "B_Static_Designator_01_weapon_F",
+				"name": "Remote Designator Bag [NATO]"
+			}
+		},
+		"tacticalpack": {
+			"base": {
+				"className": "B_TacticalPack_Base",
+				"name": "Bag"
+			},
+			"blk": {
+				"className": "B_TacticalPack_blk",
+				"name": "Tactical Backpack (Black)"
+			},
+			"mcamo": {
+				"className": "B_TacticalPack_mcamo",
+				"name": "Tactical Backpack (MTP)"
+			},
+			"ocamo": {
+				"className": "B_TacticalPack_ocamo",
+				"name": "Tactical Backpack (Hex)"
+			},
+			"ocamo_aa": {
+				"className": "B_TacticalPack_ocamo_AA_F",
+				"name": "Tactical Backpack (Hex)"
+			},
+			"ocamo_at": {
+				"className": "B_TacticalPack_ocamo_AT_F",
+				"name": "Tactical Backpack (Hex)"
+			},
+			"oli": {
+				"className": "B_TacticalPack_oli",
+				"name": "Tactical Backpack (Olive)"
+			},
+			"oli_aar": {
+				"className": "B_TacticalPack_oli_AAR",
+				"name": "Tactical Backpack (Olive)"
+			},
+			"rgr": {
+				"className": "B_TacticalPack_rgr",
+				"name": "Tactical Backpack (Green)"
+			}
+		},
+		"uav": {
+			"01_backpack": {
+				"className": "B_UAV_01_backpack_F",
+				"name": "UAV Bag (AR-2) [NATO]"
+			},
+			"06_backpack": {
+				"className": "B_UAV_06_backpack_F",
+				"name": "UAV Bag (AL-6) [NATO]"
+			},
+			"06_medical_backpack": {
+				"className": "B_UAV_06_medical_backpack_F",
+				"name": "UAV Bag (AL-6, Medical) [NATO]"
+			}
+		},
+		"ugv": {
+			"02_demining_backpack": {
+				"className": "B_UGV_02_Demining_backpack_F",
+				"name": "UGV Bag (ED-1D) [NATO]"
+			},
+			"02_science_backpack": {
+				"className": "B_UGV_02_Science_backpack_F",
+				"name": "UGV Bag (ED-1E) [NATO]"
+			}
+		},
+		"viperharness": {
+			"blk": {
+				"className": "B_ViperHarness_blk_F",
+				"name": "Viper Harness (Black)"
+			},
+			"ghex_exp": {
+				"className": "B_ViperHarness_ghex_Exp_F",
+				"name": "Viper Harness (Green Hex)"
+			},
+			"ghex": {
+				"className": "B_ViperHarness_ghex_F",
+				"name": "Viper Harness (Green Hex)"
+			},
+			"ghex_jtac": {
+				"className": "B_ViperHarness_ghex_JTAC_F",
+				"name": "Viper Harness (Green Hex)"
+			},
+			"ghex_lat": {
+				"className": "B_ViperHarness_ghex_LAT_F",
+				"name": "Viper Harness (Green Hex)"
+			},
+			"ghex_m": {
+				"className": "B_ViperHarness_ghex_M_F",
+				"name": "Viper Harness (Green Hex)"
+			},
+			"ghex_medic": {
+				"className": "B_ViperHarness_ghex_Medic_F",
+				"name": "Viper Harness (Green Hex)"
+			},
+			"ghex_tl": {
+				"className": "B_ViperHarness_ghex_TL_F",
+				"name": "Viper Harness (Green Hex)"
+			},
+			"hex_exp": {
+				"className": "B_ViperHarness_hex_Exp_F",
+				"name": "Viper Harness (Hex)"
+			},
+			"hex": {
+				"className": "B_ViperHarness_hex_F",
+				"name": "Viper Harness (Hex)"
+			},
+			"hex_jtac": {
+				"className": "B_ViperHarness_hex_JTAC_F",
+				"name": "Viper Harness (Hex)"
+			},
+			"hex_lat": {
+				"className": "B_ViperHarness_hex_LAT_F",
+				"name": "Viper Harness (Hex)"
+			},
+			"hex_m": {
+				"className": "B_ViperHarness_hex_M_F",
+				"name": "Viper Harness (Hex)"
+			},
+			"hex_medic": {
+				"className": "B_ViperHarness_hex_Medic_F",
+				"name": "Viper Harness (Hex)"
+			},
+			"hex_tl": {
+				"className": "B_ViperHarness_hex_TL_F",
+				"name": "Viper Harness (Hex)"
+			},
+			"khk": {
+				"className": "B_ViperHarness_khk_F",
+				"name": "Viper Harness (Khaki)"
+			},
+			"oli": {
+				"className": "B_ViperHarness_oli_F",
+				"name": "Viper Harness (Olive)"
+			}
+		},
+		"viperlightharness": {
+			"blk": {
+				"className": "B_ViperLightHarness_blk_F",
+				"name": "Viper Light Harness (Black)"
+			},
+			"ghex": {
+				"className": "B_ViperLightHarness_ghex_F",
+				"name": "Viper Light Harness (Green Hex)"
+			},
+			"hex": {
+				"className": "B_ViperLightHarness_hex_F",
+				"name": "Viper Light Harness (Hex)"
+			},
+			"khk": {
+				"className": "B_ViperLightHarness_khk_F",
+				"name": "Viper Light Harness (Khaki)"
+			},
+			"oli": {
+				"className": "B_ViperLightHarness_oli_F",
+				"name": "Viper Light Harness (Olive)"
+			}
+		},
+		"w": {
+			"static_designator_01_weapon": {
+				"className": "B_W_Static_Designator_01_weapon_F",
+				"name": "Remote Designator Bag [NATO]"
+			}
+		}
+	},
+	"bag": {
+		"base": {
+			"base": {
+				"className": "Bag_Base",
+				"name": "Bag"
+			}
+		}
+	},
+	"c": {
+		"bergen": {
+			"base": {
+				"className": "C_Bergen_Base",
+				"name": "Bag"
+			},
+			"blu": {
+				"className": "C_Bergen_blu",
+				"name": "Bergen (Blue)"
+			},
+			"grn": {
+				"className": "C_Bergen_grn",
+				"name": "Bergen (Green)"
+			},
+			"red": {
+				"className": "C_Bergen_red",
+				"name": "Bergen (Red)"
+			}
+		},
+		"idap": {
+			"uav_01_backpack": {
+				"className": "C_IDAP_UAV_01_backpack_F",
+				"name": "UAV Bag [IDAP]"
+			},
+			"uav_06_antimine_backpack": {
+				"className": "C_IDAP_UAV_06_antimine_backpack_F",
+				"name": "UAV Bag (Demining) [IDAP]"
+			},
+			"uav_06_backpack": {
+				"className": "C_IDAP_UAV_06_backpack_F",
+				"name": "UAV Bag (Utility) [IDAP]"
+			},
+			"uav_06_medical_backpack": {
+				"className": "C_IDAP_UAV_06_medical_backpack_F",
+				"name": "UAV Bag (AL-6, Medical) [IDAP]"
+			},
+			"ugv_02_demining_backpack": {
+				"className": "C_IDAP_UGV_02_Demining_backpack_F",
+				"name": "UGV Bag (Demining) [IDAP]"
+			}
+		},
+		"uav": {
+			"06_backpack": {
+				"className": "C_UAV_06_backpack_F",
+				"name": "UAV Bag (Utility)"
+			},
+			"06_medical_backpack": {
+				"className": "C_UAV_06_medical_backpack_F",
+				"name": "UAV Bag (Utility, Medical)"
+			}
+		}
+	},
+	"g": {
+		"assaultpack": {
+			"base": {
+				"className": "G_AssaultPack",
+				"name": "Assault Pack"
+			}
+		},
+		"bergen": {
+			"base": {
+				"className": "G_Bergen",
+				"name": "Bergen"
+			}
+		},
+		"carryall": {
+			"ammo": {
+				"className": "G_Carryall_Ammo",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"exp": {
+				"className": "G_Carryall_Exp",
+				"name": "Carryall Backpack (Olive)"
+			}
+		},
+		"fieldpack": {
+			"lat": {
+				"className": "G_FieldPack_LAT",
+				"name": "Tactical Backpack (Black)"
+			},
+			"lat2": {
+				"className": "G_FieldPack_LAT2",
+				"name": "Tactical Backpack (Black)"
+			},
+			"medic": {
+				"className": "G_FieldPack_Medic",
+				"name": "Tactical Backpack (Black)"
+			}
+		},
+		"tacticalpack": {
+			"eng": {
+				"className": "G_TacticalPack_Eng",
+				"name": "Carryall Backpack (Olive)"
+			}
+		}
+	},
+	"i": {
+		"aa": {
+			"01_weapon": {
+				"className": "I_AA_01_weapon_F",
+				"name": "Static Titan Launcher (AA) [AAF]"
+			}
+		},
+		"assault": {
+			"diver": {
+				"className": "I_Assault_Diver",
+				"name": "Field Pack (Black)"
+			}
+		},
+		"at": {
+			"01_weapon": {
+				"className": "I_AT_01_weapon_F",
+				"name": "Static Titan Launcher (AT) [AAF]"
+			}
+		},
+		"c": {
+			"hmg_02_high_weapon": {
+				"className": "I_C_HMG_02_high_weapon_F",
+				"name": "Dismantled M2 HMG .50 (Raised) [Syndikat]"
+			},
+			"hmg_02_support": {
+				"className": "I_C_HMG_02_support_F",
+				"name": "Folded Tripod M2 HMG .50 [FIA]"
+			},
+			"hmg_02_support_high": {
+				"className": "I_C_HMG_02_support_high_F",
+				"name": "Folded Tripod M2 HMG .50 (Raised) [Syndikat]"
+			},
+			"hmg_02_weapon": {
+				"className": "I_C_HMG_02_weapon_F",
+				"name": "Dismantled M2 HMG .50 [Syndikat]"
+			}
+		},
+		"carryall": {
+			"oli_aaa": {
+				"className": "I_Carryall_oli_AAA",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_aat": {
+				"className": "I_Carryall_oli_AAT",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_eng": {
+				"className": "I_Carryall_oli_Eng",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_exp": {
+				"className": "I_Carryall_oli_Exp",
+				"name": "Carryall Backpack (Olive)"
+			}
+		},
+		"e": {
+			"aa_01_weapon": {
+				"className": "I_E_AA_01_weapon_F",
+				"name": "Static Titan Launcher (AA) [LDF]"
+			},
+			"at_01_weapon": {
+				"className": "I_E_AT_01_weapon_F",
+				"name": "Static Titan Launcher (AT) [LDF]"
+			},
+			"gmg_01_a_weapon": {
+				"className": "I_E_GMG_01_A_Weapon_F",
+				"name": "Dismantled Autonomous GMG [LDF]"
+			},
+			"gmg_01_high_weapon": {
+				"className": "I_E_GMG_01_high_Weapon_F",
+				"name": "Dismantled Mk32 GMG (Raised) [LDF]"
+			},
+			"gmg_01_weapon": {
+				"className": "I_E_GMG_01_Weapon_F",
+				"name": "Dismantled Mk32 GMG [LDF]"
+			},
+			"hmg_01_a_weapon": {
+				"className": "I_E_HMG_01_A_Weapon_F",
+				"name": "Dismantled Autonomous MG [LDF]"
+			},
+			"hmg_01_high_weapon": {
+				"className": "I_E_HMG_01_high_Weapon_F",
+				"name": "Dismantled Mk30 HMG (Raised) [LDF]"
+			},
+			"hmg_01_support": {
+				"className": "I_E_HMG_01_support_F",
+				"name": "Folded Tripod [LDF]"
+			},
+			"hmg_01_support_high": {
+				"className": "I_E_HMG_01_support_high_F",
+				"name": "Folded Tripod (Raised) [LDF]"
+			},
+			"hmg_01_weapon": {
+				"className": "I_E_HMG_01_Weapon_F",
+				"name": "Dismantled Mk30 HMG [LDF]"
+			},
+			"hmg_02_high_weapon": {
+				"className": "I_E_HMG_02_high_weapon_F",
+				"name": "Dismantled M2 HMG .50 (Raised) [LDF]"
+			},
+			"hmg_02_support": {
+				"className": "I_E_HMG_02_support_F",
+				"name": "Folded Tripod M2 HMG .50 [LDF]"
+			},
+			"hmg_02_support_high": {
+				"className": "I_E_HMG_02_support_high_F",
+				"name": "Folded Tripod M2 HMG .50 (Raised) [LDF]"
+			},
+			"hmg_02_weapon": {
+				"className": "I_E_HMG_02_weapon_F",
+				"name": "Dismantled M2 HMG .50 [LDF]"
+			},
+			"mortar_01_support": {
+				"className": "I_E_Mortar_01_support_F",
+				"name": "Folded Mk6 Mortar Bipod [LDF]"
+			},
+			"mortar_01_weapon": {
+				"className": "I_E_Mortar_01_Weapon_F",
+				"name": "Folded Mk6 Mortar Tube [LDF]"
+			},
+			"uav_01_backpack": {
+				"className": "I_E_UAV_01_backpack_F",
+				"name": "UAV Bag (AR-2) [LDF]"
+			},
+			"uav_06_backpack": {
+				"className": "I_E_UAV_06_backpack_F",
+				"name": "UAV Bag (AL-6) [LDF]"
+			},
+			"uav_06_medical_backpack": {
+				"className": "I_E_UAV_06_medical_backpack_F",
+				"name": "UAV Bag (AL-6, Medical) [LDF]"
+			},
+			"ugv_02_demining_backpack": {
+				"className": "I_E_UGV_02_Demining_backpack_F",
+				"name": "UGV Bag (ED-1D) [LDF]"
+			},
+			"ugv_02_science_backpack": {
+				"className": "I_E_UGV_02_Science_backpack_F",
+				"name": "UGV Bag (ED-1E) [LDF]"
+			}
+		},
+		"fieldpack": {
+			"oli_aa": {
+				"className": "I_Fieldpack_oli_AA",
+				"name": "Field Pack (Olive)"
+			},
+			"oli_aar": {
+				"className": "I_Fieldpack_oli_AAR",
+				"name": "Tactical Backpack (Olive)"
+			},
+			"oli_ammo": {
+				"className": "I_Fieldpack_oli_Ammo",
+				"name": "Carryall Backpack (Olive)"
+			},
+			"oli_at": {
+				"className": "I_Fieldpack_oli_AT",
+				"name": "Field Pack (Olive)"
+			},
+			"oli_lat": {
+				"className": "I_Fieldpack_oli_LAT",
+				"name": "Assault Pack (Digital)"
+			},
+			"oli_lat2": {
+				"className": "I_Fieldpack_oli_LAT2",
+				"name": "Assault Pack (Digital)"
+			},
+			"oli_medic": {
+				"className": "I_Fieldpack_oli_Medic",
+				"name": "Field Pack (Olive)"
+			},
+			"oli_repair": {
+				"className": "I_Fieldpack_oli_Repair",
+				"name": "Field Pack (Olive)"
+			}
+		},
+		"g": {
+			"hmg_02_high_weapon": {
+				"className": "I_G_HMG_02_high_weapon_F",
+				"name": "Dismantled M2 HMG .50 (Raised) [FIA]"
+			},
+			"hmg_02_support": {
+				"className": "I_G_HMG_02_support_F",
+				"name": "Folded Tripod M2 HMG .50 [Syndikat]"
+			},
+			"hmg_02_support_high": {
+				"className": "I_G_HMG_02_support_high_F",
+				"name": "Folded Tripod M2 HMG .50 (Raised) [FIA]"
+			},
+			"hmg_02_weapon": {
+				"className": "I_G_HMG_02_weapon_F",
+				"name": "Dismantled M2 HMG .50 [FIA]"
+			}
+		},
+		"gmg": {
+			"01_a_weapon": {
+				"className": "I_GMG_01_A_weapon_F",
+				"name": "Dismantled Autonomous GMG [AAF]"
+			},
+			"01_high_weapon": {
+				"className": "I_GMG_01_high_weapon_F",
+				"name": "Dismantled Mk32 GMG (Raised) [AAF]"
+			},
+			"01_weapon": {
+				"className": "I_GMG_01_weapon_F",
+				"name": "Dismantled Mk32 GMG [AAF]"
+			}
+		},
+		"hmg": {
+			"01_a_weapon": {
+				"className": "I_HMG_01_A_weapon_F",
+				"name": "Dismantled Autonomous MG [AAF]"
+			},
+			"01_high_weapon": {
+				"className": "I_HMG_01_high_weapon_F",
+				"name": "Dismantled Mk30 HMG (Raised) [AAF]"
+			},
+			"01_support": {
+				"className": "I_HMG_01_support_F",
+				"name": "Folded Tripod [AAF]"
+			},
+			"01_support_high": {
+				"className": "I_HMG_01_support_high_F",
+				"name": "Folded Tripod (Raised) [AAF]"
+			},
+			"01_weapon": {
+				"className": "I_HMG_01_weapon_F",
+				"name": "Dismantled Mk30 HMG [AAF]"
+			},
+			"02_high_weapon": {
+				"className": "I_HMG_02_high_weapon_F",
+				"name": "Dismantled M2 HMG .50 (Raised) [AAF]"
+			},
+			"02_support": {
+				"className": "I_HMG_02_support_F",
+				"name": "Folded Tripod M2 HMG .50 [AAF]"
+			},
+			"02_support_high": {
+				"className": "I_HMG_02_support_high_F",
+				"name": "Folded Tripod M2 HMG .50 (Raised) [AAF]"
+			},
+			"02_weapon": {
+				"className": "I_HMG_02_weapon_F",
+				"name": "Dismantled M2 HMG .50 [AAF]"
+			}
+		},
+		"mortar": {
+			"01_support": {
+				"className": "I_Mortar_01_support_F",
+				"name": "Folded Mk6 Mortar Bipod [AAF]"
+			},
+			"01_weapon": {
+				"className": "I_Mortar_01_weapon_F",
+				"name": "Folded Mk6 Mortar Tube [AAF]"
+			}
+		},
+		"uav": {
+			"01_backpack": {
+				"className": "I_UAV_01_backpack_F",
+				"name": "UAV Bag (AR-2) [AAF]"
+			},
+			"06_backpack": {
+				"className": "I_UAV_06_backpack_F",
+				"name": "UAV Bag (AL-6) [AAF]"
+			},
+			"06_medical_backpack": {
+				"className": "I_UAV_06_medical_backpack_F",
+				"name": "UAV Bag (AL-6, Medical) [AAF]"
+			}
+		},
+		"ugv": {
+			"02_demining_backpack": {
+				"className": "I_UGV_02_Demining_backpack_F",
+				"name": "UGV Bag (ED-1D) [AAF]"
+			},
+			"02_science_backpack": {
+				"className": "I_UGV_02_Science_backpack_F",
+				"name": "UGV Bag (ED-1E) [AAF]"
+			}
+		}
+	},
+	"o": {
+		"aa": {
+			"01_weapon": {
+				"className": "O_AA_01_weapon_F",
+				"name": "Static Titan Launcher (AA) [CSAT]"
+			}
+		},
+		"assault": {
+			"diver": {
+				"className": "O_Assault_Diver",
+				"name": "Field Pack (Black)"
+			}
+		},
+		"at": {
+			"01_weapon": {
+				"className": "O_AT_01_weapon_F",
+				"name": "Static Titan Launcher (AT) [CSAT]"
+			}
+		},
+		"g": {
+			"hmg_02_high_weapon": {
+				"className": "O_G_HMG_02_high_weapon_F",
+				"name": "Dismantled M2 HMG .50 (Raised) [FIA]"
+			},
+			"hmg_02_support": {
+				"className": "O_G_HMG_02_support_F",
+				"name": "Folded Tripod M2 HMG .50 [Syndikat]"
+			},
+			"hmg_02_support_high": {
+				"className": "O_G_HMG_02_support_high_F",
+				"name": "Folded Tripod M2 HMG .50 (Raised) [FIA]"
+			},
+			"hmg_02_weapon": {
+				"className": "O_G_HMG_02_weapon_F",
+				"name": "Dismantled M2 HMG .50 [FIA]"
+			}
+		},
+		"gmg": {
+			"01_a_weapon": {
+				"className": "O_GMG_01_A_weapon_F",
+				"name": "Dismantled Autonomous GMG [CSAT]"
+			},
+			"01_high_weapon": {
+				"className": "O_GMG_01_high_weapon_F",
+				"name": "Dismantled Mk32 GMG (Raised) [CSAT]"
+			},
+			"01_weapon": {
+				"className": "O_GMG_01_weapon_F",
+				"name": "Dismantled Mk32 GMG [CSAT]"
+			}
+		},
+		"hmg": {
+			"01_a_weapon": {
+				"className": "O_HMG_01_A_weapon_F",
+				"name": "Dismantled Autonomous MG [CSAT]"
+			},
+			"01_high_weapon": {
+				"className": "O_HMG_01_high_weapon_F",
+				"name": "Dismantled Mk30 HMG (Raised) [CSAT]"
+			},
+			"01_support": {
+				"className": "O_HMG_01_support_F",
+				"name": "Folded Tripod [CSAT]"
+			},
+			"01_support_high": {
+				"className": "O_HMG_01_support_high_F",
+				"name": "Folded Tripod (Raised) [CSAT]"
+			},
+			"01_weapon": {
+				"className": "O_HMG_01_weapon_F",
+				"name": "Dismantled Mk30 HMG [CSAT]"
+			},
+			"02_high_weapon": {
+				"className": "O_HMG_02_high_weapon_F",
+				"name": "Dismantled M2 HMG .50 (Raised) [CSAT]"
+			},
+			"02_support": {
+				"className": "O_HMG_02_support_F",
+				"name": "Folded Tripod M2 HMG .50 [CSAT]"
+			},
+			"02_support_high": {
+				"className": "O_HMG_02_support_high_F",
+				"name": "Folded Tripod M2 HMG .50 (Raised) [CSAT]"
+			},
+			"02_weapon": {
+				"className": "O_HMG_02_weapon_F",
+				"name": "Dismantled M2 HMG .50 [CSAT]"
+			}
+		},
+		"mortar": {
+			"01_support": {
+				"className": "O_Mortar_01_support_F",
+				"name": "Folded Mk6 Mortar Bipod [CSAT]"
+			},
+			"01_weapon": {
+				"className": "O_Mortar_01_weapon_F",
+				"name": "Folded Mk6 Mortar Tube [CSAT]"
+			}
+		},
+		"static": {
+			"designator_02_weapon": {
+				"className": "O_Static_Designator_02_weapon_F",
+				"name": "Remote Designator Bag [CSAT]"
+			}
+		},
+		"uav": {
+			"01_backpack": {
+				"className": "O_UAV_01_backpack_F",
+				"name": "UAV Bag (AR-2) [CSAT]"
+			},
+			"06_backpack": {
+				"className": "O_UAV_06_backpack_F",
+				"name": "UAV Bag (AL-6) [CSAT]"
+			},
+			"06_medical_backpack": {
+				"className": "O_UAV_06_medical_backpack_F",
+				"name": "UAV Bag (AL-6, Medical) [CSAT]"
+			}
+		},
+		"ugv": {
+			"02_demining_backpack": {
+				"className": "O_UGV_02_Demining_backpack_F",
+				"name": "UGV Bag (ED-1D) [CSAT]"
+			},
+			"02_science_backpack": {
+				"className": "O_UGV_02_Science_backpack_F",
+				"name": "UGV Bag (ED-1E) [CSAT]"
+			}
+		}
+	},
+	"uav": {
+		"06": {
+			"backpack_base": {
+				"className": "UAV_06_backpack_base_F",
+				"name": "Bag"
+			},
+			"medical_backpack_base": {
+				"className": "UAV_06_medical_backpack_base_F",
+				"name": "Bag"
+			}
+		}
+	},
+	"ugv": {
+		"02": {
+			"backpack_base": {
+				"className": "UGV_02_backpack_base_F",
+				"name": "Bag"
+			},
+			"demining_backpack_base": {
+				"className": "UGV_02_Demining_backpack_base_F",
+				"name": "Bag"
+			},
+			"science_backpack_base": {
+				"className": "UGV_02_Science_backpack_base_F",
+				"name": "Bag"
+			}
+		}
+	},
+	"weapon": {
+		"bag": {
+			"base": {
+				"className": "Weapon_Bag_Base",
+				"name": "Bag"
+			}
+		}
+	}
 }

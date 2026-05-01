@@ -1,7 +1,8 @@
 {
-  "name": "playground",
-  "private": true,
-  "type": "module",
-  "dependencies": {
-    "@lance/core": "workspace:*"  }
+	"name": "playground",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"@lance/core": "workspace:*"
+	}
 }

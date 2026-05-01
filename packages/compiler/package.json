@@ -1,23 +1,23 @@
 {
-  "name": "@lance/compiler",
-  "version": "0.0.1",
-  "module": "index.ts",
-  "exports": {
-    ".": "./index.ts"
-  },
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "compile": "bun run src/cli.ts compile",
-    "typecheck": "bunx tsc --noEmit -p tsconfig.json",
-    "test": "bun test"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "typescript": "^6.0.3"
-  },
-  "dependencies": {
-    "@lance/core": "workspace:*",
-    "ts-morph": "^28.0.0"
-  }
+	"name": "@lance/compiler",
+	"version": "0.0.1",
+	"module": "index.ts",
+	"exports": {
+		".": "./index.ts"
+	},
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"compile": "bun run src/cli.ts compile",
+		"typecheck": "bunx tsc --noEmit -p tsconfig.json",
+		"test": "bun test"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"typescript": "^6.0.3"
+	},
+	"dependencies": {
+		"@lance/core": "workspace:*",
+		"ts-morph": "^28.0.0"
+	}
 }

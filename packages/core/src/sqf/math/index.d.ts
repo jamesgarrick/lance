@@ -1,18 +1,17 @@
-
 /** The greater value of a and b. */
-export function max(a: number, b: number): number
+export function max(a: number, b: number): number;
 
 /** The smaller value of a and b. */
-export function min(a: number, b: number): number
+export function min(a: number, b: number): number;
 
 /** Remainder of a divided by b. */
-export function mod(a: number, b: number): number
+export function mod(a: number, b: number): number;
 
 /** Returns the array element with minimum numerical value. */
-export function selectMin(values: (number | boolean)[]): number
+export function selectMin(values: (number | boolean)[]): number;
 
 /** Returns the array element with maximum numerical value. */
-export function selectMax(values: (number | boolean)[]): number
+export function selectMax(values: (number | boolean)[]): number;
 
 /** Generates a random floating point value between 0 and x. */
 export function random(x: number): number;
@@ -44,7 +43,7 @@ export function atan(x: number): number;
 export function atan2(y: number, x: number): number;
 
 /** Returns the value of pi. */
-export function pi(): number
+export function pi(): number;
 
 /** Returns the absolute value of a number. */
 export function abs(x: number): number;

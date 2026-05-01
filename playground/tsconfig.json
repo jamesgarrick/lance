@@ -1,12 +1,12 @@
 {
-  "compilerOptions": {
-    "strict": true,
-    "noLib": true,
-    "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "module": "ESNext",
-    "types": []
-  },
-  "files": ["../packages/core/globals.d.ts"],
-  "include": ["**/*.ts"],
+	"compilerOptions": {
+		"strict": true,
+		"noLib": true,
+		"skipLibCheck": true,
+		"moduleResolution": "bundler",
+		"module": "ESNext",
+		"types": []
+	},
+	"files": ["../packages/core/globals.d.ts"],
+	"include": ["**/*.ts"]
 }
