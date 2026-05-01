@@ -1,6 +1,6 @@
+import type { BackpackClassName } from "../../cfg/cfg-vehicles-backpacks";
 import type { Unit } from "../../primitives";
 import type { Effect, GlobalArgument, LocalArgument } from "../locality";
-import type { BackpackClassName } from "../../cfg/cfg-vehicles-backpacks";
 
 /**
  * Adds a backpack for a unit.

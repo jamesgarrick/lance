@@ -20,7 +20,12 @@ declare global {
 
 	interface HashMap {}
 
-	//interface Number {}
+	interface Number {}
+	interface NumberConstructor {
+		new (value?: unknown): Number;
+		(value?: unknown): number;
+	}
+	declare var Number: NumberConstructor;
 
 	interface String extends IString {}
 

@@ -1,18 +1,18 @@
-import type { GlobalArgument, Effect } from "../locality";
-import type { Unit } from "../../primitives";
 import type { GlassesClassName } from "../../cfg/cfg-glasses";
 import type { MagazineClassName } from "../../cfg/cfg-magazines";
 import type {
-	UniformClassName,
-	VestClassName,
+    UniformClassName,
+    VestClassName,
 } from "../../cfg/cfg-weapons-equipment";
 import type {
-	BipodClassName,
-	MuzzleClassName,
-	OpticClassName,
-	RailItemClassName,
+    BipodClassName,
+    MuzzleClassName,
+    OpticClassName,
+    RailItemClassName,
 } from "../../cfg/cfg-weapons-items";
 import type { WeaponClassName } from "../../cfg/cfg-weapons-weapons";
+import type { Unit } from "../../primitives";
+import type { Effect, GlobalArgument } from "../locality";
 
 /**
  * Returns name of currently used goggles (for NVGoggles use hmd).

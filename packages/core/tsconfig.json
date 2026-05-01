@@ -9,8 +9,12 @@
 		"module": "ESNext",
 		"rootDir": ".",
 		"moduleResolution": "bundler",
+		"paths": {
+			"@lance/core": ["./index.ts"],
+			"@lance/core/*": ["./*"]
+		},
 		"strict": true,
 		"skipLibCheck": true
 	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts"]
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "lance.config.ts"]
 }

@@ -5,5 +5,5 @@ export interface LanceConfig {
 	private?: boolean;
 	exports?: string | string[];
 	include?: string[];
-	dependencies?: Record<string, string>;
+	dependencies?: { [name: string]: string };
 }

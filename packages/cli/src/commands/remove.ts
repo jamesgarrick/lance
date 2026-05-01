@@ -5,6 +5,7 @@ import {
 	writeLockfile,
 	writeManifest,
 } from "../lib/manifest";
+import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths";
 
 export default class Remove extends Command {
 	static override id = "remove";
@@ -24,6 +25,9 @@ export default class Remove extends Command {
 		if (lock?.dependencies[name]) {
 			delete lock.dependencies[name];
 			await writeLockfile(cwd, lock);
+			await writeGeneratedTsconfigPaths(cwd, lock.dependencies);
+		} else {
+			await writeGeneratedTsconfigPaths(cwd, manifest.dependencies ?? {});
 		}
 		this.log(`Removed ${name}`);
 	}

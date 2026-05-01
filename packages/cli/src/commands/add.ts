@@ -10,6 +10,7 @@ import {
 } from "../lib/manifest";
 import { installDependency } from "../lib/install-dependency";
 import { registryFetch } from "../lib/registry-client";
+import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths";
 
 interface PackageInfoResponse {
 	name: string;
@@ -83,6 +84,7 @@ export default class Add extends Command {
 			lockDeps[pkg] = { version: v };
 		}
 		await writeLockfile(cwd, { lockfileVersion: 1, dependencies: lockDeps });
+		await writeGeneratedTsconfigPaths(cwd, lockDeps);
 		await installDependency(cwd, registry, name, lockDeps[name]!.version);
 		this.log(`Added ${name}@${depRange}`);
 	}

@@ -7,6 +7,7 @@ import { existsSync } from "node:fs";
 import { LOCK_FILE, MANIFEST_FILE } from "../lib/manifest";
 import { getToken } from "../lib/auth";
 import { registryFetch } from "../lib/registry-client";
+import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths";
 
 export default class Init extends Command {
 	static override id = "init";
@@ -89,6 +90,8 @@ export default class Init extends Command {
 			);
 			this.log(`  Created ${LOCK_FILE}`);
 		}
+		await writeGeneratedTsconfigPaths(cwd, {});
+		this.log("  Created lance_modules/tsconfig.paths.json");
 
 		if (await writeProjectGitignore(cwd)) {
 			this.log("  Created .gitignore");
@@ -136,6 +139,7 @@ async function writeProjectTsConfig(cwd: string): Promise<void> {
 	if (await Bun.file(tsconfigPath).exists()) return;
 
 	const tsconfig = {
+		extends: "./lance_modules/tsconfig.paths.json",
 		compilerOptions: {
 			strict: true,
 			noLib: true,

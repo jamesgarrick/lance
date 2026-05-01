@@ -3,6 +3,7 @@ import semver from "semver";
 import { defaultRegistry, readManifest, writeLockfile } from "../lib/manifest";
 import { installDependency } from "../lib/install-dependency";
 import { registryFetch } from "../lib/registry-client";
+import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths";
 
 interface PackageInfoResponse {
 	name: string;
@@ -32,6 +33,7 @@ export default class Update extends Command {
 		}
 
 		await writeLockfile(cwd, { lockfileVersion: 1, dependencies: resolved });
+		await writeGeneratedTsconfigPaths(cwd, resolved);
 
 		for (const [name, dep] of Object.entries(resolved)) {
 			await installDependency(cwd, registry, name, dep.version);

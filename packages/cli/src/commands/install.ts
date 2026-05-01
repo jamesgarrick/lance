@@ -1,6 +1,7 @@
 import { Command } from "@oclif/core";
 import { defaultRegistry, readLockfile, readManifest } from "../lib/manifest";
 import { installDependency } from "../lib/install-dependency";
+import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths";
 
 export default class Install extends Command {
 	static override id = "install";
@@ -13,6 +14,7 @@ export default class Install extends Command {
 		if (!lock) this.error("No lance.lock found. Run `lance add` first.");
 		const manifest = await readManifest(cwd);
 		const registry = defaultRegistry(manifest);
+		await writeGeneratedTsconfigPaths(cwd, lock.dependencies);
 
 		for (const [pkgName, dep] of Object.entries(lock.dependencies)) {
 			await installDependency(cwd, registry, pkgName, dep.version);
