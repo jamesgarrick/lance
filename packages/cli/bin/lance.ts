@@ -14,6 +14,7 @@ import Remove from "../src/commands/remove.ts";
 import Search from "../src/commands/search.ts";
 import Unpublish from "../src/commands/unpublish.ts";
 import Update from "../src/commands/update.ts";
+import Upgrade from "../src/commands/upgrade.ts";
 import WhoAmI from "../src/commands/whoami.ts";
 
 const [command, ...rest] = process.argv.slice(2);
@@ -38,6 +39,7 @@ try {
 		unpublish: Unpublish,
 		outdated: Outdated,
 		update: Update,
+		upgrade: Upgrade,
 		list: List,
 	};
 	const cmd = command ? commands[command] : undefined;
@@ -66,6 +68,7 @@ try {
 				`  ${cmdColor("unpublish")} Unpublish package version (<72h)`,
 				`  ${cmdColor("outdated")}  Show newer versions`,
 				`  ${cmdColor("update")}    Refresh lockfile to latest compatible`,
+				`  ${cmdColor("upgrade")}   Upgrade the Lance CLI`,
 				`  ${cmdColor("list")}      Show resolved deps`,
 				"",
 				`Run \`lance <command> ${flagColor("--help")}\` for command-specific help.`,
