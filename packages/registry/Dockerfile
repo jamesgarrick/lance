@@ -1,16 +1,12 @@
 FROM oven/bun:alpine AS base
 WORKDIR /app
 
-# Workspace manifests for reproducible install
+# Workspace files for reproducible install
 COPY package.json bun.lock ./
-COPY packages/registry/package.json ./packages/registry/package.json
-COPY playground/package.json ./playground/package.json
+COPY packages ./packages
+COPY playground ./playground
 
 RUN bun install --frozen-lockfile
-
-# Registry source
-COPY packages/registry/src ./packages/registry/src
-COPY packages/registry/tsconfig.json ./packages/registry/tsconfig.json
 
 WORKDIR /app/packages/registry
 ENV NODE_ENV=production
