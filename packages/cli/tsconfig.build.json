@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "rootDir": ".",
+    "outDir": "./dist",
+    "paths": {
+      "@lance/compiler": ["../compiler/dist/index.d.ts"]
+    },
+    "declaration": false,
+    "sourceMap": false
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/*.test.ts", "src/commands/index.ts", "dist", "node_modules"]
+}

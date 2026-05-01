@@ -34,34 +34,32 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Build standalone CLI binaries
+      - name: Build CLI
         if: steps.cli_changed.outputs.changed == 'true'
         working-directory: packages/cli
-        run: |
-          mkdir -p dist/bin
-          for target in bun-linux-x64 bun-linux-arm64 bun-darwin-x64 bun-darwin-arm64 bun-windows-x64; do
-            out="dist/bin/lance-${target}"
-            if [ "$target" = "bun-windows-x64" ]; then
-              out="${out}.exe"
-            fi
-            bun build ./bin/lance.ts --compile --target="$target" --outfile "$out"
-          done
+        run: bun run build
 
-      - name: Pack release tarballs
+      - name: Ensure shrinkwrap file exists for oclif pack
         if: steps.cli_changed.outputs.changed == 'true'
         working-directory: packages/cli
         run: |
-          mkdir -p dist/releases
-          for target in bun-linux-x64 bun-linux-arm64 bun-darwin-x64 bun-darwin-arm64 bun-windows-x64; do
-            stage="dist/stage/$target/bin"
-            mkdir -p "$stage"
-            if [ "$target" = "bun-windows-x64" ]; then
-              cp "dist/bin/lance-${target}.exe" "$stage/lance.exe"
-            else
-              cp "dist/bin/lance-${target}" "$stage/lance"
-            fi
-            tar -C "dist/stage/$target" -czf "dist/releases/lance-${target}.tar.gz" .
-          done
+          if [ ! -f npm-shrinkwrap.json ]; then
+            cat > npm-shrinkwrap.json <<'EOF'
+          {
+            "name": "@lance/cli",
+            "lockfileVersion": 3,
+            "requires": true,
+            "packages": {
+              "": {}
+            }
+          }
+          EOF
+          fi
+
+      - name: Pack Oclif tarballs
+        if: steps.cli_changed.outputs.changed == 'true'
+        working-directory: packages/cli
+        run: bunx oclif pack tarballs --root . --targets linux-x64,linux-arm64,darwin-x64,darwin-arm64,win32-x64
 
       - name: Verify release artifacts exist
         if: steps.cli_changed.outputs.changed == 'true'
@@ -87,4 +85,4 @@ jobs:
         with:
           tag_name: ${{ steps.release_tag.outputs.tag }}
           files: |
-            packages/cli/dist/releases/*.tar.gz
+            packages/cli/dist/*.tar.gz
