@@ -105,6 +105,42 @@ app.get("/packages/:fullName", async (c) => {
 	});
 });
 
+app.get("/packages/:fullName/versions/:version/tarball", async (c) => {
+	const fullName = decodeURIComponent(c.req.param("fullName"));
+	const version = decodeURIComponent(c.req.param("version"));
+
+	const pkg = await db
+		.select()
+		.from(packages)
+		.where(eq(packages.name, fullName))
+		.limit(1);
+	if (!pkg[0]) return c.json({ error: "Package not found" }, 404);
+
+	const row = await db
+		.select()
+		.from(versions)
+		.where(
+			and(
+				eq(versions.packageId, pkg[0].id),
+				eq(versions.version, version),
+				eq(versions.active, true),
+				isNull(versions.unpublishedAt),
+			),
+		)
+		.limit(1);
+	if (!row[0]) return c.json({ error: "Version not found" }, 404);
+
+	const file = s3.file(row[0].tarballKey);
+	if (!(await file.exists())) return c.json({ error: "Tarball not found" }, 404);
+
+	return new Response(await file.arrayBuffer(), {
+		headers: {
+			"content-type": "application/gzip",
+			"content-disposition": `attachment; filename="${pkg[0].packageName}-${version}.tgz"`,
+		},
+	});
+});
+
 app.post("/publish", async (c) => {
 	const auth = c.req.header("authorization");
 	if (!auth?.startsWith("Bearer "))
