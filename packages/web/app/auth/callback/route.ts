@@ -1,0 +1,154 @@
+import { NextRequest, NextResponse } from "next/server";
+
+interface GithubTokenResponse {
+	access_token?: string;
+	error?: string;
+	error_description?: string;
+}
+
+interface GithubUserResponse {
+	login?: string;
+}
+
+interface RegistryLoginResponse {
+	token?: string;
+	user?: string;
+	scope?: string;
+	error?: string;
+}
+
+function requiredEnv(name: string): string {
+	const value = process.env[name];
+	if (!value) throw new Error(`Missing required env var: ${name}`);
+	return value;
+}
+
+function getRegistryLoginUrl(): string {
+	return process.env.REGISTRY_AUTH_LOGIN_URL ?? "http://localhost:8787/auth/login";
+}
+
+function getDefaultSuccessRedirect(): string | null {
+	return process.env.OAUTH_SUCCESS_REDIRECT ?? null;
+}
+
+function buildRedirectWithParams(target: string, params: Record<string, string>): URL {
+	const url = new URL(target);
+	for (const [key, value] of Object.entries(params)) {
+		url.searchParams.set(key, value);
+	}
+	return url;
+}
+
+export async function GET(req: NextRequest): Promise<NextResponse> {
+	const code = req.nextUrl.searchParams.get("code");
+	const state = req.nextUrl.searchParams.get("state") ?? "";
+	const returnTo = req.nextUrl.searchParams.get("return_to");
+
+	if (!code) {
+		return NextResponse.json({ error: "Missing code query parameter" }, { status: 400 });
+	}
+
+	try {
+		const clientId = requiredEnv("GITHUB_CLIENT_ID");
+		const clientSecret = requiredEnv("GITHUB_CLIENT_SECRET");
+
+		const tokenResponse = await fetch("https://github.com/login/oauth/access_token", {
+			method: "POST",
+			headers: {
+				Accept: "application/json",
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				client_id: clientId,
+				client_secret: clientSecret,
+				code,
+			}),
+			cache: "no-store",
+		});
+
+		if (!tokenResponse.ok) {
+			return NextResponse.json(
+				{ error: "GitHub token exchange failed", status: tokenResponse.status },
+				{ status: 502 },
+			);
+		}
+
+		const tokenBody = (await tokenResponse.json()) as GithubTokenResponse;
+		if (!tokenBody.access_token) {
+			return NextResponse.json(
+				{
+					error: tokenBody.error ?? "GitHub token exchange returned no access token",
+					details: tokenBody.error_description ?? "",
+				},
+				{ status: 502 },
+			);
+		}
+
+		const userResponse = await fetch("https://api.github.com/user", {
+			headers: {
+				Accept: "application/vnd.github+json",
+				Authorization: `Bearer ${tokenBody.access_token}`,
+				"X-GitHub-Api-Version": "2022-11-28",
+			},
+			cache: "no-store",
+		});
+
+		if (!userResponse.ok) {
+			return NextResponse.json(
+				{ error: "Failed to load GitHub user", status: userResponse.status },
+				{ status: 502 },
+			);
+		}
+
+		const userBody = (await userResponse.json()) as GithubUserResponse;
+		const githubUser = userBody.login?.trim().toLowerCase();
+		if (!githubUser) {
+			return NextResponse.json({ error: "GitHub user login not present" }, { status: 502 });
+		}
+
+		const registryResponse = await fetch(getRegistryLoginUrl(), {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify({ githubUser }),
+			cache: "no-store",
+		});
+
+		const registryBody = (await registryResponse.json()) as RegistryLoginResponse;
+		if (!registryResponse.ok || !registryBody.token) {
+			return NextResponse.json(
+				{
+					error: registryBody.error ?? "Registry login failed",
+					status: registryResponse.status,
+				},
+				{ status: 502 },
+			);
+		}
+
+		const redirectTarget = returnTo ?? getDefaultSuccessRedirect();
+		if (redirectTarget) {
+			const redirectUrl = buildRedirectWithParams(redirectTarget, {
+				token: registryBody.token,
+				user: registryBody.user ?? githubUser,
+				scope: registryBody.scope ?? "",
+				state,
+			});
+			return NextResponse.redirect(redirectUrl);
+		}
+
+		return NextResponse.json({
+			ok: true,
+			token: registryBody.token,
+			user: registryBody.user ?? githubUser,
+			scope: registryBody.scope ?? "",
+			state,
+		});
+	} catch (error) {
+		return NextResponse.json(
+			{
+				error: "OAuth callback failed",
+				details: error instanceof Error ? error.message : String(error),
+			},
+			{ status: 500 },
+		);
+	}
+}
