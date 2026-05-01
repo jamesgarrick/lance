@@ -13,9 +13,9 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"build": "bunx tsc -p tsconfig.build.json",
+		"build": "tsc -p tsconfig.build.json",
 		"compile": "bun run src/cli.ts compile",
-		"typecheck": "bunx tsc --noEmit -p tsconfig.json",
+		"typecheck": "tsc --noEmit -p tsconfig.json",
 		"test": "bun test"
 	},
 	"devDependencies": {
