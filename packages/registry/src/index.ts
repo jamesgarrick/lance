@@ -227,7 +227,6 @@ export default {
 
 await ensureBucket();
 console.log(`@lance/registry listening on :${port} (bucket=${bucket})`);
-Bun.serve({ port, fetch: app.fetch });
 
 async function ensureBucket(): Promise<void> {
 	try {
