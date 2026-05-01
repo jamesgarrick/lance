@@ -1,0 +1,46 @@
+name: release-cli-autoupdate
+
+on:
+  push:
+    tags:
+      - "@lance/cli@*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Validate tag matches CLI version
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          VERSION="${TAG#@lance/cli@}"
+          PKG_VERSION="$(node -p "require('./packages/cli/package.json').version")"
+          if [ "$VERSION" != "$PKG_VERSION" ]; then
+            echo "Tag version ($VERSION) does not match packages/cli/package.json version ($PKG_VERSION)"
+            exit 1
+          fi
+
+      - name: Pack Oclif tarballs
+        working-directory: packages/cli
+        run: |
+          bunx oclif pack tarballs --root . --targets linux-x64,linux-arm64,darwin-x64,darwin-arm64,win32-x64
+
+      - name: Publish GitHub Release with tarballs
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: |
+            packages/cli/dist/**

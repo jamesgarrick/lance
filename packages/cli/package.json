@@ -1,24 +1,44 @@
 {
 	"name": "@lance/cli",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"type": "module",
-	"private": true,
+	"private": false,
 	"bin": {
 		"lance": "./bin/lance.ts"
 	},
 	"scripts": {
-		"typecheck": "bunx tsc --noEmit -p tsconfig.json"
+		"typecheck": "bunx tsc --noEmit -p tsconfig.json",
+		"release:pack": "bunx oclif pack tarballs --root ."
 	},
 	"dependencies": {
 		"@inquirer/prompts": "^7",
 		"@lance/compiler": "workspace:*",
 		"@oclif/core": "^4",
+		"@oclif/plugin-update": "^4.7.4",
 		"semver": "^7.7.3",
 		"tar": "^7.5.2"
 	},
 	"devDependencies": {
+		"@oclif/dev-cli": "^1.26.10",
 		"@types/bun": "latest",
 		"@types/semver": "^7.7.1",
 		"typescript": "^6.0.3"
+	},
+	"oclif": {
+		"bin": "lance",
+		"dirname": "lance",
+		"commands": "./src/commands",
+		"topicSeparator": " ",
+		"plugins": [
+			"@oclif/plugin-update"
+		],
+		"autoupdate": {
+			"strategy": "github"
+		},
+		"update": {
+			"s3": {
+				"host": "https://github.com/jamesgarrick/lance/releases/download"
+			}
+		}
 	}
 }
