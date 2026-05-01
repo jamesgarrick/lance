@@ -2,7 +2,7 @@ import type { LanceConfig } from "./types/lance-config";
 
 export default {
   name: "@lance/core",
-  version: "0.0.5",
+  version: "0.0.6",
   type: "library",
   exports: [
     "./index.ts",

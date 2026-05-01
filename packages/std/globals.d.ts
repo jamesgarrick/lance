@@ -10,7 +10,7 @@ declare global {
 	interface RegExp {}
 	interface IArguments {}
 
-	declare const Math: typeof import("./math").Math;
+	const Math: typeof import("./math").Math;
 
 	interface Array<T> {
 		[index: number]: T;
@@ -25,7 +25,7 @@ declare global {
 		new (value?: unknown): Number;
 		(value?: unknown): number;
 	}
-	declare var Number: NumberConstructor;
+	var Number: NumberConstructor;
 
 	interface String extends IString {}
 
@@ -37,15 +37,15 @@ declare global {
 	interface ErrorConstructor {
 		new (message?: string): Error;
 	}
-	declare var Error: ErrorConstructor;
+	var Error: ErrorConstructor;
 
 	interface TypeError extends Error {}
 	interface TypeErrorConstructor extends ErrorConstructor {}
-	declare var TypeError: TypeErrorConstructor;
+	var TypeError: TypeErrorConstructor;
 
 	interface RangeError extends Error {}
 	interface RangeErrorConstructor extends ErrorConstructor {}
-	declare var RangeError: RangeErrorConstructor;
+	var RangeError: RangeErrorConstructor;
 
 	interface Iterator<T> {
 		next(): IteratorResult<T>;
@@ -64,7 +64,7 @@ declare global {
 		[Symbol.iterator](): IterableIterator<T>;
 	}
 
-	declare namespace Symbol {
+	namespace Symbol {
 		const iterator: unique symbol;
 	}
 
@@ -72,7 +72,7 @@ declare global {
 		readonly description: string | undefined;
 	}
 
-	declare type PropertyKey = string | number | symbol;
+	type PropertyKey = string | number | symbol;
 
 	//
 	//

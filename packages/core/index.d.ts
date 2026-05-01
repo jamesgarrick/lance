@@ -1,13 +1,9 @@
 export * from "./src/sqf/index";
-export * from "./src/cfg/cfg-runtime";
+
 export * from "./src/cfg/config-file";
 export * from "./src/cfg/cfg-glasses";
-export * from "./src/cfg/cfg-weapons";
-export * from "./src/cfg/cfg-weapons-equipment";
-export * from "./src/cfg/cfg-weapons-items";
-export * from "./src/cfg/cfg-weapons-vehicle-weapons";
-export * from "./src/cfg/cfg-weapons-weapons";
 export * from "./src/cfg/cfg-magazines";
+export * from "./src/cfg/cfg-runtime";
 export * from "./src/cfg/cfg-vehicles-animals";
 export * from "./src/cfg/cfg-vehicles-backpacks";
 export * from "./src/cfg/cfg-vehicles-civ";
@@ -20,5 +16,8 @@ export * from "./src/cfg/cfg-vehicles-ruins-wrecks";
 export * from "./src/cfg/cfg-vehicles-structures";
 export * from "./src/cfg/cfg-vehicles-vr-objects";
 export * from "./src/cfg/cfg-vehicles-west";
-export * from "./src/primitives";
+export * from "./src/cfg/cfg-weapons-equipment";
+export * from "./src/cfg/cfg-weapons-items";
+export * from "./src/cfg/cfg-weapons-vehicle-weapons";
 export * from "./src/lance-config";
+export * from "./src/primitives";

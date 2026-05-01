@@ -1,4 +1,4 @@
-import type { String as IString } from "./types/string";
+export {};
 
 declare global {
 	// --- INTERNAL TYPESCRIPT REQUIREMENTS ---
@@ -20,45 +20,32 @@ declare global {
 
 	interface Number {}
 
-	interface String extends IString {}
+	interface String {}
 
 	interface Error {
-		readonly message: string;
-		readonly name: string;
+		message: string;
+		name: string;
 	}
 
 	interface ErrorConstructor {
 		new (message?: string): Error;
 	}
-	declare var Error: ErrorConstructor;
+	var Error: ErrorConstructor;
 
 	interface TypeError extends Error {}
 	interface TypeErrorConstructor extends ErrorConstructor {}
-	declare var TypeError: TypeErrorConstructor;
+	var TypeError: TypeErrorConstructor;
 
 	interface RangeError extends Error {}
 	interface RangeErrorConstructor extends ErrorConstructor {}
-	declare var RangeError: RangeErrorConstructor;
+	var RangeError: RangeErrorConstructor;
 
 	interface Iterator<T> {
 		next(): IteratorResult<T>;
 	}
 
-	interface IteratorResult<T> {
-		value: T;
-		done: boolean;
-	}
-
 	interface Iterable<T> {
 		[Symbol.iterator](): Iterator<T>;
-	}
-
-	declare namespace Symbol {
-		const iterator: unique symbol;
-	}
-
-	interface Symbol {
-		readonly description: string | undefined;
 	}
 
 	interface ConcatArray<T> {
