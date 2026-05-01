@@ -23,10 +23,14 @@ ENV HOSTNAME=0.0.0.0
 
 USER bun
 
-# Next standalone output
+# 1. Copy the standalone output (this brings over /app/packages/web/server.js and /app/node_modules)
 COPY --from=builder --chown=bun:bun /app/packages/web/.next/standalone ./
-COPY --from=builder --chown=bun:bun /app/packages/web/.next/static ./.next/static
-COPY --from=builder --chown=bun:bun /app/packages/web/public ./public
+
+# 2. Copy static and public files into the preserved monorepo structure
+COPY --from=builder --chown=bun:bun /app/packages/web/.next/static ./packages/web/.next/static
+COPY --from=builder --chown=bun:bun /app/packages/web/public ./packages/web/public
 
 EXPOSE 3000
-CMD ["bun", "run", "server.js"]
+
+# 3. Target the nested server.js
+CMD ["bun", "run", "packages/web/server.js"]
