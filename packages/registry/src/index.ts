@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import { and, desc, eq, isNull, like } from "drizzle-orm";
 import semver from "semver";
 import { Client as MinioClient } from "minio";
-import { db } from "./db/client";
+import { db, pool } from "./db/client";
 import { packages, versions } from "./db/schema";
 import { mintToken, RESERVED_SCOPES, scopeFromUser, verifyToken } from "./auth";
 
@@ -235,6 +235,7 @@ export default {
 	fetch: app.fetch,
 };
 
+await ensureSchema();
 await ensureBucket();
 try {
 	const dbHost = new URL(databaseUrl).hostname;
@@ -268,4 +269,41 @@ async function ensureBucket(): Promise<void> {
 	} catch (err) {
 		console.warn(`warning: could not ensure S3 bucket ${bucket}:`, err);
 	}
+}
+
+async function ensureSchema(): Promise<void> {
+	await pool.query(`
+		CREATE TABLE IF NOT EXISTS packages (
+			id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+			name text NOT NULL UNIQUE,
+			scope text NOT NULL,
+			package_name text NOT NULL,
+			created_at timestamptz NOT NULL DEFAULT now()
+		);
+	`);
+
+	await pool.query(`
+		CREATE INDEX IF NOT EXISTS packages_scope_idx ON packages(scope);
+	`);
+
+	await pool.query(`
+		CREATE TABLE IF NOT EXISTS versions (
+			id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+			package_id integer NOT NULL REFERENCES packages(id) ON DELETE CASCADE,
+			version text NOT NULL,
+			integrity text NOT NULL,
+			tarball_key text NOT NULL,
+			dependencies_json text NOT NULL,
+			published_by text NOT NULL,
+			created_at timestamptz NOT NULL DEFAULT now(),
+			unpublished_at timestamptz,
+			unpublish_reason text,
+			active boolean NOT NULL DEFAULT true,
+			CONSTRAINT versions_pkg_version_unique UNIQUE (package_id, version)
+		);
+	`);
+
+	await pool.query(`
+		CREATE INDEX IF NOT EXISTS versions_pkg_idx ON versions(package_id);
+	`);
 }
