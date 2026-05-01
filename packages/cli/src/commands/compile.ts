@@ -4,7 +4,7 @@ import {
 	formatDiagnosticSummary,
 	loadLanceConfig,
 } from "../../../compiler";
-import { Command, Flags } from "@oclif/core";
+import { Command, Flags, ux } from "@oclif/core";
 import { mkdir } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 
@@ -45,7 +45,7 @@ export default class Compile extends Command {
 
 		if (result.diagnostics.some((d) => d.severity === "error")) {
 			for (const d of result.diagnostics) {
-				this.warn(formatCompilerDiagnostic(d));
+				this.log(colorizeDiagnostic(formatCompilerDiagnostic(d)));
 			}
 			for (const phase of result.phases) {
 				const duration = `${phase.durationMs.toFixed(1)}ms`;
@@ -60,7 +60,7 @@ export default class Compile extends Command {
 		}
 
 		for (const d of result.diagnostics.filter((d) => d.severity !== "error")) {
-			this.warn(formatCompilerDiagnostic(d));
+			this.log(colorizeDiagnostic(formatCompilerDiagnostic(d)));
 		}
 
 		// Write all SQF output files
@@ -92,4 +92,10 @@ export default class Compile extends Command {
 
 function displayPath(outDir: string, dest: string): string {
 	return dest.startsWith(outDir) ? dest.slice(outDir.length + 1) : dest;
+}
+
+function colorizeDiagnostic(text: string): string {
+	if (text.includes(" ERROR ")) return ux.colorize("red", text);
+	if (text.includes(" WARNING ")) return ux.colorize("yellow", text);
+	return text;
 }

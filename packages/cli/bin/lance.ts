@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { handle } from "@oclif/core";
+import { handle, ux } from "@oclif/core";
 import Add from "../src/commands/add.ts";
 import Compile from "../src/commands/compile.ts";
 import Info from "../src/commands/info.ts";
@@ -17,6 +17,9 @@ import Update from "../src/commands/update.ts";
 import WhoAmI from "../src/commands/whoami.ts";
 
 const [command, ...rest] = process.argv.slice(2);
+const flagColor = (text: string): string => ux.colorize("#6fb3ff", text);
+const errorColor = (text: string): string => ux.colorize("red", text);
+const cmdColor = (text: string): string => ux.colorize("#6fb3ff", text);
 
 try {
 	const commands: Record<string, any> = {
@@ -46,31 +49,31 @@ try {
 				"Lance — TypeScript to SQF transpiler",
 				"",
 				"Usage:",
-				"  lance <command> [options]",
+				`  lance <command> ${flagColor("[options]")}`,
 				"",
 				"Commands:",
-				"  init      Initialize a new Lance project",
-				"  compile   Compile a Lance project to SQF",
-				"  add       Add a dependency",
-				"  remove    Remove a dependency",
-				"  install   Install dependencies from lockfile",
-				"  search    Search registry packages",
-				"  info      Show package metadata",
-				"  login     Save auth token (~/.lancerc)",
-				"  logout    Clear auth token",
-				"  whoami    Show current authenticated user",
-				"  publish   Publish current package",
-				"  unpublish Unpublish package version (<72h)",
-				"  outdated  Show newer versions",
-				"  update    Refresh lockfile to latest compatible",
-				"  list      Show resolved deps",
+				`  ${cmdColor("init")}      Initialize a new Lance project`,
+				`  ${cmdColor("compile")}   Compile a Lance project to SQF`,
+				`  ${cmdColor("add")}       Add a dependency`,
+				`  ${cmdColor("remove")}    Remove a dependency`,
+				`  ${cmdColor("install")}   Install dependencies from lockfile`,
+				`  ${cmdColor("search")}    Search registry packages`,
+				`  ${cmdColor("info")}      Show package metadata`,
+				`  ${cmdColor("login")}     Save auth token (~/.lancerc)`,
+				`  ${cmdColor("logout")}    Clear auth token`,
+				`  ${cmdColor("whoami")}    Show current authenticated user`,
+				`  ${cmdColor("publish")}   Publish current package`,
+				`  ${cmdColor("unpublish")} Unpublish package version (<72h)`,
+				`  ${cmdColor("outdated")}  Show newer versions`,
+				`  ${cmdColor("update")}    Refresh lockfile to latest compatible`,
+				`  ${cmdColor("list")}      Show resolved deps`,
 				"",
-				"Run `lance <command> --help` for command-specific help.",
+				`Run \`lance <command> ${flagColor("--help")}\` for command-specific help.`,
 			].join("\n"),
 		);
 	} else {
 		console.error(
-			`Unknown command: ${command}\nRun \`lance --help\` for available commands.`,
+			`${errorColor("Error")}: Unknown command: ${command}\nRun \`lance ${flagColor("--help")}\` for available commands.`,
 		);
 		process.exit(1);
 	}
