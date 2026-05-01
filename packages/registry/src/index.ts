@@ -9,11 +9,13 @@ import { mintToken, RESERVED_SCOPES, scopeFromUser, verifyToken } from "./auth";
 const app = new Hono();
 
 const bucket = process.env.S3_BUCKET ?? "lance";
+const databaseUrl = process.env.DATABASE_URL ?? "postgres://postgres:dev@localhost:5432/lance";
+const s3Endpoint = process.env.S3_ENDPOINT ?? "http://localhost:9000";
 const s3 = new Bun.S3Client({
 	accessKeyId: process.env.S3_ACCESS_KEY_ID ?? "minioadmin",
 	secretAccessKey: process.env.S3_SECRET_ACCESS_KEY ?? "minioadmin",
 	bucket,
-	endpoint: process.env.S3_ENDPOINT ?? "http://localhost:9000",
+	endpoint: s3Endpoint,
 	region: process.env.S3_REGION ?? "us-east-1",
 });
 
@@ -226,6 +228,13 @@ export default {
 };
 
 await ensureBucket();
+try {
+	const dbHost = new URL(databaseUrl).hostname;
+	const s3Host = new URL(s3Endpoint).hostname;
+	console.log(`registry config: dbHost=${dbHost} s3Host=${s3Host}`);
+} catch {
+	console.log("registry config: unable to parse DATABASE_URL or S3_ENDPOINT");
+}
 console.log(`@lance/registry listening on :${port} (bucket=${bucket})`);
 
 async function ensureBucket(): Promise<void> {

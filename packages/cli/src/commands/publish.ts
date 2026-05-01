@@ -26,7 +26,7 @@ export default class Publish extends Command {
 		const packPath = `${cwd}/.lance-publish.tgz`;
 		await tar.create({ gzip: true, cwd, file: packPath }, [
 			"src",
-			"lance.json",
+			"lance.config.ts",
 			"lance.config.toml",
 			"tsconfig.json",
 		]);

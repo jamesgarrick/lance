@@ -17,7 +17,7 @@ interface PackageInfoResponse {
 
 export default class Add extends Command {
 	static override id = "add";
-	static override description = "Add a dependency to lance.json";
+	static override description = "Add a dependency to lance.config.ts";
 	static override flags = {
 		exact: Flags.boolean({
 			description: "Pin exact version instead of ^range",

@@ -1,4 +1,5 @@
 import { join } from "node:path";
+import { pathToFileURL } from "node:url";
 
 export interface LanceManifest {
 	name: string;
@@ -20,15 +21,28 @@ export interface LanceLockfile {
 	dependencies: Record<string, LockedPackage>;
 }
 
-export const MANIFEST_FILE = "lance.json";
+export const MANIFEST_FILE = "lance.config.ts";
+const LEGACY_MANIFEST_FILE = "lance.json";
 export const LOCK_FILE = "lance.lock";
 
 export async function readManifest(cwd: string): Promise<LanceManifest> {
-	const path = join(cwd, MANIFEST_FILE);
-	const file = Bun.file(path);
-	if (!(await file.exists()))
-		throw new Error(`${MANIFEST_FILE} not found in ${cwd}`);
-	return JSON.parse(await file.text()) as LanceManifest;
+	const tsPath = join(cwd, MANIFEST_FILE);
+	const tsFile = Bun.file(tsPath);
+	if (await tsFile.exists()) {
+		const manifest = await importManifestFromTs(tsPath);
+		return normalizeManifest(manifest, tsPath);
+	}
+
+	const legacyPath = join(cwd, LEGACY_MANIFEST_FILE);
+	const legacyFile = Bun.file(legacyPath);
+	if (await legacyFile.exists()) {
+		const manifest = JSON.parse(await legacyFile.text()) as LanceManifest;
+		return normalizeManifest(manifest, legacyPath);
+	}
+
+	throw new Error(
+		`${MANIFEST_FILE} not found in ${cwd}. Run \`lance init\` to create one.`,
+	);
 }
 
 export async function writeManifest(
@@ -36,7 +50,8 @@ export async function writeManifest(
 	manifest: LanceManifest,
 ): Promise<void> {
 	const path = join(cwd, MANIFEST_FILE);
-	await Bun.write(path, `${JSON.stringify(manifest, null, 2)}\n`);
+	const normalized = normalizeManifest(manifest, path);
+	await Bun.write(path, `${renderManifestTs(normalized)}\n`);
 }
 
 export async function readLockfile(cwd: string): Promise<LanceLockfile | null> {
@@ -78,4 +93,73 @@ export function splitPackageAndVersion(raw: string): {
 			`Invalid package spec: ${raw}. Expected @scope/name or @scope/name@version`,
 		);
 	return { name: match[1]!, version: match[2] ?? null };
+}
+
+async function importManifestFromTs(path: string): Promise<unknown> {
+	const moduleUrl = `${pathToFileURL(path).href}?t=${Date.now()}`;
+	const mod = (await import(moduleUrl)) as { default?: unknown };
+	if (mod.default === undefined) {
+		throw new Error(
+			`Invalid manifest at ${path}: expected \`export default { ... }\``,
+		);
+	}
+	return mod.default;
+}
+
+function normalizeManifest(value: unknown, sourcePath: string): LanceManifest {
+	if (!value || typeof value !== "object") {
+		throw new Error(`Invalid manifest at ${sourcePath}: expected an object`);
+	}
+	const raw = value as Partial<LanceManifest>;
+	if (typeof raw.name !== "string" || raw.name.length === 0) {
+		throw new Error(`Invalid manifest at ${sourcePath}: "name" is required`);
+	}
+	if (typeof raw.version !== "string" || raw.version.length === 0) {
+		throw new Error(`Invalid manifest at ${sourcePath}: "version" is required`);
+	}
+	if (raw.type !== "mission" && raw.type !== "library") {
+		throw new Error(
+			`Invalid manifest at ${sourcePath}: "type" must be "mission" or "library"`,
+		);
+	}
+	const dependencies = raw.dependencies ?? {};
+	if (typeof dependencies !== "object" || Array.isArray(dependencies)) {
+		throw new Error(
+			`Invalid manifest at ${sourcePath}: "dependencies" must be an object`,
+		);
+	}
+	return {
+		name: raw.name,
+		version: raw.version,
+		type: raw.type,
+		registry: raw.registry,
+		dependencies: Object.fromEntries(
+			Object.entries(dependencies).map(([k, v]) => [k, String(v)]),
+		),
+	};
+}
+
+function renderManifestTs(manifest: LanceManifest): string {
+	const dependencies = manifest.dependencies ?? {};
+	const dependenciesLines = Object.entries(dependencies)
+		.sort(([a], [b]) => a.localeCompare(b))
+		.map(([name, range]) => `    ${JSON.stringify(name)}: ${JSON.stringify(range)},`);
+
+	return [
+		"export default {",
+		`  name: ${JSON.stringify(manifest.name)},`,
+		`  version: ${JSON.stringify(manifest.version)},`,
+		`  type: ${JSON.stringify(manifest.type)},`,
+		...(manifest.registry ? [`  registry: ${JSON.stringify(manifest.registry)},`] : []),
+		"  dependencies: {",
+		...dependenciesLines,
+		"  },",
+		"} satisfies {",
+		"  name: string;",
+		'  version: string;',
+		'  type: "mission" | "library";',
+		"  registry?: string;",
+		"  dependencies?: Record<string, string>;",
+		"};",
+	].join("\n");
 }

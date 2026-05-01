@@ -5,6 +5,8 @@ import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { existsSync } from "node:fs";
 import { LOCK_FILE, MANIFEST_FILE } from "../lib/manifest";
+import { readRc } from "../lib/auth";
+import { registryFetch } from "../lib/registry-client";
 
 export default class Init extends Command {
 	static override id = "init";
@@ -15,9 +17,10 @@ export default class Init extends Command {
 	async run(): Promise<void> {
 		const cwd = process.cwd();
 		const configPath = join(cwd, "lance.config.toml");
+		const manifestPath = join(cwd, MANIFEST_FILE);
 
-		if (await Bun.file(configPath).exists()) {
-			this.error("lance.config.toml already exists in this directory");
+		if (await Bun.file(configPath).exists() || (await Bun.file(manifestPath).exists())) {
+			this.error("Lance config already exists in this directory");
 		}
 
 		this.log("Initializing a new Lance project...\n");
@@ -36,6 +39,19 @@ export default class Init extends Command {
 		});
 
 		const author = await input({ message: "Author" });
+		const rc = await readRc();
+		const defaultRegistry =
+			rc.registry ?? process.env.LANCE_REGISTRY_URL ?? "http://localhost:8787";
+		const defaultPackageName =
+			type === "library"
+				? await suggestDefaultPackageName(defaultRegistry, name).catch(
+						() => `@local/${name}`,
+					)
+				: `@local/${name}`;
+		const packageName = await input({
+			message: "Package name",
+			default: defaultPackageName,
+		});
 
 		const entrypoint =
 			type === "mission"
@@ -118,21 +134,25 @@ typesPackage = "@lance/core"
 		await Bun.write(configPath, configToml);
 		this.log(`  Created lance.config.toml`);
 
-		const manifestPath = join(cwd, MANIFEST_FILE);
 		if (!(await Bun.file(manifestPath).exists())) {
 			await Bun.write(
 				manifestPath,
-				`${JSON.stringify(
-					{
-						name: `@local/${name}`,
-						version: "0.0.1",
-						type,
-						registry: process.env.LANCE_REGISTRY_URL ?? "http://localhost:8787",
-						dependencies: {},
-					},
-					null,
-					2,
-				)}\n`,
+				[
+					"export default {",
+					`  name: ${JSON.stringify(packageName)},`,
+					'  version: "0.0.1",',
+					`  type: ${JSON.stringify(type)},`,
+					`  registry: ${JSON.stringify(defaultRegistry)},`,
+					"  dependencies: {},",
+					"} satisfies {",
+					"  name: string;",
+					'  version: string;',
+					'  type: "mission" | "library";',
+					"  registry?: string;",
+					"  dependencies?: Record<string, string>;",
+					"};",
+					"",
+				].join("\n"),
 			);
 			this.log(`  Created ${MANIFEST_FILE}`);
 		}
@@ -181,6 +201,18 @@ typesPackage = "@lance/core"
 
 		this.log(`\nDone! Run \`lance compile\` to build your project.`);
 	}
+}
+
+async function suggestDefaultPackageName(
+	registry: string,
+	projectName: string,
+): Promise<string> {
+	const rc = await readRc();
+	if (!rc.token) return `@local/${projectName}`;
+	const me = await registryFetch<{ user: string }>(registry, "/auth/whoami", {
+		token: rc.token,
+	});
+	return `@${me.user}/${projectName}`;
 }
 
 function escToml(s: string): string {
