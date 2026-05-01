@@ -8,6 +8,8 @@ services:
       DATABASE_URL: "postgres://postgres:dev@postgres:5432/lance"
       LANCE_JWT_SECRET: "change-me-in-production"
     expose: ["8787"]
+    networks:
+      - dokploy-network
     depends_on:
       postgres:
         condition: service_healthy
@@ -24,8 +26,14 @@ services:
       timeout: 3s
       retries: 20
       start_period: 5s
+    networks:
+      - dokploy-network
     volumes:
       - pgdata:/var/lib/postgresql/data
 
 volumes:
   pgdata:
+
+networks:
+  dokploy-network:
+    external: true
