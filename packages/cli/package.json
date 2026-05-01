@@ -13,8 +13,8 @@
 	],
 	"scripts": {
 		"typecheck": "bunx tsc --noEmit -p tsconfig.json",
-		"build": "bun run --cwd ../compiler build && bunx tsc -p tsconfig.build.json && bunx oclif manifest .",
-		"release:pack": "bun run build && bunx oclif pack tarballs --root . --targets linux-x64,linux-arm64,darwin-x64,darwin-arm64,win32-x64"
+		"build": "bun run --cwd ../compiler build && ../../node_modules/.bin/tsc -p tsconfig.build.json && ../../node_modules/.bin/oclif manifest .",
+		"release:pack": "bun run build && ../../node_modules/.bin/oclif pack tarballs --root . --targets linux-x64,linux-arm64,darwin-x64,darwin-arm64,win32-x64"
 	},
 	"dependencies": {
 		"@inquirer/prompts": "^7",

@@ -3,7 +3,7 @@ import {
 	formatCompilerDiagnostic,
 	formatDiagnosticSummary,
 	loadLanceConfig,
-} from "../../../compiler";
+} from "@lance/compiler";
 import { Command, Flags, ux } from "@oclif/core";
 import { mkdir } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
