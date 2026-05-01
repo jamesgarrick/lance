@@ -11,9 +11,17 @@ const app = new Hono();
 const bucket = process.env.S3_BUCKET ?? "lance";
 const databaseUrl = process.env.DATABASE_URL ?? "postgres://postgres:dev@localhost:5432/lance";
 const s3Endpoint = process.env.S3_ENDPOINT ?? "http://localhost:9000";
+const s3AccessKeyId =
+	process.env.AWS_S3_ID
+	?? process.env.S3_ACCESS_KEY_ID
+	?? "minioadmin";
+const s3SecretAccessKey =
+	process.env.AWS_S3_SECRET
+	?? process.env.S3_SECRET_ACCESS_KEY
+	?? "minioadmin";
 const s3 = new Bun.S3Client({
-	accessKeyId: process.env.S3_ACCESS_KEY_ID ?? "minioadmin",
-	secretAccessKey: process.env.S3_SECRET_ACCESS_KEY ?? "minioadmin",
+	accessKeyId: s3AccessKeyId,
+	secretAccessKey: s3SecretAccessKey,
 	bucket,
 	endpoint: s3Endpoint,
 	region: process.env.S3_REGION ?? "us-east-1",
@@ -238,18 +246,19 @@ try {
 console.log(`@lance/registry listening on :${port} (bucket=${bucket})`);
 
 async function ensureBucket(): Promise<void> {
+	const shouldEnsureBucket = process.env.S3_AUTO_CREATE_BUCKET === "true";
+	if (!shouldEnsureBucket) return;
+
 	try {
-		const endpoint = new URL(
-			process.env.S3_ENDPOINT ?? "http://localhost:9000",
-		);
+		const endpoint = new URL(s3Endpoint);
 		const minio = new MinioClient({
 			endPoint: endpoint.hostname,
 			port: Number(
 				endpoint.port || (endpoint.protocol === "https:" ? 443 : 80),
 			),
 			useSSL: endpoint.protocol === "https:",
-			accessKey: process.env.S3_ACCESS_KEY_ID ?? "minioadmin",
-			secretKey: process.env.S3_SECRET_ACCESS_KEY ?? "minioadmin",
+			accessKey: s3AccessKeyId,
+			secretKey: s3SecretAccessKey,
 		});
 		const exists = await minio.bucketExists(bucket);
 		if (!exists) {
