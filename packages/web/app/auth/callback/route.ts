@@ -22,6 +22,24 @@ interface OAuthStatePayload {
 	return_to?: string;
 }
 
+async function parseJsonResponse<T>(response: Response): Promise<{
+	ok: true;
+	data: T;
+} | {
+	ok: false;
+	raw: string;
+}> {
+	const raw = await response.text();
+	if (!raw) {
+		return { ok: false, raw: "" };
+	}
+	try {
+		return { ok: true, data: JSON.parse(raw) as T };
+	} catch {
+		return { ok: false, raw };
+	}
+}
+
 function requiredEnv(name: string): string {
 	const value = process.env[name];
 	if (!value) throw new Error(`Missing required env var: ${name}`);
@@ -106,7 +124,18 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 			);
 		}
 
-		const tokenBody = (await tokenResponse.json()) as GithubTokenResponse;
+		const tokenParsed = await parseJsonResponse<GithubTokenResponse>(tokenResponse);
+		if (!tokenParsed.ok) {
+			return NextResponse.json(
+				{
+					error: "GitHub token exchange returned non-JSON",
+					status: tokenResponse.status,
+					body: tokenParsed.raw.slice(0, 400),
+				},
+				{ status: 502 },
+			);
+		}
+		const tokenBody = tokenParsed.data;
 		if (!tokenBody.access_token) {
 			return NextResponse.json(
 				{
@@ -133,7 +162,18 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 			);
 		}
 
-		const userBody = (await userResponse.json()) as GithubUserResponse;
+		const userParsed = await parseJsonResponse<GithubUserResponse>(userResponse);
+		if (!userParsed.ok) {
+			return NextResponse.json(
+				{
+					error: "GitHub user endpoint returned non-JSON",
+					status: userResponse.status,
+					body: userParsed.raw.slice(0, 400),
+				},
+				{ status: 502 },
+			);
+		}
+		const userBody = userParsed.data;
 		const githubUser = userBody.login?.trim().toLowerCase();
 		if (!githubUser) {
 			return NextResponse.json({ error: "GitHub user login not present" }, { status: 502 });
@@ -146,7 +186,20 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 			cache: "no-store",
 		});
 
-		const registryBody = (await registryResponse.json()) as RegistryLoginResponse;
+		const registryParsed =
+			await parseJsonResponse<RegistryLoginResponse>(registryResponse);
+		if (!registryParsed.ok) {
+			return NextResponse.json(
+				{
+					error: "Registry login endpoint returned non-JSON",
+					status: registryResponse.status,
+					url: getRegistryLoginUrl(),
+					body: registryParsed.raw.slice(0, 400),
+				},
+				{ status: 502 },
+			);
+		}
+		const registryBody = registryParsed.data;
 		if (!registryResponse.ok || !registryBody.token) {
 			return NextResponse.json(
 				{
