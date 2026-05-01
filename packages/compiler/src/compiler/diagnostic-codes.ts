@@ -8,8 +8,8 @@
 
 export const DIAGNOSTIC_CODES = {
 	// ── Configuration / Loading ────────────────────────────────────────────────
-	LANCE_CONFIG_MISSING: "no lance.config.toml found",
-	LANCE_CONFIG_INVALID: "lance.config.toml failed schema validation",
+	LANCE_CONFIG_MISSING: "no lance.config.ts found",
+	LANCE_CONFIG_INVALID: "lance.config.ts failed schema validation",
 	LANCE_ENTRYPOINT_NOT_FOUND: "entrypoint file does not exist",
 	LANCE_UNSUPPORTED_PACKAGE_IMPORT: "non-types package imported",
 	LANCE_CIRCULAR_IMPORT: "circular import detected",

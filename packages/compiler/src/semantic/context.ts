@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { createRequire } from "node:module";
+import { fileURLToPath } from "node:url";
 import type { CompilerOptions } from "../compiler/options";
 
 export type CfgRootName = "cfgWeapons" | "cfgWeaponsItems" | "cfgMagazines";
@@ -19,9 +20,15 @@ export async function createSemanticContext(
 		: resolveDefaultCfgRoots(typesPackageName);
 
 	const cfgRoots = {
-		cfgWeapons: await readCfgJson(resolvedRoots, "cfgWeapons.json"),
-		cfgWeaponsItems: await readCfgJson(resolvedRoots, "cfgWeaponsItems.json"),
-		cfgMagazines: await readCfgJson(resolvedRoots, "cfgMagazines.json"),
+		cfgWeapons: await readCfgJson(resolvedRoots, [
+			"cfgWeapons/cfgWeapons_Weapons.json",
+			"cfgWeapons.json",
+		]),
+		cfgWeaponsItems: await readCfgJson(resolvedRoots, [
+			"cfgWeapons/cfgWeapons_Items.json",
+			"cfgWeaponsItems.json",
+		]),
+		cfgMagazines: await readCfgJson(resolvedRoots, ["cfgMagazines.json"]),
 	} satisfies Record<CfgRootName, unknown>;
 
 	return {
@@ -68,15 +75,17 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 
 async function readCfgJson(
 	candidateRoots: readonly string[],
-	fileName: string,
+	fileNames: readonly string[],
 ): Promise<unknown> {
 	for (const root of candidateRoots) {
-		const filePath = `${root}/${fileName}`;
-		if (!existsSync(filePath)) continue;
-		return JSON.parse(await Bun.file(filePath).text()) as unknown;
+		for (const fileName of fileNames) {
+			const filePath = `${root}/${fileName}`;
+			if (!existsSync(filePath)) continue;
+			return JSON.parse(await Bun.file(filePath).text()) as unknown;
+		}
 	}
 	throw new Error(
-		`Could not locate ${fileName}. Tried: ${candidateRoots.map((r) => `${r}/${fileName}`).join(", ")}`,
+		`Could not locate any of [${fileNames.join(", ")}]. Tried: ${candidateRoots.flatMap((r) => fileNames.map((f) => `${r}/${f}`)).join(", ")}`,
 	);
 }
 
@@ -93,7 +102,12 @@ function resolveDefaultCfgRoots(typesPackageName: string): string[] {
 		// ignore; fall back to local development paths below
 	}
 
+	const contextDir = dirname(fileURLToPath(import.meta.url));
+	const monorepoRoot = join(contextDir, "..", "..", "..", "..");
+
 	// Local dev fallbacks (monorepo checkouts)
+	roots.push(join(monorepoRoot, "packages", "core", "data"));
+	roots.push(join(monorepoRoot, "packages", "core"));
 	roots.push("../core/data");
 	roots.push("../core");
 
