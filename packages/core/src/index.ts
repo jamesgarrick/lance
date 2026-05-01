@@ -20,3 +20,4 @@ export * from "./cfg/cfg-vehicles-structures";
 export * from "./cfg/cfg-vehicles-vr-objects";
 export * from "./cfg/cfg-vehicles-west";
 export * from "./primitives";
+export * from "./lance-config";

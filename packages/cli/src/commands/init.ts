@@ -66,6 +66,8 @@ export default class Init extends Command {
 		await Bun.write(
 			manifestPath,
 			[
+				'import type { LanceConfig } from "@lance/core";',
+				"",
 				"export default {",
 				`  name: ${JSON.stringify(packageName)},`,
 				'  version: "0.0.1",',
@@ -73,14 +75,7 @@ export default class Init extends Command {
 				`  exports: ${JSON.stringify(exportsPath)},`,
 				`  include: ${JSON.stringify(include)},`,
 				"  dependencies: {},",
-				"} satisfies {",
-				"  name: string;",
-				'  version: string;',
-				'  type: "mission" | "library";',
-				"  exports?: string | string[];",
-				"  include?: string[];",
-				"  dependencies?: Record<string, string>;",
-				"};",
+				"} satisfies LanceConfig;",
 				"",
 			].join("\n"),
 		);
@@ -93,6 +88,10 @@ export default class Init extends Command {
 				`${JSON.stringify({ lockfileVersion: 1, dependencies: {} }, null, 2)}\n`,
 			);
 			this.log(`  Created ${LOCK_FILE}`);
+		}
+
+		if (await writeProjectGitignore(cwd)) {
+			this.log("  Created .gitignore");
 		}
 
 		await writeProjectTsConfig(cwd);
@@ -151,6 +150,13 @@ async function writeProjectTsConfig(cwd: string): Promise<void> {
 	};
 
 	await Bun.write(tsconfigPath, `${JSON.stringify(tsconfig, null, 2)}\n`);
+}
+
+async function writeProjectGitignore(cwd: string): Promise<boolean> {
+	const gitignorePath = join(cwd, ".gitignore");
+	if (await Bun.file(gitignorePath).exists()) return false;
+	await Bun.write(gitignorePath, "lance.lock\nlance_modules\n");
+	return true;
 }
 
 function entrypointTemplate(type: "mission" | "library"): string {

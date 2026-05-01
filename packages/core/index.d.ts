@@ -21,3 +21,4 @@ export * from "./src/cfg/cfg-vehicles-structures";
 export * from "./src/cfg/cfg-vehicles-vr-objects";
 export * from "./src/cfg/cfg-vehicles-west";
 export * from "./src/primitives";
+export * from "./src/lance-config";

@@ -22,6 +22,11 @@ export default class Publish extends Command {
 		if (!token) this.error("Not logged in. Run `lance login` first.");
 
 		const manifest = await readManifest(cwd);
+		if (manifest.private === true) {
+			this.error(
+				"Refusing to publish: lance.config.ts sets private: true.",
+			);
+		}
 		const registry = defaultRegistry(manifest);
 		const packPath = `${cwd}/.lance-publish.tgz`;
 		const fileList = await collectPublishFiles(cwd, manifest);

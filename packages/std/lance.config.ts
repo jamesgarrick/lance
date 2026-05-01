@@ -1,3 +1,5 @@
+import type { LanceConfig } from "@lance/core";
+
 export default {
   name: "@lance/std",
   version: "0.0.1",
@@ -7,11 +9,4 @@ export default {
   dependencies: {
     "@lance/core": "^0.0.1",
   },
-} satisfies {
-  name: string;
-  version: string;
-  type: "mission" | "library";
-  exports?: string | string[];
-  include?: string[];
-  dependencies?: Record<string, string>;
-};
+} satisfies LanceConfig;

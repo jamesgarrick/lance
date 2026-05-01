@@ -1,6 +1,8 @@
+import type { LanceConfig } from "./src/lance-config";
+
 export default {
   name: "@lance/core",
-  version: "0.0.2",
+  version: "0.0.3",
   type: "library",
   exports: [
     "./index.ts",
@@ -13,11 +15,4 @@ export default {
   ],
   include: [],
   dependencies: {},
-} satisfies {
-  name: string;
-  version: string;
-  type: "mission" | "library";
-  exports?: string | string[];
-  include?: string[];
-  dependencies?: Record<string, string>;
-};
+} satisfies LanceConfig;

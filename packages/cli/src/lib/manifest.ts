@@ -5,6 +5,7 @@ export interface LanceManifest {
 	name: string;
 	version: string;
 	type: "mission" | "library";
+	private?: boolean;
 	exports?: string | string[];
 	include?: string[];
 	dependencies?: Record<string, string>;
@@ -130,6 +131,7 @@ function normalizeManifest(value: unknown, sourcePath: string): LanceManifest {
 		name: raw.name,
 		version: raw.version,
 		type: raw.type,
+		private: normalizePrivateField(raw.private, sourcePath),
 		exports: normalizeExportsField(raw.exports, sourcePath),
 		include: normalizeIncludeField(raw.include, sourcePath),
 		dependencies: Object.fromEntries(
@@ -165,6 +167,17 @@ function normalizeIncludeField(
 	);
 }
 
+function normalizePrivateField(
+	value: unknown,
+	sourcePath: string,
+): boolean | undefined {
+	if (value === undefined) return undefined;
+	if (typeof value === "boolean") return value;
+	throw new Error(
+		`Invalid manifest at ${sourcePath}: "private" must be a boolean`,
+	);
+}
+
 function renderManifestTs(manifest: LanceManifest): string {
 	const dependencies = manifest.dependencies ?? {};
 	const dependenciesLines = Object.entries(dependencies)
@@ -172,10 +185,15 @@ function renderManifestTs(manifest: LanceManifest): string {
 		.map(([name, range]) => `    ${JSON.stringify(name)}: ${JSON.stringify(range)},`);
 
 	return [
+		'import type { LanceConfig } from "@lance/core";',
+		"",
 		"export default {",
 		`  name: ${JSON.stringify(manifest.name)},`,
 		`  version: ${JSON.stringify(manifest.version)},`,
 		`  type: ${JSON.stringify(manifest.type)},`,
+		...(manifest.private !== undefined
+			? [`  private: ${manifest.private ? "true" : "false"},`]
+			: []),
 		...(manifest.exports
 			? [`  exports: ${JSON.stringify(manifest.exports)},`]
 			: []),
@@ -185,13 +203,6 @@ function renderManifestTs(manifest: LanceManifest): string {
 		"  dependencies: {",
 		...dependenciesLines,
 		"  },",
-		"} satisfies {",
-		"  name: string;",
-		'  version: string;',
-		'  type: "mission" | "library";',
-		"  exports?: string | string[];",
-		"  include?: string[];",
-		"  dependencies?: Record<string, string>;",
-		"};",
+		"} satisfies LanceConfig;",
 	].join("\n");
 }
