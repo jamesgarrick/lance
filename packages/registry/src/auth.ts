@@ -23,10 +23,3 @@ export async function verifyToken(token: string): Promise<{ user: string }> {
 export function scopeFromUser(user: string): string {
 	return `@${user.toLowerCase()}`;
 }
-
-export const RESERVED_SCOPES = new Set([
-	"@bohemia",
-	"@arma",
-	"@bi",
-	"@official",
-]);

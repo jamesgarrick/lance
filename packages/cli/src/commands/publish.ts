@@ -125,12 +125,14 @@ async function resolveModulePath(baseDir: string, spec: string): Promise<string 
 	} else {
 		candidates.push(
 			start,
+			`${start}.d.ts`,
 			`${start}.ts`,
 			`${start}.tsx`,
 			`${start}.js`,
 			`${start}.jsx`,
 			`${start}.mjs`,
 			`${start}.mts`,
+			join(start, "index.d.ts"),
 			join(start, "index.ts"),
 			join(start, "index.tsx"),
 			join(start, "index.js"),

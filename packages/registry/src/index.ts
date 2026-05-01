@@ -4,9 +4,15 @@ import semver from "semver";
 import { Client as MinioClient } from "minio";
 import { db, pool } from "./db/client";
 import { packages, versions } from "./db/schema";
-import { mintToken, RESERVED_SCOPES, scopeFromUser, verifyToken } from "./auth";
+import { mintToken, scopeFromUser, verifyToken } from "./auth";
+import {
+	canPublishPackage,
+	canUseScopeForLogin,
+	loadReservationPolicy,
+} from "./reservation-policy";
 
 const app = new Hono();
+const reservationPolicy = loadReservationPolicy();
 
 const bucket = process.env.S3_BUCKET ?? "lance";
 const databaseUrl = process.env.DATABASE_URL ?? "postgres://postgres:dev@localhost:5432/lance";
@@ -34,8 +40,10 @@ app.post("/auth/login", async (c) => {
 	const user = body.githubUser?.trim().toLowerCase();
 	if (!user) return c.json({ error: "githubUser required" }, 400);
 	const scope = scopeFromUser(user);
-	if (RESERVED_SCOPES.has(scope))
-		return c.json({ error: `scope reserved: ${scope}` }, 403);
+	const scopeDecision = canUseScopeForLogin(user, scope, reservationPolicy);
+	if (!scopeDecision.allowed) {
+		return c.json({ error: scopeDecision.reason ?? `scope reserved: ${scope}` }, 403);
+	}
 	const token = await mintToken(user);
 	return c.json({ token, user, scope });
 });
@@ -167,13 +175,13 @@ app.post("/publish", async (c) => {
 	const [scope, packageName] = body.name.split("/");
 	if (!scope || !packageName)
 		return c.json({ error: "Invalid package name format" }, 400);
-	if (scope !== scopeFromUser(payload.user)) {
-		return c.json(
-			{
-				error: `Cannot publish outside your scope (${scopeFromUser(payload.user)})`,
-			},
-			403,
-		);
+	const publishDecision = canPublishPackage(
+		payload.user,
+		body.name,
+		reservationPolicy,
+	);
+	if (!publishDecision.allowed) {
+		return c.json({ error: publishDecision.reason ?? "Forbidden" }, 403);
 	}
 
 	let pkg = (
