@@ -1,5 +1,4 @@
 import { Command } from "@oclif/core";
-import { gzipSync } from "node:zlib";
 import { unlink } from "node:fs/promises";
 import { getToken } from "../lib/auth";
 import { defaultRegistry, readManifest } from "../lib/manifest";
@@ -35,7 +34,7 @@ export default class Publish extends Command {
 		const hash = new Bun.CryptoHasher("sha256");
 		hash.update(new Uint8Array(data));
 		const integrity = hash.digest("hex");
-		const payload = gzipSync(Buffer.from(data)).toString("base64");
+		const payload = Buffer.from(data).toString("base64");
 
 		const res = await registryFetch<PublishResponse>(registry, "/publish", {
 			method: "POST",
