@@ -33,10 +33,32 @@ jobs:
             exit 1
           fi
 
-      - name: Pack Oclif tarballs
+      - name: Build standalone CLI binaries
         working-directory: packages/cli
         run: |
-          bunx oclif pack tarballs --root . --targets linux-x64,linux-arm64,darwin-x64,darwin-arm64,win32-x64
+          mkdir -p dist/bin
+          for target in bun-linux-x64 bun-linux-arm64 bun-darwin-x64 bun-darwin-arm64 bun-windows-x64; do
+            out="dist/bin/lance-${target}"
+            if [ "$target" = "bun-windows-x64" ]; then
+              out="${out}.exe"
+            fi
+            bun build ./bin/lance.ts --compile --target="$target" --outfile "$out"
+          done
+
+      - name: Pack release tarballs
+        working-directory: packages/cli
+        run: |
+          mkdir -p dist/releases
+          for target in bun-linux-x64 bun-linux-arm64 bun-darwin-x64 bun-darwin-arm64 bun-windows-x64; do
+            stage="dist/stage/$target/bin"
+            mkdir -p "$stage"
+            if [ "$target" = "bun-windows-x64" ]; then
+              cp "dist/bin/lance-${target}.exe" "$stage/lance.exe"
+            else
+              cp "dist/bin/lance-${target}" "$stage/lance"
+            fi
+            tar -C "dist/stage/$target" -czf "dist/releases/lance-${target}.tar.gz" .
+          done
 
       - name: Verify release artifacts exist
         run: |
@@ -53,7 +75,4 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           files: |
-            packages/cli/dist/**/*.tar.gz
-            packages/cli/dist/**/*.zip
-            packages/cli/dist/**/*.exe
-            packages/cli/dist/**/*.json
+            packages/cli/dist/releases/*.tar.gz

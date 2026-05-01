@@ -117,15 +117,21 @@ async function downloadToFile(url: string, outputPath: string): Promise<void> {
 }
 
 async function findExecutableInExtract(extractDir: string): Promise<string> {
-	const candidate = join(extractDir, "bin", "lance");
-	try {
-		await readFile(candidate);
-		return candidate;
-	} catch {
-		throw new Error(
-			`Could not find lance executable in extracted archive at ${candidate}`,
-		);
+	const candidates =
+		process.platform === "win32"
+			? [join(extractDir, "bin", "lance.exe"), join(extractDir, "lance.exe")]
+			: [join(extractDir, "bin", "lance"), join(extractDir, "lance")];
+	for (const candidate of candidates) {
+		try {
+			await readFile(candidate);
+			return candidate;
+		} catch {
+			// try next
+		}
 	}
+	throw new Error(
+		`Could not find lance executable in extracted archive. Checked: ${candidates.join(", ")}`,
+	);
 }
 
 function installedExecutablePath(): string {
