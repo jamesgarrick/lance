@@ -114,6 +114,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 				client_secret: clientSecret,
 				code,
 			}),
+			signal: AbortSignal.timeout(15000),
 			cache: "no-store",
 		});
 
@@ -152,6 +153,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 				Authorization: `Bearer ${tokenBody.access_token}`,
 				"X-GitHub-Api-Version": "2022-11-28",
 			},
+			signal: AbortSignal.timeout(15000),
 			cache: "no-store",
 		});
 
@@ -183,6 +185,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ githubUser }),
+			signal: AbortSignal.timeout(15000),
 			cache: "no-store",
 		});
 
