@@ -1,5 +1,5 @@
 {
-	"name": "@lance/stdlib",
+	"name": "@lance/std",
 	"private": true,
 	"exports": {
 		"./types/*": "./types/*.d.ts",
