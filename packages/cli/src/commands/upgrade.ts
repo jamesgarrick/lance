@@ -144,5 +144,15 @@ function installedExecutablePath(): string {
 	if (!path) {
 		throw new Error("`which lance` returned an empty path");
 	}
+	if (path.endsWith(".ts")) {
+		throw new Error(
+			`Refusing to overwrite a TypeScript source entrypoint (${path}). Reinstall CLI with your package manager first, then run upgrade again.`,
+		);
+	}
+	if (path.includes("/install/global/node_modules/@lance/cli/bin/")) {
+		throw new Error(
+			`Refusing to overwrite Bun global package source path (${path}) to avoid source corruption. Use bun add -g @lance/cli@latest for this install mode.`,
+		);
+	}
 	return path;
 }

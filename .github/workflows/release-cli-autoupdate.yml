@@ -2,8 +2,8 @@ name: release-cli-autoupdate
 
 on:
   push:
-    tags:
-      - "@lance/cli@*"
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -23,17 +25,17 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Validate tag matches CLI version
+      - name: Detect CLI version change
+        id: cli_changed
         run: |
-          TAG="${GITHUB_REF_NAME}"
-          VERSION="${TAG#@lance/cli@}"
-          PKG_VERSION="$(node -p "require('./packages/cli/package.json').version")"
-          if [ "$VERSION" != "$PKG_VERSION" ]; then
-            echo "Tag version ($VERSION) does not match packages/cli/package.json version ($PKG_VERSION)"
-            exit 1
+          if git diff --name-only HEAD~1 HEAD | grep -q '^packages/cli/package.json$'; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Build standalone CLI binaries
+        if: steps.cli_changed.outputs.changed == 'true'
         working-directory: packages/cli
         run: |
           mkdir -p dist/bin
@@ -46,6 +48,7 @@ jobs:
           done
 
       - name: Pack release tarballs
+        if: steps.cli_changed.outputs.changed == 'true'
         working-directory: packages/cli
         run: |
           mkdir -p dist/releases
@@ -61,6 +64,7 @@ jobs:
           done
 
       - name: Verify release artifacts exist
+        if: steps.cli_changed.outputs.changed == 'true'
         run: |
           ls -la packages/cli/dist
           find packages/cli/dist -type f | sort
@@ -70,9 +74,17 @@ jobs:
             exit 1
           fi
 
+      - name: Resolve release tag
+        if: steps.cli_changed.outputs.changed == 'true'
+        id: release_tag
+        run: |
+          VERSION="$(node -p "require('./packages/cli/package.json').version")"
+          echo "tag=@lance/cli@${VERSION}" >> "$GITHUB_OUTPUT"
+
       - name: Publish GitHub Release with tarballs
+        if: steps.cli_changed.outputs.changed == 'true'
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}
+          tag_name: ${{ steps.release_tag.outputs.tag }}
           files: |
             packages/cli/dist/releases/*.tar.gz
