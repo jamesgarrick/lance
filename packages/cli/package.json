@@ -12,9 +12,8 @@
 		"package.json"
 	],
 	"scripts": {
-		"typecheck": "tsc --noEmit -p tsconfig.json",
-		"build": "bun run --cwd ../compiler build && tsc -p tsconfig.build.json && oclif manifest .",
-		"release:pack": "bun run build && oclif pack tarballs --root . --targets linux-x64,linux-arm64,darwin-x64,darwin-arm64,win32-x64"
+		"build": "bun run --cwd ../compiler build && tsc -p tsconfig.build.json && bunx oclif manifest .",
+		"release:pack": "bun run build && bunx oclif pack tarballs --root . --targets linux-x64,linux-arm64,darwin-x64,darwin-arm64,win32-x64"
 	},
 	"dependencies": {
 		"@inquirer/prompts": "^7",
