@@ -1,4 +1,9 @@
-import { Node, type AwaitExpression, type Statement } from "ts-morph";
+import {
+	Node,
+	SyntaxKind,
+	type AwaitExpression,
+	type Statement,
+} from "ts-morph";
 import type {
 	SqfArrayExpression,
 	SqfCodeBlock,
@@ -15,7 +20,10 @@ import {
 	type DoWhileLoweringContext,
 } from "./lower-do-while";
 import { lowerExpression } from "./lower-expressions";
-import type { LoweringContext } from "./lowering-context";
+import type {
+	LoweringContext,
+	StaticExecutionContext,
+} from "./lowering-context";
 import { addLocalName, cloneScope } from "./lowering-scope";
 import {
 	lowerForOfStatement,
@@ -41,17 +49,18 @@ export function lowerAsyncBody(
 ): SqfStatement[] {
 	const awaitIndex = findAwaitSleepIndex(statements, context);
 	if (awaitIndex === -1) {
-		return statements.map((statement) => lowerStatement(statement, context));
+		return lowerStatementList(statements, context);
 	}
 
-	const before = statements
-		.slice(0, awaitIndex)
-		.map((statement) => lowerStatement(statement, context));
+	const before = lowerStatementsWithFallthrough(
+		statements.slice(0, awaitIndex),
+		context,
+	);
 	const awaitStmt = statements[awaitIndex]!;
-	const delayExpr = extractSleepDelay(awaitStmt, context);
+	const delayExpr = extractSleepDelay(awaitStmt, before.context);
 	const continuation = lowerAsyncBody(
 		statements.slice(awaitIndex + 1),
-		context,
+		before.context,
 	);
 
 	const waitCall: SqfExpressionStatement = {
@@ -66,7 +75,29 @@ export function lowerAsyncBody(
 			],
 		},
 	};
-	return [...before, waitCall];
+	return [...before.statements, waitCall];
+}
+
+export function lowerStatementList(
+	statements: readonly Statement[],
+	context: LoweringContext,
+): SqfStatement[] {
+	return lowerStatementsWithFallthrough(statements, context).statements;
+}
+
+function lowerStatementsWithFallthrough(
+	statements: readonly Statement[],
+	context: LoweringContext,
+): { readonly statements: SqfStatement[]; readonly context: LoweringContext } {
+	let currentContext = context;
+	const loweredStatements: SqfStatement[] = [];
+
+	for (const statement of statements) {
+		loweredStatements.push(lowerStatement(statement, currentContext));
+		currentContext = getFallthroughContext(statement, currentContext);
+	}
+
+	return { statements: loweredStatements, context: currentContext };
 }
 
 export function lowerStatement(
@@ -122,15 +153,22 @@ export function lowerStatement(
 
 	if (Node.isIfStatement(statement)) {
 		const elseStatement = statement.getElseStatement();
+		const conditionContext = getConditionContext(
+			statement.getExpression(),
+			context,
+		);
 		return {
 			kind: "IfStatement",
 			condition: lowerExpression(statement.getExpression(), context),
 			thenStatements: lowerStatementBlock(
 				statement.getThenStatement(),
-				context,
+				withExecutionContext(context, conditionContext.whenTrue),
 			),
 			elseStatements: elseStatement
-				? lowerStatementBlock(elseStatement, context)
+				? lowerStatementBlock(
+						elseStatement,
+						withExecutionContext(context, conditionContext.whenFalse),
+					)
 				: [],
 		} satisfies SqfIfStatement;
 	}
@@ -207,9 +245,7 @@ export function lowerStatementBlock(
 	};
 
 	if (Node.isBlock(statement)) {
-		return statement
-			.getStatements()
-			.map((childStatement) => lowerStatement(childStatement, blockContext));
+		return lowerStatementList(statement.getStatements(), blockContext);
 	}
 	return [lowerStatement(statement, blockContext)];
 }
@@ -253,6 +289,69 @@ function makeForContext(context: LoweringContext): ForLoweringContext {
 		lowerExpression: (expression) => lowerExpression(expression, context),
 		lowerStatementBlock: (statement) => lowerStatementBlock(statement, context),
 	};
+}
+
+function getFallthroughContext(
+	statement: Statement,
+	context: LoweringContext,
+): LoweringContext {
+	if (!Node.isIfStatement(statement)) return context;
+	if (statement.getElseStatement()) return context;
+	if (!isReturnStatement(statement.getThenStatement())) return context;
+
+	const conditionContext = getConditionContext(statement.getExpression(), context);
+	if (conditionContext.whenFalse === context.executionContext) return context;
+	return withExecutionContext(context, conditionContext.whenFalse);
+}
+
+function getConditionContext(
+	expression: import("ts-morph").Expression,
+	context: LoweringContext,
+): {
+	readonly whenTrue: StaticExecutionContext;
+	readonly whenFalse: StaticExecutionContext;
+} {
+	const isServerLocalName = context.bindings.importedLocalNames.isServer;
+	if (!isServerLocalName) {
+		return { whenTrue: "anywhere", whenFalse: "anywhere" };
+	}
+
+	const unwrapped = Node.isParenthesizedExpression(expression)
+		? expression.getExpression()
+		: expression;
+
+	if (Node.isIdentifier(unwrapped) && unwrapped.getText() === isServerLocalName) {
+		return { whenTrue: "server", whenFalse: "notServer" };
+	}
+
+	if (
+		Node.isPrefixUnaryExpression(unwrapped) &&
+		unwrapped.getOperatorToken() === SyntaxKind.ExclamationToken
+	) {
+		const operand = unwrapped.getOperand();
+		if (Node.isIdentifier(operand) && operand.getText() === isServerLocalName) {
+			return { whenTrue: "notServer", whenFalse: "server" };
+		}
+	}
+
+	return { whenTrue: "anywhere", whenFalse: "anywhere" };
+}
+
+function withExecutionContext(
+	context: LoweringContext,
+	executionContext: StaticExecutionContext,
+): LoweringContext {
+	if (executionContext === "anywhere") return context;
+	if (context.executionContext === executionContext) return context;
+	return { ...context, executionContext };
+}
+
+function isReturnStatement(statement: Statement): boolean {
+	if (Node.isReturnStatement(statement)) return true;
+	if (!Node.isBlock(statement)) return false;
+
+	const statements = statement.getStatements();
+	return statements.length === 1 && Node.isReturnStatement(statements[0]);
 }
 
 function makeSwitchContext(context: LoweringContext): SwitchLoweringContext {

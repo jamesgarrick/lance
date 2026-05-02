@@ -136,6 +136,7 @@ function lowerClassConstructor(
 		bindings,
 		semanticContext,
 		scope: addLocalNames(createScope(), [...params, "self"]),
+		executionContext: "anywhere",
 	};
 
 	const body: SqfStatement[] = [];
@@ -262,6 +263,7 @@ function lowerClassMethod(
 		bindings,
 		semanticContext,
 		scope: addLocalNames(createScope(), methodParams),
+		executionContext: "anywhere",
 	};
 	const raw = getBlockStatements(method.getBody());
 	const body = raw.map((statement) => lowerStatement(statement, context));

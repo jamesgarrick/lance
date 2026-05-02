@@ -8,5 +8,6 @@
 		"types": []
 	},
 	"files": ["../packages/core/globals.d.ts"],
-	"include": ["**/*.ts"]
+	"include": ["index.ts"],
+	"exclude": ["tools/**/*", "dist-tools/**/*"]
 }

@@ -91,6 +91,7 @@ export function lowerExpression(
 				callee.getText(),
 			);
 			if (commandName !== undefined) {
+				validateCommandLocality(commandName, expression, context);
 				const args = argNodes.map((argument, index) =>
 					lowerCommandArgument(commandName, argNodes, index, argument, context),
 				);
@@ -225,6 +226,30 @@ function lowerCommandArgument(
 		);
 	}
 	return lowerExpression(argument, context);
+}
+
+function validateCommandLocality(
+	commandName: string,
+	expression: Expression,
+	context: LoweringContext,
+): void {
+	if (context.executionContext !== "server") return;
+
+	const localArgumentIndexes =
+		context.bindings.sqfCommandLocalArgumentIndexes.get(commandName) ?? [];
+	if (localArgumentIndexes.length === 0) return;
+
+	context.diagnostics.add({
+		code: "LANCE_LOCALITY_MISMATCH",
+		severity: "error",
+		phase: "lowering",
+		message: `Cannot call ${commandName} in a server-only branch because it requires a local argument.`,
+		hint: "Move this call behind a client/non-server guard or use a command with global argument locality.",
+		span: {
+			filePath: expression.getSourceFile().getFilePath(),
+			line: expression.getStartLineNumber(),
+		},
+	});
 }
 
 function tryLowerCallbackExpression(
