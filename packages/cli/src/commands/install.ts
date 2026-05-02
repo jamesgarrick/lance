@@ -1,7 +1,7 @@
 import { Command } from "@oclif/core";
-import { defaultRegistry, readLockfile, readManifest } from "../lib/manifest";
-import { installDependency } from "../lib/install-dependency";
-import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths";
+import { defaultRegistry, readLockfile, readManifest } from "../lib/manifest.js";
+import { installDependency } from "../lib/install-dependency.js";
+import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths.js";
 
 export default class Install extends Command {
 	static override id = "install";

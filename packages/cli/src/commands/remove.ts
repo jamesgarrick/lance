@@ -4,8 +4,8 @@ import {
 	readManifest,
 	writeLockfile,
 	writeManifest,
-} from "../lib/manifest";
-import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths";
+} from "../lib/manifest.js";
+import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths.js";
 
 export default class Remove extends Command {
 	static override id = "remove";

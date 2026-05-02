@@ -7,10 +7,10 @@ import {
 	splitPackageAndVersion,
 	writeLockfile,
 	writeManifest,
-} from "../lib/manifest";
-import { installDependency } from "../lib/install-dependency";
-import { registryFetch } from "../lib/registry-client";
-import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths";
+} from "../lib/manifest.js";
+import { installDependency } from "../lib/install-dependency.js";
+import { registryFetch } from "../lib/registry-client.js";
+import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths.js";
 
 interface PackageInfoResponse {
 	name: string;

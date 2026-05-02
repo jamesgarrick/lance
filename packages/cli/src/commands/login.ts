@@ -1,7 +1,7 @@
 import { input } from "@inquirer/prompts";
 import { Command, Flags } from "@oclif/core";
-import { readRc, writeRc } from "../lib/auth";
-import { defaultRegistry } from "../lib/manifest";
+import { readRc, writeRc } from "../lib/auth.js";
+import { defaultRegistry } from "../lib/manifest.js";
 
 function openBrowser(url: string): void {
 	if (process.platform === "darwin") {

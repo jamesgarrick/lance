@@ -1,7 +1,7 @@
 import { Command } from "@oclif/core";
-import { getToken } from "../lib/auth";
-import { defaultRegistry } from "../lib/manifest";
-import { registryFetch } from "../lib/registry-client";
+import { getToken } from "../lib/auth.js";
+import { defaultRegistry } from "../lib/manifest.js";
+import { registryFetch } from "../lib/registry-client.js";
 
 interface WhoAmIResponse {
 	user: string;

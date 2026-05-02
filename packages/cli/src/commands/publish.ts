@@ -1,9 +1,9 @@
 import { Command } from "@oclif/core";
 import { dirname, extname, join, resolve } from "node:path";
 import { unlink } from "node:fs/promises";
-import { getToken } from "../lib/auth";
-import { defaultRegistry, readManifest } from "../lib/manifest";
-import { registryFetch } from "../lib/registry-client";
+import { getToken } from "../lib/auth.js";
+import { defaultRegistry, readManifest } from "../lib/manifest.js";
+import { registryFetch } from "../lib/registry-client.js";
 import * as tar from "tar";
 
 interface PublishResponse {

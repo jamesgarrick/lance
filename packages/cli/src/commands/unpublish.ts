@@ -1,11 +1,11 @@
 import { Command } from "@oclif/core";
-import { getToken } from "../lib/auth";
+import { getToken } from "../lib/auth.js";
 import {
 	defaultRegistry,
 	readManifest,
 	splitPackageAndVersion,
-} from "../lib/manifest";
-import { registryFetch } from "../lib/registry-client";
+} from "../lib/manifest.js";
+import { registryFetch } from "../lib/registry-client.js";
 
 export default class Unpublish extends Command {
 	static override id = "unpublish";

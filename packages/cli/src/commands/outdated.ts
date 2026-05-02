@@ -1,7 +1,7 @@
 import { Command } from "@oclif/core";
 import semver from "semver";
-import { defaultRegistry, readManifest } from "../lib/manifest";
-import { registryFetch } from "../lib/registry-client";
+import { defaultRegistry, readManifest } from "../lib/manifest.js";
+import { registryFetch } from "../lib/registry-client.js";
 
 interface PackageInfoResponse {
 	name: string;

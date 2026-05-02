@@ -4,10 +4,10 @@ import { basename, join, resolve, dirname } from "node:path";
 import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { existsSync } from "node:fs";
-import { LOCK_FILE, MANIFEST_FILE } from "../lib/manifest";
-import { getToken } from "../lib/auth";
-import { registryFetch } from "../lib/registry-client";
-import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths";
+import { LOCK_FILE, MANIFEST_FILE } from "../lib/manifest.js";
+import { getToken } from "../lib/auth.js";
+import { registryFetch } from "../lib/registry-client.js";
+import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths.js";
 
 export default class Init extends Command {
 	static override id = "init";

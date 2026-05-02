@@ -1,5 +1,5 @@
 import { Command } from "@oclif/core";
-import { readRc, writeRc } from "../lib/auth";
+import { readRc, writeRc } from "../lib/auth.js";
 
 export default class Logout extends Command {
 	static override id = "logout";

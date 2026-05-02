@@ -1,5 +1,5 @@
 {
-  "extends": "./.lance/tsconfig.paths.json",
+  "extends": "./lance_modules/tsconfig.paths.json",
   "compilerOptions": {
     "ignoreDeprecations": "5.0",
     "strict": true,
