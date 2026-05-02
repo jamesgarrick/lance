@@ -53,6 +53,19 @@
         "typescript": "^6.0.3",
       },
     },
+    "packages/eslint": {
+      "name": "@lance/eslint",
+      "version": "0.0.1",
+      "dependencies": {
+        "@typescript-eslint/parser": "^8.59.1",
+        "@typescript-eslint/utils": "^8.59.1",
+        "eslint": "^10.3.0",
+        "typescript": "^6.0.3",
+      },
+      "devDependencies": {
+        "@types/bun": "latest",
+      },
+    },
     "packages/registry": {
       "name": "@lance/registry",
       "version": "0.0.1",
@@ -95,12 +108,7 @@
       "name": "playground",
       "dependencies": {
         "@lance/core": "workspace:*",
-      },
-      "devDependencies": {
-        "@typescript-eslint/parser": "^8.59.1",
-        "@typescript-eslint/utils": "^8.59.1",
-        "eslint": "^10.3.0",
-        "typescript": "^6.0.3",
+        "@lance/eslint": "workspace:*",
       },
     },
   },
@@ -390,6 +398,8 @@
     "@lance/compiler": ["@lance/compiler@workspace:packages/compiler"],
 
     "@lance/core": ["@lance/core@workspace:packages/core"],
+
+    "@lance/eslint": ["@lance/eslint@workspace:packages/eslint"],
 
     "@lance/registry": ["@lance/registry@workspace:packages/registry"],
 

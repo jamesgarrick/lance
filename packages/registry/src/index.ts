@@ -113,9 +113,75 @@ app.get("/packages/:fullName", async (c) => {
 	});
 });
 
+app.get("/package", async (c) => {
+	const fullName = c.req.query("name");
+	if (!fullName) return c.json({ error: "Missing package name" }, 400);
+	const pkg = await db
+		.select()
+		.from(packages)
+		.where(eq(packages.name, fullName))
+		.limit(1);
+	if (!pkg[0]) return c.json({ error: "Package not found" }, 404);
+	const vers = await db
+		.select()
+		.from(versions)
+		.where(
+			and(
+				eq(versions.packageId, pkg[0].id),
+				eq(versions.active, true),
+				isNull(versions.unpublishedAt),
+			),
+		)
+		.orderBy(desc(versions.createdAt));
+	return c.json({
+		name: pkg[0].name,
+		versions: vers.map((v) => v.version).sort(semver.compare),
+		dependencies: vers.at(-1) ? JSON.parse(vers.at(-1)!.dependenciesJson) : {},
+		publishedAt: vers.at(-1)?.createdAt ?? null,
+	});
+});
+
 app.get("/packages/:fullName/versions/:version/tarball", async (c) => {
 	const fullName = decodeURIComponent(c.req.param("fullName"));
 	const version = decodeURIComponent(c.req.param("version"));
+
+	const pkg = await db
+		.select()
+		.from(packages)
+		.where(eq(packages.name, fullName))
+		.limit(1);
+	if (!pkg[0]) return c.json({ error: "Package not found" }, 404);
+
+	const row = await db
+		.select()
+		.from(versions)
+		.where(
+			and(
+				eq(versions.packageId, pkg[0].id),
+				eq(versions.version, version),
+				eq(versions.active, true),
+				isNull(versions.unpublishedAt),
+			),
+		)
+		.limit(1);
+	if (!row[0]) return c.json({ error: "Version not found" }, 404);
+
+	const file = s3.file(row[0].tarballKey);
+	if (!(await file.exists())) return c.json({ error: "Tarball not found" }, 404);
+
+	return new Response(await file.arrayBuffer(), {
+		headers: {
+			"content-type": "application/gzip",
+			"content-disposition": `attachment; filename="${pkg[0].packageName}-${version}.tgz"`,
+		},
+	});
+});
+
+app.get("/tarball", async (c) => {
+	const fullName = c.req.query("name");
+	const version = c.req.query("version");
+	if (!fullName || !version)
+		return c.json({ error: "Missing name or version" }, 400);
 
 	const pkg = await db
 		.select()

@@ -1,13 +1,18 @@
 {
-	"compilerOptions": {
-		"strict": true,
-		"noLib": true,
-		"skipLibCheck": true,
-		"moduleResolution": "bundler",
-		"module": "ESNext",
-		"types": []
-	},
-	"files": ["../packages/core/globals.d.ts"],
-	"include": ["index.ts"],
-	"exclude": ["tools/**/*", "dist-tools/**/*"]
+  "extends": "./lance_modules/tsconfig.paths.json",
+  "compilerOptions": {
+    "strict": true,
+    "noLib": true,
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "types": [],
+    "plugins": [
+      {
+        "name": "@lance/ts-plugin",
+      },
+    ],
+  },
+  "files": ["./node_modules/@lance/core/globals.d.ts"],
+  "include": ["**/*.ts"],
 }

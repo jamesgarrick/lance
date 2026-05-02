@@ -15,6 +15,7 @@ export default class Update extends Command {
 	static override description = "Update lockfile to latest compatible versions";
 
 	async run(): Promise<void> {
+		await this.parse(Update);
 		const cwd = process.cwd();
 		const manifest = await readManifest(cwd);
 		const deps = manifest.dependencies ?? {};
@@ -24,7 +25,7 @@ export default class Update extends Command {
 		for (const [name, range] of Object.entries(deps)) {
 			const info = await registryFetch<PackageInfoResponse>(
 				registry,
-				`/packages/${encodeURIComponent(name)}`,
+				`/package?name=${encodeURIComponent(name)}`,
 			);
 			const v = semver.maxSatisfying(info.versions, range);
 			if (!v) this.error(`Could not resolve ${name} with range ${range}`);

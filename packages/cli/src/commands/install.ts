@@ -9,6 +9,7 @@ export default class Install extends Command {
 	static override description = "Install dependencies from lance.lock";
 
 	async run(): Promise<void> {
+		await this.parse(Install);
 		const cwd = process.cwd();
 		const lock = await readLockfile(process.cwd());
 		if (!lock) this.error("No lance.lock found. Run `lance add` first.");

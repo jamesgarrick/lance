@@ -1,4 +1,4 @@
-import { ESLintUtils, TSESTree } from "@typescript-eslint/utils";
+import { ESLintUtils, type TSESTree } from "@typescript-eslint/utils";
 import ts from "typescript";
 
 type MessageIds = "serverLocalArgument";
@@ -32,7 +32,9 @@ export const noServerLocalArguments = createRule<[], MessageIds>({
 			return node.type === "Identifier" && isServerLocalNames.has(node.name);
 		}
 
-		function isLocalArgumentCommand(node: TSESTree.CallExpression): string | undefined {
+		function isLocalArgumentCommand(
+			node: TSESTree.CallExpression,
+		): string | undefined {
 			if (node.callee.type !== "Identifier") return undefined;
 
 			const tsCallee = services.esTreeNodeToTSNodeMap.get(node.callee);
@@ -75,10 +77,7 @@ export const noServerLocalArguments = createRule<[], MessageIds>({
 				node: TSESTree.BlockStatement,
 			) {
 				const parent = node.parent;
-				if (
-					parent?.type === "IfStatement" &&
-					isIsServerTest(parent.test)
-				) {
+				if (parent?.type === "IfStatement" && isIsServerTest(parent.test)) {
 					serverBranchDepth += 1;
 				}
 			},
@@ -86,10 +85,7 @@ export const noServerLocalArguments = createRule<[], MessageIds>({
 				node: TSESTree.BlockStatement,
 			) {
 				const parent = node.parent;
-				if (
-					parent?.type === "IfStatement" &&
-					isIsServerTest(parent.test)
-				) {
+				if (parent?.type === "IfStatement" && isIsServerTest(parent.test)) {
 					serverBranchDepth -= 1;
 				}
 			},
@@ -108,9 +104,3 @@ export const noServerLocalArguments = createRule<[], MessageIds>({
 		};
 	},
 });
-
-export default {
-	rules: {
-		"no-server-local-arguments": noServerLocalArguments,
-	},
-};

@@ -77,7 +77,12 @@ echo "Installing lance CLI from ${BASE_URL}..."
 TARGET="$(detect_target)"
 INDEX_FILE="${TMP_DIR}/install-index.json"
 
-curl -fsSL "$INDEX_URL" -o "$INDEX_FILE"
+if ! curl -fsSL "$INDEX_URL" -o "$INDEX_FILE"; then
+  echo "Failed to download ${INDEX_URL}" >&2
+  echo "Remote installer index is unavailable (often a release-pipeline issue)." >&2
+  echo "For local development, run: scripts/install-cli-local.sh" >&2
+  exit 1
+fi
 TARBALL_NAME="$(json_get_tarball "$INDEX_FILE" "$TARGET")"
 
 if [[ -z "$TARBALL_NAME" ]]; then

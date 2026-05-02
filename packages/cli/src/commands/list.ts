@@ -6,6 +6,7 @@ export default class List extends Command {
 	static override description = "Print resolved dependency tree";
 
 	async run(): Promise<void> {
+		await this.parse(List);
 		const lock = await readLockfile(process.cwd());
 		if (!lock) this.error("No lance.lock found.");
 		for (const [name, dep] of Object.entries(lock.dependencies)) {

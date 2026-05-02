@@ -19,7 +19,7 @@ export async function installDependency(
 		modulesDir,
 		`.tmp-${scope.replaceAll("/", "_")}-${name}-${version}.tgz`,
 	);
-	const url = `${registry}/packages/${encodeURIComponent(pkgName)}/versions/${encodeURIComponent(version)}/tarball`;
+	const url = `${registry}/tarball?name=${encodeURIComponent(pkgName)}&version=${encodeURIComponent(version)}`;
 
 	await mkdir(modulesDir, { recursive: true });
 	const res = await fetch(url);
