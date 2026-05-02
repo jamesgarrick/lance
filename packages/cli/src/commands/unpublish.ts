@@ -12,6 +12,7 @@ export default class Unpublish extends Command {
 	static override description = "Unpublish one package version (72h window)";
 
 	async run(): Promise<void> {
+		await this.parse(Unpublish);
 		const spec = this.argv[0];
 		if (!spec) this.error("Usage: lance unpublish @scope/name@version");
 		const token = await getToken();

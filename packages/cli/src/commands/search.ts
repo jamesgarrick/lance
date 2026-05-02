@@ -11,6 +11,7 @@ export default class Search extends Command {
 	static override description = "Search registry packages";
 
 	async run(): Promise<void> {
+		await this.parse(Search);
 		const query = this.argv[0];
 		if (!query) this.error("Usage: lance search <query>");
 		const manifest = await readManifest(process.cwd());

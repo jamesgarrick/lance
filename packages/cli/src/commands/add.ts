@@ -34,59 +34,66 @@ export default class Add extends Command {
 	};
 
 	async run(): Promise<void> {
-		const { flags, args } = await this.parse(Add);
-		const spec = args.spec;
-		const cwd = process.cwd();
-		const manifest = await readManifest(cwd);
-		const { name, version } = splitPackageAndVersion(spec);
-		ensurePackageName(name);
+		try {
+			const { flags, args } = await this.parse(Add);
+			const spec = args.spec;
+			const cwd = process.cwd();
+			const manifest = await readManifest(cwd);
+			const { name, version } = splitPackageAndVersion(spec);
+			ensurePackageName(name);
 
-		const registry = defaultRegistry(manifest);
-		const info = await registryFetch<PackageInfoResponse>(
-			registry,
-			`/packages/${encodeURIComponent(name)}`,
-		);
-		const resolved = version ?? info.versions.at(-1);
-		if (!resolved) this.error(`No versions found for ${name}`);
+			const registry = defaultRegistry(manifest);
+			const info = await registryFetch<PackageInfoResponse>(
+				registry,
+				`/package?name=${encodeURIComponent(name)}`,
+			);
+			const resolved = version ?? info.versions.at(-1);
+			if (!resolved) this.error(`No versions found for ${name}`);
 
-		if (version && !semver.valid(version) && !semver.validRange(version)) {
-			this.error(`Invalid version/range: ${version}`);
+			if (version && !semver.valid(version) && !semver.validRange(version)) {
+				this.error(`Invalid version/range: ${version}`);
+			}
+			if (version && semver.valid(version) && !info.versions.includes(version)) {
+				this.error(`Version ${version} not found for ${name}`);
+			}
+
+			const depRange = version
+				? semver.valid(version)
+					? flags.exact
+						? version
+						: defaultRangeForVersion(version)
+					: version
+				: flags.exact
+					? resolved
+					: defaultRangeForVersion(resolved);
+
+			manifest.dependencies = manifest.dependencies ?? {};
+			manifest.dependencies[name] = depRange;
+			await writeManifest(cwd, manifest);
+
+			const lockDeps: Record<string, { version: string }> = {};
+			for (const [pkg, range] of Object.entries(manifest.dependencies)) {
+				const pkgInfo =
+					pkg === name
+						? info
+						: await registryFetch<PackageInfoResponse>(
+								registry,
+								`/package?name=${encodeURIComponent(pkg)}`,
+							);
+				const v = semver.maxSatisfying(pkgInfo.versions, range);
+				if (!v) this.error(`Could not resolve ${pkg} for range ${range}`);
+				lockDeps[pkg] = { version: v };
+			}
+			await writeLockfile(cwd, { lockfileVersion: 1, dependencies: lockDeps });
+			await writeGeneratedTsconfigPaths(cwd, lockDeps);
+			await installDependency(cwd, registry, name, lockDeps[name]!.version);
+			this.log(`Added ${name}@${depRange}`);
+		} catch (error: unknown) {
+			const message =
+				error instanceof Error ? error.message : "Failed to add dependency";
+			this.logToStderr(`Error: ${message}`);
+			this.exit(1);
 		}
-		if (version && semver.valid(version) && !info.versions.includes(version)) {
-			this.error(`Version ${version} not found for ${name}`);
-		}
-
-		const depRange = version
-			? semver.valid(version)
-				? flags.exact
-					? version
-					: defaultRangeForVersion(version)
-				: version
-			: flags.exact
-				? resolved
-				: defaultRangeForVersion(resolved);
-
-		manifest.dependencies = manifest.dependencies ?? {};
-		manifest.dependencies[name] = depRange;
-		await writeManifest(cwd, manifest);
-
-		const lockDeps: Record<string, { version: string }> = {};
-		for (const [pkg, range] of Object.entries(manifest.dependencies)) {
-			const pkgInfo =
-				pkg === name
-					? info
-					: await registryFetch<PackageInfoResponse>(
-							registry,
-							`/packages/${encodeURIComponent(pkg)}`,
-						);
-			const v = semver.maxSatisfying(pkgInfo.versions, range);
-			if (!v) this.error(`Could not resolve ${pkg} for range ${range}`);
-			lockDeps[pkg] = { version: v };
-		}
-		await writeLockfile(cwd, { lockfileVersion: 1, dependencies: lockDeps });
-		await writeGeneratedTsconfigPaths(cwd, lockDeps);
-		await installDependency(cwd, registry, name, lockDeps[name]!.version);
-		this.log(`Added ${name}@${depRange}`);
 	}
 }
 

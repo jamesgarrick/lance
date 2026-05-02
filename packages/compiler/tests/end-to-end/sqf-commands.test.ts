@@ -23,11 +23,14 @@ function compile(source: string): { sqf: string; diagnostics: DiagnosticBag } {
 		"/node_modules/@lance/core/index.d.ts",
 		`declare module "@lance/core" {
       export const player: unknown;
+      export const isServer: boolean;
+      export type LocalArgument<T> = T & { readonly __argLocality: "local" };
       export function goggles(unit: unknown): string;
       export function vest(unit: unknown): string;
       export function primaryWeapon(unit: unknown): string;
       export function handgunWeapon(unit: unknown): string;
       export function addVest(unit: unknown, cls: string): void;
+      export function removeBackpack(unit: LocalArgument<unknown>): void;
       export function linkItem(unit: unknown, item: string): void;
       export function addWeaponCargoGlobal(unit: unknown, weaponClass: string, count: number): void;
     }`,
@@ -169,5 +172,51 @@ describe("aliased imports", () => {
     `);
 		expect(sqf).toContain("goggles player");
 		expect(diagnostics.toArray()).toEqual([]);
+	});
+});
+
+describe("SQF command locality diagnostics", () => {
+	test("local-argument commands error inside isServer branches", () => {
+		const { diagnostics } = compile(`
+      import { isServer, removeBackpack, type LocalArgument } from "@lance/core";
+      declare const unit: LocalArgument<unknown>;
+
+      if (isServer) {
+        removeBackpack(unit);
+      }
+    `);
+
+		const reported = diagnostics.toArray();
+		expect(reported.map((diagnostic) => diagnostic.code)).toContain(
+			"LANCE_LOCALITY_MISMATCH",
+		);
+		expect(reported[0]?.severity).toBe("error");
+	});
+
+	test("local-argument commands are allowed after an isServer return guard", () => {
+		const { diagnostics } = compile(`
+      import { isServer, removeBackpack, type LocalArgument } from "@lance/core";
+      declare const unit: LocalArgument<unknown>;
+
+      if (isServer) return;
+      removeBackpack(unit);
+    `);
+
+		expect(diagnostics.toArray()).toEqual([]);
+	});
+
+	test("isServer aliases narrow server branches", () => {
+		const { diagnostics } = compile(`
+      import { isServer as runningOnServer, removeBackpack, type LocalArgument } from "@lance/core";
+      declare const unit: LocalArgument<unknown>;
+
+      if (runningOnServer) {
+        removeBackpack(unit);
+      }
+    `);
+
+		expect(diagnostics.toArray().map((diagnostic) => diagnostic.code)).toContain(
+			"LANCE_LOCALITY_MISMATCH",
+		);
 	});
 });

@@ -5,11 +5,14 @@ import type { LoweringScope } from "./lowering-scope";
 import type { SourceFileSemanticBindings } from "./source-file-bindings";
 import type { Expression, Statement } from "ts-morph";
 
+export type StaticExecutionContext = "anywhere" | "server" | "notServer";
+
 export interface LoweringContext {
 	readonly diagnostics: DiagnosticBag;
 	readonly bindings: SourceFileSemanticBindings;
 	readonly semanticContext: SemanticContext;
 	readonly scope: LoweringScope;
+	readonly executionContext: StaticExecutionContext;
 }
 
 export interface LoweringDispatcher {

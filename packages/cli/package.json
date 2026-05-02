@@ -19,7 +19,6 @@
 		"@inquirer/prompts": "^7",
 		"@lance/compiler": "workspace:*",
 		"@oclif/core": "^4",
-		"@oclif/plugin-update": "^4.7.4",
 		"semver": "^7.7.3",
 		"tar": "^7.5.2"
 	},
@@ -30,20 +29,17 @@
 		"typescript": "^6.0.3"
 	},
 	"oclif": {
-		"aliases": {
-			"upgrade": "update"
-		},
-  "bin": "lance",
-  "dirname": "lance",
-  "commands": "./dist/src/commands",
-  "topicSeparator": " ",
-  "plugins": [
-    "@oclif/plugin-update"
-  ],
-  "update": {
-    "s3": {
-      "host": "https://jamesgarrick.github.io/lance"
-    }
-  }
-}
+		"bin": "lance",
+		"dirname": "lance",
+		"commands": "./dist/src/commands",
+		"topicSeparator": ":",
+		"theme": {
+			"command": "green",
+			"topic": "cyan",
+			"commandSummary": "cyan",
+			"sectionDescription": "white",
+			"bin": "cyan",
+			"dollarSign": "yellow"
+		}
+	}
 }

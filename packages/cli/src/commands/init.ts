@@ -1,13 +1,24 @@
 import { confirm, input, select } from "@inquirer/prompts";
 import { Command } from "@oclif/core";
-import { basename, join, resolve, dirname } from "node:path";
-import { execSync } from "node:child_process";
-import { fileURLToPath } from "node:url";
-import { existsSync } from "node:fs";
-import { LOCK_FILE, MANIFEST_FILE } from "../lib/manifest.js";
+import { basename, join, resolve } from "node:path";
+import semver from "semver";
+import {
+	defaultRegistry,
+	LOCK_FILE,
+	MANIFEST_FILE,
+	readManifest,
+	writeLockfile,
+	writeManifest,
+} from "../lib/manifest.js";
 import { getToken } from "../lib/auth.js";
+import { installDependency } from "../lib/install-dependency.js";
 import { registryFetch } from "../lib/registry-client.js";
 import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths.js";
+
+interface PackageInfoResponse {
+	name: string;
+	versions: string[];
+}
 
 export default class Init extends Command {
 	static override id = "init";
@@ -16,6 +27,7 @@ export default class Init extends Command {
 	static override examples = ["<%= config.bin %> init"];
 
 	async run(): Promise<void> {
+		await this.parse(Init);
 		const cwd = process.cwd();
 		const manifestPath = join(cwd, MANIFEST_FILE);
 
@@ -38,10 +50,11 @@ export default class Init extends Command {
 			],
 		});
 
-		const defaultRegistry = process.env.LANCE_REGISTRY_URL ?? "http://localhost:8787";
+		const defaultRegistryUrl =
+			process.env.LANCE_REGISTRY_URL ?? "http://localhost:8787";
 		const defaultPackageName =
 			type === "library"
-				? await suggestDefaultPackageName(defaultRegistry, projectName).catch(
+				? await suggestDefaultPackageName(defaultRegistryUrl, projectName).catch(
 						() => `@local/${projectName}`,
 					)
 				: `@local/${projectName}`;
@@ -82,15 +95,28 @@ export default class Init extends Command {
 		);
 		this.log(`  Created ${MANIFEST_FILE}`);
 
-		const lockPath = join(cwd, LOCK_FILE);
-		if (!(await Bun.file(lockPath).exists())) {
-			await Bun.write(
-				lockPath,
-				`${JSON.stringify({ lockfileVersion: 1, dependencies: {} }, null, 2)}\n`,
-			);
-			this.log(`  Created ${LOCK_FILE}`);
-		}
-		await writeGeneratedTsconfigPaths(cwd, {});
+		const registry = defaultRegistry();
+		const coreInfo = await registryFetch<PackageInfoResponse>(
+			registry,
+			`/package?name=${encodeURIComponent("@lance/core")}`,
+		);
+		const coreVersion = coreInfo.versions.at(-1);
+		if (!coreVersion) this.error("No published versions found for @lance/core");
+		const coreRange = defaultRangeForVersion(coreVersion);
+
+		const manifest = await readManifest(cwd);
+		manifest.dependencies = {
+			...(manifest.dependencies ?? {}),
+			"@lance/core": coreRange,
+		};
+		await writeManifest(cwd, manifest);
+
+		const lockDeps: Record<string, { version: string }> = {
+			"@lance/core": { version: coreVersion },
+		};
+		await writeLockfile(cwd, { lockfileVersion: 1, dependencies: lockDeps });
+		this.log(`  Created ${LOCK_FILE}`);
+		await writeGeneratedTsconfigPaths(cwd, lockDeps);
 		this.log("  Created lance_modules/tsconfig.paths.json");
 
 		if (await writeProjectGitignore(cwd)) {
@@ -106,17 +132,8 @@ export default class Init extends Command {
 			this.log(`  Created ${exportsPath}`);
 		}
 
-		const __filename = fileURLToPath(import.meta.url);
-		const __dirname = dirname(__filename);
-		const corePath = resolve(__dirname, "../../../core");
-		const coreSpec = existsSync(corePath)
-			? `@lance/core@file:${corePath}`
-			: "@lance/core";
-
-		execSync(`bun add ${coreSpec}`, {
-			cwd,
-			stdio: "inherit",
-		});
+		await installDependency(cwd, registry, "@lance/core", coreVersion);
+		this.log(`  Installed @lance/core@${coreVersion}`);
 
 		this.log("\nDone! You can publish with `lance publish`.");
 	}
@@ -149,7 +166,7 @@ async function writeProjectTsConfig(cwd: string): Promise<void> {
 			types: [],
 			plugins: [{ name: "@lance/ts-plugin" }],
 		},
-		files: ["./node_modules/@lance/core/globals.d.ts"],
+		files: ["./lance_modules/@lance/core/globals.d.ts"],
 		include: ["**/*.ts"],
 	};
 
@@ -168,4 +185,11 @@ function entrypointTemplate(type: "mission" | "library"): string {
 		return 'import { player } from "@lance/core";\n\n// Mission entry point\n';
 	}
 	return "// Library entry point\n";
+}
+
+function defaultRangeForVersion(version: string): string {
+	const parsed = semver.parse(version);
+	if (!parsed) return `^${version}`;
+	if (parsed.major === 0) return `~${version}`;
+	return `^${version}`;
 }

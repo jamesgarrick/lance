@@ -6,6 +6,7 @@ export default class Logout extends Command {
 	static override description = "Clear stored token";
 
 	async run(): Promise<void> {
+		await this.parse(Logout);
 		const rc = await readRc();
 		delete rc.token;
 		await writeRc(rc);

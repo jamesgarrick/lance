@@ -12,6 +12,7 @@ export default class WhoAmI extends Command {
 	static override description = "Show authenticated user";
 
 	async run(): Promise<void> {
+		await this.parse(WhoAmI);
 		const token = await getToken();
 		if (!token) this.error("Not logged in.");
 		const registry = defaultRegistry();

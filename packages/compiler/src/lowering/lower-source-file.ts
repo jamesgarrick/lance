@@ -6,7 +6,11 @@ import type { SqfFunctionFile, SqfStatement } from "../ir/nodes";
 import type { SemanticContext } from "../semantic/context";
 import { collectClassModel, lowerClassDeclaration } from "./class-lowering";
 import { lowerExpression } from "./lower-expressions";
-import { lowerAsyncBody, lowerStatement } from "./lower-statements";
+import {
+	lowerAsyncBody,
+	lowerStatement,
+	lowerStatementList,
+} from "./lower-statements";
 import { addLocalNames, createScope } from "./lowering-scope";
 import {
 	collectSemanticBindings,
@@ -60,15 +64,14 @@ export function lowerSourceFile(
 				bindings,
 				semanticContext,
 				scope: addLocalNames(createScope(), parameters),
+				executionContext: "anywhere",
 			};
 			const fnBody = statement.getBody();
 			const rawStatements =
 				fnBody && Node.isBlock(fnBody) ? fnBody.getStatements() : [];
 			const loweredBody = statement.isAsync()
 				? lowerAsyncBody(rawStatements, functionContext)
-				: rawStatements.map((childStatement) =>
-						lowerStatement(childStatement, functionContext),
-					);
+				: lowerStatementList(rawStatements, functionContext);
 
 			functionFiles.push({
 				kind: "FunctionFile",
@@ -106,6 +109,7 @@ export function lowerSourceFile(
 					bindings,
 					semanticContext,
 					scope,
+					executionContext: "anywhere",
 				}),
 			);
 		}

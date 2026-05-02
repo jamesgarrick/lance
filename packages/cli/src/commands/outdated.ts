@@ -13,13 +13,14 @@ export default class Outdated extends Command {
 	static override description = "List deps with newer compatible versions";
 
 	async run(): Promise<void> {
+		await this.parse(Outdated);
 		const manifest = await readManifest(process.cwd());
 		const deps = manifest.dependencies ?? {};
 		const registry = defaultRegistry(manifest);
 		for (const [name, range] of Object.entries(deps)) {
 			const info = await registryFetch<PackageInfoResponse>(
 				registry,
-				`/packages/${encodeURIComponent(name)}`,
+				`/package?name=${encodeURIComponent(name)}`,
 			);
 			const current = info.versions
 				.filter((v) => semver.satisfies(v, range))

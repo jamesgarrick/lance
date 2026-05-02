@@ -12,6 +12,7 @@ export default class Remove extends Command {
 	static override description = "Remove a dependency from lance.config.ts";
 
 	async run(): Promise<void> {
+		await this.parse(Remove);
 		const name = this.argv[0];
 		if (!name) this.error("Usage: lance remove @scope/name");
 		const cwd = process.cwd();
