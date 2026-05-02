@@ -30,20 +30,17 @@
 		"typescript": "^6.0.3"
 	},
 	"oclif": {
-		"bin": "lance",
-		"dirname": "lance",
-		"commands": "./dist/src/commands",
-		"topicSeparator": " ",
-		"plugins": [
-			"@oclif/plugin-update"
-		],
-		"autoupdate": {
-			"strategy": "github"
-		},
-		"update": {
-			"s3": {
-				"host": "https://github.com/jamesgarrick/lance/releases/download"
-			}
-		}
-	}
+  "bin": "lance",
+  "dirname": "lance",
+  "commands": "./dist/src/commands",
+  "topicSeparator": " ",
+  "plugins": [
+    "@oclif/plugin-update"
+  ],
+  "update": {
+    "s3": {
+      "host": "https://jamesgarrick.github.io/lance"
+    }
+  }
+}
 }

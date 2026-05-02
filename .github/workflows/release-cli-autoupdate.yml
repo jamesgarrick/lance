@@ -7,10 +7,15 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -72,11 +77,26 @@ jobs:
             exit 1
           fi
 
+      - name: Setup GitHub Pages
+        if: steps.cli_changed.outputs.changed == 'true'
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages Artifact
+        if: steps.cli_changed.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: packages/cli/dist
+
+      - name: Deploy to GitHub Pages
+        if: steps.cli_changed.outputs.changed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
+
       - name: Resolve release tag
         if: steps.cli_changed.outputs.changed == 'true'
         id: release_tag
         run: |
-          VERSION="$(node -p "require('./packages/cli/package.json').version")"
+          VERSION="$(bun -p "require('./packages/cli/package.json').version")"
           echo "tag=@lance/cli@${VERSION}" >> "$GITHUB_OUTPUT"
 
       - name: Publish GitHub Release with tarballs
