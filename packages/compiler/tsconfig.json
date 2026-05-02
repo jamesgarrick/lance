@@ -4,5 +4,5 @@
 		"rootDir": "."
 	},
 	"include": ["index.ts", "src/**/*.ts", "tests/**/*.test.ts"],
-	"exclude": ["../stdlib/**"]
+	"exclude": ["../std/**"]
 }

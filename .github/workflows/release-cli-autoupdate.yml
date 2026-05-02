@@ -77,6 +77,32 @@ jobs:
             exit 1
           fi
 
+      - name: Generate install index
+        if: steps.cli_changed.outputs.changed == 'true'
+        working-directory: packages/cli
+        run: |
+          export VERSION="$(bun -p "require('./package.json').version")"
+          node <<'EOF'
+          const fs = require("fs");
+          const path = require("path");
+          const distDir = path.resolve("dist");
+          const files = fs.readdirSync(distDir).filter((f) => f.endsWith(".tar.gz"));
+          const targets = ["linux-x64", "linux-arm64", "darwin-x64", "darwin-arm64", "win32-x64"];
+          const tarballs = {};
+          for (const target of targets) {
+            const match = files.find((f) => f.includes(`-${target}.tar.gz`));
+            if (match) tarballs[target] = match;
+          }
+          const version = process.env.VERSION;
+          const out = {
+            name: "@lance/cli",
+            version,
+            generatedAt: new Date().toISOString(),
+            tarballs,
+          };
+          fs.writeFileSync(path.join(distDir, "install-index.json"), JSON.stringify(out, null, 2));
+          EOF
+
       - name: Setup GitHub Pages
         if: steps.cli_changed.outputs.changed == 'true'
         uses: actions/configure-pages@v4

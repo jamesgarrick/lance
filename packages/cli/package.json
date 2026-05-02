@@ -30,6 +30,9 @@
 		"typescript": "^6.0.3"
 	},
 	"oclif": {
+		"aliases": {
+			"upgrade": "update"
+		},
   "bin": "lance",
   "dirname": "lance",
   "commands": "./dist/src/commands",
