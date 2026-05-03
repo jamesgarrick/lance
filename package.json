@@ -4,8 +4,7 @@
 	"private": true,
 	"type": "module",
 	"workspaces": [
-		"packages/*",
-		"playground"
+		"packages/*"
 	],
 	"scripts": {
 		"compile": "bun run --cwd packages/compiler compile",
