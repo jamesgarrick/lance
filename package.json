@@ -16,6 +16,7 @@
 		"core:generate": "bun run --cwd packages/core generate:cfg",
 		"cli:typecheck": "bunx tsc --noEmit -p packages/cli/tsconfig.json",
 		"registry:dev": "bun run --cwd packages/registry dev",
+		"registry:diagnose": "bun run scripts/diagnose-registry.ts",
 		"registry:typecheck": "bunx tsc --noEmit -p packages/registry/tsconfig.json",
 		"changeset": "changeset",
 		"changeset:version": "changeset version",

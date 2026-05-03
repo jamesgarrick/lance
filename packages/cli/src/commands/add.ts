@@ -17,6 +17,21 @@ interface PackageInfoResponse {
 	versions: string[];
 }
 
+async function fetchPackageInfo(
+	registry: string,
+	name: string,
+): Promise<PackageInfoResponse> {
+	try {
+		return await registryFetch<PackageInfoResponse>(
+			registry,
+			`/package?name=${encodeURIComponent(name)}`,
+		);
+	} catch (error: unknown) {
+		const message = error instanceof Error ? error.message : String(error);
+		throw new Error(`Failed resolving ${name}: ${message}`);
+	}
+}
+
 export default class Add extends Command {
 	static override id = "add";
 	static override description = "Add a dependency to lance.config.ts";
@@ -43,10 +58,7 @@ export default class Add extends Command {
 			ensurePackageName(name);
 
 			const registry = defaultRegistry(manifest);
-			const info = await registryFetch<PackageInfoResponse>(
-				registry,
-				`/package?name=${encodeURIComponent(name)}`,
-			);
+			const info = await fetchPackageInfo(registry, name);
 			const resolved = version ?? info.versions.at(-1);
 			if (!resolved) this.error(`No versions found for ${name}`);
 
@@ -76,10 +88,7 @@ export default class Add extends Command {
 				const pkgInfo =
 					pkg === name
 						? info
-						: await registryFetch<PackageInfoResponse>(
-								registry,
-								`/package?name=${encodeURIComponent(pkg)}`,
-							);
+						: await fetchPackageInfo(registry, pkg);
 				const v = semver.maxSatisfying(pkgInfo.versions, range);
 				if (!v) this.error(`Could not resolve ${pkg} for range ${range}`);
 				lockDeps[pkg] = { version: v };
