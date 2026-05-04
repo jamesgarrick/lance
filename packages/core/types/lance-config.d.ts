@@ -1,3 +1,6 @@
+import type { MagazineClassName } from "@lance/core";
+import { WeaponClassName } from "../src/cfg/cfg-weapons-weapons";
+
 export interface LanceConfig {
 	name: string;
 	version: string;
@@ -6,6 +9,196 @@ export interface LanceConfig {
 	exports?: string | string[];
 	include?: string[];
   dependencies?: { [name: string]: string };
+
+  // respawn/revive
+  /**
+   * Set soilders nd vehicles respawn type.
+   *
+   * **"NONE"** - No respawn.
+   *
+   * **"BIRD"** - Respawn as a seagull.
+   *
+   * **"INSTANT"** - Respawn just where you died.
+   *
+   * **"BASE"** - Respawn at the base.
+   *
+   * A respawn marker is needed. If no marker
+   * is defined, respawn behavior will be the same as `"INSTANT"`.
+   *
+   * Marker role names:
+   * - Unit respawn: respawn_`SIDE`
+   * - Vehicle respawn: respawn_vehicle_`SIDE`
+   *
+   * Any suffix will allow multiple random respawn points.
+   *
+   * **"GROUP"** - Respawn in your group. If there is no remaining AI,
+   * you will become a seagull.
+   *
+   * **"SIDE"** - Respawn into an AI unit on your side.
+   *
+   * If there is no AI left, you will become a seagull.
+   *
+   * With this respawn type, team swtich is also available to any
+   * AI controlled playable units.
+   */
+  respawn?: "NONE" | "BIRD" | "INSTANT" | "BASE" | "GROUP" | "SIDE";
+
+  /**
+   * Set vehicle respawn type. If `respawnVehicle` is not defined,
+   * the `respawn` value is used.
+   *
+   * **"NONE"** - No respawn.
+   *
+   * **"INSTANT"** - Respawn just where you died.
+   *
+   * **"BASE"** - Respawn at the base.
+   *
+   * A respawn marker is needed. If no marker
+   * is defined, respawn behavior will be the same as `"INSTANT"`.
+   *
+   * Marker role names:
+   * - Unit respawn: respawn_`SIDE`
+   * - Vehicle respawn: respawn_vehicle_`SIDE`
+   *
+   * Any suffix will allow multiple random respawn points.
+   */
+  respawnVehicle?: "NONE" | "INSTANT" | "BASE";
+
+  /** Enable or disable the respawn button in the menu for `INSTANT` and `BASE` respawn types. */
+  respawnButton?: boolean;
+
+  /** Set respawn delay in seconds. */
+  respawnDelay?: number;
+
+  /** Show the scoreboard and respawn countdown timer for a player
+   * if he is killed with respawn type `BASE`.
+   * */
+  respawnDialog?: number;
+
+  /**
+   * Respawn a player when he joins the game. Available only
+   * for `INSANT` and `BASE` respawn types.
+   *
+   * `-1` - Don't respawn on start. Don't run respawn script on start.
+   *
+   *  `0` - Don't respawn on start. Run respawn script on start.
+   *
+   *  `1` - Respawn on start. Run respawn script on start.
+   */
+  respawnOnStart?: -1 | 0 | 1;
+
+  // TODO! respawnTemplates
+  //
+
+  /** Set weapons players will receive upon respawn. `respawnMagazines` has to be defined as well. */
+  respawnWeapons?: WeaponClassName[];
+
+  /** Set weapons WEST players will receive upon respawn. `respawnMagazinesWEST` has to be defined as well. */
+  respawnWeaponsWEST?: WeaponClassName[];
+
+  /** Set weapons EAST players will receive upon respawn. `respawnMagazinesEAST` has to be defined as well. */
+  respawnWeaponsEAST?: WeaponClassName[];
+
+  /** Set weapons GUER players will receive upon respawn. `respawnMagazinesGUER` has to be defined as well. */
+  respawnWeaponsGUER?: WeaponClassName[];
+
+  /** Set weapons CIV players will receive upon respawn. `respawnMagazinesCIV` has to be defined as well. */
+  respawnWeaponsCIV?: WeaponClassName[];
+
+  /** Set magazines players will receive upon respawn. `respawnWeapons` has to be defined as well. */
+  respawnMagazines?: MagazineClassName[];
+
+  /** Set magazines WEST players will receive upon respawn. `respawnWeaponsWEST` has to be defined as well. */
+  respawnMagazinesWEST?: MagazineClassName[];
+
+  /** Set magazines EAST players will receive upon respawn. `respawnWeaponsEAST` has to be defined as well. */
+  respawnMagazinesEAST?: MagazineClassName[];
+
+  /** Set magazines GUER players will receive upon respawn. `respawnWeaponsGUER` has to be defined as well. */
+  respawnMagazinesGUER?: MagazineClassName[];
+
+  /** Set magazines CIV players will receive upon respawn. `respawnWeaponsCIV` has to be defined as well. */
+  respawnMagazinesCIV?: MagazineClassName[];
+
+  /**
+   * Define is `Revive mode` is enabled.
+   *
+   * `0` - disabled
+   *
+   * `1` - enabled
+   *
+   * `2` - controlled by player attributes.
+   */
+  reviveMode?: 0 | 1 | 2;
+
+  /**
+   * Define the revive unconscious state mode.
+   *
+   * `0` - basic mode
+   *
+   * `1` - advanced mode
+   *
+   * `2` - realistic
+   *
+   * See {@link https://community.bistudio.com/wiki/Arma_3:_Revive#Damage_Modeling damage model}
+   * for more detailed information.
+   */
+  reviveUnconsciousStateMode?: 0;
+
+  /**
+   * Define if only a medic (or a unit with
+   * medic {@link https://community.bistudio.com/wiki/setUnitTrait trait} can perform a revive.)
+   *
+   * Default: `false`
+   *
+   */
+  reviveRequiredTrait?: boolean;
+
+  /**
+   * Define if a medical item is required to begin a revive process.
+   *
+   * `0` - none
+   *
+   * `1` - medkit
+   *
+   * `2` - medkit or first aid kit
+   */
+  reviveRequiredItems?: 0 | 1 | 2;
+
+  /** Define if a first aid kit is consumed on reviving a teammate. */
+  reviveRequiredItemsFakConsumed?: boolean;
+
+  /** Define the speed multiplier for revive performed by medic. */
+  reviveMedicSpeedMultiplier?: number;
+
+  /** The time in seconds it takes to revive an incapacitated unit.
+   *
+   * Having a Medikit will halve this time. */
+  reviveDelay?: number;
+
+  /**
+   * The time in seconds it takes for an incapacitated unit to force their respawn.
+   *
+   * Default: `3`
+   */
+  reviveForceRespawnDelay?: number;
+
+  /**
+   * The time in seconds it takes for an incapacitated unit to bleed out.
+   *
+   * Default: `120`
+   */
+  reviveBleedOutDelay?: number;
+
+  /**
+   * Usage unsure.
+   */
+  enablePlayerAddRespawn?: boolean;
+
+  // TODO! - CfgRespawnInventory - maybe use generator code for this
+  // TODO! - CfgRespawnTemplates
+  // TODO! - CfgRoles
+
 
   // player UI
 
