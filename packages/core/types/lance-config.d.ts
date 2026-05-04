@@ -10,6 +10,115 @@ export interface LanceConfig {
 	include?: string[];
   dependencies?: { [name: string]: string };
 
+  /** Mission author's name. The default loading screen shows this
+   * string below the `onLoadName` in a smaller font prefixed by "by ". */
+  author?: string;
+
+  /** String (usually mission name) shown during
+   * {@link https://community.bistudio.com/wiki/Loading_Screens mission loading}.
+   * The string is shown in a slightly larger font above the loadScreen.
+   * The {@link https://community.bistudio.com/wiki/Description.ext#onLoadMission onLoadMission}
+   * text is placed below the load screen and the
+   * {@link https://community.bistudio.com/wiki/Description.ext#header header gameType}
+   * determines the game type on top of the box.
+   *
+   * */
+  onLoadName?: string;
+
+  /** Displays a message while the mission is loading.
+   *
+   * Note that a mission that takes very little time to
+   * load will only display the message for a short time. */
+  onLoadMission?: string;
+
+  /** The picture to be shown while the mission is loaded.
+   *
+   * The path is relative to the mission folder. Must be in PAA file format.
+   *
+   *
+   * 2:1 aspect ratio (different aspect are rendered correctly as well, but won't cover the whole area).
+   * Ideally 1024x512 pixels. */
+  loadScreen?: string;
+
+  Header: {
+    /**
+     * **Game type** is a simplified category describing what a mission is about.
+     *
+     * `Unkown` - Undefined Game Mode
+     *
+     * `DM` - Deathmatch
+     *
+     * `CTF` - Capture the Flag
+     *
+     * `Coop` - Cooperative Mission
+     *
+     * `CTI` - Capture the Island
+     *
+     * `SC` - Sector control
+     *
+     * `TDM` - Team Deathmatch
+     *
+     * `RPG` - Role-Playing Game
+     *
+     * `Sandbox` - Sandbox
+     *
+     * `KOTH` - King of the Hill
+     *
+     * `LastMan` - Last Man Standing
+     *
+     * `Survive` - Survival
+     *
+     * `Zeus` - Zeus
+     *
+     * `Support` - Support
+     *
+     * `EndGame` - End Game
+     *
+     * `Apex` - Campaign - Apex Protocol
+     *
+     * `Escape` - Escape
+     *
+     * `Patrol` - Combat Patrol
+     *
+     * `Vanguard` - Vanguard
+     *
+     * `Warlords` - Warlords
+     */
+    gameType?: "Unkown" | "DM" | "CTF" | "Coop" | "CTI" | "SC" | "TDM" | "RPG" | "Sandbox" | "KOTH" | "LastMan" | "Survive" | "Zeus" | "Support" | "EndGame" | "Apex" | "Escape" | "Patrol" | "Vanguard" | "Warlords";
+
+    /** Minimum number of players the mission supports. */
+    minPlayers?: number;
+
+    /** Maximum number of players the mission supports. */
+    maxPlayers?: number;
+  }
+
+  /** Displays a message while the intro is loading. */
+  onLoadIntro?: string;
+
+  /** Define whether you will see the time and date
+   * displayed while the intro loads.
+   *
+   * Default: `false`
+   */
+  onLoadIntroTime?: boolean;
+
+  /** Mission name displayed in the mission selection menu. */
+  briefingName?: string;
+
+  /** Path to image which will be displayed when the mission is highlighted
+   * on the mission selection screen.
+   *
+   * Image should be .paa format and in 2:1 aspect ratio – ideally 1024×512 (Arma 3).
+   */
+  overviewPicture?: string;
+
+  /** Text to be displayed below the overviewPicture on the
+   * mission select screen when the mission is locked from
+   * play.
+   */
+  overViewTextLocked?: string;
+
   // respawn/revive
   /**
    * Set soilders nd vehicles respawn type.
