@@ -4,103 +4,105 @@ import ts from "typescript";
 type MessageIds = "serverLocalArgument";
 
 const createRule = ESLintUtils.RuleCreator(
-	(name) => `https://lance.local/rules/${name}`,
+  (name) => `https://lance.local/rules/${name}`,
 );
 
 export const noServerLocalArguments = createRule<[], MessageIds>({
-	name: "no-server-local-arguments",
-	meta: {
-		type: "problem",
-		docs: {
-			description:
-				"Disallow Lance commands that require LocalArgument<T> inside server-only isServer branches.",
-		},
-		messages: {
-			serverLocalArgument:
-				"{{commandName}} requires a local argument and should not be called inside an isServer branch.",
-		},
-		schema: [],
-	},
-	defaultOptions: [],
-	create(context) {
-		const services = ESLintUtils.getParserServices(context);
-		const checker = services.program.getTypeChecker();
-		const isServerLocalNames = new Set<string>();
-		let serverBranchDepth = 0;
+  name: "no-server-local-arguments",
+  meta: {
+    type: "problem",
+    docs: {
+      description:
+        "Disallow Lance commands that require LocalArgument<T> inside server-only isServer branches.",
+    },
+    messages: {
+      serverLocalArgument:
+        "{{commandName}} requires a local argument and should not be called inside an isServer branch.",
+    },
+    schema: [],
+  },
+  defaultOptions: [],
+  create(context) {
+    const services = ESLintUtils.getParserServices(context);
+    const checker = services.program.getTypeChecker();
+    const isServerLocalNames = new Set<string>();
+    let serverBranchDepth = 0;
 
-		function isIsServerTest(node: TSESTree.Expression): boolean {
-			return node.type === "Identifier" && isServerLocalNames.has(node.name);
-		}
+    function isIsServerTest(node: TSESTree.Expression): boolean {
+      return node.type === "Identifier" && isServerLocalNames.has(node.name);
+    }
 
-		function isLocalArgumentCommand(
-			node: TSESTree.CallExpression,
-		): string | undefined {
-			if (node.callee.type !== "Identifier") return undefined;
+    function isLocalArgumentCommand(
+      node: TSESTree.CallExpression,
+    ): string | undefined {
+      if (node.callee.type !== "Identifier") return undefined;
 
-			const tsCallee = services.esTreeNodeToTSNodeMap.get(node.callee);
-			const symbol = checker.getSymbolAtLocation(tsCallee);
-			const declarations =
-				symbol && (symbol.flags & ts.SymbolFlags.Alias) !== 0
-					? checker.getAliasedSymbol(symbol).getDeclarations()
-					: symbol?.getDeclarations();
+      const tsCallee = services.esTreeNodeToTSNodeMap.get(node.callee);
+      const symbol = checker.getSymbolAtLocation(tsCallee);
+      const declarations =
+        symbol && (symbol.flags & ts.SymbolFlags.Alias) !== 0
+          ? checker.getAliasedSymbol(symbol).getDeclarations()
+          : symbol?.getDeclarations();
 
-			if (!declarations) return undefined;
+      if (!declarations) return undefined;
 
-			for (const declaration of declarations) {
-				if (!ts.isFunctionDeclaration(declaration)) continue;
+      for (const declaration of declarations) {
+        if (!ts.isFunctionDeclaration(declaration)) continue;
 
-				const hasLocalArgument = declaration.parameters.some((parameter) => {
-					const typeNode = parameter.type;
-					return typeNode ? /\bLocalArgument\s*</.test(typeNode.getText()) : false;
-				});
-				if (hasLocalArgument) return node.callee.name;
-			}
+        const hasLocalArgument = declaration.parameters.some((parameter) => {
+          const typeNode = parameter.type;
+          return typeNode
+            ? /\bLocalArgument\s*</.test(typeNode.getText())
+            : false;
+        });
+        if (hasLocalArgument) return node.callee.name;
+      }
 
-			return undefined;
-		}
+      return undefined;
+    }
 
-		return {
-			ImportDeclaration(node) {
-				if (node.source.value !== "@lance/core") return;
+    return {
+      ImportDeclaration(node) {
+        if (node.source.value !== "@lance/core") return;
 
-				for (const specifier of node.specifiers) {
-					if (
-						specifier.type === "ImportSpecifier" &&
-						specifier.imported.type === "Identifier" &&
-						specifier.imported.name === "isServer"
-					) {
-						isServerLocalNames.add(specifier.local.name);
-					}
-				}
-			},
-			"IfStatement > BlockStatement.consequent": function enterServerBranch(
-				node: TSESTree.BlockStatement,
-			) {
-				const parent = node.parent;
-				if (parent?.type === "IfStatement" && isIsServerTest(parent.test)) {
-					serverBranchDepth += 1;
-				}
-			},
-			"IfStatement > BlockStatement.consequent:exit": function exitServerBranch(
-				node: TSESTree.BlockStatement,
-			) {
-				const parent = node.parent;
-				if (parent?.type === "IfStatement" && isIsServerTest(parent.test)) {
-					serverBranchDepth -= 1;
-				}
-			},
-			CallExpression(node) {
-				if (serverBranchDepth === 0) return;
+        for (const specifier of node.specifiers) {
+          if (
+            specifier.type === "ImportSpecifier" &&
+            specifier.imported.type === "Identifier" &&
+            specifier.imported.name === "isServer"
+          ) {
+            isServerLocalNames.add(specifier.local.name);
+          }
+        }
+      },
+      "IfStatement > BlockStatement.consequent": function enterServerBranch(
+        node: TSESTree.BlockStatement,
+      ) {
+        const parent = node.parent;
+        if (parent?.type === "IfStatement" && isIsServerTest(parent.test)) {
+          serverBranchDepth += 1;
+        }
+      },
+      "IfStatement > BlockStatement.consequent:exit": function exitServerBranch(
+        node: TSESTree.BlockStatement,
+      ) {
+        const parent = node.parent;
+        if (parent?.type === "IfStatement" && isIsServerTest(parent.test)) {
+          serverBranchDepth -= 1;
+        }
+      },
+      CallExpression(node) {
+        if (serverBranchDepth === 0) return;
 
-				const commandName = isLocalArgumentCommand(node);
-				if (!commandName) return;
+        const commandName = isLocalArgumentCommand(node);
+        if (!commandName) return;
 
-				context.report({
-					node,
-					messageId: "serverLocalArgument",
-					data: { commandName },
-				});
-			},
-		};
-	},
+        context.report({
+          node,
+          messageId: "serverLocalArgument",
+          data: { commandName },
+        });
+      },
+    };
+  },
 });

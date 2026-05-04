@@ -13,6 +13,6 @@
       },
     ],
   },
-  "files": ["./node_modules/@lance/core/globals.d.ts"],
-  "include": ["**/*.ts"],
+  "files": ["./lance_modules/@lance/core/globals.d.ts"],
+  "include": ["src/**/*.ts"],
 }

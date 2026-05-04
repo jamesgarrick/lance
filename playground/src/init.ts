@@ -1,3 +1,20 @@
-import { player } from "@lance/core";
+import {
+  addBackpack,
+  isServer,
+  removeBackpack,
+  GlobalArgument,
+  LocalArgument,
+  Unit,
+  backpacks,
+} from "@lance/core";
 
-// Mission entry point
+declare const globalUnit: GlobalArgument<Unit>;
+declare const localUnit: LocalArgument<Unit>;
+
+addBackpack(globalUnit, backpacks.b_assault_diver);
+removeBackpack(localUnit);
+
+if (isServer) {
+  removeBackpack(localUnit);
+  removeBackpack(globalUnit);
+}
