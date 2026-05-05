@@ -77,7 +77,7 @@ export function ln(x: number): number;
 /** Returns true if the number is finite (not infinite or NaN). */
 export function finite(x: number): boolean;
 
-/** not a is exactly the same as ! a. */
+/** not a is exactly the same as !a. */
 export function not(a: boolean): boolean;
 
 /** Returns true if either a or b is true. */
