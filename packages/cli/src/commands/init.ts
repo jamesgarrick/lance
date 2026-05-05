@@ -79,19 +79,18 @@ export default class Init extends Command {
 
 		await Bun.write(
 			manifestPath,
-			[
-				'import type { LanceConfig } from "@lance/core";',
-				"",
-				"export default {",
-				`  name: ${JSON.stringify(packageName)},`,
-				'  version: "0.0.1",',
-				`  type: ${JSON.stringify(type)},`,
-				`  exports: ${JSON.stringify(exportsPath)},`,
-				`  include: ${JSON.stringify(include)},`,
-				"  dependencies: {},",
-				"} satisfies LanceConfig;",
-				"",
-			].join("\n"),
+			`${JSON.stringify(
+				{
+					name: packageName,
+					version: "0.0.1",
+					type,
+					exports: exportsPath,
+					include,
+					dependencies: {},
+				},
+				null,
+				2,
+			)}\n`,
 		);
 		this.log(`  Created ${MANIFEST_FILE}`);
 

@@ -3,12 +3,9 @@
     "eslint": {
       "settings": {
         "nodePath": "./packages/eslint/node_modules",
-        "workingDirectories": [
-          {
-            "directory": "./playground",
-            "changeProcessCWD": true
-          }
-        ]
+        "workingDirectory": {
+          "mode": "location"
+        }
       }
     }
   }

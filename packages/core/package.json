@@ -16,7 +16,7 @@
 	"scripts": {
 		"build": "bunx tsc -p tsconfig.json && rsync -a --include='*/' --include='*.d.ts' --exclude='*' src/ dist/src/",
 		"typecheck": "bunx tsc --noEmit -p tsconfig.json",
-		"generate:cfg": "node scripts/generate-cfg-all.mjs"
+		"generate:cfg": "bun run --cwd ../cfg-gen generate"
 	},
 	"devDependencies": {
 		"@types/bun": "latest",

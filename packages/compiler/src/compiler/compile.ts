@@ -160,7 +160,7 @@ export async function compileFromConfig(
 	projectRoot: string = process.cwd(),
 ): Promise<CompileFromConfigResult> {
 	const { build, mission } = config;
-	const tag = config.project.tag ?? defaultCompilerOptions.tag;
+	const tag = build.tag ?? defaultCompilerOptions.tag;
 
 	const options: CompilerOptions = {
 		entryFilePaths: [resolve(projectRoot, build.entrypoint)],

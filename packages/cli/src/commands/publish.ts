@@ -26,7 +26,7 @@ export default class Publish extends Command {
 			const manifest = await readManifest(cwd);
 			if (manifest.private === true) {
 				this.error(
-					"Refusing to publish: lance.config.ts sets private: true.",
+					"Refusing to publish: lance.package.json sets private: true.",
 				);
 			}
 			const registry = defaultRegistry(manifest);
@@ -106,7 +106,10 @@ async function collectPublishFiles(
 	for (const absPath of traced) files.add(normalizeRel(absPath.slice(cwd.length + 1)));
 	for (const rel of included) files.add(rel);
 
-	files.add("lance.config.ts");
+	files.add("lance.package.json");
+	if (await Bun.file(join(cwd, "lance.config.ts")).exists()) {
+		files.add("lance.config.ts");
+	}
 	if (await Bun.file(join(cwd, "tsconfig.json")).exists()) files.add("tsconfig.json");
 
 	return [...files].sort();

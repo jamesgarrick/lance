@@ -9,7 +9,7 @@ import { writeGeneratedTsconfigPaths } from "../lib/tsconfig-paths.js";
 
 export default class Remove extends Command {
 	static override id = "remove";
-	static override description = "Remove a dependency from lance.config.ts";
+	static override description = "Remove a dependency from lance.package.json";
 
 	async run(): Promise<void> {
 		await this.parse(Remove);

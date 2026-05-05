@@ -1,0 +1,9 @@
+{
+  "name": "@lance/cfg-gen",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-cfg-all.mjs"
+  }
+}

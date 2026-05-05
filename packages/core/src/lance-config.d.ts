@@ -1,9 +1,12 @@
 export interface LanceConfig {
-	name: string;
-	version: string;
-	type: "mission" | "library";
-	private?: boolean;
-	exports?: string | string[];
-	include?: string[];
-	dependencies?: { [name: string]: string };
+	build?: {
+		entrypoint?: string;
+		tag?: string;
+		outDir?: string;
+		tsConfig?: string;
+		typesPackage?: string;
+		typesPackageRoot?: string;
+		sourceRoot?: string;
+	};
+	mission?: Record<string, unknown>;
 }

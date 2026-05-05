@@ -3,52 +3,49 @@ import { pathToFileURL } from "node:url";
 import type { LanceConfig } from "./schema";
 
 export const CONFIG_FILENAME = "lance.config.ts";
+export const PACKAGE_FILENAME = "lance.package.json";
 
 export async function loadLanceConfig(
 	projectRoot: string,
 ): Promise<LanceConfig> {
+	const packagePath = join(projectRoot, PACKAGE_FILENAME);
+	const packageFile = Bun.file(packagePath);
+	if (!(await packageFile.exists())) {
+		throw new Error(
+			`Lance package metadata not found at ${packagePath}. Run 'lance init' to create one.`,
+		);
+	}
+	const packageManifest = normalizePackageManifest(
+		JSON.parse(await packageFile.text()) as unknown,
+		packagePath,
+	);
+
 	const configPath = join(projectRoot, CONFIG_FILENAME);
 	const file = Bun.file(configPath);
-
-	if (!(await file.exists())) {
-		throw new Error(
-			`Lance config not found at ${configPath}. Run 'lance init' to create one.`,
-		);
-	}
-
-	const raw = await importConfig(configPath);
-	if (!raw || typeof raw !== "object") {
-		throw new Error(`Invalid config at ${configPath}: expected an object`);
-	}
-
-	const manifest = raw as Record<string, unknown>;
-	if (typeof manifest.name !== "string" || manifest.name.length === 0) {
-		throw new Error(
-			`Invalid config at ${configPath}: "name" is required`,
-		);
-	}
-	if (manifest.type !== "mission" && manifest.type !== "library") {
-		throw new Error(
-			`Invalid config at ${configPath}: "type" must be "mission" or "library"`,
-		);
-	}
-
-	const entrypoint = resolveEntrypoint(manifest, configPath);
-	if (!entrypoint) {
-		throw new Error(
-			`Invalid config at ${configPath}: unable to determine build entrypoint from "exports"`,
-		);
-	}
+	const config = (await file.exists())
+		? normalizeConfigObject(await importConfig(configPath), configPath)
+		: {};
+	const build = normalizeBuildConfig(config.build, configPath);
+	const entrypoint = build.entrypoint ?? resolveEntrypoint(packageManifest);
 
 	return {
 		project: {
-			name: manifest.name,
-			type: manifest.type,
+			name: packageManifest.name,
+			type: packageManifest.type,
 			version:
-				typeof manifest.version === "string" ? manifest.version : undefined,
+				typeof packageManifest.version === "string"
+					? packageManifest.version
+					: undefined,
 		},
+		mission: normalizeMissionConfig(config.mission),
 		build: {
 			entrypoint,
+			tag: build.tag,
+			outDir: build.outDir,
+			tsConfig: build.tsConfig,
+			typesPackage: build.typesPackage,
+			typesPackageRoot: build.typesPackageRoot,
+			sourceRoot: build.sourceRoot,
 		},
 	};
 }
@@ -64,10 +61,7 @@ async function importConfig(path: string): Promise<unknown> {
 	return mod.default;
 }
 
-function resolveEntrypoint(
-	manifest: Record<string, unknown>,
-	configPath: string,
-): string | null {
+function resolveEntrypoint(manifest: LancePackageManifest): string {
 	const exportsField = manifest.exports;
 	if (exportsField === undefined) {
 		return manifest.type === "mission" ? "./src/init.ts" : "./src/index.ts";
@@ -75,14 +69,100 @@ function resolveEntrypoint(
 	if (typeof exportsField === "string") return exportsField;
 	if (Array.isArray(exportsField)) {
 		const first = exportsField.find((v): v is string => typeof v === "string");
-		if (!first) {
-			throw new Error(
-				`Invalid config at ${configPath}: "exports" must contain at least one string entry`,
-			);
-		}
+		if (!first) throw new Error(`Invalid package metadata: empty "exports" array`);
 		return first;
 	}
-	throw new Error(
-		`Invalid config at ${configPath}: "exports" must be a string or string[]`,
-	);
+	throw new Error(`Invalid package metadata: "exports" must be a string or string[]`);
+}
+
+interface LancePackageManifest {
+	name: string;
+	version: string;
+	type: "mission" | "library";
+	exports?: string | string[];
+}
+
+function normalizePackageManifest(
+	value: unknown,
+	sourcePath: string,
+): LancePackageManifest {
+	if (!value || typeof value !== "object") {
+		throw new Error(`Invalid package metadata at ${sourcePath}: expected an object`);
+	}
+	const raw = value as Record<string, unknown>;
+	if (typeof raw.name !== "string" || raw.name.length === 0) {
+		throw new Error(`Invalid package metadata at ${sourcePath}: "name" is required`);
+	}
+	if (typeof raw.version !== "string" || raw.version.length === 0) {
+		throw new Error(
+			`Invalid package metadata at ${sourcePath}: "version" is required`,
+		);
+	}
+	if (raw.type !== "mission" && raw.type !== "library") {
+		throw new Error(
+			`Invalid package metadata at ${sourcePath}: "type" must be "mission" or "library"`,
+		);
+	}
+	if (
+		raw.exports !== undefined &&
+		typeof raw.exports !== "string" &&
+		(!Array.isArray(raw.exports) ||
+			!raw.exports.every((entry) => typeof entry === "string"))
+	) {
+		throw new Error(
+			`Invalid package metadata at ${sourcePath}: "exports" must be a string or string[]`,
+		);
+	}
+	return {
+		name: raw.name,
+		version: raw.version,
+		type: raw.type,
+		exports: raw.exports as string | string[] | undefined,
+	};
+}
+
+function normalizeConfigObject(
+	value: unknown,
+	sourcePath: string,
+): Record<string, unknown> {
+	if (!value || typeof value !== "object") {
+		throw new Error(`Invalid config at ${sourcePath}: expected an object`);
+	}
+	return value as Record<string, unknown>;
+}
+
+function normalizeBuildConfig(
+	value: unknown,
+	sourcePath: string,
+): Record<string, string | undefined> {
+	if (value === undefined) return {};
+	if (!value || typeof value !== "object" || Array.isArray(value)) {
+		throw new Error(`Invalid config at ${sourcePath}: "build" must be an object`);
+	}
+	const build = value as Record<string, unknown>;
+	for (const key of [
+		"entrypoint",
+		"tag",
+		"outDir",
+		"tsConfig",
+		"typesPackage",
+		"typesPackageRoot",
+		"sourceRoot",
+	]) {
+		const entry = build[key];
+		if (entry !== undefined && typeof entry !== "string") {
+			throw new Error(`Invalid config at ${sourcePath}: "build.${key}" must be a string`);
+		}
+	}
+	return build as Record<string, string | undefined>;
+}
+
+function normalizeMissionConfig(
+	value: unknown,
+): LanceConfig["mission"] | undefined {
+	if (value === undefined) return undefined;
+	if (!value || typeof value !== "object" || Array.isArray(value)) {
+		throw new Error(`Invalid config: "mission" must be an object`);
+	}
+	return value as LanceConfig["mission"];
 }

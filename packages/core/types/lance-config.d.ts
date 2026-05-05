@@ -2,13 +2,16 @@ import type { MagazineClassName } from "@lance/core";
 import { WeaponClassName } from "../src/cfg/cfg-weapons-weapons";
 
 export interface LanceConfig {
-	name: string;
-	version: string;
-	type: "mission" | "library";
-	private?: boolean;
-	exports?: string | string[];
-	include?: string[];
-  dependencies?: { [name: string]: string };
+	build?: {
+		entrypoint?: string;
+		tag?: string;
+		outDir?: string;
+		tsConfig?: string;
+		typesPackage?: string;
+		typesPackageRoot?: string;
+		sourceRoot?: string;
+	};
+	mission?: Record<string, unknown>;
 
   /** Mission author's name. The default loading screen shows this
    * string below the `onLoadName` in a smaller font prefixed by "by ". */

@@ -1,5 +1,4 @@
 import { join } from "node:path";
-import { pathToFileURL } from "node:url";
 
 export interface LanceManifest {
 	name: string;
@@ -23,17 +22,17 @@ export interface LanceLockfile {
 	dependencies: Record<string, LockedPackage>;
 }
 
-export const MANIFEST_FILE = "lance.config.ts";
+export const MANIFEST_FILE = "lance.package.json";
 const LEGACY_MANIFEST_FILE = "lance.json";
 export const LOCK_FILE = "lance.lock";
 export const BUILTIN_REGISTRY_URL = "http://lance-registry-dguc6p-821e3a-64-181-217-234.traefik.me";
 
 export async function readManifest(cwd: string): Promise<LanceManifest> {
-	const tsPath = join(cwd, MANIFEST_FILE);
-	const tsFile = Bun.file(tsPath);
-	if (await tsFile.exists()) {
-		const manifest = await importManifestFromTs(tsPath);
-		return normalizeManifest(manifest, tsPath);
+	const manifestPath = join(cwd, MANIFEST_FILE);
+	const manifestFile = Bun.file(manifestPath);
+	if (await manifestFile.exists()) {
+		const manifest = JSON.parse(await manifestFile.text()) as unknown;
+		return normalizeManifest(manifest, manifestPath);
 	}
 
 	const legacyPath = join(cwd, LEGACY_MANIFEST_FILE);
@@ -54,7 +53,7 @@ export async function writeManifest(
 ): Promise<void> {
 	const path = join(cwd, MANIFEST_FILE);
 	const normalized = normalizeManifest(manifest, path);
-	await Bun.write(path, `${renderManifestTs(normalized)}\n`);
+	await Bun.write(path, `${JSON.stringify(normalized, null, 2)}\n`);
 }
 
 export async function readLockfile(cwd: string): Promise<LanceLockfile | null> {
@@ -92,17 +91,6 @@ export function splitPackageAndVersion(raw: string): {
 			`Invalid package spec: ${raw}. Expected @scope/name or @scope/name@version`,
 		);
 	return { name: match[1]!, version: match[2] ?? null };
-}
-
-async function importManifestFromTs(path: string): Promise<unknown> {
-	const moduleUrl = `${pathToFileURL(path).href}?t=${Date.now()}`;
-	const mod = (await import(moduleUrl)) as { default?: unknown };
-	if (mod.default === undefined) {
-		throw new Error(
-			`Invalid manifest at ${path}: expected \`export default { ... }\``,
-		);
-	}
-	return mod.default;
 }
 
 function normalizeManifest(value: unknown, sourcePath: string): LanceManifest {
@@ -176,33 +164,4 @@ function normalizePrivateField(
 	throw new Error(
 		`Invalid manifest at ${sourcePath}: "private" must be a boolean`,
 	);
-}
-
-function renderManifestTs(manifest: LanceManifest): string {
-	const dependencies = manifest.dependencies ?? {};
-	const dependenciesLines = Object.entries(dependencies)
-		.sort(([a], [b]) => a.localeCompare(b))
-		.map(([name, range]) => `    ${JSON.stringify(name)}: ${JSON.stringify(range)},`);
-
-	return [
-		'import type { LanceConfig } from "@lance/core";',
-		"",
-		"export default {",
-		`  name: ${JSON.stringify(manifest.name)},`,
-		`  version: ${JSON.stringify(manifest.version)},`,
-		`  type: ${JSON.stringify(manifest.type)},`,
-		...(manifest.private !== undefined
-			? [`  private: ${manifest.private ? "true" : "false"},`]
-			: []),
-		...(manifest.exports
-			? [`  exports: ${JSON.stringify(manifest.exports)},`]
-			: []),
-		...(manifest.include
-			? [`  include: ${JSON.stringify(manifest.include)},`]
-			: []),
-		"  dependencies: {",
-		...dependenciesLines,
-		"  },",
-		"} satisfies LanceConfig;",
-	].join("\n");
 }

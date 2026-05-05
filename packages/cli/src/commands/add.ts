@@ -34,7 +34,7 @@ async function fetchPackageInfo(
 
 export default class Add extends Command {
 	static override id = "add";
-	static override description = "Add a dependency to lance.config.ts";
+	static override description = "Add a dependency to lance.package.json";
 	static override args = {
 		spec: Args.string({
 			description: "Dependency spec: @scope/name[@version|@range]",

@@ -146,12 +146,12 @@ export interface ProjectConfig {
 	name: string;
 	type: ProjectType;
 	version?: string;
-	/** SQF function name prefix. Default: "LNC" */
-	tag?: string;
 }
 
 export interface BuildConfig {
 	entrypoint: string;
+	/** SQF function name prefix. Default: "LNC" */
+	tag?: string;
 	outDir?: string;
 	tsConfig?: string;
 	typesPackage?: string;
